@@ -1,0 +1,491 @@
+id	utterance	slot_labels	intent
+4489	ヒューストン から ダラス までの 午後 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+4490	ダラス空港 から ダラス 市内までの空港アクセスについて教えてくれる	B-fromloc.airport_name O B-toloc.city_name O	atis_ground_service
+4491	ダラスフォートワース から アトランタ までの 月曜日 のフライトを教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+4492	デンバー から ピッツバーグ までの 最低 運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_airfare
+4493	デンバー から ボルチモア に到着するフライト情報を教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4494	デンバー から ボルチモア まで	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4495	午後 7 時 以降 に フィラデルフィア から ボストン に出発するフライトは何	B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4496	ボストン から ダラス に飛びたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4497	七月 三日 の デンバー から ボルチモア まで利用可能な ユナイテッド航空 の ファーストクラス 航空運賃のフライトは何	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-class_type O	atis_airfare
+4498	ソルトレイクシティ から カリフォルニア の オークランド までのフライト	B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+4499	ボストン から オークランド までのフライトはどこに 立ち寄る	B-fromloc.city_name O B-toloc.city_name O B-flight_stop	atis_airport
+4500	アトランタ の空港アクセス	B-city_name O	atis_ground_service
+4501	オークランド から サンフランシスコ までの空港アクセスは何	B-fromloc.city_name O B-toloc.city_name O	atis_ground_service
+4502	水曜日 の フェニックス から ミルウォーキー までの アメリカン航空 のすべてのフライト情報を教えて	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+4503	十一月 十一日 ボストン から ワシントン DC までのすべてのフライト	B-depart_date.month_name B-depart_date.day_number B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+4504	ボルチモア から フィラデルフィア までのフライト情報をもう一度教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4505	インディアナポリス から トロント までの トロント に 木曜日 午前 に到着するフライトが必要	B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name O B-arrive_date.day_name B-arrive_time.period_of_day O	atis_flight
+4506	セントピーターズバーグ から トロント までの 往復 便を教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+4507	デンバー から サンフランシスコ までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4508	ボストン から アトランタ までの アメリカン航空 の 一番高い 片道 運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-cost_relative B-round_trip O	atis_airfare
+4509	ナッシュビル から クリーブランド までのフライトの運賃	B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+4510	ボストン から オークランド まで飛びたい、 ボストン から オークランド まで飛んでいるのはどの航空会社	B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4511	AC はどの航空会社	B-airline_code O	atis_airline
+4512	一月 一日 の ピッツバーグ から ボルチモア までをお願い	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4513	ボストン から始まるフライト	B-fromloc.city_name O	atis_flight
+4514	アトランタ から フィラデルフィア までの 午前 のフライト	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+4515	日曜日 の ミルウォーキー から フェニックス までは何便	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4516	アトランタ から BWI までの イースタン 210 便で 機内食 は出る	B-fromloc.city_name O B-toloc.airport_code O B-airline_name B-flight_number O B-meal O	atis_meal
+4517	サンフランシスコ から ピッツバーグ までの 金曜日 の コンチネンタル のフライトを教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-airline_name O	atis_flight
+4518	デンバー から ピッツバーグ までの 最安 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_flight
+4519	ボストン から アトランタ に到着する 4 時 から 午後 8 時 の間のフライトを一覧表示して	B-fromloc.city_name O B-toloc.city_name O B-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time O	atis_flight
+4520	アトランタ から ボストン までの 午後 のフライトがある航空会社はある	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_airline
+4521	サンフランシスコ を 午後 4 時 以降 に出発する インディアナポリス 経由 ワシントン 行きは何便	B-fromloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-stoploc.city_name O B-toloc.city_name O	atis_flight
+4522	ボストン から サンフランシスコ まで 毎日 運航するのはどのフライトか教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-flight_days O	atis_flight
+4523	二十三日 火曜日 の フィラデルフィア から サンフランシスコ までの アメリカン航空 のフライト	B-depart_date.day_number B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+4524	正午 前 に デンバー を出発する ノースウェスト航空 のフライトを全部一覧表示してくれる	B-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-airline_name O	atis_flight
+4525	ダラス から ボルチモア まで 七月 四日 に到着する 最安の 航空運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-arrive_date.month_name B-arrive_date.day_number O B-cost_relative O	atis_airfare
+4526	カンザスシティ から ソルトレイクシティ までの デルタ 1222 便でどの航空機が使用されているか教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-airline_name B-flight_number O	atis_aircraft
+4527	ダラス から ボルチモア までの 一番安い 往復 運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-cost_relative B-round_trip O	atis_flight
+4528	次の 日曜日 に デンバー空港 から利用可能な レンタカー は何	B-depart_date.date_relative B-depart_date.day_name O B-fromloc.airport_name O B-transport_type O	atis_ground_service
+4529	航空会社を教えて	O	atis_airline
+4530	ダラス での レンタカー の料金はいくら	B-city_name O B-transport_type O	atis_ground_fare
+4531	できれば、 ダラス から ボルチモア まで、 七月 七日 に到着する 最安の エコノミークラス チケットが何かを知りたい	O B-fromloc.city_name O B-toloc.city_name O B-arrive_date.month_name B-arrive_date.day_number O B-cost_relative B-economy O	atis_airfare
+4532	TWA が提供するサービスのクラスは何	B-airline_code O	atis_flight
+4533	セントルイス に空港アクセスはある	B-city_name O	atis_ground_service
+4534	アトランタ から フィラデルフィア までの 八月 一日 の 最安の 往復 航空運賃を教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O B-cost_relative B-round_trip O	atis_airfare
+4535	デンバー と サンフランシスコ 往復 の コンチネンタル 1291 便の 最安の 往復 運賃はいくら	B-fromloc.city_name O B-fromloc.city_name B-round_trip O B-airline_name B-flight_number O B-cost_relative B-round_trip O	atis_airfare
+4536	ボストン から アトランタ まで飛ぶ費用はいくら	B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+4537	アメリカン と デルタ航空 の両方が運行するのはどの都市	B-airline_name O B-airline_name O	atis_city
+4538	フィラデルフィア から ボルチモア までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4539	ボストン から ワシントン DC まで、 二十五日 遅く または 二十六日 早く に利用可能なのは何便	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-depart_date.day_number B-depart_time.period_mod B-or B-depart_date.day_number B-depart_time.period_mod O	atis_flight
+4540	ジェネラルミッチェルインターナショナル空港 の発着便を一覧表示して	B-fromloc.airport_name O	atis_flight
+4541	大丈夫、 ピッツバーグ から サンフランシスコ までの 九月 二十日 午前 の フライト時間 を教えて	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day O B-flight_time O	atis_flight_time
+4542	アトランタ から サンフランシスコ までの ノンストップ フライトを全部教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+4543	デンバー から フィラデルフィア までのフライトを全部一覧表示して	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4544	ボストン から サンフランシスコ までの 片道 のフライトをお願い	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+4545	シンシナティ から バーバンク までの今日の 午後 出発する アメリカン航空 の飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O B-airline_name O	atis_flight
+4546	デンバー の空港アクセスを教えて	B-city_name O	atis_ground_service
+4547	ボストン と サンフランシスコ 間の デルタ の 最安 運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-cost_relative O	atis_airfare
+4548	今日 の サンフランシスコ から ピッツバーグ までがあるのは何便	B-depart_date.today_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4549	ミネアポリス から シアトル まで、 七月 二日 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O	atis_flight
+4550	ジェネラルミッチェル国際空港 でのすべての離陸と着陸を一覧表示して	B-airport_name O	atis_flight
+4551	ダラス を出発する ボルチモア までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4552	ダラスフォートワース から サンフランシスコ までの ファーストクラス のチケットの費用はいくら	B-fromloc.city_name O B-toloc.city_name O B-class_type O	atis_airfare
+4553	アメリカン航空 は フィラデルフィア から サンフランシスコ まで飛んでる	B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4554	デンバー を出発して シカゴ に 月曜日 の 正午 前 に到着する コンチネンタル のフライトを全部一覧表示して	B-fromloc.city_name O B-toloc.city_name O B-arrive_date.day_name O B-arrive_time.time B-arrive_time.time_relative O B-airline_name O	atis_flight
+4555	ナッシュビル から セントルイス までの セントルイス に 午後 6 時 頃 到着する ノンストップ の飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-flight_stop O	atis_flight
+4556	モントリオール から ナッシュビル までの ミッドウェスト エクスプレスのフライトはある	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+4557	ウェストチェスター郡 から セントポール までのフライト	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4558	五月 十八日 火曜日 の ナッシュビル から タコマ までのフライトは何	B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4559	ボストン から フォートワース まで費用が 最安の 運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_airfare
+4560	ボストン から ボルチモア までの 最安の 片道 運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-cost_relative B-round_trip O	atis_airfare
+4561	ピッツバーグ から サンフランシスコ までの 金曜日 午後 に利用可能なのは何便	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+4562	八月 三十日 午前 早く に デンバー から サンフランシスコ までのフライトをスケジュールしてくれる	B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day B-depart_time.period_mod O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4563	サンフランシスコ から アトランタ まで フォートワース に立ち寄るフライトの情報が必要	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+4564	ダラス までの 1500 ドル 未満 の 往復 のフライトを全部教えて	B-toloc.city_name O B-fare_amount I-fare_amount B-cost_relative O B-round_trip O	atis_flight
+4565	ボーイング 737 が収容できる乗客数は何人	O B-aircraft_code O	atis_capacity
+4566	フィラデルフィア から ダラス まで、 来週 の 水曜日 午前 のフライトが必要	B-fromloc.city_name O B-toloc.city_name O B-depart_date.date_relative O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+4567	ラブフィールド から他のすべての空港までのフライトを教えて	B-fromloc.airport_name O	atis_flight
+4568	EA はどの航空会社の略語	B-airline_code O	atis_airline
+4569	アメリカン航空 の アトランタ の発着について教えて	B-airline_name O B-city_name O	atis_flight
+4570	ボストン から ボルチモア までのフライトで 一番安い のは何便	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_flight
+4571	午後 出発の ワシントン DC から フィラデルフィア まで	B-depart_time.period_of_day O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+4572	サンフランシスコ から デンバー までの 午後 4 時 以降 のフライトを全部教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+4573	今日 の 早 朝 から 二 日間 ミネアポリス から ロングビーチ まで飛びたい	B-depart_date.today_relative O B-depart_time.period_of_day B-depart_time.period_of_day O B-depart_date.date_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4574	ロサンゼルス から シャーロット まで 午前 早く のチケットが欲しい	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.period_mod O	atis_airfare
+4575	シアトル での空港アクセスが必要	B-city_name O	atis_ground_service
+4576	ミッドウェスト エクスプレスは インディアナポリス に運行してる	B-airline_name O B-city_name O	atis_flight
+4577	オークランド を出発して ボストン に 午後 5 時に到着したい	B-fromloc.city_name O B-toloc.city_name O B-arrive_time.period_of_day B-arrive_time.time I-arrive_time.time	atis_flight
+4578	運賃コード Y はどんな意味	O B-fare_basis_code O	atis_abbreviation
+4579	ニューヨーク から マイアミ までの ファーストクラス の 往復 運賃	B-fromloc.city_name O B-toloc.city_name O B-class_type O B-round_trip O	atis_airfare
+4580	七月 七日 に デンバー を出発して ボルチモア に行く ユナイテッド航空 の ファーストクラス の 往復 チケットの値段はいくら	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-class_type O B-round_trip O	atis_airfare
+4581	ニューヨーク から カナダ の モントリオール まで 水曜日 に出発するフライトのリストを出してくれる	B-fromloc.city_name O B-toloc.country_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+4582	運賃コード QX を説明して	O B-fare_basis_code O	atis_abbreviation
+4583	金曜日 の ピッツバーグ から サンフランシスコ までの 一番安い フライトは何	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_flight
+4584	デンバー から オークランド までのフライトの運賃を全部教えてくれる	B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+4585	ワシントン と サンフランシスコ 間は何便	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4586	フィラデルフィア から ダラス まで アメリカン航空 の ファーストクラス のフライトで飛ぶ場合の航空機の種類は何	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-class_type O	atis_aircraft
+4587	アトランタ から ボストン まで 午後 に出発するフライトの 時刻 を教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O B-flight_time O	atis_flight_time
+4588	一月 一日 に ボルチモア までの旅行を手配したい	B-depart_date.month_name B-depart_date.day_number O B-toloc.city_name O	atis_flight
+4589	テキサス の フォートワース で利用可能な空港アクセスは何	B-state_name O B-city_name O	atis_ground_service
+4590	デンバー から ボストン に行く 一番早い フライトは何	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+4591	ダラス から アトランタ までの 午後 のフライト	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+4592	トロント から サンディエゴ までの フェニックス で乗り継ぎする US エアー のフライトを全部教えて	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O B-airline_name I-airline_name O	atis_flight
+4593	火曜日 の サンフランシスコ から デンバー まで	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4594	インディアナポリス 発 ヒューストン 行きのフライトについて教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4595	ニューヨーク から マイアミ まで 火曜日 に出発して 日曜日 に戻るフライトを全部教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-return_date.day_name O	atis_flight
+4596	こんにちは、 タンパ から モントリオール までの飛行機に乗りたい	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4597	ボルチモア から ダラス までの 往復 便の 最低 運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-round_trip O B-cost_relative O	atis_airfare
+4598	金曜日 フィラデルフィア から オークランド までのフライトを教えて	B-depart_date.day_name B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4599	ダラス から サンフランシスコ までの アメリカン航空 のフライト情報を教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+4600	ボストン から フィラデルフィア までのフライトを全部教えて欲しい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4601	ラスベガス から バーバンク まで、 五月 二十二日 土曜日 到着の ノンストップ のフライトは実際は何	B-fromloc.city_name O B-toloc.city_name O B-arrive_date.month_name B-arrive_date.day_number B-arrive_date.day_name O B-flight_stop O	atis_flight
+4602	ピッツバーグ から サンフランシスコ まで 金曜日 正午 12 時 以降 出発のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+4603	CO 1209 はどの航空機	B-airline_code B-flight_number O	atis_aircraft
+4604	食事 コード SD D について説明して	B-meal O B-meal_code I-meal_code O	atis_abbreviation
+4605	ボストン空港 の レンタカー 運賃の一覧を教えて	B-airport_name O B-transport_type O	atis_ground_service
+4606	ワシントン DC から デンバー までのフライト	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+4607	アトランタ から サンフランシスコ まで 今日 の 一番安い フライトは何	B-fromloc.city_name O B-toloc.city_name O B-depart_date.today_relative O B-cost_relative O	atis_flight
+4608	ヒューストン から ラスベガス までの運賃を教えて	B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+4609	ボストン を出発する サンフランシスコ までの 一番遅い フライトは何	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+4610	十一月 七日 に ボルチモア から アトランタ まで行く 片道 の運賃はいくら	B-toloc.city_name B-round_trip O B-depart_date.month_name O B-depart_date.day_number O B-fromloc.city_name O	atis_airfare
+4611	デンバー から サンフランシスコ まで 水曜日 13 時 0 時 以降 出発のフライトを教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+4612	HP が表すのはどの航空会社	B-airline_code O	atis_airline
+4613	デンバー から ボルチモア まで飛んでいるすべての航空会社のフライトと運賃を一覧表示してくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airfare
+4614	デンバー から アトランタ までのフライトに乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4615	ボルチモア から ダラス までの 往復 チケットを全部教えて	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_airfare
+4616	サンフランシスコ の空港アクセス	B-city_name O	atis_ground_service
+4617	ボストン から オークランド まで アメリカン のフライト 番号 813 で飛ぶ場合、途中で他の都市に立ち寄るかどうかを知りたい	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-flight_number O O	atis_flight
+4618	アトランタ から フィラデルフィア までの 最安 運賃の飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_flight
+4619	空港アクセス、 デンバー	O B-city_name	atis_ground_service
+4620	アトランタ から ボストン までの 片道 運賃の値段はいくら	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_airfare
+4621	運賃コードについて説明して	O	atis_abbreviation
+4622	ダラス から サンフランシスコ までの ユナイテッド航空 のフライトについて知りたい	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+4623	九月 十六日 に フィラデルフィア と デンバー 間で利用可能なフライトを教えて	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4624	ボストン と デンバー 間で ボストン に着くまで立ち寄る数が 一番少ない 飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name O B-mod O	atis_flight
+4625	インディアナポリス から メンフィス までのフライトの値段はいくら	B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+4626	他のどの航空会社よりも 多くの フライトがあると宣伝している航空会社はある	O B-mod O	atis_airline
+4627	月曜日 の ピッツバーグ から ニューアーク までは何便	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4628	デンバー から ボストン までの ノンストップ のフライト	B-toloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+4629	ミルウォーキー から オーランド までの 片道 のすべてのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+4630	ピッツバーグ から ボルチモア まで ボルチモア に 木曜日 の 9 時 以前 に到着するフライトが必要	B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+4631	ダラス から サンフランシスコ までのフライトを全部教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4632	ダラス から アトランタ までの 片道 の エコノミー 運賃を教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-round_trip O B-economy O	atis_airfare
+4633	利用可能な 機内食 の種類は何	O B-meal O	atis_meal
+4634	サンディエゴ から トロント までの飛行機を予約したい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4635	ナッシュビル から シアトル までの 一番安い 運賃は	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_airfare
+4636	セントルイス から セントポール までの 午前 のフライトを一覧表示してくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+4637	デンバー から サンフランシスコ までのフライトを全部教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4638	ワシントン から サンフランシスコ まで、 九月 三十日 の 最安 運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O B-cost_relative O	atis_airfare
+4639	デンバー から ワシントン DC までの ノンストップ のフライトを一覧表示して	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-flight_stop O	atis_flight
+4640	ミネアポリス から ロングビーチ までの 六月 十四日 月曜日 4 時 以降 のフライトを探したい	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name B-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+4641	はい、 オークランド と ボストン 間の ダラスフォートワース にストップオーバーするフライトを探しているけど、そのようなものがある	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+4642	フェニックス を 水曜日 夕方 に出発して ミルウォーキー に到着するのは何便	B-fromloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O B-toloc.city_name O	atis_flight
+4643	ワシントン から サンフランシスコ までのフライトを教えてくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4644	MCO とはどの都市	B-airport_code O	atis_city
+4645	ボストン から サンフランシスコ までの ユナイテッド の ファーストクラス の 往復 運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-class_type O B-round_trip O	atis_airfare
+4646	サンノゼ から ダラス までの 金曜日 午後 は何便	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+4647	ニューアーク と タンパ 間の 金曜日 のフライト	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+4648	ボルチモア から フィラデルフィア までの 往復 運賃を教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_airfare
+4649	ラブフィールド からのフライトを教えて	B-fromloc.airport_name O	atis_flight
+4650	ボルチモア から ピッツバーグ までの 往復 便の旅行の計画を探して	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+4651	メンフィス から ラスベガス までがあるのは何便	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4652	午後 の ニューアーク を出発する ロサンゼルス 行きは何便	B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4653	ボストン から サンフランシスコ まで 接続 する ユナイテッド 便はどれ	B-fromloc.city_name O B-toloc.city_name O B-connect O B-airline_name O	atis_flight
+4654	はい、 デンバー から ピッツバーグ までの 七月 七日 のフライトが必要	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O	atis_flight
+4655	空港の名前	O	atis_airport
+4656	シカゴ から シアトル まで、 六月 一日 早 朝 の コンチネンタル航空 の飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day B-depart_time.period_of_day O B-airline_name O	atis_flight
+4657	サンフランシスコ を出て ボストン に 午後 に到着する 午前 のフライト	B-fromloc.city_name O B-toloc.city_name O B-arrive_time.period_of_day O B-depart_time.period_of_day O	atis_flight
+4658	ピッツバーグ で利用可能な空港アクセスを一覧表示してくれる	B-city_name O	atis_ground_service
+4659	トロント からのすべての ネーションエアー のフライトを教えて	B-fromloc.city_name O B-airline_name O	atis_flight
+4660	デンバー から アトランタ まで ピッツバーグ に立ち寄って飛びたい	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+4661	ボストン から オークランド までの 最安 の 片道 運賃を探して	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_airfare
+4662	ピッツバーグ から サンフランシスコ までのフライトの情報	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4663	フィラデルフィア を出発して アトランタ 、 ボルチモア 、 ボストン に行きたいので、これらのフライトを一覧表示してくれる	B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name O B-toloc.city_name O	atis_flight
+4664	フィラデルフィア から ダラス までの アメリカン航空 の ファーストクラス の 一番早い フライトは何	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-class_type O B-flight_mod O	atis_flight
+4665	デンバー から ニューヨーク の ウェストチェスター郡 までの 平日 のフライト	B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+4666	ボストン から ワシントン まで 月曜日 夕方 遅く または 火曜日 午前 早く に利用可能なのは何便	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day B-depart_time.period_mod B-or B-depart_date.day_name B-depart_time.period_of_day B-depart_time.period_mod O	atis_flight
+4667	AP57 制限事項とは何	B-restriction_code O	atis_restriction
+4668	デンバー から サンフランシスコ まで 八月 二十七日 午前 の 一番早い フライトは何	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day O B-flight_mod O	atis_flight
+4669	ボストン市 の空港と市内の間の空港アクセスをお願い	B-city_name O	atis_ground_service
+4670	ボルチモア と ニューアーク 間の 水曜日 午前中 のフライト	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+4671	ミネアポリス から ピッツバーグ までは何便	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4672	デンバー で利用可能な空港アクセスの種類は何	B-city_name O	atis_ground_service
+4673	ボストン から ワシントン までの 往復 便に興味がある	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+4674	ダラスフォートワース から サンフランシスコ または オークランド のいずれかまでの 直行 便を全部教えて	B-fromloc.city_name O B-toloc.city_name B-or B-toloc.city_name O B-connect O	atis_flight
+4675	ピッツバーグ から サンフランシスコ までの 金曜日 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+4676	ミネアポリス から ロングビーチ まで 明日 の 遅く に飛びたい	B-fromloc.city_name O B-toloc.city_name O B-depart_date.today_relative O B-depart_time.period_mod O	atis_flight
+4677	ボストン から アトランタ までどの航空会社が飛んでる	B-fromloc.city_name O B-toloc.city_name O	atis_airline
+4678	フィラデルフィア から ボストン まで 四月 十七日 のできるだけ 早い フライトの情報を教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O B-flight_mod O	atis_flight
+4679	土曜日 に ダラス から サンフランシスコ まで利用可能なのは何便	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4680	オークランド から ソルトレイクシティ まで 水曜日 午後 6 時 以降 のフライトが必要	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+4681	ボストン から オークランド まで ユナイテッド で 午前 8 時 38 分 に行きたい場合、どの飛行機に乗ればいい	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time O	atis_flight
+4682	デンバー から ピッツバーグ まで 最安の 片道 のフライトを予約したい	B-fromloc.city_name O B-toloc.city_name O B-cost_relative B-round_trip O	atis_flight
+4683	ボストン空港 から ボストン までの距離は	B-fromloc.airport_name O B-toloc.city_name O	atis_distance
+4684	ジェネラルミッチェル国際空港 に離陸着陸するのは何便	B-fromloc.airport_name O	atis_flight
+4685	ボストン から サンフランシスコ までのフライトは何	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4686	十二月 に アトランタ から デンバー までの ボストン に立ち寄るフライトは何	B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+4687	1991 年 七月 二十五日 ピッツバーグ から ボルチモア までの利用可能なのは何便	B-depart_date.year I-depart_date.year B-depart_date.month_name B-depart_date.day_number B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4688	ボストン から サンフランシスコ までの ダラスフォートワース にストップオーバーするフライトはある	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+4689	市内から オークランド空港 までの距離は	O B-fromloc.airport_name O	atis_distance
+4690	シンシナティ から トロント に着陸する 最初 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+4691	ニューアーク から タンパ までの 金曜日 の US エアー のフライト	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-airline_name I-airline_name O	atis_flight
+4692	オーケー、 ダラス を出発する サンフランシスコ まで ユナイテッド航空 のフライトを教えてくれる	O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+4693	フィラデルフィア から ダラス まで アトランタ に立ち寄るフライトを一覧表示してくれる	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+4694	ボルチモア から ダラス までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4695	デンバー 発 ピッツバーグ 行きの 一番早い フライトは何	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+4696	フィラデルフィア から ピッツバーグ までの利用可能な 午後 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+4697	ワシントン から ダラス までの アメリカン航空 の 帰り のフライトが欲しい	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-round_trip O	atis_flight
+4698	アトランタ から ボルチモア まで ノンストップ で飛んで 午後 7 時 に到着したい	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O B-arrive_time.time I-arrive_time.time I-arrive_time.time O	atis_flight
+4699	カンザスシティ から デンバー までの 午前 8 時 45 分 以降 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+4700	ボストン と サンフランシスコ 間の航空会社を教えて	B-fromloc.city_name O B-toloc.city_name O	atis_airline
+4701	デンバー を出て ピッツバーグ に到着する 次の 月曜日 の 一番遅い フライトは何	B-fromloc.city_name O B-toloc.city_name O B-arrive_date.date_relative B-arrive_date.day_name O B-flight_mod O	atis_flight
+4702	ボストン と オークランド 間を飛ぶ会社はどれ	B-fromloc.city_name O B-toloc.city_name O	atis_airline
+4703	オークランド と ボストン 間で ダラスフォートワース にストップオーバーするフライトは何がある	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+4704	午前 早く に出発したい	B-depart_time.period_of_day B-depart_time.period_mod O	atis_flight
+4705	デンバー から アトランタ までの 六月 十六日 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O	atis_flight
+4706	ダラスフォートワース から サンフランシスコ まで ダラスフォートワース を 19 時 40 分 に出発する 接続 便の日程を教えて	B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time O B-connect O	atis_flight
+4707	オークランド と ボストン 間で 午後 5 時 以前 に到着する飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+4708	ニューヨーク から マイアミ までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4709	木曜日 の デンバー から ワシントン までのフライトを教えて	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4710	六月 二十九日 午後 の アトランタ を出発する ボストン までは何便	B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4711	カナディアン航空 が使用する航空機の種類を教えて	B-airline_name O	atis_aircraft
+4712	フィラデルフィア から ダラス アメリカン航空 で行く 午前 のフライトは何	B-fromloc.city_name O B-toloc.city_name B-airline_name O B-depart_time.period_of_day O	atis_flight
+4713	MCO は何の略	B-airport_code O	atis_abbreviation
+4714	フィラデルフィア を出発して ピッツバーグ に 午後 到着するフライトの情報を知りたい	B-fromloc.city_name O B-toloc.city_name O B-arrive_time.period_of_day O	atis_flight
+4715	ボルチモア から フィラデルフィア までの US 3724 の 往復 運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-airline_code B-flight_number O B-round_trip O	atis_airfare
+4716	ワシントン DC から デンバー まで 4 時 のフライトはある	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O B-depart_time.time I-depart_time.time O	atis_flight
+4717	八月 三日 に ピッツバーグ から ボルチモア に到着するフライトを一覧表示して	B-arrive_date.month_name B-arrive_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4718	フェニックス から ミルウォーキー までの 水曜日 のフライトを全部教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+4719	アトランタ に 午後 6 時 以前 に到着する ボルチモア から アトランタ までの 木曜日 のフライトの情報が欲しい	B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+4720	ヒューストン から ミルウォーキー まで アメリカン航空 の 金曜日 夕方 のフライトを一覧表示してくれる	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+4721	ピッツバーグ から アトランタ まで飛びたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4722	デンバー から ラスベガス までのフライトを全部教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4723	デンバー から ソルトレイクシティ までは何便	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4724	シカゴ から ミルウォーキー まで 午後遅く のフライトの一覧が必要	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+4725	ワシントン DC から アトランタ までの 最安の フライトを探したい	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O B-cost_relative O	atis_flight
+4726	デンバー から 正午 前 に出る ユナイテッド航空 のフライトを全部一覧表示して	B-fromloc.city_name O B-depart_time.time B-depart_time.time_relative O B-airline_name O	atis_flight
+4727	デンバー での空港から市内までの空港アクセスは何がある	B-city_name O	atis_ground_service
+4728	ダラス から ボルチモア までの 最安 価格の運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_airfare
+4729	火曜日 の 朝 の ダラス 発 アトランタ 行きがあるのは何便	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4730	アトランタ から フィラデルフィア までの デルタ 296 便の運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name B-flight_number O	atis_airfare
+4731	アトランタ から フィラデルフィア までの 水曜日 の 一番早い フライトを三つ一覧表示して	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-flight_mod O	atis_flight
+4732	モントリオール から ラスベガス まで	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4733	ワシントン から トロント までの 片道 の 最低 運賃を一覧表示してくれる	B-fromloc.city_name O B-toloc.city_name O B-round_trip O B-cost_relative O	atis_flight
+4734	フィラデルフィア から サンフランシスコ までの 往復 便は何	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+4735	アトランタ から デンバー までの 明後日 の US エアー のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.today_relative O B-airline_name I-airline_name O	atis_flight
+4736	ピッツバーグ から オークランド まで デンバー 接続 の US エアー のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name B-connect O B-airline_name I-airline_name O	atis_flight
+4737	木曜日 午前 10 時 以前 に ボストン から ボルチモア まで行くフライト全部のリスト	B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4738	ニューヨーク で市内に 一番近い 空港は何	B-fromloc.city_name O B-mod O	atis_airport
+4739	タンパ から シャーロット までは何便	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4740	ボストン から フィラデルフィア までの 一番早い フライトは何	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+4741	デンバー から サンフランシスコ までのすべてのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4742	ロングビーチ から フェニックス までの全部のフライト	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4743	FF とは何	B-airline_code O	atis_abbreviation
+4744	アトランタ から ボルチモア まで 午後 7 時 頃 に到着する ノンストップ の飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-flight_stop O	atis_flight
+4745	フィラデルフィア から オークランド までの 夕方 のフライト	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+4746	AP57 はどんな意味	B-restriction_code O	atis_abbreviation
+4747	火曜日 に カリフォルニア の オークランド から フィラデルフィア 行きのフライトを一覧表示してくれる	B-depart_date.day_name O B-fromloc.state_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4748	サンフランシスコ から デンバー までの 水曜日 と 木曜日 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_date.day_name O	atis_flight
+4749	ボストン から サンフランシスコ までの 最安 の 片道 運賃を教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_airfare
+4750	デンバー で利用可能な空港アクセスは何	B-city_name O	atis_ground_service
+4751	木曜日 の ボストン から ピッツバーグ までのフライトを教えて	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4752	フィラデルフィア から デンバー までの 日曜日 の利用可能なのは何便	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+4753	フィラデルフィア 発 ダラス 行きで アトランタ に立ち寄るフライトを一覧表示して	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+4754	デンバー と サンフランシスコ 間で運行する航空会社を一覧表示して	B-fromloc.city_name O B-toloc.city_name O	atis_airline
+4755	インディアナポリス から オーランド までの 十二月 二十七日 の 往復 の 最安 運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O B-round_trip O B-cost_relative O	atis_airfare
+4756	ピッツバーグ から アトランタ までの 最低 片道 運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-cost_relative B-round_trip O	atis_airfare
+4757	ニューヨーク から ロサンゼルス までは何便	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4758	運賃コード F とは何	O B-fare_basis_code O	atis_abbreviation
+4759	デンバー から シアトル までの 土曜日 午前 の コンチネンタル のフライト	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O B-airline_name O	atis_flight
+4760	十月 五日 に出発する ピッツバーグ から アトランタ までの 一番安い フライトは何	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_flight
+4761	デンバー と ボストン 間の コンチネンタル航空 のフライトの一覧を教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+4762	コンチネンタル航空 を利用して オークランド から ボストン まで 毎日 運航するフライトを一覧表示して	B-airline_name O B-fromloc.city_name O B-toloc.city_name O B-flight_days O	atis_flight
+4763	土曜日 の タコマ から オーランド までは何便	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4764	ピッツバーグ から アトランタ までのフライトの コーチクラス 運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-class_type O	atis_airfare
+4765	AP80 制限事項の意味は何	B-restriction_code O	atis_abbreviation
+4766	今日 の ロサンゼルス から シャーロット までのフライトが必要	B-depart_date.today_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4767	航空機の種類を全部教えて	O	atis_aircraft
+4768	AP80 制限事項とは何	B-restriction_code O	atis_restriction
+4769	明後日 午後 5 時 以降 に出発する アトランタ から サンフランシスコ までのフライトを全部教えて	B-depart_date.today_relative B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4770	ニューヨーク から トロント まで 五月 六日 木曜日 正午 まで に到着するフライトが必要	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name B-arrive_time.time B-arrive_time.time_relative O	atis_flight
+4771	ミネアポリス から インディアナポリス まで 午後 早く 出発するフライトの選択肢は何	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.period_of_day O	atis_flight
+4772	今度は、 午後 に アトランタ を出発して ボルチモア に到着するフライト情報が必要	O B-arrive_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4773	ボルチモア から アトランタ までのフライトを全部一覧表示してくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4774	ピッツバーグ と ダラスフォートワース 間で利用可能な全部のフライトは何	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4775	デンバー から ピッツバーグ まで 四月 二十一日 の 最安 のフライトが必要	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O B-cost_relative O	atis_flight
+4776	ダラス を出発して サンフランシスコ まで行く 午後 5 時 以降 に出発するフライトを探して	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+4777	ニューヨーク から マイアミ までのフライト	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4778	フィラデルフィア から ダラス までのフライトを一覧表示して	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4779	ピッツバーグ から ロサンゼルス までの 木曜日 の 夕方 のフライトが必要	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_time.period_of_day O	atis_flight
+4780	九月 二十八日 に デンバー から ピッツバーグ に出発する 最安の フライトは何	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_flight
+4781	ヒューストン から ダラス までは何便	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4782	オークランド の空港アクセスはどのようなもの	B-city_name O	atis_ground_service
+4783	火曜日 の 午後 5 時 より前 の LA から ピッツバーグ までのすべての ノンストップ フライトを一覧表示して	B-arrive_date.day_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+4784	デンバー から ラスベガス までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4785	デンバー から ダラスフォートワース までの利用可能な 午後 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+4786	ニューヨークシティ から モントリオール までの 明日 のフライトが必要	B-fromloc.city_name O B-toloc.city_name O B-depart_date.today_relative O	atis_flight
+4787	アトランタ の航空会社の名前を教えて	B-city_name O	atis_airline
+4788	サンフランシスコ から ボストン まで ダラスフォートワース にストップオーバーする飛行機に乗りたい、 デルタ航空 で飛びたい	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O B-airline_name O	atis_flight
+4789	ボストン から サンフランシスコ までの 金曜日 の飛行機を探す必要がある	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_aircraft
+4790	1991 年 九月 一日 の デンバー から サンフランシスコ までのフライトの一覧を教えて	B-depart_date.year I-depart_date.year B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4791	カンザスシティ から ニューアーク までの 七月 一日 のフライトが必要	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O	atis_flight
+4792	座席数が 最大 の航空機は何	O B-mod O	atis_aircraft
+4793	EWR とは何	B-airport_code O	atis_abbreviation
+4794	ボルチモア で利用可能な空港アクセスは何	B-city_name O	atis_ground_service
+4795	午後 8 時 以降 に到着する ダラス から ピッツバーグ までの 往復 便の旅行の計画を探して	B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+4796	デンバー から ボルチモア までの ファーストクラス サービスを提供する ユナイテッド の 往復 便を教えて	B-fromloc.city_name O B-toloc.city_name O B-class_type O B-airline_name O B-round_trip O	atis_flight
+4797	ダラス から サンフランシスコ までの ダラス を 午後 4 時 以降 に出発する 最安の 片道 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-cost_relative B-round_trip O	atis_flight
+4798	ダラス から ボルチモア まで ファーストクラス の運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-class_type O	atis_airfare
+4799	土曜日 午前中 の シカゴ から シアトル までの コンチネンタル 便を教えて	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+4800	デンバー を 正午 前 に出発する ノースウェスト航空 のフライトは何	B-fromloc.city_name O B-depart_time.time B-depart_time.time_relative O B-airline_name O	atis_flight
+4801	ピッツバーグ から サンフランシスコ まで、 来週 の 月曜日 午前 のフライトはある	B-fromloc.city_name O B-toloc.city_name O B-depart_date.date_relative O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+4802	運賃コード QO はどんな意味	O B-fare_basis_code O	atis_abbreviation
+4803	サンフランシスコ から ピッツバーグ までの 火曜日 の利用可能なフライトと運賃も教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+4804	ミルウォーキー と オーランド 間の 片道 のフライト	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+4805	EWR はどんな意味	B-airport_code O	atis_abbreviation
+4806	バルチモア から サンフランシスコ までのフライト	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4807	セントピーターズバーグ から ミルウォーキー までの アメリカン航空 の 明日 の 一番早い フライト情報を教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-depart_date.today_relative O B-flight_mod O	atis_flight
+4808	デルタ の ダラス と デンバー 間は何便	B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4809	ボストン から ボルチモア まで 午後 に飛びたい、何便がある	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+4810	ボストン から オークランド までの UA 281 便はどこに 立ち寄る	B-fromloc.city_name O B-toloc.city_name O B-airline_code B-flight_number O B-flight_stop	atis_flight
+4811	シャーロット から ボルチモア までの 四月 八日 のフライトを予約したい	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O	atis_flight
+4812	三月 二日 、 JFK から ラスベガス までの ノンストップ フライトに乗りたい	B-arrive_date.month_name B-arrive_date.day_number O B-fromloc.airport_code O B-toloc.city_name O B-flight_stop O	atis_flight
+4813	その情報をありがとう、今度は 四月 十六日 夜 9 時 ごろ フィラデルフィア から ボストン までのフライトを予約したい	O B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day B-depart_time.time I-depart_time.time B-depart_time.time_relative B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4814	八月 二十七日 夕方 の サンフランシスコ から ピッツバーグ までは何便	B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4815	ダラス と ボルチモア 間のフライト全部と運賃の一覧を教えてくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airfare
+4816	ダラス から ヒューストン までの ノンストップ のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+4817	水曜日 と 木曜日 の ボストン から ピッツバーグ までのフライトを教えて	B-depart_date.day_name O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4818	ラブフィールド に到着するフライトを教えて	B-toloc.airport_name O	atis_flight
+4819	ラブフィールド を出るフライトを教えて	B-fromloc.airport_name O	atis_flight
+4820	ボストン から アトランタ までの 片道 のフライトはいくら	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_airfare
+4821	木曜日 に フィラデルフィア を出発して アトランタ に到着したい	B-arrive_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4822	ボルチモア から ダラス まで ダラス で 接続 する 往復 便はある	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O B-connect O B-round_trip O	atis_flight
+4823	ボストン から アトランタ までの 一番早い フライトは何	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+4824	土曜日 の 午前中 シカゴ 出発の シアトル までのフライト情報を教えて	B-depart_date.day_name O B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4825	ヒューストン 空港	B-city_name O	atis_airport
+4826	ミルウォーキー から コロラド の デンバー までの 午前 の飛行機に乗りたい、お願い	B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+4827	アトランタ から デンバー まで飛ぶ 5 時 55 分 出発の イースタン 825 便で使用されている航空機の種類を教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time O B-airline_name B-flight_number O	atis_aircraft
+4828	ピッツバーグ から サンフランシスコ まで、 来週 の 月曜日 午前 のフライトはある	B-fromloc.city_name O B-toloc.city_name O B-depart_date.date_relative O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+4829	ニューヨーク から ロサンゼルス までの 午前 10 時 以降 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+4830	ワシントン から オークランド までの運賃を教えて	B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+4831	ピッツバーグ から サンフランシスコ までの 一番安い ファーストクラス の航空運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-cost_relative B-class_type O	atis_airfare
+4832	運賃コード H とは何	O B-fare_basis_code O	atis_abbreviation
+4833	ミルウォーキー から フェニックス までの 土曜日 と 日曜日 の アメリカン航空 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_date.day_name O B-airline_name O	atis_flight
+4834	ボストン から ワシントン まで 片道 ファーストクラス で飛ぶといくらかかる	B-fromloc.city_name O B-toloc.city_name O B-round_trip B-class_type O	atis_airfare
+4835	ニューアーク から オーランド までのフライトを出してくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4836	デンバー から オークランド までの 最安 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_flight
+4837	フィラデルフィア と デンバー 間の 午後 のフライトの一覧を教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+4838	ロングビーチ から メンフィス までの 最安 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_flight
+4839	デンバー から ピッツバーグ までの 夕食 を提供するフライトを全部教えて	B-fromloc.city_name O B-toloc.city_name O B-meal_description O	atis_flight
+4840	サンノゼ から ヒューストン までの 最短 のフライトを一覧表示して	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+4841	火曜日 の デンバー から ボストン までのフライトを教えて	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4842	月曜日 に ボルチモア から ワシントン まで行きたい	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4843	火曜日 デンバー を出発して ダラス に行く運賃を教えて	B-depart_date.day_name B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+4844	OAK と ATL 間で ファーストクラス の 往復 チケットの値段はいくら	B-fromloc.airport_code O B-toloc.airport_code O B-class_type O B-round_trip O	atis_airfare
+4845	ラスベガス から ヒューストン まで ノンストップ の 往復 運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O B-round_trip O	atis_airfare
+4846	アトランタ から フィラデルフィア までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4847	デンバー から フィラデルフィア までの ピッツバーグ でストップオーバーする利用可能なのは何便	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+4848	運賃コード QW はどんな意味	O B-fare_basis_code O	atis_abbreviation
+4849	ダラスフォートワース空港 と ダラス 市内の間の空港アクセスについて教えて	B-fromloc.airport_name O B-toloc.city_name O	atis_ground_service
+4850	フェニックス から ラスベガス までのフライト	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4851	ボストン から デンバー までの 直行 便を全部一覧表示して	B-fromloc.city_name O B-toloc.city_name O B-connect O	atis_flight
+4852	ボストン から サンフランシスコ までのフライトは何	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4853	ボストン から デンバー までのフライトについての情報が必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4854	七月 二十六日 の デンバー から ピッツバーグ までの 最安の フライトは何	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_flight
+4855	ダラス と ボルチモア 間の 八月 十日 に出発して 八月 十二日 に帰る コーチ のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O B-return_date.month_name B-return_date.day_number O B-class_type O	atis_flight
+4856	オーケー、 シャーロット から ラスベガス まで セントルイス に立ち寄る TWA 505 便が 機内食 を提供するか、 TWA 505 または 163 便かを知りたい	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O B-airline_code B-flight_number O B-meal_description O B-airline_code B-flight_number B-or B-flight_number O	atis_flight
+4857	オーケー、それも素晴らしい、今度は ダラス から ワシントン まで 四月 二十二日 の 夜間 に 一番遅く に出発する 片道 で行く予定	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O B-depart_time.period_of_day O B-flight_mod O B-round_trip O	atis_flight
+4858	サンフランシスコ から ボストン までの 一番早い フライトは何	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+4859	サンフランシスコ から デンバー までの ユナイテッド航空 の ビジネスクラス 運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-class_type O	atis_airfare
+4860	タンパ から セントルイス までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4861	来週 の 火曜日 の ボストン から アトランタ まで行くのは何便	B-depart_date.date_relative O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4862	セントルイス を出発する、 セントポール までの 午前 10 時 以降 のフライトを一覧表示してくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+4863	九月 十五日 サンフランシスコ と フィラデルフィア 間のすべてのフライトを教えて	B-depart_date.month_name B-depart_date.day_number B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4864	午後 8 時 以降 に出発する サンフランシスコ から ボストン までのフライトが必要	B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4865	モントリオール から シカゴ までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4866	オンタリオ からがあるのは何便	B-fromloc.city_name O	atis_flight
+4867	クリーブランド から マイアミ までの US エアー の 一番安い ファーストクラス の 往復 チケットの値段はいくら	B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O B-cost_relative B-class_type O B-round_trip O	atis_airfare
+4868	ピッツバーグ から ボルチモア まで 十二月 十七日 のターボプロップのフライトはある	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O	atis_flight
+4869	ピッツバーグ から オークランド までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4870	ボルチモア から オークランド までの 夕食 が出るフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-meal_description O	atis_flight
+4871	ボストン から デンバー までの可能な限り 一番早い フライトを探して	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+4872	ラブフィールド から他の空港までのフライトを教えて	B-fromloc.airport_name O	atis_flight
+4873	ロングビーチ 空港から ロングビーチ 市内までの タクシー はある	B-fromloc.city_name O B-fromloc.city_name O B-transport_type O	atis_ground_service
+4874	アトランタ から ボルチモア までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4875	十一月 七日 正午 の アトランタ から サンフランシスコ までのフライトはどれくらいかかる	B-depart_date.month_name B-depart_date.day_number B-depart_time.time O B-fromloc.city_name O B-toloc.city_name O	atis_distance
+4876	ボルチモア から ダラス までの 日曜日 午後 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+4877	サンフランシスコ から オークランド までのフライトを全部見せて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4878	ピッツバーグ空港 から利用可能な空港アクセスは何	B-fromloc.airport_name O	atis_ground_service
+4879	ボストン から オークランド の 午後 の ノンストップ のフライトを一覧表示して	B-fromloc.city_name O B-toloc.city_name O B-arrive_time.period_of_day O B-flight_stop O	atis_airline
+4880	インディアナポリス から オーランド まで ファーストクラス の運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-class_type O	atis_airfare
+4881	今度は、 ピッツバーグ から ボルチモア までのフライトを教えて	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4882	ニューヨーク から ミルウォーキー 、 ロサンゼルス までの ノースウェスト航空 のフライトを全部教えて	B-fromloc.city_name O B-stoploc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+4883	ワシントン から サンフランシスコ まで 金曜日 の どこにも立ち寄らない 一番早い フライトは何	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-flight_stop B-flight_mod O	atis_flight
+4884	ダラス から ボルチモア までの ファーストクラス の運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-class_type O	atis_airfare
+4885	デンバー から フィラデルフィア まで コンチネンタル で飛ぶ	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+4886	ボルチモア から ダラス までの ファーストクラス の運賃をもう一度教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-class_type O	atis_airfare
+4887	デトロイト から シカゴ までの ミッドウェスト エクスプレスのフライトを全部教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+4888	アトランタ から ボストン まで 八月 八日 午後 6 時 から 午後 10 時 の間に出発するフライトを一覧表示して	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number B-depart_time.start_time I-depart_time.start_time I-depart_time.start_time O B-depart_time.end_time I-depart_time.end_time I-depart_time.end_time O	atis_flight
+4889	フィラデルフィア から デンバー までの 午後 のフライトの情報	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+4890	素晴らしい、今度は 四月 二十日 の ワシントン から デンバー までを探したい、 午前 5 時 ごろ の 一番安い 運賃のフライトはある	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.time I-depart_time.time B-depart_time.time_relative O B-cost_relative O	atis_flight
+4891	デンバー から フィラデルフィア までの 土曜日 のフライトが必要	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+4892	ウェストチェスター郡 から シンシナティ までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4893	月曜日 の デンバー から フィラデルフィア までの利用可能なのは何便	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4894	ニューアーク から LA まで 午後 3 時 以降 に出発する コーチ 運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-class_type O	atis_airfare
+4895	ワシントン から ダラス まで飛ぶ 午前 の デルタ のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O B-airline_name O	atis_flight
+4896	アトランタ と ボストン 間を旅行したいので、 最安 運賃を知りたい	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_flight
+4897	ボストン から アトランタ までの 最初 のフライト情報を教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+4898	アメリカン航空 は ボストン から サンフランシスコ まで飛んでる	B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4899	ダラス から タンパ まで行くのは何便	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4900	ありがとう、 来週 の 水曜日 の 夕方 に ダラス から サンフランシスコ にも行く必要がある	O B-depart_date.date_relative O B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4901	ワシントン DC の空港を教えて	B-city_name B-state_code O	atis_airport
+4902	ダラス から デンバー まで 往復 の 最安の 運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-round_trip O B-cost_relative O	atis_airfare
+4903	オーケー、 五月 四日 午前 早く 8 時 ごろ に出発して アトランタ から デンバー まで行きたい	O B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day B-depart_time.period_mod B-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4904	サンフランシスコ から フィラデルフィア までの アメリカン航空 のフライトを一覧表示して	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+4905	運賃コード QO はどんな意味	O B-fare_basis_code O	atis_abbreviation
+4906	デンバー から サンフランシスコ までの 819 便はある	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time O	atis_flight
+4907	デンバー から ボルチモア まで飛ぶ 七月 四日 到着の 一番早い ユナイテッド航空 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-arrive_date.month_name B-arrive_date.day_number O B-flight_mod B-airline_name O	atis_flight
+4908	四月 六日 早 朝 の タンパ から シャーロット までのフライトを予約したい	B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4909	オークランド から ダラス までの 午前 のフライト	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+4910	ニューヨーク から マイアミ までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4911	ダラスフォートワース を出発する ボストン までの 午後 6 時 以降 のフライトの 出発時間 を一覧表示して	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-flight_time O	atis_flight
+4912	ピッツバーグ から ロサンゼルス まで 木曜日 午後 5 時 以降 に出発するフライトを一覧表示して	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+4913	ボルチモア から ボストン まで、できれば 午前 早く の飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.period_mod O	atis_flight
+4914	オークランド から フィラデルフィア まで フィラデルフィア に 土曜日 正午 前 に到着する 機内食 を提供するフライトを全部教えて	B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name O B-depart_date.day_name B-arrive_time.time B-arrive_time.time_relative O B-meal O	atis_flight
+4915	六月 一日 の シカゴ から シアトル までのフライトを予約したい	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4916	ダラス から ボルチモア までの エコノミー の運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-economy O	atis_airfare
+4917	ピッツバーグ の レンタカー の運賃を一覧表示してくれる	B-city_name O B-transport_type O	atis_ground_fare
+4918	ピッツバーグ から ボストン まで 正午 から 5 時 の間に出発するフライトはある	B-fromloc.city_name O B-toloc.city_name O B-depart_time.start_time O B-depart_time.end_time I-depart_time.end_time O	atis_flight
+4919	ニューアーク から クリーブランド まで 午後 5 時 に出発する 毎日 のフライト	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time O B-flight_days O	atis_flight
+4920	ボストン から オークランド までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4921	セントピーターズバーグ から トロント まで 月曜日 に出発するフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+4922	ボストン と アトランタ 間の航空会社のフライトをすべて一覧表示してくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4923	ボストン から デンバー まで デルタ航空 のフライトはある	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+4924	十二月 二十七日 の オーランド から インディアナポリス までのフライトと運賃を教えて	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airfare
+4925	日曜日 に到着する ニューヨーク から ベガス までの ノンストップ を全部教えて	B-arrive_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+4926	ボストン を出発して フィラデルフィア に 午前 7 時 以前 に到着するのは何便	B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+4927	ボストン から サンフランシスコ まで 午後 のいつでも出発する飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+4928	シンシナティ から ダラス までの 417 便	B-fromloc.city_name O B-toloc.city_name O B-flight_number O	atis_flight
+4929	ヒューストン から メンフィス までの 六月 二十九日 のフライトを一覧表示して	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O	atis_flight
+4930	ダラス から サンフランシスコ までのフライトを一覧表示して	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4931	八月 十九日 デンバー を出発する ピッツバーグ までの 月曜日 のフライトを繰り返してくれる	B-depart_date.month_name B-depart_date.day_number B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+4932	コンチネンタル は シカゴ からどこに飛んでいる	B-airline_name O B-fromloc.city_name O	atis_flight
+4933	デンバー空港 から デンバー 市内までの利用可能な空港アクセスは何	B-fromloc.airport_name O B-toloc.city_name O	atis_ground_service
+4934	デルタ で カンザスシティ から ソルトレイクシティ まで 明日 の 午後 8 時 ごろ 到着	B-airline_name O B-fromloc.city_name O B-toloc.city_name O B-arrive_date.today_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+4935	ボルチモア から サンフランシスコ まで デンバー に立ち寄る TWA のフライトはある	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O B-airline_code O	atis_flight
+4936	水曜日 の フェニックス から ニューアーク まで	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4937	ニューアーク から クリーブランド まで	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4938	フェニックス を出発するのは何便	B-fromloc.city_name O	atis_flight
+4939	ピッツバーグ から デンバー までのフライト情報	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4940	デンバー から フィラデルフィア までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4941	デンバー の空港アクセスを教えて	B-city_name O	atis_ground_service
+4942	ボストン から ワシントン DC まで飛んでいるのはどの航空会社	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_airline
+4943	オーケー、 ダラス を出発する フィラデルフィア までのフライトについて教えてくれる、 ダラス を出発する フィラデルフィア までの 一番遅い フライトはある	O B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+4944	ボストン から デンバー までの 八月 二日 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O	atis_flight
+4945	ボストン を出発する ユナイテッド のフライトを全部教えて	B-fromloc.city_name O B-airline_name O	atis_flight
+4946	八月 二十七日 に ボルチモア を出発する サンフランシスコ までの 747 の 最初 のフライトを教えてくれる	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-aircraft_code O B-flight_mod O	atis_flight
+4947	水曜日 午後 と 木曜日 の 午前 の アトランタ から ボストン までのフライト情報を教えてくれる	B-depart_date.day_name B-depart_time.period_of_day O B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4948	ボストン から ピッツバーグ まで 月曜日 午前 に出発するフライトを全部教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+4949	サンフランシスコ から ボストン までの デルタ のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+4950	ボルチモア から オークランド までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4951	クリーブランド から ダラス まで 正午 前 に出発するフライトで使用されている航空機の種類は何	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time B-depart_time.time_relative O	atis_aircraft
+4952	とてもいい、シナリオ三に取り組んでいて、 ワシントン DC から ジョージア の アトランタ までの 727 便に興味がある	O B-fromloc.city_name B-fromloc.state_code O B-toloc.state_name O B-toloc.city_name O B-aircraft_code O	atis_flight
+4953	DC から ソルトレイクシティ までのフライト	B-fromloc.state_code O B-toloc.city_name O	atis_flight
+4954	ワシントン から サンフランシスコ まで旅行したい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4955	ボストン 、 DC 、 ダラス でサービスを提供する航空会社はある	B-fromloc.city_name O B-fromloc.state_code O B-fromloc.city_name O	atis_airline
+4956	DL が表すのはどの航空会社	B-airline_code O	atis_airline
+4957	デンバー から フィラデルフィア までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4958	ピッツバーグ から ダラス までの ピッツバーグ を 正午 から 午後 2 時 の間に出発する 最安 の 片道 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-depart_time.start_time O B-depart_time.end_time I-depart_time.end_time I-depart_time.end_time O B-cost_relative O B-round_trip O	atis_flight
+4959	ボルチモア から ダラス までの ファーストクラス のあるフライトを全部教えて	B-fromloc.city_name O B-toloc.city_name O B-class_type O	atis_flight
+4960	ダラス から ボストン までの 一番早い 飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+4961	ピッツバーグ から デンバー までのフライトの コーチ 運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-class_type O	atis_airfare
+4962	ボストン を出発した時に アトランタ での滞在時間が最大になると同時に当 日 に戻ることができる ボストン と アトランタ の間で利用できるのは何便	B-fromloc.city_name O B-toloc.city_name O B-return_date.date_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4963	フィラデルフィア から ジョージア の アトランタ までのフライトを教えて	B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+4964	デンバー から サンフランシスコ まで行くつもり	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4965	ボルチモア から シアトル までのフライトがあるのはどの航空会社	B-fromloc.city_name O B-toloc.city_name O	atis_airline
+4966	ミルウォーキー から オーランド までの 水曜日 正午 以降 、 木曜日 正午 前 のフライトを全部教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.time B-depart_time.time_relative O B-depart_date.day_name B-depart_time.time B-depart_time.time_relative O	atis_flight
+4967	ピッツバーグ まで行くのはどの航空会社	B-toloc.city_name O	atis_airline
+4968	フィラデルフィア から サンフランスコ まで飛んで、 ダラス でストップオーバーしたい	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+4969	フォートワース 市内で利用可能な空港アクセスは何	B-city_name O	atis_ground_service
+4970	ダラス から ボルチモア までのフライトは何	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4971	ヒューストン から ラスベガス まで ノンストップ の 往復 運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O B-round_trip O	atis_flight
+4972	サンフランシスコ から ピッツバーグ まで 日曜日 のフライトを全部一覧表示してくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+4973	フィラデルフィア から ダラス まで アトランタ に立ち寄る飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+4974	デンバー から ピッツバーグ までの デルタ航空 のフライトの航空運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_airfare
+4975	デンバー から ボルチモア までの ダラス 経由のフライトはある	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+4976	デンバー に出入りして飛んでいるのはどの航空会社	B-city_name O	atis_airline
+4977	ボストン から サンフランシスコ まで飛んでいる コンチネンタル 便は デンバー に立ち寄る	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-stoploc.city_name O	atis_flight
+4978	デンバー から サンフランシスコ までの デルタ フライトはある	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight

@@ -1,0 +1,894 @@
+id	utterance	slot_labels	intent
+1	我想查找从 夏洛特 飞往 拉斯维加斯 并经停 圣路易斯 的航班	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+2	我需要一张 四月 一号 早上 7 点 之前 起飞的从 塔科马 飞往 圣何塞 的机票	O B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+3	我需要 四月 一号 从 菲尼克斯 飞往 圣地亚哥 的航班	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4	我需要 四月 一号 从 菲尼克斯 飞往 圣地亚哥 的 单程 航班	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+5	我需要 四月 一号 达美航空 从 奥兰多 飞往 盐湖城 的航班	O B-depart_date.month_name B-depart_date.day_number B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+6	我需要 周三 晚上 或 周四 早上 从 多伦多 飞往 纽瓦克 的 单程 航班	O B-depart_date.day_name B-depart_time.period_of_day O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+7	我需要 周一 早上 从 哥伦布 飞往 印第安纳波利斯 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+8	四月 六号 周三 下午 3 点 以后 ，我需要从 长滩 飞往 哥伦布	B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+9	四月 六号 周三 中午 12 点 以后 ，我需要从 长滩 飞往 哥伦布	B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+10	四月 六号 周三 是否有任何从 长滩 飞往 哥伦布 的航班	B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+11	查找从 孟菲斯 飞往 塔科马 并供应 晚餐 的航班	O B-fromloc.city_name O B-toloc.city_name O B-meal_description O	atis_flight
+12	下 周三 从 堪萨斯城 飞往 芝加哥 的航班应在 晚上 7 点 左右 抵达 芝加哥 并于 周四 返航	B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-toloc.city_name O B-return_date.day_name O	atis_flight
+13	显示 下 周三 从 堪萨斯城 飞往 芝加哥 并于 晚上 7 点 之前 抵达 芝加哥 的航班和价格	O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-toloc.city_name O	atis_flight#atis_airfare
+14	从 迈阿密 飞往 芝加哥 并于 下午 5 点 左右 抵达 芝加哥 的 美国航空 的航班	O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-toloc.city_name O B-airline_name O	atis_flight
+15	查找 下 周六 飞往 纽约市 的航班	O B-arrive_date.date_relative B-arrive_date.day_name O B-toloc.city_name O	atis_flight
+16	查找 四月 九日 周六 从 盐湖城 飞往 纽约 的 直飞 航班	O B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+17	显示 今天 从 伯班克 飞往 密尔沃基 的航班	O B-depart_date.today_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+18	显示 明天 晚上 从 密尔沃基 飞往 圣路易斯 的航班	O B-depart_date.today_relative B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+19	显示 周六 晚上 从 圣路易斯 飞往 伯班克 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+20	显示 周一 从 伯班克 飞往 圣路易斯 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+21	显示 周一 从 伯班克 飞往 密尔沃基 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+22	显示 周二 晚上 从 密尔沃基 飞往 圣路易斯 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+23	显示 周三 晚上 从 圣路易斯 飞往 伯班克 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+24	有哪些航班从 堪萨斯城 飞往 洛杉矶	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+25	有哪些航班从 拉斯维加斯 飞往 洛杉矶	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+26	四月 九号 有哪些航班从 堪萨斯城 飞往 洛杉矶	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name	atis_flight
+27	有哪些航班从 拉斯维加斯 飞往 加州 的 洛杉矶 并于 四月 九日 下午 4 点 到 5 点 之间抵达	O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-arrive_date.month_name B-arrive_date.day_number B-arrive_time.start_time I-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time O	atis_flight
+28	全美航空 的哪些航班从 奥兰多 飞往 克利夫兰	B-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+29	四月 五号 有哪些航班从 克利夫兰 飞往 印第安纳波利斯	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name	atis_flight
+30	四月 五号 有哪些航班从 印第安纳波利斯 飞往 圣地亚哥	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name	atis_flight
+31	四月 五号 有哪些航班从 克利夫兰 飞往 印第安纳波利斯	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name	atis_flight
+32	有哪些航班从 纳什维尔 飞往 塔科马	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+33	塔科马机场 是否提供从机场到市中心的交通工具	B-airport_name O	atis_ground_service
+34	有哪些航班从 塔科马 飞往 圣何塞	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+35	从 纳什维尔 到 塔科马 的航班周几飞	O B-fromloc.city_name O B-toloc.city_name O	atis_day_name
+36	有哪些航班从 塔科马 飞往 圣何塞	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+37	从 圣何塞 到 纳什维尔 的航班周几飞	O B-fromloc.city_name O B-toloc.city_name O	atis_day_name
+38	有哪些航班从 塔科马 飞往 圣何塞	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+39	我需要从 波士顿 飞往 奥兰多 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+40	有没有从 波士顿 飞往 奥兰多 途径 纽约 的航班	O B-fromloc.city_name O B-toloc.city_name B-connect B-stoploc.city_name O	atis_flight
+41	有没有从 波士顿 飞往 奥兰多 途径 哥伦布 的航班	O B-fromloc.city_name O B-toloc.city_name B-connect B-stoploc.city_name O	atis_flight
+42	这趟航班是否供应 晚餐	O B-meal_description	atis_flight
+43	我需要从 夏洛特 飞往 迈阿密 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+44	我需要从 迈阿密 飞往 多伦多 的 直飞 航班	O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+45	我需要从 多伦多 飞往 圣路易斯 的 直飞 航班	O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+46	我需要从 多伦多 飞往 圣路易斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+47	我需要从 圣路易斯 飞往 夏洛特 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+48	我需要 联合航空 从 拉瓜迪亚 飞往 圣何塞 的航班	O B-airline_name O B-fromloc.airport_name O B-toloc.city_name O	atis_flight
+49	我需要从 坦帕 飞往 密尔沃基 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+50	我需要从 密尔沃基 飞往 西雅图 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+51	美国航空 从 坦帕 飞往 密尔沃基 的 811 航班提供什么 餐饮	B-airline_name O B-fromloc.city_name O B-toloc.city_name O B-flight_number O B-meal	atis_meal
+52	美国航空 从 密尔沃基 飞往 西雅图 的 665 673 航班提供什么 餐饮	B-airline_name O B-fromloc.city_name O B-toloc.city_name O B-flight_number I-flight_number O B-meal	atis_meal
+53	我需要从 孟菲斯 飞往 拉斯维加斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+54	我需要从 拉斯维加斯 飞往 安大略 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+55	我需要从 安大略 飞往 孟菲斯的航班	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+56	哪些航班从 密尔沃基 飞往 坦帕 经停 纳什维尔	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name	atis_flight
+57	哪些航班 下 周六 午 后 离开 纽瓦克 飞往 洛杉矶	O B-depart_date.date_relative B-depart_date.day_name B-depart_time.period_of_day B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+58	哪些航班从 底特律 飞往 圣彼得堡 并于 上午 9 点 左右 抵达	O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+59	西北航空 的哪些航班从 底特律 飞往 圣彼得堡	B-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+60	哪些航班 下 周二 从 芝加哥 飞往 底特律 并于 下午 6 点 左右 抵达	O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+61	显示 下 周二 出发并于 次日 返航的 芝加哥 飞往 底特律 的 往返 航班	O B-depart_date.date_relative B-depart_date.day_name O B-return_date.date_relative O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+62	哪些 往返 航班 下 周二 下午 6 点 左右 离开 芝加哥 飞往 底特律	O B-round_trip O B-depart_date.date_relative B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+63	哪些 往返 航班 下 周二 从 芝加哥 出发并于 下午 6 点 左右 抵达 底特律	O B-round_trip O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-toloc.city_name	atis_flight
+64	哪些航班 周一 从 蒙特利尔 出发并于 早上 抵达 芝加哥	O B-depart_date.day_name O B-fromloc.city_name O B-arrive_time.period_of_day O B-toloc.city_name	atis_flight
+65	哪些航班在 四月 十二号 从 芝加哥 出发并于 早上 抵达 印第安纳波利斯	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-arrive_time.period_of_day O B-toloc.city_name	atis_flight
+66	哪些航班在 四月 十三号 星期三 从 印第安纳波利斯 出发并于 早上 抵达 蒙特利尔	O B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name O B-fromloc.city_name O B-arrive_time.period_of_day O B-toloc.city_name	atis_flight
+67	哪些航班在 四月 十二号 从 印第安纳波利斯 出发并于 上午 10 点 左右 抵达 蒙特利尔	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-toloc.city_name	atis_flight
+68	我想从 长滩 飞往 圣路易斯 ，经停 达拉斯 ，并且希望航班上供应 午餐	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O B-meal_description	atis_flight
+69	下 周三 我想从 堪萨斯城 前往 芝加哥 并于 晚上 7 点 左右 抵达 芝加哥	B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-toloc.city_name	atis_flight
+70	我想在 晚上 7 点 左右 从 芝加哥 返回 堪萨斯城	O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+71	我想 今天 下午 乘坐 美国航空 从 辛辛那提 飞往 伯班克 的航班	O B-depart_date.today_relative B-depart_time.period_of_day O B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+72	我想 周日 晚上 乘坐航班从 魁北克 的 蒙特利尔 前往 加州 的 圣地亚哥	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name	atis_flight
+73	周日 有哪些航班从 魁北克 的 蒙特利尔 飞往 加州 的 圣地亚哥	B-depart_date.day_name O B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name	atis_flight
+74	我需要 周二 下午 从 加州 的 圣地亚哥 飞往 印第安纳州 的 印第安纳波利斯 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+75	我需要 周四 上午 从 印第安纳波利斯 飞往 多伦多 的 直飞 航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+76	我想在 周五 上午 从 多伦多 飞到 蒙特利尔	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+77	我需要 今天 清 晨 从 洛杉矶 飞往 夏洛特 的航班	O B-depart_date.today_relative B-depart_time.period_of_day B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+78	我需要 周三 晚上 从 夏洛特 飞往 纽瓦克 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+79	我需要 周五 晚上 从 纽瓦克 飞往 洛杉矶 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+80	查找从 坦帕 飞往 蒙特利尔 经停 纽约 的航班	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+81	请查找一趟从 佛罗里达州 的 迈阿密 飞往 内华达州 的 拉斯维加斯 并于 下午 4 点 之前 抵达的航班	O B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+82	请查找一趟从 拉斯维加斯 飞往 密歇根 的航班	O B-fromloc.city_name O B-toloc.state_name O	atis_flight
+83	请查找一趟从 密歇根州 的 底特律 飞往 圣彼得堡 并于 晚上 10 点 之前 抵达的航班	O B-fromloc.state_name O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+84	请查找一趟 周四 从 圣彼得堡 飞往 迈阿密 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+85	请查找 阿拉斯加航空 从 圣地亚哥 飞往 多伦多 的航班	O B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+86	请查找 明天 从 哥伦布 飞往 休斯顿 并在 纳什维尔 短暂停留的航班	O B-depart_date.today_relative O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+87	请查找从 纳什维尔 飞往 休斯顿 并供应 晚餐 的 直飞 航班	O B-fromloc.city_name O B-toloc.city_name O B-meal_description O B-flight_stop O	atis_flight
+88	请查找从 堪萨斯城 飞往 纽瓦克 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+89	请查找从 堪萨斯城 飞往 纽瓦克 再飞往 奥兰多 ，然后返回 堪萨斯城 的航班	O B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name O B-toloc.city_name O	atis_flight
+90	请查找从 堪萨斯城 飞往 纽瓦克 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+91	请查找从 纽瓦克 飞往 奥兰多 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+92	请查找从 奥兰多 飞往 堪萨斯城 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+93	我需要 下午 从 哥伦布 飞往 菲尼克斯 经由 辛辛那提 的航班	O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+94	我想知道 洛杉矶 有哪些机场	O B-city_name O	atis_airport
+95	伯班克 机场是否有从 堪萨斯城 飞来的航班	B-toloc.city_name O B-fromloc.city_name O	atis_flight
+96	周六 下午 有哪些航班从 堪萨斯城 抵达 伯班克	B-arrive_date.day_name B-arrive_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+97	有哪些航班在 四月 二十三号 周六 下午 从 拉斯维加斯 飞往 伯班克	O B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+98	有哪些航班从 奥兰多 飞往 克利夫兰 并在 晚上 10 点 左右 抵达	O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+99	四月 二十一号 傍晚 有哪些航班从 印第安纳波利斯 飞往 圣地亚哥	B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+100	四月 二十一号 上午 有哪些航班从 克利夫兰 飞往 印第安纳波利斯	B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+101	四月 二十一号 上午 有哪些航班从 纳什维尔 飞往 塔科马	B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+102	四月 二十二号 上午 有哪些航班从 塔科马 飞往 圣何塞	B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+103	四月 二十三号 上午 有哪些航班从 圣何塞 飞往 纳什维尔	B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+104	底特律 和 威斯特徹斯特县 之间 最贵 的 单程 票价是多少	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_airfare
+105	哪些航空公司在 底特律 与 威斯特徹斯特县 之间飞行	O B-fromloc.city_name O B-toloc.city_name O	atis_airline
+106	从 底特律 飞往 威斯特徹斯特县 的 出发时间 是几点	O B-fromloc.city_name O B-toloc.city_name O B-flight_time O	atis_flight_time
+107	最晚一班 从 巴尔的摩 飞往 奥克兰 并供应 晚餐 的航班是哪一班	B-flight_mod O B-fromloc.city_name O B-toloc.city_name O B-meal_description O	atis_flight
+108	最早一班 从 巴尔的摩 飞往 奥克兰 并供应 早餐 的航班是哪一班	B-flight_mod O B-fromloc.city_name O B-toloc.city_name O B-meal_description O	atis_flight
+109	美国西部航空 的 头等舱 航班是从 波士顿 飞往哪些城市	B-airline_name O B-class_type O B-fromloc.city_name O	atis_city
+110	哪些航空公司有从 波士顿 飞往 圣地亚哥 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_airline
+111	从 达拉斯 飞往 坦帕 最晚一班 供应 早餐 的航班是哪一班	O B-fromloc.city_name O B-toloc.city_name B-flight_mod O B-meal_description O	atis_flight
+112	显示所有从 西雅图 飞往 波士顿 并在 明尼阿波利斯 中途停留的 汉莎航空 的航班	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O B-airline_name O	atis_flight
+113	显示所有从 西雅图 飞往 波士顿 并在 明尼阿波利斯 中途停留的航班	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+114	列出从 费城 飞往 旧金山 并在 达拉斯 中途停留的航班	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+115	显示 波士顿 和 丹佛 之间的 转机 航班及其机型	O B-fromloc.city_name O B-toloc.city_name O B-connect O	atis_flight
+116	显示 上午 从 费城 飞往 沃思堡 的所有航班	O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+117	显示从 堪萨斯城 飞往 圣保罗 的所有航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+118	显示 西北航空 从 堪萨斯城 飞往 圣保罗 的 608 航班	O B-airline_name O B-fromloc.city_name O B-toloc.city_name O B-flight_number O	atis_flight
+119	显示 周一 从 印第安纳波利斯 飞往 夏洛特 的所有航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+120	夏洛特机场 夏洛特机场 与 夏洛特 市中心之间的地面交通是什么	B-airport_name B-city_name O B-city_name O	atis_ground_service
+121	显示 周一 下午 2 点 或 晚些时候 起飞的从 夏洛特 飞往 明尼阿波利斯 的所有航班	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+122	显示 周二 上午 从 夏洛特 飞往 明尼阿波利斯 的所有航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+123	显示 周二 上午 从 夏洛特 直飞 明尼阿波利斯 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name B-connect B-toloc.city_name O	atis_flight
+124	显示 全美航空 周一 从 夏洛特 飞往 明尼阿波利斯 的 1500 航班	O B-airline_code B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-flight_number O	atis_flight
+125	显示所有 周二 下午 2 点 以后 起飞从 明尼阿波利斯 飞往 印第安纳波利斯 的航班	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+126	显示从 明尼阿波利斯 飞往 印第安纳 的航班	O B-fromloc.city_name O B-toloc.state_name O	atis_flight
+127	显示 周二 下午 从 明尼阿波利斯 飞往 印第安纳波利斯 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+128	显示 全美航空 周一 从 印第安纳波利斯 飞往 夏洛特 的 1207 航班，以及全美航空 周一 从 夏洛特 飞往 明尼阿波利斯 的 1500 航班，还有 环球航空 从 明尼阿波利斯 飞往 印第安纳波利 的 639 航班	O B-airline_code B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-flight_number O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-flight_number O B-airline_code O B-fromloc.city_name O B-toloc.city_name O B-flight_number O	atis_flight
+129	显示从 拉斯维加斯 飞往 纽约市 的所有航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+130	有哪些不同的航空公司从 拉斯维加斯 飞往 纽约市	O B-fromloc.city_name O B-toloc.city_name	atis_airline
+131	显示 美国西部航空 和 环球航空 周五 从 拉斯维加斯 飞往 jfk 的所有航班	O B-airline_name O B-airline_code B-depart_date.day_name O B-fromloc.city_name O B-toloc.airport_code O	atis_flight
+132	明天 下午 6 点 以后 从 塔科马 飞往 迈阿密 的航班有哪些	B-depart_date.today_relative B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+133	我需要在 六月 十号 从 圣地亚哥 飞往 休斯顿	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name	atis_flight
+134	六月 十号 下午 6 点 以后 美国航空 有没有从 休斯顿 飞往 纽瓦克 的航班	B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+135	六月 十号 下午 3 点 以后 美国航空 有没有从 休斯顿 飞往 纽瓦克 的航班	B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+136	我需要在 六月 六号 下午 6 点 之前 从 辛辛那提 飞往 丹佛	O B-arrive_date.month_name B-arrive_date.day_number B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+137	丹佛 有什么地面交通	B-city_name O	atis_ground_service
+138	乘 出租车 到 丹佛 的车费是多少	O B-transport_type O B-city_name O	atis_ground_fare
+139	丹佛 地面交通的费用是多少	B-city_name O	atis_ground_fare
+140	我需要在 六月 七号 下午 3 点 以后 从 丹佛 飞往 威斯特徹斯特县	O B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+141	威斯特徹斯特县 有什么地面交通	B-city_name O	atis_ground_service
+142	我需要搭乘 联合航空 六月 八号 下午 3 点 以后 的航班从 威斯特徹斯特县 飞往 辛辛那提	O B-airline_name B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+143	联合航空 六月 八号 有哪些航班从 威斯特徹斯特县 飞往 辛辛那提	B-airline_name B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name	atis_flight
+144	六月 八号 有哪些航班从 威斯特徹斯特县 飞往 辛辛那提	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name	atis_flight
+145	全美航空 六月 六号 有 辛辛那提 飞往 丹佛 的航班吗	B-airline_name B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+146	列出 六月 六号 从 辛辛那提 飞往 丹佛 的航班	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+147	列出 六月 七号 从 丹佛 飞往 威斯特徹斯特县 的航班	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+148	列出 六月 八号 从 威斯特徹斯特县 飞往 辛辛那提 的航班	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+149	列出 六月 六号 从 辛辛那提 飞往 威斯特徹斯特县 的航班	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+150	列出 六月 七号 从 威斯特徹斯特县 飞往 丹佛 的航班	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+151	列出 六月 八号 从 丹佛 飞往 辛辛那提 的航班	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+152	列出 六月 六号 下午 4 点 以后 从 丹佛 飞往 辛辛那提 的航班	O B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+153	列出 六月 七号 从 辛辛那提 飞往 威斯特徹斯特县 的航班	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+154	列出 六月 七号 下午 5 点 以后 起飞的从 威斯特徹斯特县 飞往 辛辛那提 的航班	O B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+155	哪些航空公司有 六月 六号 上午 6 点 到 10 点 之间从 爱田 起飞的航班	O B-depart_date.month_name B-depart_date.day_number B-depart_time.start_time I-depart_time.start_time I-depart_time.start_time O B-depart_time.end_time I-depart_time.end_time O B-fromloc.airport_name O	atis_airline
+156	有哪些航班 六月 六号 抵达 爱田	O B-arrive_date.month_name B-arrive_date.day_number O B-toloc.airport_name	atis_flight
+157	列出 早上 9 点 之前 从 蒙特利尔 飞往 费城 的航班	O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+158	列出从 克利夫兰 飞往 孟菲斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+159	列出从 孟菲斯 飞往 克利夫兰 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+160	列出从 丹佛 飞往 巴尔的摩 并于 七月 一号 抵达的航班	O B-fromloc.city_name O B-toloc.city_name O B-arrive_date.month_name B-arrive_date.day_number O	atis_flight
+161	列出从 达拉斯 飞往 巴尔的摩 并于 七月 一号 抵达的航班	O B-fromloc.city_name O B-toloc.city_name O B-arrive_date.month_name B-arrive_date.day_number O	atis_flight
+162	列出从 匹兹堡 飞往 巴尔的摩 并于 七月 一号 抵达的航班	O B-fromloc.city_name O B-toloc.city_name O B-arrive_date.month_name B-arrive_date.day_number O	atis_flight
+163	列出 加拿大国际航空 的航班	O B-airline_name O	atis_flight
+164	加拿大国际航空 有多少航班使用 j31	B-airline_name O B-aircraft_code	atis_quantity
+165	加拿大国际航空 有多少航班使用 320 飞机	B-airline_name O B-aircraft_code O	atis_quantity
+166	加拿大国际航空 有多少航班使用 dh8 飞机	B-airline_name O B-aircraft_code O	atis_quantity
+167	显示 美国航空 从 圣彼得堡 飞往 加拿大 的 安大略 并在 圣路易斯 短暂停留的航班	O B-airline_name O B-fromloc.city_name O B-toloc.country_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+168	显示 美国航空 从 圣彼得堡 飞往 加州 的 安大略 并经停 圣路易斯 的航班	O B-airline_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+169	哪个机场离 加州 的 安大略 最近	O B-state_name O B-city_name B-mod	atis_airport
+170	显示从 休斯顿 飞往 奥兰多 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+171	显示从 奥兰多 飞往 休斯顿 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+172	显示从 底特律 飞往 拉斯维加斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+173	显示从 拉斯维加斯 到 底特律 最便宜 的 经济舱 往返 票价	O B-fromloc.city_name O B-toloc.city_name B-cost_relative O B-class_type B-round_trip O	atis_airfare
+174	显示 环球航空 从 拉斯维加斯 到 底特律 最便宜 的 经济舱 往返 票价	O B-airline_code O B-fromloc.city_name O B-toloc.city_name B-cost_relative O B-class_type B-round_trip O	atis_airfare
+175	显示给 经济舱 乘客供应 零食 的 达美航空 航班	O B-compartment O B-meal_description O B-airline_name O	atis_flight
+176	餐饮代码 sb 表示什么	O B-meal_code O	atis_abbreviation
+177	上午 9:50 抵达 旧金山 的 dl 468 提供什么 餐点	B-arrive_time.time I-arrive_time.time O B-toloc.city_name O B-airline_code B-flight_number O B-meal	atis_meal
+178	显示从 坦帕 飞往 旧金山 的 达美航空 的航班	O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+179	显示 达美航空 的 486 航班	O B-airline_name O B-flight_number O	atis_flight
+180	列出 宝塔航空 每周一 的航班	O B-airline_name B-day_name O	atis_flight
+181	列出 宝塔航空 所有供应 餐点 的航班	O B-airline_name O B-meal O	atis_flight
+182	有哪些航班从 巴尔的摩 出发	O B-fromloc.city_name O	atis_flight
+183	有哪些航班从 巴尔的摩 出发并于 周五 抵达 旧金山	O B-fromloc.city_name O B-arrive_date.day_name O B-toloc.city_name	atis_flight
+184	有哪些航班 早上 从 辛辛那提 出发飞往 坦帕	O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+185	有哪些航班从 坦帕 出发并于 晚间 抵达 辛辛那提	O B-fromloc.city_name O B-arrive_time.period_of_day O B-toloc.city_name	atis_flight
+186	有哪些航班 傍 晚 从 坦帕 出发飞往 辛辛那提	O B-depart_time.period_of_day B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+187	有哪些航班从 费城 出发飞往 亚特兰大	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+188	有哪些航班从 亚特兰大 出发飞往 多伦多	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+189	有哪些航班从 多伦多 出发飞往 华盛顿 特区	O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code	atis_flight
+190	有哪些航班从 纽约 出发并于 上午 10 点 之后 抵达 洛杉矶	O B-fromloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-toloc.city_name	atis_flight
+191	纽约 的 拉瓜迪亚 距离市中有多远	B-city_name O B-airport_name O	atis_distance
+192	多伦多国际机场 距离市中心有多远	B-airport_name O	atis_distance
+193	洛杉矶国际机场 距离市中心有多远	B-airport_name O	atis_distance
+194	旧金山国际机场 距离市中心有多远	B-airport_name O	atis_distance
+195	波士顿 的 豪华轿车 服务要多少钱	B-city_name O B-transport_type O	atis_ground_fare
+196	拉瓜迪亚 的 豪华轿车 服务要多少钱	B-airport_name O B-transport_type O	atis_ground_fare
+197	多伦多国际机场 的 豪华轿车 服务要多少钱	B-airport_name O B-transport_type O	atis_ground_fare
+198	洛杉矶 的 豪华轿车 服务要多少钱	B-city_name O B-transport_type O	atis_ground_fare
+199	哪些航空公司在 华盛顿 特区 和 俄亥俄 的 哥伦布 之间飞行	O B-fromloc.city_name B-fromloc.state_code O B-toloc.state_name O B-toloc.city_name O	atis_airline
+200	华盛顿 特区 和 俄亥俄 的 哥伦布 之间有哪些航班	B-fromloc.city_name B-fromloc.state_code O B-toloc.state_name O B-toloc.city_name O	atis_flight
+201	华盛顿 特区 和 俄亥俄 的 哥伦布 之间有哪些航班	B-fromloc.city_name B-fromloc.state_code O B-toloc.state_name O B-toloc.city_name O	atis_flight
+202	华盛顿 和 哥伦布 之间所有航班的票价是多少	B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+203	全美航空 在 夏洛特机场 有多少不同类型的飞机	B-airline_name O B-city_name O	atis_aircraft
+204	列出 全美航空 在 周六 下午 1 点 抵达 夏洛特 的所有航班	O B-airline_name O B-arrive_date.day_name B-arrive_time.time I-arrive_time.time I-arrive_time.time O B-toloc.city_name O	atis_flight
+205	从印第安纳的 印第安纳波利斯 飞往 孟菲斯 的 头等舱 往返 机票要多少钱	O B-fromloc.city_name O B-toloc.city_name O B-class_type B-round_trip O	atis_airfare
+206	列出从 孟菲斯 飞往 迈阿密 的所有航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+207	列出 周一 早上 从 印第安纳波利斯 飞往 孟菲斯 的所有航班及其票价	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airfare
+208	列出 周三 晚上 从 孟菲斯 飞往 迈阿密 的所有航班及其票价	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airfare
+209	列出 迈阿密 与 印第安纳波利斯 之间的所有航班及其票价	O B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airfare
+210	列出 周一 从 克利夫兰 飞往 堪萨斯城 的所有航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+211	列出从 堪萨斯城 飞往 克利夫兰 的所有航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+212	列出从 克利夫兰 飞往 纳什维尔 的所有航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+213	列出 周日 从 纳什维尔 飞往 克利夫兰 的所有航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+214	列出 周日 从 克利夫兰 飞往 纳什维尔 的所有航班及其票价	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airfare
+215	有哪些航空公司从 巴尔的摩 起飞	O B-fromloc.city_name O	atis_airline
+216	有哪些航空公司从 巴尔的摩 飞往 旧金山	O B-fromloc.city_name O B-toloc.city_name	atis_airline
+217	从 巴尔的摩 飞往 旧金山 的航班需要多长时间	O B-fromloc.city_name O B-toloc.city_name O	atis_distance
+218	有哪些航班 周一 清 晨 从 堪萨斯城 飞往 亚特兰大	O B-depart_date.day_name B-depart_time.period_mod B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+219	有哪些航班从 亚特兰大 出发并于 周二 下午 2:30 左右 抵达 圣路易斯	O B-fromloc.city_name O B-arrive_date.day_name B-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-toloc.city_name	atis_flight
+220	请列出 周四 上午 10 点 以后 起飞从 圣路易斯 飞往 圣保罗 的航班	O B-depart_date.day_name B-depart_time.period_of_day B-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+221	列出 周五 晚上 从 圣保罗 飞往 堪萨斯城 并供应 一餐 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-meal O	atis_flight
+222	列出从 辛辛那提 到 坦帕 的 早 班 航班	O B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.period_of_day O	atis_flight
+223	列出从 坦帕 到 辛辛那提 的 傍 晚 航班	O B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.period_of_day O	atis_flight
+224	列出从 坦帕 到 辛辛那提 的 夜间 航班	O B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+225	列出 周五 上午 从 费城 飞往 亚特兰大 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+226	列出 周五 下午 从 亚特兰大 飞往 多伦多 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+227	列出 周六 上午 从 多伦多 飞往 华盛顿 特区 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+228	列出 周六 下午 从 华盛顿 特区 飞往 费城 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+229	列出 上午 10 点 以后 从 纽约市 飞往 洛杉矶 的 直飞 航班	O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-connect O	atis_flight
+230	列出 美国航空 从 jfk 飞往 lax 的 19 次 航班的票价	O B-airline_name O B-fromloc.airport_code O B-toloc.airport_code O B-flight_number I-flight_number O	atis_airfare#atis_flight
+231	票价代码 m 表示什么	O B-fare_basis_code O	atis_abbreviation
+232	列出从 波士顿机场 到 波士顿 市中心距离的英里数	O B-fromloc.airport_name O B-city_name O	atis_distance
+233	列出从 纽约 的 拉瓜迪亚机场 到 纽约市 中心距离的英里数	O B-fromloc.city_name O B-fromloc.airport_name O B-city_name O	atis_distance
+234	列出从 多伦多国际机场 到 多伦多 市中心距离的英里数	O B-fromloc.airport_name O B-city_name O	atis_distance
+235	列出从 旧金山国际机场 到 旧金山 市中心距离的英里数	O B-fromloc.airport_name O B-toloc.city_name O	atis_distance
+236	列出 波士顿市 豪华轿车服务 的价格	O B-city_name B-transport_type O	atis_ground_fare
+237	列出 美国航空 周五 下午 从 休斯顿 出发飞往 密尔沃基 的航班	O B-airline_name B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+238	列出 周五 下午 从 休斯顿 飞往 密尔沃基 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+239	列出 美国航空 周三 从 密尔沃基 飞往 圣何塞 的航班	O B-airline_name B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+240	列出 美国航空 周五 下午 从 圣何塞 飞往 达拉斯 的航班	O B-airline_name B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+241	列出从 达拉斯 飞往 休斯顿 并于 周日 下午 抵达的航班	O B-fromloc.city_name O B-toloc.city_name O B-arrive_date.day_name B-arrive_time.period_of_day O	atis_flight
+242	列出从 西雅图 飞往 盐湖城 的航空公司	O B-fromloc.city_name O B-toloc.city_name O	atis_airline
+243	l10 飞机有多少个座位	B-aircraft_code O	atis_capacity
+244	达美 be1 有多少个座位	B-airline_name B-aircraft_code O	atis_capacity
+245	列出从 西雅图 飞往 盐湖城 使用 达美 l10 机型的航班	O B-fromloc.city_name O B-toloc.city_name O B-airline_name B-aircraft_code O	atis_flight
+246	列出从 西雅图 飞往 盐湖城 使用 达美 be1 机型的航班	O B-fromloc.city_name O B-toloc.city_name O B-airline_name B-aircraft_code O	atis_flight
+247	列出 每天 从 波士顿 飞往 匹兹堡 的航班	O B-flight_days O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+248	列出 每天 从 匹兹堡 飞往 纽瓦克 的航班	O B-flight_days O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+249	列出 每天 从 纽瓦克 飞往 波士顿 的航班	O B-flight_days O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+250	列出 全美航空 周六 下午 1 点 从 夏洛特机场 起飞的航班	O B-airline_name B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time O B-fromloc.airport_name O	atis_flight
+251	列出 全美航空 周六 下午 1 点 左右 从 夏洛特机场 起飞的航班	O B-airline_name B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.airport_name O	atis_flight
+252	列出从 印第安纳波利斯 飞往 孟菲斯 的 头等舱 往返 票价	O B-fromloc.city_name O B-toloc.city_name O B-class_type B-round_trip O	atis_airfare
+253	票价代码 f 表示什么	O B-fare_basis_code O	atis_abbreviation
+254	列出 周三 晚上 从 孟菲斯 飞往 迈阿密 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+255	列出 周日 从 迈阿密 飞往 印第安纳波利斯 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+256	列出从 加州 的 安大略 飞往 佛罗里达州 的 奥兰多 的航班	O B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+257	列出从 加州 的 安大略 飞往 犹他州 的 盐湖城 的航班	O B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+258	列出 周一 从 加州 的 安大略 飞往 犹他州 的 盐湖城 的航班	O B-depart_date.day_name O B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+259	列出 周一 从 犹他州 的 盐湖城 飞往 亚利桑那州 的 菲尼克斯 的航班	O B-depart_date.day_name O B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+260	列出 周二 从 盐湖城 飞往 亚利桑那州 的 菲尼克斯 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+261	列出 周三 从 亚利桑那州 的 菲尼克斯 飞往 加州 的 安大略 的航班	O B-depart_date.day_name O B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+262	有哪些航空公司从 巴尔的摩 飞往 旧金山	O B-fromloc.city_name O B-toloc.city_name	atis_airline
+263	从 底特律 到 圣彼得堡 的 头等舱 往返 票价是多少	O B-fromloc.city_name O B-toloc.city_name O B-class_type B-round_trip O	atis_airfare
+264	从 底特律 到 圣彼得堡 的 头等舱 往返 票价是多少	O B-fromloc.city_name O B-toloc.city_name O B-class_type B-round_trip O	atis_airfare
+265	周一 上午 堪萨斯城 飞往 亚特兰大 的航班	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O	atis_flight
+266	周一 上午 亚特兰大 飞往 堪萨斯城 的航班	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O	atis_flight
+267	周一 上午 堪萨斯城 飞往 亚特兰大 的航班	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O	atis_flight
+268	周二 下午 2:30 之前 从 亚特兰大 飞往 圣路易斯 的航班	B-depart_date.day_name B-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+269	周四 上午 10 点 之后 从 圣路易斯 飞往 圣保罗	B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+270	圣保罗 至 堪萨斯城 周五 晚上	B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+271	克利夫兰 至 堪萨斯城 在 周一 下午 3 点 前 抵达	B-fromloc.city_name O B-toloc.city_name O B-arrive_date.day_name B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+272	堪萨斯城 飞往 克利夫兰 的航班于 周三 下午 5 点 前 抵达	B-fromloc.city_name O B-toloc.city_name O B-arrive_date.day_name B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+273	克利夫兰 飞往 纳什维尔 的航班 周五 上午	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+274	纳什维尔 飞往 克利夫兰 周日 9 点 之前	B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name B-depart_time.time I-depart_time.time B-depart_time.time_relative	atis_flight
+275	周一 上午 匹兹堡 飞往 纽瓦克 头等舱 航班	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name B-class_type O	atis_flight
+276	周三 上午 纽瓦克 飞往 洛杉矶 的航班	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O	atis_flight
+277	洛杉矶 飞往 明尼阿波利斯 周四 下午	B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+278	明尼阿波利斯 至 匹兹堡 航班	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+279	明尼阿波利斯 至 匹兹堡 头等舱 航班	B-fromloc.city_name O B-toloc.city_name B-class_type O	atis_flight
+280	我需要从 密尔沃基 飞往 奥兰多 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+281	缩写 hp 代表什么	O B-airline_code O	atis_abbreviation
+282	我需要从 安大略 飞往 塔科马 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+283	我需要从 明尼阿波利斯 飞往 圣地亚哥 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+284	我需要从 盐湖城 飞往 辛辛那提 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+285	我需要看从 辛辛那提 飞往 盐湖城 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+286	我需要从 纽约 飞往 迈阿密 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+287	我需要从 迈阿密 飞往 纽约 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+288	我需要一趟离开 旧金山 去往 圣地亚哥 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+289	我需要从 圣地亚哥 飞往 拉斯维加斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+290	我需要一趟从 圣地亚哥 飞往 拉斯维加斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+291	我需要从 拉斯维加斯 飞往 旧金山 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+292	票价代码 bn 是什么意思	O B-fare_basis_code O	atis_abbreviation
+293	我需要飞 多伦多 底特律 和 圣路易斯 的航空公司	O B-fromloc.city_name B-toloc.city_name O B-toloc.city_name O	atis_airline
+294	我需要一趟从 多伦多 飞往 底特律 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+295	我需要一趟从 底特律 飞往 圣路易斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+296	我需要一趟从 多伦多 飞往 圣路易斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+297	我需要从 旧金山 飞往 长滩 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+298	我需要离开 旧金山 去往 圣地亚哥 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+299	我需要一趟从 旧金山 飞往 圣彼得堡 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+300	显示 单程 从 密尔沃基 飞往 奥兰多 周三 下午 6 点 以后 离开的航班	O B-round_trip O B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day B-depart_time.time_relative I-depart_time.time_relative B-depart_time.time O	atis_flight
+301	显示 单程 从 密尔沃基 飞往 奥兰多 周三 的航班	O B-round_trip O B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name O	atis_flight
+302	显示从 哥伦布 飞往 芝加哥 在 上午 10 点 前 出发的 头等舱航班	O B-fromloc.city_name O B-toloc.city_name B-class_type O O O B-depart_time.time B-depart_time.time_relative O	atis_flight
+303	显示往返于 圣彼得堡 和 底特律 之间在 晚上 7 点 之前 抵达的 最便宜 的 航班	O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-cost_relative O B-round_trip	atis_flight
+304	显示从 堪萨斯城 飞往 菲尼克斯 的 直达 航班	O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+305	wn 是哪家航空公司	B-airline_code O	atis_airline
+306	显示从 纽约 飞往 迈阿密 最便宜 的 头等舱 往返航班	O B-fromloc.city_name O B-toloc.city_name B-cost_relative O B-class_type B-round_trip	atis_flight
+307	现在显示所有从 纽约 飞往 迈阿密 的 往返航班	O B-fromloc.city_name O B-toloc.city_name O B-round_trip	atis_flight
+308	显示从 旧金山 飞往 休斯顿 的 最便宜 的 单程 航班	O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_flight
+309	现在显示从 休斯顿 飞往 波士顿 的 最便宜 的 单程 航班	O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_flight
+310	显示从 休斯顿 飞往 波士顿 的 最便宜 的 往返 票价	O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_airfare
+311	显示从 旧金山 飞往 休斯顿 的 最便宜 的 往返 票价	O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_airfare
+312	显示 1994 年 二月 二十八日 从 旧金山 飞往 休斯顿 的 最便宜 的 往返 票价	O B-depart_date.year I-depart_date.year B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_airfare
+313	显示 1994 年 二月 二十八日 从 旧金山 飞往 休斯顿 的 最便宜 的 单程 票价	O B-depart_date.year I-depart_date.year B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_airfare
+314	现在显示 周一 下午 休斯顿 的地面交通	O B-day_name B-period_of_day B-city_name O	atis_ground_service
+315	现在显示从 休斯顿 飞往 波士顿 的 单程 航班	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+316	那么现在显示可以在 波士顿 深 夜 使用的地面交通	O B-city_name B-period_of_day B-period_of_day O	atis_ground_service
+317	显示有往返 多伦多 和 底特律 以及 底特律 和 圣路易斯 还有 圣路易斯 和 多伦多 航班的航空公司	O B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name O	atis_airline
+318	显示从 多伦多 飞往 底特律 达美 西北 全美航空 以及 联合航空 的 往返 票价	O B-fromloc.city_name O B-toloc.city_name B-airline_name B-airline_name B-airline_name O B-airline_name O B-round_trip O	atis_airfare
+319	显示往返 底特律 和 圣路易斯 的 达美 西北 全美航空 以及 联合航空 的航班	O B-fromloc.city_name O B-toloc.city_name O B-airline_name B-airline_name B-airline_name O B-airline_name O	atis_flight
+320	显示从 蒙特利尔 飞往 奥兰多 以及 长滩 的航班	O B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name O	atis_flight
+321	显示从 蒙特利尔 飞往 奥兰多 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+322	我需要 六月 周五 下午 从 纽约 飞往 克利夫兰 的一趟航班	O B-depart_date.month_name B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+323	我需要 全美航空 周六 晚上 从 纽约 飞往 洛杉矶 的一趟航班	O B-airline_name B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+324	我需要 全美 航空 周六 晚上 从 纽约 飞往 洛杉矶 的一趟 红眼 航班	O B-airline_name O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+325	我需要 全美航空 周六 上午 从 纽约 飞往 洛杉矶 的一趟航班	O B-airline_name B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+326	我需要 周一 上午 从 旧金山 飞往 密尔沃基 的一趟航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+327	ua 是什么意思	B-airline_code O	atis_abbreviation
+328	我需要 周一 晚上 从 密尔沃基 飞往 华盛顿 特区 的一趟航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+329	周二 上午 从 密尔沃基 飞往 华盛顿 特区 的航班怎么样	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+330	周二 上午 从 密尔沃基 飞往 华盛顿 特区 的 382 航班提供什么 餐饮	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-flight_number O B-meal	atis_meal
+331	我需要在 华盛顿 特区 租 车	O B-city_name B-state_code O B-transport_type	atis_ground_service
+332	我可以订一趟 周二 晚上 从 华盛顿 特区 飞往 奥克兰 的航班吗	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+333	从 特区 飞往 奥克兰 周三 上午 怎么样	O B-fromloc.state_code O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+334	从 哥伦布 飞往 密尔沃基 的 环球航空 要多少钱	O B-fromloc.city_name O B-toloc.city_name O B-airline_code O	atis_airfare
+335	q 是什么意思	B-fare_basis_code O	atis_abbreviation
+336	从 哥伦布 往返 圣路易斯 的 环球航空 要多少钱	O B-fromloc.city_name O B-toloc.city_name B-round_trip B-airline_code O	atis_airfare
+337	从 哥伦布 往返 圣路易斯 的 环球航空 最便宜 的航班是什么	O B-fromloc.city_name O B-toloc.city_name B-round_trip B-airline_code B-cost_relative O	atis_flight
+338	从 哥伦布 飞往 圣保罗 的环球航空 最便宜 的 往返 航班是什么	O B-fromloc.city_name O B-toloc.city_name B-airline_code B-cost_relative O B-round_trip O	atis_flight
+339	我需要从 密尔沃基 飞往 洛杉矶	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+340	我能要一趟从 密尔沃基 飞往 奥兰多 的 最短 的航班吗	O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+341	从 密尔沃基 飞往 长滩 的 最短 的一趟航班是哪一班	O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+342	m 是什么意思	B-fare_basis_code O	atis_abbreviation
+343	ap 57 是什么意思	B-restriction_code I-restriction_code O	atis_abbreviation
+344	从 密尔沃基 飞往 圣彼得堡 的 最短 的一趟航班是哪一班	O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+345	从 密尔沃基 飞往 长滩 的 最短 的一趟航班是哪一班	O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+346	从 密尔沃基 飞往 圣地亚哥 的 最短 的一趟航班是哪一班	O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+347	ap 20 是什么意思	B-restriction_code I-restriction_code O	atis_abbreviation
+348	我能要一趟 今天 从 旧金山 飞往 密歇根 的 底特律 的航班吗	O B-depart_date.today_relative O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+349	今天 从 旧金山 飞往 底特律 最便宜 的航班是哪一班	B-depart_date.today_relative O B-fromloc.city_name O B-toloc.city_name B-cost_relative O	atis_flight
+350	我需要从 旧金山 飞往 密尔沃基 然后从 密尔沃基 飞往 丹佛	O B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+351	从 旧金山 飞往 密尔沃基 最便宜 的航班是哪一班	O B-fromloc.city_name O B-toloc.city_name B-cost_relative O	atis_flight
+352	我需要在 密尔沃基 租 车	O B-city_name O B-transport_type	atis_ground_service
+353	明天 从 密尔沃基 飞往 丹佛 最便宜 的航班是哪一班	B-depart_date.today_relative O B-fromloc.city_name O B-toloc.city_name B-cost_relative O	atis_flight
+354	丹佛 有哪些地面交通	B-city_name O	atis_ground_service
+355	从 旧金山 飞往 丹佛 最便宜 的航班是哪一班	O B-fromloc.city_name O B-toloc.city_name B-cost_relative O	atis_flight
+356	哪些航班离开 克利夫兰 飞往 达拉斯	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+357	显示所有从 圣彼得堡 飞往 夏洛特 的 直达 航班	O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+358	us 是哪家航空公司	B-airline_code O	atis_airline
+359	显示往返 多伦多 和 圣地亚哥 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+360	phl 是什么	B-airport_code O	atis_abbreviation
+361	mci 是什么	B-airport_code O	atis_abbreviation
+362	显示往返 奥克兰 和 盐湖城 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+363	not sa 是什么意思	B-mod B-days_code O	atis_abbreviation
+364	最早 一班 每日 从 奥克兰 飞往 盐湖城 的航班是哪一班	B-flight_mod O B-flight_days O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+365	dl 是哪家航空公司	B-airline_code O	atis_airline
+366	最晚 一班 每日 从 奥克兰 飞往 盐湖城 的航班是哪一班	B-flight_mod O B-flight_days O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+367	显示往返 洛杉矶 和 达拉斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+368	从 达拉斯沃思堡机场 前往 达拉斯 市中心的地面交通有什么	O B-airport_name O B-city_name O	atis_ground_service
+369	一趟 l1011 飞机能容纳多少乘客	O B-aircraft_code O	atis_capacity
+370	dc9 的载客量是多少	B-aircraft_code O	atis_capacity
+371	有哪些往返 达拉斯 和 菲尼克斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+372	菲尼克斯机场 和 菲尼克斯 市中心之间有哪些地面交通	B-airport_name O B-city_name O	atis_ground_service
+373	m80 飞机的载客量是多少	B-aircraft_code O	atis_capacity
+374	有没有用 dc10 飞机往返于 达拉斯 和 菲尼克斯 之间的航班	O B-fromloc.city_name O B-toloc.city_name O B-aircraft_code O	atis_flight
+375	aa 是哪家航空公司	B-airline_code O	atis_airline
+376	显示往返 密尔沃基 和 印第安纳 的航班	O B-fromloc.city_name O B-toloc.state_name O	atis_flight
+377	有哪些往返 密尔沃基 和 匹兹堡 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+378	匹兹堡机场 和 匹兹堡 市中心之间有哪些地面交通	B-airport_name O B-city_name O	atis_ground_service
+379	显示往返 匹兹堡 和 华盛顿 特区 的航班	O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+380	dca 和 华盛顿 市中心之间有哪些地面交通	B-airport_code O B-city_name O	atis_ground_service
+381	有哪些往返 dca 和 密尔沃基 的航班	O B-airport_code O B-city_name O	atis_flight
+382	密尔沃基机场 和 密尔沃基 市中心之间有哪些地面交通	B-airport_name O B-city_name O	atis_ground_service
+383	请确定 中午 之前 出发从 克利夫兰 飞往 达拉斯 的一趟航班机型	O B-depart_time.period_of_day B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_aircraft
+384	查一趟在 圣彼得堡 和 夏洛特 之间的航班应在 下午 离开并尽快在 下午 5 点 之后 抵达必须是 直达 航班	O B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-flight_stop O	atis_flight
+385	列出 达美航空 从 多伦多 飞往 圣地亚哥 的航班	O B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+386	列出 美国航空 从 多伦多 飞往 圣地亚哥 的航班	O B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+387	列出从 多伦多 飞往 圣地亚哥 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+388	列出从 奥克兰 飞往 盐湖城 在 周三 17 点 00 分 之后 离开的航班	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+389	列出从 奥克兰 飞往 盐湖城 在 周四 午夜 之后 离开的航班	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day B-depart_time.time_relative O	atis_flight
+390	列出 菲尼克斯 和 拉斯维加斯 之间的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+391	列出从 拉斯维加斯 飞往 丹佛 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+392	列出从 密尔沃基 飞往 华盛顿 特区 12 点 00 分 之前 的航班	O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+393	列出从 华盛顿 特区 飞往 匹兹堡 在 18 点 00 分 之后 出发的航班	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+394	列出从 华盛顿 特区 飞往 匹兹堡 的航班	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+395	列出 匹兹堡 和 密尔沃基 之间的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+396	我需要一趟从 华盛顿 特区 飞往 圣地亚哥 的航班	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+397	我需要从 克利夫兰 飞往 达拉斯	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+398	我需要从 华盛顿 特区 飞往 亚利桑那 的 菲尼克斯	O B-fromloc.city_name B-fromloc.state_code O B-toloc.state_name O B-toloc.city_name	atis_flight
+399	我需要一趟从 菲尼克斯 飞往 亚特兰大 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+400	我需要从 亚特兰大 飞往 圣地亚哥	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+401	我需要从 圣地亚哥 飞往 西雅图	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+402	我需要从 奥兰多 飞往 堪萨斯城	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+403	我需要一趟从 堪萨斯城 飞往 明尼阿波利斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+404	我需要一趟从 圣地亚哥 飞往 华盛顿 特区 的航班	O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+405	我需要一趟从 华盛顿 特区 飞往 圣地亚哥 的航班	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+406	我需要一趟从 圣地亚哥 飞往 华盛顿 特区 的 往返 航班及其票价	O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-round_trip O	atis_flight#atis_airfare
+407	我需要一趟在 早上 出发的从 亚特兰大 飞往 华盛顿 特区 的 往返 航班及其票价	O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-round_trip O	atis_flight#atis_airfare
+408	我需要一趟在 早上 出发的从 菲尼克斯 飞往 华盛顿 特区 的 往返 航班及其票价	O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-round_trip O	atis_flight#atis_airfare
+409	从 华盛顿 特区 飞往 波士顿 航班的 最便宜 的票价是多少钱	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O B-cost_relative O	atis_airfare
+410	从 华盛顿 特区 飞往 蒙特利尔 的 最便宜 的票价是多少钱	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O B-cost_relative O	atis_airfare
+411	从 多伦多 飞往 华盛顿 特区 的 最便宜 的票价是多少钱	O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-cost_relative O	atis_airfare
+412	我需要一趟从 蒙特利尔 飞往 华盛顿 特区 的航班	O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+413	我需要一趟从 纳什维尔 飞往 西雅图 不迟于 下午 3 点 抵达 的航班	O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative B-arrive_time.time O	atis_flight
+414	我需要一趟从 孟菲斯 飞往 西雅图 不迟于 下午 3 点 抵达 的航班	O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative B-arrive_time.time O	atis_flight
+415	我需要一趟从 印第安纳波利斯 飞往 西雅图 于晚上 12 点 05 分 抵达 西雅图 的航班	O B-fromloc.city_name O B-toloc.city_name O O O O O B-arrive_time.time O B-toloc.city_name	atis_flight
+416	我需要一趟从 孟菲斯 飞往 西雅图 的 往返 航班	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+417	我需要从 纳什维尔 飞往 西雅图 我需要 最便宜 的票价并且是 往返 航班	O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_flight
+418	我需要从 孟菲斯 飞往 西雅图 的 往返 航班并且是 最便宜 的票价	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O B-cost_relative O	atis_flight
+419	我需要从 印第安纳波利斯 飞往 西雅图 的 往返 航班并且是 最便宜 的票价	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O B-cost_relative O	atis_flight
+420	请列出从 奥兰多 飞往 费城 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+421	请列出从 旧金山 飞往 夏洛特 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+422	请列出从 密尔沃基 飞往 费城 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+423	请列出从 费城 飞往 旧金山 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+424	请提供 密尔沃基 的地面交通	O B-city_name O	atis_ground_service
+425	请列出从 旧金山 飞往 密尔沃基 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+426	列出从 休斯顿 飞往 丹佛 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+427	列出从 休斯顿 飞往 菲尼克斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+428	列出从 菲尼克斯 飞往 休斯顿 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+429	列出从 纽瓦克 飞往 休斯顿 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+430	显示从 丹佛 飞往 休斯顿 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+431	显示从 圣彼得堡 飞往 夏洛特 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+432	显示从 奥兰多 飞往 堪萨斯城 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+433	显示从 堪萨斯城 飞往 明尼阿波利斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+434	显示从 堪萨斯城 飞往 奥兰多 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+435	显示从 明尼阿波利斯 飞往 堪萨斯城 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+436	显示从 堪萨斯城 飞往 奥兰多 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+437	列出从 华盛顿 特区 飞往 波士顿 的航班	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+438	列出从 华盛顿 特区 飞往 蒙特利尔 的票价	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_airfare
+439	列出从 华盛顿 特区 飞往 蒙特利尔 的航班	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+440	要是列出从 华盛顿 特区 飞往 多伦多 的票价就好了	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_airfare
+441	列出从 华盛顿 特区 飞往 波士顿 的票价	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_airfare
+442	列出从 华盛顿 特区 飞往 蒙特利尔 的航班	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+443	列出从 华盛顿 特区 飞往 多伦多 的航班	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+444	列出从 多伦多 飞往 华盛顿 特区 的航班	O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+445	列出从 奥克兰 飞往 盐湖城 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+446	哪些航班从 达拉斯 飞往 菲尼克斯	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+447	哪些航班从 菲尼克斯 飞往 盐湖城	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+448	我需要一趟从 密尔沃基 飞往 丹佛 的 早 班机	O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+449	丹佛 有哪些可用的地面交通	B-city_name O	atis_ground_service
+450	什么航班 周二 早上 从 丹佛 飞往 圣路易斯	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+451	圣路易斯 有没有地面交通	B-city_name O	atis_ground_service
+452	我需要 周三 下午 从 圣路易斯 飞往 密尔沃基	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+453	从 华盛顿 飞往 西雅图 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+454	从 亚特兰大 飞往 西雅图 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+455	从 圣地亚哥 飞往 西雅图 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+456	我需要从 菲尼克斯 飞往 丹佛 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+457	能否给我从 盐湖城 飞往 菲尼克斯 的航班信息	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+458	能否给我从 匹兹堡 飞往 菲尼克斯 的航班信息	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+459	我想了解一下从 华盛顿 特区 飞往 丹佛 的航班信息	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+460	我需要 周六 出发从 华盛顿 飞往 波士顿 的航班信息	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+461	我需要 周六 从 华盛顿 飞往 蒙特利尔 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+462	我需要 周六 从 华盛顿 飞往 多伦多 的航班票价	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+463	我要 周六 从 波士顿 飞往 华盛顿	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+464	我需要 中午 之前 出发从 克利夫兰 飞往 达拉斯 的航班请帮我查阅相关信息	O B-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+465	查询 华盛顿 飞往 波士顿 的票价	O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+466	查询 周六 华盛顿 飞往 波士顿 的票价	O B-depart_date.day_name B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+467	查询 华盛顿 飞往 蒙特利尔 的票价	O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+468	查询 周六 华盛顿 飞往 蒙特利尔 的票价	O B-depart_date.day_name B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+469	查询 周六 华盛顿 飞往 多伦多 的票价	O B-depart_date.day_name B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+470	查询 周六 华盛顿 飞往 多伦多 的票价	O B-depart_date.day_name B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+471	列出从 华盛顿 飞往 波士顿 的 周六 航班	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+472	列出从 波士顿 飞往 华盛顿 的 周六 航班	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+473	查询 密尔沃基 飞往 dtw 的航班	O B-fromloc.city_name O B-toloc.airport_code O	atis_flight
+474	列出从 密尔沃基 飞往 底特律 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+475	查询从 底特律 飞往 多伦多 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+476	查询从 多伦多 飞往 密尔沃基 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+477	查询 周三 从 奥克兰 飞往 盐湖城 的 最后 一班飞机 或 周四 从 奥克兰 飞往 盐湖城 的 第一 班飞机	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O B-or B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+478	查询 周四 从 奥克兰 飞往 盐湖城 的 第一 班飞机	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+479	查询 周三 从 奥克兰 飞往 盐湖城 的 最后 一班飞机	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+480	列出 周三 从 奥克兰 飞往 盐湖城 的 最后 一班飞机	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+481	查询从 多伦多 飞往 圣地亚哥 中途经停 dtw 的航班	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.airport_code O	atis_flight
+482	查询 圣彼得堡 和 夏洛特 之间的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+483	我需要一趟 周一 早上 9 点 之前出发的 从 密尔沃基 飞往 印第安纳波利斯 的航班	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+484	我需要一趟 周一 早上 8 点 之前出发的 从 密尔沃基 飞往 印第安纳波利斯 的航班	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+485	印第安纳波利斯机场 是否有地面交通	B-airport_name O	atis_ground_service
+486	我需要 周二 中午 从 印第安纳波利斯 飞往 克利夫兰 的航班信息	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+487	我需要 周三 下午 6 点 之后 从 克利夫兰 飞往 密尔沃基 的航班信息	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+488	我需要 周三 下午 5 点 之后 从 克利夫兰 飞回 密尔沃基 的航班信息	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+489	我需要 周三 下午 5 点 之后 从 克利夫兰 飞往 密尔沃基 的航班信息	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+490	我需要 周三 下午 5 点 之后 从 克利夫兰 飞往 密尔沃基 的航班信息	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+491	我需要 周一 从 丹佛 飞往 盐湖城 的一趟航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+492	丹佛机场 是否有地面交通	B-airport_name O	atis_ground_service
+493	我需要 周一 下午 5 点 之后 出发从 丹佛 飞往 盐湖城 的航班和航空公司信息	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airline
+494	盐湖城机场 是否有地面交通	B-airport_name O	atis_ground_service
+495	我需要一趟 周三 下午 5 点 之后 出发从 盐湖城 飞往 菲尼克斯 的航班	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+496	菲尼克斯机场 是否有地面交通	B-airport_name O	atis_ground_service
+497	我需要一趟 周三 下午 6 点 之后 出发从 奥克兰 飞往 盐湖城 的航班	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+498	我需要 周四 上午 9 点 之前 出发从 奥克兰 飞往 盐湖城 的航班和票价信息	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airfare
+499	我需要 周四 早上 8 点 之前 出发从 奥克兰 飞往 盐湖城 的航班和票价信息	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airfare
+500	我需要 周四 早上 8 点 之前 出发从 奥克兰 飞往 盐湖城 的航班编号和航空公司	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight_no#atis_airline
+501	我需要 周四 早上 8 点 之前 出发从 奥克兰 飞往 盐湖城 的航班编号	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight_no
+502	请列出 亚利桑那内华达 和 加州 的机场	O B-state_name O B-state_name O	atis_airport
+503	列出 加州 内华达 亚利桑那 的机场	O B-state_name B-state_name B-state_name O	atis_airport
+504	列出 亚利桑那 的机场	O B-state_name O	atis_airport
+505	列出 加州 的机场	O B-state_name O	atis_airport
+506	列出从 拉斯维加斯 飞往 菲尼克斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+507	列出 加州 的机场	O B-state_name O	atis_airport
+508	列出机场	O	atis_airport
+509	列出从 奥克兰 飞往 盐湖城 的 周三 夜间 航班	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+510	列出 周四 清晨 6 点 之前 从 奥克兰 飞往 盐湖城 的航班	O B-depart_date.day_name B-depart_time.period_of_day B-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+511	哪些航空公司在 多伦多 和 圣地亚哥 之间飞行	O B-fromloc.city_name O B-toloc.city_name O	atis_airline
+512	请列出 圣彼得堡 和 夏洛特 之间的 下午 航班	O B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+513	tpa 是什么	B-airport_code O	atis_abbreviation
+514	有哪些航班从 克利夫兰 飞往 达拉斯	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+515	请仅列出 中午 之前 从 克利夫兰 飞往 达拉斯 的航班	O B-depart_time.period_of_day B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+516	中午 之前 出发从 克利夫兰 飞往 达拉斯 的航班是什么机型	B-depart_time.period_of_day B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_aircraft
+517	我需要从 印第安纳波利斯 飞往 西雅图 的航班信息	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+518	我需要一趟从 孟菲斯 飞往 西雅图 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+519	我需要一张从 纳什维尔 飞往 西雅图 的机票	O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+520	我需要一张从 田纳西 的 纳什维尔 飞往 西雅图 的机票	O B-fromloc.state_name O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+521	我需要从 密尔沃基 飞往 坦帕 的航班信息	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+522	我需要在 坦帕 租 车	O B-city_name O B-transport_type	atis_ground_service
+523	我需要从 圣路易斯 飞往 密尔沃基 的 每日 航班	O B-fromloc.city_name O B-toloc.city_name O B-flight_days O	atis_flight
+524	我需要从 奥克兰 出发并抵达 盐湖城 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+525	我需要从 多伦多 飞往 圣地亚哥 的航班信息	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+526	我需要从 多伦多 飞往 圣地亚哥 的航班信息	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+527	我需要一趟从 多伦多 飞往 圣地亚哥 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+528	我需要关于 圣彼得堡 和 夏洛特 之间的航班信息	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+529	我需要从 克利夫兰 出发并抵达 达拉斯 的航班编号	O B-fromloc.city_name O B-toloc.city_name O	atis_flight_no
+530	哪些航班往返 纽约 和 迈阿密	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+531	票价代码 qo 是什么意思	O B-fare_basis_code O	atis_abbreviation
+532	显示从 密尔沃基 飞往 奥兰多 的 单程 航班	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+533	缩写 us 代表什么	O B-airline_code O	atis_abbreviation
+534	我需要一张 周三 晚上 或 周四 上午 从 密尔沃基 飞往 奥兰多 的 单程 票	O B-depart_date.day_name B-depart_time.period_of_day B-or B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_airfare
+535	显示从 密尔沃基 飞往 奥兰多 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+536	票价代码 f 是什么意思	O B-fare_basis_code O	atis_abbreviation
+537	票价代码 h 是什么意思	O B-fare_basis_code O	atis_abbreviation
+538	票价代码 y 是什么意思	O B-fare_basis_code O	atis_abbreviation
+539	什么是限制 ap 57	O B-restriction_code I-restriction_code	atis_abbreviation
+540	显示 上午 10 点 之前 出发从 印第安纳波利斯 飞往 孟菲斯 的 单程 头等舱 航班	O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-round_trip B-class_type O	atis_flight
+541	现在显示所有从 伯班克 飞往 西雅图 晚上 7 点 之前 抵达 西雅图 的 往返 航班	O B-fromloc.city_name O B-toloc.city_name B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-toloc.city_name O B-round_trip O	atis_flight
+542	请查询从 奥兰多 飞往 蒙特利尔 的 往返 航班	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+543	dl 是哪家航空公司	B-airline_code O	atis_airline
+544	显示从 蒙特利尔 飞往 奥兰多 的所有 达美航空 航班	O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+545	请显示所有从 奥兰多 飞往 蒙特利尔 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+546	kw 是哪家航空公司	B-airline_code O	atis_airline
+547	请列出所有从 纽约 飞往 迈阿密 任何等级的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+548	票价代码 bh 是什么意思	O B-fare_basis_code O	atis_abbreviation
+549	请显示从 迈阿密 飞往 jfk 的 回程 航班	O B-fromloc.city_name O B-toloc.airport_code O B-round_trip O	atis_flight
+550	票价代码 bh 是什么意思	O B-fare_basis_code O	atis_abbreviation
+551	票价代码 bh 是什么意思	O B-fare_basis_code O	atis_abbreviation
+552	票价代码 bh 是什么意思	O B-fare_basis_code O	atis_abbreviation
+553	票价代码 bh 是什么意思	O B-fare_basis_code O	atis_abbreviation
+554	显示 周三 下午 6 点 之后 从 密尔沃基 飞往 奥兰多 的 单程 航班	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+555	显示从 印第安纳波利斯 飞往 孟菲斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+556	显示从 伯班克 飞往 西雅图 的 往返 航班	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+557	显示从 奥兰多 飞往 蒙特利尔 的 往返 航班	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+558	显示从 蒙特利尔 飞往 奥兰多 的 直达 航班	O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+559	显示往返于 蒙特利尔 和 奥兰多 之间 的 航班	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+560	显示从 蒙特利尔 飞往 奥兰多 的 往返 航班	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+561	显示从 蒙特利尔 飞往 奥兰多 的 最便宜 的 单程 航班	O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_flight
+562	显示从 奥兰多 飞往 蒙特利尔 的 最便宜 的 单程 航班	O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_flight
+563	显示从 迈阿密 飞往 纽约 的 最便宜 的 经济舱 航班	O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-economy O	atis_flight
+564	堪萨斯城 飞往 拉斯维加斯 的 经济舱	B-fromloc.city_name O B-toloc.city_name O B-economy	atis_flight
+565	堪萨斯城 飞往 拉斯维加斯 的 经济舱	B-fromloc.city_name O B-toloc.city_name O B-economy	atis_flight
+566	hp 是哪家航空公司	B-airline_code O	atis_airline
+567	拉斯维加斯 的地面交通	B-city_name O	atis_ground_service
+568	拉斯维加斯 的地面交通	B-city_name O	atis_ground_service
+569	拉斯维加斯 飞往 巴尔的摩 的 经济舱	B-fromloc.city_name O B-toloc.city_name O B-economy	atis_flight
+570	拉斯维加斯 飞往 巴尔的摩 的 经济舱	B-fromloc.city_name O B-toloc.city_name O B-economy	atis_flight
+571	巴尔的摩 飞往 堪萨斯城 的 经济舱	B-fromloc.city_name O B-toloc.city_name O B-economy	atis_flight
+572	us 是哪家航空公司	B-airline_code O	atis_airline
+573	us 是哪个航空公司	B-airline_code O	atis_airline
+574	us 是哪个航空公司	B-airline_code O	atis_airline
+575	us 是哪个航空公司	B-airline_code O	atis_airline
+576	us 是哪个航空公司	B-airline_code O	atis_airline
+577	上午 10 点 之前 从 哥伦布 飞往 芝加哥 的单程航班	B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name B-round_trip	atis_flight
+578	hp 是哪家航空公司	B-airline_code O	atis_airline
+579	圣彼得堡 至 底特律	B-fromloc.city_name O B-toloc.city_name	atis_flight
+580	周三 下午 5 点 之后 从 密尔沃基 飞往 奥兰多 的 单程 航班	B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+581	然后 每天 上午 10 点 之前 从 密尔沃基 飞往 亚特兰大	O B-flight_days B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+582	yx 是哪家航空公司	B-airline_code O	atis_airline
+583	显示所有从 圣何塞 飞往 菲尼克斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+584	显示所有从 圣何塞 飞往 菲尼克斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+585	hp 是哪家航空公司	B-airline_code O	atis_airline
+586	显示 菲尼克斯 的地面交通	O B-city_name O	atis_ground_service
+587	显示从 菲尼克斯 飞往 沃思堡 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+588	显示 沃思堡 的地面交通	O B-city_name O	atis_ground_service
+589	显示从 沃思堡 飞往 圣何塞 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+590	显示从 纽约 飞往 迈阿密 的 往返 头等舱 航班	O B-fromloc.city_name O B-toloc.city_name O B-round_trip B-class_type O	atis_flight
+591	显示从 纽约 飞往 迈阿密 的 往返 头等舱 航班	O B-fromloc.city_name O B-toloc.city_name O B-round_trip B-class_type O	atis_flight
+592	显示所有从 纽约 飞往 迈阿密 的 直达 往返 航班	O B-fromloc.city_name O B-toloc.city_name O B-flight_stop B-round_trip O	atis_flight
+593	显示所有从 迈阿密 飞往 纽约 的 直达 往返 航班	O B-fromloc.city_name O B-toloc.city_name O B-flight_stop B-round_trip O	atis_flight
+594	显示任何一天 上午 10 点 之前 从 印第安纳波利斯 飞往 孟菲斯 的 单程 航班	O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+595	票价代码 f 是什么意思	O B-fare_basis_code O	atis_abbreviation
+596	显示从 伯班克 飞往 塔科马 的 往返 航班	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+597	限制 ap58 是什么意思	O B-restriction_code O	atis_abbreviation
+598	票价代码 h 是什么意思	O B-fare_basis_code O	atis_abbreviation
+599	as 是哪家航空公司	B-airline_code O	atis_airline
+600	as 是哪家航空公司	B-airline_code O	atis_airline
+601	as 是哪家航空公司	B-airline_code O	atis_airline
+602	sam 中的 as 是哪家航空公司	O O B-airline_code O	atis_airline
+603	显示从 圣彼得堡 飞往 多伦多 的 直达 航班	O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+604	显示从 多伦多 飞往 圣彼得堡 的 直达 航班	O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+605	显示从 多伦多 飞往 圣彼得堡 的 直达 航班及其票价	O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight#atis_airfare
+606	显示从 多伦多 飞往 圣彼得堡 的 直达 航班	O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+607	显示从 密尔沃基 飞往 奥兰多 的 单程 工作日 航班	O B-fromloc.city_name O B-toloc.city_name O B-round_trip B-flight_mod O	atis_flight
+608	显示从 密尔沃基 飞往 奥兰多 的 单程 工作日 航班	O B-fromloc.city_name O B-toloc.city_name O B-round_trip B-flight_mod O	atis_flight
+609	hp 是哪家航空公司	B-airline_code O	atis_airline
+610	列出从 芝加哥 飞往 圣地亚哥 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+611	列出从 芝加哥 飞往 圣地亚哥 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+612	列出从 堪萨斯城 飞往 丹佛 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+613	列出从 丹佛 飞往 菲尼克斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+614	列出从 菲尼克斯 飞往 拉斯维加斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+615	列出从 拉斯维加斯 飞往 圣地亚哥 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+616	列出 上午 从 芝加哥 飞往 堪萨斯城 的航班	O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+617	列出从 休斯顿 飞往 圣何塞 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+618	列出从 休斯顿 飞往 密尔沃基 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+619	列出 周三 从 密尔沃基 飞往 圣何塞 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+620	列出 周五 从 圣何塞 飞往 达拉斯 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+621	列出从 达拉斯 飞往 休斯顿 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+622	列出 纽约 从机场到市中心的距离	O B-city_name O	atis_distance
+623	列出 纽约 的机场	O B-city_name O	atis_airport
+624	列出 纽约 的机场	O B-city_name O	atis_airport
+625	列出 la 的机场	O B-city_name O	atis_airport
+626	列出机场	O	atis_airport
+627	列出 la 的机场	O B-city_name O	atis_airport
+628	列出 la 的机场	O B-city_name O	atis_airport
+629	列出 la 的机场	O B-city_name O	atis_airport
+630	列出 la	O B-city_name	atis_city
+631	列出 la	O B-city_name	atis_city
+632	列出从 纽约 飞往 la 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+633	列出从 拉瓜迪亚 飞往 伯班克 的航班	O B-fromloc.airport_name O B-toloc.city_name O	atis_flight
+634	列出从 la 飞往 奥兰多 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+635	列出从 加州 的 安大略 飞往 奥兰多 的航班	O B-fromloc.state_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+636	列出从 加州 的 安大略 飞往 奥兰多 的航班	O B-fromloc.state_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+637	列出 周一 从 印第安纳波利斯 飞往 孟菲斯 的航班及票价	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+638	列出 周一 从 印第安纳波利斯 飞往 孟菲斯 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+639	列出 周三 从 孟菲斯 飞往 迈阿密 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+640	列出 周日 从 迈阿密 飞往 印第安纳波利斯 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+641	列出 周六 下午 从 夏洛特 出发的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O	atis_flight
+642	列出所有从 夏洛特 出发的航班的机型	O B-fromloc.city_name O	atis_aircraft
+643	列出 周六 走 下 周六 回从 塔科马 飞往 奥兰多 往返 的航班和票价	O B-depart_date.day_name O B-return_date.date_relative B-return_date.day_name O B-fromloc.city_name O B-toloc.city_name B-round_trip O	atis_flight#atis_airfare
+644	票价代码 q 属于哪个等级	O B-booking_class O	atis_abbreviation
+645	列出 周六 从 奥兰多 飞往 塔科马 的票价代码为 q 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-fare_basis_code O	atis_flight
+646	列出从 底特律 飞往 圣彼得堡 的 往返 头等舱 票价	O B-fromloc.city_name O B-toloc.city_name O B-round_trip B-class_type O	atis_airfare
+647	列出从 底特律 飞往 圣彼得堡 的 往返 经济舱 票价	O B-fromloc.city_name O B-toloc.city_name O B-round_trip B-class_type O	atis_airfare
+648	列出 周一 上午 从 匹兹堡 飞往 纽瓦克 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+649	列出 周五 从 明尼阿波利斯 飞往 匹兹堡 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+650	列出 上午 9 点 之前 从 辛辛那提 飞往 坦帕 的航班	O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+651	列出 中午 之前 从 辛辛那提 飞往 坦帕 的航班	O B-depart_time.period_of_day B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+652	列出 下午 3 点 之后 从 坦帕 飞往 辛辛那提 的航班	O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+653	列出从 西雅图 飞往 盐湖城 的航空公司	O B-fromloc.city_name O B-toloc.city_name O	atis_airline
+654	列出从 西雅图 飞往 盐湖城 的 达美 航班	O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+655	列出从 西雅图 飞往 盐湖城 的 达美 航班的载客量	O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_capacity
+656	列出 达美 航空从 西雅图 飞往 盐湖城 的航班和机型	O B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+657	巴尔的摩 有什么地面交通	B-city_name O	atis_ground_service
+658	列出 巴尔的摩 的地面交通	O B-city_name O	atis_ground_service
+659	列出 周五 从 巴尔的摩 飞往 旧金山 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+660	给我 周二 从 洛杉矶 飞往 匹兹堡 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+661	给我 周四 晚上 从 匹兹堡 飞往 洛杉矶 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+662	给我 下 周三 从 克利夫兰 飞往 迈阿密 的 往返 航班	O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+663	给我 下 周三 从 克利夫兰 飞往 迈阿密 的 往返 航班的票价	O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_airfare
+664	给我 周三 从 迈阿密 飞往 克利夫兰 的航班和票价	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+665	给我 下 周日 从 迈阿密 飞往 克利夫兰 的票价	O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+666	给我 周六 或 周日 从 密尔沃基 飞往 菲尼克斯 的 美国航空 的航班	O B-depart_date.day_name B-or B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+667	给我 周三 晚上 从 菲尼克斯 飞往 密尔沃基 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+668	给我 周三 从 菲尼克斯 飞往 密尔沃基 的 美国航空 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+669	给我从 菲尼克斯 飞往 密尔沃基 的 美国航空 的航班	O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+670	给我从 菲尼克斯 飞往 密尔沃基 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+671	给我 周六 清 晨 从 芝加哥 飞往 西雅图 并供应 餐点 的 直达 航班	O B-depart_date.day_name B-depart_time.period_mod B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-meal O B-flight_stop O	atis_flight
+672	给我 周六 上午 从 芝加哥 飞往 西雅图 并供应 餐点 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-meal O	atis_flight
+673	给我 大陆航空 从 西雅图 飞往 芝加哥 并供应 餐点 的航班	O B-airline_name O B-fromloc.city_name O B-toloc.city_name O B-meal O	atis_flight
+674	给我 大陆航空 周六 上午 从 西雅图 飞往 芝加哥 并供应 餐点 的航班	O B-airline_name B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-meal O	atis_flight
+675	给我 大陆航空 周六 清 晨 从 芝加哥 飞往 西雅图 并供应 餐点 的航班	O B-airline_name B-depart_date.day_name B-depart_time.period_mod B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-meal O	atis_flight
+676	给我 大陆航空 从 芝加哥 飞往 西雅图 周六 清 晨 并供应 餐点 的航班组合	O B-airline_name O B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_mod B-depart_time.period_of_day O B-meal O	atis_flight
+677	给我 周六 上午 从 芝加哥 飞往 明尼阿波利斯 并供应 餐点 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-meal O	atis_flight
+678	给我 大陆航空 周六 上午 从 芝加哥 飞往 明尼阿波利斯 并供应 餐点 的航班	O B-airline_name B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-meal O	atis_flight
+679	给我 周六 上午 大陆航空 从 芝加哥 飞往 圣保罗 并供应 餐点 的航班	O B-depart_date.day_name B-depart_time.period_of_day B-airline_name O B-fromloc.city_name O B-toloc.city_name O B-meal O	atis_flight
+680	给我从 纽约 飞往 拉斯维加斯 的 直达 航班	O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+681	给我从 孟菲斯 飞往 拉斯维加斯 的 直达 航班	O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+682	给我 十二月 二十五日 左右 从 印第安纳波利斯 飞往 奥兰多 的 最便宜 的 往返 航班	O B-depart_date.month_name B-depart_date.day_number B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_flight
+683	我需要一趟 周五 从 纽瓦克 飞往 坦帕 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+684	我需要一趟 周日 从 坦帕 飞往 夏洛特 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+685	给我一趟 周二 上午 从 夏洛特 飞往 巴尔的摩 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+686	能否给我来躺 上午 从 巴尔的摩 飞往 纽瓦克 的航班	O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+687	十二月 二十五日 从 印第安纳波利斯 飞往 奥兰多 的 最便宜 的 往返 航班的票价	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_airfare
+688	十二月 二十七日 从 印第安纳波利斯 飞往 奥兰多 的 最便宜 的 单程 航班票价	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_airfare
+689	从 达拉斯 飞往 休斯顿 的航班号	O B-fromloc.city_name O B-toloc.city_name O	atis_flight_no
+690	从 休斯顿 飞往 达拉斯 的航班号	O B-fromloc.city_name O B-toloc.city_name O	atis_flight_no
+691	周六 美国航空 从 密尔沃基 飞往 菲尼克斯 的航班	B-depart_date.day_name B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+692	美国航空 从 菲尼克斯 飞往 密尔沃基 的航班号	B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight_no
+693	从 芝加哥 飞往 西雅图 的航班号	O B-fromloc.city_name O B-toloc.city_name O	atis_flight_no
+694	从 芝加哥 飞往 西雅图 的 大陆航空 的航班号	O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight_no
+695	从 西雅图 飞往 芝加哥 的 大陆航空 的航班号	O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight_no
+696	有没有从 匹兹堡 飞往 克利夫兰 的 200 美元 以下 的票价	O B-fromloc.city_name O B-toloc.city_name O B-fare_amount I-fare_amount B-cost_relative O	atis_airfare
+697	从 匹兹堡 飞往 亚特兰大 的 经济舱 航班多少钱	O B-fromloc.city_name O B-toloc.city_name O B-class_type O	atis_airfare
+698	周五 从 纽瓦克 飞往 坦帕	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+699	周日 上午 从 坦帕 飞往 夏洛特	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+700	周二 从 夏洛特 飞往 巴尔的摩	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+701	周三 上午 从 巴尔的摩 飞往 纽瓦克	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+702	中午 12 点 01 分 之后 从 达拉斯 飞往 休斯顿	B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+703	午夜 之前 从 休斯顿 飞往 达拉斯	B-depart_time.period_of_day B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+704	十二月 二十七日 从 印第安纳波利斯 飞往 奥兰多	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name	atis_flight
+705	十二月 二十七日 从 印第安纳波利斯 飞往 奥兰多 的 最便宜 的票价	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_airfare
+706	十二月 二十七日 从 印第安纳波利斯 飞往 奥兰多 的 最便宜 的 往返 航班的票价	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_airfare
+707	从 克利夫兰 飞往 迈阿密 在 周三 下午 4 点 之前 抵达	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+708	周日 下午 从 迈阿密 飞往 克利夫兰	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+709	周日 从 纽约市 飞往 拉斯维加斯 还有从 孟菲斯 飞往 拉斯维加斯	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+710	周日 从 纽约市 飞往 拉斯维加斯 还有从 孟菲斯 飞往 拉斯维加斯	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+711	周日 下午 从 纽约 飞往 拉斯维加斯	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+712	周日 下午 从 孟菲斯 飞往 拉斯维加斯	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+713	周日 下午 从 纽约 飞往 拉斯维加斯	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+714	周六 早上 从 芝加哥 飞往 西雅图	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+715	周六 早上 从 芝加哥 飞往 拉斯维加斯	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+716	周二 下午 从 洛杉矶 飞往 匹兹堡	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+717	周一 下午 从 洛杉矶 飞往 匹兹堡	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+718	周四 晚上 从 匹兹堡 飞往 洛杉矶	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+719	周六 从 密尔沃基 飞往 菲尼克斯	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+720	周日 从 菲尼克斯 飞往 密尔沃基	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+721	周三 从 菲尼克斯 飞往 密尔沃基	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+722	来一趟从 巴尔的摩 飞往 旧金山 下午 5 点 至 8 点 之间抵达的 航班	O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time O B-flight	atis_flight
+723	有多少 西北航空 的航班离开 圣保罗	O B-airline_name O B-fromloc.city_name	atis_flight
+724	有多少 西北航空 的航班离开 华盛顿 特区	O B-airline_name O B-fromloc.city_name B-fromloc.state_code	atis_flight
+725	西北航空 有多少航班离开 杜勒斯	B-airline_name O B-fromloc.airport_name	atis_flight
+726	西北航空 飞离什么城市	B-airline_name O	atis_city
+727	列出 西北航空 从哪些城市起飞	O B-airline_name O	atis_city
+728	西北航空 飞往什么城市	B-airline_name O	atis_city
+729	我需要 4 点 之后 从 达拉斯 起飞飞往 旧金山 的 联程 航班	O B-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-connect O	atis_flight
+730	请列出所有从 达拉斯 飞往 旧金山 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+731	请再告诉我 美国航空 上午 从 费城 飞往 达拉斯 的航班	O B-airline_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+732	告诉我从 费城 飞往 达拉斯 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+733	什么是 d9s	O B-aircraft_code	atis_abbreviation
+734	d9s 是什么机型	B-aircraft_code O	atis_aircraft
+735	什么是 d9s	O B-aircraft_code	atis_abbreviation
+736	显示 宝塔航空 起降的机场	O B-airline_name O	atis_airport
+737	显示往返 jfk 和 奥兰多 的 头等舱 和 经济舱 航班	O B-fromloc.airport_code O B-toloc.city_name O B-class_type O B-class_type O	atis_flight
+738	显示从 肯尼迪机场 飞往 迈阿密 的 头等舱 和 经济舱 航班	O B-fromloc.airport_name O B-toloc.city_name O B-class_type O B-class_type O	atis_flight
+739	显示从 jfk 飞往 迈阿密 的 头等舱 和 经济舱 航班	O B-fromloc.airport_code O B-toloc.city_name O B-class_type O B-class_type O	atis_flight
+740	宝塔航空 供应 餐点 吗	B-airline_name O B-meal O	atis_meal
+741	宝塔航空 供应 零食 吗	B-airline_name O B-meal_description O	atis_meal
+742	显示 达美航空 从 jfk 飞往 迈阿密 的航班	O B-airline_name O B-fromloc.airport_code O B-toloc.city_name O	atis_flight
+743	显示 达美航空 从 波士顿 飞往 盐湖的航班	O B-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+744	显示 达美航空 从 波士顿 飞往 盐湖 的航班	O B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+745	显示 达美航空 从 波士顿 飞往 盐湖城 的航班	O B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+746	往返 波士顿 和 华盛顿 特区 之间的航班票价是多少	O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_airfare
+747	从 波士顿 飞往 盐湖城 最便宜 的票价是多少钱	O B-fromloc.city_name O B-toloc.city_name B-cost_relative O	atis_airfare
+748	从 华盛顿 特区 飞往 盐湖城 最便宜 的票价是多少钱	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name B-cost_relative O	atis_airfare
+749	从 bwi 飞往 盐湖城 最便宜 的票价是多少钱	O B-fromloc.airport_code O B-toloc.city_name B-cost_relative O	atis_airfare
+750	显示从 底特律 飞往 拉斯维加斯 的 往返 头等舱 票价	O B-fromloc.city_name O B-toloc.city_name O B-round_trip B-class_type O	atis_airfare
+751	最早一班 从 波士顿 飞往 华盛顿 特区 的航班是哪一班	B-flight_mod O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+752	最早一班 往返 波士顿 和 华盛顿 特区 的航班是哪一班	B-flight_mod O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+753	最早一班 往返 波士顿 和 华盛顿 特区 的航班是哪一班	B-flight_mod O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+754	最早一班 从 休斯顿 飞往 奥兰多 的航班是哪一班	B-flight_mod O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+755	最早一班 从 休斯顿 飞往 奥兰多 的航班是哪一班	B-flight_mod O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+756	显示往返 休斯顿 和 奥兰多 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+757	显示往返 休斯顿 和 奥兰多 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+758	显示从 休斯顿 飞往 奥兰多 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+759	列出所有在 晚上 8 点 至 9 点 之间离开 丹佛 的航班	O B-depart_time.start_time I-depart_time.start_time I-depart_time.start_time O B-depart_time.end_time I-depart_time.end_time O B-fromloc.city_name O	atis_flight
+760	733 飞机的载客量是多少	B-aircraft_code O	atis_capacity
+761	72s 的载客量是多少	B-aircraft_code O	atis_capacity
+762	72s 飞机的载客量是多少	B-aircraft_code O	atis_capacity
+763	m80 飞机的载客量是多少	B-aircraft_code O	atis_capacity
+764	m80 机型的载客量是多少	B-aircraft_code O	atis_capacity
+765	m80 的载客量是多少	B-aircraft_code O	atis_capacity
+766	哪些航空公司服务 丹佛	O B-city_name	atis_airline
+767	列出有航班起降 丹佛 的航空公司	O B-city_name O	atis_airline
+768	哪些航空公司飞往 丹佛	O B-toloc.city_name	atis_airline
+769	列出所有晚上 8 点 至 9 点 之间抵达 丹佛 的航班	O B-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time O B-toloc.city_name O	atis_flight
+770	73s 的载客量是多少	B-aircraft_code O	atis_capacity
+771	73s 是什么	B-aircraft_code O	atis_abbreviation
+772	73s 飞机的载客量是多少	B-aircraft_code O	atis_capacity
+773	757 的载客量是多少	B-aircraft_code O	atis_capacity
+774	757 可以搭载多少乘客	B-aircraft_code O	atis_capacity
+775	多少乘客可以一起乘坐 757	O B-aircraft_code	atis_capacity
+776	列出所有晚上 8 点 至 9 点 之间抵达 丹佛 的 每日 航班	O B-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time O B-toloc.city_name O B-flight_days O	atis_flight
+777	列出所有晚上 8 点 至 9 点 之间抵达 丹佛 的 每日 航班	O B-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time O B-toloc.city_name O B-flight_days O	atis_flight
+778	显示所有 晚上 8 点 至 晚上 9 点 之间抵达 丹佛 的 每日 航班	O B-arrive_time.start_time I-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time O B-toloc.city_name O B-flight_days O	atis_flight
+779	757 的载客量是多少	B-aircraft_code O	atis_capacity
+780	告诉我关于 m80 飞机的信息	O B-aircraft_code O	atis_aircraft
+781	告诉我关于 m80 飞机的信息	O B-aircraft_code O	atis_aircraft
+782	告诉我关于 m80 机型的信息	O B-aircraft_code O	atis_aircraft
+783	733 的载客量是多少	B-aircraft_code O	atis_capacity
+784	m80 的载客量是多少	B-aircraft_code O	atis_capacity
+785	m80 飞机的载客量是多少	B-aircraft_code O	atis_capacity
+786	列出在晚上 8 点 至 9 点 之间抵达或离开 丹佛 的所有航班	O B-depart_time.start_time I-depart_time.start_time O B-depart_time.end_time I-depart_time.end_time O B-city_name O	atis_flight
+787	列出所有晚上 8 点 至 9 点 之间抵达 丹佛 的航班	O B-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time O B-toloc.city_name O	atis_flight
+788	列出晚上 8 点 至 9 点 之间抵达 丹佛 的所有机型的航班	O B-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time O B-toloc.city_name O	atis_flight
+789	请列出 周一 上午 所有从 纳什维尔 飞往 孟菲斯 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+790	请列出 周一 上午 从 纳什维尔 飞往 孟菲斯 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+791	我 早上 8 点 42 分从 孟菲斯机场 去市中心有地面交通可用吗	O B-period_of_day O O O O B-airport_name O	atis_ground_service
+792	请列出 周一 晚上 从 孟菲斯 飞往 纽约市 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+793	cvg 是什么	B-airport_code O	atis_abbreviation
+794	从 拉瓜迪亚机场 到 纽约市 有什么地面交通可用	O B-airport_name O B-city_name O	atis_ground_service
+795	有地面交通从 lga 到 纽约市 吗	O B-airport_code O B-city_name O	atis_ground_service
+796	请列出从 lga 到 纽约市 的地面交通	O B-airport_code O B-city_name O	atis_ground_service
+797	请列出从 ewr 到 纽约市 的地面交通	O B-airport_code O B-city_name O	atis_ground_service
+798	显示 早上 从 孟菲斯 飞往 纽约市 的航班	O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+799	给我从 纽约市 飞往 纳什维尔 周三 下午 5 点 之后 离开的航班	O B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+800	告诉我关于 纳什维尔机场 地面交通的信息	O B-airport_name O	atis_ground_service
+801	从 辛辛那提 飞往 夏洛特 直飞 午 后 离开 下午 7 点 之前 抵达有什么航班	O B-fromloc.city_name O B-toloc.city_name B-flight_stop B-depart_time.period_of_day B-depart_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+802	阿拉斯加航空 有多少飞往 伯班克 的航班	B-airline_name O B-toloc.city_name O	atis_flight
+803	列出从 伯班克 飞往任何地方的 阿拉斯加航空 的航班	O B-fromloc.city_name O B-airline_name O	atis_flight
+804	列出从 伯班克 出发的 阿拉斯加航空 的航班	O B-fromloc.city_name O B-airline_name O	atis_flight
+805	as 是哪个航空公司	B-airline_code O	atis_airline
+806	列出飞往 伯班克 的 阿拉斯加航空 的航班	O B-toloc.city_name O B-airline_name O	atis_flight
+807	列出从 伯班克 起飞的 阿拉斯加航空 的航班	O B-fromloc.city_name O B-airline_name O	atis_flight
+808	列出所有 阿拉斯加航空 的航班	O B-airline_name O	atis_flight
+809	列出所有从 西雅图 出发的航班	O B-fromloc.city_name O	atis_flight
+810	列出从 印第安纳波利斯 飞往 孟菲斯 在 中午 之前 离开的航班	O B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.time_relative O	atis_flight
+811	列出从 夏洛特 飞往 拉斯维加斯 最便宜 的票价	O B-fromloc.city_name O B-toloc.city_name B-cost_relative O	atis_airfare
+812	我需要 清 晨 从 洛杉矶 飞往 夏洛特 的航班	O B-depart_time.period_mod B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+813	我需要 上午 从 夏洛特 飞往 纽瓦克 的航班	O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+814	我需要 上午 从 纽瓦克 飞往 洛杉矶 的航班	O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+815	我需要 晚上 从 纽瓦克 飞往 洛杉矶 的航班	O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+816	我需要 周日 从 魁北克 的 蒙特利尔 飞往 加州 的 圣地亚哥 的航班	O B-depart_date.day_name O B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+817	我需要 周二 下午 从 圣地亚哥 飞往 印第安纳 的 印第安纳波利斯 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+818	我需要 周四 上午 出发从 印第安纳波利斯 飞往 多伦多	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+819	我需要 周五 上午 从 多伦多 飞往 蒙特利尔 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+820	我需要 美国航空 从 辛辛那提 飞往 伯班克 的航班	O B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+821	美国航空 下午 4 点 19 分 出发的航班使用的飞机是什么机型	B-airline_name B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time O	atis_aircraft
+822	我需要一趟从 堪萨斯城 飞往 芝加哥 下 周三 离开 第二天 返回的航班	O B-fromloc.city_name O B-toloc.city_name B-depart_date.date_relative B-depart_date.day_name O B-return_date.date_relative O	atis_flight
+823	从 长滩 飞往 圣路易斯 有什么航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+824	有哪些航班从 孟菲斯 飞往 拉斯维加斯	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+825	有哪些航班从 拉斯维加斯 飞往 安大略	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+826	有哪些航班从 安大略 飞往 孟菲斯	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+827	拉斯维加斯机场 有哪些地面交通	B-airport_name O	atis_ground_service
+828	安大略机场 有 出租车服务 吗	B-airport_name O B-transport_type O	atis_ground_service
+829	有哪些航班从 坦帕 飞往 密尔沃基	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+830	有哪些航班从 密尔沃基 飞往 西雅图	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+831	联合航空 有哪些航班从 拉瓜迪亚 飞往 圣何塞	B-airline_name O B-fromloc.airport_name O B-toloc.city_name	atis_flight
+832	有哪些航班 周一 从 北卡罗来纳 的 夏洛特 飞往 亚利桑那 的 菲尼克斯	O B-depart_date.day_name O B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name	atis_flight
+833	有哪些航班 周二 从 亚利桑那 的 菲尼克斯 飞往 明尼苏达 的 圣保罗	O B-depart_date.day_name O B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name	atis_flight
+834	有哪些航班 周四 离开 明尼苏达 的 圣保罗 飞往 圣路易斯	O B-depart_date.day_name O B-fromloc.state_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+835	有哪些航班 周五 离开 圣路易斯 飞往 北卡罗来纳 的 夏洛特	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name	atis_flight
+836	有哪些航班从 波士顿 飞往 奥兰多 并经停 纽约	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name	atis_flight
+837	我需要一趟 下 周一 上午 从 伯班克 飞往 密尔沃基 的航班	O B-depart_date.date_relative B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+838	有没有 周一 晚上 从 密尔沃基 飞往 圣路易斯 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+839	和 周二 下午 从 圣路易斯 飞往 伯班克 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+840	有没有 周二 晚上 从 圣路易斯 飞往 伯班克 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+841	我需要一趟从 盐湖 飞往 纽瓦克机场 在 周六 下午 6 点 之前 抵达的航班	O B-fromloc.city_name O B-toloc.airport_name O B-arrive_date.day_name B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+842	我需要一趟从 辛辛那提 飞往 纽瓦克机场 在 周六 下午 6 点 之前 抵达的航班	O B-fromloc.city_name O B-toloc.airport_name O B-arrive_date.day_name B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+843	我需要一趟 美国航空 从 迈阿密 飞往 芝加哥 且在 下午 5 点 左右 抵达的航班	O B-airline_name O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+844	我需要一趟从 孟菲斯 飞往 塔科马 并经停 洛杉矶 的航班	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+845	有哪些航班往返 辛辛那提 和 加州 的 圣何塞 并在 下午 6 点 之后 出发	O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+846	有哪些往返 圣何塞 和 德克萨斯 的 休斯顿 的 直达 航班	O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-flight_stop O	atis_flight
+847	有哪些往返 休斯顿 和 孟菲斯 的 直达 航班	O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+848	有哪些航班 周三 往返 孟菲斯 和 辛辛那提	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+849	有哪些 美国航空 航班从 纽瓦克 飞往 纳什维尔	O B-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+850	从 安大略 飞往 威斯特徹斯特 并经停 芝加哥 的航班	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+851	请列出从 洛杉矶 飞往 夏洛特 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+852	请列出从 夏洛特 飞往 纽瓦克 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+853	请列出从 纽瓦克 飞往 洛杉矶 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+854	请列出从 辛辛那提 飞往 伯班克 的 美国航空 的航班	O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+855	请给我 六月 十六号 从 堪萨斯城 飞往 芝加哥 的航班信息	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+856	请给我 六月 十七日 从 芝加哥 飞往 堪萨斯城 的航班信息	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+857	请列出 六月 十六号 从 堪萨斯城 飞往 芝加哥 的所有航班	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+858	请列出 六月 十七日 从 芝加哥 飞往 堪萨斯城 的所有航班	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+859	我需要从 伯班克 飞往 密尔沃基	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+860	能否帮我查找 下 周六 从 盐湖城 飞往 纽约市 并 在 下午 6 点 之前 抵达的航班	O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+861	能否帮我查找另一趟 周六 下午 6 点 之前 出发从 辛辛那提 飞往 纽约 的航班	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+862	能否列出 下 周六 从 盐湖城 飞往 纽约 并在 下午 6 点 之前 抵达的所有 达美 航班	O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-airline_name O	atis_flight
+863	我需要乘坐 美国航空 的航班从 迈阿密 飞往 芝加哥 并在 下午 5 点 左右 抵达	O B-airline_name O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+864	我需要 下 周三 从 堪萨斯城 飞往 芝加哥	O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+865	我需要一趟 周三 从 堪萨斯城 飞往 芝加哥 在 五月 二十六号 下午 7 点 抵达的 往返 航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number B-arrive_time.time I-arrive_time.time I-arrive_time.time O B-round_trip O	atis_flight
+866	是的我需要查找一趟从 孟菲斯 飞往 塔科马 并经停 洛杉矶 的航班	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+867	查找 周一 上午 从 圣地亚哥 飞往 菲尼克斯 的航班	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+868	查找 周一 从 菲尼克斯 飞往 底特律 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+869	查找 周二 从 底特律 飞往 圣地亚哥 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+870	查找 周一 从 辛辛那提 飞往 圣何塞 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+871	查找 周三 从 圣何塞 飞往 休斯顿 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+872	查找 周五 从 休斯顿 飞往 孟菲斯 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+873	查找 周日 从 孟菲斯 飞往 辛辛那提 的航班	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+874	查找 下午 6 点 30 分 左右 从 纽瓦克 飞往 纳什维尔 的 美国航空 的航班	O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+875	请查找 1993 年 六月 十日 从 洛杉矶 飞往 华盛顿 的 塔科马 途中经停 旧金山 且票价 不超过 300 美元 的 往返 航班	O B-depart_date.year I-depart_date.year B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-stoploc.city_name O B-cost_relative B-fare_amount I-fare_amount O B-round_trip O	atis_flight
+876	还有 六月 十日 从 伯班克 飞往 塔科马 的航班吗	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+877	请查找 五月 十七日 从 安大略 飞往 威斯特徹斯特 途中经停 芝加哥 并供应 晚餐 的 单程 航班	O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O B-meal_description O B-round_trip O	atis_flight
+878	要预订从 伯班克 飞往 密尔沃基 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+879	显示所有从 伯班克 飞往 密尔沃基 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+880	查找所有从 密尔沃基 飞往 圣路易斯 的航班	O B-fromloc.city_name O B-city_name O	atis_flight
+881	现在显示所有从 圣路易斯 飞往 伯班克 的航班	O B-city_name O B-toloc.city_name O	atis_flight
+882	有没有航空公司从 伯班克 飞往 密尔沃基 再从 密尔沃基 飞往 圣路易斯 然后从 圣路易斯 飞往 伯班克	O B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name	atis_airline
+883	查找所有从 伯班克 飞往 密尔沃基 途中经停 圣路易斯 的 往返 航班	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O B-round_trip O	atis_flight
+884	我需要预订两趟飞往 威斯特徹斯特县 的航班	O B-toloc.city_name O	atis_flight
+885	我需要预订一趟从 盐湖城 飞往 威斯特徹斯特县 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+886	告诉我 威斯特徹斯特县 附近所有机场的信息	O B-city_name O	atis_airport
+887	我需要预订一趟 联合航空 下 周六 的从 辛辛那提 飞往 纽约市 的航班	O B-airline_name B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+888	告诉我 纽约市 地区所有机场的信息	O B-city_name O	atis_airport
+889	请查找所有从 辛辛那提 出发 下 周六 下午 6 点 之前 飞往 纽约市 任意机场的航班	O B-fromloc.city_name O B-arrive_date.date_relative B-arrive_date.day_name B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-toloc.city_name O	atis_flight
+890	查找从 辛辛那提 飞往 纽约市 地区任意机场的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+891	我需要乘坐 美国航空 的航班从 迈阿密 飞往 芝加哥	O B-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+892	我需要预订从 堪萨斯城 飞往 芝加哥 的 往返 航班	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+893	查找从 孟菲斯 飞往 塔科马 的航班	O B-fromloc.city_name O B-toloc.city_name O	atis_flight

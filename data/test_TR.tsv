@@ -1,0 +1,716 @@
+id	utterance	slot_labels	intent
+366	dc ' den oakland ' a carsamba sabah nasil	B-fromloc.state_code O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+628	tarife kodu f nedir	O O B-fare_basis_code O	atis_abbreviation
+576	washington ve columbus arasi butun ucuslarin ucretleri nedir ?	B-fromloc.city_name O B-toloc.city_name O O O O O O	atis_airfare
+373	northwest ' in dulles ' ten kalkan kac ucusu var ?	B-airline_name O O B-fromloc.airport_name O O O O O O O	atis_flight
+423	st. louis de duraklayarak , charlotte ' dan las vegas ' a giden ucus ariyorum	B-stoploc.city_name I-stoploc.city_name O O O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+36	cumartesi sabah chicago ' dan minneapolis ' e yemekli continental ucuslarini ver	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O B-meal B-airline_name O O	atis_flight
+428	cincinnati ' den salt lake city ' ye giden ucuslari gormek istiyorum	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+667	ogleden sonra 419 ' da kalkan american ucusunda ne tur ucak kullaniliyor	B-depart_time.time I-depart_time.time I-depart_time.time O O O B-airline_name O O O O O	atis_aircraft
+434	indianapolis ' ten orlando ' ya aralik yirmi yedi	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.month_name B-depart_date.day_number O	atis_flight
+332	san francisco ' dan detroit michigan ' a bugun bir ucus alabilir miyim	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name B-toloc.state_name O O B-depart_date.today_relative O O O O	atis_flight
+342	memphis ' den cincinnati ' ye pazar ucuslari bul	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O	atis_flight
+581	united ' in la guardia ' dan san jose ' ye olan ucuslari nelerdir ?	B-airline_name O O B-fromloc.airport_name I-fromloc.airport_name O O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+87	washington dc ' den denver ' a ucuslarin bilgilerini istiyorum	B-fromloc.city_name B-fromloc.state_code O O B-toloc.city_name O O O O O	atis_flight
+376	757 ' de kac yolcu ucabilir ?	B-aircraft_code O O O O O O	atis_capacity
+701	hangi ucuslar bes nisan ' da cleveland ' dan indianapolis ' e gidiyor	O O B-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name O O B-toloc.city_name O O O	atis_flight
+50	new york ' tan los angeles ' a cumartesi aksami us air ucusuna ihtiyacim var	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day B-airline_name I-airline_name O O O	atis_flight
+649	733 ' nin oturma kapasitesi nedir	B-aircraft_code O O O O O	atis_capacity
+610	6 haziran ' in altisinda love field ' a hangi ucuslar var	B-arrive_date.day_number B-arrive_date.month_name O O O B-toloc.airport_name I-toloc.airport_name O O O O O	atis_flight
+354	toronto ' dan milwaukee ' ye ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+309	houston ' dan memphis ' e aktarmasiz olan ucuslar neler	B-fromloc.city_name O O B-toloc.city_name O O B-flight_stop O O O	atis_flight
+692	yirmi iki nisan sabah tacoma ' dan san jose ' ye giden ucuslar neler	B-depart_date.day_number I-depart_date.day_number B-depart_date.month_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+684	hangi havayolu as	O O B-airline_code	atis_airline
+464	indianapolis ' ten memphis ' e pazartesi gunu giden tum ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O O O O	atis_flight
+144	pazar gunu miami ' den indianapolis ' e ucuslari listele	B-depart_date.day_name O B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+364	houston ' dan dallas ' a gece yarisindan once	B-fromloc.city_name O O B-toloc.city_name O O B-depart_time.period_of_day O B-depart_time.time_relative	atis_flight
+421	salt lake city ' den cincinnati ' ye olan ucuslari istiyorum	B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+184	dallas ' dan baltimore ' a bir temmuz ' da varan ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O B-arrive_date.day_number B-arrive_date.month_name O O O O O	atis_flight
+248	bana charlotte ' tan minneapolis ' e sali sabah olan ucuslari goster	O B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O O O	atis_flight
+359	bana cumartesi sabah erken saatlerde chicago ' dan seattle ' a continental ' in yemekli ucuslarini goster	O B-depart_date.day_name B-depart_time.period_of_day B-depart_time.period_mod O B-fromloc.city_name O O B-toloc.city_name O O B-airline_name O O B-meal O O	atis_flight
+617	21 nisan sabah hangi ucuslar cleveland ' dan kalkip indianapolis ' e gidiyor ?	B-depart_date.day_number B-depart_date.month_name B-depart_time.period_of_day O O B-fromloc.city_name O O O B-toloc.city_name O O O O	atis_flight
+543	bana 7 pm ' den once varan st. petersburg ve detroit arasi en ucuz gidis - donusleri goster	O B-arrive_time.time I-arrive_time.time O O B-arrive_time.time_relative O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-cost_relative I-cost_relative B-round_trip O O O	atis_flight
+547	oakland ve salt lake city arasindaki butun ucuslari goster	B-fromloc.city_name O B-toloc.city_name O O O O O O	atis_flight
+30	new york ' tan las vegas ' a direkt ucuslari ver	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-flight_stop O O	atis_flight
+223	lutfen bana on alti haziran ' da kansas city ' den chicago ' ya ucuslari ver	O O O B-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+161	phoenix ' ten las vegas ' a ucuslari listele	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+122	pazar gunu nashville ' den cleveland ' a butun ucuslari listele	B-depart_date.day_name O B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+380	boston ' da limuzin servisi ne kadar	B-city_name O O B-transport_type O O O	atis_ground_fare
+637	charlotte_havaalanindan charlotte sehir merkizine nasil gidilir	B-airport_name B-city_name O O O O	atis_ground_service
+509	pazar gunu phoenix ' ten milwaukee ' ye	B-depart_date.day_name O B-fromloc.city_name O O B-toloc.city_name O O	atis_flight
+290	bana pittsburgh ' dan washington dc ' ye olan ucuslari goster	O B-fromloc.city_name O O B-toloc.city_name B-toloc.state_code O O O O O	atis_flight
+551	memphis ' den new york ' a sabah ucuslarini ( ucak seferlerini ) goster bana	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-depart_time.period_of_day O O O O O O O	atis_flight
+107	kansas city ' den atlanta ' ya pazartesi sabah ucusu	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+154	ontario california ' dan orlando florida ' ya ucuslari listele	B-fromloc.city_name B-fromloc.state_name O O B-toloc.city_name B-toloc.state_name O O O O	atis_flight
+602	qo kodlu tarife ne demek	B-fare_basis_code O O O O	atis_abbreviation
+615	long beach ' ten st. louis ' ye hangi ucuslar var ?	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+201	pazar ogleden sonra miami ' den cleveland ' a	B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O	atis_flight
+180	burbank ' ten kalkan alaska airlines ucuslarini listele	B-fromloc.city_name O O O B-airline_name O O O	atis_flight
+705	pazartesi gunu hangi ucuslar montreal ' den kalkip sabah chicago ' ya variyor	B-depart_date.day_name O O O B-fromloc.city_name O O O B-arrive_time.period_of_day B-toloc.city_name O O O	atis_flight
+17	chicago ' dan seattle ' a ucus numaralari	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight_no
+411	ben washington dc ' den phoenix arizona ' ya ucmak istiyorum	O B-fromloc.city_name B-fromloc.state_code O O B-toloc.city_name B-toloc.state_name O O O O	atis_flight
+128	sabah 10 ' dan sonra new york city ' den los angeles ' a direk ucuslari listele	O B-depart_time.time I-depart_time.time O B-depart_time.time_relative B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name I-depart_time.time O B-toloc.city_name I-toloc.city_name I-depart_time.time O B-connect O O	atis_flight
+148	newark ' tan boston ' a gunluk ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O B-flight_days O O	atis_flight
+505	simdi bana houston ' dan boston ' a tek yon ucuslari goster	O O B-fromloc.city_name O O B-toloc.city_name O O B-round_trip I-round_trip O O	atis_flight
+191	westchester county ' den cincinnati ' ye yedi haziran aksam 5 ' ten sonra kalkan ucuslari listele	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_number B-depart_date.month_name O B-depart_time.time O O B-depart_time.time_relative O O O	atis_flight
+327	tower air de yemek servisi var mi	B-airline_name I-airline_name O B-meal O O O	atis_meal
+314	phoenix_havaalani ve phoenix sehir merkezi arasinda hangi kara tasimaciligi mevcut	B-airport_name O B-city_name O O O O O O O	atis_ground_service
+278	bana orlando ' dan montreal ' e tek yon en ucuz ucuslari goster	O B-fromloc.city_name O O B-toloc.city_name O O B-round_trip I-round_trip B-cost_relative I-cost_relative O O	atis_flight
+130	tampa ' dan cincinnati ' ye erken aksam ucuslarini listele	B-fromloc.city_name O O B-toloc.city_name O O B-depart_time.period_of_day B-depart_time.period_of_day O O	atis_flight
+178	denver ' dan kalkan ya da inen ucuslari olan havayollarini listele	B-city_name O O O O O O O O O O	atis_airline
+603	y kodlu tarife ne demek	B-fare_basis_code O O O O	atis_abbreviation
+431	newark ' tan los angeles ' a giden bir aksam ucusu istiyorum	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O B-depart_time.period_of_day O O	atis_flight
+185	denver ' dan baltimore ' a bir temmuz ' da varan ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O B-arrive_date.day_number B-arrive_date.month_name O O O O O	atis_flight
+296	new york city civarindaki tum havaalanlarini soyle	B-city_name I-city_name O O O O O	atis_airport
+168	toronto ' dan washington dc ' ye ucuslari listele	B-fromloc.city_name O O B-toloc.city_name B-toloc.state_code O O O O	atis_flight
+238	bugun burbank ' ten milwaukee ' ye ucuslari goster	B-depart_date.today_relative B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+90	los angeles ' da hangi havaalanlarinin oldugunu ogrenmek istiyorum	B-city_name I-city_name O O O O O O O	atis_airport
+188	memphis ' den cleveland ' a ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+387	ontario ' dan memphis ' e gidecek bir ucusa ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O O O O O O	atis_flight
+299	newark ' tan nashville ' e olan american ucuslari neler	B-fromloc.city_name O O B-toloc.city_name O O O B-airline_name O O	atis_flight
+438	burbank ' den milwaukee ' ye ucus ayirmak istiyorum	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+57	tampa ' dan charlotte ' a pazar ucusuna ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O O	atis_flight
+341	tampa dan montreal e new york uzerinden ucus bul	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name I-stoploc.city_name O O O	atis_flight
+266	montreal ' den orlando ' ya aktarmasiz ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O B-flight_stop O O	atis_flight
+252	bana minneapolis ' ten indianapolis ' e sali gunu saat 2 ' den sonra olan ucuslari goster	O B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O B-depart_time.time O O O B-depart_time.time_relative O O O	atis_flight
+62	cleveland ' dan milwaukee ' ye carsamba aksam 6 ' dan sonra kalkan ucusun bilgisine ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.time I-depart_time.time O O B-depart_time.time_relative O O O O O	atis_flight
+304	washington dc ve columbus ohio arasindaki ucuslar neler	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name B-toloc.state_name O O O	atis_flight
+375	l1011 ucagi kac yolcu alabilir	B-aircraft_code O O O O	atis_capacity
+347	atlanta ' dan seattle ' a ucuslar	B-fromloc.city_name O O B-toloc.city_name O O O	atis_flight
+115	memphis ' ten miami ' ye carsamba aksami butun ucuslari ve fiyatlarini listele	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O O O O O	atis_flight airfare
+706	13 nisan carsamba gunu hangi ucuslar indianapolis ' ten kalkip sabah montreal ' e variyor	B-depart_date.day_number B-depart_date.month_name B-depart_date.day_name O O O B-fromloc.city_name O O O B-arrive_time.period_of_day B-toloc.city_name O O O	atis_flight
+83	phoenix ' den denver ' a ucus bilgisini istiyorum	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+538	delta ' nin 486 nolu ucusunu goster	B-airline_name O O B-flight_number O O O	atis_flight
+513	lutfen bana alaska havayollarindan san diego ' dan toronto ' ya giden bir ucus bul	O O B-airline_name O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O O	atis_flight
+208	cuma sabah toronto ' dan montreal ' e ucmak istiyorum	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+303	milwaukee ve pittsburgh arasindaki ucuslar neler	B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+492	cleveland ' dan memphis ' e giden ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+591	northwest nerelerden ucuyor	B-airline_name O O	atis_city
+298	hangi havayollari haziran altida 6 ve 10 arasi love field ' dan kalkar	O O B-depart_date.month_name B-depart_date.day_number B-depart_time.start_time O B-depart_time.end_time O B-fromloc.airport_name I-fromloc.airport_name O O O	atis_airline
+334	newark ' tan baltimore ' a sabah ucusu alabilir miyim lutfen	B-toloc.city_name O O B-fromloc.city_name O O B-depart_time.period_of_day O O O O	atis_flight
+420	minneapolis ' ten san diego ' ya olan ucuslari istiyorum	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+281	bana houston ' tan boston ' a gidis donus olan en ucuz fiyatlari goster	O B-fromloc.city_name O O B-toloc.city_name O O B-round_trip O O B-cost_relative I-cost_relative O O	atis_airfare
+157	cumartesi bilet tarife kodu q olan orlando ' dan tacoma ' ya ucuslari listele	B-depart_date.day_name O O O B-fare_basis_code O B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+502	newark ' tan tampa ' ya cuma gunu	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name I-depart_date.day_name	atis_flight
+683	westchester county ' de yer hizmetleri nelerdir	B-city_name I-city_name O O O O O	atis_ground_service
+587	milwaukee ' dan seattle ' a ucuslar hangileri	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+194	charlotte ' tan butun ucuslarin ucak tiplerini listele	B-fromloc.city_name O O O O O O O	atis_aircraft
+44	milwaukee ' den indianapolis ' e pazartesi sabah 8 ' den once kalkan bir ucusa ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.time I-depart_time.time O O B-depart_time.time_relative O O O O O	atis_flight
+430	milwaukee ' den orlando ' ya carsamba aksam veya persembe sabah tek yon bir bilet istiyorum .	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day B-or B-depart_date.day_name B-depart_time.period_of_day B-round_trip I-round_trip O O O O	atis_airfare
+660	tpa nedir	B-airport_code O	atis_abbreviation
+235	jfk ' den miami ' ye delta airlines ucuslarini goster	B-fromloc.airport_code O O B-toloc.city_name O O B-airline_name I-airline_name O O	atis_flight
+416	toronto ' dan st. louis ' e ucmak istiyorum	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+279	bana las vegas ' tan detroit ' e gidis donus en ucuz coach biletlerini goster	O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-round_trip O B-cost_relative I-cost_relative B-class_type O O	atis_airfare
+68	oakland ' dan salt lake city ' e persembe sabah 8 ' den once kalkan ucuslarin numaralarina ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.time I-depart_time.time O O B-depart_time.time_relative O O O O O	atis_flight_no
+70	indianapolis ' ten seattle ' a ucuslarin bilgilerine ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O O O O O	atis_flight
+228	lutfen sadece cleveland ' dan dallas ' a ogleden once kalkaan ucuslari listele	O O B-fromloc.city_name O O B-toloc.city_name O O B-depart_time.period_of_day B-depart_time.time_relative O O O	atis_flight
+599	bn kodlu tarife ne demek	B-fare_basis_code O O O O	atis_abbreviation
+40	kac tane kanada havayolu ucusu dh8 ucak kullaniyor	O O B-airline_name I-airline_name I-airline_name B-aircraft_code O O	atis_quantity
+656	m80 tipi ucagin yolcu kapasitesi nedir	B-aircraft_code O O O O O	atis_capacity
+673	san francico ' dan detroit ' e bugun en ucuz ucus nedir	B-fromloc.city_name O O O B-toloc.city_name O O B-depart_date.today_relative B-cost_relative I-cost_relative O O	atis_flight
+489	boston_havaalanindan boston sehirmerkezine olan mesafeyi mil cinsinden listele	B-fromloc.airport_name B-city_name O O O O O O	atis_distance
+533	st. louis ' ten burbank ' a carsamba aksam ucaklarini goster	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O O	atis_flight
+43	toronto international ' da limuzin servisi ne kadar tutar	B-airport_name I-airport_name O O B-transport_type O O O O	atis_ground_fare
+586	memphis ' dan las vegas ' a ucuslar hangileri	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+141	pazartesi gunu indianapolis ' den memphis ' e ucuslari fiyatlariyla listele	B-depart_date.day_name O B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+512	lutfen bana orlando ' dan kansas city ' ye giden bir ucus bul	O O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+614	sali sabah denver ' dan st. louis ' ye hangi ucuslar var ?	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+546	milwaukee ve indiana arasindaki ucuslar goster	B-fromloc.city_name O B-toloc.state_name O O O	atis_flight
+321	washington dc ' den boston ' a bir ucus icin en ucus fiyat ne	B-fromloc.city_name B-fromloc.state_code O O B-toloc.city_name O O O I-cost_relative O B-cost_relative I-cost_relative O O	atis_airfare
+552	toronto ' dan st. petersburg ' a direkt ucuslari goster	B-fromloc.city_name O O O B-toloc.city_name O O B-flight_stop O O	atis_flight
+424	atlanta ' dan san diego ' ya ucmak istiyorum	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+13	houston ' dan memphis ' e cuma gunu bir ucus bul	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O O O	atis_flight
+174	gecen carsamba oakland ' dan salt lake city ' e ucusu listele	B-flight_mod B-depart_date.day_name B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O	atis_flight
+398	miami ' den toronto ' ya giden aktarmasiz ucusa ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O O B-flight_stop O O O	atis_flight
+601	h kodlu tarife ne demek	B-fare_basis_code O O O O	atis_abbreviation
+286	bana jfk ve orlando arasindaki first class ve coach ucuslarini goster	O B-fromloc.airport_code O B-toloc.city_name O B-class_type I-class_type O B-class_type O O	atis_flight
+121	memphis ' den miami ' ye butun ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+197	oakland ' dan salt lake city ' e carsamba gecesi ucuslarini listele	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O O	atis_flight
+156	pazartesi ontario california ' dan salt lake city utah ' a ucuslari listele	B-depart_date.day_name B-fromloc.city_name B-fromloc.state_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-toloc.state_name O O O O	atis_flight
+583	cleveland ' dan dallas ' a ucuslar hangileri	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+69	oakland ' dan kalkip salt lake city ' e varan ucuslara ihtiyacim var	B-fromloc.city_name O O O B-toloc.city_name O O O O O O O O	atis_flight
+626	wn hangi havayoludur ?	B-airline_code O O O	atis_airline
+609	ua ne demek ?	B-airline_code O O O	atis_abbreviation
+553	milwaukee ' den orlando ' ya tek yon hafta ici ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O B-round_trip I-round_trip B-flight_mod I-flight_mod O O	atis_flight
+548	detroit ' ten las vegas ' a ucuslari goster	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+282	bana boston ve denver arasini baglayan ucuslari ve ucak tiplerini goster	O B-fromloc.city_name O B-toloc.city_name O B-connect O O O O O	atis_flight
+214	carsamba gunu phoenix ' ten milwaukee ' ye	B-depart_date.day_name O B-fromloc.city_name O O B-toloc.city_name O O	atis_flight
+152	oakland ' dan salt lake city ' e persembe gece yarisindan sonra kalkan ucuslari listele	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O B-depart_time.time_relative O O O	atis_flight
+37	cumartesi sabah chicago ' dan minneapolis ' e yemekli ucuslari ver	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O B-meal O O	atis_flight
+681	denver ' a taksi ne kadar tutar ?	B-city_name O O B-transport_type O O O O	atis_ground_fare
+210	gelecek carsamba kansas city ' den chicago ' ya bir ucusta chicago ' ya aksam 7 civarinda varmali donus ucusu persembe gunu	B-depart_date.date_relative B-depart_date.day_name B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O B-toloc.city_name O O B-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O O O B-return_date.day_name O	atis_flight
+679	twa ile columbus ' tan st. paul ' e en ucuz gidis donus ne kadar	B-airline_code O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-cost_relative I-cost_relative B-round_trip O O O	atis_flight
+176	seattle ' dan salt lake city ' e delta ucuslarinin koltuk kapasitelerini listele	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-airline_name O O O O	atis_capacity
+66	milwaukee ' den tampa ' ya ucus bilgilerine ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O O O O O	atis_flight
+707	northwest havayollari ' nin hangi ucuslari detroit ' ten kalkip st. petersburg ' a variyor	B-airline_name I-airline_name O O O O B-fromloc.city_name O O O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+362	las vegas ' a karayolu ile seyahat	B-city_name I-city_name O O O O O	atis_ground_service
+134	washington dc ' den toronto ' ya kesinlikle iyi olan bilet fiyatlarini listele	B-fromloc.city_name B-fromloc.state_code O O B-toloc.city_name O O O O O O O O	atis_airfare
+672	san francisco ' dan denver ' a en ucuz ucus nedir	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-cost_relative I-cost_relative O O	atis_flight
+283	detroit ' ten las vegas ' a gidis donus first class ucas fiyatlarini goster	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-round_trip O B-class_type I-class_type O O O	atis_airfare
+665	us kisaltmasi neye karsilik geliyor	B-airline_code O O O O	atis_abbreviation
+403	milwaukee ' da araba kiralamam lazim	B-city_name O O B-transport_type O O	atis_ground_service
+93	newark ' tan los angeles ' a bir sabah ucusu istiyorum	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O B-depart_time.period_of_day O O	atis_flight
+274	bana hava kulesi hizmet veren havaalanlarini goster	O I-airline_name B-airline_name O O O O	atis_airport
+356	washington ' dan montreal ' ya cumartesi gunu gidis fiyatlarini listele	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O O O	atis_airfare
+573	denver ' a ucan havayollari hangileri	B-toloc.city_name O O O O O	atis_airline
+310	cincinnati ' den charlotte ' a ogleden once ayrilan ve 7 pm ' den sonra varan aktarmasiz olan ucuslar neler	B-fromloc.city_name O O B-toloc.city_name O O B-depart_time.period_of_day B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time O O B-depart_time.time_relative O B-flight_stop O O O	atis_flight
+571	washington dc ve columbus ohio arasi ucan havayollari hangileri	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name B-toloc.state_name O O O O	atis_airline
+305	boston ' dan orlando ' ya olan new york ' ta duran ucuslar neler	B-fromloc.city_name O O B-toloc.city_name O O O B-stoploc.city_name I-stoploc.city_name O O O O O	atis_flight
+250	bana indianapolis ' ten charlotte ' a pazartesi olan ucuslari goster	O B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O O	atis_flight
+322	l10 ucaginin oturma kapasitesi ne kadar	B-aircraft_code O O O O O	atis_capacity
+566	hp havayolu nedir	B-airline_code O O	atis_airline
+557	m80 ucagi hakkinda bana bilgi ver	B-aircraft_code O O O O O	atis_aircraft
+193	canadian airlines international ' in ucuslarini listele	B-airline_name I-airline_name I-airline_name O O O O	atis_flight
+439	toronto ' dan san diego ' ya bir ucus goster	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+220	lutfen kansas city ' den newark ' a mevcut ucuslari bul	O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+129	new york ' teki havaalanlarindan sehir merkezine mesafeleri listele	B-city_name I-city_name O O O O O O O	atis_distance
+74	washington ' dan montreal ' a cumartesi ucuslarina ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O O	atis_flight
+477	st. paul ' dan kansas city ' ye cuma aksam yemekli ucuslari listele	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day B-meal O O	atis_flight
+116	aksam 8 ve 9 arasinda denver ' a varan ve kalkan butun ucuslari listele	O B-depart_time.start_time O B-depart_time.end_time O B-city_name O O O O O O O O	atis_flight
+432	cleveland ' dan dallas ' a ucmak istiyorum	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+623	baltimore ' da ulasim nasildir	B-city_name O O O O	atis_ground_service
+175	boston ' dan washington ' a cumartesi ucuslarini listele	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O	atis_flight
+256	bana indianapolis ' ten charlotte ' a pazartesi olan us 1207 , charlotte ' tan minneapolis ' e pazartesi olan us 1500 ve minneapolis ' ten indianapolis ' e olan twa 639 ucuslarini goster	O B-toloc.city_name O O B-fromloc.city_name O O B-depart_date.day_name O B-airline_code B-flight_number O B-fromloc.city_name O O B-fromloc.city_name O O B-depart_date.day_name O B-airline_code B-flight_number O B-fromloc.city_name O O B-toloc.city_name O O O B-airline_code B-flight_number O O	atis_flight
+658	milwaukee ' den san diego ' ya en kisa ucus hangisidir	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-flight_mod I-flight_mod O O	atis_flight
+340	bu ucusta yemek var mi ?	O O B-meal_description O O O	atis_flight
+59	denver ' dan salt lake city ' e pazartesi ogleden sonra 5 ' den sonra kalkan ucusun ucus ve havayolu bilgisine ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O B-depart_time.time_relative B-depart_time.time O O B-depart_time.time_relative O O O O O O O O	atis_flight airline
+137	cuma ogleden sonra atlanta ' dan toronto ' ya ucuslari listele	B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+449	california nevada arizona havaalanlarini listele	B-state_name B-state_name B-state_name O O	atis_airport
+313	milwaukee_havaalani ve milwaukee sehir merkezi arasinda hangi kara tasimaciligi mevcut	B-airport_name O B-city_name O O O O O O O	atis_ground_service
+353	milwaukee ' den dtw ' ya ucak bul	B-fromloc.city_name O O B-toloc.airport_code O O O O	atis_flight
+408	memphis ' ten seattle ' a gidis donus ucusu istiyorum	B-fromloc.city_name O O B-toloc.city_name O O B-round_trip O O O	atis_flight
+229	lutfen cincinnati ' den burbank ' e american airlines ile ucuslari listele	O B-fromloc.city_name O O B-toloc.city_name O O B-airline_name O O O O	atis_flight
+320	dallas ' tan tampa ' ya en son kahvalti ucusu ne	B-fromloc.city_name O O B-toloc.city_name O O O B-flight_mod B-meal_description O O	atis_flight
+507	bir nisan ' da phoenix ' den san diego ' ya giden bir ucus istiyorum	B-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O B-depart_date.day_number O O	atis_flight
+525	boston ' dan salt lake ' e delta havayollari ucuslarini goster	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-airline_name I-airline_name O O	atis_flight
+215	lutfen kansas city ' den newark ' a bir ucus bul	O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+413	delta havayollari ' ndan 1 nisan ' da orlando ' dan salt lake city ' ye giden bir ucus istiyorum	B-airline_name I-airline_name O O B-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+686	hangi havayolu us	O O B-airline_code	atis_airline
+625	d9s nedir ?	B-aircraft_code O O	atis_abbreviation
+520	lutfen charlotte ' dan newark ' a ucuslari listele	O B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+415	toronto ' dan detroit ' e ucmak istiyorum	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+331	baltimore ' dan newark ' a carsamba sabah	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+39	new york la guardia sehir merkezine ne kadar uzak	B-city_name I-city_name B-airport_name I-airport_name O O O O O	atis_distance
+330	baltimore ' dan kansas city ' e ekonomi	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-economy	atis_flight
+89	columbus ' tan phoenix ' e ogleden sonra cincinnati uzerinden ucmak istiyorum	B-fromloc.city_name O O B-toloc.city_name O O B-depart_time.period_of_day I-depart_time.period_of_day B-stoploc.city_name O O O	atis_flight
+259	milwaukee ' den orlando ' ya olan ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+171	washington dc ' den pittsburgh ' a 1800 ' den sonra kalkan ucuslari listele	B-fromloc.city_name B-fromloc.state_code O O B-toloc.city_name O O B-depart_time.time O O B-depart_time.time_relative O O O	atis_flight
+60	oakland ' dan salt lake city ' e persembe sabah 8 ' den once kalkan ucusun tarifesine ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.time I-depart_time.time O O B-depart_time.time_relative O O O O O	atis_flight airfare
+167	tampa ' dan cincinnati ' ye 3 ' ten sonraki ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O B-depart_time.time O O B-depart_time.time_relative O O	atis_flight
+139	ogleden once cincinnati ' den tampa ucuslari listele	B-depart_time.period_of_day B-depart_time.time_relative B-fromloc.city_name O O B-toloc.city_name O O	atis_flight
+454	boston ' dan pittsburgh ' a ucuslari gunluk sirala	B-fromloc.city_name O O B-toloc.city_name O O O B-flight_days O	atis_flight
+372	alaska havayollari ' nin burbank ' a kac ucusu var	B-airline_name I-airline_name O O B-toloc.city_name O O O O O	atis_flight
+58	milwaukee ' den denver ' a erken bir ucusa ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O B-flight_mod O O O O	atis_flight
+537	denver a aksam 8 - 9 arasi varan gunluk ucus listesi	B-toloc.city_name O O B-arrive_time.start_time O B-arrive_time.end_time O O B-flight_days O O	atis_flight
+270	toronto ' dan detroit ' e delta northwest us air ve united airlines gidis donus ucus fiyatlarini goster	B-fromloc.city_name O O B-toloc.city_name O O B-airline_name B-airline_name B-airline_name I-airline_name O B-airline_name I-airline_name B-round_trip I-round_trip O O O	atis_airfare
+567	us havayolu nedir	B-airline_code O O	atis_airline
+275	bana miami ' den new york ' a en ucuz ekonomi ucuslarini goster	O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-cost_relative I-cost_relative B-economy O O	atis_flight
+29	new york ' tan nashville ' e carsamba ogleden sonra 5 ' den sonra kalkan ucuslari ver	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O B-depart_time.time_relative B-depart_time.time O O B-depart_time.time_relative O O O	atis_flight
+574	denver ' da hangi havayollari var	B-city_name O O O O O	atis_airline
+378	pittsburgh ' dan atlanta ' ya koc ucus ne kadar ?	B-fromloc.city_name O O B-toloc.city_name O O B-class_type O O O O	atis_airfare
+52	kansas city ' den chicago ' ya gelecek carsamba kalkan ve sonraki gun donen bir ucusa ihtiyacim var	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-depart_date.date_relative B-depart_date.day_name O O B-return_date.date_relative I-return_date.date_relative O O O O O	atis_flight
+708	us havayollari ' nin hangi ucuslari orlando ' dan cleveland ' a gidiyor	B-airline_name O O O O O B-fromloc.city_name O O B-toloc.city_name O O O	atis_flight
+540	bana montreal ' den orlando ' ya ucuslari goster	O B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+479	washington dc ' den montreal ' e olan ucuslari listele	B-fromloc.city_name B-fromloc.state_code O O B-toloc.city_name O O O O O	atis_flight
+307	tampa ' dan milwaukee ' ye olan ucuslar neler	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+200	sali ogleden sonra los angeles ' tan pittsburgh ' a	B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O	atis_flight
+219	lutfen cincinnati ' den new york city ' deki herhangi bir havaalanina onumuzdeki cumartesi aksam 6 ' dan once varan butun ucuslari bul	O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O B-arrive_date.date_relative B-arrive_date.day_name B-arrive_time.time I-arrive_time.time O O B-arrive_time.time_relative O O O O	atis_flight
+394	carsamba aksami veya persembe sabah toronto ' dan newark ' a tek yon ucus bileti istiyorum	B-depart_date.day_name O O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O B-round_trip I-round_trip O O O	atis_flight
+627	cvg nedir ?	B-airport_code O O	atis_abbreviation
+569	baltimore ' dan kalkan havayollari hangileri	B-fromloc.city_name O O O O O	atis_airline
+22	oakland ' dan salt lake city ' e carsamba gunku son ucusu veya oakland ' dan salt lake city ' e persembe gunku ilk ucusu getir	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O B-flight_mod O B-or B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O B-flight_mod O O	atis_flight
+119	cleveland ' dan nashville ' e butun ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+469	las vegas ' den phoenix ' a olan ucuslari listele	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+159	carsamba gunu phoenix arizona ' dan ontario california ' ya ucuslari listele	B-depart_date.day_name O B-fromloc.city_name B-fromloc.state_name O O B-toloc.city_name B-toloc.state_name O O O O	atis_flight
+698	hangi ucuslar tampa ' dan kalkip cincinnati ' ye aksam variyor	O O B-fromloc.city_name O O O B-toloc.city_name O O B-arrive_time.period_of_day O	atis_flight
+481	los angeles listele	B-city_name I-city_name O	atis_city
+329	us air icin charlotte havaalaninda kac farkli ucak tipi var	B-airline_name I-airline_name O B-city_name O O O O O O	atis_aircraft
+369	toronto uluslararasi havaalani sehir merkezinden ne kadar uzakta	B-airport_name I-airport_name I-airport_name O O O O O	atis_distance
+570	detroit ve westchester arasi ucan havayollari hangileri	B-fromloc.city_name O B-toloc.city_name O O O O	atis_airline
+391	pazartesi sabah san francisco ' dan milwaukee ' ye gidecek bir ucusa ihtiyacim var	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O O O	atis_flight
+260	milwaukee ' den orlando ' ya tek yon ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O B-round_trip I-round_trip O O	atis_flight
+355	washington ' dan boston ' ya cumartesi gunu gidis fiyatlarini listele	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O O O	atis_airfare
+172	washington dc ' den toronto ' ya ucuslari listele	B-fromloc.city_name B-fromloc.state_code O O B-toloc.city_name O O O O	atis_flight
+483	cumartesi washington ' dan boston ' a giden ucuslari listele	B-depart_date.day_name B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+458	denver ' dan phoenix ' a ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+456	chicago ' dan san diego ' a ucuslari listele	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+237	onumuzdek carsamba gunu kansas city ' den chicago ' ya aksam saat 7 ' de chicago ' ya varan ucuslari ve fiyatlarini goster	B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O B-arrive_time.time I-arrive_time.time O O B-toloc.city_name O O B-arrive_time.time_relative O O O O	atis_flight airfare
+236	boston ' dan salt lake ' e delta airlines ucuslarini goster	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-airline_name I-airline_name O O	atis_flight
+315	pittsburgh_havaalani ve pittsburgh sehir merkezi arasinda hangi kara tasimaciligi mevcut	B-airport_name O B-city_name O O O O O O O	atis_ground_service
+508	cuma gecesi newark ' tan los angeles ' a ucmak istiyorum	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+91	bu ogleden sonrasi icin bir american ucusunda cincinnati ' den burbank ' e ucmak istiyorum	B-depart_date.today_relative B-depart_time.period_of_day O O O B-airline_name O B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+526	boston ' dan salt lake city ' e ucan delta airlines ucuslarini goster	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O B-airline_name O O O	atis_flight
+597	ap 57 ne demek	B-restriction_code I-restriction_code O O	atis_abbreviation
+288	bana kennedy havaalani ' ndan miami ' ye first class ve coach ucuslarini goster	O B-fromloc.airport_name O O O B-toloc.city_name O O B-class_type I-class_type O B-class_type O O	atis_flight
+300	detroit ' ten westchester county ' ye olan kalkis zamanlari neler	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O B-flight_time I-flight_time O	atis_flight_time
+670	denver ' da hangi tip kara ulasimi mevcut	B-city_name O O O O O O O	atis_ground_service
+528	kansas city ' den minneapolis ' ya giden ucuslari goster	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+491	6 haziran ' da cincinnati ' den westchester county ' e olan ucuslari listele	B-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+590	charlotte north carolina ' dan phoenix arizona ' ya pazartesi gunleri hangi ucuslar var	B-fromloc.city_name B-fromloc.state_name I-fromloc.state_name O O B-toloc.city_name B-toloc.state_name O O B-depart_date.day_name O O O O	atis_flight
+41	columbus ' dan milwaukee ' ye twa ilek ucmak ne kadar	B-fromloc.city_name O O B-toloc.city_name O O B-airline_code O O O O	atis_airfare
+404	tampa ' da araba kiralamam lazim	B-city_name O O B-transport_type O O	atis_ground_service
+699	hangi ucuslar tampa ' dan erken kalkip cincinnati ' ye variyor	O O B-fromloc.city_name O O B-depart_time.period_of_day O B-toloc.city_name O O O	atis_flight
+497	pazar ogleden sonra memphis ' den las vegas ' a	B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O	atis_flight
+640	bwi ' den salt late city ' e en ucuz tarife nedir	B-fromloc.airport_code O O B-toloc.city_name O O O O B-cost_relative O O O	atis_airfare
+120	kansas city ' den cleveland ' a butun ucuslari listele	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+712	kansas city ' den los angeles ' a nisan ' in 9 ' unda hangi ucuslar gidiyor	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-depart_date.month_name O O B-depart_date.day_number O O O O O	atis_flight
+563	aa havayolu nedir	B-airline_code O O	atis_airline
+82	los angeles ' dan charlotte ' a bugun sabah erken ucusunu istiyorum	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-depart_date.today_relative B-depart_time.period_of_day B-depart_time.period_of_day O O	atis_flight
+186	alti haziran ' da 4 ' den sonra denver ' dan cincinnati ' ye ucuslari listele	B-depart_date.day_number B-depart_date.month_name O O B-depart_time.time O O B-depart_time.time_relative B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+532	st. louis ' den burbank ' a giden cumartesi aksam ucuslarini goster	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O B-depart_date.day_name B-depart_time.period_of_day O O	atis_flight
+435	denver havaalani ' nda kara ulasimi var mi ?	B-airport_name I-airport_name O O O O O O O	atis_ground_service
+190	sekiz haziran ' da westchester county ' den cincinnati ' ye ucuslari listele	B-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+657	milwaukee ' den long beach ' e en kisa ucus hangisidir	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-flight_mod I-flight_mod O O	atis_flight
+131	tampa ' dan cincinnati ' ye aksam ucuslarini listele	B-fromloc.city_name O O B-toloc.city_name O O B-depart_time.period_of_day O O	atis_flight
+655	733 tipi ucagin yolcu kapasitesi nedir	B-aircraft_code O O O O O	atis_capacity
+437	lga ' dan new york city ' a kara ulasimi bulunuyor mu ?	B-airport_code O O B-city_name I-city_name I-city_name O O O O O O O	atis_ground_service
+189	pittsburgh ' dan baltimore ' a bir temmuz ' da varan ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O B-arrive_date.day_number B-arrive_date.month_name O O O O O	atis_flight
+377	757 kac kisi alir	B-aircraft_code O O O	atis_capacity
+644	delta be1 ' nin oturma kapasitesi nedir	B-airline_name B-aircraft_code O O O O O	atis_capacity
+328	6 nisan carsamba long beach ' ten columbus ' a ucus var mi	B-depart_date.day_number B-depart_date.month_name B-depart_date.day_name B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+72	washington ' dan toronto ' ya cumartesi ucuslarinin tarifesine ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O O O	atis_airfare
+241	bana miami ' den jfk ' e bir donus ucusu goster lutfen	O B-fromloc.city_name O O B-toloc.airport_code O O O B-round_trip O O O	atis_flight
+530	minneapolis ' ten kansas city ' ye ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+653	m80 tipi ucagin yolcu kapasitesi nedir	B-aircraft_code O O O O O	atis_capacity
+524	cumartesi gunku american airlines milwaukee ' den phoenix ' e ucus	B-depart_date.day_name O B-airline_name O B-fromloc.city_name O O B-toloc.city_name O O O	atis_flight
+529	kansas city ' den orlando ' ya giden ucuslari goster	B-fromloc.city_name O O O B-toloc.city_name O O O O O	atis_flight
+638	baltimore ' dan oakland ' a giden gunluk aksam yemekli son ucus hangisi	B-fromloc.city_name O O B-toloc.city_name O O O O B-meal_description I-meal_description B-flight_mod O O	atis_flight
+323	m80 ucaginin oturma kapasitesi ne kadar	B-aircraft_code O O O O O	atis_capacity
+436	indianapolis havaalaninda kara ulasimi bulunuyor mu ?	B-airport_name I-airport_name O O O O O	atis_ground_service
+709	cleveland ' dan indianapolis ' e 5 nisan ' da hangi ucuslar var	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_number B-depart_date.month_name O O O O O	atis_flight
+517	orlando ' dan philadelphia ' ya olan ucuslari listele lutfen	B-fromloc.city_name O O B-toloc.city_name O O O O O O	atis_flight
+600	f kodlu tarife ne demek	B-fare_basis_code O O O O	atis_abbreviation
+294	nashville havaalanindan olan kara tasimaciligini soyle	B-airport_name O O O O O	atis_ground_service
+630	tarife kodu mci nedir	O O B-airport_code O	atis_abbreviation
+6	cleveland ' dan miami ' ye carsamba gunu ogleden sonra 4 ' den once varsin	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O O B-arrive_time.time O O B-arrive_time.time_relative O	atis_flight
+98	burbank ' tan milwaukee ' ye seyahat etmek istiyorum	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+650	757 ' nin oturma kapasitesi nedir	B-aircraft_code O O O O O	atis_capacity
+401	bana nashville ' den seattle ' a bir bilet lazim	O B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_airfare
+466	la guardia ' dan burbank ' e ucuslari sirala	B-fromloc.airport_name I-fromloc.airport_name O O B-toloc.city_name O O O O	atis_flight
+463	houston ' dna san jose ' ye olan ucuslari listele	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+631	yemek kodu sb nedir	O O B-meal_code O	atis_abbreviation
+595	haftanin hangi gunleri san jose ' den nashville ' e ucuslar var	O O O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O	atis_day_name
+111	arizona nevada ve california ' daki havaalanlarini listele lutfen	B-state_name B-state_name O B-state_name O O O O O	atis_airport
+243	bana seattle ' dan boston ' a minneapolis ' te duraklayan butun ucuslari goster	O B-fromloc.city_name O O B-toloc.city_name O O B-stoploc.city_name O O O O O O	atis_flight
+418	1 nisan da phoenix den san diego ya tek yon ucmak istiyorum	B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-round_trip I-round_trip O O	atis_flight
+216	lutfen las vegas ' tan michigan ' a bir ucus bul	O B-fromloc.city_name I-fromloc.city_name O O B-toloc.state_name O O O O O	atis_flight
+558	bana m80 adi verilen ucak hakkinda bilgi ver	O B-aircraft_code O O O O O O	atis_aircraft
+425	kansas city ' den orlando ' ya ucmak istiyorum	B-toloc.city_name I-toloc.city_name O O B-fromloc.city_name O O O O	atis_flight
+95	new york ' tan miami ' ye ucus istiyorum	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+32	phoenix ' den milwaukee ' ye american havayollari ucuslarini ver	B-fromloc.city_name O O B-toloc.city_name O O B-airline_name I-airline_name O O	atis_flight
+642	washington dc ' den montreal ' e en ucuz tarife nedir	B-fromloc.city_name B-fromloc.state_code O O B-toloc.city_name O O B-cost_relative O O O	atis_airfare
+702	hangi ucuslar milwaukee ' den tampa ' ya giderken nashville ' e ugruyor	O O B-fromloc.city_name O O B-toloc.city_name O O O B-stoploc.city_name O O O	atis_flight
+462	houston ' dan phoenix ' e olan ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+284	bana coach yolcularina atistirmalik sunan delta ucuslarini goster	O B-compartment O B-meal_description O B-airline_name O O	atis_flight
+503	simdi bana st. louis ' ten burbank ' a olan butun ucuslari goster	O O B-city_name I-city_name O O B-toloc.city_name O O O O O O	atis_flight
+145	milawaukee ' den detroit ' e ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+410	milwaukee ' den los angeles ' a ucmak istiyorum	B-fromloc.city_name O O O B-toloc.city_name O O O O	atis_flight
+113	butun alaska airlines ucuslarini listele	O B-airline_name O O O	atis_flight
+211	persembe sabah indianapolis ' ten toronto ' ya duraklamasiz bir ucus istiyorum	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O B-flight_stop O O O	atis_flight
+182	toronto_international_airport ' tan toronto sehir merkezine mesafeyi mil olarak listele	B-fromloc.airport_name O O B-city_name O O O O O O	atis_distance
+224	lutfen new york ' tan miami ' ye herhangi bir mevkideki butun ucuslari listele	O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O O O O	atis_flight
+110	seattle ' dan salt lake city ' e ucan havayollarini listele	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O	atis_airline
+450	seattle ' dan salt lake ' e ucak tipine gore delta ucuslarini sirala	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O B-airline_name O O	atis_flight
+700	hangi ucuslar toronto ' dan washington dc ' ye gidiyor	O O B-fromloc.city_name O O B-toloc.city_name B-toloc.state_code O O O	atis_flight
+606	sa degil ne demek	B-days_code B-mod O O	atis_abbreviation
+7	cleveland ' dan nashville ' e cuma sabah ucusu	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+269	milwaukee ' den orlando ' ya carsamba olan tek yon ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O B-round_trip I-round_trip O O	atis_flight
+471	carsamba gunu memphis ' den miami ' ye olan ucuslari sirala .	B-depart_date.day_name O B-fromloc.city_name O O B-toloc.city_name O O O O O O	atis_flight
+339	tacoma havaalani , havalanindan sehir merkezine ulasim sagliyor mu ?	B-airport_name I-airport_name O O O O O O O O	atis_ground_service
+268	milwaukee ' den orlando ' ya carsamba 6 pm ' den sonra olan tek yon ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.time I-depart_time.time O O B-depart_time.time_relative O B-round_trip I-round_trip O O	atis_flight
+556	tampa ' dan charlotte ' a pazar sabah	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+277	bana montreal ' dan orlando ' ya tek yon en ucuz ucuslari goster	O B-fromloc.city_name O O B-toloc.city_name O O B-round_trip I-round_trip B-cost_relative I-cost_relative O O	atis_flight
+165	seattle ' dan salt lake city ' e delta be1 ucuslarini listele	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-airline_name B-aircraft_code O O	atis_flight
+280	bana las vegas ' tan detroit ' e gidis donus twa ' den olan en ucuz coach biletlerini goster	O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-round_trip O B-airline_code O O O B-cost_relative I-cost_relative B-class_type O O	atis_airfare
+312	denver ' da hangi kara tasimaciligi mevcut	B-city_name O O O O O O	atis_ground_service
+661	san francisco ' ya 950 de varan dl 468 de hangi yemekler var	B-toloc.city_name I-toloc.city_name O O B-arrive_time.time O O B-airline_code B-flight_number O O B-meal O	atis_meal
+155	ontario california ' dan salt lake city utah ' a ucuslari listele	B-fromloc.city_name B-fromloc.state_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-toloc.state_name O O O O	atis_flight
+169	cumartesi ogleden once toronto ' dan washington dc ' ye ucuslari listele	B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name B-toloc.state_code O O O O	atis_flight
+212	alti nisan carsamba gunu saat 3 ' ten sonra long beach ' ten columbus ' a ucmak istiyorum	B-depart_date.day_number B-depart_date.month_name B-depart_date.day_name O B-depart_time.time I-depart_time.time O O B-depart_time.time_relative B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+559	westchester bolgesine yakin tum havaalanlarini soyle	B-city_name O O O O O	atis_airport
+604	hp ne demek ?	B-airline_code O O O	atis_abbreviation
+514	lutfen bana persembe st. petersburg ' dan miami ' ye bir ucus bul	O O B-depart_date.day_name B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+240	bana milwaukee ' den orlando ' ya carsamba ogleden sonra aksam 6 ' dan sonra kalkan tek yon bir ucus goster	O B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day B-depart_time.time_relative B-depart_time.time I-depart_time.time O O B-depart_time.time_relative O B-round_trip I-round_trip O O O	atis_flight
+715	hangi ucuslar tacoma ' dan san jose ' ye gidiyor	O O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+510	persembe aksam pittsburgh ' dan los angeles ' a	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O	atis_flight
+455	chicago ' dan kansas city ' ye sabah ucuslarini listele	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-depart_time.period_of_day O O	atis_flight
+422	san diego ' dan las vegas ' a olan ucuslari gormek istiyorum	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+10	burbank ' daki havaalanina kansas city ' den ucus geliyor mu	B-toloc.city_name O O O B-fromloc.city_name I-fromloc.city_name O O O O O	atis_flight
+73	cleveland ' dan dallas ' a ucuslarin numaralarina ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O O O O O	atis_flight_no
+202	cumartesi milwaukee ' den phoenix ' e	B-depart_date.day_name B-fromloc.city_name O O B-toloc.city_name O O	atis_flight
+114	indianapolis ' ten memphis ' e pazartesi sabah butun ucuslari ve fiyatlarini listele	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O O O O O	atis_flight airfare
+399	toronto st. louis arasi direkt bir ucusa ihtiyacim var	B-fromloc.city_name B-toloc.city_name I-toloc.city_name O B-flight_stop O O O O	atis_flight
+344	dallas ' tan houston ' a ucus numarasi	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight_no
+1	fiyat kodu qo ne demek	O O B-fare_basis_code O O	atis_abbreviation
+20	detroit ' ten toronto ' ya ucuslari getir	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+680	boston washington dc arasi en erken varan ucus hangisi	B-fromloc.city_name B-toloc.city_name B-toloc.state_code O B-flight_mod I-flight_mod O O O	atis_flight
+668	las vegas havaalaninda ne tur yer hizmetleri vardir	B-airport_name I-airport_name O O O O O O	atis_ground_service
+476	san jose ' den dallas ' a cuma gunu olan ucuslari listele	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O O O	atis_flight
+374	washington dc ' den kalkan kac adet northwest ucusu var	B-fromloc.city_name B-fromloc.state_code O O O O O B-airline_name O O	atis_flight
+163	pazartesi sabah pittsburgh ' dan newark ' a ucuslari listele	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+632	phl nedir	B-airport_code O	atis_abbreviation
+4	indianapolis ' ten orlando ' ya 27 aralik ' ta en ucuz tek yon fiyat	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_number B-depart_date.month_name O O B-cost_relative I-cost_relative B-round_trip I-round_trip O	atis_airfare
+170	cumartesi ogleden sonra washington dc ' den philadelphia ' ya ucuslari listele	B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day B-fromloc.city_name B-fromloc.state_code O O B-toloc.city_name O O O O	atis_flight
+361	american airlines ' in carsamba gunu phoenix ' den milwaukee ' ye olan ucuslarini ver	B-airline_name O O O B-depart_date.day_name O B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+368	san francisco uluslararasi havalimani sehir merkezinden ne kadar uzaklikta ?	B-airport_name I-airport_name I-airport_name O O O O O O O	atis_distance
+616	hangi ucuslar phoenix ' ten salt lake city ' ye gidiyorlar ?	O O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O	atis_flight
+24	seattle ' dan chicago ' ya yemekli continental ucuslarini ver	B-fromloc.city_name O O B-toloc.city_name O O B-meal B-airline_name O O	atis_flight
+23	washington ' dan toronto ' ya cumartesi tarifesini getir	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O	atis_airfare
+588	ontario ' dan memphis ' e hangi ucuslar var	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+594	nashville ' den tacoma ' ya haftanin hangi gunleri ucus var	B-fromloc.city_name O O B-toloc.city_name O O O O O O O	atis_day_name
+633	73s in yolcu kapasitesi nedir	B-aircraft_code O O O O	atis_capacity
+77	los angeles ' dan charlotte ' a sabah erken bir ucus istiyorum	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-depart_time.period_of_day B-depart_time.period_mod O O O	atis_flight
+118	pazartesi gunu cleveland ' dan kansas city ' e butun ucuslari listele	B-depart_date.day_name O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+324	alti nisan carsamba saat 12 ' den sonra long beach ' ten columbus ' a ucmak istiyorum	B-depart_date.day_number B-depart_date.month_name B-depart_date.day_name O B-depart_time.time O O B-depart_time.time_relative B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+249	bana charlotte ' tan minneapolis ' e saat 2 pm ' de ya da pazartesi gec olan ucuslari goster	O B-fromloc.city_name O O B-toloc.city_name O O O B-depart_time.time I-depart_time.time O O O O B-depart_date.day_name B-depart_time.time_relative I-depart_time.time_relative O O	atis_flight
+251	bana las vegas ' tan new york ' a olan ucuslari goster	O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+273	montreal ve orlando arasi gidis donus ucus fiyatlarini goster	B-fromloc.city_name O B-toloc.city_name O B-round_trip I-round_trip O O O	atis_flight
+386	milwaukee ' den seattle ' a giden bir ucusa ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O O O O O O	atis_flight
+565	dl havayolu nedir	B-airline_code O O	atis_airline
+262	phoenix ' ten fort worth ' a olan ucuslari goster	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+19	seattle ' dan chicago ' ya continental icin ucus numaralari	B-fromloc.city_name O O B-toloc.city_name O O B-airline_name O O O	atis_flight_no
+496	tower air pazartesi ucuslarini listele	B-airline_name I-airline_name B-day_name O O	atis_flight
+561	america west boston ' dan hangi sehirlere birinci sinif ucuyor	B-airline_name I-airline_name B-fromloc.city_name O O O O B-class_type I-class_type O	atis_city
+624	73s nedir ?	B-aircraft_code O O	atis_abbreviation
+500	new york ' tan las vegas ' a pazar ogleden sonra	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+293	bana minneapolis ' ten indianapolis ' e sali ogleden sonra olan ucuslari goster	O B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day O O O	atis_flight
+164	pazartesi gunu salt lake city utah ' tan phoenix arizona ' ya ucuslari listele	B-depart_date.day_name O B-fromloc.city_name O O B-fromloc.state_name O O B-toloc.city_name B-toloc.state_name O O O O	atis_flight
+539	toronto ve san diego arasindaki ucuslari goster	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+584	united ' in la guardia ' dan san jose ' ye olan ucuslari nelerdir ?	B-airline_name O O B-fromloc.airport_name I-fromloc.airport_name O O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+297	philadelphia ' dan dallas ' a olan ucuslari soyle	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+244	bana seattle ' da boston ' a minneapolis ' te duraklayan butun lufthansa ucuslarini goster	O B-fromloc.city_name O O B-toloc.city_name O O B-stoploc.city_name O O O O B-airline_name O O	atis_flight
+498	atlanta ' dan kansas city ' e pazartesi sabah ucuslari	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+79	indianapolis ' ten seattle ' a en ucuz tarifeli gidis donus ucusu istiyorum	B-fromloc.city_name O O B-toloc.city_name O O B-cost_relative I-cost_relative O B-round_trip O O O	atis_flight
+124	cleveland ' dan nashville ' e butun pazar ucuslarini ve bunlarin fiyatlarini listele	B-fromloc.city_name O O B-toloc.city_name O O O B-depart_date.day_name O O O O O	atis_flight airfare
+643	detroit ' ten westchester county ' e tek yon en pahali ucus hangisi	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-round_trip I-round_trip B-cost_relative I-cost_relative O O	atis_airfare
+292	bana orlando ' dan houston ' a olan ucuslari goster	O B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+302	denver ' daki kara tasimaciliginin fiyatlari neler	B-city_name O O O O O O	atis_ground_fare
+545	houston - orlando arasi ucuslari goster	B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+271	burbank ' ten seattle ' a gidis donus ucus fiyatlarini goster	B-fromloc.city_name O O B-toloc.city_name O O B-round_trip I-round_trip O O O	atis_flight
+158	cuma sabah philadelphia ' dan atlanta ' ya uculari listele	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+34	pittsburgh ' dan los angeles ' a persembe aksam ucuslarini ver	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O O	atis_flight
+523	orlando ' dan montreal ' a gidis donus ucuslari , lutfen	B-fromloc.city_name O O B-toloc.city_name O O B-round_trip O O O O	atis_flight
+622	la guardia havaalani ' ndan new york city ' e nasil gidebilirim	B-airport_name O O O O B-city_name I-city_name I-city_name O O O O	atis_ground_service
+474	oakland dan carsamba 1700 den sonra kalkip salt lake cityye giden ucuslari sirala	B-fromloc.city_name O B-depart_date.day_name B-depart_time.time O B-depart_time.time_relative O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+335	sali charlotte ' den baltimore ' a	B-depart_date.day_name B-fromloc.city_name O O B-toloc.city_name O O	atis_flight
+641	toronto ' dan washington dc ' ye en ucuz tarife nedir	B-fromloc.city_name O O B-toloc.city_name B-toloc.state_code O O B-cost_relative O O O	atis_airfare
+160	phoenix ' ten houston ' a ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+447	yemekli butun tower air ucuslarini listele	B-meal O B-airline_name I-airline_name O O	atis_flight
+453	pittsburgh ve milwaukee arasindaki ucuslari listele	B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+639	boston ' dan salt lake ' e en hesapli ( ucuz ) tarife nedir ?	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-cost_relative O O I-cost_relative O O O O	atis_airfare
+325	ve st. louis ' ten burbank ' e sali oglen yola cikan bir ucus	O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O O O O	atis_flight
+105	sabah 842 ' de varinca memphis havaalanindan sehre kara tasimaciligi var mi	B-period_of_day O O O O B-airport_name O O O O O O	atis_ground_service
+648	m80 ' in koltuk sayisi nedir ?	B-aircraft_code O O O O O O	atis_capacity
+225	lutfen onyedi haziran ' da chicago ' dan kansas city ' e butun ucuslari listele	O B-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+382	pazartesi gunu icin denver ' dan salt lake city ' e bir ucusa ihtiyacim var	B-depart_date.day_name O O B-fromloc.city_name O O B-toloc.city_name O O O O O O O O	atis_flight
+666	cleveland ' dan dallas ' a ogleden once ne tur ucaklar ucuyor	B-fromloc.city_name O O B-toloc.city_name O O B-depart_time.period_of_day B-depart_time.time_relative O O O O	atis_aircraft
+316	dallas_fort_worth_havaalani ve dallas sehir merkezi arasinda hangi kara tasimaciligi mevcut	B-airport_name O B-city_name O O O O O O O	atis_ground_service
+147	cuma gunu minneapolis ' den pittsburgh ' a ucuslari listele	B-depart_date.day_name O B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+35	seattle ' dan chicago ' ya cumartesi sabah yemekli continental ucuslarini ver	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day B-meal B-airline_name O O	atis_flight
+27	los angeles ' dan pittsburgh ' a sali gunku ucuslari ver	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O O	atis_flight
+669	d9s ne tur bir ucaktir ?	B-aircraft_code O O O O O	atis_aircraft
+562	boston ' dan san diego ' ya hangi havayollari ucuyor	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O	atis_airline
+198	persembe ogleden sonra los angeles ' tan minneapolis ' e	B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O	atis_flight
+484	los angeles ' taki havaalanlarini listele	B-city_name I-city_name O O O O	atis_airport
+678	milwaukee ' den denver ' a yarin en ucuz ucus nedir	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.today_relative B-cost_relative I-cost_relative O O	atis_flight
+127	seattle ' dan salt lake city ' e delta ucuslarini listele	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-airline_name O O	atis_flight
+221	lutfen yarin columbus ' tan houston ' a nashville ' de duraklayan ucuslari bul	O B-depart_date.today_relative B-fromloc.city_name O O B-toloc.city_name O O B-stoploc.city_name O O O O O	atis_flight
+618	hangi ucuslar sabah cincinnati ' den kalkip tampa ' ya gidiyor ?	O O B-depart_time.period_of_day B-fromloc.city_name O O O B-toloc.city_name O O O O	atis_flight
+711	hangi ucuslar kansas city ' den los angeles ' a gidiyor	O O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+326	ve simdi bana boston ' da gece gec vakitte kullanabilecegim tasima araclarini goster	O O O B-city_name O O B-period_of_day B-period_of_day O O O O O	atis_ground_service
+521	los angeles ' tan charlotte ' a giden ucuslari listele lutfen	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O O	atis_flight
+151	persembe gunu sabah 6 ' dan once oakland ' dan salt lake city ' e ucuslari listele	B-depart_date.day_name O B-depart_time.period_of_day B-depart_time.time O O B-depart_time.time_relative B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O	atis_flight
+357	washington ' dan toronto ' ya cumartesi gunu gidis fiyatlarini listele	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O O O	atis_airfare
+132	washington dc ' den boston ' a bilet fiyatlarini listele	B-fromloc.city_name B-fromloc.state_code O O B-toloc.city_name O O O O O	atis_airfare
+88	kansas city ' den chicago ' ya gidis donus yer ayirtmak istiyorum	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-round_trip O O O O	atis_flight
+663	tampa ' dan milwaukee ' ye giden 811 sefer sayili american havayollari ucusunda hangi yemekler var	B-fromloc.city_name O O B-toloc.city_name O O O B-flight_number O O B-airline_name O O O B-meal O	atis_meal
+149	newark ' tan houston ' a ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+239	pazartesi burbank ' ten milwaukee ' ye ucuslari goster	B-depart_date.day_name B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+336	chicago ' dan las vegas ' a cumartesi sabah	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+671	hangi united havayollari ucuslari 8 haziran ' da westchester county ' den cincinnati ' e gidiyor	O B-airline_name I-airline_name O B-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O	atis_flight
+629	tarife kodu m nedir	O O B-fare_basis_code O	atis_abbreviation
+486	burbank ' e inen alaska havayollari ucuslarini listele	B-toloc.city_name O O O B-airline_name I-airline_name O O	atis_flight
+257	bana charlotte ' tan minneapolis ' e pazartesi olan us 1500 ucuslarini goster	O B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O B-airline_code B-flight_number O O	atis_flight
+360	bana cumartesi sabah chicago ' dan seattle ' a yemekli ucuslari goster	O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O B-meal O O	atis_flight
+388	phoenix ' ten atlanta ' ya gidecek bir ucusa ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O O O O O O	atis_flight
+689	hangi havaalani ontario , california ' ya daha yakin ?	O O B-city_name O B-state_name O O O B-mod O	atis_airport
+232	lutfen newark ' tan los angeles ' a ucuslari listele	O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+301	boston ve washington dc arasindaki ucuslarin fiyatlari neler	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O O O	atis_airfare
+346	american airlines phoenix ' den milwaukee ' ye ucus numaralari	B-airline_name I-airline_name B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight_no
+181	northwest ' in kalktigi sehirleri listele	B-airline_name O O O O O	atis_city
+448	california havaalanlarini sirala	B-state_name O O	atis_airport
+51	oakland ' dan salt lake city ' e carsamba aksam 6 ' dan sonra kalkan bir ucusa ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O O O B-depart_date.day_name B-depart_time.time I-depart_time.time O O B-depart_time.time_relative O O O O O	atis_flight
+676	twa ile columbus ' tan st. paul ' e en ucuz gidis donus ne kadar	B-airline_code O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-cost_relative I-cost_relative B-round_trip I-round_trip O O	atis_flight
+117	seattle ' dan cikan butun ucuslari listele	B-fromloc.city_name O O O O O O	atis_flight
+446	aksam 8 ile 9 arasinda denver ' a varan tum gunluk ucuslari ver	O B-arrive_time.start_time O B-arrive_time.end_time O B-toloc.city_name O O O O B-flight_days O O	atis_flight
+440	seattle ' dan salt lake city ' e ucan havayollarini listele	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O	atis_airline
+350	carsamba sabah newark ' tan los angeles ' a olan ucuslar	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+48	milwaukee ' den indianapolis ' e pazartesi sabah 9 ' dan once kalkan bir ucusa ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.time I-depart_time.time O O B-depart_time.time_relative O O O O O	atis_flight
+482	boston icin limuzin kiralama fiyatlarini listele	B-city_name O B-transport_type O O O	atis_ground_fare
+287	bana jfk ' den miami ' ye first class ve coach ucuslarini goster	O B-fromloc.airport_code O O B-toloc.city_name O O B-class_type I-class_type O B-class_type O O	atis_flight
+242	bana montreal ' den orlando ' ya butun delta airlines ucuslarini goster	O B-fromloc.city_name O O B-toloc.city_name O O O B-airline_name I-airline_name O O	atis_flight
+217	lutfen newark ' tan orlando ' ya bir ucus bul	O B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+265	kansas city ' den phoenix ' e aktarmasiz ucuslari goster	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-flight_stop O O	atis_flight
+490	cincinnati ' den denver ' a giden 6 haziran ucuslarini listele	B-fromloc.city_name O O B-toloc.city_name O O O B-depart_date.day_number B-depart_date.month_name O O	atis_flight
+343	bana milwaukee ' den st. louis ' e giden butun ucuslari bul	O B-fromloc.city_name O O B-city_name I-city_name O O O O O O	atis_flight
+620	hangi ucuslar las vegas ' tan los angeles ' a gidiyor ?	O O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+694	kansas city ' den gelip burbank ' a cumartesi ogleden sonra varan ucuslar hangilei	B-fromloc.city_name I-fromloc.city_name O O O B-toloc.city_name O O B-arrive_date.day_name B-arrive_time.period_of_day I-arrive_time.period_of_day O O O	atis_flight
+205	pazartesi sabah columbus ' tan indianapolis ' e ucmak istiyorum	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+363	las vegas ' ta karayolu ile seyahat	B-city_name I-city_name O O O O O	atis_ground_service
+136	cincinnati ' den tampa ' ya sabah 9 ' dan once ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O B-depart_time.time I-depart_time.time O O B-depart_time.time_relative O O	atis_flight
+522	milwaukee ' ye karayolu ile nasil giderim	B-city_name O O O O O O	atis_ground_service
+45	indianapolis ' ten seattle ' a seattle ' a ogleden sonra 1205 pm ' de varan bir ucusa ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O B-toloc.city_name O O O O B-arrive_time.time I-arrive_time.time O O O O O O O	atis_flight
+253	bana las vegas ' tan jfk ' e america west ve twa bir cuma gunu ucuslarini goster	O B-fromloc.city_name I-fromloc.city_name O O B-toloc.airport_code O O B-airline_name I-airline_name O B-airline_code O B-depart_date.day_name O O O	atis_flight
+544	tampa ' dan san fracisco ' ya giden delta ucuslarini goster	B-fromloc.city_name O O B-toloc.city_name O O O O B-airline_name O O	atis_flight
+402	tampa ' da araba kiralamam lazim	B-city_name O O B-transport_type O O	atis_ground_service
+635	houston ' dan orlando ' ya en erken varan ucus hangisi	B-fromloc.city_name O O B-toloc.city_name O O B-flight_mod I-flight_mod O O O	atis_flight
+358	charlotte ' dan baltimore ' a sali sabah ucak ver	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O O	atis_flight
+564	as havayolu nedir	B-airline_code O O	atis_airline
+572	baltimore ' dan san francisco ' ya ucan havayollari hangileri	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O	atis_airline
+488	charlotte ' dan las vegas ' a olan en ucuz bilet ucretini goster	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O B-cost_relative I-cost_relative O O O	atis_airfare
+608	ap58 kisitlamasi ne demek	B-restriction_code O O O	atis_abbreviation
+652	m80 ' nin oturma kapasitesi nedir	B-aircraft_code O O O O O	atis_capacity
+85	ontario ' dan tacoma ' ya ucuslari istiyorum	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+389	salt lake city ' den carsamba aksam 5 ' ten sonra kalkip phoenix ' e giden bir ucusa ihtiyacim var	B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O O B-depart_date.day_name O B-depart_time.time O O B-depart_time.time_relative O B-toloc.city_name O O O O O O O	atis_flight
+390	san diego ' dan washington dc ' ye gidecek bir ucusa ihtiyacim var	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name B-toloc.state_code O O O O O O O	atis_flight
+348	san diego ' dan seattle ' a ucuslar	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O	atis_flight
+247	bana burbank ' tan milwaukee ' a olan ucuslari goster	O B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+272	montreal ' den orlando ' ya gidis donus ucus fiyatlarini goster	B-fromloc.city_name O O B-toloc.city_name O O B-round_trip I-round_trip O O O	atis_flight
+102	10 haziran ' da saat 6 ' dan sonra houston ' dan newark ' a bir american airlines ucusu var mi	B-depart_date.day_number B-depart_date.month_name O O B-depart_time.time I-depart_time.time O B-depart_time.time_relative I-depart_time.time_relative B-fromloc.city_name O B-depart_time.time_relative B-toloc.city_name O O O B-airline_name I-airline_name O O O	atis_flight
+11	us air cincinnati ' den denver ' a 6 haziran ' da ucuyor mu	B-airline_name I-airline_name B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_number B-depart_date.month_name O O O O	atis_flight
+598	bh kodlu tarife ne demek	B-fare_basis_code O O O O	atis_abbreviation
+126	houston ' dan milwaukee ' ye cuma gunu ogleden sonra kalkan butun american airlines ucuslarini listele	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O B-depart_time.period_of_day I-depart_time.period_of_day O O B-airline_name O O O	atis_flight
+499	pazar gunu new york ' dan las vegas ' a ve memphis ' den las vegas ' a	B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O	atis_flight
+392	st. louis ' den charlotte ' a gidecek bir ucusa ihtiyacim var	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O O O	atis_flight
+55	burbank ' dan milwaukee ' ye gelecek pazartesi icin bir sabah ucusuna ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.date_relative B-depart_date.day_name O O B-depart_time.period_of_day O O O	atis_flight
+245	duraklamadan miami ' den new york ' a butun gidis donus ucuslari goster	B-flight_stop B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O B-round_trip O O O	atis_flight
+691	yirmi uc nisan sabah san jose ' den kalkip nashville ' e varan ucuslar neler	B-depart_date.day_number I-depart_date.day_number B-depart_date.month_name B-depart_time.period_of_day B-fromloc.city_name I-fromloc.city_name O O O B-toloc.city_name O O O O O	atis_flight
+53	haziran ' da cuma ogleden sonra new york ' tan cleveland ' a bir ucusa ihtiyacim var	B-depart_date.month_name O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O O	atis_flight
+31	phoenix ' den milwaukee ' ye ucuslari ver	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+636	india indianapolis ' den memphis ' e birinci sinif gidis donus ucreti nedir	O B-fromloc.city_name O O B-toloc.city_name O O B-class_type I-class_type B-round_trip I-round_trip O O	atis_airfare
+38	milwaukee ' den washington dc ' ye sali sabah ucuslari nasil	B-fromloc.city_name O O B-toloc.city_name B-toloc.state_code O O B-depart_date.day_name B-depart_time.period_of_day O O	atis_flight
+662	american havayollarinin 665 673 numarali milwaukee - seattle ucusunda hangi yemekler sunuluyor	B-airline_name O B-flight_number I-flight_number O B-fromloc.city_name O B-toloc.city_name O O B-meal O	atis_meal
+371	kanada havayollarinin uluslararasi ucuslarinda kac tane j31 var	B-airline_name I-airline_name I-airline_name O O O B-aircraft_code O	atis_quantity
+101	10 haziran ' da saat 3 ' ten sonra houston ' dan newark ' a bir american airlines ucusu var mi	B-depart_date.day_number B-depart_date.month_name O O B-depart_time.time I-depart_time.time O O B-depart_time.time_relative B-fromloc.city_name O O B-toloc.city_name O O O B-airline_name I-airline_name O O O	atis_flight
+306	tacoma ' dan miami ' ye yarin 6 pm ' den sonra ayrilan ucuslar neler	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.today_relative B-depart_time.time I-depart_time.time O O B-depart_time.time_relative O O O	atis_flight
+703	hangi ucuslar new york miami arasi gidis donus yapiyor	O O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O O O O	atis_flight
+554	st. paul ' dan kansas city ' e cuma gecesi	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+150	oakland ' dan salt lake city ' e ucuslari listele	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O	atis_flight
+196	charlotte havaalanindan cumartesi saat 1 ' de kalkan us air ucuslarini listele	B-fromloc.airport_name I-fromloc.airport_name B-depart_date.day_name O B-depart_time.time O O O B-airline_name I-airline_name O O	atis_flight
+393	tampa ' tan milwaukee ' ye gidecek bir ucusa ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O O O O O O	atis_flight
+218	lutfen onyedi mayis ' ta ontario ' dan westchester ' a chicago ' da duraklayan bir ucus bul tek yon ve aksam yemekli	O B-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name O O B-toloc.city_name O O B-stoploc.city_name O O O O O O B-round_trip I-round_trip O B-meal_description I-meal_description	atis_flight
+518	lutfen san francisco ' dan milwaukee ' ye olan ucuslari sirala	O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+61	oakland ' dan persembe salt lake city ' e sabah 9 ' da once kalip giden ucusun tarifesine ihtiyacim var	B-fromloc.city_name O O B-depart_date.day_name B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_time.time I-depart_time.time O O B-depart_time.time_relative O O O O O O	atis_flight airfare
+406	haziran sekizde , ogleden sonra ucdeki united airlines westchester county ' den cincinnati ' ye giden ucusu lazim	B-depart_date.month_name B-depart_date.day_number O O B-depart_time.time_relative B-depart_time.time B-airline_name O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+349	washington ' dan seattle ' a ucuslar	B-fromloc.city_name O O B-toloc.city_name O O O	atis_flight
+381	charlotte ' dan miami ' ye olan bir ucusa ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O O O O O O	atis_flight
+395	toronto ' tan st. louis ' e gidecek bir ucusa ihtiyacim var	B-fromloc.city_name O O O B-toloc.city_name O O O O O O O	atis_flight
+397	newark ' tan tampa ' ya cuma gunu giden bir ucusa ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O O O O O	atis_flight
+473	new york ' tan la ' ya olan ucuslari listele	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+15	cincinnati ' den new york civarindaki herhangi bir havaalanina bir ucus bul	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O O O	atis_flight
+713	las vegas ' dan los angeles california ' ya giden hangi ucuslar 9 nisan aksam 4 5 arasi variyor	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name B-toloc.state_name O O O O O B-arrive_date.day_number B-arrive_date.month_name O B-arrive_time.start_time B-arrive_time.end_time O O	atis_flight
+255	bana new york ' tan miami ' e olan gidis donus first class ucuslari goster	O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O B-round_trip I-round_trip B-class_type I-class_type O O	atis_flight
+76	cincinnati ' den denver ' a alti haziran aksam 6 ' ya kadar varmam gerekiyor	B-fromloc.city_name O O B-toloc.city_name O O B-arrive_date.day_number B-arrive_date.month_name B-arrive_time.time I-arrive_time.time O O B-arrive_time.time_relative O O	atis_flight
+206	pazar gunu 9 ' dan once nashville ' den cleveland ' a	B-depart_date.day_name O B-depart_time.time O O B-depart_time.time_relative B-fromloc.city_name O O B-toloc.city_name O O	atis_flight
+209	sekiz haziran ' da hangi ucuslar westchester county ' den cincinnati ' ye gidiyor	B-depart_date.day_number B-depart_date.month_name O O O O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O	atis_flight
+607	q ne demek	B-fare_basis_code O O	atis_abbreviation
+443	denver ' a aksam 8 9 arasi inen tum ucuslari listele	B-toloc.city_name O O O B-arrive_time.start_time B-arrive_time.end_time O O O O O	atis_flight
+677	boston washington dc arasi en erken varan ucus hangisi	B-fromloc.city_name B-toloc.city_name B-toloc.state_code O B-flight_mod I-flight_mod O O O	atis_flight
+427	persembe sabah indianapolis ' ten toronto ' ya gitmek istiyorum	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+258	columbus ' tan chicago ' ya 10 am ' den once ayrilan first class ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O B-depart_time.time I-depart_time.time O O B-depart_time.time_relative O B-class_type I-class_type O O	atis_flight
+192	yedi haziran ' da westchester county ' den denver ' a ucuslari listele	B-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+123	denver ' a aksam 8 ve 9 arasi varan butun gunluk ucuslari listele	B-toloc.city_name O O B-arrive_time.end_time B-arrive_time.start_time O I-arrive_time.end_time O O O B-flight_days O O	atis_flight
+582	carsamba memphis ve cincinnati arasinda hangi ucuslar var	B-depart_date.day_name B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+94	kansas cuty ' den chicago ' ya yirmi alti mayis carsamba gunu aksam 7 ' de varan gidis - donus ucusu istiyorum	B-fromloc.city_name O O O B-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name B-depart_date.day_name O B-arrive_time.time I-arrive_time.time O O O B-round_trip O O O O	atis_flight
+64	cleveland ' dan milwaukee ' ye carsamba aksamustu 5 ' ten sonra giden ucusun bilgilerine ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O B-depart_time.time O O B-depart_time.time_relative O O O O O	atis_flight
+230	lutfen pazartesi geceleri memphis ' den new york city ' e ucuslari listele	O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O	atis_flight
+690	las vegas ' tan new york city ' e kac degisik havayolu gidiyor	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O O	atis_airline
+619	hangi ucuslar cleveland ' dan kalkip dallas ' a gidiyor ?	O O B-fromloc.city_name O O O B-toloc.city_name O O O O	atis_flight
+96	gelecek cumartesi united airlines ile cincinnati ' den new york city ' e giden bir ucusta yer ayarlamak istiyorum	B-depart_date.date_relative B-depart_date.day_name B-airline_name I-airline_name O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O O O O	atis_flight
+611	baltimore ' dan hangi ucuslar var	B-fromloc.city_name O O O O O	atis_flight
+204	minneapolis ' ten pittsburgh ' a ucus	B-fromloc.city_name O O B-toloc.city_name O O O	atis_flight
+142	carsamba aksam memphis ' den miami ' ye ucuslari listele	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+417	cuma sabah toronto ' dan montreal ' a giden bir ucus istiyorum	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O O O O O	atis_flight
+550	minneapolis ' den indiana ' ya ucuslari goster	B-fromloc.city_name O O B-toloc.state_name O O O O	atis_flight
+46	kansas city ' den minneapolis ' e bir ucusa ihtiyacim var	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O O	atis_flight
+203	minneapolis ' ten pittsburgh ' a birinci mevki ucus	B-fromloc.city_name O O B-toloc.city_name O O B-class_type I-class_type O	atis_flight
+664	sali sabah washington dc den milwaukee ' ye giden 382 nolu ucustaki yemekler neler	B-depart_date.day_name B-depart_time.period_of_day B-toloc.city_name B-toloc.state_code O B-fromloc.city_name O O O B-flight_number O O B-meal O	atis_meal
+365	peki ya milwaukee ' den st. louis ' ye pazartesi gecesi kalkan ucuslar ?	O O B-fromloc.city_name O O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O O O	atis_flight
+693	yirmi bir nisan sabah nashville ' den tacoma ' ya giden ucuslar hangileri	B-depart_date.day_number I-depart_date.day_number B-depart_date.month_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+541	burbank ' tan tacoma ' ya olan gidis donus ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O O B-round_trip O O O	atis_flight
+621	dca hava alanindan washington sehrine nasil gidebilirim	B-airport_code O O B-city_name O O O	atis_ground_service
+338	salt lake city ' den phoenix ' e olan tum ucuslarin ucus bilgilerini alabilir miyim	B-fromloc.city_name O O O O B-toloc.city_name O O O O O O O O O	atis_flight
+485	burbank ' den ucan alaska airline ucuslarini listele	B-fromloc.city_name O O O B-airline_name O O O	atis_flight
+445	8 pm ve 9 pm arasi denver ' a inen tum ucuslari her tur ucaga gore sirala	B-arrive_time.start_time I-arrive_time.end_time O B-arrive_time.end_time I-arrive_time.end_time O B-toloc.city_name O O O O O O O O O O	atis_flight
+429	washington dc ' den san diego ' ya ucus istiyorum	B-fromloc.city_name B-fromloc.state_code O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+527	denver ' dan houston ' a olan ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+704	hangi ucuslar chicago ' dan oniki nisan ' da kalkip indianapolis ' e sabah variyor	O O B-fromloc.city_name O O B-depart_date.day_number B-depart_date.month_name O O O B-toloc.city_name O O B-arrive_time.period_of_day O	atis_flight
+426	san diego ' dan seattle ' a ucmak istiyorum	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+493	8 haziran ' da denver ' dan cincinnati ' ye olan ucuslari listele	B-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+470	las vegas ' den san diego ' a olan ucuslari listele	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+535	san jose ' den phoenix ' e tum ucuslari goster	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+207	onumuzdeki carsamba chicago ' ya aksam 7 civarinda varacak sekilde kansas city ' den chicago ' ya giden bir seyahat icin ayrilmak istiyorum	B-depart_date.date_relative B-depart_date.day_name B-toloc.city_name O O B-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O O O O	atis_flight
+579	carsamba memphis ve cincinnati arasinda hangi ucuslar var	B-depart_date.day_name B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+177	jfk ' den lax ' e american airlines ' in 19 numarali ucusunun fiyatini listele	B-fromloc.airport_code O O B-toloc.airport_code O O B-airline_name I-airline_name O O B-flight_number O O O O	atis_airfare flight
+318	boston ve washington dc arasindaki en erken ucus ne	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-flight_mod I-flight_mod O O	atis_flight
+135	indianapolis ' ten memphis ' e birinci mevki gidis donus bilet fiyatlarini listele	B-fromloc.city_name O O B-toloc.city_name O B-class_type I-class_type O B-round_trip I-round_trip O O O	atis_airfare
+12	memphis ' ten tacoma ' ya aksam yemekli bir ucus bul	B-fromloc.city_name O O B-toloc.city_name O O B-meal_description I-meal_description O O O	atis_flight
+685	hangi havayolu kw	O O B-airline_code	atis_airline
+542	orlando ' dan montreal ' e olan gidis donus ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O O B-round_trip O O O	atis_flight
+81	cincinnati ' den burbank ' e american ilek bir ucus istiyorum	B-fromloc.city_name O O B-toloc.city_name O O B-airline_name O O O O	atis_flight
+452	phoenix ve las vegas arasindaki ucuslari listele	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+104	salt lake city havaalaninda kara tasimaciligi mevcut mu	B-airport_name I-airport_name I-airport_name O O O O O	atis_ground_service
+183	yedi haziran ' da cincinnati ' den westchester county ' e ucuslari listele	B-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+106	ontario havaalaninda taksi servisi var mi	B-airport_name O B-transport_type I-transport_type O O	atis_ground_service
+651	72s ' nin oturma kapasitesi nedir	B-aircraft_code O O O O O	atis_capacity
+414	san francisco ' dan st. petersburg ' a ucmak istiyorum	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+179	burbank ' ten herhangi bir yere olan alaska airlines ucuslarini listele	B-fromloc.city_name O O O O O O B-airline_name O O O	atis_flight
+575	ap 57 kisitlamalari neler	B-restriction_code I-restriction_code O O	atis_abbreviation
+504	simdi bana pazartesi ogleden sonra icin houston ' daki yer tasimaciligini goster	O O B-day_name B-period_of_day I-period_of_day O B-city_name O O O O O	atis_ground_service
+475	sali gunu salt lake city ' den phoenix arizona ' ya olan ucuslari sirala	B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name B-toloc.state_name O O O O O	atis_flight
+593	q kodu hangi sinif ucusa ait	B-booking_class O O O O O	atis_abbreviation
+100	pittsburgh ' dan cleveland ' a 200 dolar altinda ucus var mi	B-fromloc.city_name O O B-toloc.city_name O O B-fare_amount I-fare_amount B-cost_relative O O O	atis_airfare
+478	washington dc ' den boston ' a ucuslari sirala	B-fromloc.city_name B-fromloc.state_code O O B-toloc.city_name O O O O	atis_flight
+585	las vegas ' dan ontario ' a ucuslar hangileri	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+263	bana fort worth ' daki kara tasimaciliginin listesini goster	O B-city_name I-city_name O O O O O O	atis_ground_service
+442	new york ' taki havalimanlarini listele	B-city_name I-city_name O O O O	atis_airport
+9	cleveland ' dan dallas ' ogleden once kalkan ucagin tipi nedir	B-fromloc.city_name O O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.time_relative O O O O	atis_aircraft
+405	milwaukee ' da araba kiralamam lazim	B-city_name O O B-transport_type O O	atis_ground_service
+400	nashville tennessee ' den seattle ' a bilet lazim	B-fromloc.city_name B-fromloc.state_name O O B-toloc.city_name O O O O	atis_airfare
+511	miami florida ' da las vegas nevada ' ya aksamustu 4 ' ten once varan bir ucus bul lutfen	B-fromloc.city_name B-fromloc.state_name O O B-toloc.city_name I-toloc.city_name B-toloc.state_name O O O B-arrive_time.time O O B-arrive_time.time_relative O O O O O	atis_flight
+227	lutfen milwaukee ' den philadelphia ' ya ucuslari listele	O B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+143	pazar gunu miami ' den indianapolis ' e ucuslari listele	B-depart_date.day_name O B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+317	73s ucaginidaki oturma kapasitesi ne	B-aircraft_code O O O O	atis_capacity
+675	milwaukee ' den denver ' a yarin en ucuz ucus nedir	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.today_relative B-cost_relative I-cost_relative O O	atis_flight
+103	phoenix havaalaninda kara tasimaciligi mevcut mu	B-airport_name O O O O O	atis_ground_service
+125	charlotte ' a cumartesi saat 1 ' de varan butun us air ucuslarini listele	B-toloc.city_name O O B-arrive_date.day_name O B-arrive_time.time O O O O B-airline_name I-airline_name O O	atis_flight
+112	la ' deki havaalanlarini listele	B-city_name O O O O	atis_airport
+465	kansas city ' den denver ' a olan ucuslari listele	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+337	chicago ' dan seattle ' a cumartesi sabah	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+47	memphis ' ten tacoma ' ya los angeles uzerinden giden bir ucusa ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O B-stoploc.city_name I-stoploc.city_name O O O O O O	atis_flight
+71	washington ' dan boston ' a cumartesi kalkan ucusun bilgisine ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O O O O	atis_flight
+352	washington montreal ucus fiyatlarini goster	B-fromloc.city_name B-toloc.city_name O O O	atis_airfare
+555	st. petersburg ' tan detroit ' e	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O	atis_flight
+412	bir cumartesi gunu boston ' dan washington ' a gitmek istiyorum	O B-depart_date.day_name O B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+695	las vegas ' tan gelip burbank ' a yirmi uc nisan cumartesi ogleden sonra inen ucuslar hangileri	B-fromloc.city_name I-fromloc.city_name O O O B-toloc.city_name O O B-depart_date.day_number I-depart_date.day_number B-depart_date.month_name B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day O O O	atis_flight
+516	nashville ' den memphis ' e pazartesi sabah olan ucuslari listele lutfen	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O O O O	atis_flight
+276	bana new york ' tan miami ' ye gidis donus en ucuz first class ucuslari goster	O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-round_trip I-round_trip B-cost_relative I-cost_relative B-class_type I-class_type O O	atis_flight
+86	milwaukee ' den kalkan orlando ucuslarini istiyorum	B-fromloc.city_name O O O B-toloc.city_name O O	atis_flight
+222	lutfen bana on yedi haziran ' da chicago ' dan kansas city ' e ucuslari ver	O O B-depart_date.day_number I-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+146	milawaukee ' den washington dc ' ye 1200 ' den onceki ucuslari listele	B-fromloc.city_name O O B-toloc.city_name B-toloc.state_code O O B-depart_time.time O O B-depart_time.time_relative O O	atis_flight
+654	aircraft m80 ' nin oturma kapasitesi nedir	O B-aircraft_code O O O O O	atis_capacity
+444	8 pm ve 9 pm arasi denver ' dan ayrilan ( kalkan ) tum ucuslari sirala	B-depart_time.start_time I-depart_time.end_time O B-depart_time.end_time I-depart_time.end_time O B-fromloc.city_name O O O O O O O O O	atis_flight
+589	tacoma ' dan san jose ' ye olan ucuslar nelerdir ?	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+688	hangi havayollari baltimore ' dan san fracisco ' ya ucuyor ?	O O B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_airline
+311	washington dc ve columbus ohio arasinda ne ucuslar var	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name B-toloc.state_name O O O O	atis_flight
+568	yx havayolu nedir	B-airline_code O O	atis_airline
+5	25 aralik ' ta indianapolis ' ten orlando ' ya en ucuz gidis donus seyahat ucreti	B-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name O O B-toloc.city_name O O B-cost_relative I-cost_relative B-round_trip I-round_trip O O	atis_airfare
+84	miami ' den new york ' a ucuslari istiyorum	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+659	milwaukee ' den st. petersburg ' a en kisa nasil uculur	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-flight_mod I-flight_mod O O	atis_flight
+592	northwest nerelere ucuyor	B-airline_name O O	atis_city
+480	washington dc ' den pittsburgh ' a ucuslari sirala	B-fromloc.city_name B-fromloc.state_code O O B-toloc.city_name O O O O	atis_flight
+578	dca ile milwaukee arasindaki ucuslar nelerdir	B-airport_code O B-city_name O O O	atis_flight
+645	72s ' nin oturma kapasitesi nedir	B-aircraft_code O O O O O	atis_capacity
+433	american havayollari ile miami ' den chicago ' ya ucmak istiyorum .	B-airline_name I-airline_name O B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+515	nashville ' den houston ' a aksam yemegi servis edilen direkt ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O B-meal_description I-meal_description O O B-flight_stop O O	atis_flight
+697	hangi ucuslar philadelphia ' dan kalkip atlanta ' a ucuyor	O O B-fromloc.city_name O O O B-toloc.city_name O O O	atis_flight
+461	cuma ogleden sonra houston ' dan milwaukee ' ye olan ucaklari listele	B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+367	los angeles international merkezden ne kadar uzakta	B-airport_name O O O O O O	atis_distance
+472	carsamba gunu milwaukee ' den san jose ' ye olan ucuslari sirala .	B-depart_date.day_name O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+49	milwaukee ' den washington dc ' ye pazartesi gece bir ucusa ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name B-toloc.state_code O O B-depart_date.day_name B-depart_time.period_of_day O O O O	atis_flight
+92	cincinnati ' den newark havaalani ' na cumartesi ogleden sonra 6 ' dan once varan bir ucus istiyorum	B-fromloc.city_name O O B-toloc.airport_name I-toloc.airport_name O O B-arrive_date.day_name O O B-arrive_time.time O O B-arrive_time.time_relative O O O O	atis_flight
+531	orlando ' dan kansas city ' e olan ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O O O O O	atis_flight
+162	pittsburgh ' dan newark ' a gunluk ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O B-flight_days O O	atis_flight
+351	washington boston ucus fiyatlarini goster	B-fromloc.city_name B-toloc.city_name O O O	atis_airfare
+28	memphis ' ten las vegas ' a aktarmasiz ucuslari ver	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-flight_stop O O	atis_flight
+140	dallas ' tan houston ' a pazar ogleden sonra varan ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O B-arrive_date.day_name B-arrive_time.period_of_day I-arrive_time.period_of_day O O O	atis_flight
+501	new york ' tan las vegas ' a pazar ogleden sonra	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+714	hangi ucuslar nashville ' den tacoma ' ya gidiyor	O O B-fromloc.city_name O O B-toloc.city_name O O O	atis_flight
+487	arizona havalanini listele	B-state_name O O	atis_airport
+580	cleveland ' dan dallas ' a ucuslar hangileri	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+468	las vegas ' den denver ' a olan ucuslari listele	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+234	lutfen bana indianapolis ' ten memphis ' e tek yon sabah 10 ' dan once kalkan birinci mevki ucuslari goster	O O B-fromloc.city_name O O B-toloc.city_name O O B-round_trip I-round_trip B-depart_time.time I-depart_time.time O O B-depart_time.time_relative O B-class_type I-class_type O O	atis_flight
+396	washington dc ' den san diego ' ya gidecek bir ucusa ihtiyacim var	B-fromloc.city_name B-fromloc.state_code O O B-toloc.city_name I-toloc.city_name O O O O O O O	atis_flight
+560	ontario ' dan westchester ' a chicago baglantili ucuslar	B-fromloc.city_name O O B-toloc.city_name O O B-stoploc.city_name O O	atis_flight
+173	baltimore ' daki kara tasimaciligini listele	B-city_name O O O O O	atis_ground_service
+33	phoenix ' den milwaukee ' ye carsamba aksam ucuslarini ver	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O O	atis_flight
+613	dallas ' tan phoenix ' e hangi ucuslar var ?	B-fromloc.city_name O O B-toloc.city_name O O O O O O	atis_flight
+495	montreal ' den philly ' e sabah dokuzdan once olan ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O B-depart_time.time O B-depart_time.time_relative O O O	atis_flight
+459	houston ' dan denver ' a ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+108	carsamba saat 5 ' ten once varan kansas city cleveland ucusu	B-arrive_date.day_name B-arrive_time.time I-arrive_time.time O O B-arrive_time.time_relative O B-fromloc.city_name I-fromloc.city_name B-toloc.city_name O	atis_flight
+56	phoenix ' den washington dc ' ye gidis donus sabah kalkan bir ucusa ve ucretine ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name B-toloc.state_code O O B-round_trip O B-depart_time.period_of_day O O O O O O O	atis_flight airfare
+682	denver ' da yer hizmetleri nelerdir	B-city_name O O O O O	atis_ground_service
+419	charlotte ' dan newark ' a sabah ucusu istiyorum	B-fromloc.city_name O O B-toloc.city_name O O B-depart_time.period_of_day O O	atis_flight
+634	boston ' dan washington ' dc ' ye en erken gelen ucus hangisi	B-fromloc.city_name O O B-toloc.city_name O B-toloc.state_code O O B-flight_mod I-flight_mod I-flight_mod O O	atis_flight
+99	washington dc ' de araba kiralamam gerekecek	B-city_name B-state_code O O B-transport_type O O	atis_ground_service
+246	duraklamadan new york ' tan miami ' ye butun gidis donus ucuslari goster	B-flight_stop B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O B-round_trip O O O	atis_flight
+370	kanada havayollarinin uluslararasi ucuslarinda kac tane 320 tipi ucak var	B-airline_name I-airline_name I-airline_name O O O B-aircraft_code O O O	atis_quantity
+261	montreal ' den orlando ve long beach ' e olan ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+289	bana los angeles ' dan dallas ' a olan ucuslari goster	O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+187	indianapolis ' den memphis ' e ogleden once kalkan ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O B-depart_time.period_of_day B-depart_time.time_relative O O O	atis_flight
+213	carsamba gecesi charlotte ' dan newark ' a bir ucus istiyorum	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+75	denver ' dan westchester county ' e 7 haziran ogleden sonra 3 ' ten sonra ucmam gerekiyor	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_number B-depart_date.month_name O B-depart_time.time_relative B-depart_time.time O O B-depart_time.time_relative O O	atis_flight
+460	houston ' dan milwaukee ' ye olan ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+3	indianapolis ' ten orlando ' ya 27 aralik ' ta en ucuz gidis donus fiyat	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_number B-depart_date.month_name O O B-cost_relative I-cost_relative B-round_trip I-round_trip O	atis_airfare
+710	indianapolis ' ten san diego ' ya nisan ' in 5 ' inde hangi ucuslar gidiyor	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-depart_date.month_name O O B-depart_date.day_number O O O O O	atis_flight
+319	baltimore ve oakland arasindaki kahvalti sunan en erken ucus ne	B-fromloc.city_name O B-toloc.city_name O B-meal_description O B-flight_mod I-flight_mod O O	atis_flight
+285	bana charlotte ' tan minneapolis ' e sali sabah olan direk ucuslari goster	O B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O B-connect O O	atis_flight
+2	fiyat kodu m ne	O O B-fare_basis_code O	atis_abbreviation
+54	boston ' dan orlando ' ya giden bir ucusa ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O O O O O O	atis_flight
+295	philadelphia ' dan dallas ' a sabah olan american airlines ucuslarini tekrar soyle	B-fromloc.city_name O O B-toloc.city_name O O B-depart_time.period_of_day O B-airline_name I-airline_name O O O	atis_flight
+457	dallas ' dan houston ' a ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+153	ontario california ' dan orlando ' ya ucuslari listele	B-fromloc.city_name B-fromloc.state_name O O B-toloc.city_name O O O O	atis_flight
+78	salt lake city ' den westchester county ' e bir ucusta yer ayirtmak istiyorum	B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O O O	atis_flight
+67	oakland ' dan salt lake city ' e persembe sabah 8 ' den once kalkan ucuslarin numaralarina ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.time I-depart_time.time O O B-depart_time.time_relative O O O O O	atis_flight_no airline
+534	orlando ' dan montreal ' a giden tum ucuslari goster lutfen	B-fromloc.city_name O O B-toloc.city_name O O O O O O O	atis_flight
+383	las vegas ' tan ontario ' ya ucmam lazim	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+647	dc9 ' un yolcu kapasitesi ne kadar	B-aircraft_code O O O O O O	atis_capacity
+63	indianapolis ' ten cleveland ' a sali oglen kalkan ucusun bilgilerine ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O O O O O	atis_flight
+18	chicago ' dan seattle ' a continental icin ucus numaralari	B-fromloc.city_name O O B-toloc.city_name O O B-airline_name O O O	atis_flight_no
+264	bana phoenix ' teki kara tasimaciliginin listesini goster	O B-city_name O O O O O O	atis_ground_service
+646	757 ' nin oturma kapasitesi nedir	B-aircraft_code O O O O O	atis_capacity
+696	atlanta dan kalkip toronto ya varan ucuslar hangileri	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+97	westchester county ' e giden iki ucusta yer ayarlamak istiyorum	B-toloc.city_name I-toloc.city_name O O O O O O O O	atis_flight
+267	indianapolis ' ten memphis ' e herhangi bir gun 10 am ' den once olan tek yon ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O O O O B-depart_time.time I-depart_time.time O O B-depart_time.time_relative O B-round_trip I-round_trip O O	atis_flight
+195	charlotte havaalanindan cumartesi saat 1 civarinda kalkan us air ucuslarini listele	B-fromloc.airport_name O B-depart_date.day_name B-depart_time.time I-depart_time.time B-depart_time.time_relative O B-airline_name I-airline_name O O	atis_flight
+138	cumartesi ogleden sonra charlotte ' den ucuslari listele	B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day B-fromloc.city_name O O O O	atis_flight
+494	yedi haziran ' da denver ' dan westchester county ' ye giden tum ucuslari goster	B-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+42	la guardia ' da limuzin servisi ne kadar tutar	B-airport_name I-airport_name O O B-transport_type O O O O	atis_ground_fare
+612	cuma gunu baltimore ' dan kalkip san francisco ' ya varan ucuslar nelerdir	B-arrive_date.day_name I-arrive_date.day_name B-fromloc.city_name O O O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+199	pazartesi ogleden sonra los angeles ' tan pittsburgh ' a	B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O	atis_flight
+65	cleveland ' dan milwaukee ' ye carsamba aksamustu 5 ' ten sonra giden ucusun bilgilerine ihtiyacim var	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name B-depart_time.time I-depart_time.time O O B-depart_time.time_relative O O O O O	atis_flight
+441	havaalanlarini listele	O O	atis_airport
+226	lutfen onalti haziran ' da chicago ' dan kansas city ' e butun ucuslari listele	O B-depart_date.day_number B-depart_date.month_name O O B-toloc.city_name O O B-fromloc.city_name I-fromloc.city_name O O O O O	atis_flight
+25	indianapolis ' ten orlando ' ya 25 aralik civarindaki en ucuz gidis donus ucuslari ver	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_number B-depart_date.month_name B-depart_time.time_relative B-cost_relative I-cost_relative B-round_trip I-round_trip O O	atis_flight
+687	hangi havayollari toronto ile san diego arasinda ucuyor ?	O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_airline
+467	la ' den orlando ' ya olan ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+333	milwaukee ' den orlando ' ya en kisa ucusu alabilir miyim	B-fromloc.city_name O O B-toloc.city_name O O B-flight_mod I-flight_mod O O O	atis_flight
+384	memphis ' tan las vegas ' ya ucmam lazim	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+308	washington dc ' den salt lake city ' ye en ucuz ucuslar neler	B-fromloc.city_name B-fromloc.state_code O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-cost_relative O O O	atis_airfare
+254	bana philadelphia ' dan fort worth ' a sabah olan ucuslari goster	O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-depart_time.period_of_day O O O	atis_flight
+379	los angeles ' ta limuzin hizmeti ne kadar	B-city_name I-city_name O O B-transport_type O O O	atis_ground_fare
+407	montreal ' den washington dc ' ye ucus	B-fromloc.city_name O O B-toloc.city_name B-toloc.state_code O O O	atis_flight
+451	cincinnati ' den tampa ' ya sabah erken saatteki ucuslari listele	B-fromloc.city_name O O B-toloc.city_name O O B-depart_time.period_of_day B-depart_time.period_of_day O O O	atis_flight
+109	las vegas ' tan baltimore ' a ekonomi	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-economy	atis_flight
+14	phoenix ' den detroit ' e pazartesi gunu bir ucus bul	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O O O	atis_flight
+233	lutfen lga ' dan new york city ' e kara tasimaciligini listele	O O O B-city_name I-city_name I-city_name I-city_name O O B-airport_code I-airport_code O	atis_ground_service
+345	houston ' tan dallas ' a ucus numarasi	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight_no
+506	simdi bana houston ' dan boston ' a en ucuz tek yon ucusu goster	O O B-fromloc.city_name O O B-toloc.city_name O O B-cost_relative I-cost_relative B-round_trip I-round_trip O O	atis_flight
+231	lutfen pazartesu sabah nashville ' den memphis ' e ucuslari listele	O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+519	lutfen ewr ' dan new york city ' e karayolu ulasim seceneklerini listele	O B-airport_code O O B-city_name I-city_name I-city_name O O O O O O	atis_ground_service
+21	oakland ' dan salt lake city ' e carsamba gunku son ucusu getir	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O B-flight_mod O O	atis_flight
+596	ap 20 ne demek	B-restriction_code I-restriction_code O O	atis_abbreviation
+16	memphis ' ten tacoma ' ya ucan bir ucus bul	B-fromloc.city_name O O B-toloc.city_name O O O O O O	atis_flight
+133	washington dc ' den montreal ' e bilet fiyatlarini listele	B-fromloc.city_name B-fromloc.state_code O O B-toloc.city_name O O O O O	atis_airfare
+385	memphis ' tan seattle ' ya ucmam lazim	B-fromloc.city_name O O B-toloc.city_name O O O O	atis_flight
+536	bana st. petersburg ' dan charlotte ' a butun aktarmasiz ucuslari goster .	O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O O B-flight_stop O O O	atis_flight
+291	bana indianapolis ' ten memphis ' e olan ucuslari goster	O B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+577	dallas ' tan phoenix ' e hangi ucuslar var	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+674	san francisco ' dan milwaukee ' ye en ucuz ucus nedir	B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name O O B-cost_relative I-cost_relative O O	atis_flight
+549	houston ' dan orlando ' ya olan ucuslari goster	B-fromloc.city_name O O B-toloc.city_name O O O O O	atis_flight
+166	seattle ' dan salt lake city ' e delta l10 ucuslarini listele	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-airline_name B-aircraft_code O O	atis_flight
+605	m ne demek	B-fare_basis_code O O	atis_abbreviation
+80	nashville ' den seattle ' a ucmak istiyorum ve gidis donus en ucuz tarifeyi istiyorum	B-fromloc.city_name O O B-toloc.city_name O O O O O B-round_trip O B-cost_relative I-cost_relative O O	atis_flight
+409	memphis ' ten seattle ' a gidis donus en ucuz sekilde ucmak istiyorum	B-fromloc.city_name O O B-toloc.city_name O O B-round_trip O B-cost_relative I-cost_relative O O O	atis_flight
+8	pittsburgh ' dan phoenix ' e ucuslarla ilgili bilgi alabilir miyim	B-fromloc.city_name O O B-toloc.city_name O O O O O O O	atis_flight
+26	miami ' den cleveland ' a carsamba gunu bir seyahat icin ucus ve tarifelerini ver	B-fromloc.city_name O O B-toloc.city_name O O B-depart_date.day_name O O O O O O O O	atis_flight
