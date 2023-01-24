@@ -2,3 +2,4 @@ __pycache__/*
 dataset_readme*
 tmp.py
 train*.p
+data/*
