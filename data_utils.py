@@ -125,7 +125,6 @@ def getData4BertPickle(FNAME, tokenizer, sentenceLabel2idx=None, tag2idx=None, M
     else:
         a = list(sentenceLabel2idx.keys())
         b = list(sentence_labels_set)
-        #print("not in...")
         for l in b:
             if l not in a:
                 #print(l)

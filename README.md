@@ -45,6 +45,8 @@ python3 joint_en.py
 | FR      |    0.9227    |  0.9546 |
 | HI      |    0.6909    |  0.7814 |
 | TR      |    0.7202    |  0.8761 |
+| RW      |    0.2004    |  0.7997 |
+| SW      |    0.5408    |  0.8844 |
 
 #### BERT (bert-base-uncased)
 
@@ -59,6 +61,9 @@ python3 joint_en.py
 | FR    |    0.4154    |  0.8309 |
 | HI    |    0.0324    |  0.3504 |
 | TR    |    0.1580    |  0.7090 |
+| RW    |    0.0470    |  0.5281 |
+| SW    |    0.1780    |  0.5757 |
+
 
 ### Roberta (roberta-base)
 
@@ -72,6 +77,8 @@ python3 joint_en.py
 | FR      |    0.2508    |  0.8455 |
 | HI      |    0.0666    |  0.3580 |
 | TR      |    0.2797    |  0.7418 |
+| RW      |    0.1478    |  0.7384 |
+| SW      |    0.1578    |  0.7117 |
 
 ### XLM-Roberta (xlm-roberta-base)
 
@@ -85,19 +92,28 @@ python3 joint_en.py
 | FR      |    0.9305    |  0.9487 |
 | HI      |    0.8499    |  0.8890 |
 | TR      |    0.7664    |  0.8745 |
+| RW      |    0.6976    |  0.6466 |
+| SW      |    
 
-### MBERT + Cross-Switch
+### MBERT + Cross-Switch (translating source language into random languages in chunk-level)
 
-|languange| Intent Acc.  | Slot F1 |
-| ------- | ----------   | ------- |
-| ES      |    0.9529    |  0.9638 |
-| DE      |    0.9641    |  0.9685 |
-| ZH      |    0.8902    |  0.9321 |
-| JA      |    0.7872    |  0.8213 |
-| PT      |    0.9406    |  0.9672 |
-| FR      |    0.9630    |  0.9631 |
-| HI      |    0.8488    |  0.8270 |
-| TR      |    0.7930    |  0.8972 |
+|languange  | Intent Acc.  | Slot F1 |
+| --------- | ----------   | ------- |
+| ES        |    0.9529    |  0.9638 |
+| DE        |    0.9641    |  0.9685 |
+| ZH        |    0.8902    |  0.9321 |
+| JA        |    0.7872    |  0.8213 |
+| PT        |    0.9406    |  0.9672 |
+| FR        |    0.9630    |  0.9631 |
+| HI        |    0.8488    |  0.8270 |
+| TR        |    0.7930    |  0.8972 |
+| RW        |    0.4524    |  0.8093 | 
+| SW(random)|  
+| SW(to sw) |
+
+*SW(random) means translating training set into random languages in chunk-level; SW(to sw) means translating training set into swahili in chunk-level.*
+
+
 
 
 

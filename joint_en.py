@@ -10,13 +10,20 @@ from sklearn.metrics import accuracy_score, f1_score
 from data_utils import *
 from train_utils import *
 from bert import *
+import random
 
 device = torch.device("cuda")
+
+seed = 0
+random.seed(seed)
+np.random.seed(seed)
+torch.manual_seed(seed)
+torch.cuda.manual_seed_all(seed)
 
 data_folder = "./data/"
 SWITCH_PATH = "./data/train_cross_switch.p"
 code_switch = 0
-model_type = "mbert"
+model_type = "xlm-roberta"
 
 SCRATCH_FNAME = "joint_en.pt" # where to store
 alpha = 1.0
@@ -30,7 +37,7 @@ lr = 5e-5
 patience = 5
 
 TRAIN_DOMAIN = 'EN'
-TEST_DOMAINS = ['ES', 'DE', 'ZH', 'JA', 'PT', 'FR', 'HI', 'TR']
+TEST_DOMAINS = ['SW','RW','ES', 'DE', 'ZH', 'JA', 'PT', 'FR', 'HI', 'TR']
 
 ## DATASETS
 TRAIN_TSV = data_folder+"train_"+TRAIN_DOMAIN+".tsv"
