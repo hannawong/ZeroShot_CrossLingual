@@ -21,9 +21,9 @@ torch.manual_seed(seed)
 torch.cuda.manual_seed_all(seed)
 
 data_folder = "./data/"
-SWITCH_PATH = "./data/train_cross_switch.p"
-code_switch = 0
-model_type = "xlm-roberta"
+SWITCH_PATH = "./data/train_cross_switch_sw.p"
+code_switch = 1
+model_type = "mbert"
 
 SCRATCH_FNAME = "joint_en.pt" # where to store
 alpha = 1.0

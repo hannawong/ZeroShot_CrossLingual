@@ -93,7 +93,7 @@ python3 joint_en.py
 | HI      |    0.8499    |  0.8890 |
 | TR      |    0.7664    |  0.8745 |
 | RW      |    0.6976    |  0.6466 |
-| SW      |    
+| SW      |    0.6730    |  0.8762 |
 
 ### MBERT + Cross-Switch (translating source language into random languages in chunk-level)
 
@@ -108,8 +108,8 @@ python3 joint_en.py
 | HI        |    0.8488    |  0.8270 |
 | TR        |    0.7930    |  0.8972 |
 | RW        |    0.4524    |  0.8093 | 
-| SW(random)|  
-| SW(to sw) |
+| SW(random)|    0.6931    |  0.8461 |
+| SW(to sw) |    0.9395    |  0.9117 |
 
 *SW(random) means translating training set into random languages in chunk-level; SW(to sw) means translating training set into swahili in chunk-level.*
 
