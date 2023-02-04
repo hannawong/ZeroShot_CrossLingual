@@ -113,6 +113,30 @@ python3 joint_en.py
 
 *SW(random) means translating training set into random languages in chunk-level; SW(to sw) means translating training set into swahili in chunk-level.*
 
+### BERT + Cross-Switch (translating source language into random languages in chunk-level)
+
+|languange  | Intent Acc.  | Slot F1 |
+| --------- | ----------   | ------- |
+| RW        |    0.7099    |  0.8056 | 
+| SW(random)|    0.6987    |  0.8104 | 
+| SW(to sw) |    0.9372    |  0.8867 |
+
+### Roberta + Cross-Switch 
+
+|languange  | Intent Acc.  | Slot F1 |
+| --------- | ----------   | ------- |
+| RW        |    0.7256    |  0.8173 | 
+| SW(random)|    0.9260    |  0.8426 |
+| SW(to sw) |    0.7054    |  0.7380 |
+
+
+### XLM-Roberta + Cross-Switch 
+
+|languange  | Intent Acc.  | Slot F1 |
+| --------- | ----------   | ------- |
+| RW        |    0.6842    |  0.7510 | 
+| SW(random)|    0.6550    |  0.8363 |
+| SW(to sw) |    0.9260    |  0.9049 |
 
 
 
