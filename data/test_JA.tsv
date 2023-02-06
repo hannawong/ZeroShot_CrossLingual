@@ -1,0 +1,894 @@
+id	utterance	slot_labels	intent
+1	セントルイス にストップする、 シャーロット 発 ラスベガス 行きの飛行機を見つけたい	B-stoploc.city_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+2	四月 一日 の 午前 7 時 前 に出る タコマ 発 サンノゼ 行きのチケットが必要	B-depart_date.month_name B-depart_date.day_number O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+3	四月 一日 に出る フェニックス 発 サンディエゴ 行きの飛行機が必要	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4	四月 一日 に出る フェニックス 発 サンディエゴ 行きの 片道 の飛行機に乗りたい	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+5	デルタ航空 で 四月 一日 に出る オーランド 発 ソルトレークシティ 行きの飛行機に乗りたい	B-airline_name O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+6	水曜日 の 夕方 か 木曜日 の 朝 に出る トロント 発 ニューアーク 行きの 片道 のフライトが必要	B-depart_date.day_name O B-depart_time.period_of_day O B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+7	月曜日 の 朝 に出る コロンバス 発 インディアナポリス 行きの飛行機に乗りたい	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+8	四月 六日 水曜日 、 午後 3 時 以降 に ロングビーチ を出発して コロンバス に行く飛行機に乗りたい	B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+9	四月 六日 水曜日 、 午後 12 時 以降 の ロングビーチ 発 コロンバス 行きの飛行機に乗りたい	B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+10	四月 六日 水曜日 に ロングビーチ を出て コロンバス に行く飛行機はある	B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+11	メンフィス 発 タコマ ディナー 行きの飛行機が必要	B-fromloc.city_name O B-toloc.city_name B-meal_description O	atis_flight
+12	来週 水曜日 に カンザスシティ 発 シカゴ 行きで シカゴ に 午後 7 時 ごろ 到着して、帰りのフライトが 木曜日 のフライト	B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-return_date.day_name O	atis_flight
+13	来週 水曜日 の 午後 7 時 までに シカゴ に到着する カンザスシティ 発 シカゴ 行きの飛行機と値段を教えて	B-depart_date.date_relative B-depart_date.day_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airfare
+14	アメリカン の マイアミ 発 シカゴ 行きで シカゴ に 午後 5 時 ごろ に到着するフライト	B-airline_name O B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+15	次 の 土曜日 に ニューヨークシティ に到着する飛行機を探して	B-arrive_date.date_relative O B-arrive_date.day_name O B-toloc.city_name O	atis_flight
+16	四月 九日 土曜日 に ソルトレイクシティ から ニューヨーク へ行く 直行 便を探して	B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+17	今日 、 バーバンク から ミルウォーキー に行くフライトを教えて	B-depart_date.today_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+18	明日 夕方 、 ミルウォーキー から セントルイス に行くフライトを教えて	B-depart_date.today_relative B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+19	土曜日 の 夕方 に セントルイス から バーバンク に行くフライトを教えて	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+20	月曜日 に バーバンク から セントルイス に行くフライトを教えて	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+21	月曜日 に バーバンク から ミルウォーキー に行くフライトを教えて	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+22	火曜日 の 夕方 に ミルウォーキー から セントルイス に行くフライトを教えて	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+23	水曜日 の 夕方 に セントルイス から バーバンク に行くフライトを教えて	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+24	カンザスシティ から ロサンゼルス に行くのはどのフライト	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+25	ラスベガス から ロサンゼルス に行くフライトは何	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+26	四月 九日 に カンザスシティ から ロサンゼルス に行くのはどのフライト	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+27	ラスベガス 発 カリフォルニア の ロサンゼルス 行きで 四月 九日 の 午後 4 時 から 午後 5 時 の間に到着するのはどのフライト	B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-arrive_date.month_name B-arrive_date.day_number O B-arrive_time.start_time I-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time O	atis_flight
+28	オーランド から クリーブランド に行く US エアー はどのフライト	B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O	atis_flight
+29	四月 五日 に クリーブランド から インディアナポリス に行くのはどのフライト	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+30	四月 五日 に インディアナポリス から サンディエゴ に行くのはどのフライト	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+31	四月 五日 に クリーブランド から インディアナポリス に行くのはどのフライト	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+32	ナッシュビル から タコマ に行くのはどのフライト	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+33	タコマ空港 には、空港からダウンタウンまでの空港アクセスはある	B-airport_name O	atis_ground_service
+34	タコマ から サンノゼ に行くのはどのフライト	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+35	ナッシュビル 発 タコマ 行きの飛行機は何曜日に飛んでる	B-fromloc.city_name O B-toloc.city_name O	atis_day_name
+36	タコマ から サンノゼ に行くフライトは何	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+37	サンノゼ 発 ナッシュビル 行きの飛行機は何曜日に飛んでる	B-fromloc.city_name O B-toloc.city_name O	atis_day_name
+38	タコマ から サンノゼ に行くフライトは何	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+39	ボストン から オーランド に行く飛行機が必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+40	ニューヨーク で 乗り継ぐ 、 ボストン 発 オーランド 行きの飛行機はある	B-stoploc.city_name O B-connect O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+41	コロンバス で 乗り継ぐ 、 ボストン 発 オーランド 行きの飛行機はある	B-stoploc.city_name O B-connect O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+42	このフライトでは 夕食 は出る	O B-meal_description O	atis_flight
+43	シャーロット 発 マイアミ 行きのフライトが必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+44	マイアミ から トロント に行く 直行 便が必要	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+45	トロント から セントルイス に行く 直行 便が必要	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+46	トロント から セントルイス に行くフライトが必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+47	セントルイス から シャーロット に行くフライトが必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+48	ラガーディア 発 サンノゼ 行きの ユナイテッド航空 のフライトが必要	B-fromloc.airport_name O B-toloc.city_name O B-airline_name O	atis_flight
+49	タンパ 発 ミルウォーキー 行きのフライトが必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+50	ミルウォーキー 発 シアトル 行きのフライトが必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+51	タンパ 発 ミルウォーキー 行きの アメリカン 811 便では、 食事 は何が出る	B-fromloc.city_name O B-toloc.city_name O B-airline_name B-flight_number O B-meal O	atis_meal
+52	ミルウォーキー 発 シアトル 行きの アメリカン 665 673 便では、 食事 は何が出る	B-fromloc.city_name O B-toloc.city_name O B-airline_name B-flight_number I-flight_number O B-meal O	atis_meal
+53	メンフィス 発 ラスベガス 行きのフライトが必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+54	ラスベガス 発 オンタリオ 行きのフライトが必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+55	オンタリオ 発 メンフィス 行きのフライトが必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+56	ナッシュビル に立ち寄る、 ミルウォーキー 発 タンパ 行くのはどのフライト	B-stoploc.city_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+57	次 の 土曜日 、 正午 以降 に ニューアーク を出て ロサンゼルス に着くのはどのフライト	B-depart_date.date_relative O B-depart_date.day_name O B-depart_time.period_of_day B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+58	デトロイト を出発して、 午前 9 時 ごろ に セントピーターズバーグ に到着するのはどのフライト	B-fromloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-toloc.city_name O	atis_flight
+59	デトロイト 発 セントピーターズバーグ 着の ノースウエスト航空 のフライトはどれ	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+60	次 の 火曜日 に シカゴ を出て、 午後 6 時 ごろ デトロイト に到着するフライトはどれ	B-depart_date.date_relative O B-depart_date.day_name O B-fromloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative B-toloc.city_name O	atis_flight
+61	次 の 火曜日 に出て、 翌日 に帰ってくる シカゴ 発 デトロイト 行きの 往復 のフライトを教えて	B-depart_date.date_relative O B-depart_date.day_name O B-return_date.date_relative O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+62	次 の 火曜日 に シカゴ を出て、 デトロイト に 午後 6 時 ごろ 到着する 往復 のフライトはどれ	B-depart_date.date_relative O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-round_trip O	atis_flight
+63	次 の 火曜日 に シカゴ を出て、 デトロイト に 午後 6 時 頃 到着する 往復 のフライトはどれ	B-depart_date.date_relative O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-round_trip O	atis_flight
+64	月曜日 に モントリオール を出て、 シカゴ に 午前 中に到着するフライトはどれ	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.period_of_day O	atis_flight
+65	4 月 12 日 に シカゴ を出て、 インディアナポリス に 午前 に到着するフライトはどれ	B-depart_date.month_name I-depart_date.month_name B-depart_date.day_number I-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.period_of_day O	atis_flight
+66	四月 十三日 水曜日 に インディアナポリス を出て、 モントリオール に 午前 に到着するフライトはどれ	B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.period_of_day O	atis_flight
+67	四月 十二日 に インディアナポリス を出て 午後 10 時 ごろ モントリオール に着くのはどのフライト	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative B-toloc.city_name O	atis_flight
+68	ロングビーチ を出発して セントルイス に行きたい、そして ダラス に立ち寄りたい、機内では ランチ も食べたい	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O B-meal_description O	atis_flight
+69	次 の 水曜日 、 シカゴ への旅行で シカゴ に 午後 7 時 ごろ 着くように カンザスシティ を出発したい	B-depart_date.date_relative O B-depart_date.day_name O B-toloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-fromloc.city_name O	atis_flight
+70	シカゴ から カンザスシティ に 午後 7 時 ごろ 戻りたい	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+71	今日の 午後 、 アメリカン のフライトで シンシナティ から バーバンク に向けて出発したい	B-depart_date.today_relative B-depart_time.period_of_day O B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+72	日曜日 の 夕方 に ケベック の モントリオール から カリフォルニア の サンディエゴ 行きの飛行機で出発したい	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+73	日曜日 に ケベック の モントリオール から カリフォルニア の サンディエゴ に行くフライトは何	B-depart_date.day_name O B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+74	火曜日 に カリフォルニア の サンディエゴ から インディアナ の インディアナポリス に行くライトはある 午後 のフライトがいい	B-depart_date.day_name O B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+75	木曜日 の 朝 に インディアナポリス を出発して トロント に行く 直行 便に乗りたい	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+76	金曜日 の 朝 に トロント から モントリオール に行く飛行機に乗りたい	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+77	今日 ロサンゼルス から シャーロット に行く 早 朝 便に乗りたい	B-depart_date.today_relative B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.period_of_day O	atis_flight
+78	水曜日 の 夜 に シャーロット を出て ニューアーク に行く飛行機に乗りたい	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+79	金曜日 の 夜 に ニューアーク を出て ロサンゼルス に行く飛行機に乗りたい	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+80	タンパ から ニューヨーク 経由で モントリオール に行く飛行機を探して	B-fromloc.city_name O B-stoploc.city_name O B-toloc.city_name O	atis_flight
+81	フロリダ の マイアミ を出発して ネバダ の ラスベガス に 午後 4 時 前 に着く飛行機を探してくれる	B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+82	ラスベガス 発 ミシガン 行きの飛行機を探してくれる	B-fromloc.city_name O B-toloc.state_name O	atis_flight
+83	ミシガン の デトロイト を出て、 セントピーターズバーグ に 午後 10 時 前 に着く飛行機を探してくれる	B-fromloc.state_name O B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+84	木曜日 に セントピーターズバーグ から マイアミ に行く飛行機を探してくれる	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+85	サンディエゴ から トロント に行く アラスカ航空 のフライトを探してくれる	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+86	明日 コロンバス を出て ヒューストン に行く、 ナッシュビル で乗り継ぎのフライトを探してくれる	B-depart_date.today_relative B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+87	ナッシュビル から ヒューストン までの 夕食 が出る 直行 便を教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-meal_description O B-flight_stop O	atis_flight
+88	カンザスシティ から ニューアーク に行く利用できる飛行機を探してくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+89	カンザスシティ から ニューアーク 、 オーランド に行って カンザスシティ に戻ってくるフライトを探してくれる	B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name O B-toloc.city_name O	atis_flight
+90	カンザスシティ から ニューアーク に行く飛行機を探してくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+91	ニューアーク から オーランド に行く飛行機を探してくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+92	オーランド から カンザスシティ に行く飛行機を探してくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+93	コロンバス から シンシナティ を通って フィネックス に行く 午後 の飛行機に乗りたい	B-fromloc.city_name O B-stoploc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+94	ロサンゼルス にどんな空港があるか知りたい	B-city_name O	atis_airport
+95	バーバンク の空港には カンザスシティ からの飛行機は来る	B-toloc.city_name O B-fromloc.city_name O	atis_flight
+96	土曜日 の 午後 に カンザスシティ から バーバンク に到着するフライトはどれ	B-arrive_date.day_name O B-arrive_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+97	四月 二十三日 土曜日 の 午後 に ラスベガス から バーバンク に到着するフライトはどれ	B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+98	オーランド を出て 午後 10 時 ごろ クリーブランド に到着する利用できるフライトはどれ	B-fromloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative B-toloc.city_name O	atis_flight
+99	四月 二十一日 の 午後遅く に インディアナポリス から サンディエゴ に行く利用できるフライトは何	B-depart_date.month_name B-depart_date.day_number O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+100	四月 二十一日 の 午前 に クリーブランド を出て インディアナポリス に向かうフライトは何	B-depart_date.month_name B-depart_date.day_number O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+101	四月 二十一日 午前 に ナッシュビル 発 タコマ 行きの利用できるフライトはどれ	B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+102	四月 二十二日 午前 の タコマ 発 サンノゼ 行きで利用できるフライトはどれ	B-depart_date.month_name B-depart_date.day_number B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+103	四月 二十三日 の 午前 に出る、 サンノゼ 発 ナッシュビル 行きで利用できるフライトはどれ	B-depart_date.month_name B-depart_date.day_number O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+104	デトロイト と ウエストチェスター郡 の間の 一番高い 片道 料金は	B-fromloc.city_name O B-toloc.city_name O B-cost_relative B-round_trip O	atis_airfare
+105	デトロイト と ウエストチェスター郡 の間を飛んでいる航空会社は何	B-fromloc.city_name O B-toloc.city_name O	atis_airline
+106	デトロイト 発 ウエストチェスター郡 行きの 出発時刻 は何時	B-fromloc.city_name O B-toloc.city_name O B-flight_time O	atis_flight_time
+107	ボルチモア 発 オーランド 行きで、 夕食 が出る 最終 便は何	B-fromloc.city_name O B-toloc.city_name O B-meal_description O B-flight_mod O	atis_flight
+108	ボルチモア 発 オーランド 行きで、 朝食 が出る 始発 便は何	B-fromloc.city_name O B-toloc.city_name O B-meal_description O B-flight_mod O	atis_flight
+109	アメリカウエスト の ボストン から ファーストクラス で飛んでいるの都市は何	B-airline_name O B-fromloc.city_name O B-class_type O	atis_city
+110	ボストン から サンディエゴ に飛んでいる航空会社は何	B-fromloc.city_name O B-toloc.city_name O	atis_airline
+111	ダラス 発 タンパ 行きで、 朝食 付きの 最終 便は何	B-fromloc.city_name O B-toloc.city_name O B-meal_description O B-flight_mod O	atis_flight
+112	シアトル 発 ボストン 行きで、 ミネアポリス でストップオーバーする ルフトハンザ のフライトを全部教えて	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O B-airline_name O	atis_flight
+113	シアトル 発 ボストン 行きで ミネアポリス にストップオーバーするフライトを全部教えて	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+114	フィラデルフィア 発 サンフランシスコ 行きで ダラス でストップオーバーするフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+115	ボストン と デンバー の間の 乗り継ぎ 便と使用される機体の種類を教えて	B-fromloc.city_name O B-toloc.city_name O B-connect O	atis_flight
+116	フィラデルフィア 発 フォートワース 行きの 午前 のフライトをすべて教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+117	カンザスシティ 発 セントポール 行きのフライトをすべて教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+118	カンザスシティ 発 セントポール 行きの ノースウエスト 608 便を教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name B-flight_number O	atis_flight
+119	月曜日 の インディアナポリス 発 シャーロット 行きのフライトをすべて教えて	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+120	シャーロット空港 の中、 シャーロット空港 と シャーロット のダウンタウンの間の空港アクセスは何	B-airport_name O B-city_name O B-city_name O	atis_ground_service
+121	月曜日 の 午後 2 時 以降 に出る シャーロット 発 ミネアポリス 行きのフライトをすべて教えて	B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+122	火曜日 午前 の シャーロット 発 ミネアポリス 行きのフライトをすべて教えて	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+123	火曜日 午前 の シャーロット 発 ミネアポリス 行きの 直行 便をすべて教えて	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-connect O	atis_flight
+124	月曜日 に シャーロット から ミネアポリス に行く US 1500 便を教えてくれる	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-airline_code B-flight_number O	atis_flight
+125	火曜日 の 午後 2 時 以降 に出発する、 ミネアポリス から インディアナポリス に行くすべてのフライトを教えて	B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+126	ミネアポリス から インディアナ までのフライトを教えて	B-fromloc.city_name O B-toloc.state_name O	atis_flight
+127	火曜日 午後 の ミネアポリス 発 インディアナポリス 行きのフライトを教えて	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+128	月曜日 の US 1207 便、 インディアナポリス 発 シャーロット 行きと 月曜日 の US 1500 便、 シャーロット 発 ミネアポリス 行き、 TWA 639 便の ミネアポリス 発 インディアナポリス 行きを教えて	B-depart_date.day_name O B-airline_code B-flight_number O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O B-flight_number O B-fromloc.city_name O B-toloc.city_name O B-airline_code B-flight_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+129	ラスベガス 発 ニューヨークシティ 行きのフライトをすべて教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+130	ラスベガス から ニューヨークシティ へ行くのどの航空会社	B-fromloc.city_name O B-toloc.city_name O	atis_airline
+131	金曜日 に出る アメリカウエスト と TWA の ラスベガス 発 JFK 行きのフライトを全部教えて	B-depart_date.day_name O B-airline_name O B-airline_code O B-fromloc.city_name O B-toloc.airport_code O	atis_flight
+132	明日 午後 6 時 以降 の タコマ 発 マイアミ 行きのフライトは何	B-depart_date.today_relative B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+133	六月 十日 に サンディエゴ から ヒューストン 行く飛行機に乗りたい	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+134	六月 十日 午後 6 時 以降 に ヒューストン から ニューアーク に行く アメリカン航空 のフライトはある	B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+135	六月 十日 午後 3 時 以降 に ヒューストン から ニューアーク に行く アメリカン航空 のフライトはある	B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+136	六月 六日 午後 6 時 までに シンシナティ から デンバー に行く必要がある	B-arrive_date.month_name B-arrive_date.day_number B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative B-fromloc.city_name O B-toloc.city_name O	atis_flight
+137	デンバー ではどんな空港アクセスがある	B-city_name O	atis_ground_service
+138	デンバー までの タクシー の運賃はいくら	B-city_name O B-transport_type O	atis_ground_fare
+139	デンバー の空港アクセスの運賃はいくら	B-city_name O	atis_ground_fare
+140	六月 七日 午後 3 時 以降 に デンバー から ウェストチェスター郡 に飛行機で行く必要がある	B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+141	ウェストチェスター郡 の空港アクセスは何	B-city_name O	atis_ground_service
+142	六月 八日 午後 3 時 以降 に ウェストチェスター郡 発 シンシナティ 行きの ユナイテッド航空 のフライトに乗る必要がある	B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+143	六月 八日 に ウェストチェスター郡 から シンシナティ に行く ユナイテッド航空 のフライトは何	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+144	六月 八日 に ウェストチェスター郡 から シンシナティ に行くのはどのフライト	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+145	US エアー は 六月 六日 に シンシナティ から デンバー に飛ぶ	B-airline_name I-airline_name O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+146	六月 六日 に シンシナティ から デンバー に行くフライトをリストアップして	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+147	六月 七日 に デンバー から ウェストチェスター郡 に行くフライトをリストアップして	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+148	六月 八日 に ウェストチェスター郡 から シンシナティ に行くフライトをリストアップして	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+149	六月 六日 に シンシナティ から ウェストチェスター郡 に行くフライトをリストアップして	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+150	六月 七日 に ウェストチェスター郡 から デンバー に行くフライトをリストアップして	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+151	六月 八日 に デンバー から シンシナティ に行くフライトをリストアップして	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+152	六月 六日 午後 4 時 以降 に デンバー から シンシナティ に行くフライトをリストアップして	B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+153	六月 七日 に シンシナティ から ウェストチェスター郡 に行くフライトをリストアップして	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+154	六月 七日 午後 5 時 以降 に出る、 ウェストチェスター郡 から シンシナティ に行くフライトをリストアップして	B-depart_date.month_name B-depart_date.day_number B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+155	六月 六日 午前 6 時 から 10 時 の間に ラブフィールド を出る航空会社は何	B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number I-depart_date.day_number I-depart_date.day_number O B-depart_time.end_time I-depart_time.end_time O O B-fromloc.airport_name O	atis_airline
+156	六月 六日 に ラブフィールド に到着するフライトは何	B-arrive_date.month_name B-arrive_date.day_number O B-toloc.airport_name O	atis_flight
+157	午前 9 時 前 の モントリオール 発 フィリー 行きのフライトをリストアップして	B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+158	クリーブランド から メンフィス に行くフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+159	メンフィス から クリーブランド に行くフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+160	七月 一日 に デンバー から ボルチモア に着くフライトをリストアップして	B-arrive_date.month_name B-arrive_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+161	七月 一日 に ダラス から ボルチモア に着くフライトをリストアップして	B-arrive_date.month_name B-arrive_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+162	七月 一日 に ピッツバーグ から ボルチモア に着くフライトをリストアップして	B-arrive_date.month_name B-arrive_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+163	カナディアン航空国際 便をリストアップして	B-airline_name O	atis_flight
+164	J31 を使っている カナディアン航空国際 便はいくつある	B-aircraft_code O B-airline_name O	atis_quantity
+165	320 の機体を使っている カナディアン航空国際 便はいくつある	B-aircraft_code O B-airline_name O	atis_quantity
+166	DH8 の機体を使っている カナディアン航空 便はいくつある	B-aircraft_code O B-airline_name O	atis_quantity
+167	セントピーターズバーグ 発 カナダ の オンタリオ 行きで、 セントルイス でストップオーバーする アメリカン航空 のフライトを教えて	B-fromloc.city_name O B-toloc.country_name O B-toloc.city_name O B-stoploc.city_name O B-airline_name O	atis_flight
+168	セントピーターズバーグ 発 セントルイス 経由で カリフォルニア の オンタリオ に行く アメリカン航空 のフライトを教えて	B-fromloc.city_name O B-stoploc.city_name O B-toloc.state_name O B-toloc.city_name O B-airline_name O	atis_flight
+169	カリフォルニア の オンタリオ に 一番近い のはどの空港	B-state_name O B-city_name O B-mod O	atis_airport
+170	ヒューストン 発 オーランド 行きのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+171	オーランド 発 ヒューストン 行きのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+172	デトロイト 発 ラスベガス 行きのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+173	ラスベガス から デトロイト までの 最安 の 往復 の エコノミー 運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O B-class_type O	atis_airfare
+174	ラスベガス 発 デトロイト 行きの TWA の 最安 の エコノミー 往復 運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_code O B-cost_relative O B-class_type B-round_trip O	atis_airfare
+175	エコノミー の乗客に 軽食 が出る デルタ 便を教えて	B-compartment O B-meal_description O B-airline_name O	atis_flight
+176	ミールコードの SB の意味は何	O B-meal_code O	atis_abbreviation
+177	午前 9 時 50 分 に サンフランシスコ に到着する DL 468 で利用できる 食事 は何	B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time O B-toloc.city_name O B-airline_code B-flight_number O B-meal O	atis_meal
+178	タンパ 発 サンフランシスコ 行きの デルタ のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+179	デルタ 486 便を教えて	B-airline_name B-flight_number O	atis_flight
+180	月曜日 の タワーエア のフライトをリストアップして	B-day_name O B-airline_name O	atis_flight
+181	食事 が出る タワーエア のフライトをリストアップして	B-meal O B-airline_name O	atis_flight
+182	ボルチモア から出発するフライトは何	B-fromloc.city_name O	atis_flight
+183	ボルチモア を出発して サンフランシスコ に 金曜日 に着くフライトは何	B-fromloc.city_name O B-toloc.city_name O B-arrive_date.day_name O	atis_flight
+184	シンシナティ を 午前 に出て タンパ に着くフライトは何	B-fromloc.city_name O B-depart_time.period_of_day O B-toloc.city_name O	atis_flight
+185	タンパ を 夕方 に出て シンシナティ に着くフライトは何	B-fromloc.city_name O B-arrive_time.period_of_day O B-toloc.city_name O	atis_flight
+186	タンパ を 夕方 早く に出て シンシナティ に到着するフライトはどれ	B-fromloc.city_name O B-depart_time.period_of_day B-depart_time.period_of_day O B-toloc.city_name O	atis_flight
+187	フィラデルフィア を出発して アトランタ に到着するフライトはどれ	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+188	アトランタ を出発して トロント に到着するフライトはどれ	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+189	トロント を出発して ワシントン DC に到着するフライトはどれ	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+190	ニューヨーク を出発して ロサンゼルス に 午前 10 時 以降 に到着するフライトはどれ	B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+191	ニューヨークの ラガーディア はダウンタウンからどのくらいの距離	B-city_name B-airport_name O	atis_distance
+192	トロントインターナショナル はダウンタウンからどのくらいの距離	B-airport_name O	atis_distance
+193	ロサンゼルスインターナショナル はダウンタウンからどのくらいの距離	B-airport_name O	atis_distance
+194	サンフランシスコインターナショナル はダウンタウンからどのくらいの距離	B-airport_name O	atis_distance
+195	ボストン で リムジン サービスはいくら	B-city_name O B-transport_type O	atis_ground_fare
+196	ラガーディア で リムジン サービスはいくら	B-airport_name O B-transport_type O	atis_ground_fare
+197	トロントインターナショナル で リムジン サービスはいくら	B-airport_name O B-transport_type O	atis_ground_fare
+198	ロサンゼルス で リムジン サービスはいくら	B-city_name O B-transport_type O	atis_ground_fare
+199	ワシントン DC と オハイオ の コロンバス 間を飛んでいる航空会社は何	B-fromloc.city_name B-fromloc.state_code O B-toloc.state_name O B-toloc.city_name O	atis_airline
+200	ワシントン DC と オハイオ の コロンバス 間を飛んでいるフライトは何	B-fromloc.city_name B-fromloc.state_code O B-toloc.state_name O B-toloc.city_name O	atis_flight
+201	ワシントン DC と オハイオ の コロンバス 間のフライトは何	B-fromloc.city_name B-fromloc.state_code O B-toloc.state_name O B-toloc.city_name O	atis_flight
+202	ワシントン と コロンバス 間のすべてのフライトの運賃はいくら	B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+203	シャーロット空港 には、 US エアー が使う航空機は何種類ある	B-city_name O B-airline_name I-airline_name O	atis_aircraft
+204	土曜日 の 午後 1 時 に シャーロット に到着する US エアー 便をすべてリストアップして	B-arrive_date.day_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time O B-toloc.city_name O B-airline_name I-airline_name O	atis_flight
+205	インディアナの インディアナポリス から メンフィス に行く ファーストクラス の 往復 航空運賃はいくら	O B-fromloc.city_name O B-toloc.city_name O B-class_type O B-round_trip O	atis_airfare
+206	メンフィス 発 マイアミ 行きのフライトをすべてリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+207	月曜日 午前 に インディアナポリス から メンフィス に行くすべてのフライトと運賃をリストアップして	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airfare
+208	水曜日 夕方 に メンフィス から マイアミ に行くすべてのフライトと運賃をリストアップして	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airfare
+209	マイアミ と インディアナポリス 間のすべてのフライトと航空運賃をリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airfare
+210	クリーブランド から カンザスシティ に行く 月曜日 のフライトをすべてリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+211	カンザスシティ から クリーブランド 行きのすべてのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+212	クリーブランド から ナッシュビル 行きのすべてのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+213	ナッシュビル から クリーブランド までの 日曜日 のフライトをすべてリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+214	クリーブランド から ナッシュビル までの 日曜日 のフライトと運賃をすべてリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight#atis_airfare
+215	ボルチモア から出発する航空会社は何	B-fromloc.city_name O	atis_airline
+216	ボルチモア から サンフランシスコ に飛ぶ航空会社はどれ	B-fromloc.city_name O B-toloc.city_name O	atis_airline
+217	ボルチモア から サンフランシスコ までのフライトはどのくらい時間がかかる	B-fromloc.city_name O B-toloc.city_name O	atis_distance
+218	月曜日 の 早 朝 に カンザスシティ を出て アトランタ に行くフライトはどれ	B-depart_date.day_name O B-depart_time.period_mod B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+219	アトランタ を出て、 セントルイス に 火曜日 の 午後 2 時 30 分 近く に到着するフライトはどれ	B-fromloc.city_name O B-toloc.city_name O B-arrive_date.day_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+220	木曜日 の 午前 10 時 以降 に セントルイス を出発して セントポール 行くフライトをリストアップして	B-depart_date.day_name O B-depart_time.period_of_day B-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+221	金曜日 の 夕方の セントポール 発 カンザスシティ 行きで、 食事 が含まれるフライトをリストアップして	B-depart_date.day_name O B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O B-meal O	atis_flight
+222	シンシナティ 発 タンパ 行きの 早 朝 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.period_of_day O	atis_flight
+223	タンパ 発 シンシナティ 行きの 夕方 早く のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.period_of_day O	atis_flight
+224	タンパ 発 シンシナティ 行きの 夕方 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+225	フィラデルフィア 発 アトランタ 行きの 金曜日 午前 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+226	アトランタ 発 トロント 行きの 金曜日 午後 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+227	トロント から ワシントン DC 行きの 土曜日 午前 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+228	ワシントン DC 発 フィラデルフィア 行きの 土曜日 午後 のフライトをリストアップして	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+229	ニューヨークシティ 発 ロサンゼルス 行きの 午前 10 時 以降 の 直行 便をリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-connect O	atis_flight
+230	JFK から LAX 行きの アメリカン航空 19 便の航空運賃をリストアップして	B-fromloc.airport_code O B-toloc.airport_code O B-airline_name B-flight_number O	atis_airfare#atis_flight
+231	運賃コードの M の意味は何	O B-fare_basis_code O	atis_abbreviation
+232	ボストン空港 から ボストン のダウンタウンまでの距離をマイル表示でリストアップして	B-fromloc.airport_name O B-city_name O	atis_distance
+233	ニューヨークの ラガーディア空港 から ニューヨークシティ のダウンタウンまでの距離をマイル表示でリストアップして	B-fromloc.city_name B-fromloc.airport_name O B-city_name O	atis_distance
+234	トロント国際空港 から トロント のダウンタウンまでの距離をマイル表示でリストアップして	B-fromloc.airport_name O B-city_name O	atis_distance
+235	サンフランシスコ国際空港 から サンフランシスコ のダウンタウンまでの距離をマイル表示でリストアップして	B-fromloc.airport_name O B-toloc.city_name O	atis_distance
+236	ボストン市 での リムジン の料金をリストアップして	B-city_name O B-transport_type O	atis_ground_fare
+237	金曜日 の 午後 に ヒューストン を出て ミルウォーキー に行く アメリカン航空 のフライトをリストアップして	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+238	ヒューストン 発 ミルウォーキー 行きの 金曜日 の 午後 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_time.period_of_day O	atis_flight
+239	水曜日 に ミルウォーキー から サンノゼ に行く アメリカン航空 のフライトをリストアップして	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+240	金曜日 の 午後 に サンノゼ から ダラス に行く アメリカン航空 のフライトをリストアップして	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+241	日曜日 午後 に ダラス から ヒューストン に着くフライトをリストアップして	B-arrive_date.day_name B-arrive_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+242	シアトル から ソルトレイクシティ まで飛んでいる航空会社をリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_airline
+243	L10 の飛行機の座席定員は何人	B-aircraft_code O	atis_capacity
+244	デルタ BE1 の座席定員は何人	B-airline_name B-aircraft_code O	atis_capacity
+245	シアトル 発 ソルトレークシティ 行きの デルタ L10 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-airline_name B-aircraft_code O	atis_flight
+246	シアトル 発 ソルトレークシティ 行きの デルタ BE1 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-airline_name B-aircraft_code O	atis_flight
+247	毎日 の ボストン から ピッツバーグ までのフライトをリストアップして	B-flight_days O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+248	毎日 の ピッツバーグ から ニューアーク までのフライトをリストアップして	B-flight_days O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+249	毎日 の ニューアーク から ボストン までのフライトをリストアップして	B-flight_days O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+250	シャーロット空港 を 土曜日 午後 1 時 に出発する US エアー のフライトをリストアップして	B-fromloc.airport_name O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time O B-airline_name I-airline_name O	atis_flight
+251	土曜日 の 午後 1 時 ごろ シャーロット空港 を出発する US エアー のフライトをリストアップして	B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative B-fromloc.airport_name O B-airline_name I-airline_name O	atis_flight
+252	インディアナポリス から メンフィス 行きの ファーストクラス の 往復 航空運賃をリストアップして	B-fromloc.city_name O B-toloc.city_name O B-class_type O B-round_trip O	atis_airfare
+253	運賃コードの F の意味は何	O B-fare_basis_code O	atis_abbreviation
+254	水曜日 夕方 の メンフィス から マイアミ までのフライトをリストアップして	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+255	日曜日 の マイアミ から インディアナポリス までのフライトをリストアップして	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+256	カリフォルニア の オンタリオ から フロリダ の オーランド までのフライトをリストアップして	B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+257	カリフォルニア の オンタリオ から ユタ の ソルトレイクシティ までのフライトをリストアップして	B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+258	カリフォルニア の オンタリオ から ユタ の ソルトレイクシティ までの 月曜日 のフライトをリストアップして	B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+259	ユタ の ソルトレイクシティ から アリゾナ の フェニックス までの 月曜日 のフライトをリストアップして	B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+260	ソルトレイクシティ から アリゾナ の フェニックス までの 火曜日 のフライトをリストアップして	B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+261	アリゾナ の フェニックス から カリフォルニア の オンタリオ までの 水曜日 のフライトをリストアップして	B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+262	ボルチモア から サンフランシスコ に飛ぶ航空会社は何	B-fromloc.city_name O B-toloc.city_name O	atis_airline
+263	ファーストクラス の 往復 チケットで、 デトロイト から セントピーターズバーグ までの運賃はいくら	B-class_type O B-round_trip O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+264	往復 の ファーストクラス チケットで、 デトロイト から セントピーターズバーグ までの航空運賃はいくら	B-round_trip O B-class_type O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+265	カンザスシティ から アトランタ までの 月曜日 午前 のフライト	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+266	アトランタ から カンザスシティ までの 月曜日 午前 のフライト	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+267	カンザスシティ から アトランタ までの 月曜日 午前 のフライト	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+268	アトランタ から セントルイス までの 火曜日 午後 2 時 30 分 以前 のフライト	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+269	セントルイス から セントポール までの 木曜日 午前 10 時 以降	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative	atis_flight
+270	金曜日 の 夜 に セントポール から カンザスシティー まで	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+271	クリーブランド から カンザスシティー に 月曜日 の 午後 3 時 前 に到着	B-fromloc.city_name O B-toloc.city_name O B-arrive_date.day_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+272	水曜日 の 午後 5 時 前 に到着する カンザスシティー から クリーブランド へのフライト	B-arrive_date.day_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+273	金曜日 午前 の クリーブランド から ナッシュビル へのフライト	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+274	日曜日 の 9 時 前 に、 ナッシュビル から クリーブランド まで	B-depart_date.day_name O B-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+275	月曜日 午前 の ピッツバーグ から ニューアーク への ファーストクラス のフライト	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-class_type O	atis_flight
+276	水曜日 午前 の ニューアーク から ロサンゼルス へのフライト	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+277	木曜日 午後 に ロサンゼルス から ミネアポリス まで	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+278	ミネアポリス から ピッツバーグ へのフライト	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+279	ミネアポリス から ピッツバーグ へ ファーストクラス のフライト	B-fromloc.city_name O B-toloc.city_name O B-class_type O	atis_flight
+280	ミルウォーキー から オーランド まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+281	hp は何を表すの	B-airline_code O	atis_abbreviation
+282	オンタリオ から タコマ まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+283	ミネアポリス から サンディエゴ まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+284	ソルトレイクシティー から シンシナティ まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+285	シンシナティ から ソルトレイクシティー までのフライトを知りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+286	ニューヨーク から マイアミ まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+287	マイアミ から ニューヨーク まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+288	サンフランシスコ 発 サンディエゴ 行きの飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+289	サンディエゴ から ラスベガス まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+290	サンディエゴ から ラスベガス まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+291	ラスベガス から サンフランシスコ まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+292	運賃コードの bn の意味は何	O B-fare_basis_code O	atis_abbreviation
+293	トロント 、 デトロイト 、そして セントルイス を飛んでいる航空会社がいい	B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name O	atis_airline
+294	トロント から デトロイト まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+295	デトロイト から セントルイス まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+296	トロント から セントルイス まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+297	サンフランシスコ から ロングビーチ まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+298	サンフランシスコ 発 サンディエゴ 行きの飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+299	サンフランシスコ から セントピーターズバーグ まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+300	ミルウォーキー から オーランド までの 片道 フライトで 水曜日 の 午後 6 時 以降 を教えて	B-fromloc.city_name O B-toloc.city_name O B-round_trip O B-depart_date.day_name O B-depart_time.period_of_day B-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+301	ミルウォーキー から オーランド までの 水曜日 の 片道 フライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-round_trip O	atis_flight
+302	コロンバス から シカゴ までの ファーストクラス で 午前 10 時 前 に出発するフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-class_type O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+303	セントピーターズバーグ と デトロイト 間で 午後 7 時 より 前に 到着する 最安 の 往復 を教えて	B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time O B-arrive_time.time_relative O B-cost_relative O B-round_trip O	atis_flight
+304	カンザスシティー から フェニックス までの 直行 便を教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+305	WN はどの航空会社	B-airline_code O	atis_airline
+306	ニューヨーク から マイアミ までの 最安 の ファーストクラス の 往復 を教えて	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-class_type O B-round_trip O	atis_flight
+307	今度は ニューヨーク から マイアミ までのすべての 往復 を教えて	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+308	サンフランシスコ から ヒューストン までの 最安 の 片道 フライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_flight
+309	今度は ヒューストン から ボストン までの 最安 の 片道 フライトを教えて	O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_flight
+310	ヒューストン から ボストン までの 最安 の 往復 運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_airfare
+311	サンフランシスコ から ヒューストン までの 最安 の 往復 運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_airfare
+312	1994 年 二月 二十八日 の サンフランシスコ から ヒューストン までの 最安 の 往復 運賃を教えて	B-depart_date.year I-depart_date.year B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_airfare
+313	1994 年 二月 二十八日 の サンフランシスコ から ヒューストン までの 最安 の 片道 運賃を教えて	B-depart_date.year I-depart_date.year B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_airfare
+314	今度は ヒューストン の 月曜日 午後 の空港アクセスを教えて	O B-city_name O B-day_name B-period_of_day O	atis_ground_service
+315	今度は ヒューストン から ボストン までの 片道 フライトを教えて	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+316	今度は 夜 遅く に ボストン で利用できる空港アクセスを教えて	O B-period_of_day B-period_of_day O B-city_name O	atis_ground_service
+317	トロント と デトロイト 間、 デトロイト と セントルイス 間、そして セントルイス と トロント 間のフライトを運航している航空会社を教えて	B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name O	atis_airline
+318	トロント と デトロイト 間の デルタ 、 ノースウエスト 、 US エアー 、そして ユナイテッド航空 の 往復 運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-airline_name O B-airline_name I-airline_name O B-airline_name O B-round_trip O	atis_airfare
+319	デトロイト と セントルイス 間の デルタ 、 ノースウエスト 、 US エアー 、そして ユナイテッド航空 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-airline_name O B-airline_name I-airline_name O B-airline_name O	atis_flight
+320	モントリオール から オーランド と ロングビーチ までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name O	atis_flight
+321	モントリオール から オーランド までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+322	6 月 の 金曜日 午後 の ニューヨーク から クリーブランド までの飛行機が必要	B-depart_date.month_name I-depart_date.month_name O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+323	土曜日 の 夕方 に ニューヨーク から ロサンゼルス まで行く US エアー のフライトが必要	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O	atis_flight
+324	土曜日 の 夕方 に US エアー の ニューヨーク から ロサンゼルス までの 夜行便 に乗りたい	B-depart_date.day_name O B-depart_time.period_of_day O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+325	土曜日 の 午前 に ニューヨーク から ロサンゼルス まで US エアー で行きたい	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O	atis_flight
+326	月曜日 午前 の サンフランシスコ 発 ミルウォーキー 行きのフライトが必要	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+327	UA の意味は何	B-airline_code O	atis_abbreviation
+328	月曜日 夜 の ミルウォーキー 発 ワシントン DC 行きのフライトが必要	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+329	火曜日 午前 の ミルウォーキー 発 ワシントン DC 行きの飛行機はどう	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+330	火曜日 午前 の ミルウォーキー から ワシントン DC までのフライト 382 の 食事 は何	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-flight_number O B-meal O	atis_meal
+331	ワシントン DC でのレンタ カー が必要	B-city_name B-state_code O B-transport_type O	atis_ground_service
+332	火曜日 夜 の ワシントン DC から オークランド までのフライトを教えてくれる	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+333	DC から オークランド までの 水曜日 の 午前 はどう	B-fromloc.state_code O B-toloc.city_name O B-depart_date.day_name O B-depart_time.period_of_day O	atis_flight
+334	TWA で コロンバス から ミルウォーキー までのフライトはいくら	B-airline_code O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+335	q の意味は何	B-fare_basis_code O	atis_abbreviation
+336	コロンバス から セントルイス まで TWA の 往復 フライトはいくら	B-fromloc.city_name O B-toloc.city_name O B-airline_code O B-round_trip O	atis_airfare
+337	TWA で コロンバス から セントルイス まで 往復 の 最安 のフライトは何	B-airline_code O B-fromloc.city_name O B-toloc.city_name O B-round_trip O B-cost_relative O	atis_flight
+338	TWA で コロンバス から セントルイス まで 最安 の 往復 フライトは何	B-airline_code O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_flight
+339	ミルウォーキー 発 ロサンゼルス 行きの飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+340	ミルウォーキー から オーランド までの 最短 のフライトを教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+341	ミルウォーキー から ロングビーチ までの 最短 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+342	m の意味は何	B-fare_basis_code O	atis_abbreviation
+343	ap 57 の意味は何	B-restriction_code I-restriction_code O	atis_abbreviation
+344	ミルウォーキー から セントピーターズバーグ までの 最短 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+345	ミルウォーキー から ロングビーチ までの 最短 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+346	ミルウォーキー から サンディエゴ までの 最短 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+347	ap 20 の意味は何	B-restriction_code I-restriction_code O	atis_abbreviation
+348	サンフランシスコ から ミシガン の デトロイト までの 今日 のフライトを教えてくれる	B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-depart_date.today_relative O	atis_flight
+349	サンフランシスコ から デトロイト までの 今日 の 最安 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-depart_date.today_relative O B-cost_relative O	atis_flight
+350	サンフランシスコ から ミルウォーキー そして ミルウォーキー から デンバー まで飛行機で行きたい	B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+351	サンフランシスコ から ミルウォーキー までの 最安 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_flight
+352	ミルウォーキー でのレンタ カー が必要	B-city_name O B-transport_type O	atis_ground_service
+353	ミルウォーキー から デンバー まで、 明日 の 最安 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-depart_date.today_relative O B-cost_relative O	atis_flight
+354	デンバー ではどんな空港アクセスが利用できる	B-city_name O	atis_ground_service
+355	サンフランシスコ から デンバー までの 最安 のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_flight
+356	クリーブランド を出発して ダラス に行くのは何のフライト	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+357	セントピーターズバーグ から シャーロット までの 直行 便をすべて教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+358	US はどの航空会社	B-airline_code O	atis_airline
+359	トロント と サンディエゴ 間のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+360	PHL とは何	B-airport_code O	atis_abbreviation
+361	MCI とは何	B-airport_code O	atis_abbreviation
+362	オークランド と ソルトレイクシティー 間のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+363	not sa の意味は何	B-mod B-days_code O	atis_abbreviation
+364	オークランド と ソルトレイクシティー 間の 一番早い デイリー フライトは何	B-fromloc.city_name O B-toloc.city_name O B-flight_mod B-flight_days O	atis_flight
+365	DL はどの航空会社	B-airline_code O	atis_airline
+366	オークランド と ソルトレイクシティー 間の 一番遅い デイリー フライトは何	B-fromloc.city_name O B-toloc.city_name O B-flight_mod B-flight_days O	atis_flight
+367	ロサンゼルス と ダラス 間のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+368	ダラスフォートワース空港 から ダラス 市内までどんな交通機関が利用できる	B-airport_name O B-city_name O	atis_ground_service
+369	l1011 航空機は何人乗り	B-aircraft_code O	atis_capacity
+370	DC9 の座席定員は何人	B-aircraft_code O	atis_capacity
+371	ダラス と フェニックス 間のフライトは何	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+372	フェニックス空港 から フェニックス 市内の間でどんな交通機関が利用できる	B-airport_name O B-city_name O	atis_ground_service
+373	M80 の飛行機の座席定員は何人	B-aircraft_code O	atis_capacity
+374	ダラス と フェニックス 間で、 DC10 の機体のフライトはある	B-fromloc.city_name O B-toloc.city_name O B-aircraft_code O	atis_flight
+375	AA はどの航空会社	B-airline_code O	atis_airline
+376	ミルウォーキー と インディアナ 間のフライトを教えて	B-fromloc.city_name O B-toloc.state_name O	atis_flight
+377	ミルウォーキー と ピッツバーグ 間のフライトは何	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+378	ピッツバーグ空港 から ピッツバーグ 市内の間でどんな交通機関が利用できる	B-airport_name O B-city_name O	atis_ground_service
+379	ピッツバーグ と ワシントン DC 間のフライトを教えて	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+380	DCA から ワシントン 市内の間でどんな交通機関が利用できる	B-airport_code O B-city_name O	atis_ground_service
+381	DCA と ミルウォーキー 間のフライトは何	B-airport_code O B-city_name O	atis_flight
+382	ミルウォーキー空港 から ミルウォーキー 市内の間でどんな交通機関が利用できる	B-airport_name O B-city_name O	atis_ground_service
+383	昼 前 に出発する クリーブランド から ダラス までのフライトで使用されている機体を教えて	B-depart_time.period_of_day B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_aircraft
+384	セントピーターズバーグ と シャーロット 間のフライトで、 午後 に出発して 午後 5 時 のできるだけすぐ 後 に到着する 直行便 フライトを探して	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O B-arrive_time.time I-arrive_time.time I-arrive_time.time O B-arrive_time.time_relative O B-flight_stop O	atis_flight
+385	デルタ航空 で トロント から サンディエゴ に行くフライトをリストアップして	B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+386	アメリカン航空 で トロント から サンディエゴ に行くフライトをリストアップして	B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+387	トロント から サンディエゴ に行くフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+388	水曜日 の 17時 0 時 以降に出発する オークランド から ソルトレイクシティー までのフライトをリストアップして	B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative B-fromloc.city_name O B-toloc.city_name O	atis_flight
+389	木曜日 の 午前 0 時 以降に出発する オークランド から ソルトレイクシティー までのフライトをリストアップして	B-depart_date.day_name O B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day B-depart_time.time_relative B-fromloc.city_name O B-toloc.city_name O	atis_flight
+390	フェニックス と ラスベガス 間のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+391	ラスベガス 発 デンバー 行きのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+392	12 時 0 分 より前 の ミルウォーキー 発 ワシントン DC 行きのフライトをリストアップして	B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+393	18 時 0 分 以降 出発の ワシントン DC から ピッツバーグ 行きのフライトをリストアップして	B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+394	ワシントン DC から ピッツバーグ までのフライトをリストアップして	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+395	ピッツバーグ と ミルウォーキー 間のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+396	サンディエゴ から ワシントン DC まで飛行機に乗りたい	B-toloc.city_name O B-fromloc.city_name B-fromloc.state_code O	atis_flight
+397	クリーブランド から ダラス まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+398	ワシントン DC から アリゾナ の フェニックス まで飛行機で行きたい	B-fromloc.city_name B-fromloc.state_code O B-toloc.state_name O B-toloc.city_name O	atis_flight
+399	フェニックス 発 アトランタ 行きのフライトが必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+400	アトランタ から サンディエゴ まで飛行機で行きたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+401	サンディエゴ から シアトル まで飛行機で行きたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+402	オーランド から カンザスシティー まで飛行機で行きたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+403	カンザスシティー 発 ミネアポリス 行きのフライトが必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+404	サンディエゴ から ワシントン DC までのフライトが必要	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+405	ワシントン DC から サンディエゴ までのフライトが必要	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+406	サンディエゴ から ワシントン DC までの 往復 フライトとその運賃の情報が必要	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-round_trip O	atis_flight#atis_airfare
+407	午前 出発で、 アトランタ から ワシントン DC までの 往復 とその運賃の情報が必要	B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-round_trip O	atis_flight#atis_airfare
+408	午前 出発で、 フェニックス から ワシントン DC までの 往復 とその運賃の情報が必要	B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-round_trip O	atis_flight#atis_airfare
+409	ワシントン DC から ボストン までの 最安 運賃はいくら	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O B-cost_relative O	atis_airfare
+410	ワシントン DC から モントリオール までの 最安 運賃はいくら	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O B-cost_relative O	atis_airfare
+411	トロント から ワシントン DC までの 最安 運賃はいくら	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-cost_relative O	atis_airfare
+412	モントリオール から ワシントン DC まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+413	午後 3 時 より前に 到着する ナッシュビル から シアトル までの飛行機に乗りたい	B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+414	午後 3 時 より前に 到着する、 ナミネアポリス から シアトル までの飛行機に乗りたい	B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+415	午後 0 時 5 分 に シアトル に到着する、 インディアナポリス から シアトル までのフライトが必要	B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+416	ミネアポリス から シアトル まで 往復 の飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+417	ナッシュビル から シアトル まで飛行機に乗りたくて、 最安 の 往復 運賃を知りたい	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_flight
+418	メンフィス から シアトル まで、 最安 の 往復 運賃で飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_flight
+419	インディアナポリス から シアトル まで、 最安 の 往復 運賃で飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_flight
+420	オーランド から フィラデルフィア までのフライトをリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+421	サンフランシスコ から シャーロット までのフライトをリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+422	ミルウォーキー から フィラデルフィア までのフライトをリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+423	フィラデルフィア から サンフランシスコ までのフライトをリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+424	ミルウォーキー までの空港アクセスを教えてくれる	B-city_name O	atis_ground_service
+425	サンフランシスコ から ミルウォーキー までのフライトをリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+426	ヒューストン から デンバー までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+427	ヒューストン から フェニックス までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+428	フェニックス から ヒューストン までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+429	ニューアーク から ヒューストン までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+430	デンバー から ヒューストン までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+431	セントピーターズバーグ から シャーロット までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+432	オーランド から カンザスシティー までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+433	カンザスシティー から ミネアポリス までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+434	カンザスシティー から オーランド までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+435	ミネアポリス から カンザスシティー までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+436	カンザスシティー から オーランド までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+437	ワシントン DC から ボストン までのフライトをリストアップして	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+438	ワシントン DC から モントリオール までの運賃をリストアップして	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_airfare
+439	ワシントン DC から モントリオール までのフライトをリストアップして	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+440	ワシントン DC から トロント までのお得な運賃をリストアップして	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_airfare
+441	ワシントン DC から ボストン までの運賃をリストアップして	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_airfare
+442	ワシントン DC から モントリオール までのフライトをリストアップして	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+443	ワシントン DC から トロント までのフライトをリストアップして	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+444	トロント から ワシントン DC までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+445	オークランド から ソルトレイクシティー までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+446	ダラス を出発して フェニックス に行くのは何のフライト	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+447	フェニックス を出発して ソルトレイクシティー まで行くのは何のフライト	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+448	ミルウォーキー から デンバー までの 早朝 フライトが必要	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+449	デンバー ではどんな種類の空港アクセスが利用できる	B-city_name O	atis_ground_service
+450	火曜日 の 午前 に デンバー から セントルイス に行くのは何のフライト	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+451	セントルイス では空港アクセスが利用できる	B-city_name O	atis_ground_service
+452	水曜日 の 午後 に、セントルイス から ミルウォーキー に飛行機で行く必要がある	B-fromloc.city_name I-fromloc.city_name O B-depart_time.period_of_day O O O B-toloc.city_name O	atis_flight
+453	ワシントン から シアトル までのフライト	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+454	アトランタ から シアトル までのフライト	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+455	サンディエゴ から シアトル までのフライト	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+456	フェニックス から デンバー までの飛行情報を知りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+457	ソルトレイクシティー から フェニックス までの飛行情報を教えてくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+458	ソルトレイクシティー から ピッツバーグ までの飛行情報を教えてくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+459	ワシントン DC 発 デンバー 行きの飛行情報を知りたい	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+460	土曜日 出発の ワシントン 発 ボストン 行きの飛行情報が必要	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+461	土曜日 の ワシントン から モントリオール までのフライトが必要	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+462	土曜日 の ワシントン 発 トロント 行きのフライトの料金情報が必要	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+463	土曜日 に ボストン から ワシントン まで行きたい	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+464	正午 前 に出発する クリーブランド から ダラス までのフライトが必要、情報が多すぎるか知りたい	B-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+465	ワシントン から ボストン までの運賃情報を取得して	B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+466	ワシントン から ボストン までの 土曜日 の運賃情報を取得して	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_airfare
+467	ワシントン から モントリオール までの運賃情報を取得して	B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+468	ワシントン から モントリオール までの 土曜日 の運賃情報を取得して	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_airfare
+469	ワシントン から トロント までの 土曜日 の運賃情報を取得して	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_airfare
+470	ワシントン から トロント までの 土曜日 の運賃情報を取得して	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_airfare
+471	ワシントン から ボストン までの 土曜日 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+472	ボストン から ワシントン までの 土曜日 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+473	ミルウォーキー から DTW までのフライト情報を取得して	B-fromloc.city_name O B-toloc.airport_code O	atis_flight
+474	ミルウォーキー から デトロイト までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+475	デトロイト から トロント までのフライト情報を取得して	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+476	トロント から ミルウォーキー までのフライト情報を取得して	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+477	水曜日 の オークランド から ソルトレイクシティー までの 最終 便、 または 木曜日 の オークランド から ソルトレイクシティー までの 始発 便の情報を取得して	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O B-or B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+478	木曜日 の オークランド から ソルトレイクシティー までの 始発 便の情報を取得して	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+479	水曜日 の オークランド から ソルトレイクシティー までの 最終 便の情報を取得して	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O	atis_flight
+480	オークランド から ソルトレイクシティー までの 水曜日 の 最終 便をリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-flight_mod O	atis_flight
+481	DTW 経由の トロント から サンディエゴ までのフライト情報を取得して	B-stoploc.airport_code O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+482	セントピーターズバーグ と シャーロット 間のフライト情報を取得して	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+483	月曜日 の 午前 9 時 前 に出発する ミルウォーキー から インディアナポリス までのフライトが必要	B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+484	月曜日 の 午前 8 時 前 に出発する ミルウォーキー 発 インディアナポリス 行きのフライトが必要	B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+485	インディアナポリス空港 では空港アクセスを利用できる	B-airport_name O	atis_ground_service
+486	火曜日 の 正午 に出発する インディアナポリス 発 クリーブランド 行きのフライトの飛行情報が必要	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+487	水曜日 の 午後 6 時 以降 に出発する、クリーブランド 発 ミルウォーキー 行きのフライトの飛行情報が必要	B-fromloc.city_name I-fromloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O O O B-toloc.city_name O	atis_flight
+488	水曜日 の 午後 5 時 以降 にクリーブランド から ミルウォーキー に戻るフライトの飛行情報が必要	B-fromloc.city_name I-fromloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O O O B-toloc.city_name O	atis_flight
+489	水曜日 の 午後 5 時 以降 に出発する、クリーブランド 発 ミルウォーキー 行きのフライトの飛行情報が必要	B-fromloc.city_name I-fromloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O O O B-toloc.city_name O	atis_flight
+490	水曜日 の 午後 5 時 以降 に出発する、クリーブランド 発 ミルウォーキー 行きのフライトの飛行情報が必要	B-fromloc.city_name I-fromloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O O O B-toloc.city_name O	atis_flight
+491	月曜日 の デンバー から ソルトレイクシティー までのフライトが必要	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+492	デンバー空港 では空港アクセスを利用できる	B-airport_name O	atis_ground_service
+493	月曜日 の 午後 5 時 以降 に出発する デンバー から ソルトレイクシティー までのフライトと航空会社の情報が必要	B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airline
+494	ソルトレイクシティー空港 では空港アクセスを利用できる	B-airport_name O	atis_ground_service
+495	水曜日 の 午後 5 時 以降 に出発する ソルトレイクシティー から フェニックス までのフライトが必要	B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+496	フェニックス空港 では空港アクセスを利用できる	B-airport_name O	atis_ground_service
+497	水曜日 の 午後 6 時 以降 に出発する オークランド から ソルトレイクシティー までのフライトが必要	B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+498	木曜日 の 午前 9 時 より 前 に オークランド を出発して ソルトレイクシティー に向かうフライトとその料金の情報が必要	B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airfare
+499	木曜日 の 午前 8 時 より 前 に オークランド を出発して ソルトレイクシティー に向かうフライトとその料金の情報が必要	B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight#atis_airfare
+500	木曜日 の 午前 8 時 より 前 に オークランド を出発して ソルトレイクシティー に向かうフライトのフライト番号と航空会社が必要	B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight_no#atis_airline
+501	木曜日 の 午前 8 時 前 に オークランド から ソルトレイクシティー に向かうすべてのフライトのフライト番号が必要	B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight_no
+502	アリゾナ、ネバダ および カリフォルニア の空港をリストアップしてくれる	B-state_name O B-state_name O	atis_airport
+503	カリフォルニア 、 ネバダ 、 アリゾナ の空港をリストアップして	B-state_name O B-state_name O B-state_name O	atis_airport
+504	アリゾナ の空港をリストアップして	B-state_name O	atis_airport
+505	カリフォルニア の空港をリストアップして	B-state_name O	atis_airport
+506	ラスベガス から フェニックス までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+507	カリフォルニア の空港をリストアップして	B-state_name O	atis_airport
+508	空港をリストアップして	O	atis_airport
+509	オークランド から ソルトレークシティ までの 水曜日 の 夜行 便をリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_time.period_of_day O	atis_flight
+510	木曜日 朝 の 午前 6 時 前 の オークランド から ソルトレイクシティー までのフライトをリストアップして	B-depart_date.day_name B-depart_time.period_of_day O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+511	トロント と サンディエゴ 間で運航しているのはどの航空会社	B-fromloc.city_name O B-toloc.city_name O	atis_airline
+512	セントピーターズバーグ と シャーロット 間の 午後 便をリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+513	TPA とは何	B-airport_code O	atis_abbreviation
+514	クリーブランド から ダラス に行くフライトは何	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+515	クリーブランド から ダラス までで、 正午 前 に出発するフライトだけをリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.time_relative O	atis_flight
+516	昼 前 に出発する クリーブランド から ダラス までのフライトの機体のタイプは何	B-depart_time.period_of_day B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_aircraft
+517	インディアナポリス から シアトル までのフライトの情報が必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+518	メンフィス から シアトル までのフライトが必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+519	ナッシュビル から シアトル までのチケットが必要	B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+520	テネシー の ナッシュビル から シアトル までのチケットが必要	B-fromloc.state_name O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+521	ミルウォーキー から タンパ までの飛行情報が必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+522	タンパ でレンタ カー が必要	B-city_name O B-transport_type O	atis_ground_service
+523	セントルイス から ミルウォーキー までの デイリー フライトが必要	B-fromloc.city_name O B-toloc.city_name O B-flight_days O	atis_flight
+524	オークランド を出発し ソルトレイクシティー に到着するフライトが必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+525	トロント から サンディエゴ までのフライトの情報が必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+526	トロント から サンディエゴ までのフライトの情報が必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+527	トロント から サンディエゴ まで飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+528	セントピーターズバーグ と シャーロット 間のフライトの情報が必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+529	クリーブランド を出発し ダラス に到着するフライトのフライト番号が必要	B-fromloc.city_name O B-toloc.city_name O	atis_flight_no
+530	ニューヨーク から マイアミ に行き、戻ってくるのはどのフライト	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+531	運賃コードの qo の意味は何	O B-fare_basis_code O	atis_abbreviation
+532	ミルウォーキー から オーランド までの 片道 フライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+533	US という略号は何を表すの	B-airline_code O	atis_abbreviation
+534	水曜日 の 夕方 または 木曜日 の 朝 の ミルウォーキー から オーランド までの 片道 チケットがほしい	B-depart_date.day_name O B-depart_time.period_of_day B-or B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_airfare
+535	ミルウォーキー から オーランド までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+536	運賃コードの f の意味は何	O B-fare_basis_code O	atis_abbreviation
+537	運賃コードの h の意味は何	O B-fare_basis_code O	atis_abbreviation
+538	運賃コードの y の意味は何	O B-fare_basis_code O	atis_abbreviation
+539	ap 57 の制限は何	B-restriction_code I-restriction_code O	atis_abbreviation
+540	インディアナポリス から メンフィス までの ファーストクラス の 片道 フライトで、 午前 10 時 より 前 に出発するフライトを教えてくれる	B-fromloc.city_name O B-toloc.city_name O B-class_type O B-round_trip O B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_time.time_relative O	atis_flight
+541	今度は 午後 7 時 より前 に シアトル に到着する、 バーバンク から シアトル までのすべての 往復 フライトを教えて	O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+542	オーランド から モントリオール までの 往復 フライトをお願い	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+543	DL はどの航空会社	B-airline_code O	atis_airline
+544	モントリオール から オーランド までのすべての デルタ航空 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+545	オーランド から モントリオール までのすべてのフライトを教えてくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+546	KW はどの航空会社	B-airline_code O	atis_airline
+547	ニューヨーク から マイアミ までの、すべてのフライトのすべてのクラスをリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+548	運賃コードの bh の意味は何	O B-fare_basis_code O	atis_abbreviation
+549	マイアミ から JFK までの 戻り 便を教えてくれる	B-fromloc.city_name O B-toloc.airport_code O B-round_trip O	atis_flight
+550	運賃コードの bh の意味は何	O B-fare_basis_code O	atis_abbreviation
+551	運賃コードの bh の意味は何	O B-fare_basis_code O	atis_abbreviation
+552	運賃コードの bh の意味は何	O B-fare_basis_code O	atis_abbreviation
+553	運賃コードの bh の意味は何	O B-fare_basis_code O	atis_abbreviation
+554	水曜日 の 午後 6 時 以降 の ミルウォーキー から オーランド までの 片道 フライトを教えて	B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+555	インディアナポリス から メンフィス までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+556	バーバンク から シアトル までの 往復 フライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+557	オーランド から モントリオール までの 往復 フライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+558	モントリオール から オーランド までの 直行 便を教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+559	モントリオール と オーランド 間の 往復 を教えて	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+560	モントリオール から オーランド までの 往復 フライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+561	モントリオール から オーランド までの 最安 の 片道 フライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_flight
+562	オーランド から モントリオール までの 最安 の 片道 フライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_flight
+563	マイアミ から ニューヨーク までの 最安 エコノミー フライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-cost_relative B-economy O	atis_flight
+564	エコノミー で カンザスシティー から ラスベガス まで	B-economy O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+565	エコノミー で カンザスシティー から ラスベガス まで	B-economy O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+566	HP はどの航空会社	B-airline_code O	atis_airline
+567	ラスベガス の空港アクセス	B-city_name O	atis_ground_service
+568	ラスベガス での空港アクセス	B-city_name O	atis_ground_service
+569	エコノミー で ラスベガス から ボルチモア まで	B-economy O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+570	エコノミー で ラスベガス から ボルチモア まで	B-economy O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+571	エコノミー で ボルチモア から カンザスシティー まで	B-economy O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+572	US はどの航空会社	B-airline_code O	atis_airline
+573	US はどの航空会社	B-airline_code O	atis_airline
+574	US はどの航空会社	B-airline_code O	atis_airline
+575	US はどの航空会社	B-airline_code O	atis_airline
+576	US はどの航空会社	B-airline_code O	atis_airline
+577	午前 10 時 より前 の 片道 で コロンバス から シカゴ まで	B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-round_trip O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+578	HP はどの航空会社	B-airline_code O	atis_airline
+579	セントピーターズバーグ から デトロイト まで	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+580	水曜日 の 午後 5 時 以降 の ミルウォーキー から オーランド まで 片道	B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-round_trip	atis_flight
+581	そして、 午前 10 時 前 の デイリー で ミルウォーキー から アトランタ まで	O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-flight_days O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+582	YX はどの航空会社	B-airline_code O	atis_airline
+583	サンノゼ から フェニックス までのすべてのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+584	サンノゼ から フェニックス までのすべてのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+585	HP はどの航空会社	B-airline_code O	atis_airline
+586	フェニックス の空港アクセスを教えて	B-city_name O	atis_ground_service
+587	フェニックス から フォートワース までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+588	フォートワース の空港アクセスを教えて	B-city_name O	atis_ground_service
+589	フォートワース から サンノゼ までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+590	ニューヨーク から マイアミ までの ファーストクラス の 往復 フライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-class_type O B-round_trip O	atis_flight
+591	ニューヨーク から マイアミ までの ファーストクラス の 往復 フライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-class_type O B-round_trip O	atis_flight
+592	ニューヨーク から マイアミ までの 直行 の 往復 フライトをすべて教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O B-round_trip O	atis_flight
+593	マイアミ から ニューヨーク までの 直行 の 往復 フライトをすべて教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O B-round_trip O	atis_flight
+594	インディアナポリス から メンフィス までの、すべての曜日の 午前 10 時 前 の 片道 フライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-round_trip O	atis_flight
+595	運賃コードの f の意味は何	O B-fare_basis_code O	atis_abbreviation
+596	バーバンク から タコマ までの 往復 フライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+597	制限 ap58 はどんな意味	O B-restriction_code O	atis_abbreviation
+598	運賃コードの h の意味は何	O B-fare_basis_code O	atis_abbreviation
+599	AS はどの航空会社	B-airline_code O	atis_airline
+600	AS はどの航空会社	B-airline_code O	atis_airline
+601	AS はどの航空会社	B-airline_code O	atis_airline
+602	sam の AS はどの航空会社	O O B-airline_code O	atis_airline
+603	セントピーターズバーグ から トロント までの 直行 便を教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+604	トロント から セントピーターズバーグ までの 直行 便を教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+605	トロント から セントピーターズバーグ までの 直行 便と運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight#atis_airfare
+606	トロント から セントピーターズバーグ までの 直行 便を教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+607	ミルウォーキー から オーランド までの 週中 の 片道 フライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O B-round_trip O	atis_flight
+608	ミルウォーキー から オーランド までの 週中 の 片道 フライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O B-round_trip O	atis_flight
+609	HP はどの航空会社	B-airline_code O	atis_airline
+610	シカゴ から サンディエゴ までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+611	シカゴ から サンディエゴ までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+612	カンザスシティー から オーランド までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+613	デンバー から フェニックス までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+614	フェニックス から ラスベガス までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+615	ラスベガス から サンディエゴ までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+616	シカゴ から カンザスシティー までの 午前中 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+617	ヒューストン から サンノゼ までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+618	ヒューストン から ミルウォーキー までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+619	ミルウォーキー から サンノゼ までの 水曜日 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+620	サンノゼ から ダラス までの 金曜日 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+621	ダラス から ヒューストン までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+622	ニューヨーク にある空港から市内までの距離をリストアップして	B-city_name O	atis_distance
+623	ニューヨーク の空港をリストアップして	B-city_name O	atis_airport
+624	ニューヨーク の空港をリストアップして	B-city_name O	atis_airport
+625	LA の空港をリストアップして	B-city_name O	atis_airport
+626	空港をリストアップして	O	atis_airport
+627	LA の空港をリストアップして	B-city_name O	atis_airport
+628	LA の空港をリストアップして	B-city_name O	atis_airport
+629	LA の空港をリストアップして	B-city_name O	atis_airport
+630	LA をリストアップして	B-city_name O	atis_city
+631	LA をリストアップして	B-city_name O	atis_city
+632	ニューアーク から LA までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+633	ラガーディア から バーバンク までのフライトをリストアップして	B-fromloc.airport_name O B-toloc.city_name O	atis_flight
+634	LA から オーランド までのフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+635	カリフォルニア の オンタリオ から オーランド までのフライトをリストアップして	B-fromloc.state_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+636	カリフォルニア の オンタリオ から オーランド までのフライトをリストアップして	B-fromloc.state_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+637	月曜日 の インディアナポリス から メンフィス までのフライトと運賃をリストアップして	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+638	月曜日 の インディアナポリス から メンフィス までのフライトをリストアップして	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+639	水曜日 の メンフィス から マイアミ までのフライトをリストアップして	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+640	土曜日 の マイアミ から インディアナポリス までのフライトをリストアップして	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+641	土曜日 の 午後 の シャーロット からのフライトをリストアップして	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O	atis_flight
+642	シャーロット からのすべてのフライトの機体タイプをリストアップして	B-fromloc.city_name O	atis_aircraft
+643	タコマ から オーランド までの 往復 で、 土曜日 に出発し 次の 土曜日 に戻るフライトと運賃をリストアップして	B-fromloc.city_name O B-toloc.city_name O B-round_trip O B-depart_date.day_name O B-return_date.date_relative B-return_date.day_name O	atis_flight#atis_airfare
+644	運賃コードの q はどのクラス	O B-booking_class O	atis_abbreviation
+645	運賃ベースコード q の、 オーランド から タコマ までの 土曜日 のフライトをリストアップして	O B-fare_basis_code O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+646	ファーストクラス の 往復 で、 デトロイト から セントピーターズバーグ までの航空会社をリストアップして	B-class_type O B-round_trip O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+647	デトロイト から セントピーターズバーグ までの エコノミー の 往復 航空運賃をリストアップして	B-fromloc.city_name O B-toloc.city_name O B-class_type O B-round_trip O	atis_airfare
+648	月曜日 午前 の ピッツバーグ から ニューアーク までのフライトをリストアップして	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+649	ミネアポリス から ピッツバーグ までの 金曜日 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+650	午前 9 時 前 の シンシナティ から タンパ までのフライトをリストアップして	B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+651	シンシナティ から タンパ までの 正午 前 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.time_relative O	atis_flight
+652	タンパ から シンシナティ までの 午後 3 時 以降 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+653	シアトル から ソルトレイクシティー まで飛んでいる航空会社をリストアップして	B-fromloc.city_name O B-toloc.city_name O	atis_airline
+654	シアトル から ソルトレイクシティー までの デルタ のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+655	シアトル から ソルトレイクシティー までの デルタ のフライトの座席定員をリストアップして	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_capacity
+656	シアトル から ソルトレイクシティー までの デルタ のフライトを機体と一緒にリストアップして	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+657	ボルチモア ではどんな空港アクセスがある	B-city_name O	atis_ground_service
+658	ボルチモア の空港アクセスをリストアップして	B-city_name O	atis_ground_service
+659	ボルチモア から サンフランシスコ までの 金曜日 のフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+660	ロサンゼルス から ピッツバーグ までの 火曜日 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+661	ピッツバーグ から ロサンゼルス までの 木曜日 の 夕方 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_time.period_of_day O	atis_flight
+662	クリーブランド から マイアミ までの 来週 水曜日 の 往復 フライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.date_relative B-depart_date.day_name O B-round_trip O	atis_flight
+663	クリーブランド から マイアミ までの 来週 水曜日 の 往復 フライトの運賃を教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.date_relative B-depart_date.day_name O B-round_trip O	atis_airfare
+664	クリーブランド 着 マイアミ 発の 水曜日 のフライトと運賃を教えて	B-toloc.city_name O B-fromloc.city_name O B-depart_date.day_name O	atis_flight
+665	次の 日曜日 の マイアミ から クリーブランド までの運賃を教えて	B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+666	ミルウォーキー から フェニックス までの 土曜日 または 日曜日 の アメリカン航空 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-or B-depart_date.day_name O B-airline_name O	atis_flight
+667	水曜日 夕方の フェニックス から ミルウォーキー までのフライトを教えて	B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-toloc.city_name O O	atis_flight
+668	フェニックス から ミルウォーキー までの 水曜日 の アメリカン航空 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-airline_name O	atis_flight
+669	フェニックス から ミルウォーキー までの アメリカン航空 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+670	フェニックス から ミルウォーキー までのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+671	土曜日 の 朝 早く 、 シカゴ から シアトル に向かう 直行 便の 食事 があるフライトを教えて	B-depart_date.day_name O B-depart_time.period_of_day B-depart_time.period_mod O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O B-meal O	atis_flight
+672	土曜日 の 朝 に シカゴ から シアトル に向かうフライトで 食事 があるフライトを教えて	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-meal O	atis_flight
+673	シアトル から シカゴ に向かう コンチネンタル で 食事 があるフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-meal O	atis_flight
+674	土曜日 の 午前 に シアトル から シカゴ に向かう コンチネンタル で 食事 があるフライトを教えて	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-meal O	atis_flight
+675	土曜日 の 朝 早く に シカゴ から シアトル に向かう コンチネンタル で 食事 のあるフライトを教えて	B-depart_date.day_name O B-depart_time.period_of_day B-depart_time.period_mod O B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-meal O	atis_flight
+676	土曜日 の 朝 早く シカゴ から シアトル までで、 食事 のある コンチネンタル フライトの組み合わせを教えて	B-depart_date.day_name O B-depart_time.period_of_day B-depart_time.period_mod B-fromloc.city_name O B-toloc.city_name O B-meal O B-airline_name O	atis_flight
+677	土曜日 午前 の 食事 がある シカゴ から ミネアポリス までのフライトを教えて	B-depart_date.day_name B-depart_time.period_of_day O B-meal O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+678	土曜日 朝 の シカゴ から ミネアポリス までの コンチネンタル で 食事 がついているフライトを教えて	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-meal O	atis_flight
+679	土曜日 朝 の シカゴ から セントポール までの コンチネンタル で 食事 がついているフライトを教えて	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-meal O	atis_flight
+680	ニューヨーク から ラスベガス までの 直行 便を教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+681	メンフィス 発 ラスベガス 行きの 直行 便を教えて	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+682	十二月 二十五日 ごろ の インディアナポリス 発 オーランド 行きで 最安 の 往復 フライトを教えて	B-depart_date.month_name B-depart_date.day_number B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O B-round_trip O	atis_flight
+683	ニューアーク 発 タンパ 行きで 金曜日 のフライトが必要	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+684	タンパ 発 シャーロット 行きで 日曜日 のフライトが必要	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+685	火曜日 午前 の シャーロット 発 ボルチモア 行きのフライトを教えて	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+686	ボルチモア 発 ニューアーク 行き、 午前 のフライトをお願い	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+687	十二月 二十五日 の インディアナポリス 発 オーランド 行き、または 往復 の 最安 運賃	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-round_trip O B-cost_relative O	atis_airfare
+688	十二月 二十七日 の インディアナポリス 発 オーランド 行き、 片道 の 最安 運賃	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-round_trip O B-cost_relative O	atis_airfare
+689	ダラス 発 ヒューストン 行きのフライト番号	B-fromloc.city_name O B-toloc.city_name O	atis_flight_no
+690	ヒューストン 発 ダラス 行きのフライト番号	B-fromloc.city_name O B-toloc.city_name O	atis_flight_no
+691	ミルウォーキー 発 フェニックス 行き、 アメリカン航空 の 土曜日 のフライト	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-depart_date.day_name O	atis_flight
+692	フェニックス 発 ミルウォーキー 行き アメリカン航空 のフライト番号	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight_no
+693	シカゴ 発 シアトル 行きのフライト番号	B-fromloc.city_name O B-toloc.city_name O	atis_flight_no
+694	コンチネンタル の シカゴ 発 シアトル 行きのフライト番号	B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight_no
+695	コンチネンタル の シアトル 発 シカゴ 行きのフライト番号	B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight_no
+696	200 ドル 未満 の ピッツバーグ 発 クリーブランド 行きの運賃はある	B-fare_amount I-fare_amount B-cost_relative O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+697	ピッツバーグ 発 アトランタ 行きの エコノミー のフライトはいくら	B-fromloc.city_name O B-toloc.city_name O B-class_type O	atis_airfare
+698	金曜日 の ニューアーク 発 タンパ 行き	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+699	日曜日 午前 の タンパ 発 シャーロット 行き	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+700	火曜日 の シャーロット 発 ボルチモア 行き	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+701	水曜日 午前 の ボルチモア 発 ニューアーク 行き	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+702	午前 12 時 1 分 以降 の ダラス 発 ヒューストン 行き	B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+703	深夜 0 時 前 の ヒューストン 発 ダラス 行き	B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+704	十二月 二十七日 の インディアナポリス 発 オーランド 行き	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+705	十二月 二十七日 の インディアナポリス 発 オーランド 行きの 最安 運賃	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_airfare
+706	十二月 二十七日 に インディアナポリス 発 オーランド 行きで 往復 の 最安 運賃	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-round_trip O B-cost_relative O	atis_airfare
+707	水曜日 の 午後 4 時 前 に到着する クリーブランド 発 マイアミ 行き	B-depart_date.day_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+708	日曜日 午後 の マイアミ 発 クリーブランド 行き	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+709	日曜日 の ニューヨークシティ 発 ラスベガス 行きと メンフィス 発 ラスベガス 行き	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+710	日曜日 の ニューヨークシティ 発 ラスベガス 行きと メンフィス 発 ラスベガス 行き	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+711	日曜日 午後 の ニューヨーク 発 ラスベガス 行き	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+712	日曜日 午後 の メンフィス 発 ラスベガス 行き	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+713	日曜日 午後 の ニューヨーク 発 ラスベガス 行き	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+714	日曜日 午前 の シカゴ 発 シアトル 行き	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+715	日曜日 午前 の シカゴ 発 ラスベガス 行き	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+716	火曜日 午後 の ロサンゼルス 発 ピッツバーグ 行き	B-depart_time.period_of_day B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+717	月曜日 午後 の ロサンゼルス 発 ピッツバーグ 行き	B-depart_time.period_of_day B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+718	木曜日 夕方 の ピッツバーグ 発 ロサンゼルス 行き	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+719	土曜日 の ミルウォーキー 発 フェニックス 行き	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+720	日曜日 の フェニックス 発 ミルウォーキー 行き	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+721	水曜日 の フェニックス 発 ミルウォーキー 行き	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+722	ボルチモア 発 サンフランシスコ 行きの 5 時 から 午後 8 時 の間に到着する フライト	B-fromloc.city_name O B-toloc.city_name O B-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time O B-flight	atis_flight
+723	セントポール を出発する ノースウェスト 便はいくつある	B-fromloc.city_name O B-airline_name O	atis_flight
+724	ワシントン DC を出発する ノースウェスト 便はいくつある	B-fromloc.city_name B-fromloc.state_code O B-airline_name O	atis_flight
+725	ノースウェスト には ダレス を出発する便はいくつある	B-airline_name O B-fromloc.airport_name O	atis_flight
+726	ノースウェスト はどの都市から出ている	B-airline_name O	atis_city
+727	ノースウェスト が出ている都市をリストアップして	B-airline_name O	atis_city
+728	ノースウェスト が飛んでいるのはどの都市	B-airline_name O	atis_city
+729	4 時 以降 に出発する ダラス 発 サンフランシスコ 行きの 乗り継ぎ 便に乗りたい	B-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-connect O	atis_flight
+730	ダラス 発 サンフランシスコ 行きのフライトをすべてリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+731	アメリカン航空 の フィラデルフィア 発 ダラス 行きの 午前 のフライトをもう一度教えて	B-airline_name O B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+732	フィラデルフィア を出発して ダラス に行くフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+733	D9S とは何	B-aircraft_code O	atis_abbreviation
+734	D9S はどんなタイプの飛行機	B-aircraft_code O	atis_aircraft
+735	D9S とは何	B-aircraft_code O	atis_abbreviation
+736	タワーエア が運行している空港を教えて	B-airline_name O	atis_airport
+737	JFK と オーランド 間の ファーストクラス と エコノミー のフライトを教えて	B-fromloc.airport_code O B-toloc.city_name O B-class_type O B-class_type O	atis_flight
+738	ケネディ空港 発 マイアミ 行きの ファーストクラス と エコノミー のフライトを教えて	B-fromloc.airport_name O B-toloc.city_name O B-class_type O B-class_type O	atis_flight
+739	JFK 発 マイアミ 行きの ファーストクラス と エコノミー のフライトを教えて	B-fromloc.airport_code O B-toloc.city_name O B-class_type O B-class_type O	atis_flight
+740	タワーエア で 食事 はそもそも提供されるの	B-airline_name O B-meal O	atis_meal
+741	タワーエア で 軽食 は提供される	B-airline_name O B-meal_description O	atis_meal
+742	JFK 発 マイアミ 行きの デルタ航空 のフライトを教えて	B-fromloc.airport_code O B-toloc.city_name O B-airline_name O	atis_flight
+743	ボストン 発 ソルトレイク 行きの デルタ航空 を教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+744	ボストン 発 ソルトレイク 行きの デルタ航空 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+745	ボストン 発 ソルトレイクシティ 行きの デルタ航空 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+746	ボストン と ワシントン DC 間のフライトの運賃はいくら	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_airfare
+747	ボストン 発 ソルトレイクシティ 行きの 一番安い 運賃はいくら	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_airfare
+748	ワシントン DC 発 ソルトレイクシティ 行きの 最安 運賃はいくら	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O B-cost_relative O	atis_airfare
+749	BWI 発 ソルトレイクシティ 行きの 一番安い 運賃はいくら	B-fromloc.airport_code O B-toloc.city_name O B-cost_relative O	atis_airfare
+750	デトロイト 発 ラスベガス 行きと 帰り の ファーストクラス チケットの料金を教えて	B-fromloc.city_name O B-toloc.city_name O B-round_trip O B-class_type O	atis_airfare
+751	一番早く到着する ボストン 発 ワシントン DC 行きのフライトは何	B-flight_mod B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+752	一番早く到着する ボストン と ワシントン DC 間のフライトは何	B-flight_mod B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+753	一番早く到着する ボストン と ワシントン DC 間のフライトは何	B-flight_mod B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O	atis_flight
+754	一番早く到着する ヒューストン 発 オーランド 行きのフライトは何	B-flight_mod B-fromloc.city_name O B-toloc.city_name O	atis_flight
+755	一番早く到着する ヒューストン 発 オーランド 行きのフライトは何	B-flight_mod B-fromloc.city_name O B-toloc.city_name O	atis_flight
+756	ヒューストン と オーランド 間のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+757	ヒューストン と オーランド 間のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+758	ヒューストン 発 オーランド 行きのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+759	午後 8 時 から 午後 9 時 の間に デンバー を出発するすべてのフライトをリストアップして	B-depart_time.start_time I-depart_time.start_time I-depart_time.start_time O B-depart_time.end_time I-depart_time.end_time I-depart_time.end_time O B-fromloc.city_name O	atis_flight
+760	733 の飛行機の座席定員は何人	B-aircraft_code O	atis_capacity
+761	72S の座席定員は何人	B-aircraft_code O	atis_capacity
+762	72S の飛行機の座席定員は何人	B-aircraft_code O	atis_capacity
+763	M80 の飛行機の座席定員は何人	B-aircraft_code O	atis_capacity
+764	M80 の飛行機タイプの座席定員は何人	B-aircraft_code O	atis_capacity
+765	M80 の座席定員は何人	B-aircraft_code O	atis_capacity
+766	デンバー で運行している航空会社は何	B-city_name O	atis_airline
+767	デンバー 到着または出発のフライトがある航空会社をリストアップして	B-city_name O	atis_airline
+768	デンバー に飛んでいる航空会社は何	B-toloc.city_name O	atis_airline
+769	8 時 から 午後 9 時 の間に デンバー に到着するすべてのフライトをリストアップして	B-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time O B-toloc.city_name O	atis_flight
+770	73S の定員は何人	B-aircraft_code O	atis_capacity
+771	73S とは何	B-aircraft_code O	atis_abbreviation
+772	73S の飛行機の座席定員は何人	B-aircraft_code O	atis_capacity
+773	757 の座席定員は何人	B-aircraft_code O	atis_capacity
+774	757 は何人乗り	B-aircraft_code O	atis_capacity
+775	757 は何人の乗客を乗せて飛べる	B-aircraft_code O	atis_capacity
+776	8 時 から 午後 9 時 の間に デンバー に到着する 毎日 のフライトをすべてリストアップして	B-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time O B-toloc.city_name O B-flight_days O	atis_flight
+777	8 時 から 午後 9 時 に デンバー に到着する 毎日 のフライトをすべてリストアップして	B-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time O B-toloc.city_name O B-flight_days O	atis_flight
+778	午後 8 時 から 午後 9 時 の間に デンバー に到着する 毎日 のフライトをすべて教えて	B-arrive_time.start_time I-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time O B-toloc.city_name O B-flight_days O	atis_flight
+779	757 の座席定員は何人	B-aircraft_code O	atis_capacity
+780	M80 飛行機について教えて	B-aircraft_code O	atis_aircraft
+781	M80 飛行機について教えて	B-aircraft_code O	atis_aircraft
+782	M80 と呼ばれる飛行機のタイプについて教えて	B-aircraft_code O	atis_aircraft
+783	733 の座席定員は何人	B-aircraft_code O	atis_capacity
+784	M80 の座席定員は何人	B-aircraft_code O	atis_capacity
+785	M80 の飛行機の座席定員は何人	B-aircraft_code O	atis_capacity
+786	8 時 から 午後 9 時 の間に デンバー に到着または出発するすべてのフライトをリストアップして	B-depart_time.start_time I-depart_time.start_time O B-depart_time.end_time I-depart_time.end_time I-depart_time.end_time O B-city_name O	atis_flight
+787	8 時 から 午後 9 時 の間に デンバー に到着するすべてのフライトをリストアップして	B-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time O B-toloc.city_name O	atis_flight
+788	8 時 から 午後 9 時 の間に デンバー に到着する機体のすべての種類で、すべてのフライトをリストアップして	B-arrive_time.start_time I-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time O B-toloc.city_name O	atis_flight
+789	ナッシュビル 発 メンフィス 行きで、 月曜日 の 午前 のすべてのフライトをリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_time.period_of_day O	atis_flight
+790	ナッシュビル 発 メンフィス 行きで、 月曜日 の 午前 のフライトをリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_time.period_of_day O	atis_flight
+791	午前 8 時 42 分に到着した場合、 メンフィス空港 から市内への空港アクセスはある	B-period_of_day O O O O B-airport_name O	atis_ground_service
+792	メンフィス 発 ニューヨークシティ 行きで、 月曜日 の 夜 のフライトをリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_time.period_of_day O	atis_flight
+793	CVG とは何	B-airport_code O	atis_abbreviation
+794	ラガーディア空港 から ニューヨークシティ までどんな交通機関が利用できる	B-airport_name O B-city_name O	atis_ground_service
+795	LGA から ニューヨークシティ まで交通機関はある	B-airport_code O B-city_name O	atis_ground_service
+796	LGA から ニューヨークシティ までの交通機関をリストアップしてくれる	B-airport_code O B-city_name O	atis_ground_service
+797	EWR から ニューヨークシティ までの交通機関をリストアップしてくれる	B-airport_code O B-city_name O	atis_ground_service
+798	メンフィス 発 ニューヨークシティ 行きの 午前 のフライトを教えて	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+799	水曜日 の 午後 5 時 以降 に出発する、 ニューヨークシティ 発 ナッシュビル 行きのフライトを教えて	B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+800	ナッシュビル空港 からの空港アクセスについて教えて	B-airport_name O	atis_ground_service
+801	シンシナティ 発 シャーロット 行きで、 正午 以降 に出発して、 午後 7 時 前 に到着する 直行 便は何	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-flight_stop O	atis_flight
+802	アラスカ航空 の バーバンク 行きのフライトはいくつある	B-airline_name O B-toloc.city_name O	atis_flight
+803	アラスカ航空 の バーバンク 発のフライトを到着地にかかわらずリストアップして	B-airline_name O B-fromloc.city_name O	atis_flight
+804	アラスカ航空 の バーバンク 発のフライトをリストアップして	B-airline_name O B-fromloc.city_name O	atis_flight
+805	AS はどの航空会社	B-airline_code O	atis_airline
+806	アラスカ航空 の バーバンク に到着するフライトをリストアップして	B-airline_name O B-toloc.city_name O	atis_flight
+807	アラスカ航空 の バーバンク 発のフライトをリストアップして	B-airline_name O B-fromloc.city_name O	atis_flight
+808	アラスカ航空 のフライトをすべてリストアップして	B-airline_name O	atis_flight
+809	シアトル を出発するすべてのフライトをリストアップして	B-fromloc.city_name O	atis_flight
+810	インディアナポリス 発 メンフィス 行きで、 正午 前 に出発するフライトをリストアップして	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.time_relative O	atis_flight
+811	シャーロット 発 ラスベガス 行きの 最安 の料金をリストアップして	B-fromloc.city_name O B-toloc.city_name O B-cost_relative O	atis_airfare
+812	ロサンゼルス 発 シャーロット 行きの 早 朝 の飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_mod B-depart_time.period_of_day O	atis_flight
+813	シャーロット 発 ニューアーク 行きの 午前 の飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+814	ニューアーク 発 ロサンゼルス 行きの 午前 の飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+815	ニューアーク 発 ロサンゼルス 行きの 夕方 の飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+816	ケベック の モントリオール から カリフォルニア の サンディエゴ に行く、 日曜日 出発の飛行機に乗りたい	B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+817	火曜日 に サンディエゴ を出発して インディアナ の インディアナポリス に行く、 午後 に出発する飛行機に乗りたい	B-depart_date.day_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-depart_time.period_of_day O	atis_flight
+818	木曜日 の 朝 に インディアナポリス を出発して トロント に行く飛行機に乗りたい	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+819	金曜日 の 朝 に トロント から モントリオール に行く飛行機に乗りたい	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+820	アメリカン で シンシナティ 発 バーバンク 行きの飛行機に乗りたい	B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+821	午後 4 時 19 分 に出発する アメリカン のフライトに使用されるのはどんなタイプの飛行機	B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time O B-airline_name O	atis_aircraft
+822	カンザスシティ 発 シカゴ 行きで、 来週 の 水曜日 に出発して、 翌日 に戻るフライトが必要	B-fromloc.city_name O B-toloc.city_name O B-depart_date.date_relative O B-depart_date.day_name O B-return_date.date_relative O	atis_flight
+823	ロングビーチ を出発して セントルイス まで行くフライトは何	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+824	メンフィス 発 ラスベガス 行きのフライトは何	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+825	ラスベガス 発 オンタリオ 行きのフライトは何	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+826	オンタリオ 発 メンフィス 行きのフライトは何	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+827	ラスベガス空港 にはどんな種類の交通機関がある	B-airport_name O	atis_ground_service
+828	オンタリオ空港 に タクシーサービス はある	B-airport_name O B-transport_type O	atis_ground_service
+829	タンパ 発 ミルウォーキー 行きのフライトは何	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+830	ミルウォーキー 発 シアトル 行きのフライトは何	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+831	ラガーディア 発 サンノゼ 行きの ユナイテッド のフライトは何	B-toloc.city_name O B-airline_name O B-fromloc.airport_name O	atis_flight
+832	ノースカロライナ の シャーロット から アリゾナ の フェニックス まで行く 月曜日 のフライトは何	B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+833	火曜日 の アリゾナ の フェニックス 発、 ミネソタ の セントポール 行きのフライトは何	B-depart_date.day_name O B-fromloc.state_name O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+834	木曜日 に ミネソタ の セントポール を出発して セントルイス に行くフライトは何	B-depart_date.day_name O B-fromloc.state_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+835	セントルイス 発 ノースカロライナ の シャーロット 行きで、 金曜日 に出発するフライトは何	B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-depart_date.day_name O	atis_flight
+836	ニューヨーク に立ち寄る ボストン 発 オーランド 行きのフライトは何	B-stoploc.city_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+837	次 の 月曜日 、 午前 の バーバンク 発 ミルウォーキー 行きのフライトが必要	B-depart_date.date_relative O B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+838	ミルウォーキー 発 セントルイス 行きで、 月曜日 の 夜 に出発するフライトはどう	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_time.period_of_day O	atis_flight
+839	それから、 セントルイス 発 バーバンク 行きで、 火曜日 の 午後 に出発するフライト	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_time.period_of_day O	atis_flight
+840	セントルイス 発 バーバンク 行きで、 火曜日 の 夜 に出発するフライトはどう	B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+841	ソルトレイク 発 ニューアーク空港 行きで、 土曜日 の 午後 6 時 前 に到着するフライトが必要	B-fromloc.city_name O B-toloc.airport_name O B-arrive_date.day_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+842	シンシナティ 発 ニューアーク空港 行きで、 土曜日 の 午後 6 時 前 に到着する飛行機に乗りたい	B-fromloc.city_name O B-toloc.airport_name O B-arrive_date.day_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+843	マイアミ 発 シカゴ 行きで、 午後 5 時 ごろ に到着する アメリカン航空 のフライトが必要	B-fromloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-airline_name O	atis_flight
+844	メンフィス 発 タコマ 行きで、 ロサンゼルス を経由するフライトが必要	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+845	午後 6 時 過ぎ に出発する、 シンシナティ と カリフォルニア の サンノゼ の間のフライトは何	B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O	atis_flight
+846	サンノゼ と テキサス の ヒューストン の間の 直行 便は何	B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-flight_stop O	atis_flight
+847	ヒューストン と メンフィス の間の 直行 便は何	B-fromloc.city_name O B-toloc.city_name O B-flight_stop O	atis_flight
+848	水曜日 の メンフィス と シンシナティ の間のフライトは何	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+849	ニューアーク 発 ナッシュビル 行きの アメリカン のフライトは何	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+850	シカゴ に立ち寄る、 オンタリオ 発 ウェストチェスター 行きのフライト	B-stoploc.city_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+851	ロサンゼルス 発 シャーロット 行きのフライトをリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+852	シャーロット 発 ニューアーク 行きのフライトをリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+853	ニューアーク 発 ロサンゼルス 行きのフライトをリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+854	シンシナティ 発 バーバンク 行きで、 アメリカン航空 のフライトをリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+855	カンザスシティ 発 シカゴ 行きで、 六月 十六日 のフライトをお願い	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O	atis_flight
+856	シカゴ 発 カンザスシティ 行きで、 六月 十七日 のフライトをお願い	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O	atis_flight
+857	カンザスシティ 発 シカゴ 行きで、 六月 十六日 のすべてのフライトをリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O	atis_flight
+858	シカゴ 発 カンザスシティ 行きで、 六月 十七日 のすべてのフライトをリストアップしてくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O	atis_flight
+859	バーバンク から ミルウォーキー へ行きたい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+860	ソルトレイクシティ 発 ニューヨークシティ 行きで、 来週 土曜日 の 午後 6 時 前 に到着する 前 のフライトを探して	B-fromloc.city_name O B-toloc.city_name O B-depart_date.date_relative B-depart_date.day_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-arrive_time.time_relative O	atis_flight
+861	シンシナティ 発 ニューヨーク 行きで、 水曜日 午後 6 時 前 の別のフライトを探して	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O	atis_flight
+862	来週 土曜日 の 午後 6 時 前 に、 ソルトレイクシティ から ニューアーク に到着する デルタ のフライトをすべてリストアップして	B-depart_date.date_relative B-depart_date.day_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+863	マイアミ から シカゴ 行きの アメリカン航空 で 午後 5 時 ごろ に到着する飛行機に乗りたい	B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O	atis_flight
+864	次 の 水曜日 に カンザスシティ から シカゴ へ行きたい	B-depart_date.date_relative O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+865	カンザスシティ 発 シカゴ 行きで、 五月 二十六日 水曜日 午後 7 時 に到着する 往復 のフライトが欲しい	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name B-arrive_time.time I-arrive_time.time I-arrive_time.time O B-round_trip O	atis_flight
+866	はい、 メンフィス 発 タコマ 行きで、 ロサンゼルス に立ち寄るフライトを見つけたい	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+867	月曜日 午前 の サンディエゴ 発 フェニックス 行きのフライトを探して	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+868	月曜日 の フェニックス 発 デトロイト 行きのフライトを探して	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+869	火曜日 の デトロイト 発 サンディエゴ 行きのフライトを探して	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+870	月曜日 の シンシナティ 発 サンノゼ 行きのフライトを探して	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+871	水曜日 の サンノゼ 発 ヒューストン 行きのフライト探して	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+872	金曜日 の ヒューストン 発 メンフィス 行きのフライトを探して	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+873	日曜日 の メンフィス 発 シンシナティ 行きのフライトを探して	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+874	午後 6 時 30 分 ごろ に ニューアーク から ナッシュビル に行く アメリカン のフライトを探して	B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-airline_name O	atis_flight
+875	1993 年 六月 十日 の ロサンゼルス 発 ワシントン 、 タコマ 行きで、 サンフランシスコ でストップオーバーする 300 ドル を超えない 往復 のフライトを探してくれる	B-depart_date.year I-depart_date.year B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.state_name O B-toloc.city_name O B-stoploc.city_name O B-fare_amount I-fare_amount B-cost_relative B-round_trip O	atis_flight
+876	六月 十日 の バーバンク 発 タコマ 行きのフライトはある	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+877	オンタリオ 発 ウェストチェスター 行きで、 五月 十七日 に シカゴ に立ち寄る、 夕食 付きの 片道 フライトを探してくれる	B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O B-stoploc.city_name O B-meal_description O B-round_trip O	atis_flight
+878	バーバンク 発 ミルウォーキー 行きのフライトを予約したい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+879	バーバンク 発 ミルウォーキー 行きのすべてのフライトを教えて	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+880	ミルウォーキー 発 セントルイス 行きのすべてのフライトを探して	B-fromloc.city_name O B-city_name O	atis_flight
+881	今度は セントルイス 発 バーバンク 行きのすべてのフライトを教えて	O B-city_name O B-toloc.city_name O	atis_flight
+882	バーバンク 発 ミルウォーキー 行き、 ミルウォーキー 発 セントルイス 行き、そして セントルイス 発 バーバンク 行きのフライトがある航空会社はある	B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name O B-fromloc.city_name O B-toloc.city_name O	atis_airline
+883	セントルイス に立ち寄る バーバンク 発 ミルウォーキー 行きのすべての 往復 フライトを探して	B-stoploc.city_name O B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+884	ウェストチェスター郡 行きのフライトを 2 つ予約したい	B-toloc.city_name O O O	atis_flight
+885	ソルトレイクシティー 発 ウェストチェスター郡 行きのフライトを予約したい	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+886	ウェストチェスター郡 の近くにあるすべての空港を教えて	B-city_name O	atis_airport
+887	次 の 土曜日 に ユナイテッド航空 で シンシナティ 発 ニューヨークシティ 行きのフライトを予約したい	B-depart_date.date_relative O B-depart_date.day_name O B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+888	ニューヨークシティ 地域にあるすべての空港を教えて	B-city_name O	atis_airport
+889	来週 土曜日 午後 6 時 前 に、 シンシナティ から ニューヨークシティ 地域にある空港のどれかに到着するすべてのフライトを探してくれる	B-arrive_date.date_relative B-arrive_date.day_name B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+890	シンシナティ から ニューヨークシティ 地域にある空港のどれかに行くフライトを探して	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+891	アメリカン航空 で マイアミ から シカゴ まで飛行機に乗りたい	B-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+892	カンザスシティ 発 シカゴ 行きの 往復 のフライトを予約したい	B-fromloc.city_name O B-toloc.city_name O B-round_trip O	atis_flight
+893	メンフィス 発 タコマ 行きのフライトを探して	B-fromloc.city_name O B-toloc.city_name O	atis_flight

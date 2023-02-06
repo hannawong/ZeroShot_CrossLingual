@@ -1,0 +1,894 @@
+utterance	slot_labels	intent
+ni safari gani za ndege kutoka tacoma hadi miami ambazo zitaondoka kesho baada ya saa kumi na mbili jioni	O O O O O O B-fromloc.state_name O B-toloc.state_name O O B-depart_date.today_relative B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+ni ndege gani zinazofika kwenye uwanja wa love field mnamo Juni sita	O O O O O O O B-toloc.airport_name I-toloc.airport_name O B-arrive_date.month_name B-arrive_date.day_number	atis_flight
+milo gani inapatikana kwenye dl 468 ambayo inawasili san francisco saa 950 asubuhi	B-meal O O O B-airline_code B-flight_number O O B-toloc.state_name I-toloc.state_name O B-arrive_time.time I-arrive_time.time	atis_meal
+orodhesha ndege zote za Tower air  zina milo	O O O O B-airline_name I-airline_name O B-meal	atis_flight
+kwenye uwanja wa ndege wa charlotte kuna aina ngapi za ndege za us air	O O O O O B-city_name O O O O O O B-airline_name I-airline_name	atis_aircraft
+orodhesha ndege zote za us air zinazowasili charlotte Jumamosi saa saba mchana	O O O O B-airline_name I-airline_name O B-toloc.state_name B-arrive_date.day_name O B-arrive_time.time I-arrive_time.time	atis_flight
+orodhesha safari za ndege za mapema asubuhi kutoka cincinnati hadi tampa	O O O O O B-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.state_name O B-toloc.state_name	atis_flight
+orodhesha safari za ndege za us air zinazoondoka jumamosi kutoka uwanja wa ndege wa charlotte saa saba mchana	O O O O O B-airline_name I-airline_name O B-depart_date.day_name O O O O O B-fromloc.airport_name O B-depart_time.time I-depart_time.time	atis_flight
+orodhesha safari za ndege za us air zinazoondoka jumamosi kutoka uwanja wa ndege wa charlotte karibu saa saba	O O O O O B-airline_name I-airline_name O B-depart_date.day_name O O O O O B-fromloc.airport_name B-depart_time.time_relative B-depart_time.time I-depart_time.time	atis_flight
+ningependa safari za ndege kutoka san francisco hadi long beach	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name I-toloc.state_name	atis_flight
+ndege wn ni nini	O B-airline_code O O	atis_airline
+nionyeshe nauli za kwenda na kurudi kutoka toronto hadi detroit kwenye delta kaskazini-magharibi mwa us air na  ndege ya united airlines	O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.state_name O B-airline_name O O O O O O O B-airline_name I-airline_name	atis_airfare
+nionyeshe safari za ndege kati ya Detroit na St. louis kwenye delta kaskazini-magharibi ya us air na ndege ya united airlines	O O O O O O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name O B-airline_name O O O O O O O B-airline_name I-airline_name	atis_flight
+nionyeshe safari za ndege kutoka Montreal hadi orlando na long beach	O O O O O B-fromloc.state_name O B-toloc.state_name O B-toloc.state_name I-toloc.state_name	atis_flight
+ninahitaji safari ya ndege ijumaa alasiri mwezi wa Juni kutoka new york hadi Cleveland	O O O O B-depart_date.day_name B-depart_time.period_of_day O O B-depart_date.month_name O B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name	atis_flight
+nahitaji ndege kutoka new york hadi los angeles jumamosi jioni kwa us air	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name I-toloc.state_name B-depart_date.day_name B-depart_time.period_of_day O B-airline_name I-airline_name	atis_flight
+ningependa ndege ya jicho jekundu kutoka new york hadi los angeles Jumamosi jioni kwa us air	O O O B-flight_mod I-flight_mod O B-fromloc.state_name I-fromloc.state_name O O O B-depart_date.day_name B-depart_time.period_of_day O B-airline_name I-airline_name	atis_flight
+ningependa ndege kutoka new york hadi los angeles jumamosi asubuhi kwa us air	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name I-toloc.state_name B-depart_date.day_name B-depart_time.period_of_day O B-airline_name I-airline_name	atis_flight
+un ina maana gani	B-airline_code O O O	atis_abbreviation
+ni safari fupi zaidi ya ndege kutoka milwaukee hadi long beach	O O B-flight_mod O O O O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name	atis_flight
+ni safari fupi zaidi ya ndege kutoka milwaukee hadi long beach	O O B-flight_mod O O O O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name	atis_flight
+ni ndege gani us	O O O B-airline_code	atis_airline
+sa ina maana gani	B-days_code O O O	atis_abbreviation
+nahitaji habari kuhusu safari za ndege kutoka indianapolis hadi seattle	O O O O O O O B-fromloc.state_name O B-toloc.state_name	atis_flight
+nahitaji ndege kutoka memphis hadi seattle	O O O B-fromloc.state_name O B-toloc.state_name	atis_flight
+nini kifupi cha US kinasimamia	O O O B-airline_code O	atis_abbreviation
+sasa nionyeshe safari zote za ndege za kwenda na kurudi kutoka burbank hadi seattle zinazofika seattle kabla ya saa moja jioni kwa utulivu	O O O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.state_name O B-toloc.state_name B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time O O	atis_flight
+kansas city hadi las vegas daraja la uchumi	B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name I-toloc.state_name B-economy I-economy I-economy	atis_flight
+kansas city hadi las vegas daraja la uchumi	B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name I-toloc.state_name B-economy I-economy I-economy	atis_flight
+las vegas hadi Baltimore daraja la uchumi	B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name B-economy I-economy I-economy	atis_flight
+las vegas hadi Baltimore daraja la uchumi	B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name B-economy I-economy I-economy	atis_flight
+Baltimore hadi Kansas city daraja la uchumi	B-fromloc.state_name O B-toloc.state_name I-toloc.state_name B-economy I-economy I-economy	atis_flight
+us ni shirika gani la ndege	O O O B-airline_code	atis_airline
+us ni shirika gani la ndege	B-airline_code O O O O O	atis_airline
+us ni shirika gani la ndege	B-airline_code O O O O O	atis_airline
+us ni shirika gani la ndege	B-airline_code O O O O O	atis_airline
+us ni shirika gani la ndege	B-airline_code O O O O O	atis_airline
+na kutoka milwaukee hadi Atlanta kabla ya nne asubuhi kila siku	O O B-fromloc.state_name O B-toloc.state_name B-depart_time.time_relative O B-depart_time.time I-depart_time.time B-flight_days I-flight_days	atis_flight
+nionyeshe safari za ndege kutoka phoenix hadi fort worth	O O O O O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name	atis_flight
+as ni shirika gani la ndege	B-airline_code O O O O O	atis_airline
+as ni shirika gani la ndege	B-airline_code O O O O O	atis_airline
+as ni shirika gani la ndege	B-airline_code O O O O O	atis_airline
+nionyeshe safari za ndege za moja kwa moja kutoka St. Petersburg hadi Toronto	O O O O O B-flight_stop I-flight_stop I-flight_stop O B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name	atis_flight
+nionyeshe safari za ndege za moja kwa moja kutoka Toronto hadi St. petersburg	O O O O O B-flight_stop I-flight_stop I-flight_stop O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name	atis_flight
+nionyeshe safari za ndege na nauli za moja kwa moja kutoka Toronto hadi St. petersburg	O O O O O O O B-flight_stop I-flight_stop I-flight_stop O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name	atis_flight#atis_airfare
+nionyeshe safari za ndege za moja kwa moja kutoka Toronto hadi St. petersburg	O O O O O B-flight_stop I-flight_stop I-flight_stop O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name	atis_flight
+orodhesha kocha nauli ya safari ya ndege ya kwenda na kurudi kutoka Detroit hadi St. petersburg	O B-class_type O O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name	atis_airfare
+nipe safari za ndege kutoka milwaukee hadi Phoenix jumamosi au jumapili kwa american airlines	O O O O O B-fromloc.state_name O B-toloc.state_name B-depart_date.day_name B-or B-depart_date.day_name O B-airline_name I-airline_name	atis_flight
+nipe safari za ndege kutoka phoenix hadi milwaukee jumatano kwa american airlines	O O O O O B-fromloc.state_name O B-toloc.state_name B-depart_date.day_name O B-airline_name I-airline_name	atis_flight
+nipe safari za ndege kutoka phoenix hadi milwaukee kwa american airlines	O O O O O B-fromloc.state_name O B-toloc.state_name O B-airline_name I-airline_name	atis_flight
+nipe ndege kutoka seattle hadi chicago ambazo zina milo kwa continental	O O O B-fromloc.state_name O B-toloc.state_name O O B-meal O B-airline_name	atis_flight
+nipe safari za ndege kutoka seattle hadi chicago ambazo zina milo jumamosi asubuhi kwa continental	O O O O O B-fromloc.state_name O B-toloc.state_name O O B-meal B-depart_date.day_name B-depart_time.period_of_day O B-airline_name	atis_flight
+nipe mchanganyiko wa safari za ndege za continental kutoka chicago hadi seattle ambazo huwa na milo mapema jumamosi asubuhi	O O O O O O O B-airline_name O B-fromloc.state_name O B-toloc.state_name O O O B-meal B-depart_time.period_of_day B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+nipe safari za ndege za jumamosi asubuhi kwenye continental ambazo zina milo kutoka chicago hadi minneapolis	O O O O O B-depart_date.day_name B-depart_time.period_of_day O B-airline_name O O B-meal O B-fromloc.state_name O B-toloc.state_name	atis_flight
+nipe safari za ndege za jumamosi asubuhi kutoka Chicago hadi St. paul kwa continental ambao wana milo	O O O O O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name O B-airline_name O O B-meal	atis_flight
+jumamosi ndege kwa american airlines kutoka milwaukee hadi Phoenix	B-depart_date.day_name O O B-airline_name I-airline_name O B-fromloc.state_name O B-toloc.state_name	atis_flight
+nambari za ndege kwa american airlines kutoka phoenix hadi milwaukee	O O O O B-airline_name I-airline_name O B-fromloc.state_name O B-toloc.state_name	atis_flight_no
+nambari za ndege kutoka Chicago hadi seattle kwenye continental	O O O O B-fromloc.state_name O B-toloc.state_name O B-airline_name	atis_flight_no
+nambari za ndege kutoka seattle hadi chicago kwenye continental	O O O O B-fromloc.state_name O B-toloc.state_name O B-airline_name	atis_flight_no
+ni kiasi gani cha ndege ya daraja la unchumi kutoka Pittsburgh hadi Atlanta	O O O O O O B-class_type I-class_type I-class_type O B-fromloc.state_name O B-toloc.state_name	atis_airfare
+ni ndege ngapi za northwest zinaondoka St. paulo	O O O O B-airline_name O B-fromloc.state_name I-fromloc.state_name	atis_flight
+ni ndege ngapi za northwest zinaondoka washington dc	O O O O B-airline_name O B-fromloc.state_name I-fromloc.state_name	atis_flight
+Northwest kuna ndege ngapi zinazoacha dulles	B-airline_name O O O O B-fromloc.airport_name	atis_flight
+ni miji gani northwest inaruka kutoka	O O O B-airline_name O O	atis_city
+orodhesha miji ambayo northwest inaruka	O O O B-airline_name O	atis_city
+ni miji gani northwest inaruka kwenda	O O O B-airline_name O O	atis_city
+niambie tena safari za ndege za asubuhi kwenye american airlines kutoka philadelphia hadi Dallas	O O O O O O B-depart_time.period_of_day O B-airline_name I-airline_name O B-fromloc.state_name O B-toloc.state_name	atis_flight
+ni milo iliyowahi kutolewa kwenye Tower air	O B-meal O O O B-airline_name I-airline_name	atis_meal
+ni vitafunio vinavyotolewa kwenye tower air	O B-meal_description I-meal_description O B-airline_name I-airline_name	atis_meal
+as ni shirika gani la ndege	B-airline_code O O O O O	atis_airline
+ni ndege gani zinazotoka long beach hadi St. Louis	O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name I-toloc.state_name	atis_flight
+nahitaji safari ya ndege kwa american airlines kutoka miami hadi Chicago ambayo itawasili karibu saa kumi na moja jioni	O O O O O B-airline_name I-airline_name O B-fromloc.state_name O B-toloc.state_name O O B-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+tafadhali orodhesha safari za ndege kutoka cincinnati hadi burbank kwenye american airlines	O O O O O O B-fromloc.state_name O B-toloc.state_name O B-airline_name I-airline_name	atis_flight
+ningependa kuruka kutoka miami hadi chicago kwenye american airlines yakiwasili karibu saa kumi na moja jioni	O O O B-fromloc.state_name O B-toloc.state_name O B-airline_name I-airline_name O B-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+ningependa kuruka kutoka miami hadi chicago kwenye american airlines	O O O B-fromloc.state_name O B-toloc.state_name O B-airline_name I-airline_name	atis_flight
+Ninataka kuruka kutoka indianapolis hadi seattle safari ya kwenda na kurudi kwa nauli ya bei nafuu zaidi	O O O B-fromloc.state_name O B-toloc.state_name O O B-round_trip I-round_trip I-round_trip O O O B-cost_relative I-cost_relative O	atis_flight
+shirika la ndege ni kama katika sam	O O O O O O O	atis_airline
+nahitaji safari ya ndege kutoka salt lake hadi uwanja wa ndege wa newark ambayo itawasili Jumamosi kabla ya saa kumi na mbili jioni	O O O O O B-fromloc.state_name I-fromloc.state_name O O O O O B-toloc.airport_name O O B-arrive_date.day_name B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+Ningependa kusafiri kwa ndege kutoka Charlotte hadi Las vegas kupitia St Louis	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-stoploc.city_name I-stoploc.city_name	atis_flight
+Naahitaji tiketi kutoka Tacoma hadi San Jose tarehe mosi aprili kabla ya saa moja asubuhi	O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_number B-depart_date.month_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time	atis_airfare
+Tarehe mosi aprili ningependa kusafiri kutoka Phoenix hadi San Diego	O B-depart_date.day_number B-depart_date.month_name O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+Tarehe mosi aprili ningependa kusafiri bila kurudi kwa ndege kutoka Phoenix hadi San Jose	O B-depart_date.day_number B-depart_date.month_name O B-round_trip I-round_trip I-round_trip O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+Tarehe mosi aprili ningependa kusafiri kwa ndege ya delta Airlines kutoka Orlando hadi salt City	O B-depart_date.day_number B-depart_date.month_name O O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+Ninahitji kusafiri bila kurudi kwa ndege kutoka Toronto hadi Newark jumatano jioni au alhamisi asubuhi	O B-round_trip I-round_trip I-round_trip O O O B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day O B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+Jumatatu asubuhi ningependa kusafiri kutoka Columbus hadi Indianapolis	B-depart_date.day_name B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+Jumatano tarehe sita ningependa kusafiri kutoka Long Beach hadi Columbus baada ya saa tisa mchana	B-depart_date.day_name O B-depart_date.day_number O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time	atis_flight
+Jumatano tarehe sita baada ya sita mchana ningependa kusafiri kutoka Long Beach hadi Columbus	B-depart_date.day_name O B-depart_date.day_number B-depart_time.time_relative O O B-depart_time.time I-depart_time.time O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O	atis_flight
+Kuna ndege yeyote kutoka Long Beach hadi Columbus jumatano tarehe sita aprili?	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-depart_date.day_name O B-depart_date.day_number B-depart_date.month_name	atis_flight
+Tafuta ndege kutoka Memphis hadi Tacoma mchana	O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.period_of_day	atis_flight
+Jumatano ijayo ndege kutoka Kansas Cty hadi Chicago itawasili saa moja jioni na kugeuza alhamis	B-depart_date.day_name B-depart_date.date_relative O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time I-arrive_time.time O O B-return_date.day_name	atis_flight
+Onyesha ndege na nauli ya ndege kutoka Kansas City hadi Chicago jumatano ijayo  ambaye itawasili takriba saa moja jioni	O O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-depart_date.day_name B-depart_date.date_relative O O O O B-arrive_time.time I-arrive_time.time	atis_flight#atis_airfare
+Ndege ya shirika la ndege la American kutoka Miami hadi Chicago itawasili Chicago takribani aa kumi na moja jioni	O O O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name O O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+Jua ndege zinzowasili New york City jumamosi ijayo	O O O B-fromloc.city_name I-fromloc.city_name O B-depart_date.day_name B-depart_date.date_relative	atis_flight
+Jua ndege kutoka moja kwa moja Salt Lake hadi New York jumamosi tarehe tisa aprili	O O O B-flight_stop I-flight_stop I-flight_stop B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name O B-depart_date.day_number B-depart_date.month_name	atis_flight
+Onyesha orodha ya safari za ndege  kutoka Burbank hadi  Milwaukee siku ya leo	O O O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.today_relative	atis_flight
+Onyesha orodha ya safari za ndege  kutoka hadi  Milwaukee siku ya leo	O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_date.date_relative B-depart_time.period_of_day	atis_flight
+Onyesha orodha yasafari za ndege kutoka Milwaukee hadi St  Louis kesho jioni	O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name I-depart_date.day_name	atis_flight
+Onyesha orodha ya safari za ndege kutoka St Louis hadi Burbank jumamosi jioni	O O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+Onyesha orodha ya safari za ndege kutoka Burbank hadi St Louis jumatatu	O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name	atis_flight
+Onyesha orodha ya safari za ndege kutoka Burbank hadi Milwaukee jumatatu	O O O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name	atis_flight
+Onyesha orodha ya safari za ndefge kutoka Milwaukee hadi St Louis Jumanne jioni	O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+Onyesha orodha ya safari za ndege kutoka St Louis  hadi Burbank jumatano jioni	O O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+Safari gani za ndege kutoka Kansas hadi Los angeles?	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+Kuna safari gani za ndege kutoka Las Vegas hadi Los Angeles?	O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+Ndege gani kutoka Las Vegas hadi Los Angeles California zinazowasili tarehe tisa aprili kati ya saa kumi na saa kumi na moja jioni?	O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-state_name O O B-arrive_date.day_number B-arrive_date.month_name O O B-arrive_time.time I-arrive_time.time O O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.period_of_day	atis_flight
+Kuna safari gani za za shirika la ndege la US Air kutoka Orlando to Cleveland	O O O O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+Ndege gani kutoka Cleveland hadi Indianapolis tarehe tano aprili?	O O O B-fromloc.state_name O O B-toloc.city_name O B-depart_date.day_number	atis_flight
+Ndege gani kutoka indianapolis  hadi San Diego tarehe tano aprili?	O O O B-fromloc.state_name O O B-toloc.city_name I-toloc.state_name O B-depart_date.day_number	atis_flight
+ ndege  gani kutoka Cleveland hadi indianapolis tarehe tano aprili	O O O B-fromloc.state_name O B-toloc.city_name O B-depart_date.day_number B-depart_date.month_name	atis_flight
+ ndege gani husafiri kutoka nashville hadi tacoma	O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+Je, uwanja wa ndege wa tacoma hutoa huduma ya usafiri kutoka uwanja wa ndege hadi eneo la katikati mwa jiji	O O O O O B-airport_name O O O O O O O O O O O O O O	atis_ground_service
+ ndege gani  husafiri kutoka tacoma hadi san jose	O O O O O O B-fromloc.state_name I-fromloc.state_name	atis_flight
+ni siku gani ya wiki ndege husafiri kutoka nashville hadi tacoma 	O O O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_day_name
+ ndege gani husafiri kutoka tacoma hadi san jose	O O O O B-fromloc.state_name B-fromloc.state_name B-toloc.city_name I-toloc.city_name	atis_flight
+safari za ndege kutoka san jose hadi nashville huruka siku gani	O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O O O	atis_day_name
+ ndege gani husafiri kutoka tacoma hadi san jose	O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nahitaji ndege inayetoka boston kwenda orlando	O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ ndege gani kutoka boston hadi orlando zinazounganishwa new york	O O O B-fromloc.state_name O B-toloc.city_name B-connect B-stoploc.city_name I-stoploc.city_name	atis_flight
+ ndege gani kutoka boston hadi orlando zinazounganishwa huko Columbus	O O O B-fromloc.state_name O B-toloc.city_name B-connect O B-stoploc.city_name	atis_flight
+je, ndege hii inatoa chakula cha jioni	O O O O B-meal_description I-meal_description I-meal_description	atis_flight
+nahitaji ndege kutoka charlotte hadi miami	O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nahitaji ndege ya moja kwa moja kutoka miami hadi Toronto	O O O B-flight_stop I-flight_stop I-flight_stop O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nahitaji ndege ya moja kwa moja kutoka Toronto hadi St. Louis	O O O B-flight_stop I-flight_stop I-flight_stop O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nahitaji ndege kutoka Toronto hadi St. Louis	O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nahitaji ndege kutoka St. Louis hadi charlotte	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+nahitaji ndege ya united airlines kutoka la guardia hadi san jose	O O O B-airline_name I-airline_name O B-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nahitaji ndege kutoka tampa hadi milwaukee	O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nahitaji ndege kutoka milwaukee hadi seattle	O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ni chakula gani kinapeanwa kwa ndege ya 811 ya Amerika kutoka Tampa hadi Milwaukee	O B-meal O O O O O B-flight_number O B-airline_name O B-fromloc.state_name O B-toloc.city_name	atis_meal
+ni chakula gani kinapeanwa kwa ndege ya amerika 665 673 kutoka milwaukee hadi seattle	O B-meal O O O O O B-airline_name B-flight_number B-flight_number O B-fromloc.state_name O B-toloc.city_name	atis_meal
+nahitaji ndege kutoka memphis hadi las vegas	O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nahitaji ndege kutoka las vegas hadi Ontario	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+nahitaji ndege kutoka ontario hadi memphis	O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ndege gani kutoka milwaukee hadi tampa ambazo zinasimama  nashville	O O O B-fromloc.state_name O B-toloc.city_name O O B-stoploc.city_name	atis_flight
+ ndege gani huondoka newark  mchana Jumamosi ijayo na kuelekea los angeles	O O O B-fromloc.state_name B-depart_time.time_relative B-depart_date.day_name B-depart_date.date_relative O O B-toloc.city_name I-toloc.city_name	atis_flight
+ ndege gani huondoka Detroit na kuwasili St. Petersburg takriban saa tatu asubuhi	O O O B-fromloc.state_name O O B-toloc.city_name I-toloc.city_name B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+ndege gani za northwest airline huondoka detroit na kufwasili St. petersburg	O O O B-airline_name I-airline_name O B-fromloc.state_name O O B-toloc.city_name I-toloc.city_name	atis_flight
+ ndege gani za northwest airline huondoka detroit jumanne ijayo na kufika St. petersburg takriban saa kumi na mbili jioni	O O O O O O O O O O O O O O O O I-arrive_time.time I-arrive_time.time O	atis_flight
+nionyeshe safari za ndege za kwenda na kurudi kutoka Chicago hadi Detroit zikiondoka jumanne ijayo na kurudi siku inayofuata	O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_date.date_relative O O B-arrive_date.date_relative I-arrive_date.date_relative	atis_flight
+safari za ndege za kwenda na kurudi huondoka chicago jumanne ijayo na kufika detroit karibu saa kumi na mbili jioni	O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name B-depart_date.day_name B-depart_date.date_relative O O  B-toloc.city_name O O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.period_of_day	atis_flight
+ safari za ndege za kwenda na kurudi huondoka chicago jumanne ijayo na kufika detroit karibu saa kumi na mbili jioni	O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name B-depart_date.day_name B-depart_date.date_relative O O  B-toloc.city_name O O B-arrive_time.time I-arrive_time.time I-arrive_time.time B-arrive_time.period_of_day	atis_flight
+safari za ndege kutoka montreal jumatau na kuwasili chicago asubuhi	O O O O B-fromloc.city_name B-depart_date.day_name O O  B-toloc.city_name B-arrive_time.period_of_day	atis_flight
+ ndege huondoka chicago tarehe kumi na mbili aprili na kufika indianapolis asubuhi	O O B-fromloc.city_name O B-depart_date.day_name O B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number B-depart_date.month_name O O  B-toloc.city_name B-arrive_time.period_of_day	atis_flight
+ ndege huondoka indianapolis jumatano tarehe kumi na tatu aprili na kuwasili Montreal asubuhi	O O B-fromloc.city_name B-depart_date.day_name O B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number B-depart_date.month_name O O B-toloc.city_name B-arrive_time.period_of_day	atis_flight
+ safari za ndege huondoka indianapolis Aprili kumi na mbili kutoka na kuwasili montali karibu saa nne usiku	O O O O B-fromloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number O O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+ningependa kwenda kutoka pwani ndefu hadi St. Louis na ningependa kusimama dallas pia ningependa kula chakula cha mchana wakati wa safari yangu ya ndege	O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-stoploc.city_name O O O B-meal_description I-meal_description I-meal_description O O O O O O	atis_flight
+jumatano ijayo ningependa kuondoka jijini kansas kwa safari ya kwenda chicago ambayo inafika chicago karibu saa moja jioni	B-depart_date.day_name B-depart_date.date_relative O O O B-fromloc.city_name O O O O B-toloc.city_name O O B-toloc.city_name O O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+ningependa kurudi kutoka chicago karibu saa moja jioni hadi jiji la Kansas	O O O B-fromloc.city_name O O O B-arrive_time.time I-arrive_time.time I-arrive_time.time O O O B-toloc.city_name	atis_flight
+ningependa kuondoka leo mchana kwa ndege ya marekani kutoka cincinnati hadi burbank	O O B-depart_date.today_relative B-depart_time.period_of_day O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+Jumapili jioni ningependa kuondoka montareal quebec kwa ndege kwenda san diego california	B-depart_date.day_name B-depart_time.period_of_day O O B-fromloc.city_name B-fromloc.state_name O O O B-toloc.city_name I-toloc.city_name B-state_name	atis_flight
+ni safari gani za ndege siku ya jumapili kutoka montareal quebec hadi san diego california	O O O O O B-depart_time.period_of_day O B-depart_date.day_name O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-state_name	atis_flight
+jumanne ni safari za ndege kutoka san diego california hadi indianapolis indiana ningependa safari ya ndege iwe mchana	B-depart_date.day_name O O O O O B-fromloc.city_name I-fromloc.city_name B-fromloc.state_name O B-toloc.city_name B-state_name O O O O O B-depart_time.period_of_day	atis_flight
+Alhamisi asubuhi ningependa ndege ya moja kwa moja kutoka indianapolis hadi toronto	B-depart_date.day_name B-depart_time.period_of_day B-flight_stop I-flight_stop O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+ijumaa asubuhi ningependa kuruka kutoka Toronto hadi montali	B-depart_date.day_name B-depart_time.period_of_day O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+ningependa safari ya ndege ya asubuhi leo kutoka los angeles hadi charlotte	O O O O O B-depart_time.period_of_day  I-depart_time.period_of_day B-depart_date.today_relative O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+jumatano usiku ningependa ndege kutoka charlotte hadi newark	B-depart_date.day_name B-depart_time.period_of_day O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ijumaa usiku ningependa ndege kutoka newark hadi los angeles	B-depart_date.day_name B-depart_time.period_of_day O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+pata ndege kutoka tampa hadi montali kwa njia ya new york	O O O B-fromloc.city_name O B-toloc.city_name  O O O B-stoploc.city_name I-stoploc.city_name	atis_flight
+tafadhali tafuta ndege kutoka miami florida hadi las vegas nevada ikiwasili kabla ya saa kumi jioni	O O O O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-state_name O O O B-arrive_time.time  B-depart_time.period_of_day	atis_flight
+tafadhali tafuta ndege kutoka las vegas hadi Michigan	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+tafadhali tafuta ndege kutoka detroit michigan hadi St. Petersburg kuwasili kabla ya nne usiku	O O O O B-fromloc.city_name B-state_name  O B-toloc.city_name I-toloc.city_name  O O O B-arrive_time.time  B-depart_time.period_of_day	atis_flight
+tafadhali tafuta ndege kutoka St. petersburg hadi miami siku ya Alhamisi	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+tafadhali tafuta safari ya ndege kutoka san diego hadi toronto kwenye mashirika ya ndege ya alaska	O O O O O O B-fromloc.city_name I-fromloc.city_name  O B-toloc.city_name  O O O O O B-airline_name	atis_flight
+tafadhali tafuta safari za ndege kutoka Columbus hadi Houston pamoja na mapumziko katika Nashville kesho	O O O O O O B-fromloc.city_name  O  B-toloc.city_name  O O O O B-stoploc.city_name B-depart_date.today_relative	atis_flight
+tafadhali nipe safari za ndege kutoka nashville hadi Houston bila kikomo na chakula cha jioni	O O O O O O B-fromloc.city_name  O  B-toloc.city_name B-flight_stop I-flight_stop O B-meal_description I-meal_description I-meal_description	atis_flight
+tafadhali tafuta ndege zinazopatikana kutoka jiji la Kansas hadi newark	O O O O O O O B-fromloc.city_name O  B-toloc.city_name	atis_flight
+tafadhali tafuta ndege inayotoka Kansas City hadi newark hadi orlando kurudi kansas city	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-toloc.city_name  O  B-toloc.city_name I-toloc.city_name	atis_flight
+tafadhali tafuta ndege kutoka Kansas City hadi Newark	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+tafadhali tafuta ndege kutoka newark hadi orlando	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+tafadhali tafuta ndege kutoka orlando hadi Kansas city	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ningependa kuruka kutoka Columbus hadi Phoenix kupitia cincinnati alasiri	O O O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name B-depart_time.period_of_day	atis_flight
+ningependa kujua viwanja vya ndege viko los angeles	O O O O O O  B-fromloc.city_name I-fromloc.city_name	atis_airport
+je uwanja wa ndege wa burbank una ndege inayokuja kutoka jiji la kansas	O O O O O B-fromloc.city_name  O O O O O O B-toloc.city_name	atis_flight
+ safari gani za ndege hufika burbank kutoka jiji la Kansas siku ya Jumamosi alasiri	O O O O O  B-toloc.city_name O O O O O B-fromloc.city_name	atis_flight
+ ndege gani hufika burbank kutoka las vegas Jumamosi aprili ishirini na tatu alasiri	O O O B-toloc.city_name O B-fromloc.city_name I-fromloc.city_name  B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number B-depart_time.period_of_day	atis_flight
+ndege zipi zinapatikana kutoka orlando hadi cleveland zinazofika karibu nne usiku	O O O O B-fromloc.city_name B-toloc.city_name  O O B-arrive_time.time B-arrive_time.period_of_day	atis_flight
+ni ndege gani zinazopatikana kutoka indianapolis hadi san diego  Aprili ishirini na moja alasiri	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number B-depart_time.period_of_day	atis_flight
+ni ndege gani zinazoondoka Cleveland kwenda indianapolis Aprili ishirini na moja asubuhi	O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number B-depart_time.period_of_day	atis_flight
+ambayo ndege zinapatikana Aprili ishirini na moja asubuhi kutoka nashville hadi tacoma	O O O  B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+ambayo ndege zinapatikana kutoka tacoma hadi san jose asubuhi mnamo Aprili ishirini na moja	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_time.period_of_day O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number	atis_flight
+ambayo ndege zinapatikana kutoka san jose hadi nashville zinazoondoka asubuhi ya Aprili ishirini na tatu	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number	atis_flight
+ni nauli gani ya bei ghali zaidi ya njia moja kati ya detroit na kaunti ya westchester	O O O O	atis_airfare
+ni mashirika gani ya ndege yanayosafiri kati ya Detroit na westchester County	O O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airline
+ni saa ngapi za kuondoka kutoka detroit hadi kaunti ya westchester	O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight_time
+ni ndege gani ya hivi punde kutoka Baltimore hadi Oakland ambayo hutoa chakula cha jioni	O O O O B-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name O O B-meal_description I-meal_description I-meal_description	atis_flight
+ni safari gani ya kwanza ya ndege kati ya Baltimore na Oakland ambayo hutoa kifungua kinywa	O O O O B-flight_mod O O O O B-fromloc.city_name O B-toloc.city_name O O B-meal_description I-meal_description	atis_flight
+kwa miji gani kutoka Boston ambapo america west fhusafiri kwa klasi ya kwanza	O O O O B-fromloc.city_name O B-airline_name I-airline_name O O O B-class_type I-class_type I-class_type	atis_city
+ndege gani husafiri kutoka Boston hadi san diego	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airline
+ni ndege gani mpya ya kiamshakinywa kutoka Dallas hadi Tampa	O O O O  B-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name	atis_flight
+nionyeshe safari zote za ndege za lufthansa kutoka seattle hadi boston na vituo vya kusimama huko minneapolis	O O O O O O B-airline_name B-fromloc.city_name O B-toloc.city_name	atis_flight
+nionyeshe safari zote za ndege kutoka seattle hadi Boston na vituo vya kusimama huko minneapolis	O O O O O O B-fromloc.city_name O B-toloc.city_name O O O O O B-stoploc.city_name	atis_flight
+orodhesha safari za ndege kutoka philadelphia hadi san francisco na vituo vya kusimama huko Dallas	O O O O O  B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O B-stoploc.city_name	atis_flight
+nionyeshe safari za ndege zinazounganisha kati ya boston na denver na aina za ndege zinazotumika	O O O O B-connect O O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+nionyeshe safari zote za ndege za asubuhi kutoka philadelphia hadi ngome yenye thamani	O O O O O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nionyeshe safari zote za ndege kutoka Kansas City hadi St. paulo	O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nionyeshe safari ya  ndege  608 ya northwest  kutoka jiji la Kansas hadi St. paulo	O O O O B-flight_number O B-airline_name O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nionyeshe safari zote za ndege kutoka indianapolis hadi charlotte jumatatu	O O O O O O B-fromloc.city_name O B-toloc.city_name  B-depart_time.period_of_day	atis_flight
+ni usafiri gani wa ardhini kati ya uwanja wa ndege wa charlotte airport charlotte na downtown charlotte	O O O O O O O O O O O B-airport_name O O B-city_name	atis_ground_service
+nionyeshe safari zote za ndege kutoka charlotte hadi minneapolis zinazoondoka saa  nane mchana au baadaye Jumatatu	O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.time I-depart_time.time O B-depart_time.period_of_day B-depart_date.day_name	atis_flight
+nionyeshe safari zote za ndege kutoka charlotte hadi minneapolis jumanne asubuhi	O O O O O O B-fromloc.city_name O B-toloc.city_name  B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+nionyeshe safari za ndege za moja kwa moja kutoka charlotte hadi minneapolis jumanne asubuhi	O O O O O B-round_trip I-round_trip I-round_trip  B-fromloc.city_name O B-toloc.city_name  B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+nionyeshe ndege us 1500 siku ya jumatatu kutoka charlotte hadi minneapolis tafadhali	O O B-airline_code B-flight_number O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+nionyeshe safari zote za ndege kutoka minneapolis hadi indianapolis siku ya jumanne zitakazoondoka baada ya saa nane mchana 	O O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O B-depart_time.time_relative O O B-depart_time.time B-depart_time.period_of_day	atis_flight
+nionyeshe safari za ndege kutoka minneapolis hadi india	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+nionyeshe safari za ndege kutoka minneapolis hadi indianapolis Jumanne alasiri	O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+nionyeshe safari ya ndege  us 1207 kutoka indianapolis hadi charlotte jumatatu na safari ya ndege us 1500 kutoka charlotte hadi minneapolis jumatatu na ndege twa 639 kutoka minneapolis hadi indianapolis	O O O O B-airline_name B-airline_code O B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name O O O O B-airline_name B-airline_code O B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name O O B-airline_name B-airline_code O B-fromloc.city_name O B-toloc.city_name	atis_flight
+nionyeshe safari zote za ndege kutoka las vegas hadi jiji la new york	O O O O O O B-fromloc.state_name I-fromloc.state_name O O O B-toloc.city_name I-toloc.city_name	atis_flight
+ambayo mashirika tofauti ya ndege huenda kutoka las vegas hadi jiji la New York	O O O O O O O B-fromloc.state_name I-fromloc.state_name O O O B-toloc.city_name I-toloc.city_name	atis_airline
+nionyeshe safari zote za ndege za america west na twa kutoka las vegas hadi jfk siku ya ijumaa	O O O O O O B-airline_name I-airline_name O B-airline_code O B-fromloc.state_name I-fromloc.state_name O B-toloc.airport_code O O B-depart_date.day_name	atis_flight
+ningependa kuruka kutoka san diego hadi Houston mnamo Juni kumi	O O O O O O O B-toloc.airport_name I-toloc.airport_name O B-arrive_date.month_name B-arrive_date.day_number	atis_flight
+kuna ndege za shirika la ndege la marekani kutoka Houston hadi Newark mnamo Juni kumi baada ya kumi mna mbili	B-meal O O O B-airline_code B-flight_number O O B-toloc.state_name I-toloc.state_name O B-arrive_time.time I-arrive_time.time	atis_flight
+kuna ndege ya shirika la ndege la marekani kutoka Houston hadi Newark mnamo Juni kumi baada ya tisa mchana	O O O O B-airline_name I-airline_name O B-meal	atis_flight
+nahitaji kutoka cincinnati hadi denver mnamo Juni sita wakati wa sa kumi na mbili jioni	O O O O O B-city_name O O O O O O B-airline_name I-airline_name	atis_flight
+ni usafiri gani wa ardhini huko denver	O O O O B-airline_name I-airline_name O B-toloc.state_name B-arrive_date.day_name O B-arrive_time.time I-arrive_time.time	atis_ground_service
+ni nauli gani kwa taxii kwenda denver	O O O O O B-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.state_name O B-toloc.state_name	atis_ground_fare
+ni nauli gani za usafiri wa ardhini huko denver	O O O O O B-airline_name I-airline_name O B-depart_date.day_name O O O O O B-fromloc.airport_name O B-depart_time.time I-depart_time.time	atis_ground_fare
+ninahitaji kuruka kutoka denver hadi kaunti ya westchester mnamo Juni saba baada ya tisa mchana	O O O O O B-airline_name I-airline_name O B-depart_date.day_name O O O O O B-fromloc.airport_name B-depart_time.time_relative B-depart_time.time I-depart_time.time	atis_flight
+ni usafiri gani wa ardhini katika kaunti ya westchester	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name I-toloc.state_name	atis_ground_service
+nahitaji kuchukua ndege ya shirika la ndege la umoja wa mataifa tarehe nane Juni kutoka kaunti ya westchester hadi cincinnati baada ya tisa mchana	O B-airline_code O O	atis_flight
+ni safari gani za ndege za shirika la ndege la united mnamo tarehe nane Juni zinatoka westchester County hadi cincinnati	O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.state_name O B-airline_name O O O O O O O B-airline_name I-airline_name	atis_flight
+mnamo Juni nane ni safari gani za ndege kutoka westchester County hadi cincinnati	O O O O O O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name O B-airline_name O O O O O O O B-airline_name I-airline_name	atis_flight
+Je, kuna safari za ndege ya us air kutoka cincinnati hadi denver mnamo Juni sita	O O O O O B-fromloc.state_name O B-toloc.state_name O B-toloc.state_name I-toloc.state_name	atis_flight
+orodhesha safari za ndege kutoka cincinnati hadi denver mnamo Juni sita	O O O O B-depart_date.day_name B-depart_time.period_of_day O O B-depart_date.month_name O B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name	atis_flight
+orodhesha safari za ndege kutoka denver hadi kaunti ya westchester mnamo Juni saba	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name I-toloc.state_name B-depart_date.day_name B-depart_time.period_of_day O B-airline_name I-airline_name	atis_flight
+orodhesha safari za ndege kutoka kaunti ya westchester hadi cincinnati mnamo tarehe nane Juni	O O O B-flight_mod I-flight_mod O B-fromloc.state_name I-fromloc.state_name O O O B-depart_date.day_name B-depart_time.period_of_day O B-airline_name I-airline_name	atis_flight
+orodhesha safari za ndege kutoka cincinnati hadi kaunti ya westchester mnamo Juni sita	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name I-toloc.state_name B-depart_date.day_name B-depart_time.period_of_day O B-airline_name I-airline_name	atis_flight
+orodhesha safari za ndege kutoka kaunti ya westchester hadi denver mnamo Juni saba	B-airline_code O O O	atis_flight
+orodhesha safari za ndege kutoka denver hadi cincinnati mnamo Juni nane	O O B-flight_mod O O O O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name	atis_flight
+orodhesha safari za ndege kutoka denver hadi cincinnati mnamo Juni sita baada ya kumi jioni	O O B-flight_mod O O O O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name	atis_flight
+orodhesha safari za ndege kutoka cincinnati hadi kaunti ya westchester mnamo Juni saba	O O O B-airline_code	atis_flight
+orodhesha safari za ndege kutoka kaunti ya westchester hadi cincinnati mnamo Juni saba ukiondoka baada ya saa kumi na moja jioni	B-days_code O O O	atis_flight
+ni mashirika gani ya ndege kutoka love field kati ya kumi na mbili na saa nne asubuhi mnamo Juni sita	O O O B-fromloc.state_name O O O B-round_trip I-round_trip I-round_trip O O O B-cost_relative I-cost_relative O	atis_airline
+orodhesha safari za ndege kutoka Montreal hadi philly kabla ya tatu asubuhi	O O O B-fromloc.state_name O B-toloc.state_name	atis_flight
+orodhesha safari za ndege kutoka Cleveland hadi memphis	O O O B-airline_code O	atis_flight
+orodhesha safari za ndege kutoka memphis hadi Cleveland	O O O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.state_name O B-toloc.state_name B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time O O	atis_flight
+orodhesha safari za ndege kutoka denver hadi baltimore zinazowasili Julai tarehe mosi	B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name I-toloc.state_name B-economy I-economy I-economy	atis_flight
+orodhesha safari za ndege kutoka Dallas hadi Baltimore zikiwasili Julai tarehe mosi	B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name I-toloc.state_name B-economy I-economy I-economy	atis_flight
+orodhesha safari za ndege kutoka Pittsburgh hadi Baltimore zikiwasili Julai tarehe mosi	B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name B-economy I-economy I-economy	atis_flight
+orodhesha safari za ndege kwenye mashirika ya ndege ya Canadian airlines international	B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name B-economy I-economy I-economy	atis_flight
+ni ndege ngapi za ndege za Canadian airlines international  zinazotumia j31	B-fromloc.state_name O B-toloc.state_name I-toloc.state_name B-economy I-economy I-economy	atis_quantity
+ni ndege ngapi za ndege za Canadian airlines international zinazotumia ndege 320	B-airline_code O O O O O	atis_quantity
+ni ndege ngapi za Canadian airlines international hutumia ndege dh8	B-airline_code O O O O O	atis_quantity
+nionyeshe safari za ndege kwenye mashirika ya ndege ya marekani ambayo yanasafiri kutoka St. petersburg hadi Ontario Kanada na kituo cha St. Louis	B-airline_code O O O O O	atis_flight
+nionyeshe safari za ndege kwenye mashirika ya ndege ya marekani ambayo huenda kutoka St. petersburg hadi Ontario california kwa njia ya St. Louis	B-airline_code O O O O O	atis_flight
+ni uwanja gani wa ndege ulio karibu zaidi na Ontario California	B-airline_code O O O O O	atis_airport
+nionyeshe safari za ndege kutoka Houston hadi Orlando	O O B-fromloc.state_name O B-toloc.state_name B-depart_time.time_relative O B-depart_time.time I-depart_time.time B-flight_days I-flight_days	atis_flight
+nionyeshe safari za ndege kutoka orlando hadi hoston	O O O O O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name	atis_flight
+nionyeshe safari za ndege kutoka detroit hadi las vegas	B-airline_code O O O O O	atis_flight
+nionyeshe nauli ya bei nafuu zaidi ya safari ya kwenda na kurudi kutoka las vegas hadi detroit	B-airline_code O O O O O	atis_airfare
+nionyeshe nauli ya bei nafuu zaidi ya safari ya kwenda na kurudi kwa twa kutoka las vegas hadi detroit	B-airline_code O O O O O	atis_airfare
+nionyeshe safari za ndege za delta ambazo hutoa vitafunio vya kufundisha abiria	O O O O O B-flight_stop I-flight_stop I-flight_stop O B-fromloc.state_name I-fromloc.state_name O B-toloc.state_name	atis_flight
+msimbo wa chakula sb humaanisha nini	O O O O O B-flight_stop I-flight_stop I-flight_stop O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name	atis_abbreviation
+nionyeshe safari za ndege za delta kutoka tampa hadi san francisco	O O O O O B-flight_stop I-flight_stop I-flight_stop O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name	atis_flight
+nionyeshe ndege ya delta 486	O B-class_type O O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name	atis_flight
+orodhesha safari za za tower air siku za jumatatu	O O O O O B-fromloc.state_name O B-toloc.state_name B-depart_date.day_name B-or B-depart_date.day_name O B-airline_name I-airline_name	atis_flight
+ni ndege gani huondoka kutoka Baltimore	O O O O O B-fromloc.state_name O B-toloc.state_name O B-airline_name I-airline_name	atis_flight
+ni ndege gani huondoka kutoka baltimore na kufika san francisco siku ya Ijumaa	O O O B-fromloc.state_name O B-toloc.state_name O O B-meal O B-airline_name	atis_flight
+ni ndege gani huondoka kutoka cincinnati asubuhi na kufika tampa	O O O O O B-fromloc.state_name O B-toloc.state_name O O B-meal B-depart_date.day_name B-depart_time.period_of_day O B-airline_name	atis_flight
+ni ndege gani huondoka kutoka tampa na kufika cincinnati jioni	O O O O O O O B-airline_name O B-fromloc.state_name O B-toloc.state_name O O O B-meal B-depart_time.period_of_day B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+ni ndege gani huondoka Tampa mapema jioni na kufika cincinnati	O O O O O B-depart_date.day_name B-depart_time.period_of_day O B-airline_name O O B-meal O B-fromloc.state_name O B-toloc.state_name	atis_flight
+kuna ndege gani kutoka philadelphia na kuwasili attlanta	O O O O O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.state_name O B-toloc.state_name I-toloc.state_name O B-airline_name O O B-meal	atis_flight
+kuna  ndege gani kutoka atlanta na kufika Toronto	B-depart_date.day_name O O B-airline_name I-airline_name O B-fromloc.state_name O B-toloc.state_name	atis_flight
+kuna  ndege gani huondoka toronto na kufika washington dc	O O O O B-airline_name I-airline_name O B-fromloc.state_name O B-toloc.state_name	atis_flight
+kuna ndege ganikutoka new york na kuwasili los angeles baada ya nne asubuhi	O O O O B-fromloc.state_name O B-toloc.state_name O B-airline_name	atis_flight
+ni kiwango gani kutoka  la guardia ya new york kutoka katikati mwa jiji	O O O O B-fromloc.state_name O B-toloc.state_name O B-airline_name	atis_distance
+ni umbali gani wa Toronto international kutoka katikati mwa jiji	O O O O O O B-class_type I-class_type I-class_type O B-fromloc.state_name O B-toloc.state_name	atis_distance
+ni umbali gani wa los angeles international kutoka katikati mwa jiji	O O O O B-airline_name O B-fromloc.state_name I-fromloc.state_name	atis_distance
+ni umbali gani wa san francisco international kutoka katikati mwa jiji	O O O O B-airline_name O B-fromloc.state_name I-fromloc.state_name	atis_distance
+ni kiasi gani cha huduma ya limousine huko Boston	B-airline_name O O O O B-fromloc.airport_name	atis_ground_fare
+ni kiasi gani cha huduma ya limousine katika la guardia	O O O B-airline_name O O	atis_ground_fare
+ni kiasi gani cha huduma ya limousine katika toronto international	O O O B-airline_name O	atis_ground_fare
+ni kiasi gani cha huduma ya limousine huko los angeles	O O O B-airline_name O O	atis_ground_fare
+ni mashirika gani ya ndege yanayosafiri kati ya washington dc na Columbus Ohio	O O O O O O B-depart_time.period_of_day O B-airline_name I-airline_name O B-fromloc.state_name O B-toloc.state_name	atis_airline
+kuna ndege gani kati ya washington dc na Columbus Ohio	O B-meal O O O B-airline_name I-airline_name	atis_flight
+kuna safari za ndege gani kati ya washington dc na Columbus Ohio	O B-meal_description I-meal_description O B-airline_name I-airline_name	atis_flight
+ni nauli gani kwa safari zote za ndege kati ya washington na Columbus	B-airline_code O O O O O	atis_airfare
+ni daraja la kwanza nauli ya safari ya kwenda na kurudi kutoka india indianapolis hadi memphis	O O O O O B-airline_name I-airline_name O B-fromloc.state_name O B-toloc.state_name O O B-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_airfare
+orodhesha safari zote za ndege kutoka memphis hadi miami	O O O O O O B-fromloc.state_name O B-toloc.state_name O B-airline_name I-airline_name	atis_flight
+orodhesha safari zote za ndege na nauli zake kutoka indianapolis hadi memphis jumatatu asubuhi	O O O B-fromloc.state_name O B-toloc.state_name O B-airline_name I-airline_name O B-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight#atis_airfare
+orodhesha safari zote za ndege na nauli zake kutoka memphis hadi miami siku ya jumatano jioni	O O O B-fromloc.state_name O B-toloc.state_name O B-airline_name I-airline_name	atis_flight#atis_airfare
+orodhesha safari zote za ndege na nauli zake kwa safari zote za ndege kati ya miami na indianapolis	O O O O O O O O O O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight#atis_airfare
+orodhesha safari zote za ndege kutoka Cleveland hadi Kansas siku ya jumatatu	O O O O O O B-fromloc.state_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+orodhesha safari zote za ndege kutoka jiji la Kansas hadi Cleveland	O O O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari zote za ndege kutoka Cleveland hadi Nashville	O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari zote za ndege kutoka nashville hadi Cleveland siku ya Jumapili	O O O O O O B-fromloc.state_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+orodhesha safari zote za ndege za Jumapili kutoka Cleveland hadi Nashville na nauli zao	O O O O O O B-depart_date.day_name O B-fromloc.state_name O B-toloc.city_name O O O	atis_flight#atis_airfare
+ni mashirika gani ya ndege yanaondoka kutoka baltimore	O O O O O O O B-fromloc.state_name	atis_airline
+ambayo mashirika ya ndege husafiri kutoka baltimore hadi san francisco	O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_airline
+safari ya ndege kutoka baltimore hadi san francisco inachukua muda gani	O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name O O O	atis_distance
+kuna ndege gani zinaondoka kutoka jiji la Kansas hadi Atlanta mapema jumatatu asubuhi	O O O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_time.period_of_day B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+kuna  ndege gani zinaondoka Atlanta na kuwasili St. Louis karibu na 230 jioni Jumanne	O O O O B-fromloc.state_name O O B-toloc.city_name I-toloc.city_name B-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time B-arrive_date.day_name	atis_flight
+tafadhali orodhesha safari za ndege kutoka St. Louis kwa St. paul ambayo inaondoka baada ya nne asubuhi Alhamisi	O O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name O O B-depart_time.time_relative O B-depart_time.time I-depart_time.time B-depart_date.day_name	atis_flight
+orodha ya ndege kutoka St. paul kwenda Kansas city ijumaa jioni pamoja na mlo	O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day O O B-meal	atis_flight
+orodhesha safari za ndege za mapema jioni kutoka tampa hadi cincinnati	O O O O O B-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege za jioni kutoka tampa hadi cincinnati	O O O O O B-depart_time.period_of_day O B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka philadelphia hadi atlanta ijumaa asubuhi	O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+orodhesha safari za ndege kutoka atlanta hadi Toronto ijumaa alasiri	O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+orodhesha safari za ndege kutoka Toronto hadi washington dc jumamosi asubuhi	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+orodhesha safari za ndege kutoka washington dc hadi philadelphia Jumamosi pm	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+orodhesha safari za ndege za moja kwa moja kutoka new york city hadi los angeles baada ya nne asubuhi	O O O O O B-connect I-connect I-connect O B-fromloc.state_name I-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_time.time_relative O B-depart_time.time I-depart_time.time	atis_flight
+orodhesha nauli ya ndege ya shirika la ndege la Merika la 19 kutoka jfk hadi lax	O O O O O O O B-airline_name I-airline_name I-airline_name O B-flight_number O B-fromloc.airport_code O B-toloc.airport_code	atis_airfare#atis_flight
+nambari ya nauli m	O O O O	atis_abbreviation
+orodhesha umbali wa maili kutoka uwanja wa ndege wa Boston hadi katikati mwa jiji la Boston	O O O O O O O O O B-fromloc.airport_name O O O O O B-city_name	atis_distance
+orodhesha umbali wa maili kutoka uwanja wa ndege wa la guardia wa new york hadi katikati mwa jiji la New York	O O O O O O O O O B-fromloc.airport_name I-fromloc.airport_name O B-fromloc.state_name I-fromloc.state_name O O O O O B-city_name I-city_name	atis_distance
+orodhesha umbali wa maili kutoka uwanja wa ndege wa kimataifa wa Toronto hadi katikati mwa jiji la Toronto	O O O O O O O O O O O B-fromloc.airport_name O O O O O B-city_name	atis_distance
+orodhesha umbali wa maili kutoka uwanja wa ndege wa kimataifa wa san francisco hadi san francisco katikati mwa jiji	O O O O O O O O O O O B-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name I-toloc.city_name O O O	atis_distance
+orodhesha viwango vya limousine kwa jiji la Boston	O O O B-transport_type  O O O B-city_name	atis_ground_fare
+orodhesha ndege za mashirika ya ndege ya marekani kutoka houston hadi milwaukee zinazoondoka ijumaa mchana	O O O O O B-airline_name I-airline_name I-airline_name O B-fromloc.state_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+orodhesha safari za ndege kutoka Houston hadi Milwaukee Ijumaa mchana	O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+orodhesha ndege za mashirika ya ndege ya marekani kutoka milwaukee hadi san jose jumatano	O O O O O B-airline_name I-airline_name I-airline_name O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name	atis_flight
+orodhesha ndege za mashirika ya ndege ya marekani kutoka san jose hadi Dallas ijumaa alasiri	O O O O O B-airline_name I-airline_name I-airline_name O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+orodhesha safari za ndege kutoka Dallas hadi Houston zitawasili Jumapili alasiri	O O O O O B-fromloc.state_name O B-toloc.city_name O B-arrive_date.day_name B-arrive_time.period_of_day	atis_flight
+orodhesha mashirika ya ndege yanayoruka kutoka seattle hadi Salt Lake city	O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_airline
+ni uwezo gani wa kukaa kwa ndege l10	O O O O O O O B-airline_code	atis_capacity
+ni nafasi gani ya kukaa kwa delta be1	O O O O O O B-airline_name B-airline_code	atis_capacity
+orodhesha safari za ndege kutoka kwa seattle hadi Salt Lake city kwenye delta l10	O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-airline_code	atis_flight
+orodhesha safari za ndege kutoka kwa seattle hadi Salt Lake city kwenye delta be1	O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-airline_name B-airline_code	atis_flight
+orodhesha safari za ndege kutoka Boston hadi Pittsburgh kila siku	O O O O O B-fromloc.state_name O B-toloc.city_name B-flight_days I-flight_days	atis_flight
+orodhesha safari za ndege kutoka Pittsburgh hadi Newark kila siku	O O O O O B-fromloc.state_name O B-toloc.city_name B-flight_days I-flight_days	atis_flight
+orodhesha safari za ndege kutoka Newark hadi Boston kila siku	O O O O O B-fromloc.state_name O B-toloc.city_name B-flight_days I-flight_days	atis_flight
+orodhesha nauli ya ndege ya daraja la kwanza kwenda na kurudi kutoka indianapolis hadi memphis	O O O O O B-class_type I-class_type I-class_type B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name	atis_airfare
+nambari ya nauli ni nini f	O O O O O B-fare_basis_code	atis_abbreviation
+orodhesha safari za ndege kutoka memphis hadi miami jumatano jioni	O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+orodhesha safari za ndege kutoka miami hadi indianapolis jumapili	O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name	atis_flight
+orodhesha safari za ndege kutoka ontario california hadi orlando florida	O O O O O B-fromloc.state_name B-fromloc.state_name O B-toloc.city_name B-toloc.city_name	atis_flight
+orodha ya safari za ndege kutoka Ontario California hadi Salt Lake city utah	O O O O O O B-fromloc.state_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-toloc.city_name	atis_flight
+orodha ya safari za ndege kutoka ontario california hadi salt Lake city utah jumatatu	O O O O O O B-fromloc.state_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-toloc.city_name B-depart_date.day_name	atis_flight
+orodhesha safari za ndege kutoka salt Lake city utah hadi Phoenix Arizona Jumatatu	O O O O O B-fromloc.state_name I-fromloc.state_name I-fromloc.state_name B-fromloc.state_name O B-toloc.city_name B-toloc.city_name B-depart_date.day_name	atis_flight
+orodhesha safari za ndege kutoka Salt Lake city hadi Phoenix Arizona Jumanne	O O O O O B-fromloc.state_name I-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-toloc.city_name B-depart_date.day_name	atis_flight
+orodhesha safari za ndege kutoka phoenix arizona hadi ontario California jumatano	O O O O O B-fromloc.state_name B-fromloc.state_name O B-toloc.city_name B-toloc.city_name B-depart_date.day_name	atis_flight
+ni mashirika gani ya ndege yanayosafiri kutoka baltimore hadi san francisco	O O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_airline
+ni nauli gani kwa tikiti ya safari ya kwenda na kurudi ya daraja la kwanza kutoka detroit hadi St. petersburg	O O O O O O O O B-round_trip I-round_trip I-round_trip O B-class_type I-class_type I-class_type O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_airfare
+ni bei gani ya ndege kwa safari ya kwenda na kurudi tikiti ya daraja la kwanza kutoka detroit hadi St. petersburg	O O O O O O O O B-round_trip I-round_trip I-round_trip O O B-class_type I-class_type I-class_type O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_airfare
+kansas city hadi atlanta jumatatu asubuhi safari za ndege	B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day O O O	atis_flight
+Jumatatu asubuhi safari za ndege kutoka Atlanta hadi Kansas City	B-depart_date.day_name B-depart_time.period_of_day O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+kansas city hadi atlanta jumatatu asubuhi safari za ndege	B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day O O O	atis_flight
+Atlanta hadi St. louis jumanne kabla ya safari za ndege za 230 jioni	B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.time_relative O O O O O B-depart_time.time I-depart_time.time	atis_flight
+St. Louis kwa St. paul Alhamisi baada ya nne asubuhi	B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.time_relative O B-depart_time.time I-depart_time.time	atis_flight
+St. paul kwenda Kansas ijumaa usiku	B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+Cleveland hadi Kansas city itawasili jumatatu kabla ya saa tisa mchana	B-fromloc.state_name O B-toloc.city_name O O B-arrive_date.day_name B-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+ndege ya kansas kutoka jiji la Cleveland itawasili jumatano kabla ya saa kumi na moja jioni	O O B-fromloc.state_name O O O B-toloc.city_name O B-arrive_date.day_name B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+cleveland hadi nashville ijumaa asubuhi	B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+nashville hadi Cleveland Jumapili kabla ya tatu	B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.time_relative O B-depart_time.time	atis_flight
+safari za ndege za daraja la kwanza Pittsburgh hadi Newwark jumatatu asubuhi	O O O O B-class_type I-class_type I-class_type B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+safari za ndege newark hadi los angeles jumatano asubuhi	O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+los angeles hadi minneapolis alhamisi alasiri	B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+minneapolis kwa ndege ya Pittsburgh	B-fromloc.state_name O O O B-toloc.city_name	atis_flight
+minneapolis hadi Pittsburgh ndege ya daraja la kwanza	B-fromloc.state_name O B-toloc.city_name O O B-class_type I-class_type I-class_type	atis_flight
+ningependa ndege zinazoondoka kutoka milwaukee hadi orlando	O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+hp inamaanisha nini	B-airline_code O O	atis_abbreviation
+ningependa safari za ndege kutoka ontario hadi tacoma	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ningependa safari za ndege kutoka minneapolis hadi san diego	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ningependa safari za ndege kutoka Salt Lake city hadi cincinnati	O O O O O B-fromloc.state_name I-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+ningependa kuona safari za ndege kutoka cincinnati hadi Salt Lake city	O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+ningependa safari za ndege kutoka new york hadi miami	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+ningependa safari za ndege kutoka miami hadi new york	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ningependa ndege inayoondoka san francisco kuelekea san diego	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ningependa safari za ndege kutoka san diego hadi las vegas	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ningependa ndege kutoka san diego hadi las vegas	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ningependa safari za ndege kutoka las vegas hadi san francisco	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+kanuni ya nauli bn inamaanisha nini	O O O B-fare_basis_code O O	atis_abbreviation
+ningependa kuwa na shirika la ndege linalofanya safari za Toronto detroit na St. Louis	O O O O O O O O O B-fromloc.state_name B-toloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airline
+ningependa ndege kutoka Toronto hadi Detroit	O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ningependa ndege kutoka detroit hadi St. Louis	O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ningependa ndege kutoka Toronto hadi St. Louis	O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ningependa safari za ndege zinazoondoka san francisco hadi san diego	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ningependa ndege kutoka san francisco hadi St. petersburg	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nionyeshe safari ya ndege ya njia moja kutoka milwaukee hadi orlando ikiondoka jumatano alasiri baada ya kumi na mbili jioni	O O O O O B-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day B-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+nionyeshe safari za ndege za njia moja kutoka milwaukee hadi orlando jumatano	O O O O O B-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name	atis_flight
+nionyeshe safari za ndege kutoka Columbus hadi chicago daraja la kwanza zinazoondoka kabla ya nne asubuhi	O O O O O B-fromloc.state_name O B-toloc.city_name B-class_type I-class_type I-class_type O B-depart_time.time_relative O B-depart_time.time I-depart_time.time	atis_flight
+nionyeshe safari ya bei nafuu zaidi ya kwenda na kurudi kati ya St. petersburg na detroit ambayo hufika kabla ya moja jioni	O O O B-cost_relative I-cost_relative O O B-round_trip I-round_trip I-round_trip O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O O B-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time	atis_flight
+nionyeshe safari za ndege za moja kwa moja kutoka jiji la Kansas hadi Phoenix	O O O O O B-flight_stop I-flight_stop I-flight_stop O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe safari ya bei nafuu ya daraja la kwanza kwenda na kurudi kutoka new york hadi miami	O O O B-cost_relative I-cost_relative O B-class_type I-class_type I-class_type B-round_trip I-round_trip I-round_trip O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+sasa nionyeshe safari zote za kwenda na kurudi kutoka new york hadi miami	O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe ndege ya bei nafuu zaidi ya njia moja kutoka san francisco hadi Houston	O O O B-cost_relative I-cost_relative O O B-round_trip I-round_trip O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+sasa nionyeshe ndege ya bei nafuu zaidi ya njia moja kutoka Houston hadi Boston	O O O O B-cost_relative I-cost_relative O O B-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe nauli za bei nafuu zaidi za kwenda na kurudi kutoka Houston hadi Boston	O O O B-cost_relative I-cost_relative O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name	atis_airfare
+nionyeshe nauli za bei nafuu zaidi za kwenda na kurudi kutoka san francisco hadi Houston	O O O B-cost_relative I-cost_relative O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_airfare
+nionyeshe nauli ya bei nafuu zaidi ya safari ya kwenda na kurudi kutoka san francisco hadi houston mnamo Februari ishirini na nane 1994	O O O B-cost_relative I-cost_relative O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number B-depart_date.year	atis_airfare
+nionyeshe nauli ya bei nafuu zaidi ya njia moja kutoka san francisco hadi houston mnamo Februari ishirini na nane 1994	O O O B-cost_relative I-cost_relative O O B-round_trip I-round_trip O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number B-depart_date.year	atis_airfare
+sasa nionyeshe usafiri wa ardhini huko Houston jumatatu alasiri	O O O O O O B-city_name B-day_name B-period_of_day	atis_ground_service
+sasa nionyeshe safari za ndege za njia moja kutoka Houston hadi Boston	O O O O O O B-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name	atis_flight
+na sasa nionyeshe usafiri wa ardhini ambao ningeweza kufika Boston usiku wa manane	O O O O O O O O O B-city_name B-period_of_day I-period_of_day I-period_of_day	atis_ground_service
+nionyeshe mashirika ya ndege ambayo yana safari za ndege kati ya toronto na detroit kati ya detroit na st. Louis na kati ya St. Louis na Toronto	O O O O O O O O O O O B-fromloc.state_name O B-toloc.city_name O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_airline
+nionyeshe safari za ndege kutoka Montreal hadi orlando	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nahitaji ndege kutoka san francisco hadi milwaukee jumatatu asubuhi	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+nahitaji ndege kutoka milwaukee hadi washington dc jumatatu usiku	O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+vipi kuhusu safari za ndege kutoka milwaukee hadi washington dc jumanne asubuhi	O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+kuna chakula gani kwa ndege 382 kutoka milwaukee hadi Washington DC Jumanne asubuhi	O B-meal O O O B-flight_number O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_meal
+Nitahitaji kukodisha gari huko washington dc	O O B-transport_type  O B-city_name I-city_name	atis_ground_service
+naweza kupata ndege jumanne usiku kutoka washington dc hadi oakland	O O O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+vipi kutoka dc hadi Oakland jumatano asubuhi	O O B-fromloc.state_code O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+ni gharama gani kuruka twa kutoka columbus hadi milwaukee	O O O O B-airline_code O B-fromloc.state_name O B-toloc.city_name	atis_airfare
+q ina maana gani	B-fare_basis_code O O O	atis_abbreviation
+ni gharama gani kuruka kutoka Columbus hadi St. Louis safari ya kwenda na kurudi twa	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name O O B-round_trip I-round_trip I-round_trip B-airline_code	atis_airfare
+ni ndege gani ya bei nafuu kutoka Columbus hadi St. Louis safari ya kwenda na kurudi twa	O O O O B-cost_relative I-cost_relative O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name O O B-round_trip I-round_trip I-round_trip B-airline_code	atis_flight
+ni ndege gani ya bei nafuu zaidi ya safari ya kwenda na kurudi kwa twa kutoka Columbus hadi St. paulo	O O O O B-cost_relative I-cost_relative O O O O B-round_trip I-round_trip I-round_trip O B-airline_code O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nataka kuruka kutoka milwaukee hadi los angeles	O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+naweza kupata safari fupi ya ndege kutoka milwaukee hadi orlando	O O O B-flight_mod O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nini maana ya m	O O O B-fare_basis_code	atis_abbreviation
+nini maana ya ap 57	O O O B-restriction_code I-restriction_code	atis_abbreviation
+ni ndege gani fupi zaidi kutoka milwaukee hadi St. petersburg	O O O B-flight_mod O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ni ndege gani fupi zaidi kutoka milwaukee hadi san diego	O O O B-flight_mod O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nini maana ya ap 20	O O O B-restriction_code I-restriction_code	atis_abbreviation
+naweza kupata ndege leo kutoka san francisco hadi detroit michigan	O O O B-depart_date.today_relative O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-toloc.city_name	atis_flight
+ni ndege gani ya bei rahisi zaidi kutoka san francisco hadi detroit leo	O O O O B-cost_relative I-cost_relative O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_date.today_relative	atis_flight
+ninataka kuruka kutoka san francisco hadi milwaukee na kutoka milwaukee hadi denver	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ni ndege gani ya bei nafuu kutoka san francisco hadi milwaukee	O O O O B-cost_relative I-cost_relative O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+nahitaji kukodisha gari huko milwaukee	O O B-transport_type  O B-city_name	atis_ground_service
+ni ndege gani ya bei nafuu kesho kutoka milwaukee hadi denver	O O O O B-cost_relative I-cost_relative B-depart_date.today_relative O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ni usafiri gani wa ardhini unapatikana huko denver	O O O O O O O B-city_name	atis_ground_service
+ni ndege gani ya bei nafuu zaidi kutoka san francisco hadi denver	O O O O B-cost_relative I-cost_relative O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+ni ndege gani huondoka kutoka Cleveland na kwenda Dallas	O O O O O B-fromloc.state_name O O B-toloc.city_name	atis_flight
+nionyeshe safari zote za ndege za moja kwa moja kutoka St. Petersburg hadi charlotte	O O O O O O O B-flight_stop I-flight_stop I-flight_stop B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe safari za ndege kati ya Toronto na san diego	O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+phl ni nini	B-airport_code O O	atis_abbreviation
+mci ni nini	B-airport_code O O	atis_abbreviation
+nionyeshe safari za ndege kati ya Oakland na Salt Lake city	O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+ni safari gani ya kwanza ya ndege ya kila siku kati ya Oakland na Salt Lake City	O O O O B-flight_mod O O O B-flight_days I-flight_days O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+shirika la ndege ni dl	O O O O B-airline_code	atis_airline
+ni ndege gani ya hivi punde kati ya Oakland na Salt Lake city	O O O O B-flight_mod I-flight_mod O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+nionyeshe safari za ndege kati ya los angeles na dallas	O O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+ni usafiri gani wa ardhini unapatikana kutoka uwanja wa ndege wa Dallas Fort hadi jiji la Dallas	O O O O O O O O O O O B-airport_name I-airport_name O O O B-city_name	atis_ground_service
+ndege ya L1011 inaweza kushikilia abiria wangapi	O O B-airline_code O O O O	atis_capacity
+ni uwezo gani wa kuketi wa dc9	O O O O O O B-airline_code	atis_capacity
+ni ndege gani kati ya Dallas na phoenix	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ni usafiri gani wa ardhini unapatikana kati ya uwanja wa ndege wa phoenix na jiji la Phoenix	O O O O O O O O O O O O B-airport_name O O O B-city_name	atis_ground_service
+ni uwezo gani wa kukaa kwa ndege m80	O O O O O O O B-airline_code	atis_capacity
+kuna safari za ndege kati ya Dallas na phoenix kwa kutumia ndege ya dc10	O O O O O O B-fromloc.state_name O B-toloc.city_name O O O O B-airline_code	atis_flight
+shirika la ndege ni nini aa	O O O O O B-airline_code	atis_airline
+nionyeshe safari za ndege kati ya milwaukee na indiana	O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ni ndege gani kati ya milwaukee na pittsburgh	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ni usafiri gani wa ardhini unapatikana kati ya uwanja wa ndege wa Pittsburgh na jiji la Pittsburgh	O O O O O O O O O O O O B-airport_name O O O B-city_name	atis_ground_service
+nionyeshe safari za ndege kati ya Pittsburgh na washington dc	O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ni usafiri gani wa ardhini unapatikana kati ya dca na jiji la washington	O O O O O O O O B-airport_code O O O B-city_name	atis_ground_service
+ni ndege gani kati ya dca na milwaukee	O O O O O B-airport_code O B-city_name	atis_flight
+ni usafiri gani wa ardhini unapatikana kati ya uwanja wa ndege wa milwaukee na jiji la milwaukee	O O O O O O O O O O O O B-airport_name O O O B-city_name	atis_ground_service
+kuamua aina ya ndege inayotumiwa kwenye safari ya kutoka Cleveland hadi Dallas ambayo huondoka kabla ya saa sita mchana	O O O O O O O O O B-fromloc.state_name O B-toloc.city_name O O B-depart_time.time_relative O O B-depart_time.period_of_day I-depart_time.period_of_day	atis_aircraft
+pata ndege kati ya St. petersburg na charlotte ndege inapaswa kuondoka alasiri na kufika mara baada ya kumi na moja jioni iwezekanavyo iwe ni safari ya moja kwa moja.	O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O O O B-depart_time.period_of_day O O O B-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time O O O O O B-flight_stop I-flight_stop I-flight_stop	atis_flight
+orodhesha ndege kwenye mashirika ya ndege ya delta kutoka Toronto hadi san diego	O O O O O B-airline_name I-airline_name I-airline_name O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+orodhesha safari za ndege kwa mashirika ya ndege ya marekani kutoka Toronto hadi san diego	O O O O O O O B-airline_name I-airline_name I-airline_name O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+orodhesha ndege kutoka Toronto hadi san diego	O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka Oakland hadi Salt Lake city zinazoondoka baada ya jumatano saa kumi moja	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-depart_time.time_relative O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+orodhesha safari za ndege kutoka Oakland hadi Salt Lake city zinazoondoka baada ya Alhamisi ya saa sita usiku	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-depart_time.time_relative O B-depart_date.day_name O B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+orodhesha safari za ndege kati ya phoenix na las vegas	O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+orodha ya ndege kutoka las vegas hadi denver	O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka milwaukee hadi washington dc kabla ya 1200	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_time.time_relative O B-depart_time.time	atis_flight
+orodha ya safari za ndege kutoka Washington DC hadi Pittsburgh kuondoka baada ya 1800	O O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O B-depart_time.time_relative O B-depart_time.time	atis_flight
+orodhesha safari za ndege kutoka washington dc hadi Pittsburgh	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege kati ya Pittsburgh na milwaukee	O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ningependa ndege hadi san diego kutoka washington dc	O O O B-toloc.city_name I-toloc.city_name O B-fromloc.state_name I-fromloc.state_name	atis_flight
+ningependa kuruka kutoka Cleveland hadi Dallas	O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ninataka kuruka kutoka washington dc hadi Phoenix Arizona	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-toloc.city_name	atis_flight
+nahitaji ndege kutoka phoenix hadi Atlanta	O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ningependa kuruka kutoka atlanta hadi san diego	O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ningependa kuruka kutoka san diego hadi seattle	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+ningependa kuruka kutoka orlando hadi jiji la kansas	O O O B-fromloc.state_name O O O B-toloc.city_name	atis_flight
+nahitaji ndege kutoka Kansas City hadi minneapolis	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+nahitaji ndege kutoka san diego hadi washington dc	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nahitaji ndege kutoka washington dc hadi san diego	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nahitaji ndege ya kwenda na kurudi kutoka san diego hadi washington dc na nauli	O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name O O	atis_flight#atis_airfare
+nahitaji safari ya kwenda na kurudi kutoka atlanta hadi washington dc na nauli zitaondoka asubuhi	O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name O O O B-depart_time.period_of_day	atis_flight#atis_airfare
+nahitaji safari ya kwenda na kurudi kutoka phoenix hadi washington dc na nauli kuondoka asubuhi	O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name O O O B-depart_time.period_of_day	atis_flight#atis_airfare
+ni nauli gani ya chini kabisa kwa ndege kutoka washington dc hadi boston	O O O O B-cost_relative O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_airfare
+ni nauli ya chini kabisa kutoka washington dc hadi montreal	O O O B-cost_relative O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_airfare
+ni nauli gani ya chini kabisa kutoka Toronto hadi washington dc	O O O O B-cost_relative O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_airfare
+nataka safari ya ndege kutoka Montreal hadi washington dc	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nataka safari ya ndege kutoka nashville hadi seattle ambayo itafika kabla ya saa tisa mchana	O O O O O B-fromloc.state_name O B-toloc.city_name O B-arrive_time.time_relative I-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+nataka safari ya ndege kutoka memphis hadi seattle ambayo itafika kabla ya saa tisa mhana	O O O O O B-fromloc.state_name O B-toloc.city_name O B-arrive_time.time_relative I-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+nahitaji ndege kutoka indianapolis hadi seattle nikifika seattle saa sita na dakika tano mchana	O O O B-fromloc.state_name O B-toloc.city_name O B-toloc.city_name O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+nataka safari ya ndege kwenda na kurudi kutoka memphis hadi seattle	O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ninataka kuruka kutoka nashville hadi seattle na ninataka nauli ya bei nafuu zaidi ya safari ya kwenda na kurudi	O O O B-fromloc.state_name O B-toloc.city_name O O O O B-cost_relative I-cost_relative O O O O B-round_trip I-round_trip I-round_trip	atis_flight
+ninataka kuruka kutoka memphis hadi safari ya kwenda na kurudi kwa seattle kwa nauli ya bei nafuu zaidi	O O O B-fromloc.state_name O O O B-round_trip I-round_trip I-round_trip O B-toloc.city_name O O O B-cost_relative I-cost_relative O	atis_flight
+tafadhali orodhesha safari za ndege kutoka orlando hadi philadelphia	O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+tafadhali orodhesha safari za ndege kutoka san francisco hadi charlotte	O O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+tafadhali orodhesha safari za ndege kutoka milwaukee hadi philadelphia	O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+tafadhali orodhesha safari za ndege kutoka philadelphia hadi san francisco	O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+tafadhali onyesha usafiri wa ardhini hadi milwaukee	O O O O O O B-city_name	atis_ground_service
+tafadhali orodhesha safari za ndege kutoka san francisco hadi milwaukee	O O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka houston hadi denver	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodha ya ndege kutoka Houston hadi Phoenix	O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodha ya ndege kutoka Phoenix hadi Houston	O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka Newwark hadi Houston	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+onyesha safari za ndege kutoka denver hadi Houston	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+onyesha safari za ndege kutoka St. Petersburg hadi charlotte	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+onyesha safari za ndege kutoka orlando hadi Kansas city	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+onyesha safari za ndege kutoka jiji la Kansas hadi minneapolis	O O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+onyesha safari za ndege kutoka jiji la Kansas hadi Orlando	O O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+onyesha safari za ndege kutoka minneapolis hadi jiji la Kansas	O O O O O B-fromloc.state_name O O O B-toloc.city_name	atis_flight
+onyesha safari za ndege kutoka jiji la Kansas hadi Orlando	O O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka washington dc hadi Boston	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha nauli kutoka washington dc hadi montreal	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_airfare
+orodhesha safari za ndege kutoka washington dc hadi Montreal	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha nauli kutoka washington dc hadi toronto ambayo inapaswa kuwa nzuri	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O O O O	atis_airfare
+orodhesha nauli kutoka washington dc hadi Boston	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_airfare
+orodhesha safari za ndege kutoka washington dc hadi Montreal	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka washington dc hadi toronto	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka Toronto hadi washington dc	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka Oakland hadi Salt Lake City	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+ni ndege gani zinazotoka Dallas hadi Phoenix	O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ni ndege gani zinazotoka phoenix hadi Salt Lake city	O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+nahitaji ndege ya mapema kutoka milwaukee hadi denver	O O O B-flight_mod O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ni aina gani za usafiri wa ardhini zinapatikana katika denver	O O O O O O O O O B-city_name	atis_ground_service
+ni ndege gani zinazotoka denver hadi St. Louis jumanne asubuhi	O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+Usafiri wa ardhini unapatikana huko St. Louis	O O O O O B-city_name I-city_name	atis_ground_service
+nahitaji kuruka kutoka St. louis hadi milwaukee jumatano alasiri	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+ndege kutoka washington hadi seattle	O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ndege kutoka Atlanta hadi seattle	O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ndege kutoka san diego hadi seattle	O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+ningependa maelezo ya ndege kutoka Phoenix hadi denver	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+naweza kupata maelezo ya safari za ndege kutoka Salt Lake city hadi Phoenix tafadhali	O O O O O O O O B-fromloc.state_name I-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O	atis_flight
+naweza kupata maelezo ya safari za ndege kutoka Pittsburgh hadi Phoenix tafadhali	O O O O O O O O B-fromloc.state_name O B-toloc.city_name O	atis_flight
+ningependa habari kuhusu safari za ndege zinazoondoka kutoka washington dc kwenda denver	O O O O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+ninahitaji habari kuhusu safari za ndege kutoka washington hadi Boston ambazo zitaondoka jumamosi	O O O O O O O B-fromloc.state_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+ninahitaji safari za ndege kutoka washington hadi montreal jumamosi	O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name	atis_flight
+ninahitaji nauli za safari za ndege kutoka washington hadi toronto jumamosi	O O O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name	atis_airfare
+nataka kutoka Boston kwenda washington siku ya jumamosi	O O B-fromloc.state_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+nahitaji safari ya ndege kutoka Cleveland hadi Dallas ambayo inaondoka kabla ya saa sita mchana kuona ikiwa kuna habari nyingi	O O O O O B-fromloc.state_name O B-toloc.city_name O O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time O O O O O	atis_flight
+pata nauli kutoka washington hadi boston	O O O B-fromloc.state_name O B-toloc.city_name	atis_airfare
+pata nauli za jumamosi kutoka washington hadi Boston	O O O B-depart_date.day_name O B-fromloc.state_name O B-toloc.city_name	atis_airfare
+pata nauli kutoka washington hadi montreal	O O O B-fromloc.state_name O B-toloc.city_name	atis_airfare
+pata nauli za jumamosi kutoka washington hadi montreal	O O O B-depart_date.day_name O B-fromloc.state_name O B-toloc.city_name	atis_airfare
+pata nauli za jumamosi kutoka washington hadi toronto	O O O B-depart_date.day_name O B-fromloc.state_name O B-toloc.city_name	atis_airfare
+pata nauli ya jumamosi kutoka washington hadi toronto	O O O B-depart_date.day_name O B-fromloc.state_name O B-toloc.city_name	atis_airfare
+orodhesha safari za ndege za jumamosi kutoka washington hadi Boston	O O O O O B-depart_date.day_name O B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege za jumamosi kutoka boston hadi washington	O O O O O B-depart_date.day_name O B-fromloc.state_name O B-toloc.city_name	atis_flight
+pata safari za ndege kutoka milwaukee hadi dtw	O O O O O B-fromloc.state_name O B-toloc.airport_code	atis_flight
+orodhesha safari za ndege kutoka milwaukee hadi detroit	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+pata ndege kutoka Detroit hadi Toronto	O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+pata safari za ndege kutoka Toronto hadi Milwaukee	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+pata ndege ya mwisho kutoka Oakland hadi Salt Lake City jumatano au safari ya kwanza ya ndege kutoka Oakland hadi Salt Lake City Alhamisi	O O O B-flight_mod O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name O O O B-flight_mod O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name	atis_flight
+pata ndege ya kwanza kutoka Oakland hadi Salt Lake City Alhamisi	O O O B-flight_mod O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name	atis_flight
+pata ndege ya mwisho kutoka Oakland hadi Salt Lake City jumatano	O O O B-flight_mod O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name	atis_flight
+orodhesha safari ya ndege ya jumatano iliyopita kutoka Oakland hadi Salt Lake city	O O O O O B-depart_date.day_name O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+pata ndege kutoka Toronto hadi san diego ikisimama dtw	O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name O B-stoploc.airport_code	atis_flight
+pata ndege kati ya St. petersburg na charlotte	O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+nahitaji safari ya ndege kutoka milwaukee hadi indianapolis ikiondoka jumatatu kabla ya 9am	O O O O O B-fromloc.state_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.time_relative O B-depart_time.time	atis_flight
+nahitaji ndege itakayoondoka milwaukee hadi indianapolis ikiondoka jumatatu kabla ya saa nane asubuhi	O O O B-fromloc.state_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time	atis_flight
+kuna usafiri wa ardhini unaopatikana katika uwanja wa ndege wa indianapolis	O O O O O O O O O O B-airport_name	atis_ground_service
+nahitaji maelezo ya safari ya ndege itakayotoka indianapolis kwenda Cleveland itaondoka jumanne saa sita mchana	O O O O O O O B-fromloc.state_name O B-toloc.city_name O B-depart_date.day_name O B-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+ninahitaji maelezo ya safari ya ndege inayoondoka kutoka Cleveland kwenda milwaukee jumatano baada ya kumi nambili jioni	O O O O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+ninahitaji maelezo ya safari za ndege zinazoondoka Cleveland kurudi milwaukee jumatano baada ya saa kumi na moja jioni	O O O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+ninahitaji maelezo ya safari za ndege zinazoondoka kutoka Cleveland kwenda milwaukee jumatano baada ya saa kumi na moja jioni	O O O O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+ninahitaji maelezo ya safari za ndege zinazoondoka kutoka Cleveland kwenda milwaukee jumatano baada ya saa kumi na moja jioni	O O O O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+nahitaji ndege kutoka denver hadi Salt Lake city jumatatu	O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name	atis_flight
+kuna usafiri wa ardhini unaopatikana kwenye uwanja wa ndege wa denver	O O O O O O O O O O B-airport_name	atis_ground_service
+nahitaji maelezo ya ndege na ndege kwa ajili ya safari ya kutoka denver hadi Salt Lake city jumatatu inayoondoka baada ya saa kumi na moja jioni.	O O O O O O O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight#atis_airline
+kuna usafiri wa ardhini unapatikana katika uwanja wa ndege wa salt lake city	O O O O O O O O O O B-airport_name I-airport_name I-airport_name	atis_ground_service
+nahitaji safari ya ndege kutoka Salt Lake city hadi Phoenix itaondoka jumatano baada ya saa kumi na moja jioni	O O O O O B-fromloc.state_name I-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+kuna usafiri wa ardhini unaopatikana katika uwanja wa ndege wa phoenix	O O O O O O O O O O B-airport_name	atis_ground_service
+nahitaji safari ya ndege kutoka Oakland hadi Salt Lake city siku ya jumatano itakayoondoka baada ya kumi na mbili jioni	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O B-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+nahitaji maelezo ya safari ya ndege na nauli ya siku ya alhamisi ya kuondoka kabla ya saa tatu asubuhi kutoka Oakland kwenda Salt Lake city	O O O O O O O O O O O B-depart_date.day_name O O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight#atis_airfare
+ninahitaji maelezo ya ndege na nauli ya kuondoka kutoka Oakland hadi Salt Lake city Alhamisi kabla ya saa mbili asubuhi	O O O O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time	atis_flight#atis_airfare
+ninahitaji nambari za ndege na mashirika ya ndege kwa safari za ndege zinazoondoka kutoka Oakland hadi Salt Lake city siku ya Alhamisi zinazoondoka kabla ya saa mbili asubuhi.	O O O O O O O O O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time	atis_flight_no#atis_airline
+nahitaji nambari za ndege kwa hizo safari za ndege zitakazoondoka alhamisi kabla ya saa nane asubuhi kutoka Oakland kwenda Salt Lake city	O O O O O O O O O O B-depart_date.day_name B-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight_no
+orodhesha viwanja vya ndege vya Arizona Nevada na California tafadhali	O O O O O B-city_name I-city_name O B-city_name O	atis_airport
+orodha california nevada Arizona viwanja vya ndege	O B-city_name I-city_name I-city_name O O O	atis_airport
+orodhesha uwanja wa ndege wa Arizona	O O O O O B-city_name	atis_airport
+orodha ya viwanja vya ndege vya California	O O O O O O B-city_name	atis_airport
+orodhesha safari za ndege kutoka las vegas hadi Phoenix	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+orodha ya viwanja vya ndege vya California	O O O O O O B-city_name	atis_airport
+orodha ya viwanja vya ndege	O O O O O	atis_airport
+orodhesha safari za ndege za jumatano usiku kutoka Oakland hadi Salt Lake city	O O O O O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka Oakland hadi Salt Lake City kabla ya 6 asubuhi Alhamisi asubuhi	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_time.time_relative O B-depart_time.time I-depart_time.time B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+ambayo mashirika ya ndege husafiri kati ya Toronto na san diego	O O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_airline
+tafadhali orodhesha safari za ndege za mchana kati ya St. petersburg na charlotte	O O O O O O B-depart_time.period_of_day O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+tpa ni nini	B-airport_code O O	atis_abbreviation
+ni safari gani za ndege kutoka Cleveland hadi Dallas	O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+tafadhali orodhesha safari za ndege kutoka Cleveland hadi Dallas pekee zinazoondoka kabla ya saa sita mchana	O O O O O O B-fromloc.state_name O B-toloc.city_name O O B-depart_time.time_relative O O B-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+ni aina gani ya ndege zinazoruka kutoka Cleveland hadi Dallas kabla ya saa sita mchana	O O O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.period_of_day I-depart_time.period_of_day	atis_aircraft
+nahitaji tikiti kutoka nashville hadi seattle	O O O B-fromloc.state_name O B-toloc.city_name	atis_airfare
+nahitaji tikiti kutoka nashville tennessee hadi seattle	O O O B-fromloc.state_name B-fromloc.state_name O B-toloc.city_name	atis_airfare
+nahitaji maelezo ya ndege kutoka milwaukee hadi tampa	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nahitaji kukodisha gari huko tampa	O O B-transport_type  O B-city_name	atis_ground_service
+nahitaji ndege ya kila siku kutoka St. Louis kwa milwaukee	O O O B-flight_days I-flight_days O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+nahitaji safari za ndege zinazotoka Oakland na kuwasili Salt Lake city	O O O O O B-fromloc.state_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+nahitaji habari kuhusu safari za ndege kutoka Toronto hadi san diego	O O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nahitaji habari kuhusu safari za ndege kutoka Toronto hadi san diego	O O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nataka ndege kutoka Toronto hadi san diego	O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nahitaji habari kuhusu safari za ndege kati ya St. petersburg na charlotte	O O O O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+ninahitaji nambari za ndege za kuondoka kutoka Cleveland na kuwasili Dallas	O O O O O O O B-fromloc.state_name O O B-toloc.city_name	atis_flight_no
+ambayo ndege huenda kutoka new york hadi miami na kurudi	O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O O	atis_flight
+nambari ya nauli qo inamaanisha nini	O O O B-fare_basis_code O O	atis_abbreviation
+nionyeshe safari za ndege kutoka milwaukee hadi orlando kwa njia moja	O O O O O B-fromloc.state_name O B-toloc.city_name O B-round_trip I-round_trip	atis_flight
+ningependa tiketi ya njia moja kutoka milwaukee hadi Orlando ama jumatano jioni au alhamisi asubuhi	O O O B-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O B-depart_date.day_name B-depart_time.period_of_day	atis_airfare
+nionyeshe safari za ndege kutoka milwaukee hadi Orlando	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nambari ya nauli f inamaanisha nini	O O O B-fare_basis_code O O	atis_abbreviation
+nambari ya nauli h inamaanisha nini	O O O B-fare_basis_code O O	atis_abbreviation
+nambari ya nauli y inamaanisha nini	O O O B-fare_basis_code O O	atis_abbreviation
+ni vikwazo gani ap 57	O O O B-restriction_code I-restriction_code	atis_abbreviation
+tafadhali nionyeshe safari za ndege za daraja la kwanza kutoka indianapolis hadi memphis kwa njia moja zikiondoka kabla ya saa nne asubuhi	O O O O O O B-class_type I-class_type I-class_type O B-fromloc.state_name O B-toloc.city_name O B-round_trip I-round_trip O B-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+safari za ndege za kwenda na kurudi kutoka orlando hadi Montreal tafadhali	O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name O	atis_flight
+shirika la ndege ni dl	O O O O B-airline_code	atis_airline
+nionyeshe safari zote za ndege za mashirika ya ndege ya delta kutoka Montreal hadi orlando	O O O O O O O O O O B-airline_name O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe safari zote za ndege kutoka orlando hadi montreal tafadhali	O O O O O O B-fromloc.state_name O B-toloc.city_name O	atis_flight
+shirika la ndege ni kw	O O O O B-airline_code	atis_airline
+tafadhali orodhesha safari zote za ndege kutoka new york hadi miami aina yoyote ya darasa	O O O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O O O O	atis_flight
+nambari ya nauli bh inamaanisha nini	O O O B-fare_basis_code O O	atis_abbreviation
+nionyeshe ndege ya kurudi kutoka miami hadi jfk tafadhali	O O O B-round_trip O B-fromloc.state_name O B-toloc.airport_code O	atis_flight
+nambari ya nauli bh inamaanisha nini	O O O B-fare_basis_code O O	atis_abbreviation
+nambari ya nauli bh inamaanisha nini	O O O B-fare_basis_code O O	atis_abbreviation
+nambari ya nauli bh inamaanisha nini	O O O B-fare_basis_code O O	atis_abbreviation
+nambari ya nauli bh inamaanisha nini	O O O B-fare_basis_code O O	atis_abbreviation
+nionyeshe safari za ndege za njia moja kutoka milwaukee hadi orlando baada yakumi na mbili jioni ya jumatano	O O O O O B-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name B-depart_time.time_relative B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time O B-depart_date.day_name	atis_flight
+nionyeshe safari za ndege kutoka indianapolis hadi memphis	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe safari za ndege za kwenda na kurudi kutoka burbank hadi seattle	O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe safari za ndege za kwenda na kurudi kutoka orlando hadi montreal	O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe safari za ndege za moja kwa moja kutoka Montreal hadi orlando	O O O O O B-flight_stop I-flight_stop I-flight_stop O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe safari za kwenda na kurudi kati ya Montreal na orlando	O O O B-round_trip I-round_trip I-round_trip O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe safari za ndege za kwenda na kurudi kutoka Montreal hadi orlando	O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe ndege za bei nafuu zaidi za njia moja kutoka Montreal hadi orlando	O O O B-cost_relative I-cost_relative O O B-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe ndege za bei nafuu zaidi za njia moja kutoka orlando hadi montali	O O O B-cost_relative I-cost_relative O O B-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe safari za bei nafuu zaidi za ndege kutoka miami hadi new york	O O O B-cost_relative I-cost_relative O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+hp ni shirika gani la ndege	B-airline_code O O O O O	atis_airline
+usafiri wa ardhini katika las vegas	O O O O B-city_name I-city_name	atis_ground_service
+usafiri wa ardhini kwa las vegas	O O O O B-city_name I-city_name	atis_ground_service
+columbus hadi chicago njia moja kabla ya nne asubuhi	B-fromloc.state_name O B-toloc.city_name B-round_trip I-round_trip B-depart_time.time_relative O B-depart_time.time I-depart_time.time	atis_flight
+hp ni shirika gani la ndege	B-airline_code O O O O O	atis_airline
+St. Petersburg hadi Detroit	B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+kutoka milwaukee hadi orlando kwa njia moja baada ya kumi na moja jioni jumatano	O B-fromloc.state_name O B-toloc.city_name O B-round_trip I-round_trip B-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time B-depart_date.day_name	atis_flight
+yx ni shirika gani la ndege	B-airline_code O O O O O	atis_airline
+nionyeshe safari zote za ndege kutoka san jose hadi Phoenix	O O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe safari zote za ndege kutoka san jose hadi Phoenix	O O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+hp ni shirika gani la ndege	B-airline_code O O O O O	atis_airline
+nionyeshe usafiri wa ardhini huko phoenix	O O O O O B-city_name	atis_ground_service
+nionyeshe usafiri wa ardhini katika thamani ya ngome	O O O O O O O O	atis_ground_service
+nionyeshe safari za ndege kutoka fort worth hadi san jose	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+nionyeshe safari za ndege za daraja la kwanza kutoka new york hadi miami kwenda na kurudi	O O O O O B-class_type I-class_type I-class_type O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-round_trip I-round_trip I-round_trip	atis_flight
+nionyeshe safari za ndege za daraja la kwanza kutoka new york hadi miami kwenda na kurudi	O O O O O B-class_type I-class_type I-class_type O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-round_trip I-round_trip I-round_trip	atis_flight
+nionyeshe safari za ndege za kwenda na kurudi kutoka new york hadi miami bila kikomo	O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-flight_stop I-flight_stop	atis_flight
+nionyeshe safari zote za ndege za kwenda na kurudi kutoka miami hadi new york bila kikomo	O O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-flight_stop I-flight_stop	atis_flight
+nionyeshe safari za ndege za njia moja kutoka indianapolis hadi memphis kabla ya nne asubuhi siku yoyote	O O O O O B-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name B-depart_time.time_relative O B-depart_time.time I-depart_time.time O O	atis_flight
+nambari ya nauli f inamaanisha nini	O O O B-fare_basis_code O O	atis_abbreviation
+nionyeshe safari za ndege za kwenda na kurudi kutoka burbank hadi tacoma	O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nini maana ya kizuizi ap58	O O O O B-restriction_code	atis_abbreviation
+nambari ya nauli h inamaanisha nini	O O O B-fare_basis_code O O	atis_abbreviation
+nionyeshe safari za ndege za siku za wiki kutoka milwaukee hadi orlando kwa njia moja	O O O O O B-flight_mod I-flight_mod I-flight_mod O B-fromloc.state_name O B-toloc.city_name O B-round_trip I-round_trip	atis_flight
+nionyeshe safari za ndege za siku za wiki kutoka milwaukee hadi orlando kwa njia moja	O O O O O B-flight_mod I-flight_mod I-flight_mod O B-fromloc.state_name O B-toloc.city_name O B-round_trip I-round_trip	atis_flight
+hp ni shirika gani la ndege	B-airline_code O O O O O	atis_airline
+orodhesha safari za ndege kutoka Chicago hadi san diego	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka Chicago hadi san diego	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka jiji la Kansas hadi denver	O O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodha ya ndege kutoka denver hadi Phoenix	O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka Phoenix hadi las vegas	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka las vegas hadi san diego	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka chicago hadi jiji la Kansas asubuhi	O O O O O B-fromloc.state_name O O O B-toloc.city_name B-depart_time.period_of_day	atis_flight
+orodhesha safari za ndege kutoka hoston hadi san jose	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka Houston hadi Milwaukee	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka milwaukee hadi san jose jumatano	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name	atis_flight
+orodhesha safari za ndege kutoka san jose hadi Dallas siku ya Ijumaa	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+orodhesha safari za ndege kutoka Dallas hadi Houston	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha umbali kutoka kwa viwanja vya ndege hadi katikati mwa New York	O O O O O O O O O O B-city_name I-city_name	atis_distance
+orodhesha viwanja vya ndege huko new york	O O O O O B-city_name I-city_name	atis_airport
+orodhesha viwanja vya ndege huko new york	O O O O O B-city_name I-city_name	atis_airport
+orodha ya viwanja vya ndege katika la	O O O O O O B-city_name	atis_airport
+orodha ya viwanja vya ndege	O O O O O	atis_airport
+orodha ya viwanja vya ndege katika la	O O O O O O B-city_name	atis_airport
+orodha ya viwanja vya ndege katika la	O O O O O O B-city_name	atis_airport
+orodhesha viwanja vya ndege katika la	O O O O O B-city_name	atis_airport
+orodha la	O B-city_name	atis_city
+orodha la	O B-city_name	atis_city
+orodhesha safari za ndege kutoka new york hadi la	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka la guardia hadi burbank	O O O O O B-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka la kwenda Orlando	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka Ontario california hadi orlando	O O O O O B-fromloc.state_name B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka Ontario california hadi orlando	O O O O O B-fromloc.state_name B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka indianapolis hadi memphis na nauli za jumatatu	O O O O O B-fromloc.state_name O B-toloc.city_name O O O B-depart_date.day_name	atis_flight
+orodhesha safari za ndege kutoka indianapolis hadi memphis jumatatu	O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name	atis_flight
+orodhesha safari za ndege kutoka memphis hadi miami jumatano	O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name	atis_flight
+orodhesha safari za ndege kutoka miami hadi indianapolis siku ya Jumapili	O O O O O B-fromloc.state_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+orodhesha safari za ndege kutoka charlotte Jumamosi alasiri	O O O O O B-fromloc.state_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+orodha ya aina ya ndege kwa ajili ya ndege zote kutoka charlotte	O O O O O O O O O O O B-fromloc.state_name	atis_aircraft
+orodhesha safari za ndege na nauli kutoka tacoma hadi orlando safari ya kwenda na kurudi kuondoka jumamosi kurejea jumamosi ijayo	O O O O O O O B-fromloc.state_name O B-toloc.city_name O O B-round_trip I-round_trip I-round_trip O B-depart_date.day_name O B-return_date.day_name B-return_date.date_relative	atis_flight#atis_airfare
+nambari ya nauli ni ya darasa gani q	O O O O O O O B-booking_class	atis_abbreviation
+orodhesha safari za ndege kutoka orlando hadi tacoma siku ya Jumamosi ya msimbo wa msingi wa nauli wa q	O O O O O B-fromloc.state_name O B-toloc.city_name O O B-depart_date.day_name O O O O O O O B-fare_basis_code	atis_flight
+orodhesha nauli za ndege za daraja la kwanza kwenda na kurudi kutoka detroit hadi St. petersburg	O O O O O B-class_type I-class_type I-class_type B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_airfare
+orodhesha safari za ndege kutoka Pittsburgh hadi Newark jumatatu asubuhi	O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+orodhesha safari za ndege kutoka minneapolis hadi Pittsburgh siku ya Ijumaa	O O O O O B-fromloc.state_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+orodhesha safari za ndege kabla ya 9 asubuhi kutoka cincinnati hadi tampa	O O O O B-depart_time.time_relative O B-depart_time.time I-depart_time.time O B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari za ndege kutoka cincinnati hadi tampa kabla ya saa sita mchana	O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+orodhesha safari za ndege kutoka tampa hadi cincinnati baada ya tisa mchana	O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_time.time_relative O B-depart_time.time I-depart_time.time	atis_flight
+orodhesha mashirika ya ndege ambayo yanasafiri kutoka kwa seattle hadi Salt Lake city	O O O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_airline
+orodhesha safari za ndege za delta kutoka kwa seattle hadi Salt Lake city	O O O O O B-airline_name O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+orodhesha nafasi za kukaa za ndege za delta kutoka Seattle hadi Salt Lake city	O O O O O O O B-airline_name O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_capacity
+orodhesha safari za ndege za delta kutoka kwa seattle hadi Salt Lake city na aina ya ndege	O O O O O B-airline_name O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O	atis_flight
+kuna usafiri gani wa ardhini huko baltimore	O O O O O O B-city_name	atis_ground_service
+orodhesha usafirishaji wa ardhini huko Baltimore	O O O O O B-city_name	atis_ground_service
+orodhesha safari za ndege kutoka baltimore hadi san francisco ijumaa	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name	atis_flight
+nipe safari za ndege kutoka los angeles hadi pittsburgh jumanne	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_date.day_name	atis_flight
+nipe safari za ndege kutoka pittsburgh hadi los angeles alhamisi jioni	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+nipe safari za ndege za kwenda na kurudi kutoka Cleveland hadi miami jumatano ijayo	O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_date.date_relative	atis_flight
+nipe nauli za safari za ndege kwenda na kurudi kutoka Cleveland hadi miami jumatano ijayo	O O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_date.date_relative	atis_airfare
+nipe ndege na nauli za safari ya Cleveland kutoka miami jumatano	O O O O O O O B-toloc.city_name O B-fromloc.state_name B-depart_date.day_name	atis_flight
+nipe nauli kutoka miami hadi Cleveland jumapili ijayo	O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_date.date_relative	atis_airfare
+nipe safari za ndege kutoka phoenix hadi milwaukee jumatano jioni	O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+nipe safari za ndege kutoka phoenix hadi milwaukee	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nipe safari za ndege za mlo zitakazoondoka mapema Jumamosi asubuhi kutoka Chicago hadi seattle bila kikomo	O O O O O B-meal O B-depart_time.period_of_day B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.state_name O B-toloc.city_name B-flight_stop I-flight_stop	atis_flight
+nipe safari za ndege kutoka Chicago hadi seattle jumamosi asubuhi ambazo zina milo	O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day O O B-meal	atis_flight
+nipe safari za ndege kutoka chicago hadi seattle kwenye bara ambazo zina milo mapema jumamosi asubuhi	O O O O O O O O O O O O B-meal B-depart_time.period_of_day B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+nipe safari za ndege za jumamosi asubuhi na vyakula kutoka chicago hadi minneapolis	O O O O O B-depart_date.day_name B-depart_time.period_of_day O B-meal O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nipe safari za ndege kutoka new york hadi las vegas bila kikomo	O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-flight_stop I-flight_stop	atis_flight
+nipe safari za ndege kutoka memphis hadi las vegas bila kikomo	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-flight_stop I-flight_stop	atis_flight
+nipe ndege za bei nafuu zaidi za safari ya kwenda na kurudi kutoka indianapolis hadi orlando karibu Desemba ishirini na tano	O O O B-cost_relative I-cost_relative O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name B-depart_time.time_relative B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number	atis_flight
+nahitaji ndege ya ijumaa kutoka newark hadi tampa	O O O B-depart_date.day_name O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nahitaji ndege ya jumapili kutoka tampa hadi charlotte	O O O B-depart_date.day_name O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nipe ndege kutoka charlotte hadi baltimore jumanne asubuhi	O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+naweza kupata ndege ya asubuhi kutoka baltimore hadi newark tafadhali	O O O O B-depart_time.period_of_day O B-fromloc.state_name O B-toloc.city_name O	atis_flight
+nauli ya bei nafuu ya kwenda na kurudi kutoka au indianapolis hadi orlando Desemba ishirini na tano	O O B-cost_relative I-cost_relative O B-round_trip I-round_trip I-round_trip O O B-fromloc.state_name O B-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number	atis_airfare
+nauli ya bei nafuu zaidi ya njia moja kutoka indianapolis hadi orlando mnamo Desemba ishirini na saba	O O B-cost_relative I-cost_relative O O B-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number	atis_airfare
+nambari ya ndege kutoka Dallas hadi Houston	O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight_no
+nambari ya ndege kutoka Houston hadi Dallas	O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight_no
+nambari za ndege kutoka Chicago hadi seattle	O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight_no
+kuna nauli kutoka Pittsburgh hadi Cleveland chini ya dola 200	O O O B-fromloc.state_name O B-toloc.city_name B-cost_relative O B-fare_amount I-fare_amount	atis_airfare
+newark kwa tampa siku ya ijumaa	B-fromloc.state_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+tampa kwa charlotte jumapili asubuhi	B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+charlotte kuelekea baltimore jumanne	B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name	atis_flight
+baltimore hadi newark jumatano asubuhi	B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+dallas hadi hoston baada ya sita na dakika moja asubuhi 	B-fromloc.state_name O B-toloc.city_name B-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+houston hadi Dallas kabla ya saa sita usiku	B-fromloc.state_name O B-toloc.city_name B-depart_time.time_relative O B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+indianapolis hadi orlando desemba ishirini na saba	B-fromloc.state_name O B-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number	atis_flight
+nauli ya bei nafuu kutoka indianapolis hadi orlando tarehe ishirini na saba Desemba	O O B-cost_relative I-cost_relative O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number I-depart_date.day_number B-depart_date.month_name	atis_airfare
+nauli ya bei nafuu zaidi ya safari ya kwenda na kurudi kutoka indianapolis hadi orlando Desemba ishirini na saba	O O B-cost_relative I-cost_relative O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number	atis_airfare
+Cleveland hadi miami siku ya jumatano ikiwasili kabla ya saa kumi jioni	B-fromloc.state_name O B-toloc.city_name O O B-depart_date.day_name O B-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+miami hadi Cleveland Jumapili alasiri	B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+New York City hadi las vegas na memphis hadi las vegas siku ya jumapili	B-fromloc.state_name I-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name	atis_flight
+New York City hadi las vegas na memphis hadi las vegas siku ya jumapili	B-fromloc.state_name I-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name	atis_flight
+new york kwenda las vegas jumapili mchana	B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+memphis hadi las vegas jumapili mchana	B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+New york kwenda las vegas Jumapili alasiri	B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+chicago kwenda seattle jumamosi asubuhi	B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+chicago kwenda las vegas jumamosi asubuhi	B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+los angeles hadi Pittsburgh jumanne alasiri	B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+los angeles hadi Pittsburgh alasiri siku ya jumatatu	B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_time.period_of_day O O B-depart_date.day_name	atis_flight
+pittsburgh hadi los angeles alhamisi jioni	B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+milwaukee hadi Phoenix Jumamosi	B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name	atis_flight
+Phoenix hadi milwaukee siku ya Jumapili	B-fromloc.state_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+Phoenix hadi milwaukee jumatano	B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name	atis_flight
+ndege kutoka baltimore hadi san francisco itawasili kati ya saa kumi na moja  asubuhi na saa mbili jioni 	O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name O O O O B-arrive_time.start_time I-arrive_time.start_time I-arrive_time.start_time O O O B-arrive_time.end_time I-arrive_time.end_time	atis_flight
+ningependa ndege ya kuunganisha kutoka Dallas hadi san francisco kuondoka baada ya  kumi kamili	O O O B-connect O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name O B-depart_time.time_relative O B-depart_time.time I-depart_time.time	atis_flight
+tafadhali orodhesha safari zote za ndege kutoka Dallas hadi san francisco	O O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+niambie ndege zinazoondoka philadelphia na kwenda Dallas	O O O B-fromloc.state_name O O B-toloc.city_name	atis_flight
+d9s ni nini	B-airline_code O O	atis_abbreviation
+d9s ni aina gani ya ndege	B-airline_code O O O O O	atis_aircraft
+d9s ni nini	B-airline_code O O	atis_abbreviation
+nionyeshe viwanja vya ndege vinavyohudumiwa na tower air	O O O O O O B-airline_name I-airline_name	atis_airport
+nionyeshe safari za ndege za daraja la kwanza na makocha kati ya jfk na orlando	O O O O O B-class_type I-class_type I-class_type O O O O B-fromloc.airport_code O B-toloc.city_name	atis_flight
+nionyeshe safari za ndege za daraja la kwanza na makocha kutoka uwanja wa ndege wa kennedy hadi miami	O O O O O B-class_type I-class_type I-class_type O B-class_type O O O O O B-fromloc.airport_name O B-toloc.city_name	atis_flight
+nionyeshe safari za ndege za daraja la kwanza na makocha kutoka jfk hadi miami	O O O O O B-class_type I-class_type I-class_type O B-class_type O B-fromloc.airport_code O B-toloc.city_name	atis_flight
+onyesha safari za ndege za delta kutoka jfk hadi miami	O O O O O B-airline_name O B-fromloc.airport_code O B-toloc.city_name	atis_flight
+onyesha mashirika ya ndege ya delta kutoka boston hadi Salt Lake	O O O O O B-airline_name O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+onyesha ndege za mashirika ya ndege ya delta kutoka boston hadi Salt lake	O O O O O O O B-airline_name O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+onyesha safari za ndege za delta kutoka Boston hadi Salt Lake city	O O O O O B-airline_name O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+ni nauli gani za safari za ndege kati ya boston na washington dc	O O O O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_airfare
+ni nauli gani ya gharama nafuu kutoka Boston hadi Salt Lake city	O O O O B-cost_relative I-cost_relative O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_airfare
+ni bei gani ya chini kabisa kutoka washington dc hadi salt lake city	O O O O B-cost_relative O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_airfare
+ni nauli gani ya chini kabisa kutoka bwi hadi Salt Lake city	O O O O B-cost_relative O O B-fromloc.airport_code O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_airfare
+nionyeshe gharama ya tikiti ya daraja la kwanza kutoka detroit hadi las vegas na kurudi	O O O O O B-class_type I-class_type I-class_type O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name O B-round_trip	atis_airfare
+ni ndege gani ya kwanza kuwasili kutoka Boston hadi Washington DC	O O O O B-flight_mod I-flight_mod O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ni ndege gani ya kwanza kuwasili kati ya boston na washington dc	O O O O B-flight_mod I-flight_mod O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ni safari gani ya kwanza ya ndege kuwasili kati ya boston na washington dc	O O O O B-flight_mod I-flight_mod I-flight_mod I-flight_mod O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ni ndege gani ya kwanza kuwasili kutoka Houston hadi Orlando	O O O O B-flight_mod I-flight_mod O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ni ndege gani ya kwanza kuwasili kutoka Houston hadi Orlando	O O O O B-flight_mod I-flight_mod O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe safari za ndege kati ya Houston na Orlando	O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe safari za ndege kati ya Houston na Orlando	O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe safari za ndege kutoka Houston hadi Orlando	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+orodhesha safari zote za ndege zinazoondoka denver kati ya 8pm na 9pm	O O O O O O B-fromloc.state_name O O B-depart_time.start_time O B-depart_time.end_time	atis_flight
+ni uwezo gani wa kukaa kwenye ndege 733	O O O O O O O B-airline_code	atis_capacity
+ni uwezo gani wa kuketi wa 72s	O O O O O O B-airline_code	atis_capacity
+uwezo wa kuketi wa ndege 72s ni nini	O O O O O B-airline_code O O	atis_capacity
+je ndege m80 ina uwezo gani wa kukaa	O O B-airline_code O O O O O	atis_capacity
+ni uwezo gani wa kukaa aina ya ndege m80	O O O O O O O O B-airline_code	atis_capacity
+ni uwezo gani wa kuketi wa m80	O O O O O O B-airline_code	atis_capacity
+mashirika ya ndege yanahudumia denver	O O O O B-city_name	atis_airline
+orodhesha mashirika ya ndege na safari za kwenda au kutoka denver	O O O O O O O O O O B-city_name	atis_airline
+mashirika ya ndege yanaruka denver	O O O O B-toloc.city_name	atis_airline
+orodhesha ndege zote zinazowasili denver kati ya mbili  na saa tatu  jioni	O O O O B-toloc.city_name O O B-arrive_time.start_time O O B-arrive_time.end_time I-arrive_time.end_time	atis_flight
+uwezo wa 73s ni nini	O O B-airline_code O O	atis_capacity
+73s ni nini	B-airline_code O O	atis_abbreviation
+ni uwezo gani wa kukaa kwenye ndege 73s	O O O O O O O B-airline_code	atis_capacity
+nafasi ya kukaa 757 ni nini	O O O B-airline_code O O	atis_capacity
+757 itashikilia watu wangapi	B-airline_code O O O	atis_capacity
+ni abiria wangapi wanaweza kuruka kwenye 757	O O O O O O B-airline_code	atis_capacity
+orodhesha safari zote za ndege za kila siku zinazowasili denver kati ya saa  mbili  na saa tatu jioni	O O O O O O B-flight_days I-flight_days O B-toloc.city_name O O O B-arrive_time.start_time O O B-arrive_time.end_time I-arrive_time.end_time	atis_flight
+orodhesha safari zote za ndege za kila siku zinazowasili denver kutoka saa mbili hadi tatu jioni	O O O O O O B-flight_days I-flight_days O B-toloc.city_name O O B-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time	atis_flight
+nionyeshe safari zote za ndege za kila siku zinazowasili denver kati ya saa mbili  na saa tatu jioni	O O O O O O B-flight_days I-flight_days O B-toloc.city_name O O O B-arrive_time.start_time O O B-arrive_time.end_time I-arrive_time.end_time	atis_flight
+nafasi ya 757 ni nini	O O B-airline_code O O	atis_capacity
+niambie kuhusu ndege ya m80	O O O O B-airline_code	atis_aircraft
+niambie kuhusu ndege ya m80	O O O O B-airline_code	atis_aircraft
+niambie aina ya ndege inayoitwa m80	O O O O O B-airline_code	atis_aircraft
+nafasi ya 733 ni nini	O O B-airline_code O O	atis_capacity
+ni uwezo gani wa kuketi wa m80	O O O O O O B-airline_code	atis_capacity
+ni uwezo gani wa kukaa kwenye ndege m80	O O O O O O O B-airline_code	atis_capacity
+orodhesha ndege zote zinazowasili au kuondoka denver kati ya saa mbili  na saa tatu jioni	O O O O O O B-city_name O O O B-depart_time.start_time O O B-depart_time.end_time I-depart_time.end_time	atis_flight
+orodhesha ndege zote zinazowasili denver kati ya mbili  na tatu jioni	O O O O B-toloc.city_name O O B-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time	atis_flight
+orodhesha safari zote za ndege kwenye aina zote za ndege zinazowasili denver kati ya saa mbili na saa tatu jioni	O O O O O O O O O O O B-toloc.city_name O O O B-arrive_time.start_time O O B-arrive_time.end_time I-arrive_time.end_time	atis_flight
+tafadhali orodhesha safari zote za ndege kutoka nashville hadi memphis jumatatu asubuhi	O O O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+tafadhali orodhesha safari za ndege kutoka nashville hadi memphis jumatatu asubuhi	O O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+kuna usafiri wa ardhini kutoka uwanja wa ndege wa memphis hadi mjini nikifika saa 842 asubuhi	O O O O O O O O O B-airport_name O O O O O B-period_of_day	atis_ground_service
+tafadhali orodhesha safari za ndege kutoka memphis hadi new york city siku ya jumatatu usiku	O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+cvg ni nini	B-airport_code O O	atis_abbreviation
+ni usafiri gani wa ardhini unapatikana kutoka uwanja wa ndege wa la guardia hadi jiji la New York	O O O O O O O O O O O B-airport_name I-airport_name O O O B-city_name I-city_name	atis_ground_service
+kuna usafiri wa ardhini kutoka LGA kwenda New York City	O O O O O B-airport_code O B-city_name I-city_name I-city_name	atis_ground_service
+tafadhali orodhesha usafiri wa ardhini kutoka Lga hadi New York City	O O O O O O B-airport_code O B-city_name I-city_name I-city_name	atis_ground_service
+tafadhali orodhesha usafiri wa ardhini kutoka Ewr hadi New York City	O O O O O O B-airport_code O B-city_name I-city_name I-city_name	atis_ground_service
+nionyeshe safari za ndege za asubuhi kutoka memphis hadi new york city	O O O O O B-depart_time.period_of_day O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+nipe safari za ndege kutoka new york city hadi nashville zikiondoka jumatano baada yasaa kumi na moja jioni	O O O O O B-fromloc.state_name I-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+niambie kuhusu usafiri wa ardhini kutoka uwanja wa ndege wa nashville	O O O O O O O O O O B-airport_name	atis_ground_service
+ni safari zipi za ndege za moja kwa moja kutoka cincinnati hadi charlotte zinazoondoka baada ya adhuhuri na kuwasili kabla ya saa moja jioni	O O O O O O B-flight_stop I-flight_stop I-flight_stop O B-fromloc.state_name O B-toloc.city_name O B-depart_time.time_relative O B-depart_time.period_of_day O O B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time	atis_flight
+mashirika ya ndege ya Alaska yana safari ngapi za ndege kwenda burbank	O O O O B-airline_name O O O O O O B-toloc.city_name	atis_flight
+orodhesha safari za ndege za shirika la ndege la Alaska kutoka burbank hadi popote	O O O O O O O O O B-airline_name O B-fromloc.state_name O O	atis_flight
+orodhesha safari za ndege za shirika la Alaska kutoka burbank	O O O O O O O B-airline_name O B-fromloc.state_name	atis_flight
+orodhesha ndege za mashirika ya ndege ya Alaska zinazowasili burbank	O O O O O O O B-airline_name O B-toloc.city_name	atis_flight
+orodhesha ndege za mashirika ya ndege ya Alaska zinazoondoka kutoka burbank	O O O O O O O B-airline_name O O B-fromloc.state_name	atis_flight
+orodhesha safari zote za ndege za mashirika ya ndege ya Alaska	O O O O O O O O O O B-airline_name	atis_flight
+orodhesha ndege zote zinazoondoka kutoka kwa seattle	O O O O O O B-fromloc.state_name	atis_flight
+orodhesha safari za ndege kutoka indianapolis hadi memphis ambazo huondoka kabla ya saa sita mchana	O O O O O B-fromloc.state_name O B-toloc.city_name O O B-depart_time.time_relative O O B-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+orodhesha nauli nafuu zaidi kutoka charlotte hadi las vegas	O B-cost_relative I-cost_relative O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_airfare
+nataka ndege kutoka los angeles hadi charlotte asubuhi na mapema	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_time.period_of_day O B-depart_time.period_of_day	atis_flight
+ningependa ndege ya asubuhi kutoka charlotte hadi newark	O O O B-depart_time.period_of_day O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ningependa safari ya ndege ya asubuhi kutoka newark hadi los angeles	O O O O O B-depart_time.period_of_day O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ningependa ndege ya jioni kutoka newark hadi los angeles	O O O B-depart_time.period_of_day O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ningependa ndege itakayoondoka jumapili kutoka montreal quebec hadi san diego california	O O O B-depart_date.day_name O B-fromloc.state_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-toloc.city_name	atis_flight
+ningependa ndege siku ya jumanne ambayo inaondoka kutoka san diego hadi indianapolis indiana na itaondoka alasiri	O O O O B-depart_date.day_name O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-toloc.city_name O O B-depart_time.period_of_day	atis_flight
+ningependa kuondoka alhamisi asubuhi kutoka indianapolis hadi toronto	O O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ningependa safari ya ndege ijumaa asubuhi kutoka Toronto hadi montali	O O O O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ningependa ndege kutoka cincinnati hadi burbank kwa Amerika	O O O B-fromloc.state_name O B-toloc.city_name O B-airline_name	atis_flight
+ni aina gani ya ndege inatumika kwa safari ya marekani kuondoka saa 419 jioni	O O O O O O O O O B-airline_name O O B-depart_time.time I-depart_time.time	atis_aircraft
+nahitaji ndege ya kutoka Kansas City kwenda chicago ikiondoka jumatano ijayo na kurudi siku inayofuata	O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O B-depart_date.day_name B-depart_date.date_relative O O B-return_date.date_relative I-return_date.date_relative	atis_flight
+ni ndege gani kutoka memphis hadi las vegas	O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ni safari gani za ndege kutoka las vegas hadi Ontario	O O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+ni safari gani za ndege kutoka ontario hadi memphis	O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+kuna aina gani ya usafiri wa ardhini kwenye uwanja wa ndege wa las vegas	O O O O O O O O O O O O B-airport_name I-airport_name	atis_ground_service
+kuna huduma ya taxi kwenye uwanja wa ndege wa ontario	O B-transport_type  I-transport_type  I-transport_type  O O O O O B-airport_name	atis_ground_service
+ni safari za ndege gani kutoka tampa hadi milwaukee	O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ni ndege gani kutoka milwaukee hadi seattle	O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ni safari za ndege gani kutoka la guardia hadi san jose kwenye united	O O O O O O B-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name I-toloc.city_name O B-airline_name	atis_flight
+ni safari gani za ndege siku za jumatatu zinazosafiri kutoka charlotte north carolina hadi Phoenix arizona	O O O O O O O B-depart_date.day_name O O B-fromloc.state_name B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-toloc.city_name	atis_flight
+ni safari za ndege gani kutoka phoenix Arizona hadi St. paul minesota jumanne	O O O O O O B-fromloc.state_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-toloc.city_name B-depart_date.day_name	atis_flight
+ni safari gani za ndege siku ya Alhamisi zinaondoka kutoka St. paul minnesota hadi St. Louis	O O O O O O O B-depart_date.day_name O O B-fromloc.state_name I-fromloc.state_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+ni ndege gani kutoka St. louis kwenda charlotte north carolina kuondoka siku ya ijumaa	O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-toloc.city_name I-toloc.city_name O O O B-depart_date.day_name	atis_flight
+ni safari gani za ndege kutoka Boston kwenda Orlando ambazo zinasimama huko new york	O O O O O O B-fromloc.state_name O B-toloc.city_name O O O B-stoploc.city_name I-stoploc.city_name	atis_flight
+nahitaji ndege ya asubuhi kutoka burbank hadi milwaukee jumatatu ijayo	O O O B-depart_time.period_of_day O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_date.date_relative	atis_flight
+vipi kuhusu safari ya ndege kutoka milwaukee hadi St. Louis anayeondoka jumatatu usiku	O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+na ndege kutoka St. Louis hadi burbank inayoondoka jumanne alasiri	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+vipi kuhusu ndege kuondoka jumanne usiku kutoka St. Louis hadi burbank	O O O O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+ningependa safari ya ndege kutoka cincinnati hadi uwanja wa ndege wa newark ambayo itawasili jumamosi kabla ya saa kumi na mbili jioni	O O O O O B-fromloc.state_name O O O O O B-toloc.airport_name O O B-arrive_date.day_name B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+nahitaji ndege kutoka memphis hadi tacoma inayopitia los angeles	O O O B-fromloc.state_name O B-toloc.city_name O B-stoploc.city_name I-stoploc.city_name	atis_flight
+ni safari gani za ndege kati ya cincinnati na san jose california ambazo huondoka baada ya saa kumi na mbili jioni	O O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-toloc.city_name O O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+ni safari gani za ndege za moja kwa moja kati ya san jose na Houston texas	O O O O O O B-flight_stop I-flight_stop I-flight_stop O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-toloc.city_name	atis_flight
+ni safari gani za ndege za moja kwa moja kati ya Houston na memphis	O O O O O O B-flight_stop I-flight_stop I-flight_stop O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+ni safari gani za ndege kati ya memphis na cincinnati jumatano	O O O O O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name	atis_flight
+ni ndege gani za Amerika kutoka Newark hadi Nashville	O O O O B-airline_name O B-fromloc.state_name O B-toloc.city_name	atis_flight
+safari za ndege kutoka ontario hadi westchester ambazo zinasimama huko chicago	O O O O B-fromloc.state_name O B-toloc.city_name O O O B-stoploc.city_name	atis_flight
+tafadhali orodhesha safari za ndege kutoka los angeles hadi charlotte	O O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_flight
+tafadhali orodhesha safari za ndege kutoka charlotte hadi newark	O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+tafadhali orodhesha safari za ndege kutoka newark hadi los angeles	O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+tafadhali nipe safari za ndege kutoka kansas city hadi chicago tarehe kumi na sita Juni	O O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number B-depart_date.month_name	atis_flight
+tafadhali nipe safari za ndege kutoka chicago hadi jiji la Kansas mnamo Juni kumi na saba	O O O O O O B-fromloc.state_name O O O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number	atis_flight
+tafadhali orodhesha safari zote za ndege kutoka kansas city hadi chicago tarehe kumi na sita Juni	O O O O O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name O B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number B-depart_date.month_name	atis_flight
+tafadhali orodhesha safari zote za ndege kutoka Chicago hadi Kansas City mnamo Juni kumi na saba	O O O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number	atis_flight
+ningependa kusafiri kutoka burbank hadi milwaukee	O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+unaweza kunitafutia ndege kutoka salt lake city hadi new york jumamosi ijayo kabla ya kuwasili kabla ya saa kumi na mbili jioni	O O O O B-fromloc.state_name I-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name O B-arrive_time.time_relative O O O O O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+unaweza kunitafutia ndege nyingine kutoka cincinnati hadi new york jumamosi kabla ya saa kumi na mbili jioni	O O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time O	atis_flight
+unaweza kuorodhesha safari zote za ndege za delta kutoka Salt Lake city hadi new york jumamosi ijayo zikiwasili kabla ya saa kumi na mbili jioni	O O O O O O O B-airline_name O B-fromloc.state_name I-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_date.date_relative O B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+ningependa kusafiri kutoka kansas city hadi chicago jumatano ijayo	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_date.date_relative	atis_flight
+ningependa safari ya ndege ya kwenda na kurudi kutoka kansas city hadi chicago jumatano mei ishirini na sita ikiwasili saa moja jioni	O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+ndio ningependa kupata safari ya ndege kutoka memphis hadi tacoma ikisimama los angeles	O O O O O O O O O O O O O	atis_flight
+pata ndege kutoka san diego hadi Phoenix jumatatu asubuhi	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+pata ndege kutoka Phoenix hadi Detroit Jumatatu	O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name	atis_flight
+pata ndege kutoka detroit hadi san diego jumanne	O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name	atis_flight
+pata ndege kutoka cincinnati hadi san jose jumatatu	O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name	atis_flight
+pata ndege kutoka san jose hadi Houston jumatano	O O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-depart_date.day_name	atis_flight
+pata ndege kutoka hoston hadi memphis ijumaa	O O O B-fromloc.state_name O B-toloc.city_name B-depart_date.day_name	atis_flight
+pata ndege kutoka memphis hadi cincinnati siku ya Jumapili	O O O B-fromloc.state_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+pata ndege ya Amerika kutoka Newark hadi Nashville karibu 630 jioni	O O O B-airline_name O B-fromloc.state_name O B-toloc.city_name B-depart_time.time_relative B-depart_time.time I-depart_time.time	atis_flight
+tafadhali tafuta safari ya ndege na kurudi kutoka los angeles hadi tacoma washington na kusimama huko san francisco isiyozidi bei ya dola 300 kwa Juni kumi 1993	O O O O O O B-round_trip O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-toloc.city_name O O O B-stoploc.city_name I-stoploc.city_name B-cost_relative I-cost_relative O B-fare_amount I-fare_amount O B-depart_date.month_name B-depart_date.day_number B-depart_date.year	atis_flight
+kuna safari za ndege mnamo tarehe kumi Juni kutoka burbank hadi tacoma	O O O O O O B-depart_date.day_number B-depart_date.month_name O B-fromloc.state_name O B-toloc.city_name	atis_flight
+tafadhali tafuta ndege kutoka ontario hadi westchester ambayo itasimama huko chicago mnamo Mei kumi na saba njia moja na chakula cha jioni	O O O O B-fromloc.state_name O B-toloc.city_name O O O B-stoploc.city_name O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number I-depart_date.day_number B-round_trip I-round_trip O B-meal_description I-meal_description I-meal_description	atis_flight
+kama vile kuhifadhi ndege kutoka burbank hadi milwaukee	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nionyeshe safari zote za ndege kutoka burbank hadi milwaukee	O O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nitafutie safari zote za ndege kutoka milwaukee hadi St. Louis	O O O O O O B-fromloc.state_name O B-city_name I-city_name	atis_flight
+sasa nionyeshe safari zote za ndege kutoka St. Louis hadi burbank	O O O O O O O B-city_name I-city_name O B-toloc.city_name	atis_flight
+kuna shirika moja la ndege ambalo husafiri kutoka burbank hadi milwaukee milwaukee hadi St. Louis na kutoka St. Louis hadi burbank	O O O O O O O O B-fromloc.state_name O B-toloc.city_name O O B-toloc.city_name I-toloc.city_name O O B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name	atis_airline
+nitafute safari zote za ndege za kwenda na kurudi kutoka burbank hadi milwaukee zinazosimama St. Louis	O O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.state_name O B-toloc.city_name O B-stoploc.city_name I-stoploc.city_name	atis_flight
+ningependa kuhifadhi safari mbili za ndege hadi kaunti ya westchester	O O O O O O O O O B-toloc.city_name	atis_flight
+nataka kuweka nafasi ya safari ya ndege kutoka Salt Lake city hadi westchester County	O O O O O O O O B-fromloc.state_name I-fromloc.state_name I-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+niambie viwanja vya ndege vyote vilivyo karibu na westchester county	O O O O O O O O B-city_name I-city_name	atis_airport
+ningependa kuhifadhi ndege kutoka cincinnati hadi new york city kwa mashirika ya ndege ya united jumamosi ijayo	O O O O B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O B-airline_name B-depart_date.day_name B-depart_date.date_relative	atis_flight
+niambie viwanja vya ndege vyote katika eneo la jiji la new york	O O O O O O O O O O B-city_name I-city_name	atis_airport
+tafadhali tafuta safari zote za ndege kutoka cincinnati hadi uwanja wowote wa ndege katika eneo la jiji la new york ambazo zitawasili Jumamosi ijayo kabla ya saa kumi na mbili jioni	O O O O O O O B-fromloc.state_name O O O O O O O O O O B-toloc.city_name I-toloc.city_name O O B-arrive_date.day_name B-arrive_date.date_relative B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+nitafutie safari ya ndege kutoka cincinnati hadi uwanja wowote wa ndege katika eneo la jiji la new york	O O O O O B-fromloc.state_name O O O O O O O O O O B-toloc.city_name I-toloc.city_name	atis_flight
+ningependa kuhifadhi safari ya ndege ya kwenda na kurudi kutoka jiji la Kansas hadi chicago	O O O O O O B-round_trip I-round_trip I-round_trip O O O B-fromloc.state_name O B-toloc.city_name	atis_flight
+nitafutie ndege ambayo inaruka kutoka memphis hadi tacoma	O O O O O B-fromloc.state_name O B-toloc.city_name	atis_flight

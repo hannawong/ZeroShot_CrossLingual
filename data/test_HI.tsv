@@ -1,0 +1,894 @@
+id	utterance	slot_labels	intent
+102	मुझे सोमवार सुबह 9 बजे से पहले मिल्वौकी से इंडियानापोलिस की उड़ान की ज़रूरत है	O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_time.time_relative B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+867	विमान डीसी9 में बैठने की क्या क्षमता हैं	O B-aircraft_code O O O O O O	atis_capacity
+314	रविवार दोपहर को मियामी से क्लीवलैंड	B-depart_date.day_name B-depart_time.period_of_day O B-toloc.city_name O B-fromloc.city_name	atis_flight
+768	सैंट पीटर्सबर्ग से शार्लट की उड़ान चाहिए	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+892	कौन सी फ्लाइट एप्रिल 13 बुधवार को इंडियानापोलिस से उड़ कर मॉन्ट्रियल सुबह को पहुचे	O O O B-depart_date.month_name B-depart_date.day_number B-depart_date.day_name O B-fromloc.city_name O O O B-toloc.city_name B-arrive_time.period_of_day O O	atis_flight
+796	मुझे शिकागो से डेट्रोइट की दोतरफा उड़ान जो अगले मंगलवार को छ्चोड़े और अगले दिन वापिस आए दिखाए	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O O B-depart_date.date_relative B-depart_date.day_name O O O B-return_date.date_relative I-return_date.date_relative O O O	atis_flight
+755	गुरुवार सुबह को 10 के बाद सैंट लुइस से सैंट पॉल की उड़ान दे	B-depart_date.day_name B-depart_time.period_of_day O B-depart_time.time O B-depart_time.time_relative B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+766	डेल्टा एरलाइन्स की उड़ान बोस्टन से साल्ट लेक की दिखाए	B-airline_name I-airline_name O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O	atis_flight
+163	मुझे सैन डिएगो से लास वेगास के लिए उड़ाने चाहिए	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+266	नेवार्क से बोस्टन के लिए रोजाना जानेवाली उड़ानों की सूची	B-fromloc.city_name O B-toloc.city_name O O B-flight_days O O O O	atis_flight
+211	सभी अलास्का एयरलाइंस उड़ानों की सूची	O B-airline_name I-airline_name O O O	atis_flight
+345	कृपया मुझे जून 16 को कैनसस सिटी से शिकागो जाने वाली उड़ानों का विवरण दें	O O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O O	atis_flight
+702	ओंटारियो कैलिफ़ोर्निया से ओरलांडो फ्लोरिडा की उड़ान सूची दे	B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name B-toloc.state_name O O O O	atis_flight
+882	कल मिल्वौकी से डेनवर तक सस्ता किराया क्या है	B-depart_date.today_relative B-fromloc.city_name O B-toloc.city_name O B-cost_relative O O O	atis_flight
+667	लोंग बीच से सैंट लुइस जाना और डल्लास रुक कर दोपहर का खाना है	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-stoploc.city_name O O B-meal_description I-meal_description I-meal_description O	atis_flight
+587	मेम्फिस से टकोमा तक उड़ान ढूँढे	B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+13	क्या मुझे आज सैन फ्रांसिस्को से डेट्रोइट मिशिगन तक की उड़ान मिल सकती है	O O B-depart_date.today_relative B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_name O O O O O O	atis_flight
+731	बुधवार रात को ओकलैंड से साल्ट लेक सिटी की उड़ान सूची दे	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O	atis_flight
+658	कैनसस सिटी से शिकागो तक दोतरफा उड़ान बुक कीजिए	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-round_trip O O O	atis_flight
+558	जो उड़ानें अगले शनिवार को दोपहर के बाद नेवार्क छोड़ती हैं और लॉस एंजिल्स में आती हैं	O O B-depart_date.date_relative B-depart_date.day_name O B-depart_time.period_of_day O B-depart_time.time_relative B-fromloc.city_name O O O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+675	बरबैंक से मिल्वौकी की उड़ान बुक करना चाहता हूँ	B-fromloc.city_name O B-toloc.city_name O O O O O O	atis_flight
+625	बुधवार शाम या गुरुवार सुबह टोरंटो से नेवार्क की एकतरफ़ा उड़ान चाहिए	B-depart_date.day_name B-depart_time.period_of_day O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O B-round_trip O O	atis_flight
+252	ह्यूस्टन से डेनवर जाने वाली सभी उड़ाने की सूची दिखाए	B-fromloc.city_name O B-toloc.city_name O O O O O O O	atis_flight
+70	शिकागो से सिएटल शनिवार सुबह जल्द उड़ानें दीजिए जिनमे भोजन मिलता है	B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day B-depart_time.period_mod B-flight_stop I-flight_stop O B-meal O O	atis_flight
+611	मिल्वौकी से सैंट लुइस सोमवार रात को उड़ान ले	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day O O O	atis_flight
+279	टोरंटो से वाशिंगटन डीसी की उड़ानों की सूची	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O O O	atis_flight
+430	मुझे m80 हवाई जहाज के बारे मैं बताइए	O B-aircraft_code O O O O O O	atis_aircraft
+310	शार्लट हवाई अड्डे से शनिवार दोपहर एक बजे उड़ाने वाली यूएस एयर की सारी उड़ानें दिखायें	B-fromloc.airport_name I-fromloc.airport_name O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time O O B-airline_name I-airline_name I-airline_name O O O O	atis_flight
+401	मुझे न्यू यॉर्क से मियामी की सबसे सस्ता प्रथम श्रेणी की दोतरफा टिकट दिखाएं	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-cost_relative I-cost_relative B-class_type I-class_type O B-round_trip O O	atis_flight
+789	मुझे मिल्वौकी से ओरलांडो की एकतरफ़ा उड़ान दिखाए	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O O	atis_flight
+165	मैं अटलांटा से सैन डिएगो तक उड़ना चाहूंगा	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+213	सोमवार की सुबह इंडियानापोलिस से मेम्फिस तक की उड़ानों और उनके किराए की सूची	B-depart_date.day_name O B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O O O O O O O O	atis_flight airfare
+459	टैम्पा से मिल्वौकी तक उड़ानें क्या हैं	B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+619	कोलंबस से मिल्वौकी तक twa एरलाइन्स से कितना खर्च आता है	B-fromloc.city_name O B-toloc.city_name O B-airline_code O O O O O O	atis_airfare
+824	कौन सी एयरलाइन वाशिंगटन डीसी और कोलंबस ओहायो तक जाती हैं	O O O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name B-toloc.state_name O O O	atis_airline
+699	ओकलैंड से साल्ट लेक सिटी की उड़ान सूची दे	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O	atis_flight
+254	ह्यूस्टन से सैन होसे के लिए उड़ानें की सूची दिखाए	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+520	विमान m80 की बैठने की क्षमता क्या है	O B-aircraft_code O O O O O O	atis_capacity
+679	एल ए में सभी एरपोर्ट की सूची दे	B-city_name I-city_name O O O O O O	atis_airport
+854	डल्लास फोर्ट वर्थ से डल्लास शहर तक कौन सा भूमि परिवहन उपलब्ध है	B-airport_name I-airport_name I-airport_name O B-city_name O O O O O O O O	atis_ground_service
+446	बोस्टन से ओरलांडो तक कौन सी उड़ानें हैं जो न्यू यॉर्क में रुकती हैं	B-fromloc.city_name O B-toloc.city_name O O O O O O B-stoploc.city_name I-stoploc.city_name O O O	atis_flight
+300	एक जुलाई को डलास से बाल्टीमोर को आने वाले उड़ाने दिखाए	B-arrive_date.day_number B-arrive_date.month_name O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+445	डलास और फीनिक्स के बीच उड़ानें क्या हैं	B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+274	शुक्रवार को सैन होसे से डलास के लिए उड़ानें दिखाए	B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+288	आखिरी बुधवार की ओकलैंड से साल्ट लेक सिटी तक उड़ान की सूची	B-flight_mod B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O	atis_flight
+130	इंडियानापोलिस से सिएटल तक उड़ानों की जानकारी की आवश्यकता है	B-fromloc.city_name O B-toloc.city_name O O O O O O O	atis_flight
+282	वाशिंगटन डीसी से मॉन्ट्रियल जानेवाली उड़ानें दिखाए	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O O O	atis_flight
+23	मुझे पिट्सबर्ग से फीनिक्स तक उड़ानों पर उड़ान जानकारी मिल सकती हैं	O B-fromloc.city_name O B-toloc.city_name O O O O O O O O	atis_flight
+161	मैं मिनियापोलिस से सैन डिएगो तक उड़ानों को पसंद करूंगा	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+578	इंडियानापोलिस से ओरलांडो तक 27 दिसंबर को सबसे सस्ता एकतरफ़ा किराया क्या हैं	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number B-depart_date.month_name O O B-cost_relative B-round_trip O O O	atis_airfare
+797	मुझे मॉन्ट्रियल से ओरलांडो की दोतरफा उड़ान दिखाए	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O O	atis_flight
+303	7 जून को डेन्वर से वेस्टचेस्टर काउंटी तक उड़ानें सूचीबद्ध करें	B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+787	मुझे फोर्ट वर्थ से सैन होसे की उड़ान दिखाए	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+121	मुझे टोरंटो से सैंट लुइस की लगातार उड़ान चाहिए	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-flight_stop O O	atis_flight
+332	गुरुवार की सुबह मैं टोरंटो के लिए इंडियानापोलिस से एक लगातार उड़ान चाहते हैं	B-depart_date.day_name O B-depart_time.period_of_day O B-toloc.city_name O O B-fromloc.city_name O O B-flight_stop O O O	atis_flight
+195	क्या मेम्फिस हवाई अड्डे से शहर में परिवहन होगा, जब मैं सुबह 842 में आऊंगा	O B-airport_name I-airport_name I-airport_name O O O O O O O B-period_of_day O O O	atis_ground_service
+744	17 मई को ओंटारियो से वेस्टचेस्टर जो शिकागो रुके एक एकतरफ़ा उड़ान ढूँढे जिसमे रात का खाना हो	B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O O B-round_trip O O O B-meal_description I-meal_description I-meal_description O	atis_flight
+205	टोरंटो से सैन डिएगो तक अमेरिकी एयरलाइंस पर उड़ान की सूची	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_name I-airline_name O O O O	atis_flight
+850	प्रतिबंध ap 58 का क्या मतलब है	O B-restriction_code I-restriction_code O O O O	atis_abbreviation
+290	फिलाडेल्फिया से सैन फ्रांसिस्को जाने वाली उड़ाने की सूची जो डलास मे रुकती हो	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O B-stoploc.city_name O O O	atis_flight
+425	मुझे टोरंटो से सैंट पीटर्सबर्ग तक लगातार उड़ानों और उनका किराया दिखाए	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-flight_stop O O O O O	atis_flight airfare
+429	मुझे m80 हवाई जहाज के बारे मैं बताइए	O B-aircraft_code O O O O O O	atis_aircraft
+647	मुझे मेम्फिस से सिएटल दोतरफा सस्ता किराया की उड़ान चाहिए	O B-fromloc.city_name O B-toloc.city_name B-round_trip B-cost_relative O O O O	atis_flight
+21	बुधवार को शाम 4 बजे से पहले क्लीवलैंड से मियामी पहुँच रहे है	B-depart_date.day_name O O B-arrive_time.time I-arrive_time.time O B-arrive_time.time_relative B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+350	कृपया ओरलांडो से फिलाडेल्फिया तक उड़ानों की सूची दें	O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+684	कैलिफ़ोर्निया एरपोर्ट्स की सूची	B-state_name O O O	atis_airport
+416	मुझे पिट्सबर्ग और वाशिंगटन डीसी के बीच उड़ानें दिखाएं	O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O O O	atis_flight
+484	डेनवर में ज़मीनी परिवहन उपलब्ध है क्या	B-city_name O O O O O O	atis_ground_service
+748	कृपया कैनसस सिटी से नेवार्क की उपलब्ध उड़ान दे	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+53	डेट्रोइट से टोरंटो तक की उड़ानें प्राप्त करें	B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+465	सैन होसे और ह्यूस्टन टेक्सास के बीच लगातार उड़ाने कौनसी हैं	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_name O O B-flight_stop O O O	atis_flight
+476	शुक्रवार को कौनसी उड़ानें हैं जो बाल्टीमोर से सैन फ्रांसिस्को में आती हैं	B-arrive_date.day_name O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+839	नॉर्तवेस्ट से कौन कौन शहर की उड़ान है	B-airline_name O O O O O O O	atis_city
+885	डेनवर में कौन सा भूमि परिवहन हैं	B-city_name O O O O O O	atis_ground_service
+14	क्या मुझे बाल्टीमोर से नेवार्क तक की सुबह की उड़ान मिल सकती है	O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.period_of_day O O O O O	atis_flight
+280	वाशिंगटन डीसी से बोस्टन जानेवाली उड़ानें दिखाए	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O O O	atis_flight
+89	ला गार्डिया मे लिमोसिन की सर्विस कितनी है	B-airport_name I-airport_name O B-transport_type O O O O	atis_ground_fare
+295	एरिज़ोना हवाई अड्डे की सूची	B-state_name O O O O	atis_airport
+49	वाशिंगटन से बोस्टन तक का किराया क्या है	B-fromloc.city_name O B-toloc.city_name O O O O O	atis_airfare
+472	वाशिंगटन डीसी और कोलंबस ओहायो के बीच कौनसी एरलाइन्स हैं ?	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name B-toloc.state_name O O O O O O	atis_flight
+561	कोन सी उड़ानें क्लीवलैंड से इंडियानापोलिस तक अप्रैल 5 को यात्रा करेंगी	O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O O O	atis_flight
+28	क्या बरबैंक तक एक उड़ान है जो कि कैनसस सिटी से आता है	O B-toloc.city_name O O O O O O B-fromloc.city_name I-fromloc.city_name O O O	atis_flight
+577	27 दिसंबर को इंडियानापोलिस से ओरलांडो तक का सबसे सस्ता किराया	B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name O O O B-cost_relative O	atis_airfare
+84	कितने कैनेडियन एयरलाइंस अंतरराष्ट्रीय उड़ानें विमान 320 का उपयोग करती हैं	O B-airline_name I-airline_name I-airline_name O O B-aircraft_code O O O O	atis_quantity
+737	अब मुझे ह्यूस्टन से बोस्टन सबसे सस्ता एकतरफ़ा उड़ान दिखाए	O O B-fromloc.city_name O B-toloc.city_name O B-cost_relative B-round_trip O O	atis_flight
+598	ओकलैंड से साल्ट लेक सिटी की बुधवार की अंतिम उड़ान	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-depart_date.day_name O B-flight_mod O	atis_flight
+535	कौन एयरलाइन as है	O O B-airline_code O	atis_airline
+382	मुझे शार्लट से मिनियापोलिस तक की सभी उड़ानों को दिखाएँ जो सोमवार को दोपहर या बाद में छ्चोड़ दें	O B-fromloc.city_name O B-toloc.city_name O O O O O O O B-depart_date.day_name O B-depart_time.time O B-depart_time.time_relative O O O	atis_flight
+893	टकोमा से सैन होसे तक कौन सी फ्लाइट जाती है	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+418	मुझे ह्यूस्टन से ओरलांडो तक की उड़ानें दिखाएं	O B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+38	सोमवार को फीनिक्स से डेट्रोइट तक की उड़ान ढूंढें	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+783	मुझे उड़ान उस 1207 जो सोमवार को इंडियानापोलिस से शार्लट तक और उड़ान उस 1500 जो सोमवार को शार्लट से मिनियापोलिस तक और उड़ान ट 639 जो मिनियापोलिस से इंडियानापोलिस तक	O O B-airline_code B-flight_number O B-depart_date.day_name O B-toloc.city_name O B-fromloc.city_name O O O B-airline_code B-flight_number O B-depart_date.day_name O B-fromloc.city_name O B-fromloc.city_name O O O B-airline_code B-flight_number O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+287	सूची la	O B-city_name	atis_city
+157	मैं लॉस एंजिल्स से शार्लट आज सुबह उड़ान चाहते हैं	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-depart_date.today_relative B-depart_time.period_of_day O O O	atis_flight
+822	yx कौन सी एयरलाइन हैं	B-airline_code O O O O	atis_airline
+650	मुझे सैन डिएगो से लास वेगास की उड़ान चाहिए	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+504	डेट्रोइट से सैंट पीटर्सबर्ग तक प्रथम श्रेणी का दोतरफा टिकट कितना है	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-class_type I-class_type O B-round_trip O O O	atis_airfare
+815	मुझे उड़ान बताए जो फिलाडेल्फिया से उड़ कर डल्लास जाए	O O O O B-fromloc.city_name O O O B-toloc.city_name O	atis_flight
+365	सोमवार को बरबैंक से सैंट लुइस तक उड़ानें दिखाएं	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+648	मिल्वौकी से लॉस एंजिल्स की उड़ान चाहता हूँ	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+249	डलास से ह्यूस्टन के लिए उड़ानें दिखाए	B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+759	अमेरिकन एरलाइन्स पर सिनसिनाटी से बरबैंक उड़ान की सूची दे	B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+876	किस प्रकार का विमान क्लीवलैंड से डल्लास तक जाता हैं दोपहर से पहले	O O O O B-fromloc.city_name O B-toloc.city_name O O O B-depart_time.period_of_day O B-depart_time.time_relative	atis_aircraft
+348	कृपया सोमवार सुबह नैशविल से मेम्फिस तक की सभी उड़ानों को सूचीबद्ध करें	O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O O O O O O O	atis_flight
+826	कौन सी एरलाइन्स 6 जून को सुबह 6 से 10 के बीच लव फील्ड से उड़ती है	O O O B-depart_time.start_time B-depart_date.month_name O O B-depart_date.day_number O B-depart_time.end_time O O B-fromloc.airport_name I-fromloc.airport_name O O O	atis_airline
+33	न्यू यॉर्क के रास्ते होते हुए टैम्पा से मॉन्ट्रियल जाने वाली उड़ान ढूंढे	B-stoploc.city_name I-stoploc.city_name O O O O B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+364	सोमवार को बरबैंक से सैंट लुइस तक उड़ानें दिखाएं	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+838	नॉर्तवेस्ट से कौन कौन शहर की उड़ान है	B-airline_name O O O O O O O	atis_city
+872	क्या खाना परोसा जाता है अमेरिकन फ्लाइट 665673 पर जो मिल्वौकी से सिएटल जाती है	O B-meal O O O B-airline_name O B-flight_number O O B-fromloc.city_name O B-toloc.city_name O O	atis_meal
+604	मुझे फीनिक्स से मिल्वौकी तक उड़ाने दे	O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+848	hp का क्या मतलब है	B-airline_code O O O O	atis_abbreviation
+178	वाशिंगटन डीसी से सैन डिएगो की उड़ान पसंद करूँगा	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+564	जो उड़ानें कैनसस सिटी से लॉस एंजिल्स तक अप्रैल नौवें पर हैं	O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O O	atis_flight
+545	कैनसस सिटी से अटलांटा के लिए सोमवार की सुबह जल्दी कौनसी उड़ानें निकलती हैं	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O B-depart_time.period_of_day B-depart_time.period_mod O O O O	atis_flight
+589	बरबैंक से मिल्वौकी जो सैंट लुइस रुकती हो दोतरफा सभी उड़ान दे	B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name I-stoploc.city_name O O B-round_trip O O O	atis_flight
+878	कौन सी युनाइटेड एरलाइन्स 8 जून को वेस्टचेस्टर कंट्री से सिनसिनाटी	O O B-airline_name I-airline_name B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+29	क्या यह उड़ान रात्रिभोज की सेवा देता है	O O O B-meal_description O O O O	atis_flight
+804	मुझे 28 फरवरी 1994 का सैन फ्रांसिस्को से ह्यूस्टन की सबसे सस्ता दोतरफा किराया की उड़ान दिखाए	O B-depart_date.day_number B-depart_date.month_name B-depart_date.year O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-cost_relative B-round_trip O O O O	atis_airfare
+626	मुझे टोरंटो से सैंट लुइस की उड़ान दे	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+776	मुझे सभी दोतरफा बिना रुके उड़ान मियामी से न्यू यॉर्क की दिखाए	O O B-round_trip B-flight_stop I-flight_stop O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O	atis_flight
+3	और अब मुझे भूमि परिवहन दिखाये ताकि मैं देर रात बोस्टन पहुच जाउ.	O O O O O O O O B-period_of_day B-period_of_day B-city_name O O	atis_ground_service
+762	कृपया मिल्वौकी से भूमि परिवहन दे	O B-city_name O O O O	atis_ground_service
+618	विमान l1011 में कितने यात्री आ सकते है	O B-aircraft_code O O O O O O	atis_capacity
+8	क्या 6 अप्रैल बुधवार को लोंग बीच से कोलंबस तक की उड़ानें हैं	O B-depart_date.day_number B-depart_date.month_name B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+832	मिल्वौकी और पिट्सबर्ग के बीच कौन सी उड़ान है	B-fromloc.city_name O B-toloc.city_name O O O O O O	atis_flight
+676	डेट्रोइट से सैंट पीटर्सबर्ग दोतरफा प्रथम श्रेणी की किराया की सूची दे	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-round_trip B-class_type I-class_type O O O O O	atis_airfare
+767	ओरलांडो से कैनसस सिटी की उड़ान दिखाए	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+186	मैं अगले बुधवार को कैनसस शहर से शिकागो की यात्रा करना चाहता हूं	O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+486	क्या ला गार्डिया हवाई अड्डे से न्यू यॉर्क शहर में जमीन परिवहन उपलब्ध है	O B-airport_name I-airport_name O O O B-city_name I-city_name I-city_name O O O O O	atis_ground_service
+160	मैं मियामी से न्यू यॉर्क तक उड़ानों को चाहूंगा	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+716	एल ए में सभी एरपोर्ट की सूची दे	B-city_name I-city_name O O O O O O	atis_airport
+258	ला गार्डिया से बरबैंक की उड़ानों की सूची दिखाए	B-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name O O O O O	atis_flight
+505	इंडियानापोलिस से मेम्फिस तक प्रथम श्रेणी का दोतरफा किराया क्या है ?	B-fromloc.city_name O B-toloc.city_name O B-class_type I-class_type O B-round_trip O O O O	atis_airfare
+642	मुझे 7 जून को 3 बजे शाम के बाद डेनवर से वेस्टचेस्टर काउंटी की उड़ान चाहिए	O B-depart_date.day_number B-depart_date.month_name O B-depart_time.time O O O B-depart_time.time_relative B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+142	: मुझे मेम्फिस से सिएटल तक एक दोतरफा उड़ान चाहिए	O O B-fromloc.city_name O B-toloc.city_name O O B-round_trip O O	atis_flight
+247	शिकागो से सैन डिएगो के लिए उड़ानों दिखाए	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+777	मुझे सभी दोतरफा बिना रुके उड़ान न्यू यॉर्क से मियामी की दिखाए	O O B-round_trip B-flight_stop I-flight_stop O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O	atis_flight
+786	सुबह 10 बजे के पहले कोलंबस से शिकागो प्रथम श्रेणी की उड़ान दिखाए	O B-depart_time.time O O B-depart_time.time_relative B-fromloc.city_name O B-toloc.city_name B-class_type I-class_type O O O	atis_flight
+868	विमान म80 में बैठने की क्या क्षमता हैं	O B-aircraft_code O O O O O O	atis_capacity
+489	d9s क्या हैं	B-aircraft_code O O	atis_abbreviation
+579	25 दिसंबर को इंडियानापोलिस से ओरलांडो तक सबसे सस्ता दोतरफा किराया	B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name O O B-cost_relative B-round_trip O	atis_airfare
+541	जो उड़ानों ओरलांडो से क्लीवलैंड तक उपलब्ध हैं जो करीब 10 बजे पहुंचें	O O B-fromloc.city_name O B-toloc.city_name O O O O B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time O	atis_flight
+385	मुझे सुबह की फिलाडेल्फिया से फोर्ट वर्थ की सभी उड़ानें दिखाओ	O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+760	कृपया लॉस एंजिल्स से शार्लट उड़ान की सूची दे	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+318	मैं सोमवार सुबह कोलंबस से इंडियानापोलिस तक उड़ना चाहता हूं	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+338	कृपया कैनसस सिटी से नेवार्क की उड़ान ढूंढे	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+103	मुझे मिल्वौकी से सिएटल तक उड़ान की ज़रूरत है	O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+109	मुझे साल्ट लेक सिटी से फीनिक्स जाने वाली उड़ान चाहिए जो बुधवार को शाम 5 बजे बाद जाती हो	O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O B-depart_date.day_name O O B-depart_time.time I-depart_time.time B-depart_time.time_relative O O	atis_flight
+185	मैं 10 जून को सैन डिएगो से ह्यूस्टन तक उड़ना चाहता हूं	O B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+531	डेन्वर में किस प्रकार के जमीनी परिवहन उपलब्ध हैं	B-city_name O O O O O O O O	atis_ground_service
+428	मुझे नैशविल हवाई अड्डे से ज़मीन परिवहन के बारे में बताओ	O B-airport_name I-airport_name I-airport_name O O O O O O O	atis_ground_service
+691	ह्यूस्टन से मिल्वौकी की उड़ान की सूची	B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+717	बरबैंक से अलास्का एरलाइन्स की उड़ानो की सूची दे	B-fromloc.city_name O B-airline_name I-airline_name O O O O O	atis_flight
+609	लास वेगास में भूमि परिवहन	B-city_name I-city_name O O O	atis_ground_service
+551	जो उड़ानें टैम्पा से निकलती हैं और शाम को सिनसिनाटी पहुँचती हैं	O O B-fromloc.city_name O O O O B-arrive_time.period_of_day O B-toloc.city_name O O	atis_flight
+473	जून 6 को लव फील्ड को क्या क्या उड़ाने आते हैं	B-arrive_date.month_name B-arrive_date.day_number O B-toloc.airport_name I-toloc.airport_name O O O O O O	atis_flight
+890	कौन सी फ्लाइट एप्रिल 12 को शिकागो से उड़ कर इंडियानापोलिस सुबह को पहुचे	O O O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O O O B-toloc.city_name B-arrive_time.period_of_day O O	atis_flight
+639	मुझे एक उड़ान चाहिए जो ओकलैंड से उड़ कर साल्ट लेक सिटी पहुँचे	O O O O O B-fromloc.city_name O O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O	atis_flight
+95	मुझे सोमवार को डेनवर से साल्ट लेक सिटी की उड़ान चाहिए	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O	atis_flight
+230	कैलिफ़ोर्निया नेवादा एरिज़ोना हवाई अड्डों की सूची	B-state_name B-state_name B-state_name O O O O	atis_airport
+795	मुझे बरबैंक से टकोमा की दोतरफा उड़ान दिखाए	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O O	atis_flight
+330	मुझे शुक्रवार की रात को नेवार्क से लॉस एंजिल्स की उड़ान चाहिए	O B-depart_date.day_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+112	मुझे सैन डिएगो से वाशिंगटन डीसी तक उड़ान की जरूरत है	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O O O O	atis_flight
+322	रविवार दोपहर को न्यूयॉर्क से लास वेगास	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+59	मुझे अगले बुधवार को क्लीवलैंड से मियामी जानेवाली सभी दोतरफा उड़ानो की किराया दिखाए	O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O B-round_trip O O O O	atis_airfare
+281	वाशिंगटन डीसी से मॉन्ट्रियल तक की उड़ानों की सूची	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O O O O O	atis_flight
+339	कृपया करके लास वेगास से मिशिगन जाने वाली उड़ान ढूंढे	O O B-fromloc.city_name I-fromloc.city_name O B-toloc.state_name O O O O	atis_flight
+665	मुझे मियामी से शिकागो तक अमेरिकन एरलाइन्स की उड़ान चाहिए	O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O O O	atis_flight
+720	बोसटन एरपोर्ट से बोस्टन शहर की दूरी माइल्स में दे	B-fromloc.airport_name I-fromloc.airport_name O B-city_name O O O O O O	atis_distance
+197	क्या ओंटारियो हवाई अड्डे पर टैक्सी सेवा है	O B-airport_name I-airport_name I-airport_name O B-transport_type I-transport_type O	atis_ground_service
+438	कौनसी एयरलाइन बाल्टीमोर से प्रस्थान कर रहे हैं	O O B-fromloc.city_name O O O O O	atis_airline
+36	रविवार को मेम्फिस से सिनसिनाटी जानेवाली उड़ाने दिखाए	B-depart_date.day_name O B-toloc.city_name O B-fromloc.city_name O O O	atis_flight
+856	एयरलाइन wn क्या है	O B-airline_code O O	atis_airline
+548	जो एटलांटा से चलाने वाली उड़ानें और टोरंटो पर पहुँचने वाली उड़ानें हैं	O B-fromloc.city_name O O O O O B-toloc.city_name O O O O O	atis_flight
+470	ua का क्या मतलब हैं	B-airline_code O O O O	atis_abbreviation
+66	कृपया मुझे न्यू यॉर्क शहर से नैशविल तक बुधवार को 5 बजे के बाद प्रस्थान करने वाली उड़ानें दें	O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_time.time I-depart_time.time O B-depart_time.time_relative O O O O O	atis_flight
+567	जो दोतरफा यात्रा की उड़ानें अगले मंगलवार को शिकागो से निकलती हैं और लगभग 6 बजे के आसपास डेट्रोइट पहुंचती हैं	O B-round_trip O O O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O O O O B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time O O B-toloc.city_name O O	atis_flight
+390	मुझे मॉन्ट्रियल से ओरलांडो और लोंग बीच तक उड़ान दिखाएं	O B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+248	दोपहर के पहले सिनसिनाटी से टैम्पा तक की उड़ानों की सूची	B-depart_time.period_of_day O B-depart_time.time_relative B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+244	शनिवार दोपहर को शार्लट से उड़ानों की सूची	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O O O O	atis_flight
+617	वाशिंगटन डीसी से कितने नॉर्तवेस्ट फ्लाइट्स के उड़ान भारती है	B-fromloc.city_name B-fromloc.state_code O O B-airline_name I-airline_name O O O O	atis_flight
+358	बोस्टन से साल्ट लेक तक डेल्टा एयरलाइंस दिखाएं	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_name I-airline_name O	atis_flight
+373	मॉन्ट्रियल से ओरलांडो तक सभी डेल्टा एयरलाइनों को दिखाएं	B-fromloc.city_name O B-toloc.city_name O O B-airline_name O O O	atis_flight
+845	किराया कोड h का क्या मतलब है	O O B-fare_basis_code O O O O	atis_abbreviation
+458	टैम्पा से मिल्वौकी तक उड़ानें क्या हैं	B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+236	वाशिंगटन डीसी से मॉन्ट्रियल के लिए किराए की सूची दिखाए	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O O O O O O	atis_airfare
+713	डेल्टा फ्लाइट का सिएटल से साल्ट लेक सिटी तक की उड़ाने का किराया दे	B-airline_name O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O O	atis_capacity
+869	विमान म80 में बैठने की क्या क्षमता हैं	O B-aircraft_code O O O O O O	atis_capacity
+403	मुझे सैंट पीटर्सबर्ग और डेट्रोइट के बीच सबसे सस्ता दोतरफा यात्रा दिखाएं जो 7 बजे से पहले आता है	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-cost_relative I-cost_relative B-round_trip O O O B-arrive_time.time I-arrive_time.time B-arrive_time.time_relative I-arrive_time.time_relative O O	atis_flight
+228	शुक्रवार दोपहर के बाद ह्यूस्टन से मिल्वौकी जाने वाली अमेरिकन एरलाइन्स की विमान सेवाएँ दिखाइए	B-depart_date.day_name B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name O O B-airline_name I-airline_name O O O O	atis_flight
+399	मुझे ओरलांडो से मॉन्ट्रियल तक दोतरफा यात्रा की उड़ान दिखाएं	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O O O O	atis_flight
+191	क्या डेनवर हवाई अड्डे से भूमि परिवहन मिलता है	O B-airport_name I-airport_name I-airport_name O O O O O	atis_ground_service
+6	डीसी 10 विमानों का इस्तेमाल करते हुए डलास और फीनिक्स के बीच कोई भी उड़ानें हैं	B-aircraft_code I-aircraft_code O O O O O B-fromloc.city_name O B-toloc.city_name O O O O O O	atis_flight
+356	बोस्टन से साल्ट लेक सिटी तक डेल्टा एयरलाइंस को दिखाएं	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-airline_name I-airline_name O O	atis_flight
+461	सोमवार की उड़ानें क्या हैं जो शार्लट नॉर्थ कैरोलिना से फीनिक्स एरिज़ोना तक यात्रा करते हैं	B-depart_date.day_name O O O O O B-fromloc.city_name B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-toloc.state_name O O O O	atis_flight
+471	२० अप्रैल को दोपहर से पहले इंडियानापोलिस से सैन डिएगो को जाने वाली कौन सी उड़ानों उपलब्ध हैं	B-depart_date.day_number B-depart_date.month_name O B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O O O	atis_flight
+612	न्यू यॉर्क का ला गार्डिया और डाउनटाउन में कितनी दूरी हैं	B-city_name I-city_name O B-airport_name I-airport_name O O O O O O	atis_distance
+98	मुझे लास वेगास से ओंटारियो तक उड़ान की ज़रूरत है	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+481	सिनसिनाटी से टैम्पा तक सुबह की उड़ानें क्या हैं	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O O O O	atis_flight
+636	मुझे क्लीवलैंड से मिल्वौकी तक बुधवार शाम 5 बजे के बाद जाने वाली उड़ान की जानकारी चाहिए	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_time.time O O B-depart_time.time_relative O O O O O O	atis_flight
+271	फीनिक्स एरिजोना से ओंटारियो कैलिफोर्निया तक बुधवार के दिन के उड़ानों की सूची बनाओ	B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name B-toloc.state_name O B-depart_date.day_name O O O O O O O	atis_flight
+255	इंडियानापोलिस से सोमवार को मेम्फिस की उड़ानों की सूची दिखाए	B-fromloc.city_name O B-depart_date.day_name O B-toloc.city_name O O O O O	atis_flight
+392	फोर्ट वर्थ में ज़मीनी यातायात दिखाइए	B-city_name I-city_name O O O O	atis_ground_service
+888	कौन सी फ्लाइट मियामी से न्यू यॉर्क जाती है और वापिस आती है	O O O B-toloc.city_name O B-fromloc.city_name I-fromloc.city_name O O O O O O	atis_flight
+863	बोस्टन से साल्ट लेक सिटी का कम महेंगा किराया क्या है	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-cost_relative I-cost_relative O O O	atis_airfare
+516	733 की बैठने की क्षमता क्या है	B-aircraft_code O O O O O O	atis_capacity
+469	q का मतलब क्या होता है	B-fare_basis_code O O O O O	atis_abbreviation
+117	मुझे शुक्रवार दोपहर को जून मे न्यूयॉर्क से क्लीवलैंड तक उड़ान की आवश्यकता हैi	O B-depart_date.day_name B-depart_time.period_of_day O B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+122	मुझे सुबह को एटलांटा से वाशिंगटन डीसी प्रस्थान करने वाली दोतरफा उड़ान और किराये की जरूरत है	O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O O B-round_trip O O O O O O	atis_flight airfare
+529	लास वेगास एयरपोर्ट पर किस प्रकार का जमीनी परिवहन है	B-airport_name I-airport_name I-airport_name O O O O O O O	atis_ground_service
+602	25 दिसंबर के पास इंडियानापोलिस से ओरलांडो की सस्ता दोतरफा उड़ान	B-depart_date.day_number B-depart_date.month_name O B-depart_time.time_relative B-fromloc.city_name O B-toloc.city_name O B-cost_relative B-round_trip O	atis_flight
+359	अगले बुधवार को कैनसस शहर से शिकागो 7 बजे तक पहुंचने के लिए उड़ानें और किराया दिखाएं	B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-arrive_time.time I-arrive_time.time B-arrive_time.time_relative O O O O O O O	atis_flight airfare
+203	टोरंटो से सैन डिएगो की उड़ान की सूची	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+135	मुझे सैंट लुइस से मिल्वौकी को बुधवार दोपहर को उड़ान भरने की जरूरत है	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O O O O O O	atis_flight
+537	कौन एयरलाइन us है	O O B-airline_code O	atis_airline
+686	सिएटल से साल्ट लेक सिटी तक डेल्टा एरलाइन्स की सूची	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-airline_name O O O	atis_flight
+752	कृपया मिल्वौकी से फिलाडेल्फिया की उड़ान दे	O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+672	क्या इंडियानापोलिस एरपोर्ट पर भूमि परिवहन उपलब्ध है	O B-airport_name I-airport_name O O O O O	atis_ground_service
+189	क्या 10 जून 3 बजे के बाद ह्यूस्टन से नेवार्क के लिए अमेरिकन एयरलाइंस की उड़ान है	O B-depart_date.day_number B-depart_date.month_name B-depart_time.time I-depart_time.time O B-depart_time.time_relative B-fromloc.city_name O B-toloc.city_name O O B-airline_name I-airline_name O O O	atis_flight
+133	मुझे शनिवार को वाशिंगटन से टोरंटो तक उड़ानों पर किराए की जरूरत है	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O O O O O	atis_airfare
+751	कृपया 16 जून को कैनसस सिटी से शिकागो की सभी उड़ान दे	O B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+662	मुझे मिल्वौकी से ओरलांडो एकतरफ़ा टिकेट चाहिए जो बुधवार शाम या गुरुवार सुबह की हो	O B-fromloc.city_name O B-toloc.city_name B-round_trip O O O B-depart_date.day_name B-depart_time.period_of_day B-or B-depart_date.day_name B-depart_time.period_of_day O O	atis_airfare
+82	कितने कनाडाई एयरलाइंस dh8 विमानों का उपयोग करते हैं	O B-airline_name I-airline_name B-aircraft_code O O O O O	atis_quantity
+572	10 जून को बरबैंक से टकोमा तक कोई उड़ान है क्या	B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+296	शार्लट से लास वेगास तक का सबसे सस्ता किराया की सूची	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-cost_relative O O O	atis_airfare
+530	d9s किस तरह का विमान हैं	B-aircraft_code O O O O O	atis_aircraft
+283	वाशिंगटन डीसी से पिट्सबर्ग तक उड़ानों की सूची करें	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O O O O O	atis_flight
+423	मुझे सुबह की उड़ानें मेम्फिस से न्यू यॉर्क शहर तक दिखाएं	O B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O	atis_flight
+171	मैं टोरंटो डेट्रोइट से सैंट लुइस तक उड़ान भरने वाली एयरलाइन चाहूंगा	O B-fromloc.city_name B-toloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O	atis_airline
+790	मुझे इंडियानापोलिस से मेम्फिस सुबह 10 के पहले किसी दिन की एकतरफ़ा उड़ान दिखाए	O B-fromloc.city_name O B-toloc.city_name O B-depart_time.time O B-depart_time.time_relative O O O B-round_trip O O	atis_flight
+218	क्लीवलैंड से नैशविल तक की सभी उड़ानों की सूची	B-fromloc.city_name O B-toloc.city_name O O O O O O	atis_flight
+722	सैन फ्रांसिस्को इंटरनॅशनल एरपोर्ट से सैन फ्रांसिस्को शहर की दूरी माइल्स में दे	B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name I-toloc.city_name O O O O O O	atis_distance
+371	मिल्वौकी से सैंट लुइस तक कल शाम उड़ान दिखाएं	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.today_relative B-depart_time.period_of_day O O	atis_flight
+663	मुझे उस एर पर एक रेड आइ फ्लाइट जो न्यू यॉर्क से लॉस एंजिल्स तक जाती हैं शनिवार शाम की चाहिए	O B-airline_name I-airline_name O O B-flight_mod I-flight_mod O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-depart_date.day_name B-depart_time.period_of_day O O	atis_flight
+610	ह्यूस्टन से डल्लास तक आधी रात से पहले	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day I-depart_time.period_of_day O B-depart_time.time_relative	atis_flight
+96	मुझे इंडियानापोलिस से 1205 बजे सिएटल पहुंचने के लिए उड़ान की आवश्यकता है	O B-fromloc.city_name O B-arrive_time.time I-arrive_time.time B-toloc.city_name O O O O O O O	atis_flight
+71	मुझे अगले बुधवार को क्लीवलैंड से मियामी जानेवाली सभी दोतरफा उड़ाने दिखाए	O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O B-round_trip O O	atis_flight
+75	सैंट लुइस से बरबैंक तक मंगलवार रात एक उड़ान	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O O	atis_flight
+174	मैं एक अमेरिकी उड़ान पर आज दोपहर सिनसिनाटी से बरबैंक तक उड़ना चाहता हूं	O O B-airline_name O O B-depart_date.today_relative B-depart_time.period_of_day B-toloc.city_name O B-fromloc.city_name O O O O	atis_flight
+721	न्यू_यॉर्क ला गार्डिया एरपोर्ट से न्यू यॉर्क शहर की दूरी माइल्स में दे	B-fromloc.city_name B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O B-city_name I-city_name I-city_name O O O O O	atis_distance
+711	शनिवार सुबह टोरंटो से वाशिंगटन डीसी की उड़ानो की सूची दे	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O O O O	atis_flight
+183	वेस्टचेस्टर काउंटी के लिए दो उड़ानें बुक करना चाहता हूँ	B-toloc.city_name I-toloc.city_name O O O O O O O O	atis_flight
+369	कैनसस सिटी से ओरलांडो जानेवाली उड़ानें दिखाए	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+646	सुबह जल्दी इंडियानापोलिस से सिएटल तक दोतरफा सस्ता किराया एक उड़ान चाहता हूँ	O O B-fromloc.city_name O B-toloc.city_name O B-round_trip B-cost_relative O O O O O	atis_flight
+246	शिकागो से सैन डिएगो के लिए उड़ानों दिखाए	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+250	रविवार की दोपहर डलास से ह्यूस्टन तक आनेवाली उड़ानो की सूची दिखाएँ	B-arrive_date.day_name O B-arrive_time.period_of_day B-fromloc.city_name O B-toloc.city_name O O O O O O	atis_flight
+170	मैं सैन डिएगो से सिएटल तक उड़ना चाहूंगा	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+343	कृप्या करके गुरूवार को सैंट पीटर्सबर्ग से मियामी जाने वाली उड़ान ढूंढे	O O B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+871	क्या खाना उपलब्ध है डल 468 जो सैन फ्रांसिस्को सुबह 950 पहुचती है	O B-meal O O B-airline_code B-flight_number O B-toloc.city_name I-toloc.city_name O B-arrive_time.time O O	atis_meal
+342	कृपया सैन डिएगो से टोरंटो की अलास्का एरलाइन्स की उड़ान ढूंढे	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O O O	atis_flight
+110	मुझे साल्ट लेक से नेवार्क एरपोर्ट जाने वाली उड़ान चाहिए जो शनिवार शाम 6 बजे से पहले पहुच जाती है	O B-fromloc.city_name I-fromloc.city_name O B-toloc.airport_name I-toloc.airport_name O O O O O B-arrive_date.day_name B-arrive_time.time I-arrive_time.time O B-arrive_time.time_relative I-arrive_time.time_relative O O O	atis_flight
+289	बोस्टन शहर में लिमोसिन का दर दिखाइए	B-city_name I-city_name O B-transport_type O O O	atis_ground_fare
+152	मुझे टोरंटो से डेट्रोइट की उड़ान चाहिए	O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+105	मुझे शनिवार शाम को न्यू यॉर्क से लॉस एंजिल्स जाने के लिए यूएस एयर की एक उड़ान चाहिए	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-airline_name I-airline_name O O O O	atis_flight
+419	इंडियानापोलिस से मेम्फिस तक उड़ानें मुझे दिखाएं	B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+861	शार्लट एरपोर्ट से शार्लट शहर तक कौन भूमि परिवहन है	B-airport_name I-airport_name O B-city_name O O O O O O	atis_ground_service
+757	कृपया क्लीवलैंड से डल्लास जो दोपहर से पहले छ्चोड़े उड़ान दे	O B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O B-depart_time.time_relative O O O	atis_flight
+387	डेल्टा उड़ान 486 दिखाएँ	B-airline_name O B-flight_number O	atis_flight
+657	मुझे सैन फ्रांसिस्को से उड़ कर सैन_डिएगो की उड़ान चाहिए	O B-fromloc.city_name I-fromloc.city_name O O O B-toloc.city_name O O O	atis_flight
+570	और मिल्वौकी से अटलांटा तक 10 बजे से पहले रोजाना	O B-fromloc.city_name O B-toloc.city_name O B-depart_time.time O O B-depart_time.time_relative B-flight_days	atis_flight
+292	वाशिंगटन से बोस्टन तक शनिवार की उड़ानें	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O	atis_flight
+641	मुझे क्लीवलैंड से डल्लास तक जाने वाली उड़ानो के फ्लाइट संख्या चाहिए	O B-fromloc.city_name O B-toloc.city_name O O O O O O O O	atis_flight_no
+370	मिनियापोलिस से कैनसस सिटी जानेवाली उड़ानें दिखाए	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+67	मुझे न्यू यॉर्क से लास वेगास तक की लगातार उड़ानें दें	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-flight_stop O O	atis_flight
+34	नेवार्क से नैशविल तक 630 बजे के आसपास अमेरिकी उड़ान ढूंढें	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time O B-depart_time.time_relative B-airline_name O O	atis_flight
+90	टोरंटो इंटरनॅशनल में लिमोसिन सेवा का खर्च कितना है ?	B-airport_name I-airport_name O B-transport_type O O O O O O	atis_ground_fare
+2	और सैंट लुइस से बरबैंक तक एक उड़ान जो मंगलवार दोपहर को छोड़ देता है	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O B-depart_date.day_name B-depart_time.period_of_day O O O O	atis_flight
+763	कृपया मुझे प्रथम श्रेणी का इंडियानापोलिस से मेम्फिस एकतरफ़ा उड़ान जो 10 से पहले छ्चोड़े दिखाए	O O B-class_type I-class_type O B-fromloc.city_name O B-toloc.city_name B-round_trip O O B-depart_time.time O B-depart_time.time_relative O O	atis_flight
+37	रविवार को मेम्फिस से सिनसिनाटी के लिए उड़ान ढूंढें	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+253	ह्यूस्टन से फीनिक्स जाने वाली सभी उड़ाने की सूची दिखाए	B-fromloc.city_name O B-toloc.city_name O O O O O O O	atis_flight
+411	मुझे जेएफके से मियामी तक प्रथम श्रेणी और कोच उड़ानें दिखाएं	O B-fromloc.airport_code O B-toloc.city_name O B-class_type I-class_type O B-class_type O O	atis_flight
+550	जो फिलाडेल्फिया से उड़ान भरने और अटलांटा पहुँचने वाली उड़ानें हैं	O B-fromloc.city_name O O O O B-toloc.city_name O O O O	atis_flight
+243	बोस्टन से पिट्सबर्ग के लिए रोजाना जानेवाली उड़ानों को दिखायें	B-fromloc.city_name O B-toloc.city_name O O B-flight_days O O O O	atis_flight
+261	रविवार को इंडियानापोलिस मियामी से उड़ानों की सूची दिखाए	B-depart_date.day_name O B-toloc.city_name B-fromloc.city_name O O O O O	atis_flight
+192	क्या साल्ट लेक सिटी हवाई अड्डे से भूमि परिवहन मिलता है	O B-airport_name I-airport_name I-airport_name I-airport_name I-airport_name O O O O O	atis_ground_service
+414	मुझे लॉस एंजिल्स और डलास के बीच की उड़ान दिखाएं	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+128	मिल्वौकी से टैम्पा तक उड़ान सूचना की आवश्यकता है	B-fromloc.city_name O B-toloc.city_name O O O O O O	atis_flight
+150	मुझे फ्रांसिस्को से सैंट पीटर्सबर्ग जाने वाली उड़ान के बारे मैं बताइए	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O O	atis_flight
+806	मुझे टैम्पा से सैन फ्रांसिस्को की डेल्टा उड़ान दिखाए	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_name O O	atis_flight
+232	न्यू यॉर्क में हवाई अड्डो से डाउनटाउन तक की दूरी दिखाए	B-city_name I-city_name O O O O O O O O O	atis_distance
+807	मुझे मिल्वौकी और इंडियाना के बीच की उड़ान दिखाए	O B-fromloc.city_name O B-toloc.state_name O O O O O	atis_flight
+841	ap 20 का क्या मतलब हैं	B-restriction_code I-restriction_code O O O O	atis_abbreviation
+5	टॉवर एयर पर नाश्ता परोसा जाता है	B-airline_name I-airline_name O B-meal_description O O O	atis_meal
+813	टैम्पा से शार्लट रविवार सुबह को	B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+576	क्या आप सभी डेल्टा उड़ान की सूची दे सकते है जो साल्ट लेक सिटी से न्यू यॉर्क अगले शनिवार शाम 6 बजे से पहले पहुचे	O O O B-airline_name O O O O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_date.date_relative B-depart_date.day_name O B-arrive_time.time O O B-arrive_time.time_relative O	atis_flight
+880	सैन फ्रांसिस्को से डेनवर तक सबसे सस्ता उड़ान	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-cost_relative O	atis_flight
+573	शार्लट एरपोर्ट पर us एर के कितने प्रकार के विमान हैं	B-city_name I-city_name O B-airline_name I-airline_name O O O O O O	atis_aircraft
+413	मुझे ह्यूस्टन और ओरलांडो के बीच उड़ान दिखाएं	O B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+297	7 जून को सिनसिनाटी से वेस्टचेस्टर काउंटी तक उड़ानों की सूची	B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+523	733 विमान पर बैठने की क्षमता क्या है	B-aircraft_code O O O O O O O	atis_capacity
+724	जून 6 को सिनसिनाटी से डेनवर की उड़ानो की सूची दे	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+57	मुझे मंगलवार को सुबह शार्लट से बाल्टीमोर तक उड़ान दें	O B-depart_date.day_name O B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+426	मुहे टोरंटो से सैंट पीटर्सबर्ग तक लगातार उड़ानों दिखाए	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-flight_stop O O	atis_flight
+204	टोरंटो से सैन डिएगो की उड़ान की सूची	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+257	कैनसस सिटी से डेनवर के लिए उड़ानों की सूची दिखाए	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O O	atis_flight
+846	किराया कोड qo का क्या मतलब है	O O B-fare_basis_code O O O O	atis_abbreviation
+770	मंगलवार शाम मिल्वौकी से सैंट लुइस की उड़ान दिखाए	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+221	मेम्फिस से मियामी तक की सभी उड़ानों की सूची	B-fromloc.city_name O B-toloc.city_name O O O O O O	atis_flight
+442	बोस्टन और वाशिंगटन डीसी के बीच उड़ानों के लिए किराए क्या हैं	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O O O O O O O	atis_airfare
+212	सोमवार की सुबह इंडियानापोलिस से मेम्फिस तक की उड़ानों और उनके किराए की सूची	B-depart_date.day_name O B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O O O O O O O O	atis_flight airfare
+597	मिल्वौकी से टोरंटो तक की उड़ाने दे	B-toloc.city_name O B-fromloc.city_name O O O O	atis_flight
+793	मुझे टोरंटो से डेट्रोइट की दोतरफा उड़ान की किराया डेल्टा नॉर्तवेस्ट उस एर और युनाइटेड एरलाइन्स पर दिखाए	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O O O O O B-airline_name I-airline_name O B-airline_name I-airline_name O O	atis_airfare
+784	मुझे सोमवार को शार्लट से मिनियापोलिस तक की उस 1500 की उड़ान दिखाए	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O B-airline_code B-flight_number O O O	atis_flight
+827	डेनवर को कौन सी एरलाइन्स सेवा देती है	B-city_name O O O O O O O	atis_airline
+705	किराया कोड क्यू के आधार पर शनिवार की ओरलांडो से टकोमा की उड़ान सूची दे	O O B-fare_basis_code O O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+361	आज के लिए बरबैंक से मिल्वौकी तक उड़ानें दिखाएं	B-depart_date.today_relative O O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+52	टोरंटो से सैन डिएगो तक की उड़ान प्राप्त करें	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+101	मुझे मेम्फिस से टकोमा जाने वाली उड़ान चाहिए जो लास एंजेलिस होते हुए जाए	O B-fromloc.city_name O B-toloc.city_name O O O O O B-stoploc.city_name I-stoploc.city_name O O O	atis_flight
+437	कौन - सा एयरलाइन बोस्टन से सैन डिएगो तक उड़ान भरता है	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_airline
+496	विमान 73s पर बैठने की क्षमता क्या है	O B-aircraft_code O O O O O O	atis_capacity
+765	अमेरिकन एरलाइन्स की उड़ान मिल्वौकी से फीनिक्स शनिवार को	B-airline_name I-airline_name O O B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name O	atis_flight
+692	शुक्रवार शाम ह्यूस्टन से मिल्वौकी की उड़ान सूची	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+196	क्या कोई एक एयरलाइन है जो बरबैंक से मिल्वौकी मिल्वौकी से सैंट लुइस और सैंट लुइस से बरबैंक तक उड़ती है	O O O O O O B-fromloc.city_name O B-toloc.city_name B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_airline
+320	रविवार को न्यूयॉर्क शहर से लास वेगास और मेम्फिस से लास वेगास	B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+265	न्यू यॉर्क से ला की उड़ानों की सूची	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+440	डेट्रोइट से वेस्टचेस्टर काउंटी तक प्रस्थान का समय क्या है	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-flight_time I-flight_time I-flight_time O O	atis_flight_time
+202	लास वेगास से बाल्टीमोर इकॉनमी	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-economy	atis_flight
+326	अब मुझे न्यू यॉर्क से मियामी तक सभी दोतरफा उड़ान दिखाएं	O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-round_trip O O	atis_flight
+22	क्लीवलैंड से नैशविल की शुक्रवार सुबह की उड़ान	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O O	atis_flight
+306	जून 7 को वेस्टचेस्टर काउंटी से डेन्वर तक उड़ानें सूचीबद्ध करें	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+137	मुझे मिल्वौकी मैं एक कार किराए पर चाहिए	O B-city_name O O B-transport_type O O O	atis_ground_service
+645	सुबह जल्दी लॉस एंजिल्स से शार्लट तक एक उड़ान चाहता हूँ	B-depart_time.period_of_day B-depart_time.period_mod B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+816	उड़ान ओंटारियो से वेस्टचेस्टर जो शिकागो रुके	O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O	atis_flight
+87	757 पर बैठने की क्षमता क्या है	B-aircraft_code O O O O O O	atis_capacity
+877	अमेरिकन एरलाइन्स कौन सा विमान का उपयोग करती है जो 419 पीयेम पर निकले	B-airline_name I-airline_name O O O O O O O O B-depart_time.time O O O	atis_aircraft
+503	बाल्टीमोर और ओकलैंड के बीच सबसे पहले की उड़ान क्या है जो नाश्ता प्रदान करता है	B-fromloc.city_name O B-toloc.city_name O O B-flight_mod I-flight_mod O O O O O B-meal_description O O O	atis_flight
+421	ओरलांडो से ह्यूस्टन की उड़ानें दिखाइए	B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+689	टकोमा से ओरलांडो दोतरफा उड़ान और किराया की सूची जो शनिवार उड़कर अगले शनिवार को पहुँचे	B-fromloc.city_name O B-toloc.city_name B-round_trip O O O O O O B-depart_date.day_name O B-return_date.date_relative B-return_date.day_name O O	atis_flight airfare
+732	गुरुवार दोपहर लॉस एंजिल्स से मिनियापोलिस	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+126	मुझे डेनवर से साल्ट लेक सिटी की उड़ान की जानकारी चाहिए जो सोमवार को शाम 5 बजे बाद जाती हो	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O O B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O O	atis_flight airline
+580	10 बजे से पहले कोलंबस से शिकागो एकतरफ़ा	B-depart_time.time O O B-depart_time.time_relative B-fromloc.city_name O B-toloc.city_name B-round_trip	atis_flight
+554	कोन सी उड़ानें क्लीवलैंड से इंडियानापोलिस तक अप्रैल पांच को यात्रा करेंगी	O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O O O	atis_flight
+875	us का क्या मतलब हैं	B-airline_code O O O O	atis_abbreviation
+637	मुझे क्लीवलैंड से मिल्वौकी तक बुधवार शाम 5 बजे के बाद जाने वाली उड़ान की जानकारी चाहिए	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_time.time O O B-depart_time.time_relative O O O O O O	atis_flight
+498	73s की क्षमता क्या है	B-aircraft_code O O O O	atis_capacity
+632	मुझे मिल्वौकी से डेनवर की जल्द उड़ान चाहिए	O B-fromloc.city_name O B-toloc.city_name O B-flight_mod O O	atis_flight
+149	मैं डेल्टा एयरलाइंस पर पहली अप्रैल के लिए ओरलांडो से साल्ट लेक सिटी तक उड़ान चाहूंगा	O B-airline_name I-airline_name O B-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O	atis_flight
+859	बोस्टन से वाशिंगटन डीसी के लिए सबसे पहले पहुचने वाली उड़ान कौन सी है	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O B-flight_mod I-flight_mod O O O O O O	atis_flight
+828	प्रतिबंध एपी 57 क्या है	O B-restriction_code I-restriction_code O O	atis_abbreviation
+821	us कौन सी एयरलाइन हैं	B-airline_code O O O O	atis_airline
+712	शनिवार रात को वाशिंगटन डीसी से फिलाडेल्फिया की उड़ानो की सूची दे	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O O O O O	atis_flight
+495	भोजन कोड एसबी क्या है	O O B-meal_code O O	atis_abbreviation
+378	मुझे सिएटल से बोस्टन के लिए सभी लुफ्थांसा उड़ानें दिखाएं जो मिनियापोलिस में रुकती हो	O B-fromloc.city_name O B-toloc.city_name O O O B-airline_name O O O B-stoploc.city_name O O O	atis_flight
+687	सिएटल से साल्ट लेक सिटी की डेल्टा फ्लाइट्स की सूची और विमान प्रकार भी	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-airline_name O O O O O O O	atis_flight
+681	बुधवार शाम मेम्फिस से मियामी तक सभी एरलाइन्स और उसका किराया की सूची	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O O O O O O O O	atis_flight airfare
+54	बुधवार को ओकलैंड से साल्ट लेक सिटी तक आखिरी उड़ान प्राप्त करें या ओकलैंड से साल्ट लेक सिटी से गुरुवार को पहली उड़ान	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-flight_mod O O O B-or B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-depart_date.day_name O B-flight_mod O	atis_flight
+362	सोमवार को बरबैंक से मिल्वौकी तक उड़ानें दिखाएं	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+120	मुझे मियामी से टोरंटो की लगातार उड़ान चाहिए	O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O O	atis_flight
+443	डेन्वर से एक टैक्सी का किराया क्या है ?	B-city_name O O O O O O O O	atis_ground_fare
+45	शिकागो से सिएटल के लिए महाद्वीपीय उड़ानों की संख्या	B-fromloc.city_name O B-toloc.city_name O O B-airline_name O O O	atis_flight_no
+623	मुझे सोमवार सुबह सैन फ्रांसिस्को से मिल्वौकी तक एक उड़ान चाहिए	O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+726	इंडियानापोलिस से मेम्फिस जो दोपहर से पहले छ्चोड़े उड़ानो की सूची दे	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O B-depart_time.time_relative O O O O O	atis_flight
+704	सोमवार को ओंटारियो कैलिफ़ोर्निया से साल्ट लेक सिटी यूटा की उड़ान सूची दे	B-depart_date.day_name O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-toloc.state_name O O O O	atis_flight
+321	रविवार को न्यूयॉर्क शहर से लास वेगास और मेम्फिस से लास वेगास	B-depart_date.day_name O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+857	किराया कोड f क्या है	O O B-fare_basis_code O O	atis_abbreviation
+659	मुझे एक उड़ान चाहिए जो शार्लट से लास वेगास हो जो सैंट लुइस में रुके	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-stoploc.city_name I-stoploc.city_name O O	atis_flight
+349	कृपया सभी उड़ान जो डलास से सैन फ्रांसिस्को जाती हों की सूची देवे	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+862	डल्लास से टैम्पा के लिए सुबह नाश्ता वाली कौन सी आख़िरी उड़ान है	B-fromloc.city_name O B-toloc.city_name O O O B-meal_description O O O B-flight_mod O O	atis_flight
+447	लास वेगास से ओंटारियो के लिए कौन सी उड़ाने हैं	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O O	atis_flight
+58	मुझे सिएटल से शिकागो तक महाद्वीपीयों उड़ानें दें जो भोजन देता है	O B-fromloc.city_name O B-toloc.city_name O B-airline_name O O O B-meal O O	atis_flight
+522	733 विमान पर बैठने की क्षमता क्या है	B-aircraft_code O O O O O O O	atis_capacity
+383	मुझे सोमवार को इंडियानापोलिस से शार्लट जाने वाली सभी उड़ानें दिखाओ	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+141	मैं टोरंटो से सैन डिएगो की उड़ान चाहता हूं	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+199	सोमवार सुबह के उड़ानें कैनसस सिटी से अटलांटा तक	B-depart_date.day_name B-depart_time.period_of_day O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O	atis_flight
+134	मुझे शनिवार को वाशिंगटन से मॉन्ट्रियल की उड़ानों की आवश्यकता है	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+542	कौन सी उड़ानों २३ अप्रैल की सुबह को उपलब्ध हैं जो सैन होसे से नैशविल को जातीं हों	O O O B-depart_date.day_number B-depart_date.month_name O B-depart_time.period_of_day O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+315	मिनियापोलिस से पिट्सबर्ग प्रथम श्रेणी उड़ान	B-fromloc.city_name O B-toloc.city_name B-class_type I-class_type O	atis_flight
+91	लॉस एंजिल्स में लिमोसिन सेवा का खर्च कितना है ?	B-city_name I-city_name O B-transport_type O O O O O O	atis_ground_fare
+225	8 और 9 बजे के बीच डेन्वर में आने वाली सभी रोजाना उड़ानों की सूची बनाएं	B-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time O O B-toloc.city_name O O O O B-flight_days O O O O	atis_flight
+284	1800 के बाद वाशिंगटन डीसी से पिट्सबर्ग तक उड़ानों की सूची करें	B-depart_time.time O B-depart_time.time_relative B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O O O O O	atis_flight
+268	ओकलैंड से साल्ट लेक सिटी तक उड़ानों की सूची बुधवार की 1700 बजे के बाद छोड़ें	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O B-depart_date.day_name O B-depart_time.time I-depart_time.time O B-depart_time.time_relative O	atis_flight
+94	मुझे क्लीवलैंड से डलास के लिए दोपहर पहले की उड़ानें चाहिए	O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.time B-depart_time.time_relative O O O	atis_flight
+566	कोन सी उड़ानें नैशविल से टकोमा तक जाएँगी	O O O B-fromloc.city_name O B-toloc.city_name O O	atis_flight
+209	कृपया एरिजोना नेवादा और कैलिफ़ोर्निया में हवाई अड्डे की सूची दिखाएँ	O B-state_name B-state_name O B-state_name O O O O O O	atis_airport
+335	बुधवार को फीनिक्स से मिल्वौकी	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+115	मुझे वाशिंगटन डीसी से सैन डिएगो तक उड़ान चाहिए	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+818	as कौन सी एयरलाइन हैं	B-airline_code O O O O	atis_airline
+889	कौन सी फ्लाइट एप्रिल 12 को इंडियानापोलिस से उड़ कर मॉन्ट्रियल करीब 10 बजे रात को पहुचे	O O O B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O O O B-toloc.city_name B-arrive_time.time_relative B-arrive_time.time O O O O	atis_flight
+43	ह्यूस्टन से डलास तक की उड़ान का क्रमांक	B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight_no
+32	मेम्फिस से टकोमा डिनर तक उड़ान ढूंढें	B-fromloc.city_name O B-toloc.city_name B-meal_description O O O	atis_flight
+538	कौनसी एयरलाइन बाल्टीमोर से सैन फ्रांसिस्को तक उड़ान भरती हैं	O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_airline
+207	टोरंटो से सैन डिएगो तक डेल्टा एयरलाइंस पर उड़ान की सूची	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_name I-airline_name O O O O	atis_flight
+700	गुरुवार सुबह 6 से पहले ओकलैंड से साल्ट लेक सिटी की उड़ान सूची दे	B-depart_date.day_name B-depart_time.period_of_day B-depart_time.time O B-depart_time.time_relative B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O	atis_flight
+808	मुझे सैंट पीटर्सबर्ग से ओंटारियो कॅनडा की अमेरिकन एरलाइन्स की उड़ान दिखाए जो सैंट लुइस में रुकती हो	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.country_name O B-airline_name I-airline_name O O O O B-stoploc.city_name I-stoploc.city_name O O O	atis_flight
+329	शुक्रवार की सुबह पर मैं मॉन्ट्रियल के लिए टोरंटो से उड़ान भरने के लिए चाहते हैं	B-depart_date.day_name O B-depart_time.period_of_day O O B-toloc.city_name O O B-fromloc.city_name O O O O O O O	atis_flight
+208	सिएटल से साल्ट लेक सिटी की उड़ान लेने वाली एरलाइन्स की सूची दिखाएँ	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O O O O	atis_airline
+357	जेएफके से मियामी तक डेल्टा एयरलाइंस दिखाएं	B-fromloc.airport_code O B-toloc.city_name O B-airline_name I-airline_name O	atis_flight
+491	सीवीजी क्या है	B-airport_code O O	atis_abbreviation
+158	मैं फीनिक्स से डेन्वर तक की उड़ान जानकारी चाहूंगा	O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+560	जो यूएस एयर उड़ानें ओरलांडो से क्लीवलैंड तक जाती हैं	O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+147	मुझे शनिवार को बोस्टन से वाशिंगटन जाना है	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O	atis_flight
+55	शनिवार को वाशिंगटन से बोस्टन तक का किराया क्या है	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_airfare
+7	क्या बोस्टन से ओरलांडो तक कोई उड़ानें हैं जो कोलंबस में जुड़ी हैं	O B-fromloc.city_name O B-toloc.city_name O O O O O B-stoploc.city_name O B-connect O	atis_flight
+405	मुझे ह्यूस्टन से बोस्टन तक का सबसे सस्ता दोतरफा यात्रा का किराया दिखाएं	O B-fromloc.city_name O B-toloc.city_name O O B-cost_relative I-cost_relative B-round_trip O O O O	atis_airfare
+557	जो उड़ानें डेट्रोइट छोड़ती हैं और सैंट पीटर्सबर्ग में आती हैं 9 बजे के आसपास	O O B-fromloc.city_name O O O B-toloc.city_name I-toloc.city_name O O O B-arrive_time.time I-arrive_time.time O B-arrive_time.time_relative	atis_flight
+366	डेन्वर से ह्यूस्टन तक उड़ानें दिखाएं	B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+603	मुझे शनिवार या रविवार के मिल्वौकी से फीनिक्स तक अमेरिकन एरलाइन्स की उड़ाने दे	O B-depart_date.day_name B-or B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O O O	atis_flight
+792	मुझे मिल्वौकी से ओरलांडो बुधवार की एकतरफ़ा उड़ान दिखाए	O B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name O B-round_trip O O	atis_flight
+800	मुझे 28 फरवरी 1994 का सैन फ्रांसिस्को से ह्यूस्टन की सबसे सस्ता एकतरफ़ा किराया की उड़ान दिखाए	O B-depart_date.day_number B-depart_date.month_name B-depart_date.year O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-cost_relative B-round_trip O O O O	atis_airfare
+615	बरबैंक में अलास्का एरलाइन्स के कितने उड़ान है	B-toloc.city_name O B-airline_name I-airline_name O O O O	atis_flight
+376	सैन होसे से फीनिक्स की सभी उड़ानें दिखाइए	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+325	अब मुझे सैंट लुइस से बरबैंक तक की सभी उड़ानों दिखाएं	O O B-city_name I-city_name O B-toloc.city_name O O O O O	atis_flight
+725	जून 6 को शाम 4 के बाद सिनसिनाटी से डेनवर की उड़ानो की सूची दे	B-depart_date.month_name B-depart_date.day_number O O B-depart_time.time O B-depart_time.time_relative B-toloc.city_name O B-fromloc.city_name O O O O O	atis_flight
+843	किराया कोड bh का क्या मतलब हैं	O O B-fare_basis_code O O O O	atis_abbreviation
+40	शनिवार 9 अप्रैल को साल्ट लेक सिटी से न्यू यॉर्क तक लगातार उड़ानें ढूंढें	B-depart_date.day_name B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-flight_stop O O	atis_flight
+273	साल्ट लेक सिटी से फीनिक्स अरिज़ोना तक मंगलवार के दिन के उड़ाने का सूची बनाओ	B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_name O B-depart_date.day_name O O O O O O O	atis_flight
+588	मिल्वौकी से सैंट लुइस तक उड़ाने ढूँढे	B-fromloc.city_name O B-city_name I-city_name O O O	atis_flight
+276	डेल्टा 110 की सिएटल से साल्ट लेक सिटी की उड़ानो की सूची दिखाएँ	B-airline_name B-aircraft_code O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+393	फीनिक्स में ज़मीनी यातायात दिखाइए	B-city_name O O O O	atis_ground_service
+512	डेट्रोइट से वेस्टचेस्टर काउंटी तक सबसे मेहेंगा एकतरफा किराया क्या है	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-cost_relative I-cost_relative B-round_trip O O O	atis_airfare
+831	बुधवार को कौन सी उड़ान मेम्फिस और सिनसिनाटी के बीच है	B-depart_date.day_name O O O O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+262	बुधवार को मिल्वौकी से सैन होसे के लिए उड़ानें की सूची दिखाए	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+389	मुझे मॉन्ट्रियल से ओरलांडो तक उड़ानें दिखाएं	O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+311	सोमवार दोपहर को लॉस एंजिल्स से पिट्सबर्ग	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+501	ओकलैंड और साल्ट लेक शहर के बीच में रोजाना की सर्वप्रथम उड़ान कौन सी हे	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O B-flight_days O B-flight_mod O O O O	atis_flight
+275	सिएटल से साल्ट लेक सिटी के लिए डेल्टा बी ई 1 की उड़ानों को दिखायें	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-airline_name B-aircraft_code I-aircraft_code I-aircraft_code O O O O	atis_flight
+182	अगले शनिवार के लिए युनाइटेड एयरलाइन पर सिनसिनाटी से न्यू यॉर्क शहर तक उड़ान बुक करना पसंद करूँगा	B-depart_date.date_relative B-depart_date.day_name O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+367	कैनसस सिटी से मिनियापोलिस तक उड़ानें दिखाएं	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+745	कृपया एक दोतरफा उड़ान खोजे जो लॉस एंजिल्स से टकोमा वाशिंगटन जो सैन फ्रांसिस्को में रुकती हो किराया 300 डॉलर से ज़्यादा ना हो 10 जून 1993	O O B-round_trip O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_name O B-stoploc.city_name I-stoploc.city_name O O I-cost_relative O B-fare_amount I-fare_amount O B-cost_relative I-cost_relative I-cost_relative B-depart_date.day_number B-depart_date.month_name B-depart_date.year	atis_flight
+509	वाशिंगटन डीसी से बोस्टन जाने वाली उड़ान का सबसे कम किराया क्या है	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O O O O B-cost_relative I-cost_relative O O O	atis_airfare
+159	मैं लास वेगास से सैन फ्रांसिस्को तक उड़ानों को चाहूंगा	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+372	मिल्वौकी से सैंट लुइस तक कल शाम उड़ान दिखाएं	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.today_relative B-depart_time.period_of_day O O	atis_flight
+256	इंडियानापोलिस से मेम्फिस तक सोमवार को किराए के साथ उड़ानों की सूची दिखाए	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O O O O O O O	atis_flight
+683	बुधवार को अमेरिकन एरलाइन्स की उड़ान की सूची मिल्वौकी से सैन होसे तक	B-depart_date.day_name O B-airline_name I-airline_name O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O	atis_flight
+234	टैम्पा से सिनसिनाटी तक की शाम की उड़ानें दिखाए	B-fromloc.city_name O B-toloc.city_name O O B-depart_time.period_of_day O O O	atis_flight
+525	मिल्वौकी से सैन डिएगो के लिए सबसे छोटी उड़ान कौनसी है	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-flight_mod I-flight_mod O O O	atis_flight
+668	मुझे बरबैंक से मिल्वौकी की यात्रा करना है	O B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+836	गुरुवार को कौन सी उड़ान सैंट पॉल मिनेसोटा से सैंट लुइस जाती है	B-depart_date.day_name O O O O B-fromloc.city_name I-fromloc.city_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name O O	atis_flight
+456	टकोमा से सैन होसे की उड़ानें क्या हैं	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+398	मुझे कैनसस शहर से सैंट पॉल की उत्तर पश्चिम उड़ान 608 दिखाओ	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_name I-airline_name O B-flight_number O	atis_flight
+111	मुझे सैन डिएगो से वाशिंगटन डीसी तक उड़ान की जरूरत है	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O O O O	atis_flight
+521	m80 की बैठने की क्षमता क्या है	B-aircraft_code O O O O O O	atis_capacity
+188	इंडियानापोलिस से ओरलांडो 27 दिसंबर	B-fromloc.city_name O B-toloc.city_name B-depart_date.day_number B-depart_date.month_name	atis_flight
+593	नेवार्क से लॉस एंजिल्स बुधवार सुबह की उड़ान	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day O O	atis_flight
+455	टकोमा से मियामी तक की उड़ानें क्या हैं, जो कल 6 बजे के बाद प्रस्थान करते हैं	B-fromloc.city_name O B-toloc.city_name O O O O O O B-depart_date.today_relative B-depart_time.time I-depart_time.time O B-depart_time.time_relative O O O	atis_flight
+539	कौन सा हवाई अड्डा ओंटारियो कैलिफ़ोर्निया के सबसे नज़दीक हे	O O O O B-city_name B-state_name O B-mod I-mod O	atis_airport
+187	मुझे वाशिंगटन डीसी में किराए की कार की आवश्यकता हे	O B-city_name B-state_code O O O B-transport_type O O O	atis_ground_service
+858	phl क्या है	B-airport_code O O	atis_abbreviation
+758	कृपया शार्लट से नेवार्क उड़ान की सूची दे	O B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+394	मुझे कैनसस सिटी से फीनिक्स तक लगातार उड़ान दिखाएं	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-flight_stop O O	atis_flight
+146	मैं वाशिंगटन डीसी से फीनिक्स एरिज़ोना उड़ान चाहता हूं	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name B-toloc.state_name O O O	atis_flight
+194	क्या लागा से न्यू यॉर्क शहर में जमीन परिवहन है ?	O B-airport_code O B-city_name I-city_name I-city_name O O O O O	atis_ground_service
+395	मॉन्ट्रियल से ओरलांडो तक मुझे लगातार उड़ान दिखाएं	B-fromloc.city_name O B-toloc.city_name O O B-flight_stop O O	atis_flight
+17	27 दिसंबर को इंडियानापोलिस से ओरलांडो तक की दोतरफा यात्रा का सबसे सस्ता किराया	B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name O O B-round_trip O O O B-cost_relative O	atis_airfare
+216	सिएटल से आने वाली सभी उड़ानों की सूची	B-fromloc.city_name O O O O O O O	atis_flight
+239	सिनसिनाटी से टैम्पा से 9 बजे से पहले उड़ानों की सूची	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time O B-depart_time.time_relative O O O	atis_flight
+119	मुझे न्यूयार्क से टैम्पा तक शुक्रवार की उड़ान की आवश्यकता है	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O O O O	atis_flight
+817	aa कौन सी एयरलाइन हैं	B-airline_code O O O O	atis_airline
+166	मैं दोपहर में कोलंबस से फीनिक्स से सिनसिनाटी के माध्यम से उड़ना चाहता हूं	O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O O O O O O	atis_flight
+866	विमान म80 में बैठने की क्या क्षमता हैं	O B-aircraft_code O O O O O O	atis_capacity
+502	बाल्टीमोर और ओकलैंड के बीच सबसे पहले की उड़ान क्या है जो नाश्ता प्रदान करता है	B-fromloc.city_name O B-toloc.city_name O O B-flight_mod I-flight_mod O O O O O B-meal_description O O O	atis_flight
+674	कैनसस सिटी से लास वेगास इकॉनमी	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-economy	atis_flight
+730	केनेडियन एरलाइन्स इंटरनॅशनल की उड़ानो की सूची दे	B-airline_name I-airline_name I-airline_name O O O O O	atis_flight
+640	मुझे सैंट पीटर्सबर्ग से शार्लट तक की उड़ानो की जानकारी चाहिए	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O O	atis_flight
+528	लास वेगास एयरपोर्ट पर किस प्रकार का जमीनी परिवहन है	B-airport_name I-airport_name I-airport_name O O O O O O O	atis_ground_service
+738	एप्रिल 1 को टकोमा से सैन होसे जो सुबह 7 से पहले छ्चोड़े मुझे एक टिकेट दे	B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_time.time O B-depart_time.time_relative O O O O O	atis_airfare
+829	नेवार्क से नैशविल तक अमेरिकन उड़ान क्या है	B-fromloc.city_name O B-toloc.city_name O B-airline_name O O O	atis_flight
+175	मैं सिनसिनाटी से साल्ट लेक सिटी तक उड़ानें देखना चाहता हूं	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+351	कृपया सैन फ्रांसिस्को से शार्लट जाने वाली सभी उड़ाने दिखाए	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+309	शार्लट हवाई अड्डे से शनिवार दोपहर एक बजे के आसपास उड़ाने वाली यूएस एयर की सारी उड़ानें दिखायें	B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O B-depart_date.day_name B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_time.time_relative O O B-airline_name I-airline_name O O O O	atis_flight
+794	मुझे बरबैंक से सिएटल की दोतरफा उड़ान दिखाए	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O O	atis_flight
+277	सैंट पॉल से कैनसस सिटी तक शुक्रवार शाम को निकलनेवाली उड़ानों की सूची दीजिए जिनमें भोजन शामिल हो	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O O O O O O O B-meal O O	atis_flight
+15	क्या आप मेरे लिए एक और उड़ान ढून्ढ सकते हैं जो सिनसिनाटी से न्यू यॉर्क जाती हो शनिवार को ६ बजे से पहले	O O O O O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O B-depart_time.time I-depart_time.time O B-depart_time.time_relative	atis_flight
+454	शुक्रवार को सैंट लुइस से शार्लट नॉर्थ कैरोलिना तक कौन सी उड़ानें हैं	B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O  B-toloc.city_name B-toloc.state_name I-toloc.state_name O O O O O	atis_flight
+404	लास वेगास से डेट्रोइट की कोच यात्रा का सबसे सस्ता दोतरफा किराया दिखाइए	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-class_type O O B-cost_relative I-cost_relative B-round_trip O O	atis_airfare
+305	मॉन्ट्रियल से फिली तक सुबह 9 से पहले सारे उड़ाने दिखाए	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time O B-depart_time.time_relative O O O	atis_flight
+441	वाशिंगटन डीसी और कोलंबस ओहायो के बीच की सारी उड़ानों का किराया क्या है ?	B-fromloc.city_name O O B-toloc.city_name O O O O O O O O O O O	atis_airfare
+267	नेवार्क से ह्यूस्टन की उड़ानों की सूची	B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+483	लास वेगास से लॉस एंजिल्स तक उड़ानें क्या हैं	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+830	डीसीए और मिल्वौकी की कौन उड़ान है	B-airport_code O B-city_name O O O O	atis_flight
+606	मुझे फीनिक्स से मिल्वौकी तक उड़ाने दे बुधवार शाम को	O B-fromloc.city_name O B-toloc.city_name O O O B-depart_date.day_name B-depart_time.period_of_day O	atis_flight
+613	शहर से सैन फ्रांसिस्को इंटरनॅशनल की दूरी कितनी है	O O B-airport_name I-airport_name I-airport_name O O O O	atis_distance
+76	क्या सैंट लुइस से बरबैंक तक मंगलवार रात एक उड़ान हैं	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O O O	atis_flight
+620	पिट्सबर्ग से अटलांटा तक कोच फ्लाइट का कितना खर्च है	B-fromloc.city_name O B-toloc.city_name O B-class_type O O O O O	atis_airfare
+507	बाल्टीमोर से ओकलैंड की आखिरी उड़ान क्या है जो रात के खाने प्रदान करती है	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O O O O B-meal_description I-meal_description I-meal_description O O O	atis_flight
+334	रविवार को फीनिक्स से मिल्वौकी	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+884	डेनवर तक टैक्सी किराया कितना है	B-city_name O B-transport_type O O O	atis_ground_fare
+299	क्लीवलैंड से मेम्फिस तक सारे उड़ाने दिखाए	B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+490	d9s क्या हैं	B-aircraft_code O O	atis_abbreviation
+26	क्लीवलैंड से डलास तक की उड़ान पर इस्तेमाल होने वाले विमान का प्रकार निर्धारित करें जो दोपहर पहले छोड़ देता है	B-fromloc.city_name O B-toloc.city_name O O O O O O O O O O O O O B-depart_time.period_of_day B-depart_time.time_relative O O O	atis_aircraft
+666	मुझे मियामी से शिकागो तक अमेरिकन एरलाइन्स जो करीब शाम 5 बजे पहुँचे की उड़ान चाहिए	O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O B-arrive_time.time_relative B-arrive_time.time I-arrive_time.time O O O O O	atis_flight
+229	शुक्रवार की दोपहर सैन होसे से डलास जानेवाली अमेरिकन एरलाइन्स की उड़ानो की सूची दिखाएँ	B-depart_date.day_name O B-depart_time.period_of_day B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O O O O O	atis_flight
+241	वाशिंगटन डीसी से पिट्सबर्ग तक सभी उड़ानों की सूची	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+25	डलास से ह्यूस्टन सुबह 1201 बजे के बाद	B-fromloc.city_name O B-toloc.city_name O B-depart_time.time I-depart_time.time O B-depart_time.time_relative	atis_flight
+714	अमेरिकन एरलाइन्स फ्लाइट 19 जो jfk से lax तक किराया की सूची दे	B-airline_name I-airline_name O B-flight_number O B-fromloc.airport_code O B-toloc.airport_code O O O O O	atis_airfare flight
+719	शहरो की सूची दे जहाँ से नॉर्तवेस्ट उड़ान लेती है	O O O O O O B-airline_name O O O	atis_city
+527	टीपीए क्या है	B-airport_code O O	atis_abbreviation
+654	मुझे साल्ट लेक सिटी से सिनसिनाटी की उड़ान चाहिए	O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+4	टॉवर एयर में कभी नाश्ता परोसा जाता है	B-airline_name I-airline_name O O B-meal O O O	atis_meal
+497	डेट्रोइट से सैंट पीटर्सबर्ग तक का प्रथम श्रेणी दोतरफा उड़ान का टिकट कितना है	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-class_type I-class_type B-round_trip  O O O O O	atis_airfare
+193	क्या लागा से न्यू यॉर्क शहर में जमीन परिवहन है ?	O B-airport_code O B-city_name I-city_name I-city_name O O O O O	atis_ground_service
+433	मुझे वेस्टचेस्टर काउंटी के पास सभी हवाई अड्डों का बताएं	O B-city_name I-city_name O O O O O O O	atis_airport
+565	जो उड़ानें लास वेगास से लॉस एंजिल्स कैलिफ़ोर्निया तक यात्रा करते हैं और 4 अप्रैल से 5 बजे अपराह्न के बीच नौवें अप्रैल को पहुंचेंगी	O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-toloc.state_name O O O O O B-arrive_time.start_time B-arrive_date.month_name O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time O O B-arrive_date.day_number B-arrive_date.month_name O O	atis_flight
+638	मुझे ओकलैंड से साल्ट लेक सिटी तक गुरुवार सुबह 8 बजे से पहले जाने वाली उड़ान की उड़ान संख्या चाहिए	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-depart_date.day_name O B-depart_time.time O O B-depart_time.time_relative O O O O O O O	atis_flight_no
+167	मैं ओरलांडो से कैनसस सिटी तक उड़ना चाहूंगा	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+439	बाल्टीमोर से सैन फ्रांसिस्को तक कौनसी एयरलाइंस चलते हैं	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O	atis_airline
+169	मैं सैन डिएगो से सिएटल तक उड़ना चाहूंगा	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+148	मुझे डेट्रोइट से सैंट लुइस जाने वाली उड़ान के बारे मैं बताइए	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O O	atis_flight
+526	मिल्वौकी से सैंट पीटर्सबर्ग के लिए सबसे छोटी उड़ान कौनसी है	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-flight_mod O O O	atis_flight
+559	जो उत्तर पश्चिमी एयरलाइंस पर उड़ानें डेट्रोइट छोड़ती हैं और सैंट पीटर्सबर्ग में आती हैं	O B-airline_name I-airline_name I-airline_name O O B-fromloc.city_name O O O  B-toloc.city_name I-toloc.city_name O O O	atis_flight
+92	बोस्टन मे लिमोसिन की सेवा कितनी है	B-city_name O B-transport_type O O O O	atis_ground_fare
+448	मेम्फिस से लास वेगास के लिए कौन सी उड़ाने हैं	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+798	मुझे टवर एर की एरपोर्ट सेवाए दिखाए	O B-airline_name I-airline_name O O O O	atis_airport
+801	मुझे मॉन्ट्रियल से ओरलांडो की सबसे सस्ता दोतरफा उड़ान दिखाए	O B-fromloc.city_name O B-toloc.city_name O O B-cost_relative B-round_trip O O	atis_flight
+100	मुझे मेम्फिस से सिएटल तक उड़ान की ज़रूरत है	O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+417	लास वेगास से डेट्रोइट की उड़ानें दिखाइए	B-toloc.city_name I-toloc.city_name O B-fromloc.city_name O O O	atis_flight
+883	कोलंबस से सैंट पॉल तक twa पे सबसे सस्ता दोतरफा उड़ान	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_code O O B-cost_relative B-round_trip O	atis_flight
+269	ओंटारियो कैलिफ़ोर्निया से ओरलांडो की उड़ानों की सूची	B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name O O O O	atis_flight
+820	hp कौन सी एयरलाइन हैं	B-airline_code O O O O	atis_airline
+422	मुझे मिनियापोलिस से इंडियानापोलिस तक की मंगलवार दोपहर उड़ानें दिखाएं	O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O O	atis_flight
+468	किराया कोड बीएन का मतलब क्या है	O O B-fare_basis_code O O O O	atis_abbreviation
+301	एक जुलाई को डेनवर से बाल्टीमोर को आने वाले उड़ाने दिखाए	B-arrive_date.day_number B-arrive_date.month_name O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+475	कौनसी उड़ान बाल्टीमोर से रवाना होती है	O O B-fromloc.city_name O O O O	atis_flight
+337	कृपया करके डेट्रोइट मिशिगन से सैंट पीटर्सबर्ग जाने वाली उड़ान ढूंढे जो रात के 10 बजे से पहले पहुच जाती है	O O B-fromloc.city_name B-fromloc.state_name B-arrive_time.time_relative B-toloc.city_name I-toloc.city_name O O O O O O O B-arrive_time.time I-arrive_time.time B-arrive_time.time_relative I-arrive_time.time_relative O O O	atis_flight
+780	मंगलवार दोपहर मुझे 2 बजे के बाद मिनियापोलिस से इंडियानापोलिस की सभी उड़ान दिखाए	B-depart_date.day_name O O B-depart_time.time O O B-depart_time.time_relative B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+60	मुझे अगले रविवार को मियामी से क्लीवलैंड जानेवाली सभी उड़ानो की किराया दिखाए	O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O O O O	atis_airfare
+887	कौन सी फ्लाइट अटलांटा छोड़ड़ कर सैंट लुइस करीब 230 बजे रात मंगलवार को पहुँचे	O O O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name B-arrive_time.time_relative B-arrive_time.time O O B-arrive_date.day_name O O	atis_flight
+643	जून 6 को शाम 6 बजे से पहले सिनसिनाटी से डेनवर जाना है	B-arrive_date.month_name B-arrive_date.day_number O O B-arrive_time.time I-arrive_time.time O B-arrive_time.time_relative B-fromloc.city_name O B-toloc.city_name O O	atis_flight
+400	मुझे मॉन्ट्रियल और ओरलांडो के बीच दोतरफा यात्रा की उड़ान दिखाएं	O B-fromloc.city_name O B-toloc.city_name O O B-round_trip O O O O	atis_flight
+68	मुझे गुरुवार शाम को पिट्सबर्ग से लॉस एंजिल्स जानेवाली सारी उड़ाने दिखाए	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+595	सैंट पीटर्सबर्ग से शार्लट की उड़ान दे	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+407	डेट्रोइट से लॉस वेगास तक का प्रथम श्रेणी की दोतरफा टिकट के किराया बताएं	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-class_type I-class_type O B-round_trip O O O O	atis_airfare
+190	क्या अमेरिकन एयरलाइंस की कोई उड़ान 10 जून को ह्यूस्टन से नेवार्क तक 6 बजे के बाद है	O B-airline_name I-airline_name O O O B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name O B-depart_time.time O O B-depart_time.time_relative O	atis_flight
+799	मुझे मियामी से न्यू यॉर्क की सबसे सस्ता इकॉनमी उड़ान दिखाए	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-cost_relative B-economy O O	atis_flight
+515	757 पर बैठने की क्षमता क्या है	B-aircraft_code O O O O O O	atis_capacity
+774	मुझे एरलाइन्स दिखाए जिसमे टोरंटो और डेट्रोइट के बीच और सैंट लुइस से टोरंटो के बीच उड़ान दिखाए	O O O O B-toloc.city_name O B-fromloc.city_name O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_airline
+575	क्या आप अगले शनिवार का एक उड़ान ढूँढ सकते है जो साल्ट लेक सिटी से न्यू यॉर्क शाम 6 बजे से पहले पहुँचे	O O B-depart_date.date_relative B-depart_date.day_name O O O O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-arrive_time.time O O B-arrive_time.time_relative O	atis_flight
+652	मंगलवार दोपहर को सैन डिएगो से इंडियानापोलिस इंडियाना की एक उड़ान चाहिए	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_name O O O O	atis_flight
+819	dl कौन सी एयरलाइन हैं	B-airline_code O O O O	atis_airline
+518	विमान 72s की बैठने की क्षमता क्या है	O B-aircraft_code O O O O O O	atis_capacity
+592	अमेरिकन उड़ान मियामी से शिकागो तक जो करीब शाम 5 बजे पहुँचे	B-airline_name O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative O B-arrive_time.time O O	atis_flight
+48	वाशिंगटन से सिएटल तक की उड़ानें	B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+614	केनेडियन एरलाइन्स की कितने इंटरनॅशनल फ्लाइट ज31 का उपयोग करती है	B-airline_name I-airline_name O O O O B-aircraft_code O O O O	atis_quantity
+791	मुझे मिल्वौकी से ओरलांडो शाम 6 के बाद बुधवार की एकतरफ़ा उड़ान दिखाए	O B-fromloc.city_name O B-toloc.city_name O B-depart_time.time O B-depart_time.time_relative B-depart_date.day_name O B-round_trip O O	atis_flight
+749	कृपया नेवार्क से मियामी किसी क्लास में सभी उड़ानो की सूची दे	O B-fromloc.city_name O B-toloc.city_name O O O O O O O O	atis_flight
+431	मुझे दुबारा सुबह की अमेरिकन एरलाइन्स की फिलाडेल्फिया से डलास जाती उड़ानों की जानकारी चाहिए.	O O B-depart_time.period_of_day O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+327	अब मुझे सोमवार दोपहर को ह्यूस्टन में भूमि परिवहन दिखाएं	O O B-day_name B-period_of_day O B-city_name O O O O	atis_ground_service
+524	विमान एम 80 पर बैठने की क्षमता क्या है	O B-aircraft_code I-aircraft_code O O O O O O	atis_capacity
+594	मिल्वौकी से ओरलांडो एकतरफ़ा उड़ान शाम बुधवार 5 बजे के बाद	B-fromloc.city_name O B-toloc.city_name B-round_trip O O B-depart_date.day_name B-depart_time.time O O B-depart_time.time_relative	atis_flight
+670	क्या पिट्सबर्ग से क्लीवलैंड का किराया 200 डॉलर से कम है	O B-fromloc.city_name O B-toloc.city_name O O B-fare_amount I-fare_amount O B-cost_relative O	atis_airfare
+492	सीवीजी क्या है	B-airport_code O O	atis_abbreviation
+427	शुक्रवार की रात सैंट पॉल से कैनसस सिटी को	B-depart_date.day_name O B-depart_time.period_of_day B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O	atis_flight
+855	बाल्टीमोर में क्या भूमि परिवहन है	B-city_name O O O O O	atis_ground_service
+360	आज के लिए बरबैंक से मिल्वौकी तक उड़ानें दिखाएं	B-depart_date.today_relative O O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+644	जून 8 को 3 बजे के बाद मुझे युनाइटेड एरलाइन्स की वेस्टचेस्टर काउंटी से सिनसिनाटी तक की उड़ान चाहिए	B-depart_date.month_name B-depart_date.day_number O B-depart_time.time O O B-depart_time.time_relative O B-airline_name I-airline_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+333	मुझे बुधवार रात को शार्लट से नेवार्क की उड़ान चाहिए	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+412	मुझे कैनेडी हवाई अड्डे से मियामी तक प्रथम श्रेणी और कोच उड़ानें दिखाएं	O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name O B-class_type I-class_type O B-class_type O O	atis_flight
+655	मुझे सैन फ्रांसिस्को से लोंग बीच की उड़ान चाहिए	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+651	मुझे शुक्रवार सुबह टोरंटो से मॉन्ट्रियल की उड़ान चाहिए	O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+630	मुझे सैन डिएगो से वाशिंगटन डीसी दोतरफा उड़ान और किराया चाहिए	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_code B-round_trip O O O O	atis_flight airfare
+9	अटलांटा से सैंट लुइस तक मंगलवार 230 बजे से पहले उड़ानों	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_time.time I-depart_time.time O B-depart_time.time_relative O	atis_flight
+293	अलास्का एयरलाइनों की सूची बरबैंक से प्रस्थान करती है	B-airline_name I-airline_name O O B-fromloc.city_name O O O O	atis_flight
+264	शुक्रवार को मिनियापोलिस से पिट्सबर्ग तक की उड़ानों की सूची	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+478	मंगलवार सुबह डेन्वर से सैंट लुइस तक कौनसी उड़ानें हैं	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name  O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+622	मुझे एक उड़ान की ज़रूरत है जो सोमवार सुबह 8 बजे से पहले मिल्वौकी से इंडियानापोलिस जाती है	O O O O O O O B-depart_date.day_name O B-depart_time.time O O B-depart_time.time_relative B-fromloc.city_name O B-toloc.city_name O O	atis_flight
+220	मेम्फिस से मियामी तक की सभी उड़ानों की सूची	B-fromloc.city_name O B-toloc.city_name O O O O O O	atis_flight
+259	la से ओरलांडो की उड़ानों की सूची दिखाए	B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+480	क्या फीनिक्स से साल्ट लेक सिटी जाने के लिए उड़ानें है	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+660	मैं गुरुवार सुबह इंडियानापोलिस से टोरंटो जाना चाहता हूँ	O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+217	सोमवार को क्लीवलैंड से कैनसस सिटी की सभी उड़ानों की सूची	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+353	कृपया मेम्फिस से सोमवार रात को न्यू यॉर्क शहर तक उड़ानें दिखाए	O B-fromloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O	atis_flight
+69	मुझे सिएटल से शिकागो की महाद्वीपीय उड़ानें दें जो शनिवार की सुबह भोजन करें	O B-fromloc.city_name O B-toloc.city_name O B-airline_name O O O B-depart_date.day_name O B-depart_time.period_of_day B-meal O	atis_flight
+569	12 बजे के बाद बुधवार एप्रिल 6 को मुझे लोंग बीच से कोलंबस तक उड़ाने चाहिए	B-depart_time.time O O B-depart_time.time_relative B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+664	मुझे 26 मई शाम 7 बजे बुधवार कैनसस सिटी से शिकागो दोतरफा उड़ान दीजिए	O B-depart_date.day_number B-depart_date.month_name O B-arrive_time.time O B-depart_date.day_name B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-round_trip O O	atis_flight
+355	कृपया लागा से न्यू यॉर्क शहर में जमीन परिवहन की सूची दें	O B-airport_code O B-city_name I-city_name I-city_name O O O O O O	atis_ground_service
+656	मुझे मिल्वौकी से उड़ कर ओरलांडो की उड़ान चाहिए	O B-fromloc.city_name O O O B-toloc.city_name O O O	atis_flight
+131	मुझे टोरंटो से सैन डिएगो तक उड़ानों पर जानकारी की आवश्यकता है	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O O	atis_flight
+517	757 की बैठने की क्षमता क्या है	B-aircraft_code O O O O O O	atis_capacity
+688	टैम्पा से सिनसिनाटी जल्दी शाम की उड़ान की सूची	B-fromloc.city_name O B-toloc.city_name B-depart_time.period_of_day B-depart_time.period_of_day O O O O	atis_flight
+73	मुझे महाद्वीपीय पर शनिवार की सुबह उड़ानें दें, जो कि शिकागो से मिनियापोलिस तक जिनमे भोजन है	O B-airline_name O B-depart_date.day_name O B-depart_time.period_of_day O O O O B-fromloc.city_name O B-toloc.city_name O O B-meal O	atis_flight
+634	मुझे क्लीवलैंड से मिल्वौकी तक बुधवार शाम 6 बजे के बाद जाने वाली उड़ान की जानकारी चाहिए	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_time.time O O B-depart_time.time_relative O O O O O O	atis_flight
+788	मुझे मिल्वौकी से ओरलांडो की उड़ान दिखाए	O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+753	कृपया फिलाडेल्फिया से सैन फ्रांसिस्को की उड़ान दे	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+200	कैनसस सिटी से क्लीवलैंड बुधवार शाम 5 बजे से पहले आने वाली उड़ान	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-arrive_date.day_name B-arrive_time.time I-arrive_time.time I-arrive_time.time O B-arrive_time.time_relative O O O	atis_flight
+874	मंगलवार सुबह को फ्लाइट 382 जो मिल्वौकी से वाशिंगटन डीसी जाती है क्या खाना परोसा जाता है	B-depart_date.day_name B-depart_time.period_of_day O O B-flight_number O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O O B-meal O O O	atis_meal
+460	सोमवार की उड़ानें क्या हैं जो शार्लट नॉर्थ कैरोलिना से फीनिक्स एरिज़ोना तक यात्रा करते हैं	B-depart_date.day_name O O O O O B-fromloc.city_name B-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-toloc.state_name O O O O	atis_flight
+324	अब मुझे बरबैंक से सिएटल तक सभी दोतरफा यात्रा दिखाएं जो सिएटल में 7 बजे से पहले आती हैं	O O B-fromloc.city_name O B-toloc.city_name O O B-round_trip O O O B-toloc.city_name O B-arrive_time.time I-arrive_time.time O B-arrive_time.time_relative O O	atis_flight
+653	मुझे 1 एप्रिल को फीनिक्स से सैन डिएगो एकतरफ़ा की उड़ान चाहिए	O B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-round_trip O O O	atis_flight
+772	बुधवार दोपहर 6 के बाद मुझे मिल्वौकी से ओरलांडो की एकतरफ़ा उड़ान दिखाए	B-depart_date.day_name B-depart_time.period_of_day B-depart_time.time O B-depart_time.time_relative O B-fromloc.city_name O B-toloc.city_name O B-round_trip O O	atis_flight
+534	वेस्टचेस्टर काउंटी में जमीन परिवहन क्या है	B-city_name I-city_name O O O O O	atis_ground_service
+585	बुधवार को सैन होसे से ह्यूस्टन की उड़ान ढूँढे	B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+552	जो उड़ानें शाम को टैम्पा से रवाना होती हैं और सिनसिनाटी पहुँचती हैं	O O B-depart_time.period_of_day O B-fromloc.city_name O O O O O B-toloc.city_name O O	atis_flight
+270	ओंटारियो कैलिफ़ोर्निया से ओरलांडो की उड़ानों की सूची	B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name O O O O	atis_flight
+420	मिनियापोलिस से इंडियाना तक सभी उड़ानें मुझे दिखाएँ	B-fromloc.city_name O B-toloc.state_name O O O O O	atis_flight
+628	युनाइटेड एरलाइन्स का ला गार्डिया से सैन होसे तक उड़ान चाहिए	B-airline_name I-airline_name O B-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+16	मंगलवार को शार्लट से बाल्टीमोर	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+739	मुझे अगले बुधवार एक उड़ान दिखाए कैनसस सिटी से शिकागो जो शिकागो शाम करीब 7 बजे पहुचे और वापसी उड़ान गुरुवार को	O B-depart_date.date_relative B-depart_date.day_name O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-toloc.city_name O B-arrive_time.time_relative B-arrive_time.time O O O O O B-return_date.day_name O	atis_flight
+285	वाशिंगटन डीसी से टोरंटो तक की उड़ानों की सूची	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O O O O O	atis_flight
+809	मुझे सैंट पीटर्सबर्ग से ओंटारियो कैलिफ़ोर्निया की अमेरिकन एरलाइन्स की उड़ान दिखाए जो सैंट लुइस में रुकती हो	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_name O B-airline_name I-airline_name O O O O B-stoploc.city_name I-stoploc.city_name O O O	atis_flight
+129	सुबह 8 बजे से पहले गुरुवार को साल्ट लेक सिटी से ओकलैंड से उड़ान भरने वाली उड़ानों के लिए मुझे उड़ान संख्याएं और एयरलाइनों की आवश्यकता है	O B-depart_time.time I-depart_time.time O B-depart_time.time_relative B-depart_date.day_name O B-toloc.city_name I-toloc.city_name O O B-fromloc.city_name O O O O O O O O O O O O O O O	atis_flight_no airline
+508	बाल्टीमोर से ओकलैंड की आखिरी उड़ान क्या है जो रात का खाना प्रदान करता है	B-fromloc.city_name O B-toloc.city_name O B-flight_mod O O O O B-meal_description O O O O O	atis_flight
+99	मुझे मेम्फिस से लास वेगास तक उड़ान की ज़रूरत है	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+485	फीनिक्स हवाई अड्डे और डाउनटाउन फीनिक्स के बीच क्या जमीन परिवहन उपलब्ध है	B-airport_name I-airport_name I-airport_name O O B-city_name O O O O O O O	atis_ground_service
+678	एरपोर्ट की सूची	O O O	atis_airport
+764	दोतरफा उड़ान ओरलांडो से मॉन्ट्रियल तक कृपया	B-round_trip O B-fromloc.city_name O B-toloc.city_name O O	atis_flight
+402	मुझे सैन फ्रांसिस्को से ह्यूस्टन तक सबसे सस्ता एकतरफा उड़ाने दिखाएं	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-cost_relative I-cost_relative B-round_trip O O	atis_flight
+677	सिएटल से साल्ट लेक सिटी तक एरलाइन्स की सूची की	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O	atis_airline
+563	कैनसस सिटी से लॉस एंजिल्स तक उड़ानें क्या हैं	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+177	मुझे शनिवार सुबह को न्यू यॉर्क से लॉस एंजिल्स जाने के लिए यू एस एयरलाइंस की एक उड़ान चाहिए	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-airline_name I-airline_name I-airline_name O O O O	atis_flight
+488	73s क्या है	B-aircraft_code O O	atis_abbreviation
+331	जून आठवां को उड़ानें वेस्टचेस्टर काउंटी से सिनसिनाटी तक जाती हैं	B-depart_date.month_name B-depart_date.day_number O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+434	बोस्टन से कौन - सा शहर अमेरिका पश्चिम की प्रथम श्रेणी में उड़ता है	B-fromloc.city_name O O O O O B-airline_name I-airline_name O B-class_type I-class_type O O O	atis_city
+533	बोस्टन से वाशिंगटन डीसी के बीच सबसे पहले आगमन होने वाली उड़ान कौन सी है	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O B-flight_mod I-flight_mod O O O O O I-toloc.state_code O	atis_flight
+125	मुझे नैशविल से सिएटल तक टिकट की आवश्यकता है	O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_airfare
+260	लॉस वेगास से सैन डिएगो के लिए उड़ानों की सूची दिखाए	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+41	सोमवार सुबह को प्रथम श्रेणी की उड़ानें पिट्सबर्ग से नेवार्क तक	B-depart_date.day_name B-depart_time.period_of_day O B-class_type I-class_type O O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+118	मुझे उड़ान की जरूरत है जो बोस्टन से ओरलांडो तक जाती है	O O O O O O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+386	मुझे डेल्टा की उड़ान 486 दिखाओ	O B-airline_name O O B-flight_number O	atis_flight
+553	जो टोरंटो से उड़ाने वाली उड़ानें हैं और वाशिंगटन डीसी पर पहुँचने हैं	O B-fromloc.city_name O O O O O O B-toloc.city_name B-toloc.state_code O O O	atis_flight
+380	मुझे सैंट पीटर्सबर्ग से शार्लट के लिए लगातार उड़ाने बताओ	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-flight_stop O O	atis_flight
+546	जो दोपहर में शनिवार को कैनसस शहर से उड़ान भरने वाली बरबैंक में आती हैं	O B-arrive_time.period_of_day O B-arrive_date.day_name O B-fromloc.city_name I-fromloc.city_name O O O O B-toloc.city_name O O O	atis_flight
+179	मैं नेवार्क से लॉस एंजिल्स के लिए सुबह की उड़ान पसंद करूँगा	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_time.period_of_day O O O O	atis_flight
+532	सैन फ्रांसिस्को से डेट्रोइट प्रस्थान करने वाली सबसे सस्ता उड़ान आज कोनसी है	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O B-cost_relative O B-depart_date.today_relative O O	atis_flight
+812	सैंट पीटर्सबर्ग से डेट्रोइट तक	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O	atis_flight
+238	इंडियानापोलिस से मेम्फिस के लिए दोतरफा प्रथम श्रेणी में हवाई यात्रा का किराया बतायें	B-fromloc.city_name O B-toloc.city_name O O B-round_trip B-class_type I-class_type O O O O O O	atis_airfare
+864	bwi से साल्ट लेक सिटी का सबसे सस्ता किराया कितना है	B-fromloc.airport_code O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-cost_relative O O O	atis_airfare
+374	मुझे ओरलांडो से मॉन्ट्रियल तक सभी उड़ानों को दिखाएं	O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+1	एक उड़ान बाल्टीमोर से सैन फ्रांसिस्को के बीच 5 और 8 बजे तक पहुंचने	O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-arrive_time.start_time O B-arrive_time.end_time O O O	atis_flight
+432	मुझे न्यूयॉर्क शहर क्षेत्र में सभी हवाई अड्डों का बताएं	O B-city_name I-city_name O O O O O O O	atis_airport
+487	क्या ला गार्डिया हवाई अड्डे से न्यू यॉर्क शहर में जमीन परिवहन उपलब्ध है	O B-airport_name I-airport_name I-airport_name I-airport_name O B-city_name I-city_name I-city_name O O O O O	atis_ground_service
+375	सैन होसे से फीनिक्स की सभी उड़ानें दिखाइए	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+698	मिल्वौकी से डेट्रोइट उड़ान की सूची दे	B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+156	मैं शार्लट से न्यूयार्क के लिए सुबह की उड़ान पसंद करूँगा	O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.period_of_day O O O O	atis_flight
+834	क्लीवलैंड से डल्लास की कौन उड़ान है	B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+847	किराया कोड y का क्या मतलब है	O O B-fare_basis_code O O O O	atis_abbreviation
+450	मिल्वौकी से सिएटल तक उड़ानें क्या हैं	B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+344	कृपया कल की कोलंबस से ह्यूस्टन की उड़ान ढूंढे जो नैशविल रुकती हो	O B-depart_date.today_relative O B-fromloc.city_name O B-toloc.city_name O O O O B-stoploc.city_name O O	atis_flight
+381	मुझे मंगलवार को सुबह शार्लट से मिनियापोलिस तक सभी उड़ानें दिखाएँ	O B-depart_date.day_name O B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+761	कृपया लॉस एंजिल्स उड़ान की सूची दे नेवार्क से	O B-toloc.city_name I-toloc.city_name O O O O B-fromloc.city_name O	atis_flight
+63	शिकागो से सिएटल शनिवार सुबह जानेवाली उड़ानें दिखाएँ जिनमे भोजन मिलता है	B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name B-depart_time.period_of_day O O O O B-meal O O	atis_flight
+83	कितने कैनेडियन एयरलाइंस उड़ानें विमान dh8 का उपयोग करती हैं	O B-airline_name I-airline_name O O B-aircraft_code O O O O	atis_quantity
+449	मिल्वौकी से सिएटल तक उड़ानें क्या हैं	B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+555	जो उड़ानें मिल्वौकी से टैम्पा तक जाती हैं और नैशविल में रुकती हैं	O O B-fromloc.city_name O B-toloc.city_name O O O O B-stoploc.city_name O O O	atis_flight
+39	अगले शनिवार न्यू यॉर्क शहर पहुंचने वाली उड़ानें ढूंढें	B-arrive_date.date_relative B-arrive_date.day_name B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O	atis_flight
+298	6 जून को सिनसिनाटी से वेस्टचेस्टर काउंटी तक उड़ानों की सूची	B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+519	विमान 72s की बैठने की क्षमता क्या है	O B-aircraft_code O O O O O O	atis_capacity
+860	बोस्टन से वाशिंगटन डीसी के लिए सबसे पहले पहुचने वाली उड़ान कौन सी है	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O B-flight_mod I-flight_mod O O O O O O	atis_flight
+88	कोलंबस से सैंट लुइस तक की दोतरफा यात्रा का twa पर किराया कितना हे	B-fromloc.city_name O O B-toloc.city_name O O B-round_trip I-round_trip O B-airline_code O O O O	atis_airfare
+499	ह्यूस्टन से ओरलांडो में सबसे पहले आगमन होने वाली उड़ान कौन सी है	B-fromloc.city_name O B-toloc.city_name O B-flight_mod I-flight_mod O O O O O O O	atis_flight
+19	शनिवार सुबह को शिकागो से सिएटल	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+627	मुझे एक उड़ान चाहिए जो अगले बुधवार को कैनसस सिटी से शिकागो जाए और दूसरे दिन वापस आए	O O O O O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-return_date.date_relative I-return_date.date_relative O O	atis_flight
+742	बुधवार 6 एप्रिल शाम 3 के बाद मुझे लोंग बीच से कोलंबस की उड़ान चाहिए	B-depart_date.day_name B-depart_date.day_number B-depart_date.month_name O B-depart_time.time O B-depart_time.time_relative O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+740	रविवार शाम को मॉन्ट्रियल क्यूबेक से सैन डिएगो कैलिफ़ोर्निया की उड़ान चाहिए	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-toloc.state_name O O O	atis_flight
+30	सैंट पीटर्सबर्ग के बीच उड़ान ढूंढें और शार्लट उड़ान दोपहर को छोड़नी चाहिए और यथासंभव 5 बजे के बाद पहुंचें, यह लगातार उड़ान होना चाहिए	B-fromloc.city_name B-arrive_time.time_relative O O O I-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day O O O O O B-arrive_time.time I-arrive_time.time B-arrive_time.time_relative I-arrive_time.time_relative O O B-flight_stop O O O	atis_flight
+746	कृपया कैनसस सिटी से नेवार्क और फिर ओरलांडो होते हुए कैनसस सिटी जाने वाली उड़ान ढूँढे	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-toloc.city_name O O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+231	१० बजे के बाद न्यू यॉर्क शहर से लॉस एंजिल्स तक की सीधी उड़ानें	B-depart_time.time I-depart_time.time O B-depart_time.time_relative B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-connect O	atis_flight
+568	जो दोतरफा यात्रा की उड़ानें अगले मंगलवार को शाम लगभग छह बजे शिकागो से बाहर निकलती हैं और डेट्रोइट में पहुंचती हैं	O B-round_trip O O O B-depart_date.date_relative B-depart_date.day_name O B-depart_time.time B-depart_time.time_relative I-depart_time.time I-depart_time.time B-fromloc.city_name O O O O O B-toloc.city_name O O O	atis_flight
+85	कितने नॉर्तवेस्ट उड़ाने डलेस से निकलती हैं	O B-airline_name O B-fromloc.airport_name O O O	atis_flight
+881	सैन फ्रांसिस्को से मिल्वौकी तक सबसे सस्ता उड़ान	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-cost_relative O	atis_flight
+113	मुझे सैंट लुइस से शार्लट की उड़ान चाहिए	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+811	सैंट लुइस से सैंट पॉल तक गुरुवार 10 बजे के बाद	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_time.time O O B-depart_time.time_relative	atis_flight
+172	मुझे टोरंटो डेट्रोइट और सैंट लुइस में उड़ान भरने वाली एयरलाइन चाहिए	O B-fromloc.city_name B-toloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O	atis_airline
+629	मुझे अगले सोमवार की सुबह बरबैंक से मिल्वौकी की उड़ान चाहिए	O B-depart_date.date_relative B-depart_date.day_name O B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+312	मंगलवार दोपहर को लॉस एंजिल्स से पिट्सबर्ग	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+56	शनिवार को वाशिंगटन से मॉन्ट्रियल तक का किराया क्या है	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_airfare
+785	मुझे डेट्रोइट और सैंट लुइस के बीच डेल्टा ,नॉर्तवेस्ट उस एर ,और युनाइटेड एरलाइन्स की उड़ान दिखाए	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-airline_name O B-airline_name I-airline_name O B-airline_name I-airline_name O O O	atis_flight
+706	शुक्रवार सुबह फिलाडेल्फिया से अटलांटा की उड़ानो की सूची दे	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+181	मैं न्यू यॉर्क से मियामी की उड़ानें पसंद करूँगा	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+536	कौन एयरलाइन kw है	O O B-airline_code O	atis_airline
+718	बरबैंक से कहीं का अलास्का एरलाइन्स की उड़ानो की सूची दे	B-fromloc.city_name O O O B-airline_name I-airline_name O O O O O	atis_flight
+734	शुक्रवार को नेवार्क से टैम्पा	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+74	लास वेगास के लिए भूमि परिवहन	B-city_name I-city_name O O O O	atis_ground_service
+756	कृपया ईडब्ल्यूआर से न्यू यॉर्क सिटी भूमि परिवहन की सूची दे	O B-airport_code O B-city_name I-city_name I-city_name O O O O O	atis_ground_service
+308	शार्लट से सभी उड़ानों के लिए विमान के प्रकार की सूची	B-fromloc.city_name O O O O O O O O O O	atis_aircraft
+20	क्लीवलैंड से कैनसस सिटी सोमवार दोपहर 3 बजे से पहले	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-arrive_date.day_name B-arrive_time.time I-arrive_time.time I-arrive_time.time O B-arrive_time.time_relative	atis_flight
+173	मैं जानना चाहता हूं कि लॉस एंजिल्स में कौन से हवाई अड्डे हैं	O O O O O B-city_name I-city_name O O O O O O	atis_airport
+810	मुझे मिल्वौकी से ओरलांडो एकतरफ़ा हफ्ते के दीनो की उड़ान दिखाए	O B-fromloc.city_name O B-toloc.city_name B-round_trip B-flight_mod I-flight_mod I-flight_mod O O O	atis_flight
+833	वाशिंगटन डीसी और कोलंबस ओहायो के बीच कौन सी उड़ान है	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name B-toloc.state_name O O O O O O	atis_flight
+44	शिकागो से सिएटल तक की उड़ान का क्रमांक	B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight_no
+690	शुक्रवार दोपहर बाद अटलांटा से टोरंटो की उड़ान सूची	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+673	क्या फीनिक्स एरपोर्ट पर भूमि परिवहन उपलब्ध है	O B-airport_name I-airport_name O O O O O	atis_ground_service
+198	क्या ओंटारियो हवाई अड्डे पर टैक्सी सेवा है	O B-airport_name I-airport_name I-airport_name O B-transport_type I-transport_type O	atis_ground_service
+93	मुझे शार्लट से मियामी की उड़ान चाहिए	O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+444	सिनसिनाटी और सैन होसे कैलिफ़ोर्निया के बीच शाम के 6 बजे के बाद उड़ान भरने वाली उड़ाने कौनसी हैं	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-toloc.state_name O O O O B-depart_time.time I-depart_time.time O B-depart_time.time_relative O O O O O O	atis_flight
+123	मुझे टैम्पा से शार्लट तक एक रविवार की उड़ान की आवश्यकता है	O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O O O O	atis_flight
+477	क्या उड़ानें डलास से फीनिक्स तक जाती हैं	O O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+685	डेट्रोइट से सैंट पीटर्सबर्ग दोतरफा कोच किराया की सूची दे	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-round_trip B-class_type O O O O	atis_airfare
+139	मैं मॉन्ट्रियल से वाशिंगटन डीसी जाने वाली उड़ान चाहता हूँ	O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O O O O	atis_flight
+410	मुझे जेएफके और ओरलांडो के बीच प्रथम श्रेणी और कोच उड़ान दिखाएं	O B-fromloc.airport_code O B-toloc.city_name O O B-class_type I-class_type O B-class_type O O	atis_flight
+223	8 से 9 बजे के बीच डेन्वर से सभी उड़ानों को सूची दें	B-depart_time.start_time O B-depart_time.end_time I-depart_time.end_time O O B-fromloc.city_name O O O O O O	atis_flight
+27	क्या टकोमा हवाई अड्डे से हवाई अड्डे से डाउनटाउन क्षेत्र तक परिवहन प्रदान करता है	O B-airport_name I-airport_name I-airport_name O I-airport_name I-airport_name O O O O O O O O	atis_ground_service
+114	मुझे वाशिंगटन डीसी से सैन डिएगो तक की उड़ान की आवश्यकता है	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+778	मुझे सभी बरबैंक से मिल्वौकी की उड़ान दिखाए	O O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+72	मुझे शिकागो से सैंट पॉल तक शनिवार की सुबह उड़ानें दें महाद्वीपीय पर जिनमे भोजन है	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name O B-depart_time.period_of_day O O B-airline_name O O B-meal O	atis_flight
+729	वेस्टचेस्टर काउंटी से सिनसिनाटी की उड़ानो की सूची दे जून 7 को शाम 5 बाद छ्चोड़े	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O B-depart_date.month_name B-depart_date.day_number O O B-depart_time.time B-depart_time.time_relative O	atis_flight
+715	डेनवर से या तक सभी एयरलाइन की सूची दे	B-city_name O O O O O O O O	atis_airline
+219	कैनसस शहर से क्लीवलैंड तक सभी उड़ानों की सूची	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+377	मुझे सिएटल से बोस्टन जाने वाली सभी उड़ाने दिखाओ जिसका मिनियापोलिस में रुकती हो	O B-fromloc.city_name O B-toloc.city_name O O O O O O B-stoploc.city_name O O O	atis_flight
+42	डलास से ह्यूस्टन तक की उड़ान का क्रमांक	B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight_no
+50	वाशिंगटन से मॉन्ट्रियल तक का किराया क्या है	B-fromloc.city_name O B-toloc.city_name O O O O O	atis_airfare
+408	मुझे डेल्टा उड़ानों के बारे में बताइए जो कोच के यात्रियों को नाश्ता देते हों	O B-airline_name O O O O O O B-compartment O O O B-meal_description O O	atis_flight
+242	शुक्रवार को बाल्टीमोर से सैन फ्रांसिस्को जानेवाली सारी उड़ाने दिखाए	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+782	न्यू यॉर्क से मियामी प्रथम श्रेणी की दोतरफा उड़ान दिखाए	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-class_type I-class_type O B-round_trip O O	atis_flight
+596	मिल्वौकी से dtw तक की उड़ाने दे	B-fromloc.city_name O B-toloc.airport_code O O O O	atis_flight
+235	वाशिंगटन डीसी से बोस्टन के लिए किराए की सूची दिखाए	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O O O O O O	atis_airfare
+671	क्या ह्यूस्टन से नेवार्क 10 जून शाम 6 के बाद अमेरिकन एरलाइन्स की उड़ान है	O B-fromloc.city_name O B-toloc.city_name B-depart_date.day_number B-depart_date.month_name O B-depart_time.time O B-depart_time.time_relative B-airline_name I-airline_name O O O	atis_flight
+272	पिट्सबर्ग से नेवार्क के लिए रोजाना जानेवाली उड़ानों को दिखायें	B-fromloc.city_name O B-toloc.city_name O O B-flight_days O O O O	atis_flight
+313	रविवार दोपहर को मेम्फिस से लास वेगास	B-depart_date.day_name B-depart_time.period_of_day O B-toloc.city_name O B-fromloc.city_name I-fromloc.city_name	atis_flight
+18	शनिवार की सुबह शिकागो से लास वेगास	B-depart_date.day_name O B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+802	मुझे ओरलांडो से मॉन्ट्रियल की एकतरफ़ा सबसे सस्ता उड़ान दिखाए	O B-fromloc.city_name O B-toloc.city_name O B-round_trip O B-cost_relative O O	atis_flight
+286	बाल्टीमोर में भू - परिवहन की सूची	O O O O B-city_name O O	atis_ground_service
+849	m का क्या मतलब है	B-fare_basis_code O O O O	atis_abbreviation
+750	कृपया 17 जून को शिकागो से कैनसस सिटी की सभी उड़ान की सूची दे	O B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+145	मैं सैन फ्रांसिस्को से मिल्वौकी मिल्वौकी से डेनवर होकर उड़ना चाहता हूँ	O B-fromloc.city_name I-fromloc.city_name O O O O B-toloc.city_name O O O O	atis_flight
+168	मैं ओरलांडो से कैनसस सिटी तक उड़ना चाहूंगा	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+233	सिनसिनाटी से टैम्पा तक सुबह जल्द निकलनेवाली उड़ानों की सूची दीजिए	B-fromloc.city_name O B-toloc.city_name O B-depart_time.period_of_day B-depart_time.period_of_day O O O O O	atis_flight
+80	टोरंटो इन्टरनेशनल डाउनटाउन से कितना दूर है	B-airport_name I-airport_name O O O O O	atis_distance
+562	कोन सी उड़ानें इंडियानापोलिस से सैन डिएगो तक अप्रैल पांच को यात्रा करेंगी	O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.month_name B-depart_date.day_number O O O	atis_flight
+180	मैं नेवार्क से लॉस एंजिल्स के लिए शाम की उड़ान पसंद करूँगा	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_time.period_of_day O O O O	atis_flight
+747	कृपया सभी उड़ाने जो सिनसिनाटी से किसी भी न्यू यॉर्क सिटी के एरपोर्ट तक जाए जो अगले शनिवार शाम 6 बजे से पहले पहुँचे	O O O O B-fromloc.city_name O O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O B-arrive_date.date_relative B-arrive_date.day_name O B-arrive_time.time O O B-arrive_time.time_relative O	atis_flight
+132	मुझे वाशिंगटन से बोस्टन तक उड़ानों पर जानकारी की आवश्यकता है जो कि शनिवार को छोड़ देते हैं	O B-fromloc.city_name O B-toloc.city_name O O O O O O O O O B-depart_date.day_name O O O O	atis_flight
+31	मेम्फिस से टकोमा डिनर तक उड़ान ढूंढें	B-fromloc.city_name O B-toloc.city_name B-meal_description O O O	atis_flight
+479	लोंग बीच से सैंट लुइस जाने के लिए कौन सी उड़ाने हैं	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O O O O	atis_flight
+803	मुझे लास वेगास से डेट्रोइट की twa पर दोतरफा सबसे सस्ता कोच किराया की उड़ान दिखाए	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-airline_code O B-round_trip O B-cost_relative B-class_type O O O O	atis_airfare
+584	सैन डिएगो से फीनिक्स तक सोमवार की सुबह को उड़ाने ढूँढे	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_time.period_of_day O O O	atis_flight
+138	मुझे मेम्फिस से सिएटल की उड़ान लगाना है जो 3 बजे से अधिक समय बाद आता है	O B-fromloc.city_name O B-toloc.city_name O O O O O B-arrive_time.time I-arrive_time.time O B-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative O O	atis_flight
+840	किराया कोड q का क्या मतलब हैं	O O B-booking_class O O O O	atis_abbreviation
+144	मैं नैशविल से सिएटल तक उड़ना चाहता हूं और मुझे सबसे सस्ता दोतरफा किराया चाहिए	O B-fromloc.city_name O B-toloc.city_name O O O O O O O B-cost_relative B-round_trip O O	atis_flight
+104	मुझे सोमवार रात को मिल्वौकी से वाशिंगटन डीसी जाने के लिए एक उड़ान चाहिए	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O O O O O	atis_flight
+723	टोरंटो इंटरनॅशनल एरपोर्ट से टोरंटो शहर की दूरी माइल्स में दे	B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O B-city_name O O O O O O	atis_distance
+870	कौन सी उड़ान सबसे कम दूरी की है जो मिल्वौकी से लोंग बीच तक जाए	O O O B-flight_mod I-flight_mod O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O	atis_flight
+506	ओकलैंड और साल्ट लेक सिटी के बीच आखिरी रोजाना उड़ान क्या है	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-flight_mod B-flight_days O O O	atis_flight
+511	वाशिंगटन डीसी से मॉन्ट्रियल के लिए सबसे कम किराया क्या है	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O O B-cost_relative I-cost_relative O O O	atis_airfare
+669	सैंट लुइस में भूमि परिवहन उपलब्ध है क्या	B-city_name I-city_name O O O O O O	atis_ground_service
+601	हर शनिवार सुबह की उड़ान जिसमे खाना भी हो कॉंटिनेंटल फ्लाइट्स में शिकागो से सिएटल	B-depart_time.period_mod B-depart_date.day_name B-depart_time.period_of_day O O O B-meal O O B-airline_name O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+773	कृपया मुझे मियामी से जेएफके वापसी उड़ान दिखाए	O O B-fromloc.city_name O B-toloc.airport_code B-round_trip O O	atis_flight
+743	कृपया नेवार्क से ओरलांडो की उड़ान ढूँढे	O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+701	गुरुवार आधी रात के बाद ओकलैंड से साल्ट लेक सिटी की उड़ानो की सूची दे	B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day O B-depart_time.time_relative B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+164	मैं वाशिंगटन डीसी से डेन्वर तक जाने वाली उड़ानों के बारे में जानकारी चाहूंगा	O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O O O O O O O O O	atis_flight
+842	ap 57 का क्या मतलब हैं	B-restriction_code I-restriction_code O O O O	atis_abbreviation
+397	मुझे टोरंटो से सैंट पीटर्सबर्ग तक लगातार उड़ान दिखाए	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-flight_stop O O	atis_flight
+581	उस एर की कोई उड़ाने सिनसिनाटी से डेनवर तक 6 जून को जाती हैं क्या	B-airline_name I-airline_name O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number B-depart_date.month_name O O O O	atis_flight
+694	लास वेगास से फीनिक्स उड़ान की सूची	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+391	फीनिक्स से फोर्ट वर्थ की उड़ानें दिखाइए	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+328	पहले अप्रैल को मुझे फीनिक्स से सैन डिएगो तक जाने वाली उड़ान की आवश्यकता है	B-depart_date.day_number B-depart_date.month_name O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O O	atis_flight
+474	कौन से उड़ान बाल्टीमोर से रवाना होते हैं	O O O B-fromloc.city_name O O O O	atis_flight
+81	बाल्टीमोर से सैन फ्रांसिस्को तक की उड़ान कितना देर लेती है	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O O	atis_distance
+61	मुझे बुधवार को मियामी से क्लीवलैंड जानेवाली सारी उड़ाने और उनका किराया दिखाए	O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O O O O O	atis_flight
+835	ला गार्डिया से सैन होसे की युनाइटेड पर कौन सी उड़ान है	B-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name I-toloc.city_name O B-airline_name O O O O O	atis_flight
+891	कौन सी फ्लाइट सोमवार को मॉन्ट्रियल से उड़ कर सुबह शिकागो पहुँचती है	O O O B-depart_date.day_name O B-fromloc.city_name O O O B-arrive_time.period_of_day B-toloc.city_name O O	atis_flight
+769	शनिवार शाम सैंट लुइस से बरबैंक की उड़ान दिखाए	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+278	टैम्पा से सिनसिनाटी जाने वाली 3 बजे शाम के बाद की उड़ान बताये	B-fromloc.city_name O B-toloc.city_name O O B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_time.time_relative O O O	atis_flight
+771	बुधवार शाम सैंट लुइस से बरबैंक की उड़ान दिखाए	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+347	कृपया सैंट पीटर्सबर्ग और शार्लट के बीच दोपहर उड़ानों को सूचीबद्ध करें	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_time.period_of_day O O O O	atis_flight
+215	8 और 9 बजे के बीच डेन्वर पहुंचने या छोड़ने वाली सभी उड़ानों की सूची बनाएं	B-depart_time.start_time O B-depart_time.end_time I-depart_time.end_time O O B-city_name O O O O O O O O O	atis_flight
+586	सिनसिनाटी से कोई न्यू यॉर्क सिटी हवाई अड्डा तक एक उड़ान मुझे ढूँढे	B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O O O	atis_flight
+214	8 और 9 बजे के बीच डेन्वर में आने वाली सभी उड़ानों की सूची बनाएं	B-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time O O B-toloc.city_name O O O O O O O O	atis_flight
+307	टॉवर एयर की सोमवार की उड़ाने दिखाए	B-airline_name I-airline_name O B-day_name O O O	atis_flight
+24	क्या मुझे साल्ट लेक सिटी से फीनिक्स पर उड़ानों पर उड़ान सूचनाएं मिल सकती हैं	O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O O O O	atis_flight
+354	कृपया सोमवार सुबह नैशविल से मेम्फिस तक की उड़ानें सूचीबद्ध करें	O B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+379	मुझे मिनियापोलिस ठहराव में के साथ सिएटल से बोस्टन के लिए सभी लुफ्थांसा उड़ानें दिखाएं	O B-stoploc.city_name O O O O B-fromloc.city_name O B-toloc.city_name O O O B-airline_name O O	atis_flight
+805	मुझे बोस्टन और डेनवर को जोडनेवाली उड़ान और विमान के प्रकार भी दिखाए	O B-fromloc.city_name O B-toloc.city_name O B-connect O O O O O O O	atis_flight
+547	जो दोपहर में शनिवार अप्रैल तेईस को लास वेगास से बरबैंक में उड़ानें पहुंचती हैं,	O B-depart_time.period_of_day O B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+837	सिनसिनाटी से दोपहर बाद उड़ कर शार्लट शाम 7 से पहले पहुँचने वाली कौन सी लगातार उड़ान है	B-fromloc.city_name O B-depart_time.period_of_day B-depart_time.time_relative O O B-toloc.city_name O B-arrive_time.time O B-arrive_time.time_relative O O O O B-flight_stop O O	atis_flight
+415	ओकलैंड से साल्ट लेक सिटी के बीच की उड़ानों के बारे में बताइए	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O O O O	atis_flight
+851	सुबह 21 एप्रिल को क्लीवलैंड से इंडियानापोलिस कौन सी उड़ान है	B-depart_time.period_of_day B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+78	डीसी से ओकलैंड तक की बुधवार सुबह का उड़ान कैसा रहेगा	B-fromloc.state_code O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day O O O O	atis_flight
+680	मियामी और इंडियानापोलिस के बीच सभी एरलाइन्स और उसका किराया की सूची	B-fromloc.city_name O B-toloc.city_name O O O O O O O O O	atis_flight airfare
+206	टोरंटो से सैन डिएगो तक अमेरिकी एयरलाइंस पर उड़ान की सूची	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_name I-airline_name O O O O	atis_flight
+222	रविवार को क्लीवलैंड की नैशविल से सभी उड़ानों की सूची	B-depart_date.day_name O B-toloc.city_name O B-fromloc.city_name O O O O O	atis_flight
+201	लास वेगास से बाल्टीमोर इकॉनमी	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-economy	atis_flight
+319	नैशविल से क्लीवलैंड तक रविवार को ९ बजे से पहले	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_time.time O O B-depart_time.time_relative	atis_flight
+116	मुझे अमेरिकन एरलाइन्स की मियामी से शिकागो जाने वाली उड़ान चाहिए जो शाम 5 बजे के आसपास पहुचे	O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name O O O O O O B-arrive_time.time I-arrive_time.time O B-arrive_time.time_relative O	atis_flight
+316	मिनियापोलिस से पिट्सबर्ग उड़ान	B-fromloc.city_name O B-toloc.city_name O	atis_flight
+544	कौन सी उड़ानों २० अप्रैल की तड़के सुबह को नैशविल से टकोमा जाने के लिए उपलब्ध हैं	O O O B-depart_date.day_number B-depart_date.month_name O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+457	टकोमा से सैन होसे की उड़ानें क्या हैं	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+494	mci क्या हे	B-airport_code O O	atis_abbreviation
+540	जो विभिन्न एयरलाइंस लास वेगास से न्यू यॉर्क शहर तक जाते हैं	O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O	atis_airline
+879	कोलंबस से सैंट लुइस तक कौन सी सस्ता दोतरफा उड़ान twa पर है	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-cost_relative B-round_trip O B-airline_code O O	atis_flight
+79	लॉस एंजिलिस इन्टरनेशनल डाउनटाउन से कितनी दूर है	B-airport_name I-airport_name I-airport_name O O O O O	atis_distance
+493	किराया कोड एम क्या है	O O B-fare_basis_code O O	atis_abbreviation
+510	टोरंटो से वाशिंगटन डीसी के लिए सबसे कम किराया क्या है	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O B-cost_relative I-cost_relative O O O	atis_airfare
+302	8 जून को डेन्वर से सिनसिनाटी को उड़ानों की सूची	B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+224	8 और 9 बजे के बीच डेन्वर में आने वाले सभी प्रकार के विमानों पर सभी उड़ानों की सूची बनाएं	B-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time O O B-toloc.city_name O O O O O O O O O O O O O	atis_flight
+728	8 जून को वेस्टचेस्टर काउंटी से सिनसिनाटी तक उड़ानो की सूची दे	B-depart_date.day_number B-depart_date.month_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+467	सप्ताह के दिनों में सैन होसे से नैशविल उड़ानों पर उड़ान भरें	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_day_name
+571	कोई उड़ान जो बोस्टन से ओरलांडो तक न्यू यॉर्क को जोड़ती हो है क्या	O O O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name I-stoploc.city_name O B-connect O O O	atis_flight
+237	वाशिंगटन डीसी से टोरंटो के लिए किराए की सूची दिखाए जो अच्छी होनी चाहिए	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O O O O O O O O O O	atis_airfare
+106	मुझे ओकलैंड से साल्ट लेक सिटी जाने वाली उड़ान चाहिए जो बुधवार को शाम 6 बजे बाद जाती हो	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O B-depart_date.day_name O B-depart_time.time I-depart_time.time I-depart_time.time B-depart_time.time_relative O O	atis_flight
+852	dca से वाशिंगटन तक कौन सा भूमि परिवहन उपलब्ध है	B-airport_code O B-city_name O O O O O O O	atis_ground_service
+77	क्या मंगलवार सुबह को मिल्वौकी से वाशिंगटन डीसी तक की उड़ानें हैं	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O O O	atis_flight
+384	मुझे कैनसस शहर से सैंट पॉल की सभी उड़ानें दिखाओ	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+304	मेम्फिस से क्लीवलैंड तक सारे उड़ाने दिखाए	B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+124	मुझे नैशविल टेनेसी से सिएटल तक टिकट की आवश्यकता है	O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name O O O O O	atis_airfare
+388	टोरंटो से सैन डिएगो के बीच की उड़ानों के बारे में बताइए	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O O O	atis_flight
+556	जो उड़ानें अगले मंगलवार को शिकागो से निकलती हैं और लगभग 6 बजे के आसपास डेट्रोइट पहुंचती हैं	O O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O O O O O B-arrive_time.time I-arrive_time.time O B-arrive_time.time_relative B-toloc.city_name O O	atis_flight
+709	पिट्सबर्ग से नेवार्क तक सोमवार सुबह के उड़ानो की सूची दे	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O O O O O	atis_flight
+435	बोस्टन से कौन - सा शहर अमेरिका पश्चिम की प्रथम श्रेणी में उड़ता है	B-fromloc.city_name O O O O O B-airline_name I-airline_name O B-class_type I-class_type O O O	atis_city
+462	रविवार को मॉन्ट्रियल क्यूबेक से सैन डिएगो कैलिफोर्निया तक कौन सी उड़ानें हैं	B-depart_date.day_name O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-toloc.state_name O O O O O	atis_flight
+240	फीनिक्स और लास वेगास के बीच उड़ानों की सूची	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+707	फीनिक्स से ह्यूस्टन तक उड़ानो की सूची दे	B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+452	मंगलवार को फीनिक्स एरिज़ोना से सैंट पॉल मिनेसोटा तक क्या उड़ानें हैं	B-depart_date.day_name O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-toloc.state_name O O O O	atis_flight
+294	अलास्का एयरलाइंस की बरबैंक तक उड़ानों की सूची	B-airline_name I-airline_name O B-toloc.city_name O O O O	atis_flight
+710	सोमवार को साल्ट लेक सिटी यूटा से फीनिक्स अरिज़ोना की उड़ानो की सूची दे	B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name B-fromloc.state_name O B-toloc.city_name B-toloc.state_name O O O O O	atis_flight
+608	शनिवार सुबह की उड़ाने जिस पर खाना मिले शिकागो से मिनियापोलिस तक	B-depart_date.day_name B-depart_time.period_of_day O O O O B-meal O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+226	रविवार को क्लीवलैंड से नैशविल जानेवाली सभी उड़ानों और उनके किराए सूचीबद्ध करें	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O O O O O O	atis_flight airfare
+703	ओंटारियो कैलिफ़ोर्निया से साल्ट लेक सिटी यूटा की उड़ान सूची दे	B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-toloc.state_name O O O O	atis_flight
+176	मुझे सिनसिनाटी से नेवार्क एयरपोर्ट जाने वाली उड़ान चाहिए जो शनिवार शाम 6 बजे से पहले पहुच जाती है	O B-fromloc.city_name O B-toloc.airport_name I-toloc.airport_name O O O O O B-arrive_date.day_name O B-arrive_time.time I-arrive_time.time O B-arrive_time.time_relative O O O	atis_flight
+633	मुझे ओकलैंड से साल्ट लेक सिटी तक गुरुवार सुबह 8 बजे से पहले जाने वाली उड़ान और किराए की जानकारी चाहिए	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-depart_date.day_name O B-depart_time.time O O B-depart_time.time_relative O O O O O O O O	atis_flight airfare
+453	शुक्रवार को सैंट लुइस से शार्लट नॉर्थ कैरोलिना तक कौन सी उड़ानें हैं	B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O  B-toloc.city_name B-toloc.state_name I-toloc.state_name O O O O O	atis_flight
+682	शनिवार 1 बजे शार्लट आगमन करनेवाली सभी उस एरलाइन्स की सूची	B-arrive_date.day_name B-arrive_time.time O B-toloc.city_name O O O B-airline_name I-airline_name O O	atis_flight
+865	विमान डेल्टा be1 में बैठने की क्या क्षमता है	O B-airline_name B-aircraft_code O O O O O O	atis_capacity
+781	मुझे अमेरिका वेस्ट और twa की सभी उड़ान दिखाए जो लास वेगास से jfk शुक्रवार को हो	O B-airline_name I-airline_name O B-airline_code O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.airport_code B-depart_date.day_name O O	atis_flight
+245	सुबह के लिए शिकागो से कैनसस सिटी के लिए उड़ानों दिखाए	B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+591	फीनिक्स से मिल्वौकी की उड़ान संख्या अमेरिकन एरलाइन्स	B-fromloc.city_name O B-toloc.city_name O O O B-airline_name I-airline_name	atis_flight_no
+451	ओंटारियो से मेम्फिस के लिए कौन सी उड़ाने हैं	B-fromloc.city_name O B-toloc.city_name O O O O O O	atis_flight
+600	वाशिंगटन से टोरंटो तक शनिवार का किराया दे	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O O	atis_airfare
+65	मुझे मेम्फिस से लास वेगास तक तक की लगातार उड़ानें दे	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-flight_stop O O	atis_flight
+51	ओकलैंड से साल्ट लेक सिटी तक की गुरुवार को पहली उड़ान प्राप्त करें	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O B-flight_mod O O O	atis_flight
+735	मुझे अगले बुधवार को कैनसस सिटी से शिकागो की उड़ान दे जो करीब 7 पहुँचे	O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O B-arrive_time.time_relative B-arrive_time.time O	atis_flight
+436	कौनसा एयरलाइन बोस्टन से सैन डिएगो तक उड़ान भरता है	O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_airline
+693	लास वेगास से डेनवर की उड़ान की सूची	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+549	न्यूयॉर्क से कौनसी उड़ान रवाना हाेती है और 10 एम पर लास एंजिल्स पहुंचती है	B-fromloc.city_name O O O O O O O B-arrive_time.time I-arrive_time.time B-arrive_time.time_relative B-toloc.city_name I-toloc.city_name O O	atis_flight
+616	सैंट पॉल से नॉर्तवेस्ट फ्लाइट के कितने विमान है	B-fromloc.city_name I-fromloc.city_name O B-airline_name I-airline_name O O O O	atis_flight
+346	कृपया मुझे नैशविल से ह्यूस्टन की लगातार उड़ान ढूंढे और भोजन भी दिया जाए	O O B-fromloc.city_name O B-toloc.city_name O B-flight_stop O O O B-meal_description O O O	atis_flight
+10	बाल्टीमोर से कैनसस सिटी तक इकॉनमी किराया	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-economy O	atis_flight
+340	कृपया करके मियामी फ्लोरिडा से लास वेगास नेवादा जाने वाली उड़ान ढूंढे जो शाम के 4 बजे से पहले पहुच जाती है	O O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-toloc.state_name O O O O O B-arrive_time.time O I-arrive_time.time I-arrive_time.time O B-arrive_time.time_relative O O O	atis_flight
+696	बुधवार शाम मेम्फिस से मियामी की उड़ान सूची दे	B-depart_date.day_name B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+97	मुझे कैनसस सिटी से मिनियापोलिस तक उड़ान की आवश्यकता है	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+352	कृपया सोमवार रात को मेम्फिस से न्यू यॉर्क शहर तक उड़ानें सूचीबद्ध करें	O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O	atis_flight
+154	मुझे सैन फ्रांसिस्को से सैन डिएगो के लिए उड़ान चाहिए	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O	atis_flight
+47	सैन डिएगो से सिएटल तक की उड़ानें	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+624	टैम्पा से मिल्वौकी की एक उड़ान चाहिए	B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+155	मैं मॉन्ट्रियल क्यूबेक से सैन डिएगो कैलिफ़ोर्निया रविवार को जाने वाली उड़ान पसंद करूँगा	O B-fromloc.city_name B-fromloc.state_name O O B-toloc.city_name B-toloc.state_name B-depart_date.day_name O O O O O O	atis_flight
+514	72s के बैठने की क्षमता क्या है	B-aircraft_code O O O O O O	atis_capacity
+661	मैं शिकागो से कैनसस सिटी करीब शाम 7 बजे लौटना चाहूँगा	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_time.time_relative O B-depart_time.time O O O	atis_flight
+153	मुझे टोरंटो से सैंट लुइस जाने वाली उड़ान के बारे मैं बताइए	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O O	atis_flight
+184	मैं क्लीवलैंड से डलास जाना चाहता हूँ	O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+323	रविवार दोपहर को न्यूयॉर्क से लास वेगास	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+582	सिनसिनाटी से सैन होसे तक सोमवार को उड़ाने ढूँढे	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name O O O	atis_flight
+107	मुझे ओंटारियो से मेम्फिस तक उड़ान की जरूरत है	O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+733	मिल्वौकी से फीनिक्स शनिवार को	B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name O	atis_flight
+605	मुझे फीनिक्स से मिल्वौकी तक अमेरिकन एरलाइन्स पर उड़ाने दे	O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O O O	atis_flight
+466	सप्ताह के कोन से दिन नैशविल से टकोमा तक उड़ने के लिए उड़ान भरें	O O O O O B-fromloc.city_name O B-toloc.city_name O O O O O O	atis_day_name
+482	क्या डेनवर के लिए क्लीवलैंड से उड़ान उपलब्ध हैं	O B-toloc.city_name O O B-fromloc.city_name O O O O	atis_flight
+741	क्या मंगलवार को उड़ाने हैं जो सैन डिएगो कैलिफ़ोर्निया से इंडियानापोलिस इंडियाना तक मैं दोपहर की उड़ान चाहता हूँ	O B-depart_date.day_name O O O O B-fromloc.city_name I-fromloc.city_name B-fromloc.state_name O B-toloc.city_name B-toloc.state_name O O B-depart_time.period_of_day O O O O	atis_flight
+697	रविवार को मियामी से इंडियानापोलिस की उड़ान सूची दे	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+695	बुधवार को मेम्फिस से मियामी की उड़ान सूची दे	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+631	मुझे सुबह की फीनिक्स से वाशिंगटन डीसी की दोतरफा उड़ान और किराया चाहिए	O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-round_trip O O O O	atis_flight airfare
+363	सोमवार को बरबैंक से मिल्वौकी तक उड़ानें दिखाएं	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+823	कौन सी एयरलाइन डेट्रोइट से वेस्टचेस्टर काउंटी तक जाती हैं	O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_airline
+727	पिट्सबर्ग से बाल्टीमोर की उड़ानो की सूची दे जो जुलाई 1 को पहुचाए	B-fromloc.city_name O B-toloc.city_name O O O O O O B-arrive_date.month_name B-arrive_date.day_number O O	atis_flight
+136	मुझे टैम्पा में एक कार किराए पर लेने की ज़रूरत है	O B-city_name O O B-transport_type O O O O O O	atis_ground_service
+64	मुझे मंगलवार को लॉस एंजिल्स से पिट्सबर्ग जानेवाली सारी उड़ाने दिखाए	O B-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+775	मुझे रोजाना की उड़ान दे जो डेनवर रात 8 और 9 के बीच पहुचे	O B-flight_days O O O O B-toloc.city_name O B-arrive_time.start_time O B-arrive_time.end_time O O O	atis_flight
+291	बोस्टन से वाशिंगटन तक की शनिवार की उड़ानें	B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O	atis_flight
+86	757 पर कितने यात्री उड़ सकते हैं	B-aircraft_code O O O O O O	atis_capacity
+500	ह्यूस्टन से ओरलांडो में सबसे पहले आगमन होने वाली उड़ान कौन सी है	B-fromloc.city_name O B-toloc.city_name O B-flight_mod I-flight_mod O O O O O O O	atis_flight
+162	मैं ओंटारियो से टकोमा तक उड़ानों को पसंद करूंगा	O B-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+635	मुझे इंडियानापोलिस से क्लीवलैंड तक मंगलवार दोपहर में जाने वाली उड़ान की जानकारी चाहिए	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day O O O O O O O	atis_flight
+621	मुझे सैंट लुइस से मिल्वौकी की रोजाना उड़ान की ज़रूरत है	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-flight_days O O O O	atis_flight
+463	वाशिंगटन डीसी से साल्ट लेक सिटी तक सबसे कम किराए क्या हैं	B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-cost_relative O O O	atis_airfare
+227	टॉवर एयर की भोजन उपलब्धता वाली सारी उड़ाने दिखाए	B-airline_name I-airline_name O B-meal O O O O O	atis_flight
+853	पिट्स्बर्ग_हवाई_अड्डा से पिट्सबर्ग शहर तक कौन सा भूमि परिवहन उपलब्ध है	B-airport_name O B-city_name O O O O O O O O	atis_ground_service
+574	मिल्वौकी से ओरलांडो तक सबसे छोटी उड़ान ले सकता हूँ क्या	B-fromloc.city_name O B-toloc.city_name O O B-flight_mod O O O O O	atis_flight
+151	मैं टोरंटो से डेट्रोइट की उड़ान चाहूंगा	O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+583	मंगलवार को डेट्रोइट से सैन डिएगो तक उड़ान ढूँढे	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+590	कॉंटिनेंटल पर सिएटल से शिकागो की उड़ान संख्या	B-airline_name O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight_no
+341	कृपया ओरलांडो से कैनसस सिटी तक उड़ान ढूंढें	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+251	डेनवर से फीनिक्स के लिए उड़ानों की सूची दिखाए	B-fromloc.city_name O B-toloc.city_name O O O O O O	atis_flight
+409	मुझे मंगलवार की सुबह शार्लट से मिनियापोलिस तक की सभी सीधी उड़ानों को दिखाएं	O B-depart_date.day_name O B-depart_time.period_of_day B-fromloc.city_name O B-toloc.city_name O O O B-connect O O O	atis_flight
+814	मुझे म80 विमान के प्रकार के बारे में बताए	O B-aircraft_code O O O O O O O	atis_aircraft
+143	मैं साल्ट लेक सिटी से वेस्टचेस्टर काउंटी के लिए एक उड़ान बुक करना चाहता हूं	O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O O O	atis_flight
+263	मिल्वौकी से वाशिंगटन डीसी 1200 से पहले उड़ानों की सूची दिखाए	B-fromloc.city_name O B-toloc.city_name B-toloc.state_code B-depart_time.time O B-depart_time.time_relative O O O O	atis_flight
+424	मुझे सुबह की उड़ानें मेम्फिस से न्यू यॉर्क शहर तक दिखाएं	O B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O	atis_flight
+607	मुझे फीनिक्स से मिल्वौकी तक अमेरिकन एरलाइन्स पर उड़ाने दे बुधवार शाम को	O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O O O B-depart_date.day_name O O	atis_flight
+736	मुझे ह्यूस्टन से बोस्टन एकतरफ़ा उड़ान दिखाए	O B-fromloc.city_name O B-toloc.city_name B-round_trip O O	atis_flight
+336	गुरुवार शाम को पिट्सबर्ग से लॉस एंजेलस	B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+127	साल्ट लेक सिटी में जाने के लिए ओकलैंड से सुबह 9 बजे से पहले गुरुवार को प्रस्थान करने के लिए मुझे उड़ान और किराया जानकारी चाहिए	B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O B-fromloc.city_name O O B-depart_time.time I-depart_time.time O B-depart_time.time_relative B-depart_date.day_name O O O O O O O O O O O	atis_flight airfare
+599	वाशिंगटन से टोरंटो तक शनिवार का किराया दे	B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O O	atis_airfare
+543	कौन सी उड़ानों २० अप्रैल की सुबह को टकोमा से सैन होसे जाने के लिए उपलब्ध हैं	O O O B-depart_date.day_number B-depart_date.month_name O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+825	डेनवर में कौन सी एरलाइन्स उड़ती है	B-toloc.city_name O O O O O O	atis_airline
+62	मुझे महाद्वीपीय पर शिकागो से सिएटल की उड़ानें देनी हैं जो शनिवार जल्दी सुबह भोजन देता हैं	O B-airline_name O B-fromloc.city_name O B-toloc.city_name O O O O O B-depart_date.day_name B-depart_time.period_mod B-depart_time.period_of_day B-meal O O	atis_flight
+406	मुझे सैन फ्रांसिस्को से ह्यूस्टन तक का सबसे सस्ता दोतरफा यात्रा का किराया दिखाएं	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O B-cost_relative B-round_trip O O O O	atis_airfare
+464	ह्यूस्टन और मेम्फिस के बीच लगातार उड़ाने कौनसी हैं	B-fromloc.city_name O B-toloc.city_name O O B-flight_stop O O O	atis_flight
+11	बाल्टीमोर से नेवार्क बुधवार की सुबह	B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name O B-depart_time.period_of_day	atis_flight
+368	कैनसस सिटी से ओरलांडो तक उड़ानें दिखाएं	B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+779	मुझे सभी लास वेगास से न्यू यॉर्क सिटी की उड़ान दिखाए	O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O	atis_flight
+35	शुक्रवार को ह्यूस्टन से मेम्फिस जानेवाली उड़ाने दिखाए	B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+46	अटलांटा से सिएटल तक की उड़ानें	B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+886	कौन सी एरलाइन्स टोरंटो से सैन डिएगो तक जाती है	O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O	atis_airline
+754	कृपया सैन फ्रांसिस्को से मिल्वौकी की उड़ान दे	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+140	मुझे नैशविल से सिएटल के लिए उड़ान चाइये जो दोपहर 3 बजे तक पहुच जाये	O B-fromloc.city_name O B-toloc.city_name O O O O O B-arrive_time.time I-arrive_time.time O O B-arrive_time.time_relative I-arrive_time.time_relative	atis_flight
+210	न्यू यॉर्क के हवाई अड्डो की सूची दीजिए	B-city_name I-city_name O O O O O O	atis_airport
+12	क्या मुझे मंगलवार रात की वाशिंगटन डीसी से ओकलैंड की उड़ान मिल सकती हे	O O B-depart_date.day_name B-depart_time.period_of_day O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O O O O O	atis_flight
+844	किराया कोड f का क्या मतलब है	O O B-fare_basis_code O O O O	atis_abbreviation
+649	मुझे डल्लास से सैन फ्रांसिस्को 4 बजे के बाद की जुड़ती उड़ान चाहिए	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_time.time O O B-depart_time.time_relative O B-connect O O	atis_flight
+108	मुझे फीनिक्स से अटलांटा तक की उड़ान चाहिए	O B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+317	सोमवार सुबह के उड़ाने अटलांटा से कैनसस सिटी तक	B-depart_date.day_name B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O	atis_flight
+396	मुझे सैंट पीटर्सबर्ग से टोरंटो तक लगातार उड़ान दिखाए	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-flight_stop O O	atis_flight
+708	फीनिक्स से लास वेगास तक उड़ानो की सूची दे	B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+513	विमान l10 की बैठने की क्षमता क्या हैं	O B-aircraft_code O O O O O O	atis_capacity
+873	अमेरिकन फ्लाइट 811 जो टैम्पा से मिल्वौकी जाती है क्या खाना परोसा जाता है	B-airline_name O B-flight_number O B-fromloc.city_name O B-toloc.city_name O O O B-meal O O O	atis_meal

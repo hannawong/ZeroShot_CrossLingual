@@ -75,7 +75,10 @@ def translate_sentence(triple):
                 break
             current_label = labels[start]
             group.append(words[start])
-
+    print(triple)
+    print(translated_words,translated_labels,sentence_label)
+    exit()
+    
     return translated_words, translated_labels, sentence_label
 from tqdm import tqdm
 def translate_all(triple, k):

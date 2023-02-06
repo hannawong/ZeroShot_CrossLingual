@@ -1,0 +1,491 @@
+id	utterance	slot_labels	intent
+4489	Cuál es la tarifa aérea más económica desde Tacoma hasta Orlando	O O O O O B-cost_relative I-cost_relative O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4490	Qué tarifas de ida y vuelta hay desde Pittsburgh hasta Filadelfia de menos de 1000 dólares	O O O B-round_trip I-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name B-cost_relative I-cost_relative O B-fare_amount I-fare_amount	atis_airfare
+4491	Muéstrame las tarifas de primera clase desde Boston hasta Denver	O O O O B-class_type I-class_type O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4492	Me gustaría recibir información sobre un ticket desde Denver hasta Pittsburgh y Atlanta	O O O O O O O O B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name	atis_airfare
+4493	Muéstrame la tarifa más económica de ida y vuelta desde Baltimore hasta Dallas	O O O B-cost_relative I-cost_relative B-round_trip I-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4494	Tarifas y vuelos desde Pittsburgh hasta Filadelfia	O O O O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4495	Cuánto cuesta un vuelo de ida y vuelta desde Pittsburgh hasta Atlanta que salga el veinticinco de abril y vuelva el seis de mayo	O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O O O B-depart_date.month_name O B-depart_date.day_number O O O B-return_date.month_name O B-return_date.day_number	atis_airfare
+4496	Muéstrame la tarifa desde Dallas hasta San Francisco	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airfare
+4497	Muéstrame todas las tarifas de vuelos nocturnos entre Filadelfia y San Francisco	O O O O O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airfare
+4498	¿Puedes mostrarme las tarifas de vuelos de ida en clase económica desde Oakland hasta Dallas para el dieciséis de diciembre ?	O O O O O O B-round_trip I-round_trip O B-economy I-economy O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name O	atis_airfare
+4499	Cuáles son las tarifas de clase turista desde Charlotte hasta Los Ángeles el miércoles por la noche	O O O O O B-class_type I-class_type O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_airfare
+4500	Cuál es la tarifa del vuelo 352 de United en primera clase desde Denver hasta Boston	O O O O O B-flight_number I-flight_number O B-airline_name O B-class_type I-class_type O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4501	Quiero saber las tarifas de ida y vuelta desde Nueva York hasta San José	O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airfare
+4502	Cuánto cuesta un ticket de primera clase desde Baltimore hasta Dallas	O O O O O B-class_type I-class_type O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4503	Cuál es la tarifa en clase económica reducida desde Boston hasta Washington	O O O O O B-economy I-economy B-class_type O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4504	Cuánto cuesta viajar desde el centro hasta el aeropuerto Logan	O O O O O O O O B-toloc.airport_name I-toloc.airport_name	atis_airfare
+4505	Cuál es la tarifa desde San Francisco hasta Dallas Fort Worth en el vuelo 852 de Delta	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O B-flight_number O B-airline_name	atis_airfare
+4506	Muéstrame todos los precios de vuelos de US Air desde Boston hasta Filadelfia	O O O O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4507	Muéstrame las tarifas desde Seattle hasta Mineápolis	O O O O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4508	Cuál es la tarifa de ida y vuelta desde Indianápolis hasta Seattle	O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4509	Muéstrame la tarifa desde Dallas hasta San Francisco	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airfare
+4510	Necesito dos tickets de primera clase desde Dallas Fort Worth hasta San Francisco	O O O O B-class_type I-class_type O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airfare
+4511	Muéstrame los precios de todos los vuelos de ida y vuelta desde Pittsburgh hasta Oakland	O O O O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4512	Qué tickets de ida y vuela hay desde Cleveland hasta Miami de Us Air que lleguen antes de las 4 de la tarde	O O O B-round_trip I-round_trip I-round_trip O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O O B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_airfare
+4513	Cuánto cuesta un vuelo desde Washington hasta Boston	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4514	Cuál es la tarifa desde Atlanta hasta Boston de ida para el siete de noviembre	O O O O O B-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip O O B-depart_date.day_number O B-depart_date.month_name	atis_airfare
+4515	Muéstrame las tarifas desde Baltimore hasta Filadelfia	O O O O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4516	Cuánto cuestan los vuelos de Continental ida y vuelta desde Denver hasta Filadelfia que lleguen después de las 17 h	O O O O O B-airline_name B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time	atis_airfare
+4517	Muéstrame el vuelo con la tarifa aérea más económica que salga un domingo hasta Pittsburgh desde San Francisco	O O O O O O O B-cost_relative I-cost_relative O O O B-depart_date.day_name O B-toloc.city_name O B-fromloc.city_name I-fromloc.city_name	atis_airfare
+4518	Tarifa aérea de ida y vuelta en primera clase desde Indianápolis hasta Memphis	O O O B-round_trip I-round_trip I-round_trip O B-class_type I-class_type O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4519	Cuáles son las tarifas desde Newark hasta Los Ángeles el lunes y el miércoles	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name O O B-depart_date.day_name	atis_airfare
+4520	Muéstrame los tickets de ida y vuelta desde Denver hasta Oakland	O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4521	Cuáles son las tarifas de ida más económicas desde Atlanta hasta Denver	O O O O B-round_trip I-round_trip B-cost_relative I-cost_relative O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4522	Cuál es la tarifa de ida y vuelta desde Memphis hasta Seattle	O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4523	Cuánto cuesta el vuelo 746 de DL	O O O O B-flight_number O B-airline_code	atis_airfare
+4524	Cuál es la tarifa más baja de ida y vuelta desde Dallas hasta Atlanta	O O O O B-cost_relative I-cost_relative O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4525	Tarifas de ida y vuelta en clase económica desde Nueva York hasta Miami	O O B-round_trip I-round_trip I-round_trip O B-economy I-economy O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_airfare
+4526	Cuál es la tarifa más económica que puedo conseguir desde Dallas hasta Denver	O O O O B-cost_relative I-cost_relative O O O O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4527	¿Podrías decirme cuál es la tarifa más económica de ida desde Boston hasta Filadelfia ?	O O O O O O B-cost_relative I-cost_relative B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O	atis_airfare
+4528	Cuál es el ticket más económico de ida desde Baltimore hasta Atlanta	O O O O B-cost_relative I-cost_relative B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4529	Quiero un ticket de ida desde Dallas hasta Baltimore	O O O B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4530	Cuál es la tarifa más económica de ida desde Pittsburgh hasta Denver	O O O O B-cost_relative I-cost_relative B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+4531	Números de vuelos desde Columbus hasta Mineápolis mañana	O O O O B-fromloc.city_name O B-toloc.city_name B-depart_date.today_relative	atis_flight_no
+4532	Dime los vuelos y las tarifas para el veintisiete de diciembre desde Indianápolis hasta Orlando	O O O O O O O O B-depart_date.day_number O B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name	atis_flight#atis_airfare
+4533	Todos los vuelos desde Atlanta hasta Dallas de ida y vuelta después de las 12 del mediodía de menos de 1100 dólares	O O O O B-fromloc.city_name O B-toloc.city_name O B-round_trip I-round_trip I-round_trip B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time O B-cost_relative O B-fare_amount I-fare_amount	atis_flight#atis_airfare
+4534	Quiero salir desde Boston a las 8:38 de la mañana y llegar a Denver a las 11:10 h en la mañana	O O O B-fromloc.city_name O O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time O O O B-toloc.city_name O O B-arrive_time.time I-arrive_time.time O O B-arrive_time.period_of_day	atis_flight
+4535	Qué vuelos hay disponibles desde Pittsburgh hasta Baltimore el jueves por la mañana	O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+4536	Necesito un vuelo mañana desde Columbus hasta Mineápolis	O O O B-depart_date.today_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4537	Muéstrame los vuelos desde Pittsburgh hasta Los Ángeles el jueves	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name	atis_flight
+4538	Todos los vuelos desde Boston hasta Washington	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4539	Muéstrame los vuelos desde Dallas hasta San Francisco	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4540	Muéstrame los vuelos desde San Diego hasta Newark vía Houston	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name	atis_flight
+4541	Cuál es el vuelo más barato desde Boston hasta el aeropuerto internacional de Baltimore-Washington (BWI)	O O O O B-cost_relative I-cost_relative O B-fromloc.city_name O B-toloc.airport_code I-toloc.airport_code I-toloc.airport_code I-toloc.airport_code I-toloc.airport_code I-toloc.airport_code	atis_flight
+4542	Todos los vuelos hasta Baltimore después de las 6 de la tarde	O O O O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+4543	Todos los vuelos desde Denver hasta Pittsburgh que salgan después de las 6 de la tarde y antes de las 7 de la tarde	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.time_relative I-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time O B-depart_time.time_relative I-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+4544	Necesito información sobre los vuelos del martes que salen desde Baltimore hasta Dallas , desde Dallas hasta Boston y desde Boston hasta Baltimore	O O O O O O B-depart_date.day_name O O O B-fromloc.city_name O B-toloc.city_name O O B-fromloc.city_name O B-toloc.city_name O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4545	Dime los vuelos que salen desde Boston hasta Pittsburgh el jueves de la semana siguiente	O O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O O B-depart_date.date_relative	atis_flight
+4546	Quisiera volar desde Denver hasta Pittsburgh por United Airlines	O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name	atis_flight
+4547	Muéstrame los vuelos desde San Diego hasta Newark	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+4548	Muéstrame todos los vuelos de primera clase de United desde Denver hasta Baltimore	O O O O O B-class_type I-class_type O B-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4549	Quiero reservar un vuelo desde Atlanta hasta Denver	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4550	Muéstrame todos los vuelos desde Boston hasta Pittsburgh el miércoles de la semana siguiente que salgan desde Boston después de las 2 de la tarde en punto	O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O O B-depart_date.date_relative O O O B-fromloc.city_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+4551	También necesito un vuelo desde Dallas hasta Boston que llegue al mediodía	O O O O O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative B-arrive_time.time	atis_flight
+4552	Muéstrame todos los vuelos de Northwest Airlines desde Nueva York hasta Milwaukee que salgan a las 7:20 de la mañana	O O O O O B-airline_name I-airline_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+4553	Vuelos desde Nueva York hasta Miami	O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+4554	Búscame un vuelo en Delta desde Filadelfia hasta San Francisco y dime los números de vuelo	O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O	atis_flight
+4555	Necesito un vuelo desde Dallas hasta San Francisco	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4556	Cuáles son los vuelos desde St. Louis hasta Burbank el domingo por la tarde	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+4557	Quisiera reservar un vuelo desde Pittsburgh hasta Atlanta	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4558	Muéstrame los vuelos desde Baltimore hasta San Francisco entre las 6 de la tarde y las 8 de la noche el viernes	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_time.start_time I-depart_time.start_time I-depart_time.start_time I-depart_time.start_time O O B-depart_time.end_time I-depart_time.end_time I-depart_time.end_time I-depart_time.end_time O B-depart_date.day_name	atis_flight
+4559	Quiero ver una lista de los vuelos de ida y vuelta entre Indianápolis y Orlando , Florida para el veintisiete y el veintiocho de diciembre	O O O O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O B-toloc.state_name O O B-depart_date.day_number O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+4560	desde Pittsburgh hasta Denver	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4561	Muéstrame todos los vuelos desde Boston hasta Dallas Fort Worth , tanto directos como con conexión, que lleguen antes del mediodía	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O O O O B-arrive_time.time_relative O B-arrive_time.time	atis_flight
+4562	Necesito un vuelo desde Charlotte hasta Newark que salga hoy por la tarde	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.today_relative O O B-depart_time.period_of_day	atis_flight
+4563	vuelos desde Newark hasta Cleveland	O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4564	Qué vuelos salen desde Boston hasta Pittsburgh después de las 6 en punto el próximo martes	O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_date.date_relative B-depart_date.day_name	atis_flight
+4565	¿ US Air tiene vuelos que vayan desde Atlanta hasta Denver ?	O B-airline_name I-airline_name O O O O O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4566	Quiero saber sobre el viaje más corto entre Boston y San Francisco	O O O O O B-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4567	Quiero obtener información sobre los vuelos desde San Francisco hasta Pittsburgh que salgan después de las 12 del mediodía el lunes	O O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_date.day_name	atis_flight
+4568	Cuáles son los vuelos más económicos desde Denver hasta Atlanta	O O O O B-cost_relative I-cost_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4569	Necesito información de los vuelos que salgan desde Dallas el martes por la tarde y regresen a Atlanta	O O O O O O O O B-fromloc.city_name O B-depart_date.day_name O O B-depart_time.period_of_day O O O B-toloc.city_name	atis_flight
+4570	Qué vuelos de United Airlines van desde Denver hasta Baltimore en primera clase y llegan el siete de mayo	O O O B-airline_name I-airline_name O O B-fromloc.city_name O B-toloc.city_name O B-class_type I-class_type O O O B-arrive_date.day_number O B-arrive_date.month_name	atis_flight
+4571	Qué vuelos tienes desde Burbank hasta Tacoma, Washington	O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_name	atis_flight
+4572	Busca el último vuelo desde San Francisco hasta Atlanta en el que sirvan una comida	O O B-flight_mod O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O B-meal	atis_flight
+4573	Quiero hacer una reserva par un vuelo a Denver desde Filadelfia para este próximo domingo	O O O O O O O O B-toloc.city_name O B-fromloc.city_name O B-depart_date.date_relative O B-depart_date.day_name	atis_flight
+4574	Muéstrame vuelos desde Boston hasta Denver para el miércoles	O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+4575	Muéstrame los vuelos desde Boston hasta Baltimore	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4576	Dime qué vuelos hay desde San Francisco hasta Washington D. C.	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_code I-toloc.state_code	atis_flight
+4577	Necesito información sobre los vuelos desde Denver hasta Pittsburgh	O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4578	Desde Seattle hasta Salt Lake City	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+4579	Cuál es el primer vuelo desde Boston hasta BWI en el que sirvan un aperitivo	O O O B-flight_mod O O B-fromloc.city_name O B-toloc.airport_code O O O O O B-meal_description	atis_flight
+4580	Dime los vuelos que salen el nueve de agosto desde Denver y regresen a Boston	O O O O O O B-depart_date.day_number O B-depart_date.month_name O B-fromloc.city_name O O O B-toloc.city_name	atis_flight
+4581	Muéstrame todos los vuelos que lleguen al General Mitchell Internacional	O O O O O O O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name	atis_flight
+4582	Qué vuelos van desde Denver hasta San Francisco los lunes, martes, miércoles, jueves y viernes	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_date.day_name B-depart_date.day_name B-depart_date.day_name O B-depart_date.day_name	atis_flight
+4583	Enumera todos los vuelos desde Indianápolis hasta Seattle	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4584	Comida a bordo desde Oakland hasta Filadelfia el sábado	B-meal O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+4585	Muéstrame los vuelos en TWA desde Atlanta por la mañana	O O O O B-airline_code O B-fromloc.city_name O O B-depart_time.period_of_day	atis_flight
+4586	Quiero buscar el primer vuelo desde Baltimore hasta Boston en el que sirvan una comida	O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name O O O O O B-meal	atis_flight
+4587	Muéstrame todos los vuelos desde Baltimore hasta Boston para el veintinueve de julio	O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+4588	Quiero viajar desde Atlanta hasta Baltimore temprano por la mañana en el primer vuelo	O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.period_mod O O B-depart_time.period_of_day O O B-flight_mod O	atis_flight
+4589	Ahora necesito un vuelo desde San José hasta Houston para el domingo cuatro	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name B-depart_date.day_number	atis_flight
+4590	Cuáles son los vuelos disponibles después de las 6 de la tarde entre San Francisco y Boston	O O O O O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+4591	Qué vuelos salen desde Baltimore el viernes y llegan a San Francisco a las 8 de la noche	O O O O B-fromloc.city_name O B-depart_date.day_name O O O B-toloc.city_name I-toloc.city_name B-arrive_time.time_relative I-arrive_time.time_relative B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+4592	Muéstrame los vuelos desde Boston hasta San Francisco	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4593	Muéstrame una lista de los vuelos de Delta Airlines desde Boston hasta Filadelfia	O O O O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4594	Qué vuelos sin escalas hay entre Boston y Washington que lleguen después de las 4 de la tarde en punto	O O B-flight_stop I-flight_stop O O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+4595	En el primer vuelo desde San Francisco hasta Atlanta en Delta , ¿sirven comida ?	O O B-flight_mod O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-airline_name O O B-meal O	atis_flight
+4596	A qué destinos vuela Canadian Airlines International	O O O O B-airline_name I-airline_name I-airline_name	atis_flight
+4597	Qué vuelos hay desde Denver hasta Pittsburgh que lleguen antes de las 8 de la mañana	O O O O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative O O B-arrive_time.time O O B-arrive_time.period_of_day	atis_flight
+4598	Búscame el primer vuelo desde Boston hasta Atlanta	O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4599	Muéstrame vuelos sin escalas desde Houston hasta Dallas que lleguen antes de la medianoche	O O B-flight_stop I-flight_stop O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative O O B-arrive_time.period_of_day	atis_flight
+4600	Muéstrame vuelos desde Boston hasta San Francisco que paren en Atlanta	O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-stoploc.city_name	atis_flight
+4601	Muéstrame vuelos desde San Francisco hasta Filadelfia que paren en Dallas	O O O B-toloc.city_name I-toloc.city_name O B-fromloc.city_name O O O B-stoploc.city_name	atis_flight
+4602	Muéstrame los vuelos desde Baltimore hasta Dallas	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4603	Me gustaría un vuelo desde Columbus hasta Phoenix que pare en Cincinnati con servicio de cena , qué hay disponible	O O O O O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name O O O B-meal_description O O O O	atis_flight
+4604	También muéstrame vuelos desde San Francisco hasta Pittsburgh el martes	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+4605	Muéstrame vuelos desde Dallas hasta Oakland	O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4606	Cuál es el vuelo más económico desde Charlotte hasta Long Beach	O O O O B-cost_relative I-cost_relative O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4607	Muéstrame todos los vuelos desde San Francisco hasta Pittsburgh	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+4608	Búscame un vuelo de United desde Boston hasta San Francisco con escala en Denver	O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-stoploc.city_name	atis_flight
+4609	Muéstrame el último vuelo que sale desde Love Field	O O B-flight_mod O O O O B-fromloc.airport_name I-fromloc.airport_name	atis_flight
+4610	Qué vuelos salen desde Newark hasta Boston después de las 5 de la tarde	O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative I-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+4611	Qué vuelos hay disponibles desde Boston hasta Dallas	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4612	Cuál es el primer vuelo que sale desde San Francisco con destino a Boston el nueve de noviembre	O O O B-flight_mod O O O O B-fromloc.city_name I-fromloc.city_name O O O B-toloc.city_name O B-arrive_date.day_number O B-arrive_date.month_name	atis_flight
+4613	Cuál es el primer vuelo desde Pittsburgh hasta Atlanta el cinco de julio	O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+4614	Muéstrame todos los vuelos disponibles para el próximo sábado desde Filadelfia hasta Dallas	O O O O O O O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4615	Qué vuelos salen desde Pittsburgh con destino a Los Ángeles el jueves después de las 5 de la tarde	O O O O B-fromloc.city_name O O O B-toloc.city_name I-toloc.city_name O B-arrive_date.day_name B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+4616	Qué vuelos sin escalas de America West o Southwest Air hay desde Kansas City hasta Burbank el sábado veintidós de mayo	O O B-flight_stop I-flight_stop O B-airline_name I-airline_name B-or B-airline_name O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-arrive_date.day_name B-arrive_date.day_number O B-arrive_date.month_name	atis_flight
+4617	Qué clases de servicios hay en American Airlines	O O O O O O B-airline_name I-airline_name	atis_flight
+4618	Quiero averiguar qué vuelos hay el viernes once de junio desde San Petersburgo hasta Milwaukee y luego desde Milwaukee hasta Tacoma, gracias	O O O O O O B-depart_date.day_name B-depart_date.day_number O B-depart_date.month_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4619	Todos los vuelos desde Boston hasta Washington D.C. para el diez de noviembre	O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+4620	Qué vuelos hay desde Denver hasta San Francisco	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4621	Qué vuelo hay con tarifa de ida desde Denver hasta Pittsburgh por 329 dólares	O O O O O B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O B-fare_amount I-fare_amount	atis_flight
+4622	Qué vuelos salen desde Baltimore hasta Boston después de las 6 en punto el viernes	O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_date.day_name	atis_flight
+4623	Ok, necesito un vuelo desde Houston hasta Seattle	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4624	Muéstrame una lista de los vuelos entre Denver y Boston	O O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4625	Búscame vuelos sin escalas entre Boston y Dallas que salgan entre las 12 y las 2 de la tarde	O O B-flight_stop I-flight_stop O B-fromloc.city_name O B-toloc.city_name O O O O B-depart_time.start_time O O B-depart_time.end_time O O B-depart_time.period_of_day	atis_flight
+4626	Quiero información sobre vuelos que vayan desde Boston hasta Atlanta	O O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4627	Muéstrame el último vuelo sin escalas desde Denver hasta Washington D. C.	O O B-flight_mod O B-flight_stop I-flight_stop O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code I-toloc.state_code	atis_flight
+4628	Qué vuelos hay desde Atlanta hasta Baltimore	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4629	Quiero un vuelo sin escalas desde Nueva York hasta Las Vegas para el dos de marzo	O O O B-flight_stop I-flight_stop O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-arrive_date.day_number O B-arrive_date.month_name	atis_flight
+4630	No, quiero ir desde Denver hasta Oakland	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4631	Quiero un vuelo para el nueve de julio desde Orlando hasta Kansas City por la tarde	O O O O O B-depart_date.day_number O B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_time.period_of_day	atis_flight
+4632	Muéstrame los vuelos desde Filadelfia hasta Oakland para el viernes	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+4633	Quiero saber los vuelos disponibles desde Boston hasta Denver que lleguen a Denver a las 8 en punto, el miércoles por la mañana	O O O O O O B-fromloc.city_name O B-toloc.city_name O O O B-toloc.city_name B-arrive_time.time_relative I-arrive_time.time_relative B-arrive_time.time I-arrive_time.time I-arrive_time.time O B-arrive_date.day_name B-arrive_time.period_of_day I-arrive_time.period_of_day I-arrive_time.period_of_day	atis_flight
+4634	Quiero el vuelo más económico disponible desde Pittsburgh hasta Atlanta el miércoles por la mañana	O O O B-cost_relative I-cost_relative O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+4635	Muéstrame los vuelos desde Filadelfia hasta San Francisco en American Airlines	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_name I-airline_name	atis_flight
+4636	Vuelos desde Memphis hasta Las Vegas el domingo	O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name	atis_flight
+4637	Cuál es el primer vuelo que parte de Atlanta con destino a Boston el jueves cinco de septiembre después de las 8 de la mañana	O O O B-flight_mod O O O O B-fromloc.city_name O O O B-toloc.city_name O B-depart_date.day_name B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number O B-depart_time.time_relative B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+4638	Vuelo desde Filadelfia hasta Dallas que llegue antes de las 4 de la tarde el sábado	O O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative I-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time O B-arrive_date.day_name	atis_flight
+4639	Muéstrame los vuelos de mañana desde San Diego hasta Phoenix	O O O O B-depart_date.today_relative O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+4640	Muéstrame todos los vuelos desde San Francisco hasta Washington D. C.	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_code I-toloc.state_code	atis_flight
+4641	Quiero viajar desde Filadelfia hasta Dallas	O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4642	Muéstrame todos los vuelos de United Airlines que salgan desde Dallas	O O O O O B-airline_name I-airline_name O O O B-fromloc.city_name	atis_flight
+4643	¿Puedes mostrarme todos los vuelos entre Phoenix y Las Vegas ?	O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O	atis_flight
+4644	Muéstrame todos los vuelos desde Baltimore hasta Filadelfia	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4645	Vuelos de ida y vuelta desde Mineápolis hasta San Diego con tarifa de clase turista económica	O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-class_type I-class_type B-economy	atis_flight
+4646	Quiero volar desde Boston hasta Denver sin ninguna escala y solo durante la tarde	O O O B-fromloc.city_name O B-toloc.city_name O O O O O O O B-depart_time.period_of_day	atis_flight
+4647	Vuelos desde Denver hasta Baltimore entre las 10 de la mañana y las 2 de la tarde	O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.start_time I-depart_time.start_time I-depart_time.start_time I-depart_time.start_time O O B-depart_time.end_time I-depart_time.end_time I-depart_time.end_time I-depart_time.end_time	atis_flight
+4648	Muéstrame los vuelos desde Denver hasta Atlanta	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4649	Qué vuelos hay en Delta desde Boston hasta Dallas	O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4650	El último vuelo desde Washington hasta San Francisco	O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4651	Muéstrame los vuelos disponibles desde Atlanta hasta Baltimore que salgan desde Atlanta por la mañana	O O O O O B-fromloc.city_name O B-toloc.city_name O O B-fromloc.city_name I-fromloc.city_name O O B-depart_time.period_of_day	atis_flight
+4652	Qué vuelos ofrece American Airlines	O O O B-airline_name I-airline_name	atis_flight
+4653	Cómo llego desde el aeropuerto de Pittsburgh hasta el centro	O O O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4654	¿Llega Midwest Express hasta Charlotte ?	O B-airline_name O O B-city_name O	atis_flight
+4655	Qué vuelos hay desde Houston hasta Milwaukee el viernes por la tarde en American Airlines	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O B-depart_time.period_of_day O B-airline_name I-airline_name	atis_flight
+4656	Cuál es el primer vuelo desde San Francisco hasta Dallas el lunes diecinueve de agosto	O O O B-flight_mod O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_date.month_name O B-depart_date.day_number	atis_flight
+4657	qué vuelos hay desde Atlanta hasta San Luis para el martes que lleguen alrededor de las 2:30 de la tarde	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O O B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+4658	Necesito un vuelo desde Kansas City hasta Chicago que salga el miércoles y llegue alrededor de las 7 de la tarde	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O B-depart_date.day_name O O B-toloc.city_name B-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+4659	Quisiera obtener información sobre los vuelos que salen desde Pittsburgh hasta San Francisco que salgan el jueves por la tarde	O O O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+4660	Necesito un vuelo económico desde Baltimore hasta San Francisco	O O B-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4661	Muéstrame los vuelos sin escalas del martes por la mañana desde Dallas hasta Atlanta	O B-flight_stop I-flight_stop O O B-arrive_time.period_mod O B-arrive_date.day_name O B-arrive_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4662	Cuál es el primer vuelo que salga desde Filadelfia hasta Dallas	O O O B-flight_mod O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4663	¿Hay vuelos desde Dallas Fort Worth hasta Boston que salga antes de las 10 de la mañana ?	O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_time.time_relative I-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time O	atis_flight
+4664	Muéstrame todos los vuelos hasta Baltimore después de las 6 de la tarde en punto	O O O O O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+4665	Necesito un vuelo de regreso desde Filadelfia hasta Boston	O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4666	Vuelos de United Airlines con escala en Denver antes del mediodía	O O B-airline_name I-airline_name O O O B-stoploc.city_name B-depart_time.time_relative I-depart_time.time_relative B-depart_time.time	atis_flight
+4667	Qué vuelos van desde Newark hasta Boston después de las 10:24 de la mañana	O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative I-depart_time.time_relative O B-depart_time.time O O B-depart_time.period_of_day	atis_flight
+4668	Vuelos más cortos por la tarde desde Tampa hasta Cincinnati	B-flight_mod I-flight_mod I-flight_mod O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4669	Vuelos desde Boston hasta Pittsburgh	O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4670	Quiero volar con Continental Airlines entre Boston y Filadelfia	O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4671	Quiero reservar un vuelo con Continental Airlines desde Chicago hasta Seattle el primero de junio	O O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name B-depart_date.day_number I-depart_date.day_number	atis_flight
+4672	Todos los vuelos desde Pittsburgh hasta Dallas de ida y vuelta después de las 12 del mediodía de menos de 100 dólares	O O O O B-fromloc.city_name O B-toloc.city_name O B-round_trip I-round_trip I-round_trip B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time O B-cost_relative O B-fare_amount I-fare_amount	atis_flight
+4673	Muéstrame vuelos sin escalas desde San Francisco hasta Boston en primera clase que salgan el domingo después de las 12 del mediodía	O O B-depart_date.day_name I-depart_date.day_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-flight_stop O O B-class_type I-class_type O O O B-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+4674	Vuelos desde Las Vegas hasta Phoenix	O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+4675	Muéstrame vuelos desde Pittsburgh hasta Atlanta el lunes por la tarde	O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+4676	Muéstrame el vuelo con la menor capacidad de asientos que salga de Pittsburgh y llegue a Baltimore el catorce de junio	O O O O O B-mod O O O O O O B-fromloc.city_name O O O B-toloc.city_name O B-arrive_date.month_name O B-arrive_date.day_number	atis_flight
+4677	Muéstrame todos los vuelos desde Boston hasta Denver el treinta y uno de julio	O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name I-depart_date.month_name I-depart_date.month_name O B-depart_date.day_number	atis_flight
+4678	¿Hay vuelos que salgan antes de las 12 del mediodía el quince de junio desde Long Beach hasta Columbus ?	O O O O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_date.month_name O B-depart_date.day_number O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O	atis_flight
+4679	Muéstrame los vuelos diarios desde Boston hasta Atlanta	O O O B-flight_days O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4680	En un vuelo desde San Francisco hasta Atlanta que salga antes de las 8 de la mañana, ¿existe tal vuelo?	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_time.time_relative I-depart_time.time_relative B-depart_time.time O O O O O O O	atis_flight
+4681	Muéstrame todos los vuelos que lleguen al Aeropuerto Internacional General Mitchell y salgan de este	O O O O O O O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O O O O	atis_flight
+4682	Quisiera ver los vuelos desde Denver hasta Filadelfia por favor	O O O O O B-fromloc.city_name O B-toloc.city_name O O	atis_flight
+4683	¿ Eastern Airlines tiene vuelos que salen temprano por la mañana entre el aeropuerto Logan y el aeropuerto internacional de Baltimore-Washington (BWI) ?	O B-airline_name I-airline_name O O O O B-depart_time.period_mod O O B-depart_time.period_of_day O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O B-toloc.airport_code I-toloc.airport_code I-toloc.airport_code I-toloc.airport_code I-toloc.airport_code I-toloc.airport_code O	atis_flight
+4684	Qué vuelos de American Airlines salen de Phoenix	O O O O O B-fromloc.city_name O B-airline_name	atis_flight
+4685	Vuelos diarios desde Nashville hasta Orlando	O B-flight_days O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4686	Muéstrame los vuelos de primera clase desde Pittsburgh hasta San Francisco el viernes	O O O O B-class_type I-class_type O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name	atis_flight
+4687	Necesito el primer vuelo que salga desde Denver con destino a Boston con servicio de cena	O O B-flight_mod O O O O B-fromloc.city_name O O O B-toloc.city_name O O O B-meal_description	atis_flight
+4688	Desde Toronto hasta Atlanta por la tarde	O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.period_of_day	atis_flight
+4689	Muéstrame los vuelos del viernes por la tarde desde San José hasta Dallas de American Airlines	O O O O B-depart_date.day_name O O B-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name	atis_flight
+4690	Muéstrame el primer vuelo desde Pittsburgh hasta Atlanta el miércoles	O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+4691	Quería volar con TWA, ¿hay algún vuelo entre Oakland y Boston con escala en Dallas Fort Worth en esta aerolínea ?	O O O B-airline_code O O O O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name I-stoploc.city_name I-stoploc.city_name O O B-airline_code O	atis_flight
+4692	Muéstrame todos los vuelos desde San Francisco hasta La Guardia sin escalas	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.airport_name I-toloc.airport_name B-flight_stop I-flight_stop	atis_flight
+4693	Qué vuelos hay desde Pittsburgh hasta Los Ángeles	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4694	Cuál es el ticket más económico disponible desde Dallas Fort Worth hasta San Francisco	O O O O B-cost_relative I-cost_relative O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4695	Cuál es vuelo más caro a Washington	O O O B-cost_relative I-cost_relative O B-toloc.city_name	atis_flight
+4696	Qué vuelos hay desde Houston hasta Milwaukee el viernes con American Airlines	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-airline_name I-airline_name	atis_flight
+4697	Muéstrame los vuelos desde San Francisco hasta Boston para el treinta de agosto	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+4698	Muéstrame el vuelo más económico desde Miami hasta Cleveland el domingo después del mediodía	O O O B-cost_relative I-cost_relative O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.time_relative I-depart_time.time_relative B-depart_time.time	atis_flight
+4699	Qué vuelos hay desde Newark hasta Tampa	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4700	Quiero un vuelo desde Filadelfia hasta Dallas que tenga al menos una escala	O O O O B-fromloc.city_name O B-toloc.city_name O O O B-mod B-flight_stop I-flight_stop	atis_flight
+4701	Muéstrame vuelos desde Denver hasta Oakland que lleguen entre las 12 y la 1 en punto	O O O B-fromloc.city_name O B-toloc.city_name O O O O B-arrive_time.start_time O O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time	atis_flight
+4702	Vuelos desde Newark , Nueva Jersey , hasta Cleveland , Ohio	O O B-fromloc.city_name O B-fromloc.state_name I-fromloc.state_name O O B-toloc.city_name O B-toloc.state_name	atis_flight
+4703	Dime los vuelos desde Denver hasta Baltimore	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4704	Muéstrame los vuelos desde Denver hasta San Francisco	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4705	Muéstrame vuelos desde Denver hasta Washington D. C. el jueves	O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code I-toloc.state_code O B-depart_date.day_name	atis_flight
+4706	Muéstrame los vuelos del jueves por la mañana desde San Luis a San Pablo	O O O B-depart_date.day_name I-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4707	Qué vuelo hay desde Pittsburgh hasta San Francisco durante la mañana del veintisiete de agosto	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_time.period_of_day O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+4708	Cuáles son los vuelos desde Boston hasta Atlanta	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4709	Qué vuelos hay desde Baltimore hasta San Francisco que lleguen antes de las 8 de la noche a destino	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-arrive_time.time_relative I-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time O B-toloc.city_name	atis_flight
+4710	Muéstrame los vuelos desde Pittsburgh hasta San Francisco el jueves por la noche o el viernes	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name O O B-depart_time.period_of_day B-or O B-depart_date.day_name	atis_flight
+4711	Búscame un vuelo en primera clase de American hasta San Francisco para el martes de la semana que viene	O O O O B-class_type I-class_type O B-airline_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O O B-depart_date.date_relative O O	atis_flight
+4712	Qué vuelos hay desde Atlanta hasta Baltimore	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4713	Quiero volar desde Dallas hasta San Francisco a aproximadamente las 6:15 de la tarde	O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+4714	Muéstrame los vuelos desde Phoenix hasta Detroit del jueves veinticuatro de junio	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_date.month_name O B-depart_date.day_number	atis_flight
+4715	Qué vuelos hay desde Miami hasta Indianápolis el domingo	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+4716	Ahora, muéstrame los vuelos desde Memphis hasta Cleveland	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4717	¿Tienes información sobre todos los vuelos que viajan entre San Francisco y Pittsburgh el lunes ?	O O O O O O O O O B-fromloc.city_name I-fromloc.city_name O B-fromloc.city_name B-toloc.city_name B-depart_date.day_name O	atis_flight
+4718	¿Puedes buscarme un vuelo desde Boston hasta San Francisco con escala en Denver ?	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-stoploc.city_name O	atis_flight
+4719	Vuelos desde Cleveland hasta Miami	O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4720	Dime qué vuelos hay desde Pittsburgh hasta Los Ángeles el jueves por la tarde	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+4721	Muéstrame todos los vuelos desde Atlanta hacia Baltimore después de las 8 de la noche del miércoles y antes de las 9 de la mañana del jueves	O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative I-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time O B-depart_date.day_name O B-depart_time.time_relative I-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time O B-depart_date.day_name	atis_flight
+4722	Muéstrame vuelos desde Seattle hasta San Francisco que salgan antes de las 5 de la tarde	O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+4723	Muéstrame los vuelos que vayan desde Tacoma hasta Miami	O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4724	¿Hay vuelos desde Denver hasta Pittsburgh con escala en Atlanta ?	O O O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name O	atis_flight
+4725	Muéstrame todos los vuelos que lleguen al Aeropuerto Internacional General Mitchell	O O O O O O O B-toloc.airport_name I-toloc.airport_name I-toloc.airport_name I-toloc.airport_name	atis_flight
+4726	Qué vuelos desde Salt Lake City hasta Nueva York que lleguen el próximo sábado antes de las 6 de la tarde	O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-arrive_date.date_relative B-arrive_date.day_name B-arrive_time.time_relative I-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+4727	Vuelos desde Nashville hasta Seattle	O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4728	Necesito un vuelo desde Boston hasta San Francisco vía Dallas Fort Worth	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-stoploc.city_name I-stoploc.city_name I-stoploc.city_name	atis_flight
+4729	Quisiera un vuelo por la tarde desde Atlanta hasta San Francisco con escala en Denver que llegue a destino para la hora de comer	O O O B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-stoploc.city_name O O B-arrive_time.time_relative I-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+4730	Muéstrame el vuelo más caro de ida desde Detroit hasta el condado de Westchester	O O O B-cost_relative I-cost_relative B-round_trip I-round_trip O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+4731	Muéstrame los vuelos desde Baltimore hasta Filadelfia	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4732	Desde Denver hasta Washington D. C. el lunes once de noviembre de 1991	O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code I-toloc.state_code O B-depart_date.day_name B-depart_date.month_name O B-depart_date.day_number O B-depart_date.year	atis_flight
+4733	Muéstrame todos los vuelos desde Boston hasta Denver con servicio de comida	O O O O O B-fromloc.city_name O B-toloc.city_name O O O B-meal	atis_flight
+4734	Me interesa un vuelo de American Airlines desde Dallas hasta Washington	O O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4735	Dime los vuelos desde Pittsburgh hasta Baltimore	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4736	Cuál es el vuelo más barato desde Long Beach hasta Memphis	O O O O B-cost_relative I-cost_relative O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+4737	Desde Pittsburgh hasta Denver	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4738	Muéstrame los vuelos que lleguen a Atlanta desde Baltimore antes del mediodía el cuatro de agosto	O O O O O O B-toloc.city_name O B-fromloc.city_name B-arrive_time.time_relative I-arrive_time.time_relative B-arrive_time.time O B-arrive_date.month_name O B-arrive_date.day_number	atis_flight
+4739	Dime los vuelos de American Airlines desde Filadelfia hasta Dallas	O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4740	Necesito un vuelo este domingo desde Miami hasta Las Vegas y preferiría que fuese por la mañana	O O O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O B-depart_time.period_of_day	atis_flight
+4741	Vuelos desde Boston hasta Pittsburgh	O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4742	Qué vuelos van desde Pittsburgh hasta Atlanta por la tarde	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.period_of_day	atis_flight
+4743	Muéstrame los vuelos de los sábados y domingos desde Milwaukee hasta Phoenix con American Airlines	O O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-depart_date.day_name I-depart_date.day_name	atis_flight
+4744	Muéstrame todos los vuelos que salgan desde Baltimore, Denver o Pittsburgh y lleguen a Filadelfia	O O O O O O O B-fromloc.city_name B-fromloc.city_name B-or B-fromloc.city_name O O O B-toloc.city_name	atis_flight
+4745	Muéstrame los vuelos desde Baltimore hasta Oakland	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4746	Muéstrame los vuelos a primera hora desde Denver hasta Las Vegas	O O O B-flight_mod I-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4747	Muéstrame vuelos desde Milwaukee hasta Orlando el miércoles por la noche	O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+4748	¿Puedes darme una lista de los vuelos desde Milwaukee hasta Tacoma, Washington que salgan por la tarde ?	O O O O O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_name O O O O B-depart_time.period_of_day O	atis_flight
+4749	Qué vuelos por la mañana tienes entre Oakland y Denver	O O O O B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4750	Me gustaría comprar un vuelo desde Washington hasta San Francisco con escala en Denver	O O O O O O B-fromloc.city_name O B-stoploc.city_name I-stoploc.city_name O O O B-toloc.city_name	atis_flight
+4751	Muéstrame todos los vuelos de mañana desde Pittsburgh hasta Baltimore	O O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_date.today_relative	atis_flight
+4752	Todos los vuelos de ida entre Boston y Filadelfia	O O O B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4753	Muéstrame los vuelos que vayan desde Boston hasta San Francisco	O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4754	Qué vuelos diarios hay disponibles desde San Francisco hasta Filadelfia en clase económica	O O B-economy O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-flight_days I-flight_days	atis_flight
+4755	Los primeros vuelos desde Pittsburgh hasta Atlanta el jueves	O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+4756	Muéstrame los vuelos desde Baltimore hasta Atlanta	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4757	Dime qué vuelos hay desde Toronto hasta Salt Lake City que salgan después de las 5:30 de la tarde	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_time.time_relative I-depart_time.time_relative I-depart_time.time_relative B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+4758	Muéstrame los vuelos desde Indianápolis hasta Orlando de ida y vuelta con una tarifa de hasta 1288	O O O O B-fromloc.city_name O B-toloc.city_name O B-round_trip I-round_trip I-round_trip O O O B-cost_relative O B-fare_amount	atis_flight
+4759	Necesito un vuelo desde Boston hasta Pittsburgh que salga temprano por la mañana	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.period_mod O O B-depart_time.period_of_day	atis_flight
+4760	Cuál es el primer vuelo desde Atlanta hasta Baltimore con servicio de almuerzo	O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name O O O B-meal_description	atis_flight
+4761	Muéstrame los vuelos desde Pittsburgh hasta Baltimore	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4762	Todos los vuelos desde Denver hasta Filadelfia	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4763	Desde Oakland hasta Filadelfia el sábado	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+4764	Dime el vuelo más temprano de United Airlines para mañana desde San Petersburgo hasta Milwaukee	O O O B-flight_mod I-flight_mod O B-depart_date.today_relative I-depart_date.today_relative O B-airline_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+4765	Muéstrame los vuelos del lunes desde Filadelfia hasta Boston después de las 7 de la mañana	O O O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative I-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+4766	Muéstrame todos los vuelos que salen desde Baltimore	O O O O O O O B-fromloc.city_name	atis_flight
+4767	Muéstrame los vuelos desde Filadelfia hasta Boston	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4768	Necesito viajar desde Boston hasta Atlanta y regresar el mismo día, ¿me puedes buscar el vuelo más temprano que salga desde Boston ?	O O O B-fromloc.city_name O B-toloc.city_name O O O O B-return_date.date_relative O O O B-flight_mod I-flight_mod I-flight_mod I-flight_mod O O O B-fromloc.city_name O	atis_flight
+4769	Qué vuelos hay entre Boston y Pittsburgh el diez de agosto	O O O O B-fromloc.city_name B-toloc.city_name I-toloc.city_name O B-depart_date.month_name O B-depart_date.day_number	atis_flight
+4770	Muéstrame los vuelos de ida desde Milwaukee hasta Orlando el miércoles	O B-round_trip I-round_trip O O O B-fromloc.city_name O B-toloc.city_name B-depart_date.day_name I-depart_date.day_name	atis_flight
+4771	Muéstrame todos los vuelos de mañana desde Pittsburgh hasta Baltimore con servicio de comida	O O O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_date.today_relative O O B-meal	atis_flight
+4772	Dime los vuelos de American Airlines desde Milwaukee hasta Phoenix	O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4773	Muéstrame los vuelos desde Pittsburgh hasta San Francisco	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4774	Quiero volar desde Boston hasta Washington, ¿puedes buscarme una aerolínea?	O O O B-fromloc.city_name O B-toloc.city_name O O O O	atis_flight
+4775	Muéstrame los vuelos desde Dallas Fort Worth hasta Baltimore DC el veintitrés de julio	O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+4776	Qué vuelos hay desde Memphis hasta Tacoma con escala en Los Ángeles	O O O O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name I-stoploc.city_name	atis_flight
+4777	Muéstrame los vuelos desde Charlotte hasta Baltimore para el martes por la mañana	O O O O B-depart_date.day_name O B-depart_time.period_of_day O O B-fromloc.city_name O O B-toloc.city_name	atis_flight
+4778	¿Hay algún vuelo desde Filadelfia hasta Dallas con escala en Atlanta ?	O O O O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name O	atis_flight
+4779	Vuelos hasta Baltimore	O O B-toloc.city_name	atis_flight
+4780	Cuál es la forma más económica de viajar desde Filadelfia hasta San Francisco	O O O B-cost_relative I-cost_relative I-cost_relative O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4781	Muéstrame una lista de todos los vuelos sin escalas desde Los Ángeles hasta Pittsburgh que salgan antes de las 5 de la tarde del martes	O O O O O O O B-flight_stop I-flight_stop O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time O B-arrive_date.day_name	atis_flight
+4782	Muéstrame los vuelos del viernes desde Chicago hasta Seattle con Continental	O O B-airline_name O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+4783	Qué vuelos hay en United Airlines entre Baltimore y Denver el doce de agosto	O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+4784	Muéstrame los vuelos el próximo martes entre Filadelfia y San Francisco	O O O O B-depart_date.date_relative B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4785	Busca un vuelo de American Airlines desde Boston hasta San Francisco que haga escala en Denver	O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O B-stoploc.city_name	atis_flight
+4786	Vuelos desde Cincinnati hasta Salt Lake City	O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+4787	Muéstrame vuelos desde Denver hasta Washington D. C. para el miércoles	O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O B-depart_date.day_name	atis_flight
+4788	Busca un vuelo entre Denver y Oakland que salga por la tarde y llegue a destino cerca de las 5 de la tarde sin escalas	O O O O B-fromloc.city_name O B-toloc.city_name O O O O B-depart_time.period_of_day O O O O B-arrive_time.time_relative I-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time O B-flight_stop	atis_flight
+4789	Muéstrame los vuelos desde Atlanta hasta Washington con los precios	O O O O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight
+4790	Vuelos entre Nueva York y Miami	O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+4791	Muéstrame los vuelos del lunes a la mañana entre Kansas City y Atlanta	O O O O B-depart_date.day_name O O B-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+4792	Muéstrame todos los vuelos de American Airlines que salen desde Phoenix con destino a Milwaukee y llegan el miércoles después de las 4 de la tarde	O O B-airline_name I-airline_name I-airline_name I-airline_name I-airline_name O O O B-fromloc.city_name O O O B-toloc.city_name O O O B-arrive_date.day_name B-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+4793	Quiero viajar desde Boston hasta Denver a las 9 en punto de la noche del sábado	O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.time I-depart_time.time I-depart_time.time O O B-depart_date.day_name O B-depart_time.period_of_day	atis_flight
+4794	Muéstrame los vuelos de Northwest desde Detroit hasta San Petersburgo	O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4795	El cuatro de mayo desde Atlanta hasta Denver vuelo Delta 257	O B-depart_date.month_name O B-depart_date.day_number O B-fromloc.city_name O B-toloc.city_name O B-airline_name B-flight_number	atis_flight
+4796	Muéstrame todos los vuelos que salen desde Indianápolis	O O O O O O O B-fromloc.city_name	atis_flight
+4797	Qué vuelos hay desde Denver hasta Baltimore o Washington D. C.	O O O O B-fromloc.city_name O B-toloc.city_name B-or B-toloc.city_name B-toloc.state_code I-toloc.state_code	atis_flight
+4798	¿Hay vuelos de Delta que salgan desde Atlanta ?	O O O B-airline_name O O O B-fromloc.city_name O	atis_flight
+4799	¿Puedes mostrarme todos los vuelos de ida y vuelta desde Orlando hasta Kansas City y luego hasta Mineápolis ?	O O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-toloc.city_name O	atis_flight
+4800	Me gustaría encontrar un vuelo desde Kansas City hasta Salt Lake City en Delta que llegue alrededor de las 8 en punto de la tarde, ¿podrías decirme el avión y el número de vuelo por favor?	O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-airline_name O O B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time O O B-arrive_time.period_of_day O O O O O O O O O O O	atis_flight
+4801	Quisiera un vuelo desde Washington hasta Boston que salga a las 2:30 el veinte de agosto	O O O O B-fromloc.city_name O B-toloc.city_name O O O O B-depart_time.time O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+4802	Muéstrame todos los vuelos desde Orlando hasta San Diego en un Boeing 737	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-aircraft_code	atis_flight
+4803	Qué vuelos hay el domingo desde Seattle hasta Mineápolis	O O O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4804	Muéstrame los vuelos desde Pittsburgh hasta Atlanta	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4805	Qué vuelo de United Airlines cruza este continente, sale desde Boston y llega a Dallas con una escala en Filadelfia	O O O B-airline_name I-airline_name O O O O O B-fromloc.city_name O O O B-toloc.city_name O O O O B-stoploc.city_name	atis_flight
+4806	Muéstrame los vuelos diarios de United Airlines desde Denver hasta Baltimore en primera clase	O O O B-flight_days O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name O B-class_type I-class_type	atis_flight
+4807	Muéstrame vuelos desde Pittsburgh hasta Atlanta el lunes por la mañana	O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+4808	Todos los vuelos desde Phoenix hasta el Aeropuerto Internacional de San Francisco (SFO)	O O O O B-fromloc.city_name O B-toloc.airport_code I-toloc.airport_code I-toloc.airport_code I-toloc.airport_code I-toloc.airport_code I-toloc.airport_code I-toloc.airport_code	atis_flight
+4809	Quiero viajar desde Washington D. C. hasta Filadelfia el martes por la mañana	O O O B-fromloc.city_name B-fromloc.state_code I-fromloc.state_code O B-toloc.city_name O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+4810	¿Hay un vuelo de American Airlines desde Boston hasta Denver ?	O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4811	Qué vuelos hay disponibles desde San Francisco hasta Pittsburgh el jueves por la noche	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+4812	¿Hay algún vuelo que salga por la tarde desde Boston hasta San Francisco con escala en Dallas ?	O O O B-depart_time.period_of_day I-depart_time.period_of_day O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-stoploc.city_name O	atis_flight
+4813	Muéstrame los vuelos desde Pittsburgh hasta San Francisco el lunes	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name	atis_flight
+4814	Muéstrame una lista de vuelos de American Airlines desde Boston hasta Washington D. C. el veintidós de julio	O O O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.state_code I-toloc.state_code I-toloc.state_code O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+4815	Ahora quisiera ver los vuelos desde Filadelfia hasta Pittsburgh que salgan entre las 4:30 y las 5:30 de la tarde	O O O O O O B-fromloc.city_name O B-toloc.city_name O O O O B-depart_time.start_time O O B-depart_time.end_time I-depart_time.end_time I-depart_time.end_time I-depart_time.end_time	atis_flight
+4816	Qué vuelos en clase económica hay disponibles desde Dallas hasta Baltimore el diecisiete de diciembre	O O O B-economy I-economy O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+4817	Muéstrame los vuelos desde San Francisco hasta Dallas	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+4818	Muéstrame todos los vuelos de mañana desde Indianápolis hasta San Diego	O O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_date.today_relative I-depart_date.today_relative	atis_flight
+4819	Qué significa el código de vuelo US	O O O O O O B-airline_code	atis_flight
+4820	Quisiera un vuelo desde Denver hasta Pittsburgh	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4821	Busco un vuelo desde Washington D. C. hasta Minnesota	O O O O B-fromloc.state_code I-fromloc.state_code I-fromloc.state_code O B-toloc.state_name	atis_flight
+4822	Qué vuelos hay el miércoles por la tarde o el jueves por la mañana desde Denver hasta SFO	O O O O B-depart_date.day_name O O B-depart_time.period_of_day B-or O B-depart_date.day_name O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.airport_code	atis_flight
+4823	¿Podrías mostrarme todos los vuelos desde Oakland hasta Salt Lake City ?	O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O	atis_flight
+4824	Búscame un vuelo desde Boston hasta San Francisco con escala en Denver en United	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-stoploc.city_name O B-airline_name	atis_flight
+4825	Qué vuelos hay disponibles entre Boston y Washington que lleguen a destino a las 6:30 de la mañana	O O O O O B-fromloc.city_name O B-toloc.city_name O O O B-toloc.city_name O O B-arrive_time.time I-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+4826	Qué vuelos hay entre Pittsburgh y Atlanta	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4827	Muéstrame los vuelos desde Denver hasta el Condado de Westchester	O O O O B-fromloc.city_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+4828	Necesito un vuelo de regreso desde Denver hasta Atlanta	O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4829	Cuál es el vuelo más barato desde Boston hasta Atlanta	O O O O B-cost_relative I-cost_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4830	Cuál es el vuelo de ida más económico desde Atlanta hasta Pittsburgh	O O O O B-round_trip I-round_trip B-cost_relative I-cost_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4831	Muéstrame todos los vuelos nocturnos desde Washington D. C hasta San Francisco con los precios	O O O O B-flight_mod O B-fromloc.city_name B-fromloc.state_code I-fromloc.state_code O B-toloc.city_name I-toloc.city_name O O O	atis_flight
+4832	Vuelos de ida y vuelta entre Nueva York y Miami	B-round_trip I-round_trip I-round_trip I-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+4833	Muéstrame el vuelo de ida más caro desde Detroit hasta Westchester County	O O O B-round_trip I-round_trip B-cost_relative O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4834	Qué vuelos hay de Continental desde Newark hasta Chicago	O O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name	atis_flight
+4835	Estoy intentando realizar una conexión entre Denver y San Francisco, ¿ Delta Airlines vuela entre esas dos ciudades?	O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_name I-airline_name O O O O O	atis_flight
+4836	Cuál es el último vuelo de US Air que salga de Filadelfia y vuelva a Boston	O O O B-flight_mod O O B-airline_name I-airline_name O O O B-fromloc.city_name O O O B-toloc.city_name	atis_flight
+4837	Qué vuelos tiene US Air desde San Francisco hasta Pittsburgh el martes	O O O B-airline_name I-airline_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+4838	¿Puedo volar desde Boston hasta Baltimore, Washington ?	O O O B-fromloc.city_name O B-toloc.city_name B-toloc.city_name O	atis_flight
+4839	Vuelos desde Las Vegas hasta Phoenix	O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+4840	Me gustaría salir alrededor de las 7 en punto de la mañana	O O O B-depart_time.time_relative I-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time O O B-depart_time.period_of_day	atis_flight
+4841	Vuelos desde Memphis hasta Seattle	O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4842	Por favor muéstrame vuelos desde Pittsburgh hasta Atlanta el miércoles por la mañana con servicio de desayuno	O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O B-depart_time.period_of_day O O O B-meal_description	atis_flight
+4843	Vuelos desde Atlanta para el dos de agosto	O O B-fromloc.city_name O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+4844	Quisiera saber si American Airlines tiene vuelos desde Atlanta hasta Filadelfia	O O O B-airline_name I-airline_name O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4845	Quiero un vuelo desde Long Beach hasta San Luis que haga escala en Dallas	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O B-stoploc.city_name	atis_flight
+4846	Me gustaría saber si hay algún vuelo desde Denver hasta Filadelfia	O O O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4847	Cuáles son los vuelos de ida más económicos desde Atlanta hasta Denver	O O O B-cost_relative I-cost_relative I-cost_relative B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4848	Cuál es el primer vuelo después de la 12 del mediodía que salga desde Washington con destino a Denver	O O O B-flight_mod O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time O O O B-fromloc.city_name O O O B-toloc.city_name	atis_flight
+4849	Ahora muéstrame únicamente los vuelos de United que vayan desde Oakland hasta Boston	O O O O O O B-airline_name O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4850	Desde Filadelfia hasta Toronto	O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4851	Me interesa un vuelo de American Airlines que vaya desde Dallas hasta Washington	O O O O O B-airline_name I-airline_name O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4852	Quiero comprar el primer vuelo de la mañana desde Atlanta hasta Filadelfia el miércoles	O O O B-flight_mod O B-depart_time.period_of_day O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day	atis_flight
+4853	¿Puedes mostrarme los vuelos desde Long Beach hasta Columbus, Ohio para el martes ?	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_name O O B-depart_date.day_name O	atis_flight
+4854	Dime los vuelos de American Airlines desde Phoenix hasta Nashville	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-airline_name	atis_flight
+4855	Muéstrame todos los vuelos de ida y vuelta desde Nueva York hasta Miami que salen el martes	O O O O B-round_trip I-round_trip I-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O B-depart_date.day_name	atis_flight
+4856	Muéstrame todos los vuelos sin escalas del domingo desde Tampa hasta Charlotte	O O O O B-flight_stop I-flight_stop O B-arrive_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4857	Muéstrame todos los vuelos desde Burbank hasta Denver	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4858	Quisiera ver vuelos desde Baltimore hasta Atlanta	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4859	Muéstrame los vuelos desde Las Vegas hasta Detroit el veintiocho	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number	atis_flight
+4860	¿El vuelo 813 de American desde Boston hasta Oakland es un vuelo sin escalas ?	O O B-flight_number O B-airline_name O B-fromloc.city_name O B-toloc.city_name O O O B-flight_stop I-flight_stop O	atis_flight
+4861	Dime los vuelos desde Washington D. C. hasta Filadelfia el dos de diciembre	O O O O B-fromloc.city_name B-fromloc.state_code I-fromloc.state_code O B-toloc.city_name O B-depart_date.month_name O B-depart_date.day_number	atis_flight
+4862	Muéstrame los vuelos con conexión de Pittsburgh hasta Oakland	O B-connect I-connect I-connect I-connect O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4863	Muéstrame los vuelos diarios desde Boston hasta Oakland con TWA	O O O B-flight_days O B-fromloc.city_name O B-toloc.city_name O B-airline_code	atis_flight
+4864	Necesito un vuelo desde San Diego hasta Indianápolis que salga el martes por la tarde	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_time.period_of_day I-depart_time.period_of_day O B-depart_date.day_name I-depart_date.day_name	atis_flight
+4865	¿Me puedes repetir qué vuelo sale el miércoles por la tarde desde Washington hasta Atlanta ?	O O O O O O O B-depart_date.day_name O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4866	Quiero reservar un vuelo desde Los Ángeles hasta Pittsburgh el primero de junio	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+4867	Qué vuelos hay desde Atlanta hasta Washington	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4868	Muéstrame todos los vuelos directos desde Boston hasta San Francisco u Oakland que lleguen antes de las 10 de la mañana hora local	O O O O B-connect O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-or B-toloc.city_name O O B-arrive_time.time_relative O O O O O O B-arrive_time.time I-arrive_time.time	atis_flight
+4869	Vuelos desde Cincinnati hasta Denver en American Airlines	O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name	atis_flight
+4870	Muéstrame todos los vuelos de Continental que salen de Denver el domingo después de las 21:34	O O O O O B-airline_name O O O B-fromloc.city_name O B-depart_date.day_name B-depart_time.time_relative I-depart_time.time_relative I-depart_time.time_relative B-depart_time.time	atis_flight
+4871	Muéstrame todos los vuelos desde Charlotte	O O O O O B-fromloc.city_name	atis_flight
+4872	Muéstrame todos los vuelos de Nationair desde Toronto	O O O O O B-airline_name O B-fromloc.city_name	atis_flight
+4873	Muéstrame vuelos desde Denver hasta Atlanta para el dieciséis de junio	O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+4874	Muéstrame todos los vuelos de United desde San Francisco hasta Boston con código de tarifa QX	O O O O O B-airline_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O B-fare_basis_code	atis_flight
+4875	Muéstrame todos los vuelos que vayan desde Boston hasta Atlanta después de las 6 en punto el miércoles y antes de las 7 de la mañana en punto el jueves	O O O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative I-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_date.day_name O B-depart_time.time_relative I-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time O B-depart_date.day_name	atis_flight
+4876	Muéstrame los vuelos con destino a Love Field	O O O O O O B-toloc.airport_name I-toloc.airport_name	atis_flight
+4877	Muéstrame los vuelos desde Pittsburgh hasta Filadelfia	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4878	Muéstrame los vuelos desde Filadelfia hasta Atlanta	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4879	Vuelos desde Filadelfia hasta Dallas que lleguen antes de la 1 de la tarde	O O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative I-arrive_time.time_relative O B-arrive_time.time O O B-arrive_time.period_of_day	atis_flight
+4880	Necesito un vuelo desde Tampa hasta Montreal	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4881	Muéstrame una lista de los vuelos que salgan desde San Francisco con destino a Pittsburgh	O O O O O O O O O B-fromloc.city_name I-fromloc.city_name O O O B-toloc.city_name	atis_flight
+4882	Qué día puedo volar desde Filadelfia hasta Dallas un sábado por la mañana	O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+4883	Vuelo que sale desde Oakland con destino a Salt Lake City	O O O O B-fromloc.city_name O O O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+4884	Dime vuelos de American Airlines desde Dallas Fort Worth hasta Filadelfia el veintinueve de junio	O O O B-airline_name I-airline_name O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.month_name O B-depart_date.day_number	atis_flight
+4885	Muéstrame todos los vuelos desde Boston hasta San Francisco con la cantidad máxima de escalas	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O B-flight_stop	atis_flight
+4886	¿Hay vuelos desde Atlanta hasta Denver ?	O O O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+4887	Qué vuelos hay desde Dallas hasta Boston el lunes por la mañana	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+4888	Muéstrame vuelos desde Denver, Colorado hasta Pittsburgh, Pensilvania los miércoles después de las 5 de la tarde	O O O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name B-toloc.state_name O B-depart_date.day_name B-depart_time.time_relative I-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+4889	Necesito información del vuelo entre Atlanta y Boston	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4890	Qué vuelos hay desde Las Vegas hasta Nueva York	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4891	Cuál es el vuelo más barato desde Boston hasta San Francisco	O O O O B-cost_relative I-cost_relative O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4892	Con Continental Airlines cualquier tipo de clase desde San Francisco hasta Pittsburgh	O B-airline_name I-airline_name O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+4893	Busca el vuelo más barato desde Denver hasta Atlanta con escala en Pittsburgh	O O O B-cost_relative I-cost_relative O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name	atis_flight
+4894	¿Hay algún vuelo desde Boston hasta San Francisco con escala en Denver ?	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-stoploc.city_name O	atis_flight
+4895	Vuelos desde Kansas City hasta Cleveland para el miércoles	O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+4896	Muéstrame los vuelos con destino a Love Field	O O O O O O B-toloc.airport_name I-toloc.airport_name	atis_flight
+4897	Quisiera volar desde Filadelfia hasta Dallas con escala en Atlanta	O O O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name	atis_flight
+4898	Información sobre vuelos desde Pittsburgh hasta Filadelfia	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4899	Qué vuelos hay con American Airlines desde Filadelfia hasta Dalas	O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+4900	Cuántos asientos hay en un 100	O O O O O B-aircraft_code	atis_capacity
+4901	Dime, cuántos vuelos sin escalas hay desde Boston hasta Atlanta	O O O B-flight_stop I-flight_stop O O B-fromloc.city_name O B-toloc.city_name	atis_quantity
+4902	Cuántos vuelos tiene Delta con código de categoría de servicio F	O O O B-airline_name O O O O O O B-fare_basis_code	atis_quantity
+4903	Cuántas clases diferentes de reservas hay	O O O O O O	atis_quantity
+4904	Muéstrame la cantidad de vuelos que salen desde Boston con destino a Dallas Fort Worth antes de las 9 de la mañana	O O O O O O O O B-fromloc.city_name O O O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_time.time_relative I-depart_time.time_relative O B-depart_time.time O O B-depart_time.period_of_day	atis_quantity
+4905	Cuántos vuelos de US Air salen desde Washington	O O O B-airline_name I-airline_name O O B-fromloc.city_name	atis_quantity
+4906	Qué distancia hay entre el aeropuerto de Orlando y el centro de la ciudad	O O O O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_distance
+4907	Qué distancia hay desde el Aeropuerto Internacional de Los Ángeles hasta el centro de la ciudad	O O O O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_distance
+4908	Qué tipo de avión se usa en un vuelo desde Cleveland hasta Dallas	O O O O O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_aircraft
+4909	Qué tipos de aviones utiliza American Airlines	O O O O O B-airline_name I-airline_name	atis_aircraft
+4910	Qué tipos de aviones utiliza Delta	O O O O O B-airline_name	atis_aircraft
+4911	En el vuelo de las 8 de la mañana que va desde San Francisco hasta Atlanta, qué tipo de avión se utiliza	O O O O O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O O	atis_aircraft
+4912	Muéstrame los tipos de aviones que vuelan entre Boston y San Francisco	O O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_aircraft
+4913	¿Hay algún avión que vaya desde Boston hasta Washington ?	O O O O O O B-fromloc.city_name O B-toloc.city_name O	atis_aircraft
+4914	Qué tipo de avión vuela desde Pittsburgh hasta Baltimore	O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_aircraft
+4915	Cuál es el avión más pequeño que vuela desde Pittsburgh hasta Baltimore el dieciséis del ocho	O O O O B-mod I-mod O O O B-fromloc.city_name O B-toloc.city_name O B-depart_time.time O O	atis_aircraft
+4916	Cuál es el aeropuerto de Orlando	O O O O O B-city_name	atis_airport
+4917	Muéstrame los aeropuertos de Baltimore	O O O O B-city_name	atis_airport
+4918	Qué clase de transporte terrestre hay disponible en Denver	O O O O O O O O B-city_name	atis_ground_service
+4919	Muéstrame el transporte terrestre en Denver	O O O O O B-city_name	atis_ground_service
+4920	Transporte terrestre en Atlanta	O O O B-city_name	atis_ground_service
+4921	¿Podrías mostrarme información sobre el transporte terrestre en Dallas ?	O O O O O O O O B-city_name O	atis_ground_service
+4922	Qué tipos de transporte terrestre hay disponibles desde el aeropuerto de Filadelfia hasta la ciudad	O O O O O O O O O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O O O	atis_ground_service
+4923	Transporte terrestre en San José	O O O B-city_name I-city_name	atis_ground_service
+4924	Muéstrame las opciones de transporte terrestre en Denver	O O O O O O O B-city_name	atis_ground_service
+4925	Qué horario tiene el transporte desde el aeropuerto hasta Boston	O B-time O O O O O O O B-toloc.city_name	atis_ground_service
+4926	Qué tipos de transporte terrestre hay disponibles en la ciudad de Dallas Fort Worth	O O O O O O O O O O O B-city_name I-city_name I-city_name	atis_ground_service
+4927	¿Hay algún tipo de transporte terrestre disponible en Denver ?	O O O O O O O O B-city_name O	atis_ground_service
+4928	Qué tipo de transporte terrestre puedes ofrecerme en Seattle	O O O O O O O O B-city_name	atis_ground_service
+4929	Muéstrame opciones de alquiler de automóviles en Baltimore	O O O B-transport_type I-transport_type I-transport_type O B-city_name	atis_ground_service
+4930	Cuánto se tarda en ir entre el aeropuerto de Dallas y el centro de la ciudad por transporte terrestre	O O O O O O O O O O O O O O O O B-city_name I-city_name I-city_name	atis_ground_service
+4931	Transporte terrestre de Mineápolis	O O O B-city_name	atis_ground_service
+4932	¿Hay transporte terrestre desde el aeropuerto en Boston hasta el centro?	O O O O O O O B-city_name O O O	atis_ground_service
+4933	Qué tipo de transporte terrestre hay disponible en Washington D.C.	O O O O O O O O B-city_name B-state_code	atis_ground_service
+4934	Qué horarios tiene el transporte terrestre desde el aeropuerto de Filadelfia hasta el centro de la ciudad	O B-flight_time O O O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O O O O O O	atis_ground_service
+4935	Muéstrame las opciones de transporte terrestre en el Condado de Westchester	O O O O O O O O B-city_name I-city_name I-city_name	atis_ground_service
+4936	Transporte terrestre en Denver	O O O B-city_name	atis_ground_service
+4937	Qué tipo de transporte terrestre hay disponible entre el aeropuerto de San Francisco y el centro de la ciudad	O O O O O O O O O O O B-fromloc.city_name I-fromloc.city_name O O O O O O	atis_ground_service
+4938	Qué tipo de transporte terrestre hay disponible entre el aeropuerto de San Francisco y el centro de la ciudad	O O O O O O O O O O O B-toloc.city_name I-toloc.city_name O O O O O O	atis_ground_service
+4939	Muéstrame las opciones de transportes terrestres en Dallas	O O O O O O O B-city_name	atis_ground_service
+4940	Muéstrame las opciones de transporte terrestre de San Francisco	O O O O O O O B-city_name I-city_name	atis_ground_service
+4941	¿Hay transporte terrestre desde el aeropuerto de San Diego hasta el área del centro de la ciudad?	O O O O O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O O O O O O O O	atis_ground_service
+4942	Muéstrame información sobre el transporte terrestre en San Francisco	O O O O O O O B-city_name I-city_name	atis_ground_service
+4943	Qué es el código de tarifa H	O O O O O O B-fare_basis_code	atis_abbreviation
+4944	Qué significa la clase de reserva C	O O O O O O B-fare_basis_code	atis_abbreviation
+4945	Qué significa el código de tarifa Q	O O O O O O B-fare_basis_code	atis_abbreviation
+4946	Qué significa el código de tarifa QW	O O O O O O B-fare_basis_code	atis_abbreviation
+4947	Qué significa el código de tarifa F	O O O O O O B-fare_basis_code	atis_abbreviation
+4948	Qué es el código de tarifa H	O O O O O O B-fare_basis_code	atis_abbreviation
+4949	Qué significa el código de tarifa QW	O O O O O O B-fare_basis_code	atis_abbreviation
+4950	Qué significa MCO	O O B-airport_code	atis_abbreviation
+4951	Qué diferencia hay entre el código de tarifa Q y el código de tarifa F	O O O O O O O O B-fare_basis_code O O O O O B-fare_basis_code	atis_abbreviation
+4952	Qué significa MCO	O O B-airport_code	atis_abbreviation
+4953	Qué es el código YN	O O O O B-fare_basis_code	atis_abbreviation
+4954	Qué significa ORD	O O B-airport_code	atis_abbreviation
+4955	Qué significa el código de tarifa YN	O O O O O O B-fare_basis_code	atis_abbreviation
+4956	Qué significa la restricción AP 57	O O O O B-restriction_code I-restriction_code	atis_abbreviation
+4957	Cuánto cuesta el servicio de limusina dentro de Pittsburgh	O O O O O B-transport_type O O B-city_name	atis_ground_fare
+4958	Qué aerolínea opera en Denver, Pittsburgh y Atlanta	O O O O B-fromloc.city_name B-fromloc.city_name O B-fromloc.city_name	atis_airline
+4959	Muéstrame las aerolíneas que tienen vuelos con servicio de primera clase	O O O O O O O B-class_type I-class_type O O	atis_airline
+4960	Qué aerolínea tiene más vuelos con destino a Atlanta	O O O B-mod O O O O B-toloc.city_name	atis_airline
+4961	Qué aerolíneas vuelan desde Nueva York hasta Milwaukee y Los Ángeles	O O O O B-fromloc.city_name I-fromloc.city_name O B-stoploc.city_name O B-toloc.city_name I-toloc.city_name	atis_airline
+4962	Qué aerolíneas operan en Atlanta	O O O O B-city_name	atis_airline
+4963	¿Podrías decirme qué aerolíneas vuelan desde Toronto hasta San Diego ?	O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O	atis_airline
+4964	Qué aerolíneas tienen vuelos de primera clase hoy	O O O O O B-class_type I-class_type B-depart_date.today_relative	atis_airline
+4965	Qué aerolínea tiene más vuelos con destino a Atlanta	O O O B-mod O O O O B-toloc.city_name	atis_airline
+4966	Qué aerolínea tiene el avión más pequeño que salga de Pittsburgh con destino a Baltimore el cuatro de julio	O O O O O B-mod I-mod O O O B-fromloc.city_name O O O B-toloc.city_name O B-arrive_date.month_name O B-arrive_date.day_number	atis_airline
+4967	Muéstrame las abreviaturas de las aerolíneas	O O O O O O	atis_airline
+4968	¿Puedes mostrarme las aerolíneas que vuelen desde Boston hasta San Francisco ?	O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O	atis_airline
+4969	Qué aerolínea puede llevarme desde Atlanta hasta Denver y San Francisco	O O O O O B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airline
+4970	Qué aerolínea ofrece vuelos con servicio de clase ejecutiva	O O O O O O O B-class_type I-class_type	atis_airline
+4971	Qué aerolíneas vuelan entre Boston y Pittsburgh	O O O O B-fromloc.city_name O B-toloc.city_name	atis_airline
+4972	Qué aerolíneas tienen conexiones entre Filadelfia y Pittsburgh	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_airline
+4973	En qué ciudad está el aeropuerto MCO	O O O O O O B-fromloc.airport_code	atis_city
+4974	A qué hora llega a San Francisco el vuelo de las 7:55 de la mañana que sale desde Washington	O O B-flight_time I-flight_time O B-fromloc.city_name I-fromloc.city_name O O O O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time O O O B-fromloc.city_name	atis_flight_time
+4975	A qué hora hay vuelos que salgan de San Francisco con dirección a Pittsburgh el siete de julio	O O B-flight_time O O O O O B-fromloc.city_name I-fromloc.city_name O O O B-toloc.city_name O B-depart_date.month_name O B-depart_date.day_number	atis_flight_time
+4976	¿Me puedes decir los horarios de los vuelos de United Airlines que salen desde Boston y se dirigen a Dallas ?	O O B-airline_name I-airline_name I-airline_name I-airline_name I-airline_name I-airline_name I-airline_name O O B-flight_time I-flight_time O B-fromloc.city_name O O O O B-toloc.city_name O	atis_flight_time
+4977	En qué horarios hay vuelos desde Boston hasta San Francisco el primero de agosto	O O B-flight_time O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.month_name O B-depart_date.day_number	atis_flight_time
+4978	Cuál es el horario del vuelo del F28 desde Pittsburgh hasta Baltimore	O O O B-flight_time I-flight_time I-flight_time O B-aircraft_code O B-fromloc.city_name O B-toloc.city_name	atis_flight_time

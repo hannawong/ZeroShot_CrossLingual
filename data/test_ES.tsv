@@ -1,0 +1,894 @@
+id	utterance	slot_labels	intent
+1	me gustaría encontrar un vuelo de charlotte a las vegas que haga una escala en san luis	O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O B-stoploc.city_name I-stoploc.city_name	atis_flight
+2	el primero de abril necesito un pasaje de tacoma a san josé que salga antes de las 7 a. m.	O B-depart_date.day_number O B-depart_date.month_name O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_time.time_relative O O B-depart_time.time	atis_airfare
+3	el primero de abril necesito un vuelo que vaya de phoenix a san diego	O B-depart_date.day_number O B-depart_date.month_name O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+4	me gustaría un vuelo de ida de phoenix a san diego el primero de abril	O O O O B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+5	me gustaría un vuelo de orlando a salt lake city para el primero de abril con delta airlines	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name O B-airline_name I-airline_name	atis_flight
+6	necesito un vuelo de toronto a newark de ida que salga el miércoles por la noche o el jueves por la mañana	O O O O B-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip O O O B-depart_date.day_name O O B-depart_time.period_of_day O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+7	el lunes por la mañana me gustaría volar de columbus a indianápolis	O B-depart_date.day_name O O B-depart_time.period_of_day O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+8	el miércoles seis de abril me gustaría volar de long beach a columbus después de las 3 p. m.	O B-depart_date.day_name B-depart_date.day_number O B-depart_date.month_name O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.time	atis_flight
+9	el miércoles seis de abril , me gustaría volar de long beach a columbus después de las 12 p. m.	O B-depart_date.day_name B-depart_date.day_number O B-depart_date.month_name O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.time	atis_flight
+10	¿hay algún vuelo de long beach a columbus el miércoles seis de abril ?	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_date.day_number O B-depart_date.month_name O	atis_flight
+11	encuentra un vuelo de memphis a tacoma con cena	O O O O B-fromloc.city_name O B-toloc.city_name O B-meal_description	atis_flight
+12	el próximo miércoles , el vuelo de kansas city a chicago debería llegar a chicago alrededor de las 7 p. m. , el vuelo de regreso es el jueves	O B-depart_date.date_relative B-depart_date.day_name O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O B-toloc.city_name B-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative B-arrive_time.time O O O O O O O B-return_date.day_name	atis_flight
+13	muéstrame el vuelo y los precios de kansas city a chicago el próximo miércoles , que llegue a chicago antes de las 7 p. m.	O O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.date_relative B-depart_date.day_name O O O O B-toloc.city_name B-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative B-arrive_time.time	atis_flight#atis_airfare
+14	un vuelo con american de miami a chicago , que llegue a chicago alrededor de las 5 p. m.	O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name O O O O B-toloc.city_name B-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative B-arrive_time.time	atis_flight
+15	encuentra vuelos que lleguen a nueva york el próximo sábado	O O O O O B-toloc.city_name I-toloc.city_name O B-arrive_date.date_relative B-arrive_date.day_name	atis_flight
+16	encuentra vuelos sin escala de salt lake city a nueva york para el sábado nueve de abril	O O B-flight_stop I-flight_stop O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_date.day_number O B-depart_date.month_name	atis_flight
+17	muéstrame vuelos de burbank a milwaukee para hoy	O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.today_relative	atis_flight
+18	muéstrame los vuelos para mañana por la noche de milwaukee a san luis	O O O O B-depart_date.today_relative O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+19	muéstrame los vuelos para el sábado por la noche de san luis a burbank	O O O O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+20	muéstrame los vuelos de burbank a san luis para el lunes	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name	atis_flight
+21	muéstrame los vuelos de burbank a milwaukee para el lunes	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+22	muéstrame los vuelos para el martes por la noche de milwaukee a san luis	O O O O O B-depart_date.day_name O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+23	muéstrame los vuelos para el miércoles por la noche de san luis a burbank	O O O O O B-depart_date.day_name O O B-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+24	qué vuelos van de kansas city a los ángeles	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+25	qué vuelos van de las vegas a los ángeles	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+26	qué vuelos van de kansas city a los ángeles el nueve de abril	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+27	qué vuelos van de las vegas a los ángeles california y llegan el nueve de abril entre las 4 y las 5 p. m.	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-toloc.state_name O O O B-arrive_date.day_number O B-arrive_date.month_name O O B-arrive_time.start_time O O B-arrive_time.end_time	atis_flight
+28	qué vuelos con us air van de orlando a cleveland	O O O B-airline_name I-airline_name O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+29	qué vuelos van de cleveland a indianápolis el cinco de abril	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+30	qué vuelos van de indianápolis a san diego el cinco de abril	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+31	qué vuelos van de cleveland a indianápolis el cinco de abril	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+32	qué vuelos van de nashville a tacoma	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+33	¿hay transporte desde el aeropuerto de tacoma hasta el centro de la ciudad?	O O O O B-airport_name I-airport_name I-airport_name O O O O O O	atis_ground_service
+34	qué vuelos van de tacoma a san josé	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+35	qué día de la semana salen los vuelos de nashville a tacoma	O O O O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_day_name
+36	cuáles son los vuelos de tacoma a san josé	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+37	qué días de la semana salen los vuelos de san josé a nashville	O O O O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_day_name
+38	cuáles son los vuelos de tacoma a san josé	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+39	necesito un vuelo que vaya de boston a orlando	O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+40	¿hay algún vuelo de boston a orlando con conexión en nueva york ?	O O O O B-fromloc.city_name O B-toloc.city_name B-connect I-connect O B-stoploc.city_name I-stoploc.city_name O	atis_flight
+41	¿hay algún vuelo de boston a orlando con conexión en columbus ?	O O O O B-fromloc.city_name O B-toloc.city_name B-connect I-connect O B-stoploc.city_name O	atis_flight
+42	¿en este vuelo se sirve la cena ?	O O O O O O B-meal_description O	atis_flight
+43	necesito un vuelo de charlotte a miami	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+44	necesito un vuelo sin escala de miami a toronto	O O O B-flight_stop I-flight_stop O B-fromloc.city_name O B-toloc.city_name	atis_flight
+45	necesito un vuelo sin escala de toronto a san luis	O O O B-flight_stop I-flight_stop O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+46	necesito un vuelo de toronto a san luis	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+47	necesito un vuelo de san luis a charlotte	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+48	necesito un vuelo con united airlines de la guardia a san josé	O O O O B-airline_name I-airline_name O B-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name I-toloc.city_name	atis_flight
+49	necesito un vuelo de tampa a milwaukee	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+50	necesito un vuelo de milwaukee a seattle	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+51	qué comidas se sirven en el vuelo 811 con american de tampa a milwaukee	O B-meal O O O O O B-flight_number O B-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_meal
+52	qué comidas se sirven en el vuelo 665 673 con american de milwaukee a seattle	O B-meal O O O O O B-flight_number I-flight_number O B-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_meal
+53	necesito un vuelo de memphis a las vegas	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+54	necesito un vuelo de las vegas a ontario	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+55	necesito un vuelo de ontario a memphis	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+56	qué vuelos van de milwaukee a tampa y hacen escala en nashville	O O O O B-fromloc.city_name O B-toloc.city_name O O O O B-stoploc.city_name	atis_flight
+57	qué vuelos salen de newark después del mediodía el próximo sábado y llegan a los ángeles	O O O O B-fromloc.city_name B-depart_time.time_relative O B-depart_time.period_of_day O B-depart_date.date_relative B-depart_date.day_name O O O B-toloc.city_name I-toloc.city_name	atis_flight
+58	qué vuelos salen de detroit y llegan a san petersburgo alrededor de las 9 a. m.	O O O O B-fromloc.city_name O O O B-toloc.city_name I-toloc.city_name B-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative B-arrive_time.time	atis_flight
+59	qué vuelos con northwest airline salen de detroit y llegan a san petersburgo	O O O B-airline_name I-airline_name O O B-fromloc.city_name O O O B-toloc.city_name I-toloc.city_name	atis_flight
+60	qué vuelos salen de chicago el próximo martes y llegan a detroit alrededor de las 6 p. m.	O O O O B-fromloc.city_name O B-depart_date.date_relative B-depart_date.day_name O O O B-toloc.city_name B-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+61	muéstrame los vuelos de ida y vuelta de chicago a detroit que salgan el próximo martes y regresen al día siguiente	O O O B-round_trip I-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O O O B-depart_date.date_relative B-depart_date.day_name O O O B-return_date.date_relative I-return_date.date_relative	atis_flight
+62	qué vuelos de ida y vuelta salen de chicago el próximo martes alrededor de las 6 p. m. y llegan a detroit	O O B-round_trip I-round_trip I-round_trip I-round_trip O O B-fromloc.city_name O B-depart_date.date_relative B-depart_date.day_name B-depart_time.time_relative I-depart_time.time_relative I-depart_time.time_relative B-depart_time.time O O O B-toloc.city_name	atis_flight
+63	qué vuelos de ida y vuelta salen de chicago el próximo martes y llegan a detroit alrededor de las 6 p. m.	O O B-round_trip I-round_trip I-round_trip I-round_trip O O B-fromloc.city_name O B-depart_date.date_relative B-depart_date.day_name O O O B-toloc.city_name B-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative B-arrive_time.time	atis_flight
+64	qué vuelos salen el lunes de montreal y llegan a chicago por la mañana	O O O O B-depart_date.day_name O B-fromloc.city_name O O O B-toloc.city_name O O B-arrive_time.period_of_day	atis_flight
+65	qué vuelos salen de chicago el doce de abril y llegan a indianápolis por la mañana	O O O O B-fromloc.city_name O B-depart_date.day_number O B-depart_date.month_name O O O B-toloc.city_name O O B-arrive_time.period_of_day	atis_flight
+66	qué vuelos salen el miércoles trece de abril de indianápolis y llegan a montreal por la mañana	O O O O B-depart_date.day_name B-depart_date.day_number O B-depart_date.month_name O B-fromloc.city_name O O O B-toloc.city_name O O B-arrive_time.period_of_day	atis_flight
+67	qué vuelos salen el doce de abril de indianápolis y llegan a montreal alrededor de las 10 p. m.	O O O O B-depart_date.day_number O B-depart_date.month_name O B-fromloc.city_name O O O B-toloc.city_name B-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative B-arrive_time.time	atis_flight
+68	me gustaría ir de long beach a san luis y quisiera hacer una escala en dallas , además, quisiera que me sirvan el almuerzo durante el vuelo	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O O O B-stoploc.city_name O O O O O O O B-meal_description O O O	atis_flight
+69	el próximo miércoles , me gustaría salir de kansas city en un viaje a chicago que llegue a chicago alrededor de las 7 p m.	O B-depart_date.date_relative B-depart_date.day_name O O O O O B-fromloc.city_name I-fromloc.city_name O O O O B-toloc.city_name O O O B-toloc.city_name B-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative B-arrive_time.time	atis_flight
+70	me gustaría regresar de chicago alrededor de las 7 p. m. a kansas city	O O O O B-fromloc.city_name B-depart_time.time_relative I-depart_time.time_relative I-depart_time.time_relative B-depart_time.time O B-toloc.city_name I-toloc.city_name	atis_flight
+71	me gustaría salir esta tarde en un vuelo con american de cincinnati a burbank	O O O B-depart_date.today_relative B-depart_time.period_of_day O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+72	el domingo por la noche , me gustaría salir de montreal , quebec , en un vuelo a san diego , california	O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O O O O O B-fromloc.city_name O B-fromloc.state_name O O O O O B-toloc.city_name I-toloc.city_name O B-toloc.state_name	atis_flight
+73	cuáles son los vuelos para el domingo de montreal , quebec , a san diego , california	O O O O O O B-depart_date.day_name O B-fromloc.city_name O B-fromloc.state_name O O B-toloc.city_name I-toloc.city_name O B-toloc.state_name	atis_flight
+74	el martes , ¿hay vuelos de san diego , california , a indianápolis , indiana ? me gustaría que el vuelo sea por la tarde	O B-depart_date.day_name O O O O B-fromloc.city_name I-fromloc.city_name O B-fromloc.state_name O O B-toloc.city_name O B-toloc.state_name O O O O O O O O O B-depart_time.period_of_day	atis_flight
+75	el jueves por la mañana , me gustaría un vuelo sin escala de indianápolis a toronto	O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O O O O O B-flight_stop I-flight_stop O B-fromloc.city_name O B-toloc.city_name	atis_flight
+76	el viernes por la mañana , me gustaría volar de toronto a montreal	O B-depart_date.day_name O O B-depart_time.period_of_day O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+77	me gustaría un vuelo hoy por la mañana temprano de los ángeles a charlotte	O O O O B-depart_date.today_relative O O B-depart_time.period_of_day B-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+78	el miércoles por la noche , me gustaría un vuelo de charlotte a newark	O B-depart_date.day_name O O B-depart_time.period_of_day O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+79	el viernes por la noche , me gustaría un vuelo de newark a los ángeles	O B-depart_date.day_name O O B-depart_time.period_of_day O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+80	encuentra un vuelo de tampa a montreal vía nueva york	O O O O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name I-stoploc.city_name	atis_flight
+81	encuentra un vuelo de miami , florida , a las vegas , nevada , que llegue antes de las 4 p. m. en punto	O O O O B-fromloc.city_name O B-fromloc.state_name O O B-toloc.city_name I-toloc.city_name O B-toloc.state_name O O O B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+82	encuentra un vuelo de las vegas a michigan	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.state_name	atis_flight
+83	encuentra un vuelo de detroit , michigan , a san petersburgo que llegue antes de las 10 p. m.	O O O O B-fromloc.city_name O B-fromloc.state_name O O B-toloc.city_name I-toloc.city_name O O B-arrive_time.time_relative O O B-arrive_time.time	atis_flight
+84	encuentra un vuelo de san petersburgo a miami para el jueves	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+85	encuentra un vuelo de san diego a toronto con alaska airlines	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name	atis_flight
+86	encuentra un vuelo de columbus a houston con una escala en nashville para mañana	O O O O B-fromloc.city_name O B-toloc.city_name O O O O B-stoploc.city_name O B-depart_date.today_relative	atis_flight
+87	dame los vuelos de nashville a houston , sin escala , con cena	O O O O B-fromloc.city_name O B-toloc.city_name O B-flight_stop I-flight_stop O O B-meal_description	atis_flight
+88	encuentra vuelos disponibles de kansas city a newark	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+89	encuentra un vuelo que vaya de kansas city a newark y, luego, a orlando y de vuelta a kansas city	O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O B-toloc.city_name O O O O B-toloc.city_name I-toloc.city_name	atis_flight
+90	encuentra un vuelo de kansas city a newark	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+91	encuentra un vuelo de newark a orlando	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+92	encuentra un vuelo de orlando a kansas city	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+93	me gustaría volar de columbus a phoenix vía cincinnati por la tarde	O O O O B-fromloc.city_name O B-toloc.city_name O B-stoploc.city_name O O B-depart_time.period_of_day	atis_flight
+94	me gustaría saber qué aeropuertos hay en los ángeles	O O O O O O O B-city_name I-city_name	atis_airport
+95	¿el aeropuerto en burbank tiene un vuelo que llegue de kansas city ?	O O O B-toloc.city_name O O O O O O B-fromloc.city_name I-fromloc.city_name O	atis_flight
+96	qué vuelo llega a burbank desde kansas city los sábados por la tarde	O O O O B-toloc.city_name O B-fromloc.city_name I-fromloc.city_name O B-arrive_date.day_name O O B-arrive_time.period_of_day	atis_flight
+97	qué vuelos llegan a burbank desde las vegas el sábado veintitrés de abril por la tarde	O O O O B-toloc.city_name O B-fromloc.city_name I-fromloc.city_name O B-depart_date.day_name B-depart_date.day_number O B-depart_date.month_name O O B-depart_time.period_of_day	atis_flight
+98	qué vuelos hay de orlando a cleveland que lleguen alrededor de las 10 p. m.	O O O O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative B-arrive_time.time	atis_flight
+99	qué vuelos hay de indianápolis a san diego el veintiuno de abril a última hora de la tarde	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name O B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+100	qué vuelos salen de cleveland a indianápolis el 21 de abril por la mañana	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name O O B-depart_time.period_of_day	atis_flight
+101	qué vuelos hay el veintiuno de abril por la mañana de nashville a tacoma	O O O O B-depart_date.day_number O B-depart_date.month_name O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+102	qué vuelos están disponibles de tacoma a san josé por la mañana el veintidós de abril	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_time.period_of_day O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+103	qué vuelos hay de san josé a nashville que salgan por la mañana el veintitrés de abril	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O B-depart_time.period_of_day O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+104	cuál es la tarifa de ida más cara entre detroit y el condado de westchester	O O O O B-round_trip I-round_trip B-cost_relative I-cost_relative O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_airfare
+105	qué aerolíneas vuelan entre detroit y el condado de westchester	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_airline
+106	cuáles son los horarios de salida de detroit al condado de westchester	O O O B-flight_time I-flight_time I-flight_time O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight_time
+107	cuál es el último vuelo de baltimore a oakland con cena	O O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name O B-meal_description	atis_flight
+108	cuál es el vuelo más temprano entre baltimore y oakland con desayuno	O O O O B-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name O B-meal_description	atis_flight
+109	a qué ciudades vuela america west con primera clase desde boston	O O O O B-airline_name I-airline_name O B-class_type I-class_type O B-fromloc.city_name	atis_city
+110	qué aerolínea vuela de boston a san diego	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airline
+111	cuál es el último vuelo con desayuno de dallas a tampa	O O O B-flight_mod O O B-meal_description O B-fromloc.city_name O B-toloc.city_name	atis_flight
+112	muéstrame todos los vuelos con lufthansa de seattle a boston con escala en mineápolis	O O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name	atis_flight
+113	muéstrame todos los vuelos de seattle a boston con escala en mineápolis	O O O O O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name	atis_flight
+114	indícame los vuelos de filadelfia a san francisco con escala en dallas	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-stoploc.city_name	atis_flight
+115	muéstrame los vuelos con conexión entre boston y denver y todos los tipos de aviones que se usan	O O O B-connect I-connect O B-fromloc.city_name O B-toloc.city_name O O O O O O O O O	atis_flight
+116	muéstrame todos los vuelos por la mañana de filadelfia a fort worth	O O O O B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+117	muéstrame todos los vuelos de kansas city a saint paul	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+118	muéstrame el vuelo 608 con northwest de kansas city a saint paul	O O O B-flight_number O B-airline_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+119	muéstrame todos los vuelos de indianápolis a charlotte para el lunes	O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+120	cuál es el transporte terrestre entre el aeropuerto de charlotte aeropuerto de charlotte y el centro de charlotte	O O O O O O O B-airport_name I-airport_name I-airport_name B-city_name I-city_name I-city_name O O O O B-city_name	atis_ground_service
+121	muéstrame todos los vuelos de charlotte a mineápolis que salen a las 2 p. m. o más tarde el lunes	O O O O O B-fromloc.city_name O B-toloc.city_name O O O O B-depart_time.time O B-depart_time.time_relative I-depart_time.time_relative O B-depart_date.day_name	atis_flight
+122	muéstrame todos los vuelos de charlotte a mineápolis para el martes por la mañana	O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+123	muéstrame todos vuelos directos de charlotte a mineápolis para el martes por la mañana	O O O B-connect O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+124	muéstrame el vuelo 1500 de us para el lunes de charlotte a mineápolis	O O O B-flight_number O B-airline_code O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+125	muéstrame todos los vuelos de mineápolis a indianápolis para el martes que salen después de las 2 p. m.	O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.time_relative O O B-depart_time.time	atis_flight
+126	muéstrame los vuelos de mineápolis a indiana	O O O O B-fromloc.city_name O B-toloc.state_name	atis_flight
+127	muéstrame los vuelos de mineápolis a indianápolis para el martes por la tarde	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+128	muéstrame el vuelo 1207 de us de indianápolis a charlotte para el lunes , el vuelo 1500 de us de charlotte a mineápolis para el lunes y el vuelo 639 de twa de mineápolis a indianápolis	O O O B-flight_number O B-airline_code O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O O B-flight_number O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O O B-flight_number O B-airline_code O B-fromloc.city_name O B-toloc.city_name	atis_flight
+129	muéstrame todos los vuelos de las vegas a nueva york	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+130	cuáles son las diferentes aerolíneas que van de las vegas a nueva york	O O O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airline
+131	muéstrame todos los vuelos de america west y twa de las vegas a jfk para un viernes	O O O O O B-airline_name I-airline_name O B-airline_code O B-fromloc.city_name I-fromloc.city_name O B-toloc.airport_code O O B-depart_date.day_name	atis_flight
+132	cuáles son los vuelos de tacoma a miami que salen mañana después de las 6 p. m.	O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.today_relative B-depart_time.time_relative O O B-depart_time.time	atis_flight
+133	me gustaría volar de san diego a houston el diez de junio	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+134	¿hay un vuelo con american airlines de houston a newark el diez de junio después de las 6 p. m. ?	O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name B-depart_time.time_relative O O B-depart_time.time O	atis_flight
+135	¿hay un vuelo con american airlines de houston a newark el diez de junio después de las 3 p. m. ?	O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name B-depart_time.time_relative O O B-depart_time.time O	atis_flight
+136	necesito ir de cincinnati a denver el seis de junio alrededor de las 6 p. m.	O O O B-fromloc.city_name O B-toloc.city_name O B-arrive_date.day_number O B-arrive_date.month_name B-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative B-arrive_time.time	atis_flight
+137	cuál es el transporte terrestre en denver	O O O O O O B-city_name	atis_ground_service
+138	cuál es la tarifa de un taxi a denver	O O O O O O B-transport_type O B-city_name	atis_ground_fare
+139	cuáles son las tarifas del transporte terrestre en denver	O O O O O O O O B-city_name	atis_ground_fare
+140	necesito volar de denver al condado de westchester el siete de junio después de las 3 p. m.	O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name B-depart_time.time_relative O O B-depart_time.time	atis_flight
+141	cuál es el transporte terrestre en el condado de westchester	O O O O O O B-city_name I-city_name I-city_name I-city_name	atis_ground_service
+142	necesito tomar un vuelo con united airlines el ocho de junio del condado de westchester a cincinnati después de las 3 p. m.	O O O O O B-airline_name I-airline_name O B-depart_date.day_number O B-depart_date.month_name O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.time	atis_flight
+143	qué vuelos con united airlines van del condado de westchester a cincinnati el ocho de junio	O O O B-airline_name I-airline_name O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+144	el ocho de junio , ¿qué vuelos van del condado de westchester a cincinnati ?	O B-depart_date.day_number O B-depart_date.month_name O O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O	atis_flight
+145	¿ us air vuela de cincinnati a denver el seis de junio ?	O B-airline_name I-airline_name O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name O	atis_flight
+146	indícame los vuelos de cincinnati a denver para el seis de junio	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+147	indícame los vuelos de denver al condado de westchester para el siete de junio	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+148	indícame los vuelos del condado de westchester a cincinnati para el ocho de junio	O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+149	indícame los vuelos de cincinnati al condado de westchester para el seis de junio	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+150	indícame los vuelos del condado de westchester a denver para el siete de junio	O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+151	indícame los vuelos de denver a cincinnati para el seis de junio	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+152	indícame los vuelos de denver a cincinnati para el seis de junio después de las 4 p. m.	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name B-depart_time.time_relative O O B-depart_time.time	atis_flight
+153	indícame los vuelos de cincinnati al condado de westchester para el siete de junio	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+154	indícame los vuelos del condado de westchester a cincinnati para el siete de junio que salga después de las 5 p. m.	O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name O O B-depart_time.time_relative O O B-depart_time.time	atis_flight
+155	qué aerolíneas despegan desde love field entre las 6 y las 10 a. m. , el 6 de junio	O O O O B-fromloc.airport_name I-fromloc.airport_name O O B-depart_time.start_time O O B-depart_time.end_time O O B-depart_date.day_number O B-depart_date.month_name	atis_airline
+156	qué vuelos llegan a love field el seis de junio	O O O O B-toloc.airport_name I-toloc.airport_name O B-arrive_date.day_number O B-arrive_date.month_name	atis_flight
+157	indícame los vuelos de montreal a filadelfia antes de las 9 a. m.	O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.time	atis_flight
+158	indícame los vuelos de cleveland a memphis	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+159	indícame los vuelos de memphis a cleveland	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+160	indícame los vuelos de denver a baltimore que llegan el primero de julio	O O O O B-fromloc.city_name O B-toloc.city_name O O O B-arrive_date.day_number O B-arrive_date.month_name	atis_flight
+161	indícame los vuelos de dallas a baltimore que llegan el primero de julio	O O O O B-fromloc.city_name O B-toloc.city_name O O O B-arrive_date.day_number O B-arrive_date.month_name	atis_flight
+162	indícame los vuelos de pittsburgh a baltimore que llegan el primero de julio	O O O O B-fromloc.city_name O B-toloc.city_name O O O B-arrive_date.day_number O B-arrive_date.month_name	atis_flight
+163	indícame los vuelos de canadian airlines international	O O O O B-airline_name I-airline_name I-airline_name	atis_flight
+164	cuántos vuelos de canadian airlines international usan un j31	O O O B-airline_name I-airline_name I-airline_name O O B-aircraft_code	atis_quantity
+165	cuántos vuelos de canadian airlines international usan un avión 320	O O O B-airline_name I-airline_name I-airline_name O O O B-aircraft_code	atis_quantity
+166	cuántos vuelos de canadian airlines usan un avión dh8	O O O B-airline_name I-airline_name O O O B-aircraft_code	atis_quantity
+167	muéstrame los vuelos con american airlines que vuelan de san petersburgo a ontario , canadá con una escala en san luis	O O O O B-airline_name I-airline_name O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-toloc.country_name O O O O B-stoploc.city_name I-stoploc.city_name	atis_flight
+168	muéstrame los vuelos con american airlines que van de san petersburgo a ontario , california , vía san luis	O O O O B-airline_name I-airline_name O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-toloc.state_name O O B-stoploc.city_name I-stoploc.city_name	atis_flight
+169	qué aeropuerto está más cerca de ontario , california	O O O B-mod I-mod O B-city_name O B-state_name	atis_airport
+170	muéstrame los vuelos de houston a orlando	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+171	muéstrame los vuelos de orlando a houston	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+172	muéstrame los vuelos de detroit a las vegas	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+173	muéstrame la tarifa más barata de un viaje de ida y vuelta en turista de las vegas a detroit	O O O B-cost_relative I-cost_relative O O B-round_trip I-round_trip I-round_trip I-round_trip I-round_trip O B-class_type O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_airfare
+174	muéstrame la tarifa más barata de un viaje de ida y vuelta en turista de twa de las vegas a detroit	O O O B-cost_relative I-cost_relative O O B-round_trip I-round_trip I-round_trip I-round_trip I-round_trip O B-class_type O B-airline_code O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_airfare
+175	muéstrame los vuelos de delta en los que se sirva un refrigerio a los pasajeros que viajen en turista	O O O O B-airline_name O O O O O O B-meal_description O O O O O O B-compartment	atis_flight
+176	qué significa el código de comida sb	O O O O O O B-meal_code	atis_abbreviation
+177	qué comidas hay en el vuelo 468 de dl que llega a san francisco a las 9:50 a. m.	O B-meal O O O O B-flight_number O B-airline_code O O O B-toloc.city_name I-toloc.city_name O O B-arrive_time.time	atis_meal
+178	muéstrame los vuelos de delta de tampa a san francisco	O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+179	muéstrame el vuelo 486 de delta	O O O B-flight_number O B-airline_name	atis_flight
+180	indícame los vuelos con tower air para los lunes	O O O O B-airline_name I-airline_name O O B-day_name	atis_flight
+181	indícame todos los vuelos con tower air con comidas	O O O O O B-airline_name I-airline_name O B-meal	atis_flight
+182	qué vuelos salen de baltimore	O O O O B-fromloc.city_name	atis_flight
+183	qué vuelos salen de baltimore y llegan a san francisco un viernes	O O O O B-fromloc.city_name O O O B-toloc.city_name I-toloc.city_name O B-arrive_date.day_name	atis_flight
+184	qué vuelos salen de cincinnati por la mañana y llegan a tampa	O O O O B-fromloc.city_name O O B-depart_time.period_of_day O O O B-toloc.city_name	atis_flight
+185	qué vuelos salen de tampa y llegan a cincinnati por la noche	O O O O B-fromloc.city_name O O O B-toloc.city_name O O B-arrive_time.period_of_day	atis_flight
+186	qué vuelos salen de tampa temprano por la noche y llegan a cincinnati	O O O O B-fromloc.city_name B-depart_time.period_of_day O O B-depart_time.period_of_day O O O B-toloc.city_name	atis_flight
+187	qué vuelos salen de filadelfia y llegan a atlanta	O O O O B-fromloc.city_name O O O B-toloc.city_name	atis_flight
+188	qué vuelos salen de atlanta y llegan a toronto	O O O O B-fromloc.city_name O O O B-toloc.city_name	atis_flight
+189	qué vuelos salen de toronto y llegan a washington d. c.	O O O O B-fromloc.city_name O O O B-toloc.city_name B-toloc.state_code	atis_flight
+190	qué vuelos salen de nueva york y llegan a los ángeles después de las 10 a. m.	O O O O B-fromloc.city_name I-fromloc.city_name O O O B-toloc.city_name I-toloc.city_name B-arrive_time.time_relative O O B-arrive_time.time	atis_flight
+191	a qué distancia queda la guardia , de nueva york , del centro de la ciudad	O O O O B-airport_name I-airport_name O O B-city_name I-city_name O O O O O O	atis_distance
+192	a qué distancia queda el aeropuerto internacional de toronto del centro de la ciudad	O O O O O B-airport_name I-airport_name I-airport_name I-airport_name O O O O O	atis_distance
+193	a qué distancia queda el aeropuerto internacional de los ángeles del centro de la ciudad	O O O O O B-airport_name I-airport_name I-airport_name I-airport_name I-airport_name O O O O O	atis_distance
+194	a qué distancia queda el aeropuerto internacional de san francisco del centro de la ciudad	O O O O O B-airport_name I-airport_name I-airport_name I-airport_name I-airport_name O O O O O	atis_distance
+195	cuánto cuesta el servicio de limusina en boston	O O O O O B-transport_type O B-city_name	atis_ground_fare
+196	cuánto cuesta un servicio de limusina en la guardia	O O O O O B-transport_type O B-airport_name I-airport_name	atis_ground_fare
+197	cuánto cuesta un servicio de limusina en el aeropuerto internacional de toronto	O O O O O B-transport_type O O B-airport_name I-airport_name I-airport_name I-airport_name	atis_ground_fare
+198	cuánto cuesta el servicio de limusina en los ángeles	O O O O O B-transport_type O B-city_name I-city_name	atis_ground_fare
+199	qué aerolíneas vuelan entre washington d. c. y columbus , ohio	O O O O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O B-toloc.state_name	atis_airline
+200	qué vuelos hay entre washington d. c. y columbus , ohio	O O O O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O B-toloc.state_name	atis_flight
+201	cuáles son los vuelos entre washington d. c. y columbus , ohio	O O O O O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O B-toloc.state_name	atis_flight
+202	cuáles son las tarifas para todos los vuelos entre washington y columbus	O O O O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+203	cuántos tipos diferentes de aviones hay para us air en el aeropuerto de charlotte	O O O O O O O B-airline_name I-airline_name O O B-city_name I-city_name I-city_name	atis_aircraft
+204	indícame todos los vuelos de us air que llegan a charlotte el sábado a la 1 p. m.	O O O O O B-airline_name I-airline_name O O O B-toloc.city_name O B-arrive_date.day_name O O B-arrive_time.time	atis_flight
+205	cuál es la tarifa aérea de ida y vuelta en primera clase de indianápolis a memphis	O O O O O O B-round_trip I-round_trip I-round_trip O B-class_type I-class_type O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+206	indícame todos los vuelos de memphis a miami	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+207	indícame todos los vuelos y las tarifas de indianápolis a memphis para un lunes por la mañana	O O O O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight#atis_airfare
+208	indícame todos los vuelos y las tarifas de memphis a miami para un miércoles por la noche	O O O O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight#atis_airfare
+209	indícame todos los vuelos y las tarifas de para todos los vuelos entre miami y indianápolis	O O O O O O O O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight#atis_airfare
+210	indícame todos los vuelos de cleveland a kansas city para el lunes	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name	atis_flight
+211	indícame todos los vuelos de kansas city a cleveland	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+212	indícame todos los vuelos de cleveland a nashville	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+213	indícame todos los vuelos de nashville a cleveland para el domingo	O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+214	indícame todos los vuelos para el domingo de cleveland a nashville y las tarifas	O O O O O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name O O O	atis_flight#atis_airfare
+215	qué aerolíneas salen de baltimore	O O O O B-fromloc.city_name	atis_airline
+216	qué aerolíneas vuelan de baltimore a san francisco	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airline
+217	cuánto tarda un vuelo de baltimore a san francisco	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_distance
+218	qué vuelos salen de kansas city a atlanta temprano por la mañana el lunes	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-depart_time.period_mod O O B-depart_date.day_name O B-depart_time.period_of_day	atis_flight
+219	qué vuelos salen de atlanta y llegan a san luis cerca de las 2:30 p. m. el martes	O O O O B-fromloc.city_name O O O B-toloc.city_name I-toloc.city_name B-arrive_time.time_relative O O B-arrive_time.time O B-arrive_date.day_name	atis_flight
+220	indícame los vuelos de san luis a saint paul que salgan después de las 10 a. m. , el jueves por la mañana	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_time.time_relative O O B-depart_time.time O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+221	indícame los vuelos de saint paul a kansas city el viernes por la noche con una comida incluida	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name O O B-depart_time.period_of_day O O B-meal O	atis_flight
+222	indícame los vuelos temprano por la mañana de cincinnati a tampa	O O O B-depart_time.period_of_day O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+223	indícame los vuelos temprano por la noche de tampa a cincinnati	O O O B-depart_time.period_of_day O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+224	indícame los vuelos por la noche de tampa a cincinnati	O O O O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+225	indícame los vuelos de filadelfia a atlanta para el viernes por la mañana	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+226	indícame los vuelos de atlanta a toronto para el viernes por la tarde	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+227	indícame los vuelos de toronto a washington d. c. para el sábado por la mañana	O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code I-toloc.state_code O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+228	indícame los vuelos de washington d. c. a filadelfia para el sábado por la tarde	O O O O B-fromloc.city_name B-fromloc.state_code I-fromloc.state_code O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+229	indícame los vuelos directos de nueva york a los ángeles después de las 10 a. m.	O O O B-connect O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-depart_time.time_relative O O B-depart_time.time	atis_flight
+230	indícame la tarifa aérea para el vuelo 19 de american airlines de jfk a lax	O O O O O O O B-flight_number O B-airline_name I-airline_name O B-fromloc.airport_code O B-toloc.airport_code	atis_airfare#atis_flight
+231	qué significa el código de tarifa m	O O O O O O B-fare_basis_code	atis_abbreviation
+232	indícame la distancia en millas del aeropuerto de boston al centro de boston	O O O O O O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O O O B-city_name	atis_distance
+233	indícame la distancia en millas del aeropuerto la guardia de nueva york al centro de nueva york	O O O O O O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O B-fromloc.city_name I-fromloc.city_name O O O B-city_name I-city_name	atis_distance
+234	indícame la distancia en millas del aeropuerto internacional de toronto al centro de toronto	O O O O O O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O O O B-city_name	atis_distance
+235	indícame la distancia en millas del aeropuerto internacional de san francisco al centro de san francisco	O O O O O O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O O O B-toloc.city_name I-toloc.city_name	atis_distance
+236	indícame las tarifas de limusina para la ciudad de boston	O O O O B-transport_type O O B-city_name I-city_name I-city_name	atis_ground_fare
+237	indícame los vuelos con american airlines de houston a milwaukee que salgan el viernes por la tarde	O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name O O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+238	indícame los vuelos de houston a milwaukee para el viernes por la tarde	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+239	indícame los vuelos con american airlines de milwaukee a san josé para el miércoles	O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name	atis_flight
+240	indícame los vuelos con american airlines de san josé a dallas para el viernes por la tarde	O O O O B-airline_name I-airline_name O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+241	indícame los vuelos de dallas a houston que llegan el domingo por la tarde	O O O O B-fromloc.city_name O B-toloc.city_name O O O B-arrive_date.day_name O O B-arrive_time.period_of_day	atis_flight
+242	indícame las aerolíneas que vuelan de seattle a salt lake city	O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_airline
+243	cuántos asientos tiene el avión l10	O O O O O B-aircraft_code	atis_capacity
+244	cuántos asientos tiene el avión be1 de delta	O O O O O B-aircraft_code O B-airline_name	atis_capacity
+245	indícame los vuelos de seattle a salt lake city con el avión l10 de delta	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O B-aircraft_code O B-airline_name	atis_flight
+246	indícame los vuelos de seattle a salt lake city con el avión be1 de delta	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O B-aircraft_code O B-airline_name	atis_flight
+247	indícame los vuelos diarios de boston a pittsburgh	O O O B-flight_days O B-fromloc.city_name O B-toloc.city_name	atis_flight
+248	indícame los vuelos diarios de pittsburgh a newark	O O O B-flight_days O B-fromloc.city_name O B-toloc.city_name	atis_flight
+249	indícame los vuelos diarios de newark a boston	O O O B-flight_days O B-fromloc.city_name O B-toloc.city_name	atis_flight
+250	indícame los vuelos con us air que salen el sábado del aeropuerto de charlotte a la 1 p. m.	O O O O B-airline_name I-airline_name O O O B-depart_date.day_name O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name O O B-depart_time.time	atis_flight
+251	indícame los vuelos de us air que salen el sábado del aeropuerto de charlotte alrededor de la 1 p. m.	O O O O B-airline_name I-airline_name O O O B-depart_date.day_name O B-fromloc.airport_name I-fromloc.airport_name I-fromloc.airport_name B-depart_time.time_relative I-depart_time.time_relative I-depart_time.time_relative B-depart_time.time	atis_flight
+252	indícame la tarifa aérea de ida y vuelta en primera clase de indianápolis a memphis	O O O O O B-round_trip I-round_trip I-round_trip O B-class_type I-class_type O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+253	qué significa el código de tarifa f	O O O O O O B-fare_basis_code	atis_abbreviation
+254	indícame los vuelos de memphis a miami para el miércoles por la noche	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+255	indícame los vuelos de miami a indianápolis para el domingo	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+256	indícame los vuelos de ontario , california , a orlando , florida	O O O O B-fromloc.city_name O B-fromloc.state_name O O B-toloc.city_name O B-toloc.state_name	atis_flight
+257	indícame los vuelos de ontario , california , a salt lake city , utah	O O O O B-fromloc.city_name O B-fromloc.state_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-toloc.state_name	atis_flight
+258	indícame los vuelos de ontario , california , a salt lake city , utah , para el lunes	O O O O B-fromloc.city_name O B-fromloc.state_name O O B-toloc.city_name I-toloc.city_name I-toloc.city_name O B-toloc.state_name O O O B-depart_date.day_name	atis_flight
+259	indícame los vuelos de salt lake city , utah , a phoenix , arizona , para el lunes	O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-fromloc.state_name O O B-toloc.city_name O B-toloc.state_name O O O B-depart_date.day_name	atis_flight
+260	indícame los vuelos de salt lake city a phoenix , arizona , para el martes	O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-toloc.state_name O O O B-depart_date.day_name	atis_flight
+261	indícame los vuelos de phoenix , arizona , a ontario , california , para el miércoles	O O O O B-fromloc.city_name O B-fromloc.state_name O O B-toloc.city_name O B-toloc.state_name O O O B-depart_date.day_name	atis_flight
+262	qué aerolíneas vuelan de baltimore a san francisco	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airline
+263	cuál es la tarifa para un pasaje de ida y vuelta en primera clase de detroit a san petersburgo	O O O O O O O O B-round_trip I-round_trip I-round_trip O B-class_type I-class_type O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airfare
+264	cuál es la tarifa aérea para un pasaje de ida y vuelta en primera clase de detroit a san petersburgo	O O O O O O O O O B-round_trip I-round_trip I-round_trip O B-class_type I-class_type O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airfare
+265	vuelos de kansas city a atlanta para el lunes por la mañana	O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+266	vuelos para el lunes por la mañana de atlanta a kansas city	O O O B-depart_date.day_name O O B-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+267	vuelos de kansas city a atlanta para el lunes por la mañana	O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+268	vuelos de atlanta a san luis para el martes antes de las 2:30 p. m.	O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time	atis_flight
+269	de san luis a saint paul para el jueves después de las 10 a. m.	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time	atis_flight
+270	de saint paul a kansas city para el viernes por la noche	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+271	de cleveland a kansas city que llegue el lunes antes de las 3 p. m.	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-arrive_date.day_name B-arrive_time.time_relative O O B-arrive_time.time	atis_flight
+272	el vuelo de kansas city a cleveland que llegue el miércoles antes de las 5 p. m.	O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O B-arrive_date.day_name B-arrive_time.time_relative O O B-arrive_time.time	atis_flight
+273	el vuelo de cleveland a nashville para el viernes por la mañana	O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+274	de nashville a cleveland para el domingo antes de las 9	O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time	atis_flight
+275	vuelos en primera clase de pittsburgh a newark para el lunes por la mañana	O O B-class_type I-class_type O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+276	vuelos de newark a los ángeles para el miércoles por la mañana	O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+277	de los ángeles a mineápolis para el jueves por la tarde	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+278	vuelo de mineápolis a pittsburgh	O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+279	vuelo de mineápolis a pittsburgh en primera clase	O O B-fromloc.city_name O B-toloc.city_name O B-class_type I-class_type	atis_flight
+280	me gustarían vuelos que salgan de milwaukee a orlando	O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+281	qué significa hp	O O B-airline_code	atis_abbreviation
+282	me gustarían vuelos de ontario a tacoma	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+283	me gustarían vuelos de mineápolis a san diego	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+284	me gustarían vuelos de salt lake city a cincinnati	O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+285	me gustaría ver vuelos de cincinnati a salt lake city	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+286	me gustarían vuelos de nueva york a miami	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+287	me gustarían vuelos de miami a nueva york	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+288	me gustaría un vuelo que salga de san francisco rumbo a san diego	O O O O O O O B-fromloc.city_name I-fromloc.city_name O O B-toloc.city_name I-toloc.city_name	atis_flight
+289	me gustarían vuelos de san diego a las vegas	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+290	me gustaría un vuelo de san diego a las vegas	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+291	me gustarían vuelos de las vegas a san francisco	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+292	qué significa el código de tarifa bn	O O O O O O B-fare_basis_code	atis_abbreviation
+293	me gustaría tomar la aerolínea que hace el vuelo toronto , detroit y san luis	O O O O O O O O O B-fromloc.city_name O B-toloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airline
+294	me gustaría un vuelo de toronto a detroit	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+295	me gustaría un vuelo de detroit a san luis	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+296	me gustaría un vuelo de toronto a san luis	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+297	me gustarían vuelos de san francisco a long beach	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+298	me gustarían vuelos que salgan de san francisco a san diego	O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+299	me gustaría un vuelo de san francisco a san petersburgo	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+300	muéstrame un vuelo de ida de milwaukee a orlando que salga el miércoles por la tarde después de las 6 p. m.	O O O B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O O O B-depart_date.day_name O O B-depart_time.period_of_day B-depart_time.time_relative O O B-depart_time.time	atis_flight
+301	muéstrame los vuelos de ida de milwaukee a orlando para el miércoles	O O O B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+302	muéstrame los vuelos de columbus a chicago en primera clase que salgan antes de las 10 a. m.	O O O O B-fromloc.city_name O B-toloc.city_name O B-class_type I-class_type O O B-depart_time.time_relative O O B-depart_time.time	atis_flight
+303	muéstrame el viaje de ida y vuelta más barato entre san petersburgo y detroit que llegue antes de las 7 p. m.	O O B-round_trip I-round_trip I-round_trip I-round_trip I-round_trip B-cost_relative I-cost_relative O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative O O B-arrive_time.time	atis_flight
+304	muéstrame los vuelos sin escala de kansas city a phoenix	O O O B-flight_stop I-flight_stop O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+305	qué aerolínea es wn	O O O B-airline_code	atis_airline
+306	muéstrame el viaje de ida y vuelta más barato en primera clase de nueva york a miami	O O B-round_trip I-round_trip I-round_trip I-round_trip I-round_trip B-cost_relative I-cost_relative O B-class_type I-class_type O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+307	muéstrame todos los viajes de ida y vuelta de nueva york a miami	O O O B-round_trip I-round_trip I-round_trip I-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+308	muéstrame el vuelo más barato de ida de san francisco a houston	O O O B-cost_relative I-cost_relative B-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+309	ahora, muéstrame el vuelo más barato de ida de houston a boston	O O O O B-cost_relative I-cost_relative B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_flight
+310	muéstrame las tarifas más baratas de un viaje de ida y vuelta de houston a boston	O O O B-cost_relative I-cost_relative O O B-round_trip I-round_trip I-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+311	muéstrame las tarifas más baratas de un viaje de ida y vuelta de san francisco a houston	O O O B-cost_relative I-cost_relative O O B-round_trip I-round_trip I-round_trip I-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_airfare
+312	muéstrame la tarifa más barata de un viaje de ida y vuelta de san francisco a houston para el 28 de febrero de 1994	O O O B-cost_relative I-cost_relative O O B-round_trip I-round_trip I-round_trip I-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name O B-depart_date.year	atis_airfare
+313	muéstrame la tarifa más barata de un viaje de ida de san francisco a houston para el 28 de febrero de 1994	O O O B-cost_relative I-cost_relative O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name O B-depart_date.year	atis_airfare
+314	ahora, muéstrame el transporte terrestre en houston para el lunes por la tarde	O O O O O O B-city_name O O B-day_name O O B-period_of_day	atis_ground_service
+315	ahora, muéstrame los vuelos de ida de houston a boston	O O O O B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_flight
+316	y ahora, muéstrame el transporte terrestre que puedo tomar en boston a última hora de la noche	O O O O O O O O O O B-city_name B-period_of_day I-period_of_day I-period_of_day O O B-period_of_day	atis_ground_service
+317	muéstrame las aerolíneas que tienen vuelos entre toronto y detroit , entre detroit y san luis , y entre san luis y toronto	O O O O O O O B-fromloc.city_name O B-toloc.city_name O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_airline
+318	muéstrame las tarifas de un viaje de ida y vuelta de toronto a detroit con delta , northwest , us air y united airlines	O O O O O B-round_trip I-round_trip I-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O B-airline_name O B-airline_name O B-airline_name I-airline_name O B-airline_name I-airline_name	atis_airfare
+319	muéstrame los vuelos entre detroit y san luis de delta , northwest , us air y united airlines	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_name O B-airline_name O B-airline_name I-airline_name O B-airline_name I-airline_name	atis_flight
+320	muéstrame los vuelos de montreal a orlando y a long beach	O O O O B-fromloc.city_name O B-toloc.city_name O O B-toloc.city_name I-toloc.city_name	atis_flight
+321	muéstrame los vuelos de montreal a orlando	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+322	necesito un vuelo para el viernes por la tarde , en junio , de nueva york a cleveland	O O O O O B-depart_date.day_name O O B-depart_time.period_of_day O O B-depart_date.month_name O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+323	necesito un vuelo de nueva york a los ángeles para el sábado por la noche con us air	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day O B-airline_name I-airline_name	atis_flight
+324	me gustaría un vuelo nocturno de nueva york a los ángeles para el sábado por la noche con us air	O O O O B-flight_mod O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day O B-airline_name I-airline_name	atis_flight
+325	me gustaría un vuelo de nueva york a los ángeles para el sábado por la mañana con us air	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day O B-airline_name I-airline_name	atis_flight
+326	necesito un vuelo de san francisco a milwaukee para el lunes por la mañana	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+327	qué significa ua	O O B-airline_code	atis_abbreviation
+328	necesito un vuelo de milwaukee a washington d. c. para el lunes por la noche	O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+329	qué hay de los vuelos de milwaukee a washington d. c. para el martes por la mañana	O O O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+330	qué comidas hay en el vuelo 382 de milwaukee a washington d. c. los martes por la mañana	O B-meal O O O O B-flight_number O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O B-depart_date.day_name O O B-depart_time.period_of_day	atis_meal
+331	necesitaré alquilar un vehículo en washington d. c.	O O O B-transport_type O B-city_name B-state_code	atis_ground_service
+332	¿puedo tomar un vuelo el martes por la noche de washington d. c. a oakland ?	O O O O O B-depart_date.day_name O O B-depart_time.period_of_day O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O	atis_flight
+333	qué tal de d. c. a oakland para el miércoles por la mañana	O O O B-fromloc.state_code O B-toloc.city_name O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+334	cuánto cuesta volar con twa de columbus a milwaukee	O O O O B-airline_code O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+335	qué significa q	O O B-fare_basis_code	atis_abbreviation
+336	cuánto cuesta volar de columbus a san luis en un viaje de ida y vuelta con twa	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-round_trip I-round_trip I-round_trip I-round_trip I-round_trip O B-airline_code	atis_airfare
+337	cuál es el vuelo más barato de columbus a san luis de ida y vuelta con twa	O O O O B-cost_relative I-cost_relative O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-round_trip I-round_trip I-round_trip I-round_trip O B-airline_code	atis_flight
+338	cuál es el vuelo más barato de ida y vuela con twa de columbus a saint paul	O O O O B-cost_relative I-cost_relative B-round_trip I-round_trip I-round_trip I-round_trip O B-airline_code O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+339	quiero viajar de milwaukee a los ángeles	O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+340	¿puedo tomar el vuelo más corto de milwaukee a orlando ?	O O O O B-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+341	cuál es el vuelo más corto de milwaukee a long beach	O O O O B-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+342	qué significa m	O O B-fare_basis_code	atis_abbreviation
+343	qué significa ap 57	O O B-restriction_code I-restriction_code	atis_abbreviation
+344	cuál es el vuelo más corto de milwaukee a san petersburgo	O O O O B-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+345	cuál es el vuelo más corto de milwaukee a long beach	O O O O B-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+346	cuál es el vuelo más corto de milwaukee a san diego	O O O O B-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+347	qué significa ap 20	O O B-restriction_code I-restriction_code	atis_abbreviation
+348	¿puedo tomar un vuelo hoy de san francisco a detroit , michigan ?	O O O O B-depart_date.today_relative O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-toloc.state_name O	atis_flight
+349	cuál es el vuelo más barato de san francisco a detroit para hoy	O O O O B-cost_relative I-cost_relative O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.today_relative	atis_flight
+350	quiero volar de san francisco a milwaukee y de milwaukee a denver	O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+351	cuál es el vuelo más barato de san francisco a milwaukee	O O O O B-cost_relative I-cost_relative O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+352	necesito alquilar un vehículo en milwaukee	O O O B-transport_type O B-city_name	atis_ground_service
+353	cuál es el vuelo más barato para mañana de milwaukee a denver	O O O O B-cost_relative I-cost_relative O B-depart_date.today_relative O B-fromloc.city_name O B-toloc.city_name	atis_flight
+354	qué transporte terrestre hay en denver	O O O O O B-city_name	atis_ground_service
+355	cuál es el vuelo más barato de san francisco a denver	O O O O B-cost_relative I-cost_relative O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+356	qué vuelos salen de cleveland y van a dallas	O O O O B-fromloc.city_name O O O B-toloc.city_name	atis_flight
+357	muéstrame todos los vuelos sin escala de san petersburgo a charlotte	O O O O B-flight_stop I-flight_stop O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+358	qué aerolínea es la us	O O O O B-airline_code	atis_airline
+359	muéstrame vuelos entre toronto y san diego	O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+360	qué significa phl	O O B-airport_code	atis_abbreviation
+361	qué significa mci	O O B-airport_code	atis_abbreviation
+362	muéstrame los vuelos entre oakland y salt lake city	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+363	qué significa sin sa	O O B-mod B-days_code	atis_abbreviation
+364	cuál es el vuelo diario más temprano entre oakland y salt lake city	O O O O B-flight_days B-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+365	qué aerolínea es dl	O O O B-airline_code	atis_airline
+366	cuál es el vuelo diario más tarde entre oakland y salt lake city	O O O O B-flight_days B-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+367	muéstrame los vuelos entre los ángeles y dallas	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+368	qué transporte terrestre hay del aeropuerto de dallas fort worth al centro de dallas	O O O O O B-airport_name I-airport_name I-airport_name I-airport_name I-airport_name O O O B-city_name	atis_ground_service
+369	cuántos pasajeros puede transportar un avión l1011	O O O O O O B-aircraft_code	atis_capacity
+370	cuántos asientos tiene un dc9	O O O O B-aircraft_code	atis_capacity
+371	cuáles son los vuelos entre dallas y phoenix	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+372	qué transporte terrestre hay entre el aeropuerto de phoenix y el centro de phoenix	O O O O O O B-airport_name I-airport_name I-airport_name O O O O B-city_name	atis_ground_service
+373	cuántos asientos tiene el avión m80	O O O O O B-aircraft_code	atis_capacity
+374	¿hay algún vuelo entre dallas y phoenix que use un avión dc10 ?	O O O O B-fromloc.city_name O B-toloc.city_name O O O O B-aircraft_code O	atis_flight
+375	qué aerolínea es aa	O O O B-airline_code	atis_airline
+376	muéstrame los vuelos entre milwaukee e indiana	O O O O B-fromloc.city_name O B-toloc.state_name	atis_flight
+377	cuáles son los vuelos entre milwaukee y pittsburgh	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+378	qué transporte terrestre hay entre el aeropuerto de pittsburgh y el centro de pittsburgh	O O O O O O B-airport_name I-airport_name I-airport_name O O O O B-city_name	atis_ground_service
+379	muéstrame los vuelos entre pittsburgh y washington d. c.	O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code I-toloc.state_code	atis_flight
+380	qué transporte terrestre hay entre el dca y el centro de washington	O O O O O O B-airport_code O O O O B-city_name	atis_ground_service
+381	cuáles son los vuelos entre el dca y milwaukee	O O O O O O B-airport_code O B-city_name	atis_flight
+382	qué transporte terrestre hay entre el aeropuerto de milwaukee y el centro de milwaukee	O O O O O O B-airport_name I-airport_name I-airport_name O O O O B-city_name	atis_ground_service
+383	averigua el tipo de avión que se usa en un vuelo de cleveland a dallas que salga antes del mediodía	O O O O O O O O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.time_relative O B-depart_time.period_of_day	atis_aircraft
+384	encuentra un vuelo entre san petersburgo y charlotte , el vuelo debería salir por la tarde y llegar lo antes posible después de las 5 p. m. y debería ser un vuelo sin escala	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O O O B-depart_time.period_of_day O O O O O B-arrive_time.time_relative O O B-arrive_time.time O O O O O B-flight_stop I-flight_stop	atis_flight
+385	indícame un vuelo con delta airlines de toronto a san diego	O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+386	indícame un vuelo con american airlines de toronto a san diego	O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+387	indícame un vuelo de toronto a san diego	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+388	indícame los vuelos de oakland a salt lake city que salen después de las 5 p. m. el miércoles	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_time.time_relative O O B-depart_time.time O B-depart_date.day_name	atis_flight
+389	indícame los vuelos de oakland a salt lake city que salen después de la medianoche el jueves	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_time.time_relative O O B-depart_time.period_of_day O B-depart_date.day_name	atis_flight
+390	indícame los vuelos entre phoenix y las vegas	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+391	indícame los vuelos de las vegas a denver	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+392	indícame los vuelos de milwaukee a washington d. c. antes de las 12 p. m.	O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code B-depart_time.time_relative O O B-depart_time.time	atis_flight
+393	indícame los vuelos de washington d. c. a pittsburgh que salen después de las 6 p. m.	O O O O B-fromloc.city_name B-fromloc.state_code I-fromloc.state_code O B-toloc.city_name O O B-depart_time.time_relative O O B-depart_time.time	atis_flight
+394	indícame los vuelos de washington d. c. a pittsburgh	O O O O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name	atis_flight
+395	indícame los vuelos entre pittsburgh y milwaukee	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+396	me gustaría un vuelo a san diego desde washington d. c.	O O O O O B-toloc.city_name I-toloc.city_name O B-fromloc.city_name B-fromloc.state_code	atis_flight
+397	me gustaría volar de cleveland a dallas	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+398	me gustaría volar de washington d. c. a phoenix , arizona	O O O O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O B-toloc.state_name	atis_flight
+399	necesito un vuelo de phoenix a atlanta	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+400	me gustaría volar de atlanta a san diego	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+401	me gustaría volar de san diego a seattle	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+402	me gustaría volar de orlando a kansas city	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+403	necesito un vuelo de kansas city a mineápolis	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+404	necesito un vuelo de san diego a washington d. c.	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_code	atis_flight
+405	necesito un vuelo de washington d. c. a san diego	O O O O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name I-toloc.city_name	atis_flight
+406	necesito un viaje de ida y vuelta de san diego a washington d. c. y las tarifas	O O O B-round_trip I-round_trip I-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O O	atis_flight#atis_airfare
+407	necesito un viaje de ida y vuelta de atlanta a washington d. c. y las tarifas de la salida por la mañana	O O B-round_trip I-round_trip I-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O O O O O O O B-depart_time.period_of_day	atis_flight#atis_airfare
+408	necesito un viaje de ida y vuelta de phoenix a washington d. c. y la tarifa de la salida por la mañana	O O B-round_trip I-round_trip I-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code O O O O O O O O B-depart_time.period_of_day	atis_flight#atis_airfare
+409	cuál es la tarifa más baja para un vuelo de washington d. c. a boston	O O O O B-cost_relative I-cost_relative O O O O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name	atis_airfare
+410	cuál es la tarifa más baja de washington d. c. a montreal	O O O O B-cost_relative I-cost_relative O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name	atis_airfare
+411	cuál es la tarifa más baja de toronto a washington d. c.	O O O O B-cost_relative I-cost_relative O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code	atis_airfare
+412	quiero un vuelo de montreal a washington d. c.	O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code	atis_flight
+413	quiero un vuelo de nashville a seattle que llegue no más tarde que las 3 p. m.	O O O O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative O B-arrive_time.time	atis_flight
+414	quiero un vuelo de memphis a seattle que llegue no más tarde que las 3 p. m.	O O O O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative I-arrive_time.time_relative O B-arrive_time.time	atis_flight
+415	necesito un vuelo de indianápolis a seattle que llegue a seattle a las 12:05 p. m.	O O O O B-fromloc.city_name O B-toloc.city_name O O O B-toloc.city_name O O B-arrive_time.time	atis_flight
+416	quiero un vuelo de ida y vuelta de memphis a seattle	O O O B-round_trip I-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_flight
+417	quiero volar de nashville a seattle y quiero la tarifa más barata de ida y vuelta	O O O B-fromloc.city_name O B-toloc.city_name O O O O B-cost_relative I-cost_relative B-round_trip I-round_trip I-round_trip I-round_trip	atis_flight
+418	quiero volar de memphis a seattle de ida y vuelta con la tarifa más barata	O O O B-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip I-round_trip I-round_trip O O O B-cost_relative I-cost_relative	atis_flight
+419	quiero volar de indianápolis a seattle de ida y vuelta con la tarifa más barata	O O O B-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip I-round_trip I-round_trip O O O B-cost_relative I-cost_relative	atis_flight
+420	indícame los vuelos de orlando a filadelfia	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+421	indícame los vuelos de san francisco a charlotte	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+422	indícame los vuelos de milwaukee a filadelfia	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+423	indícame los vuelos de filadelfia a san francisco	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+424	muéstrame el transporte terrestre a milwaukee	O O O O O B-city_name	atis_ground_service
+425	indícame los vuelos de san francisco a milwaukee	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+426	indícame los vuelos de houston a denver	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+427	indícame los vuelos de houston a phoenix	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+428	indícame los vuelos de phoenix a houston	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+429	indícame los vuelos de newark a houston	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+430	muéstrame los vuelos de denver a houston	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+431	muéstrame los vuelos de san petersburgo a charlotte	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+432	muéstrame los vuelos de orlando a kansas city	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+433	muéstrame los vuelos de kansas city a mineápolis	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+434	muéstrame los vuelos de kansas city a orlando	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+435	muéstrame los vuelos de mineápolis a kansas city	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+436	muéstrame los vuelos de kansas city a orlando	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+437	indícame los vuelos de washington a d. c. a boston	O O O O B-fromloc.city_name O B-fromloc.state_code O B-toloc.city_name	atis_flight
+438	indícame las tarifas de washington d. c. a montreal	O O O O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name	atis_airfare
+439	indícame los vuelos de washington d. c. a montreal	O O O O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name	atis_flight
+440	indícame las tarifas de washington d. c. a toronto que deberían ser buenas	O O O O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name O O O O	atis_airfare
+441	indícame las tarifas de washington d. c. a boston	O O O O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name	atis_airfare
+442	indícame los vuelos de washington d. c. a montreal	O O O O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name	atis_flight
+443	indícame los vuelos de washington d. c. a toronto	O O O O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name	atis_flight
+444	indícame los vuelos de toronto a washington a d. c.	O O O O B-fromloc.city_name O B-toloc.city_name O B-toloc.state_code	atis_flight
+445	indícame los vuelos de oakland a salt lake city	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+446	qué vuelos van de dallas a phoenix	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+447	qué vuelos van de phoenix a salt lake city	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+448	necesito un vuelo temprano de milwaukee a denver	O O O B-flight_mod O B-fromloc.city_name O B-toloc.city_name	atis_flight
+449	qué tipos de transporte terrestre hay en denver	O O O O O O O B-city_name	atis_ground_service
+450	qué vuelos van de denver a san luis el martes por la mañana	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+451	¿hay transporte terrestre en san luis ?	O O O O B-city_name I-city_name O	atis_ground_service
+452	necesito volar de san luis a milwaukee el miércoles por la tarde	O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+453	vuelos de washington a seattle	O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+454	vuelos de atlanta a seattle	O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+455	vuelos de san diego a seattle	O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+456	me gustaría recibir información sobre un vuelo de phoenix a denver	O O O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+457	¿podrías darme información sobre los vuelos de salt lake city a phoenix ?	O O O O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O	atis_flight
+458	¿podrías darme información sobre los vuelos de pittsburgh a phoenix ?	O O O O O O O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+459	me gustaría recibir información sobre los vuelos de washington d. c. a denver	O O O O O O O O B-fromloc.city_name B-fromloc.state_code I-fromloc.state_code O B-toloc.city_name	atis_flight
+460	necesito información sobre los vuelos de washington a boston que salgan un sábado	O O O O O O B-fromloc.city_name O B-toloc.city_name O O O B-depart_date.day_name	atis_flight
+461	necesito los vuelos de washington a montreal para un sábado	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name	atis_flight
+462	necesito las tarifas de los vuelos de washington a toronto para un sábado	O O O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name	atis_airfare
+463	Quiero ir de boston a washington un sábado	O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+464	necesito un vuelo de cleveland a dallas que salga antes del mediodía ver si hay información	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.time_relative I-depart_time.time_relative B-depart_time.time O O O O	atis_flight
+465	ver las tarifas de washington a boston	O O O O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+466	ver las tarifas para el sábado de washington a boston	O O O O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+467	ver las tarifas de washington a montreal	O O O O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+468	ver las tarifas para el sábado de washington a montreal	O O O O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+469	ver las tarifas para el sábado de washington a toronto	O O O O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+470	ver la tarifa para el sábado de washington a toronto	O O O O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+471	indícame los vuelos para el sábado de washington a boston	O O O O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+472	indícame los vuelos para el sábado de boston a washington	O O O O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+473	ver los vuelos de milwaukee a dtw	O O O O B-fromloc.city_name O B-toloc.airport_code	atis_flight
+474	indícame los vuelos de milwaukee a detroit	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+475	ver los vuelos de detroit a toronto	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+476	ver los vuelos de toronto a milwaukee	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+477	ver el último vuelo de oakland a salt lake city para el miércoles o el primer vuelo de oakland a salt lake city para el jueves	O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-or I-or B-flight_mod O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name	atis_flight
+478	ver el primer vuelo de oakland a salt lake city para el jueves	O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name	atis_flight
+479	ver el último vuelo de oakland a salt lake city para el miércoles	O O B-flight_mod O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name	atis_flight
+480	indícame el último vuelo del miércoles de oakland a salt lake city	O O B-flight_mod O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+481	ver el vuelo de toronto a san diego con escala en dtw	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-stoploc.airport_code	atis_flight
+482	ver los vuelos entre san petersburgo y charlotte	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+483	necesito un vuelo de milwaukee a indianápolis que salga el lunes antes de las 9 a. m.	O O O O B-fromloc.city_name O B-toloc.city_name O O O B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+484	necesito un vuelo que salga de milwaukee a indianápolis que salga el lunes antes de las 8 a. m.	O O O O O O B-fromloc.city_name O B-toloc.city_name O O O B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+485	¿hay transporte terrestre en el aeropuerto de indianápolis ?	O O O O O B-airport_name I-airport_name I-airport_name O	atis_ground_service
+486	necesito información sobre un vuelo que despegue de indianápolis a cleveland que salga el jueves al mediodía	O O O O O O O O B-fromloc.city_name O B-toloc.city_name O O O B-depart_date.day_name O B-depart_time.period_of_day	atis_flight
+487	necesito información sobre un vuelo que despegue de cleveland a milwaukee para el miércoles después de las 6 p. m.	O O O O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+488	necesito información sobre vuelos que despeguen de cleveland y vuelvan a milwaukee el miércoles después de las 5 p. m.	O O O O O O O B-fromloc.city_name O O O B-toloc.city_name O B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+489	necesito información sobre vuelos que despeguen de cleveland a milwaukee para el miércoles después de las 5 p. m.	O O O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+490	necesito información sobre vuelos que despeguen de cleveland a milwaukee para el miércoles después de las 5 p. m.	O O O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+491	necesito un vuelo de denver a salt lake city para el lunes	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name	atis_flight
+492	¿hay transporte terrestre en el aeropuerto de denver ?	O O O O O B-airport_name I-airport_name I-airport_name O	atis_ground_service
+493	necesito información de vuelo y aerolínea para un vuelo de denver a salt lake city para el lunes que salga después de las 5 p. m.	O O O O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight#atis_airline
+494	¿hay transporte terrestre en el aeropuerto de salt lake city ?	O O O O O B-airport_name I-airport_name I-airport_name I-airport_name I-airport_name O	atis_ground_service
+495	necesito un vuelo de salt lake city a phoenix que salga el miércoles después de las 5 p. m.	O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+496	¿hay transporte terrestre en el aeropuerto de phoenix ?	O O O O O B-airport_name I-airport_name I-airport_name O	atis_ground_service
+497	necesito un vuelo de oakland a salt lake city para el miércoles que salga después de las 6 p. m.	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+498	necesito información de un vuelo y la tarifa para el jueves , que salga antes de las 9 a. m. y vaya de oakland a salt lake city	O O O O O O O O O O B-depart_date.day_name O O O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight#atis_airfare
+499	necesito información de un vuelo y la tarifa de oakland a salt lake city para el jueves antes de las 8 a. m.	O O O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight#atis_airfare
+500	necesito los números y las aerolíneas de vuelo para los vuelos que salgan de oakland a salt lake city para el jueves que despeguen antes de las 8 a. m.	O O O O O O O O O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O B-depart_date.day_name O O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight_no#atis_airline
+501	necesito los números para aquellos vuelos que salgan el jueves antes de las 8 a. m. , que vayan de oakland a salt lake city	O O O O O O O O O B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight_no
+502	indícame los aeropuertos en arizona, nevada y california	O O O O B-state_name I-state_name O B-state_name	atis_airport
+503	indícame los aeropuertos de california , nevada y arizona	O O O O B-state_name O B-state_name O B-state_name	atis_airport
+504	indícame los aeropuertos de arizona	O O O O B-state_name	atis_airport
+505	indícame los aeropuertos de california	O O O O B-state_name	atis_airport
+506	indícame los vuelos de las vegas a phoenix	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+507	indícame los aeropuertos de california	O O O O B-state_name	atis_airport
+508	indícame los aeropuertos	O O O	atis_airport
+509	indícame los vuelos para el miércoles por la noche de oakland a salt lake city	O O O O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+510	indícame los vuelos de oakland a salt lake city antes de las 6 a. m. para el jueves por la mañana	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time O O B-depart_date.day_name O O B-depart_time.period_of_day	atis_flight
+511	qué aerolíneas vuelan entre toronto y san diego	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airline
+512	indícame los vuelos por la tarde entre san petersburgo y charlotte	O O O O O B-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+513	qué significa tpa	O O B-airport_code	atis_abbreviation
+514	cuáles son los vuelos de cleveland a dallas	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+515	indícame solo los vuelos de cleveland a dallas que salgan antes del mediodía	O O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.time_relative O B-depart_time.period_of_day	atis_flight
+516	qué tipo de aviones vuelan de cleveland a dallas antes del mediodía	O O O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative O B-depart_time.period_of_day	atis_aircraft
+517	necesito información sobre los vuelos de indianápolis a seattle	O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+518	necesito un vuelo de memphis a seattle	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+519	necesito un pasaje de nashville a seattle	O O O O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+520	necesito un pasaje de nashville , tennessee a seattle	O O O O B-fromloc.city_name O B-fromloc.state_name O B-toloc.city_name	atis_airfare
+521	necesito información sobre un vuelo de milwaukee a tampa	O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+522	necesito alquilar un vehículo en tampa	O O O B-transport_type O B-city_name	atis_ground_service
+523	necesito un vuelo diario de san luis a milwaukee	O O O B-flight_days O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+524	necesito vuelos que salgan de oakland y lleguen a salt lake city	O O O O O B-fromloc.city_name O O O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+525	necesito información sobre los vuelos de toronto a san diego	O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+526	necesito información sobre los vuelos de toronto a san diego	O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+527	Quiero un vuelo de toronto a san diego	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+528	necesito información sobre los vuelos entre san petersburgo y charlotte	O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+529	necesito los números de vuelo de los vuelos que salen de cleveland y llegan a dallas	O O O O O O O O O O O B-fromloc.city_name O O O B-toloc.city_name	atis_flight_no
+530	qué vuelos van y vienen de nueva york a miami	O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+531	qué significa el código de tarifa qo	O O O O O O B-fare_basis_code	atis_abbreviation
+532	muéstrame vuelos de milwaukee a orlando solo de ida	O O O B-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip I-round_trip	atis_flight
+533	qué significa la abreviatura us	O O O O B-airline_code	atis_abbreviation
+534	me gustaría un pasaje de ida de milwaukee a orlando ya sea para el miércoles por la noche o el jueves por la mañana	O O O O B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O O O O B-depart_date.day_name O O B-depart_time.period_of_day B-or I-or B-depart_date.day_name O O B-depart_time.period_of_day	atis_airfare
+535	muéstrame los vuelos de milwaukee a orlando	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+536	qué significa el código de tarifa f	O O O O O O B-fare_basis_code	atis_abbreviation
+537	qué significa el código de tarifa h	O O O O O O B-fare_basis_code	atis_abbreviation
+538	qué significa el código de tarifa y	O O O O O O B-fare_basis_code	atis_abbreviation
+539	cuáles son las restricciones ap 57	O O O O B-restriction_code I-restriction_code	atis_abbreviation
+540	muéstrame los vuelos en primera clase de indianápolis a memphis de ida que salgan antes de las 10 a. m.	O O O O B-class_type I-class_type O B-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip O O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+541	muéstrame todos los vuelos de ida y vuelta de burbank a seattle que lleguen antes de las 7 p. m. a seattle	O O O O B-round_trip I-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time O B-toloc.city_name	atis_flight
+542	muéstrame los vuelos de ida y vuelta de orlando a montreal	O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_flight
+543	qué aerolínea es dl	O O O B-airline_code	atis_airline
+544	muéstrame todos los vuelos con delta airlines de montreal a orlando	O O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+545	muéstrame todos los vuelos de orlando a montreal	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+546	qué aerolínea es kw	O O O B-airline_code	atis_airline
+547	indícame todos los vuelos de nueva york a miami en cualquier tipo de clase	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O O O	atis_flight
+548	qué significa el código de tarifa bh	O O O O O O B-fare_basis_code	atis_abbreviation
+549	muéstrame un vuelo de vuelta de miami a jfk	O O O O B-round_trip O B-fromloc.city_name O B-toloc.airport_code	atis_flight
+550	qué significa el código de tarifa bh	O O O O O O B-fare_basis_code	atis_abbreviation
+551	qué significa el código de tarifa bh	O O O O O O B-fare_basis_code	atis_abbreviation
+552	qué significa el código de tarifa bh	O O O O O O B-fare_basis_code	atis_abbreviation
+553	qué significa el código de tarifa bh	O O O O O O B-fare_basis_code	atis_abbreviation
+554	muéstrame los vuelos de ida de milwaukee a orlando después de las 6 p. m. para el miércoles	O O O B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time O O B-depart_date.day_name	atis_flight
+555	muéstrame los vuelos de indianápolis a memphis	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+556	muéstrame los vuelos de ida y vuelta de burbank a seattle	O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_flight
+557	muéstrame los vuelos de ida y vuelta de orlando a montreal	O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_flight
+558	muéstrame los vuelos sin escala de montreal a orlando	O O O B-flight_stop I-flight_stop O B-fromloc.city_name O B-toloc.city_name	atis_flight
+559	muéstrame los vuelos de ida y vuelta entre montreal y orlando	O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_flight
+560	muéstrame los vuelos de ida y vuelta de montreal a orlando	O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_flight
+561	muéstrame los vuelos más baratos de ida de montreal a orlando	O O O B-cost_relative I-cost_relative B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_flight
+562	muéstrame los vuelos más baratos de ida de orlando a montreal	O O O B-cost_relative I-cost_relative B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_flight
+563	muéstrame los vuelos más baratos en clase turista de miami a nueva york	O O O B-cost_relative I-cost_relative B-economy I-economy I-economy O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+564	de kansas city a las vegas en turista	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-economy	atis_flight
+565	de kansas city a las vegas en turista	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-economy	atis_flight
+566	qué aerolínea es hp	O O O B-airline_code	atis_airline
+567	transporte terrestre en las vegas	O O O B-city_name I-city_name	atis_ground_service
+568	transporte terrestre para las vegas	O O O B-city_name I-city_name	atis_ground_service
+569	de las vegas a baltimore en turista	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-economy	atis_flight
+570	de las vegas a baltimore en turista	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-economy	atis_flight
+571	de baltimore a kansas city en turista	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-economy	atis_flight
+572	qué aerolínea es la us	O O O O B-airline_code	atis_airline
+573	qué aerolínea es la us	O O O O B-airline_code	atis_airline
+574	qué aerolínea es la us	O O O O B-airline_code	atis_airline
+575	qué aerolínea es la us	O O O O B-airline_code	atis_airline
+576	qué aerolínea es la us	O O O O B-airline_code	atis_airline
+577	de columbus a chicago de ida antes de las 10 a. m.	O B-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+578	qué aerolínea es hp	O O O B-airline_code	atis_airline
+579	de san petersburgo a detroit	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+580	de milwaukee a orlando de ida después de las 5 p. m. para el miércoles	O B-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time O O B-depart_date.day_name	atis_flight
+581	y de milwaukee a atlanta antes de las 10 a. m. a diario	O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time B-flight_days I-flight_days	atis_flight
+582	qué aerolínea es yx	O O O B-airline_code	atis_airline
+583	muéstrame todos los vuelos de san josé a phoenix	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+584	muéstrame todos los vuelos de san josé a phoenix	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+585	qué aerolínea es hp	O O O B-airline_code	atis_airline
+586	muéstrame el transporte terrestre en phoenix	O O O O O B-city_name	atis_ground_service
+587	muéstrame los vuelos de phoenix a fort worth	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+588	muéstrame el transporte terrestre en fort worth	O O O O O B-city_name I-city_name	atis_ground_service
+589	muéstrame los vuelos de fort worth a san josé	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+590	muéstrame los vuelos de primera clase de nueva york a miami ida y vuelta	O O O B-class_type I-class_type I-class_type O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip I-round_trip	atis_flight
+591	muéstrame los vuelos de primera clase de nueva york a miami ida y vuelta	O O O B-class_type I-class_type I-class_type O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip I-round_trip	atis_flight
+592	muéstrame todos los vuelos ida y vuelta de nueva york a miami sin escala	O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-flight_stop I-flight_stop	atis_flight
+593	muéstrame todos los vuelos ida y vuelta de miami a nueva york sin escala	O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-flight_stop I-flight_stop	atis_flight
+594	muéstrame los vuelos de ida de indianápolis a memphis antes de las 10 a. m. cualquier día	O O O B-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time O O	atis_flight
+595	qué significa el código de tarifa f	O O O O O O B-fare_basis_code	atis_abbreviation
+596	muéstrame los vuelos de ida y vuelta de burbank a tacoma	O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name	atis_flight
+597	qué significa la restricción ap58	O O O O B-restriction_code	atis_abbreviation
+598	qué significa el código de tarifa h	O O O O O O B-fare_basis_code	atis_abbreviation
+599	qué aerolínea es as	O O O B-airline_code	atis_airline
+600	qué aerolínea es as	O O O B-airline_code	atis_airline
+601	qué aerolínea es as	O O O B-airline_code	atis_airline
+602	qué aerolínea es as como en sam	O O O B-airline_code O O O	atis_airline
+603	muéstrame los vuelos sin escala de san petersburgo a toronto	O O O B-flight_stop I-flight_stop O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+604	muéstrame los vuelos sin escala de toronto a san petersburgo	O O O B-flight_stop I-flight_stop O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+605	muéstrame los vuelos sin escala y las tarifas de toronto a san petersburgo	O O O B-flight_stop I-flight_stop O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight#atis_airfare
+606	muéstrame los vuelos sin escala de toronto a san petersburgo	O O O B-flight_stop I-flight_stop O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+607	muéstrame vuelos de lunes a viernes de milwaukee a orlando solo de ida	O O B-flight_mod I-flight_mod I-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip I-round_trip	atis_flight
+608	muéstrame vuelos de lunes a viernes de milwaukee a orlando solo de ida	O O B-flight_mod I-flight_mod I-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip I-round_trip	atis_flight
+609	qué aerolínea es hp	O O O B-airline_code	atis_airline
+610	indícame los vuelos de chicago a san diego	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+611	indícame los vuelos de chicago a san diego	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+612	indícame los vuelos de kansas city a denver	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+613	indícame los vuelos de denver a phoenix	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+614	indícame los vuelos de phoenix a las vegas	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+615	indícame los vuelos de las vegas a san diego	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+616	indícame los vuelos de chicago a kansas city por la mañana	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_time.period_of_day	atis_flight
+617	indícame los vuelos de houston a san josé	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+618	indícame los vuelos de houston a milwaukee	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+619	indícame los vuelos de milwaukee a san josé del miércoles	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name	atis_flight
+620	indícame los vuelos de san josé a dallas del viernes	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+621	indícame los vuelos de dallas a houston	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+622	indícame la distancia desde los aeropuertos hasta el centro de nueva york	O O O O O O O O O O B-city_name I-city_name	atis_distance
+623	indícame los aeropuertos de nueva york	O O O O B-city_name I-city_name	atis_airport
+624	indícame los aeropuertos de nueva york	O O O O B-city_name I-city_name	atis_airport
+625	indícame los aeropuertos de los ángeles	O O O O B-city_name I-city_name	atis_airport
+626	indícame los aeropuertos	O O O	atis_airport
+627	indícame los aeropuertos de los ángeles	O O O O B-city_name I-city_name	atis_airport
+628	indícame los aeropuertos de los ángeles	O O O O B-city_name I-city_name	atis_airport
+629	indícame los aeropuertos de los ángeles	O O O O B-city_name I-city_name	atis_airport
+630	indícame los ángeles	O B-city_name I-city_name	atis_city
+631	indícame los ángeles	O B-city_name I-city_name	atis_city
+632	indícame los vuelos de nueva york a los ángeles	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+633	indícame los vuelos de la guardia a burbank	O O O O B-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name	atis_flight
+634	indícame los vuelos de los ángeles a orlando	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+635	indícame los vuelos de ontario california a orlando	O O O O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name	atis_flight
+636	indícame los vuelos de ontario california a orlando	O O O O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name	atis_flight
+637	indícame los vuelos de indianápolis a memphis con tarifas del lunes	O O O O B-fromloc.city_name O B-toloc.city_name O O O B-depart_date.day_name	atis_flight
+638	indícame los vuelos de indianápolis a memphis del lunes	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+639	indícame los vuelos de memphis a miami del miércoles	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+640	indícame los vuelos de miami a indianápolis del domingo	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+641	indícame los vuelos de charlotte del sábado por la tarde	O O O O B-fromloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+642	indícame los tipos de aviones de todos los vuelos que salen de charlotte	O O O O O O O O O O O O B-fromloc.city_name	atis_aircraft
+643	indícame los vuelos y las tarifas de tacoma a orlando de ida y vuelta que salen el sábado y regresan el próximo sábado	O O O O O O O B-fromloc.city_name O B-toloc.city_name B-round_trip I-round_trip I-round_trip I-round_trip O O O B-depart_date.day_name O O O B-return_date.date_relative B-return_date.day_name	atis_flight#atis_airfare
+644	qué clase es el código de tarifa q	O O O O O O O B-booking_class	atis_abbreviation
+645	indícame los vuelos de orlando a tacoma del sábado con un código de tarifa q	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O O O O B-fare_basis_code	atis_flight
+646	indícame las tarifas en primera clase de ida y vuelta de detroit a san petersburgo	O O O O B-class_type I-class_type O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airfare
+647	indícame la tarifa en turista de ida y vuelta de detroit a san petersburgo	O O O O B-class_type O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airfare
+648	indícame los vuelos de pittsburgh a newark del lunes por la mañana	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+649	indícame los vuelos de mineápolis a pittsburgh del viernes	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+650	indícame los vuelos de cincinnati a tampa antes de las 9 a. m.	O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+651	indícame los vuelos de cincinnati a tampa antes del mediodía	O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative O B-depart_time.period_of_day	atis_flight
+652	indícame los vuelos de tampa a cincinnati después de las 3 p. m.	O O O O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+653	indícame las aerolíneas que vuelan de seattle a salt lake city	O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_airline
+654	indícame los vuelos de delta de seattle a salt lake city	O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+655	indícame cuántos asientos tienen los vuelos de delta de seattle a salt lake city	O O O O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_capacity
+656	indícame los vuelos de delta de seattle a salt lake city con el tipo de avión	O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name O O O O O	atis_flight
+657	qué transporte terrestre hay en baltimore	O O O O O B-city_name	atis_ground_service
+658	indícame el transporte terrestre de baltimore	O O O O O B-city_name	atis_ground_service
+659	indícame los vuelos de baltimore a san francisco del viernes	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name	atis_flight
+660	dame los vuelos de los ángeles a pittsburgh del martes	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+661	dame los vuelos de pittsburgh a los ángeles del jueves por la tarde	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+662	dame los vuelos de ida y vuelta de cleveland a miami del próximo miércoles	O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O B-depart_date.date_relative B-depart_date.day_name	atis_flight
+663	dame las tarifas de los vuelos de ida y vuelta de cleveland a miami del próximo miércoles	O O O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O B-depart_date.date_relative B-depart_date.day_name	atis_airfare
+664	dame los vuelos y las tarifas para un viaje a cleveland desde miami el miércoles	O O O O O O O O O O B-toloc.city_name O B-fromloc.city_name O B-depart_date.day_name	atis_flight
+665	dame las tarifas de miami a cleveland del próximo domingo	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.date_relative B-depart_date.day_name	atis_airfare
+666	dame los vuelos de milwaukee a phoenix del sábado o del domingo en american airlines	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-or O B-depart_date.day_name O B-airline_name I-airline_name	atis_flight
+667	dame los vuelos de phoenix a milwaukee del miércoles por la noche	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+668	dame los vuelos de phoenix a milwaukee del miércoles en american airlines	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O B-airline_name I-airline_name	atis_flight
+669	dame los vuelos de phoenix a milwaukee en american airlines	O O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name	atis_flight
+670	dame los vuelos de phoenix a milwaukee	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+671	dame los vuelos con comida que salen temprano el sábado por la mañana de chicago a seattle sin escala	O O O O B-meal O O B-depart_time.period_mod O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name B-flight_stop I-flight_stop	atis_flight
+672	dame los vuelos de chicago a seattle del sábado por la mañana que tienen comidas	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O O B-meal	atis_flight
+673	dame los vuelos de seattle a chicago que tienen comidas en continental	O O O O B-fromloc.city_name O B-toloc.city_name O O B-meal O B-airline_name	atis_flight
+674	dame los vuelos de seattle a chicago que tienen comidas en continental del sábado por la mañana	O O O O B-fromloc.city_name O B-toloc.city_name O O B-meal O B-airline_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+675	dame los vuelos de chicago a seattle en continental que tienen comidas temprano el sábado por la mañana	O O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name O O B-meal B-depart_time.period_mod O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+676	dame una combinación de vuelos en continental de chicago a seattle que tienen comidas temprano el sábado por la mañana	O O O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name O O B-meal B-depart_time.period_mod O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+677	dame los vuelos del sábado por la mañana con comidas de chicago a mineápolis	O O O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-meal O B-fromloc.city_name O B-toloc.city_name	atis_flight
+678	dame los vuelos del sábado por la mañana en continental que tienen comidas de chicago a mineápolis	O O O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-airline_name O O B-meal O B-fromloc.city_name O B-toloc.city_name	atis_flight
+679	dame los vuelos del sábado por la mañana de chicago a st. paul en continental que tienen comidas	O O O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_name O O B-meal	atis_flight
+680	dame los vuelos de nueva york a las vegas sin escala	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-flight_stop I-flight_stop	atis_flight
+681	dame los vuelos de memphis a las vegas sin escala	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-flight_stop I-flight_stop	atis_flight
+682	dame los vuelos más baratos de ida y vuelta de indianápolis a orlando alrededor del veinticinco de diciembre	O O O B-cost_relative I-cost_relative O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative I-depart_time.time_relative B-depart_date.day_number O B-depart_date.month_name	atis_flight
+683	necesito un vuelo el viernes de newark a tampa	O O O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+684	necesito un vuelo el domingo de tampa a charlotte	O O O O B-depart_date.day_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+685	dame un vuelo de charlotte a baltimore el martes por la mañana	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+686	¿puedes darme un vuelo por la mañana de baltimore a newark ?	O O O O B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+687	la tarifa más barata de ida y vuelta de indianápolis a orlando el veinticinco de diciembre	O O B-cost_relative I-cost_relative O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name	atis_airfare
+688	la tarifa más barata solo de ida de indianápolis a orlando el veintisiete de diciembre	O O B-cost_relative I-cost_relative B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name	atis_airfare
+689	número de vuelo de dallas a houston	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight_no
+690	número de vuelo de houston a dallas	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight_no
+691	vuelo del sábado en american airlines de milwaukee a phoenix	O O B-depart_date.day_name O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+692	números de vuelos en american airlines de phoenix a milwaukee	O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight_no
+693	números de vuelos de chicago a seattle	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight_no
+694	números de vuelos de chicago a seattle en continental	O O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name	atis_flight_no
+695	números de vuelos de seattle a chicago en continental	O O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name	atis_flight_no
+696	¿hay una tarifa de pittsburgh a cleveland por menos de 200 dólares ?	O O O O B-fromloc.city_name O B-toloc.city_name B-cost_relative I-cost_relative I-cost_relative B-fare_amount I-fare_amount O	atis_airfare
+697	cuánto cuesta el vuelo en turista de pittsburgh a atlanta	O O O O O B-class_type O B-fromloc.city_name O B-toloc.city_name	atis_airfare
+698	de newark a tampa el viernes	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+699	de tampa a charlotte el domingo por la mañana	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+700	de charlotte a baltimore el martes	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+701	de baltimore a newark el miércoles por la mañana	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+702	de dallas a houston después de las 12:01 a. m.	O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+703	de houston a dallas antes de la medianoche	O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative O O B-depart_time.period_of_day	atis_flight
+704	de indianápolis a orlando el veintisiete de diciembre	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+705	la tarifa más barata de indianápolis a orlando el veintisiete de diciembre	O O B-cost_relative I-cost_relative O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name	atis_airfare
+706	la tarifa más barata de ida y vuelta de indianápolis a orlando el veintisiete de diciembre	O O B-cost_relative I-cost_relative O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_number O B-depart_date.month_name	atis_airfare
+707	de cleveland a miami el miércoles con llegada antes de las 4 p. m.	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name O O B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+708	de miami a cleveland el domingo por la tarde	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+709	de nueva york a las vegas y de memphis a las vegas el domingo	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name	atis_flight
+710	de nueva york a las vegas y de memphis a las vegas el domingo	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name	atis_flight
+711	de nueva york a las vegas el domingo por la tarde	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+712	de memphis a las vegas el domingo por la tarde	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+713	de nueva york a las vegas el domingo por la tarde	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+714	de chicago a seattle el sábado por la mañana	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+715	de chicago a las vegas el sábado por la mañana	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+716	de los ángeles a pittsburgh el martes por la tarde	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+717	de los ángeles a pittsburgh el lunes por la tarde	O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+718	de pittsburgh a los ángeles el jueves por la noche	O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+719	de milwaukee a phoenix el sábado	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+720	de phoenix a milwaukee el domingo	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+721	de phoenix a milwaukee el miércoles	O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+722	un vuelo de baltimore a san francisco que llegue entre las 5 y las 8 p. m.	O B-flight O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O O B-arrive_time.start_time O O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time	atis_flight
+723	cuántos vuelos de northwest salen de st. paul	O O O B-airline_name O O B-fromloc.city_name I-fromloc.city_name	atis_flight
+724	cuántos vuelos de northwest salen de washington dc	O O O B-airline_name O O B-fromloc.city_name B-fromloc.state_code	atis_flight
+725	cuántos vuelos que salen de dulles tiene northwest	O O O O O B-fromloc.airport_name O B-airline_name	atis_flight
+726	desde qué ciudades vuela northwest	O O O O B-airline_name	atis_city
+727	indícame las ciudades desde las que vuela northwest	O O O O O O O B-airline_name	atis_city
+728	hacia qué ciudades vuela northwest	O O O O B-airline_name	atis_city
+729	me gustaría un vuelo con conexión de dallas a san francisco que salga después de las 4 en punto	O O O O B-connect I-connect O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+730	indícame todos los vuelos de dallas a san francisco	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+731	dime de nuevo los vuelos por la mañana en american airlines de filadelfia a dallas	O O O O O B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+732	dime los vuelos que salen de filadelfia y van a dallas	O O O O O O B-fromloc.city_name O O O B-toloc.city_name	atis_flight
+733	qué es un d9s	O O O B-aircraft_code	atis_abbreviation
+734	qué tipo de avión es un d9s	O O O O O O B-aircraft_code	atis_aircraft
+735	qué es un d9s	O O O B-aircraft_code	atis_abbreviation
+736	muéstrame los aeropuertos con servicio de tower air	O O O O O O B-airline_name I-airline_name	atis_airport
+737	muéstrame los vuelos en primera clase y turista entre jfk y orlando	O O O O B-class_type I-class_type O B-class_type O B-fromloc.airport_code O B-toloc.city_name	atis_flight
+738	muéstrame los vuelos en primera clase y turista del aeropuerto kennedy a miami	O O O O B-class_type I-class_type O B-class_type O B-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name	atis_flight
+739	muéstrame los vuelos en primera clase y turista de jfk a miami	O O O O B-class_type I-class_type O B-class_type O B-fromloc.airport_code O B-toloc.city_name	atis_flight
+740	¿se sirven comidas en tower air ?	O O B-meal O B-airline_name I-airline_name O	atis_meal
+741	¿se sirve un refrigerio en tower air ?	O O O B-meal_description O B-airline_name I-airline_name O	atis_meal
+742	muéstrame los vuelos de delta airlines de jfk a miami	O O O O B-airline_name I-airline_name O B-fromloc.airport_code O B-toloc.city_name	atis_flight
+743	muéstrame delta airlines de boston a salt lake	O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+744	muéstrame los vuelos de delta airlines de boston a salt lake	O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+745	muéstrame los vuelos de delta airlines de boston a salt lake city	O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+746	cuáles son las tarifas de los vuelos entre boston y washington dc	O O O O O O O O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code	atis_airfare
+747	cuál es la tarifa menos costosa de boston a salt lake city	O O O O B-cost_relative I-cost_relative O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_airfare
+748	cuáles son las tarifas más bajas de washington dc a salt lake city	O O O O B-cost_relative I-cost_relative O B-fromloc.city_name B-fromloc.state_code O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_airfare
+749	cuál es la tarifa más baja de bwi a salt lake city	O O O O B-cost_relative I-cost_relative O B-fromloc.airport_code O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_airfare
+750	muéstrame el costo de un pasaje en primera clase de detroit a las vegas de ida y vuelta	O O O O O O O B-class_type I-class_type O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-round_trip I-round_trip I-round_trip I-round_trip	atis_airfare
+751	cuál es el vuelo que llega más temprano de boston a washington dc	O O O O B-flight_mod I-flight_mod I-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code	atis_flight
+752	cuál es el vuelo que llega más temprano entre boston y washington dc	O O O O B-flight_mod I-flight_mod I-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code	atis_flight
+753	cuál es el vuelo que llega más temprano entre boston y washington dc	O O O O B-flight_mod I-flight_mod I-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name B-toloc.state_code	atis_flight
+754	cuál es el vuelo que llega más temprano de houston a orlando	O O O O B-flight_mod I-flight_mod I-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name	atis_flight
+755	cuál es el vuelo que llega más temprano de houston a orlando	O O O O B-flight_mod I-flight_mod I-flight_mod I-flight_mod O B-fromloc.city_name O B-toloc.city_name	atis_flight
+756	muéstrame los vuelos entre houston y orlando	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+757	muéstrame los vuelos entre houston y orlando	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+758	muéstrame los vuelos de houston a orlando	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+759	indícame todos los vuelos que salen de denver entre las 8 p. m. y las 9 p. m.	O O O O O O O B-fromloc.city_name O O B-depart_time.start_time I-depart_time.start_time I-depart_time.start_time O O B-depart_time.end_time I-depart_time.end_time I-depart_time.end_time	atis_flight
+760	cuántos asientos tiene el avión 733	O O O O O B-aircraft_code	atis_capacity
+761	cuántos asientos tiene un 72s	O O O O B-aircraft_code	atis_capacity
+762	cuántos asientos tiene el avión 72s	O O O O O B-aircraft_code	atis_capacity
+763	cuántos asientos tiene el avión m80	O O O O O B-aircraft_code	atis_capacity
+764	cuántos asientos tiene el tipo de avión m80	O O O O O O O B-aircraft_code	atis_capacity
+765	cuántos asientos tiene un m80	O O O O B-aircraft_code	atis_capacity
+766	qué aerolíneas vuelan a denver	O O O O B-city_name	atis_airline
+767	indícame las aerolíneas con vuelos hacia o desde denver	O O O O O O O O B-city_name	atis_airline
+768	qué aerolíneas vuelan a denver	O O O O B-toloc.city_name	atis_airline
+769	indícame todos los vuelos que llegan a denver entre las 8 y las 9 p. m.	O O O O O O O B-toloc.city_name O O B-arrive_time.start_time O O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time	atis_flight
+770	cuál es la capacidad del 73s	O O O O O B-aircraft_code	atis_capacity
+771	qué es un 73s	O O O B-aircraft_code	atis_abbreviation
+772	cuántos asientos tiene el avión 73s	O O O O O B-aircraft_code	atis_capacity
+773	cuántos asientos tiene un 757	O O O O B-aircraft_code	atis_capacity
+774	cuántas personas caben en un 757	O O O O O B-aircraft_code	atis_capacity
+775	cuántos pasajeros pueden volar en un 757	O O O O O O B-aircraft_code	atis_capacity
+776	indícame todos los vuelos diarios que llegan a denver entre las 8 y las 9 p. m.	O O O O B-flight_days O O O B-toloc.city_name O O B-arrive_time.start_time O O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time	atis_flight
+777	indícame todos los vuelos diarios que llegan a denver de 8 a 9 p. m.	O O O O B-flight_days O O O B-toloc.city_name O B-arrive_time.start_time O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time	atis_flight
+778	muéstrame todos los vuelos diarios que llegan a denver entre las 8 p. m. y las 9 p. m.	O O O O B-flight_days O O O B-toloc.city_name O O B-arrive_time.start_time I-arrive_time.start_time I-arrive_time.start_time O O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time	atis_flight
+779	cuántos asientos tiene el 757	O O O O B-aircraft_code	atis_capacity
+780	cuéntame sobre el avión m80	O O O O B-aircraft_code	atis_aircraft
+781	cuéntame sobre el avión m80	O O O O B-aircraft_code	atis_aircraft
+782	cuéntame sobre el tipo de avión que se llama m80	O O O O O O O O O B-aircraft_code	atis_aircraft
+783	cuántos asientos tiene el 733	O O O O B-aircraft_code	atis_capacity
+784	cuántos asientos tiene el m80	O O O O B-aircraft_code	atis_capacity
+785	cuántos asientos tiene el avión m80	O O O O O B-aircraft_code	atis_capacity
+786	indícame todos los vuelos que llegan o salen de denver entre las 8 y las 9 p. m.	O O O O O O O O O B-city_name O O B-depart_time.start_time O O B-depart_time.end_time I-depart_time.end_time I-depart_time.end_time	atis_flight
+787	indícame todos los vuelos que llegan a denver entre las 8 y las 9 p. m.	O O O O O O O B-toloc.city_name O O B-arrive_time.start_time O O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time	atis_flight
+788	indícame todos los vuelos en todos los tipos de avión que llegan a denver entre las 8 y las 9 p. m.	O O O O O O O O O O O O O B-toloc.city_name O O B-arrive_time.start_time O O B-arrive_time.end_time I-arrive_time.end_time I-arrive_time.end_time	atis_flight
+789	indícame todos los vuelos de nashville a memphis del lunes por la mañana	O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+790	indícame los vuelos de nashville a memphis del lunes por la mañana	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+791	¿hay transporte terrestre desde el aeropuerto de memphis hacia la ciudad si llegamos a las 8:42 de la mañana ?	O O O O O B-airport_name I-airport_name I-airport_name O O O O O O O O O O B-period_of_day O	atis_ground_service
+792	indícame los vuelos de memphis a nueva york de un lunes por la noche	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+793	qué es cvg	O O B-airport_code	atis_abbreviation
+794	qué transporte terrestre hay desde el aeropuerto la guardia hasta nueva york	O O O O O O B-airport_name I-airport_name I-airport_name O B-city_name I-city_name	atis_ground_service
+795	¿hay transporte terrestre desde lga hasta nueva york ?	O O O O B-airport_code O B-city_name I-city_name O	atis_ground_service
+796	indícame el transporte terrestre desde lga hasta nueva york	O O O O O B-airport_code O B-city_name I-city_name	atis_ground_service
+797	indícame el transporte terrestre desde ewr hasta nueva york	O O O O O B-airport_code O B-city_name I-city_name	atis_ground_service
+798	muéstrame los vuelos por la mañana de memphis a nueva york	O O O B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+799	dame los vuelos de nueva york a nashville que salen después de las 5 p. m. el miércoles	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time O B-depart_date.day_name	atis_flight
+800	dime qué transporte terrestre hay desde el aeropuerto de nashville	O O O O O O O B-airport_name I-airport_name I-airport_name	atis_ground_service
+801	cuáles son los vuelos sin escala de cincinnati a charlotte que salen después del mediodía y llegan antes de las 7 p. m.	O O O O B-flight_stop I-flight_stop O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.time_relative O B-depart_time.period_of_day O O B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+802	cuántos vuelos tiene alaska airlines hacia burbank	O O O B-airline_name I-airline_name O B-toloc.city_name	atis_flight
+803	indícame los vuelos de alaska airline desde burbank hacia cualquier parte	O O O O B-airline_name I-airline_name O B-fromloc.city_name O O O	atis_flight
+804	indícame los vuelos de alaska airline desde burbank	O O O O B-airline_name I-airline_name O B-fromloc.city_name	atis_flight
+805	qué aerolínea es as	O O O B-airline_code	atis_airline
+806	indícame los vuelos de alaska airlines que llegan a burbank	O O O O B-airline_name I-airline_name O O O B-toloc.city_name	atis_flight
+807	indícame los vuelos de alaska airlines que salen de burbank	O O O O B-airline_name I-airline_name O O O B-fromloc.city_name	atis_flight
+808	indícame todos los vuelos de alaska airlines	O O O O O B-airline_name I-airline_name	atis_flight
+809	indícame todos los vuelos que salen de seattle	O O O O O O O B-fromloc.city_name	atis_flight
+810	indícame los vuelos de indianápolis a memphis que salen antes del mediodía	O O O O B-fromloc.city_name O B-toloc.city_name O O B-depart_time.time_relative O B-depart_time.period_of_day	atis_flight
+811	indícame la tarifa más barata de charlotte a las vegas	O O O B-cost_relative I-cost_relative O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_airfare
+812	quiero un vuelo de los ángeles a charlotte temprano por la mañana	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-depart_time.period_mod O O B-depart_time.period_of_day	atis_flight
+813	quisiera un vuelo por la mañana de charlotte a newark	O O O B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+814	me gustaría un vuelo por la mañana de newark a los ángeles	O O O O B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+815	me gustaría un vuelo por la noche de newark a los ángeles	O O O O B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+816	me gustaría un vuelo que salga el domingo de montreal quebec a san diego california	O O O O O O O B-depart_date.day_name O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-toloc.state_name	atis_flight
+817	me gustaría un vuelo el martes que salga de san diego a indianápolis indiana y salga por la tarde	O O O O O B-depart_date.day_name O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_name O O O O B-depart_time.period_of_day	atis_flight
+818	me gustaría salir el jueves por la mañana de indianápolis a toronto	O O O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+819	me gustaría un vuelo el viernes por la mañana de toronto a montreal	O O O O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name	atis_flight
+820	me gustaría un vuelo de cincinnati a burbank en american	O O O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name	atis_flight
+821	qué tipo de avión se usa para el vuelo de american que sale a las 4:19 p. m.	O O O O O O O O O O B-airline_name O O O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_aircraft
+822	necesito un vuelo que salga de kansas city a chicago para el próximo miércoles con regreso al día siguiente	O O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.date_relative B-depart_date.day_name O O B-return_date.date_relative I-return_date.date_relative I-return_date.date_relative	atis_flight
+823	qué vuelos van de long beach a san luis	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+824	cuáles son los vuelos de memphis a las vegas	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+825	cuáles son los vuelos de las vegas a ontario	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+826	cuáles son los vuelos de ontario a memphis	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+827	qué tipo de transporte terrestre hay en el aeropuerto de las vegas	O O O O O O O O B-airport_name I-airport_name I-airport_name I-airport_name	atis_ground_service
+828	¿hay servicio de taxi en el aeropuerto de ontario ?	O B-transport_type I-transport_type I-transport_type O O B-airport_name I-airport_name I-airport_name O	atis_ground_service
+829	cuáles son los vuelos de tampa a milwaukee	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+830	cuáles son los vuelos de milwaukee a seattle	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+831	cuáles son los vuelos de la guardia a san josé en united	O O O O O B-fromloc.airport_name I-fromloc.airport_name O B-toloc.city_name I-toloc.city_name O B-airline_name	atis_flight
+832	cuáles son los vuelos los lunes que van de charlotte carolina del norte a phoenix arizona	O O O O O B-depart_date.day_name O O O B-fromloc.city_name B-fromloc.state_name I-fromloc.state_name I-fromloc.state_name O B-toloc.city_name B-toloc.state_name	atis_flight
+833	cuáles son los vuelos de phoenix arizona a st. paul minnesota el martes	O O O O O B-fromloc.city_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name B-toloc.state_name O B-depart_date.day_name	atis_flight
+834	cuáles son los vuelos del jueves que salen de st. paul minnesota a san luis	O O O O O B-depart_date.day_name O O O B-fromloc.city_name I-fromloc.city_name B-fromloc.state_name O B-toloc.city_name I-toloc.city_name	atis_flight
+835	cuáles son los vuelos de san luis a charlotte carolina del norte que salen el viernes	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_name I-toloc.state_name I-toloc.state_name O O O B-depart_date.day_name	atis_flight
+836	cuáles son los vuelos de boston a orlando con escala en nueva york	O O O O O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name I-stoploc.city_name	atis_flight
+837	necesito un vuelo por la mañana de burbank a milwaukee para el próximo lunes	O O O B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name O B-toloc.city_name O O B-depart_date.date_relative B-depart_date.day_name	atis_flight
+838	qué tal un vuelo de milwaukee a san luis que salga el lunes por la noche	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+839	y un vuelo de san luis a burbank que salga el martes por la tarde	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+840	qué tal un vuelo que salga el martes por la noche de san luis a burbank	O O O O O O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+841	necesito un vuelo de salt lake al aeropuerto de newark que llegue el sábado antes de las 6 p. m.	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.airport_name I-toloc.airport_name I-toloc.airport_name O O O B-arrive_date.day_name B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+842	me gustaría un vuelo de cincinnati al aeropuerto de newark que llegue el sábado antes de las 6 p. m.	O O O O O B-fromloc.city_name O B-toloc.airport_name I-toloc.airport_name I-toloc.airport_name O O O B-arrive_date.day_name B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+843	necesito un vuelo en american airlines de miami a chicago que llegue alrededor de las 5 p. m.	O O O O B-airline_name I-airline_name O B-fromloc.city_name O B-toloc.city_name O O B-arrive_time.time_relative I-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+844	necesito un vuelo de memphis a tacoma que haga escala en los ángeles	O O O O B-fromloc.city_name O B-toloc.city_name O O O O B-stoploc.city_name I-stoploc.city_name	atis_flight
+845	cuáles son los vuelos entre cincinnati y san josé california que salen después de las 6 p. m.	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name B-toloc.state_name O O B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+846	cuales son los vuelos sin escala entre san josé y houston texas	O O O O B-flight_stop I-flight_stop O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_name	atis_flight
+847	cuáles son los vuelos sin escala entre houston y memphis	O O O O B-flight_stop I-flight_stop O B-fromloc.city_name O B-toloc.city_name	atis_flight
+848	cuáles son los vuelos entre memphis y cincinnati el miércoles	O O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+849	cuáles son los vuelos de american de newark a nashville	O O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name	atis_flight
+850	los vuelos de ontario a westchester con escala en chicago	O O O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name	atis_flight
+851	indícame los vuelos de los ángeles a charlotte	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+852	indícame los vuelos de charlotte a newark	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+853	indícame los vuelos de newark a los ángeles	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name	atis_flight
+854	indícame los vuelos de cincinnati a burbank en american airlines	O O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name	atis_flight
+855	dame los vuelos de kansas city a chicago para el dieciséis de junio	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+856	dame los vuelos de chicago a kansas city para el diecisiete de junio	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+857	indícame todos los vuelos de kansas city a chicago para el dieciséis de junio	O O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+858	indícame todos los vuelos de chicago a kansas city para el diecisiete de junio	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.day_number O B-depart_date.month_name	atis_flight
+859	me gustaría viajar de burbank a milwaukee	O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+860	¿puedes buscarme un vuelo de salt lake city a nueva york para el próximo sábado antes que llegue antes de las 6 p. m. ?	O O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.date_relative B-depart_date.day_name B-arrive_time.time_relative O O B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time O	atis_flight
+861	¿puedes buscarme otro vuelo de cincinnati a nueva york el sábado antes de las 6 p. m. ?	O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name B-depart_time.time_relative O O B-depart_time.time I-depart_time.time I-depart_time.time O	atis_flight
+862	¿puedes indicarme todos los vuelos de delta de salt lake city a nueva york para el próximo sábado que lleguen antes de las 6 p. m. ?	O O O O O O B-airline_name O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-depart_date.date_relative B-depart_date.day_name O O B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time O	atis_flight
+863	me gustaría volar de miami a chicago en american airlines con llegada alrededor de las 5 p. m.	O O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name O O B-arrive_time.time_relative I-arrive_time.time_relative O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+864	me gustaría viajar de kansas city a chicago el próximo miércoles	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.date_relative B-depart_date.day_name	atis_flight
+865	me gustaría un vuelo redondo de kansas city a chicago el miércoles veintiséis de mayo que llegue a las 7 p. m.	O O O O B-round_trip O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name B-depart_date.day_number O B-depart_date.month_name O O O O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+866	sí, me gustaría buscar un vuelo de memphis a tacoma con escala en los ángeles	O O O O O O O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name I-stoploc.city_name	atis_flight
+867	búscame un vuelo de san diego a phoenix para el lunes por la mañana	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O O B-depart_date.day_name B-depart_time.period_of_day I-depart_time.period_of_day I-depart_time.period_of_day	atis_flight
+868	búscame un vuelo de phoenix a detroit el lunes	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+869	búscame un vuelo de detroit a san diego el martes	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name	atis_flight
+870	búscame un vuelo de cincinnati a san josé el lunes	O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-depart_date.day_name	atis_flight
+871	búscame un vuelo de san josé a houston el miércoles	O O O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+872	búscame un vuelo de houston a memphis el viernes	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+873	búscame un vuelo de memphis a cincinnati el domingo	O O O O B-fromloc.city_name O B-toloc.city_name O B-depart_date.day_name	atis_flight
+874	búscame un vuelo de american de newark a nashville alrededor de las 6: 30 p. m.	O O O O B-airline_name O B-fromloc.city_name O B-toloc.city_name B-depart_time.time_relative I-depart_time.time_relative O B-depart_time.time I-depart_time.time I-depart_time.time I-depart_time.time	atis_flight
+875	búscame un vuelo redondo de los ángeles a tacoma washington con una escala larga en san francisco que no supere el precio de 300 dólares para el diez de junio de 1993	O O O B-round_trip O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name B-toloc.state_name O O O O O B-stoploc.city_name I-stoploc.city_name B-cost_relative I-cost_relative I-cost_relative O O O B-fare_amount I-fare_amount O O B-depart_date.day_number O B-depart_date.month_name O B-depart_date.year	atis_flight
+876	¿hay vuelos para el diez de junio de burbank a tacoma ?	O O O O B-depart_date.day_number O B-depart_date.month_name O B-fromloc.city_name O B-toloc.city_name O	atis_flight
+877	búscame un vuelo de ontario a westchester que haga escala en chicago el diecisiete de mayo solo de ida con cena	O O O O B-fromloc.city_name O B-toloc.city_name O O O O B-stoploc.city_name O B-depart_date.day_number O B-depart_date.month_name B-round_trip I-round_trip I-round_trip O B-meal_description	atis_flight
+878	me gustaría reservar un vuelo de burbank a milwaukee	O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+879	muéstrame todos los vuelos de burbank a milwaukee	O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
+880	búscame todos los vuelos de milwaukee a san luis	O O O O O B-fromloc.city_name O B-city_name I-city_name	atis_flight
+881	ahora muéstrame todos los vuelos de san luis a burbank	O O O O O O B-city_name I-city_name O B-toloc.city_name	atis_flight
+882	¿hay alguna aerolínea que vuele de burbank a milwaukee milwaukee a san luis y de san luis a burbank ?	O O O O O O B-fromloc.city_name O B-toloc.city_name B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name O	atis_airline
+883	búscame todos los vuelos de ida y vuelta de burbank a milwaukee con escala en san luis	O O O O O B-round_trip I-round_trip I-round_trip O B-fromloc.city_name O B-toloc.city_name O O O B-stoploc.city_name I-stoploc.city_name	atis_flight
+884	me gustaría reservar dos vuelos al condado de westchester	O O O O O O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+885	quiero reservar un vuelo de salt lake city al condado de westchester	O O O O O B-fromloc.city_name I-fromloc.city_name I-fromloc.city_name O B-toloc.city_name I-toloc.city_name I-toloc.city_name	atis_flight
+886	dime todos los aeropuertos cerca del condado de westchester	O O O O O O B-city_name I-city_name I-city_name	atis_airport
+887	me gustaría reservar un vuelo de cincinnati a nueva york en united airlines para el próximo sábado	O O O O O O B-fromloc.city_name O B-toloc.city_name I-toloc.city_name O B-airline_name I-airline_name O O B-depart_date.date_relative B-depart_date.day_name	atis_flight
+888	dime todos los aeropuertos en el área de nueva york	O O O O O O O O B-city_name I-city_name	atis_airport
+889	búscame todos los vuelos de cincinnati a cualquier aeropuerto en el área de nueva york que lleguen el próximo sábado antes de las 6 p. m.	O O O O O B-fromloc.city_name O O O O O O O B-toloc.city_name I-toloc.city_name O O O B-arrive_date.date_relative B-arrive_date.day_name B-arrive_time.time_relative O O B-arrive_time.time I-arrive_time.time I-arrive_time.time	atis_flight
+890	búscame un vuelo de cincinnati a cualquier aeropuerto en el área de nueva york	O O O O B-fromloc.city_name O O O O O O O B-toloc.city_name I-toloc.city_name	atis_flight
+891	me gustaría volar de miami a chicago en american airlines	O O O O B-fromloc.city_name O B-toloc.city_name O B-airline_name I-airline_name	atis_flight
+892	me gustaría reservar un vuelo redondo de kansas city a chicago	O O O O O B-round_trip O B-fromloc.city_name I-fromloc.city_name O B-toloc.city_name	atis_flight
+893	búscame un vuelo que vaya de memphis a tacoma	O O O O O O B-fromloc.city_name O B-toloc.city_name	atis_flight
